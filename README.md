@@ -50,8 +50,7 @@
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :---- | :---- | :---- | :---- |
-| TB1 | 21/09/2025 | Barba Estrada, Bryan Eduardo <br> Cárdenas Concha, Santiago Iván <br> Diestra Zambrano Adriana Maria <br> Valverde Portuguez, Natalia Ximena <br> Salazar Caballero, Alvaro Fabrizzio <br> Choy Robles, Vanessa May Lang | En la primera entrega del informe de nuestro proyecto, hemos realizado los primeros 5 capítulos del informe y también entregamos la primera versión del landing page de GeoPS. |
-
+| TB1 | 27/04/2026 | Barba Estrada, Bryan Eduardo <br> Cárdenas Concha, Santiago Iván <br> Diestra Zambrano Adriana Maria <br> Valverde Portuguez, Natalia Ximena <br> Salazar Caballero, Alvaro Fabrizzio <br> Choy Robles, Vanessa May Lang | En la primera entrega del informe de nuestro proyecto, hemos realizado los primeros 5 capítulos del informe y también entregamos la primera versión del landing page de GeoPS. |
 
 ---
 
@@ -3441,13 +3440,13 @@ World Bank. (2019). *World Development Report 2019: The Changing Nature of Work*
 
 **Repositorios GitHub**
 
-- Enlace Repositorio BackEnd: https://github.com/OpenSourceDevUPC/geops-backend
+- Enlace Repositorio BackEnd: https://github.com/geops-org/geops-api
 
-- Enlace Repositorio FrontEnd: https://github.com/OpenSourceDevUPC/geops-frontend
+- Enlace Repositorio FrontEnd: https://github.com/geops-org/geops-web
 
-- Enlace Repositorio Landing Page: https://github.com/OpenSourceDevUPC/Landing
+- Enlace Repositorio Landing Page: https://github.com/geops-org/geops-landing
 
-- Enlace Repositorio Project Report: https://github.com/OpenSourceDevUPC/Project-Report-GeoPS
+- Enlace Repositorio Project Report: https://github.com/geops-org/geops-report
 
 
 **Videos Exposiciones**
