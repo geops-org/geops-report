@@ -3210,7 +3210,7 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
     Given que el usuario está en la landing page de GeoPS
     When hace clic en el enlace "Nosotros" del menú de navegación
     Then debería desplazarse suavemente a la sección "Quiénes Somos"
-    And debería ver la información sobre PanPun Source
+    And debería ver la información sobre GeoPsLabs
     And el enlace "Nosotros" debería estar resaltado en el menú
 
   #------- Escenario de formulario de contacto -------
@@ -3243,8 +3243,8 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
   El deployment de nuestra Landing Page se realiza a través de GitHub Pages, una solución de hosting estático integrada directamente con nuestro repositorio de GitHub. A continuación se detalla el proceso de configuración implementado:
 
   **Repositorio de la Landing Page:**
-  + **Enlace Repositorio Landing Page:** https://se-necesita-agregar.com
-  + **Enlace Landing Page Deploy:** https://se-necesita-agregar.com
+  + **Enlace Repositorio Landing Page:** https://github.com/geops-org/geops-landing
+  + **Enlace Landing Page Deploy:** https://github.com/geops-org/geops-landing
 
   **1. Configuración General del Repositorio**
 
@@ -3394,7 +3394,7 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
 
 El desarrollo del proyecto GeoPS permitió transformar una idea inicial en una solución tecnológica completa y funcional, integrando landing page, frontend interactivo con Angular y backend robusto con Spring Boot desplegado en la nube. A lo largo de los cuatro sprints se evidenció un progreso consistente en la capacidad técnica del equipo, tanto en términos de diseño de interfaces como en arquitectura de software, integración de servicios y despliegue continuo en plataformas de producción.
 
-A lo largo del proyecto se evidenció una mejora progresiva en la organización del trabajo y en la coordinación del equipo. El uso de metodologías ágiles (Scrum), control de versiones mediante GitHub, gestión visual en Trello y comunicación por Discord y Google Meet permitió mantener un flujo de trabajo ordenado y eficiente. Cada sprint aportó valor incremental, fortaleciendo la arquitectura y asegurando la cohesión entre las distintas funcionalidades desarrolladas. El Sprint 4 marcó la culminación del MVP con la implementación del módulo completo de Proveedores, permitiendo a los negocios gestionar campañas publicitarias de manera efectiva.
+A lo largo del proyecto se evidenció una mejora progresiva en la organización del trabajo y en la coordinación del equipo. El uso de metodologías ágiles (Scrum) **SE DEBE EVITAR EL USO DE "metodologías ágiles" REVISAR ANEXO E**, control de versiones mediante GitHub, gestión visual en Trello y comunicación por Discord y Google Meet permitió mantener un flujo de trabajo ordenado y eficiente. Cada sprint aportó valor incremental, fortaleciendo la arquitectura y asegurando la cohesión entre las distintas funcionalidades desarrolladas. El Sprint 4 marcó la culminación del MVP con la implementación del módulo completo de Proveedores, permitiendo a los negocios gestionar campañas publicitarias de manera efectiva.
 
 Desde el punto de vista técnico, se construyó una plataforma sólida que integra módulos esenciales como autenticación, gestión de usuarios, favoritos, ofertas, reseñas, cupones, carritos, pagos, suscripciones y el nuevo módulo de campañas publicitarias para proveedores. El despliegue del backend en Railway y del frontend en Vercel confirma la capacidad del equipo para trabajar con servicios en la nube, manejando entornos reales de producción. La documentación completa del API con Swagger UI facilita la comprensión de los endpoints y permite la futura expansión del sistema.
 
