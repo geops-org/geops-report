@@ -349,21 +349,25 @@ Con un **diseño responsive** que se adapta a cualquier dispositivo, **GeoPS Lab
 
 ### 1.3. Segmentos objetivos
 
-**Segmento Objetivo #1: Dueños de negocios locales**
+**Segmento Objetivo #1: Negocios especializados en productos orientales/asiáticos**
 
 **Aspectos Demográficos**  
 - Sexo: Todos los géneros.  
-- Edad: 25 años a más.  
-- Nivel Socioeconómico: Medio (propietarios o administradores de pequeños y medianos negocios).  
+- Edad: 24 años a más.  
+- Nivel Socioeconómico: Medio (propietarios o administradores de pequeños y medianos negocios).
+- Ocupación: Dueños, administradores o encargados de negocios especializados   
 
 **Aspectos Geográficos**  
 - Nacionalidad: Peruana.  
-- Zona Geográfica: Áreas urbanas con alta competencia comercial.  
+- Zona Geográfica: Lima Moderna
+- Distritos objetivo: Jesús María, Lince, Magdalena del Mar, Pueblo Libre, Surquillo y San Miguel
 
 **Aspectos Psicográficos**  
-- Dolor Principal: No poder atraer clientes fácilmente debido a la saturación de publicidad tradicional y digital poco efectiva.  
-- Objetividad: Pequeños y medianos empresarios que buscan aumentar su visibilidad y atraer clientes cercanos con bajo costo.  
-- Nuestra Solución: Brindar un panel web intuitivo con campañas segmentadas, métricas en tiempo real y opciones de publicidad accesible para aumentar la competitividad.  
+- Dolor Principal: Tienen productos con alta demanda e interés creciente, pero carecen de visibilidad hiperlocal y herramientas accesibles para conectar con consumidores cercanos en el momento exacto de compra.
+
+- Objetividad: Aumentar su visibilidad, atraer clientes cercanos y convertir interés digital en visitas al local mediante promociones segmentadas y descubrimiento geolocalizado.
+
+- Nuestra Solución: GeoPS les ofrece una plataforma web donde pueden promocionar productos asiáticos, publicar ofertas en tiempo real, aparecer en búsquedas geolocalizadas y conectar con consumidores cercanos interesados en este tipo de productos.
 
 **Segmento Objetivo #2: Consumidores de ofertas locales**
 
