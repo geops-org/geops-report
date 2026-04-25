@@ -301,18 +301,20 @@ Con un **diseño responsive** que se adapta a cualquier dispositivo, **GeoPS Lab
   **Features (Características clave que lo habilitan)**  
 
   *Para consumidores:*
-  - Listado de ofertas y promociones filtrables por ubicación, categoría y distancia.  
-  - Mapa interactivo con geolocalización vía navegador.  
-  - Notificaciones web push sobre ofertas cercanas.  
-  - Posibilidad de guardar y compartir promociones.  
-  - Sistema de reseñas y calificación de comercios.  
+  - Descubrimiento de productos asiáticos por ubicación y categoría
+  - Mapa interactivo con tiendas orientales cercanas
+  - Visualización de productos destacados, promociones y disponibilidad
+  - Sistema de reseñas y validación de tiendas
+  - Guardado de productos y tiendas favoritas
+  - Notificaciones sobre nuevos productos o promociones cercanas
 
   *Para negocios:*  
-  - Panel web para creación y gestión de campañas publicitarias.  
-  - Segmentación de audiencia por ubicación y preferencias.  
-  - Analítica en tiempo real con métricas de conversión.  
-  - Opciones de campañas flexibles (costo por clic, impresiones, tiempo de vigencia).  
-  - Herramientas para fidelización (promociones exclusivas para clientes recurrentes).  
+  - Panel web para registrar productos, promociones y stock destacado  
+  - Publicación de ofertas en tiempo real 
+  - Visibilidad geolocalizada dentro de Lima Moderna
+  - Gestión de promociones por producto y categoría
+  - Métricas de interacción (clics, vistas, guardados)
+  - Herramientas para destacar productos nuevos o en tendencia
 
   ##### 1.2.2.3. Lean UX Hypothesis Statements
 
