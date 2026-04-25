@@ -272,31 +272,31 @@ Con un **diseño responsive** que se adapta a cualquier dispositivo, **GeoPS Lab
   #### 1.2.2. Lean UX Process
   
   ##### 1.2.2.1. Lean UX Problem Statements
-  - Hemos observado que las PyMEs locales tienen dificultades para llegar a clientes cercanos de manera digital, ya que dependen de publicidad tradicional poco efectiva y costosa.  
-  **¿Cómo podemos ayudar a estos negocios a atraer clientes cercanos mediante un canal web accesible y medible?**
+  - Hemos observado que los consumidores interesados en productos orientales/asiáticos en Lima Moderna descubren constantemente productos atractivos en redes sociales, pero tienen dificultades para encontrar dónde comprarlos cerca, verificar su disponibilidad o identificar tiendas confiables que los ofrezcan.
+  **¿Cómo podríamos ayudar a estos consumidores a descubrir productos asiáticos auténticos, cercanos y disponibles en tiempo real desde una sola plataforma?**
 
-  - Hemos observado que los consumidores urbanos se sienten abrumados por publicidad genérica e irrelevante que no responde a su contexto inmediato.  
-  **¿Cómo podemos ofrecerles publicidad personalizada y contextual que mejore su experiencia y confianza al buscar ofertas locales?**
+  - Hemos observado que los negocios especializados en productos orientales/asiáticos dependen principalmente de redes sociales para promocionarse, lo que limita su visibilidad local, dificulta captar clientes cercanos en el momento de compra y reduce su capacidad de convertir interés digital en visitas al local.
+  **¿Cómo podríamos ayudar a estos negocios a aumentar su visibilidad hiperlocal y atraer consumidores cercanos con intención real de compra?**
 
-  - Hemos observado que muchas PyMEs no cuentan con métricas claras para evaluar la efectividad de su publicidad.  
-  **¿Cómo podemos proveerles un panel web simple y con analítica en tiempo real que les permita medir y optimizar sus campañas?**
+  - Hemos observado que los consumidores desconfían de promociones poco claras, productos no auténticos o publicaciones desactualizadas, especialmente cuando descubren productos importados en redes sociales sin información verificable sobre precio, ubicación o disponibilidad.
+  **¿Cómo podríamos ofrecer una experiencia confiable y transparente que permita descubrir productos orientales con mayor seguridad y confianza?**
 
-  - Hemos observado que los usuarios desconfían de las ofertas online por experiencias pasadas con anuncios engañosos.  
-  **¿Cómo podemos garantizar que las ofertas en GeoPS Web sean auténticas y transparentes, reforzando la credibilidad de la plataforma?**
+  - Hemos observado que muchas tiendas especializadas en productos asiáticos tienen una oferta valiosa y diferenciada, pero no cuentan con herramientas simples para comunicar promociones, disponibilidad y novedades de forma geolocalizada y en tiempo real.  
+  **¿Cómo podríamos facilitar a estos negocios una forma simple y efectiva de promocionar sus productos a consumidores cercanos sin depender exclusivamente de redes sociales?**
 
   ##### 1.2.2.2. Lean UX Assumptions
   
   **Business Outcomes (Resultados de negocio que esperamos)**  
-  - Incrementar en al menos un 20% las ventas de las PyMEs afiliadas en los primeros 6 meses, gracias a la visibilidad que obtendrán en GeoPS Web (BID, 2020).  
-  - Mejorar el retorno de inversión en marketing digital de las PyMEs en un 15% durante el primer año, al reemplazar publicidad genérica por campañas segmentadas.  
-  - Aumentar en un 30% la adopción de herramientas digitales por parte de las PyMEs en el primer año, impulsando su transición hacia modelos de publicidad más eficientes.  
-  - Garantizar un crecimiento sostenido de ingresos para GeoPSLabs a través de un modelo freemium/publicidad pagada, escalable en el tiempo.  
+  - Incrementar en al menos un 20% la visibilidad digital de tiendas especializadas en productos asiáticos durante los primeros 6 meses, mediante una plataforma enfocada en descubrimiento hiperlocal.
+  - Aumentar en un 15% la afluencia de clientes a negocios afiliados en Lima Moderna durante el primer semestre, gracias a promociones geolocalizadas y descubrimiento contextual.
+  - Lograr que al menos el 30% de los negocios afiliados publiquen promociones activas semanalmente durante los primeros 3 meses, validando el uso recurrente de la plataforma.
+  - Consolidar un modelo de monetización escalable basado en suscripciones premium y promoción destacada para negocios especializados.
 
   **User Outcomes (Resultados esperados para los usuarios)**  
-  - Los consumidores podrán descubrir con facilidad ofertas locales verificadas desde cualquier navegador, ahorrando tiempo y dinero.  
-  - Los usuarios recibirán notificaciones web push con promociones relevantes según su ubicación y preferencias, reduciendo la saturación publicitaria.  
-  - Las PyMEs podrán crear y gestionar campañas en pocos pasos, con métricas claras (alcance, clics, conversiones) accesibles en tiempo real.  
-  - Se generará mayor confianza al transparentar información sobre vigencia, condiciones de ofertas y reseñas de otros usuarios.  
+  - Los consumidores podrán descubrir productos orientales auténticos de forma rápida y centralizada, evitando búsquedas dispersas en redes sociales o tiendas no verificadas.
+  - Los usuarios encontrarán tiendas cercanas con productos asiáticos disponibles, promociones vigentes y ubicación clara, reduciendo tiempo e incertidumbre en el proceso de compra.
+  - Los consumidores recibirán una experiencia más confiable al visualizar información relevante y actualizada sobre productos, precios, disponibilidad y reputación del negocio. 
+  - Los negocios podrán promocionar productos específicos, comunicar novedades y atraer clientes cercanos sin depender únicamente de Instagram o TikTok.
 
   **Features (Características clave que lo habilitan)**  
 
