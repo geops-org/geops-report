@@ -355,12 +355,12 @@ Con un **diseño responsive** que se adapta a cualquier dispositivo, **GeoPS Lab
 - Sexo: Todos los géneros.  
 - Edad: 24 años a más.  
 - Nivel Socioeconómico: Medio (propietarios o administradores de pequeños y medianos negocios).
-- Ocupación: Dueños, administradores o encargados de negocios especializados   
+- Ocupación: Dueños, administradores o encargados de negocios especializados.   
 
 **Aspectos Geográficos**  
 - Nacionalidad: Peruana.  
-- Zona Geográfica: Lima Moderna
-- Distritos objetivo: Jesús María, Lince, Magdalena del Mar, Pueblo Libre, Surquillo y San Miguel
+- Zona Geográfica: Lima Moderna.
+- Distritos objetivo: Jesús María, Lince, Magdalena del Mar, Pueblo Libre, Surquillo y San Miguel.
 
 **Aspectos Psicográficos**  
 - Dolor Principal: Tienen productos con alta demanda e interés creciente, pero carecen de visibilidad hiperlocal y herramientas accesibles para conectar con consumidores cercanos en el momento exacto de compra.
@@ -369,21 +369,25 @@ Con un **diseño responsive** que se adapta a cualquier dispositivo, **GeoPS Lab
 
 - Nuestra Solución: GeoPS les ofrece una plataforma web donde pueden promocionar productos asiáticos, publicar ofertas en tiempo real, aparecer en búsquedas geolocalizadas y conectar con consumidores cercanos interesados en este tipo de productos.
 
-**Segmento Objetivo #2: Consumidores de ofertas locales**
+**Segmento Objetivo #2: Consumidores urbanos interesados en productos orientales/asiáticos**
 
 **Aspectos Demográficos**  
 - Sexo: Todos los géneros.  
 - Edad: 18 a 45 años.  
 - Nivel Socioeconómico: Medio y medio–alto (jóvenes profesionales, estudiantes, familias).  
+- Ocupación: Estudiantes, jóvenes profesionales y consumidores digitales.
 
 **Aspectos Geográficos**  
 - Nacionalidad: Peruana.  
-- Zona Geográfica: Áreas urbanas con alta concentración de comercios.  
+- Zona Geográfica: Lima Moderna.
+- Distritos objetivo: Jesús María, Lince, Magdalena del Mar, Pueblo Libre, Surquillo y San Miguel.
 
 **Aspectos Psicográficos**  
-- Dolor Principal: Dificultad para encontrar promociones relevantes y confiables en el momento de compra.  
-- Objetividad: Consumidores que buscan ahorrar tiempo y dinero accediendo a ofertas locales actualizadas.  
-- Nuestra Solución: Proveer una plataforma web con notificaciones personalizadas, mapa interactivo y reseñas verificadas para facilitar el descubrimiento de promociones cercanas.  
+- Dolor Principal: Descubren productos orientales en redes sociales o por recomendación, pero no saben dónde encontrarlos cerca, si están disponibles o si realmente valen la pena.
+
+- Objetividad: Descubrir productos asiáticos auténticos, tiendas cercanas y promociones relevantes de manera rápida, confiable y centralizada.
+
+- Nuestra Solución: GeoPS les permite descubrir productos orientales cercanos, explorar tiendas especializadas, recibir promociones relevantes y encontrar productos auténticos en tiempo real desde una sola plataforma.
 
 ---
 
