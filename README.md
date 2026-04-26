@@ -349,7 +349,7 @@ Con un **diseño responsive** que se adapta a cualquier dispositivo, **GeoPS Lab
   *Lean UX Canvas — GeoPS*
 
   <div align="center">
-      <img src="resources/imgs/chapter-i/Lean_UX_Canvas.jpg" alt="Lean UX Canvas GeoPS" width="600">
+      <img src="resources/imgs/chapter-i/Lean_UX_Canvas.png" alt="Lean UX Canvas GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia.
