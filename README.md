@@ -318,25 +318,30 @@ Con un **diseño responsive** que se adapta a cualquier dispositivo, **GeoPS Lab
 
   ##### 1.2.2.3. Lean UX Hypothesis Statements
 
-  - **Si implementamos un sistema de notificaciones web push** para informar a los consumidores sobre ofertas cercanas y relevantes,  
-  **entonces** observaremos que los usuarios interactúan con mayor frecuencia con la plataforma y visitan más negocios locales,  
-  **porque asumimos** que los consumidores valoran información inmediata y contextual para decidir sus compras,  
-  **mediremos** la tasa de apertura de notificaciones, clics en ofertas y visitas a negocios registrados.  
+  - **Si implementamos una plataforma de descubrimiento geolocalizado** que permita a los usuarios encontrar productos orientales/asiáticos cercanos según su ubicación,
+**entonces** observaremos que los consumidores descubrirán tiendas y productos de interés con mayor rapidez y frecuencia,
+**porque asumimos** que los usuarios valoran encontrar productos auténticos y difíciles de conseguir de forma inmediata, cercana y centralizada,
+**mediremos** el tiempo promedio de descubrimiento, cantidad de búsquedas realizadas por usuario y número de clics en productos o tiendas cercanas.
 
-  - **Si ofrecemos a las PyMEs un panel web intuitivo** para crear y gestionar campañas con segmentación por ubicación y categoría,  
-  **entonces** aumentará la efectividad de sus campañas y mejorará el retorno de inversión,  
-  **porque asumimos** que la simplicidad y la personalización harán más accesible el marketing digital,  
-  **mediremos** el CTR (Click Through Rate), conversiones registradas y ROI de campañas creadas en la plataforma.  
+  - **Si ofrecemos a los consumidores información clara y verificada** sobre productos asiáticos, incluyendo precio, disponibilidad, ubicación y autenticidad,
+**entonces** aumentará la confianza del usuario al explorar productos y tiendas dentro de la plataforma,
+**porque asumimos** que los consumidores desconfían de publicaciones ambiguas o desactualizadas y prefieren información transparente antes de decidir una compra,
+**mediremos** la tasa de interacción con productos verificados, tiempo de permanencia en fichas de producto y porcentaje de consultas realizadas sobre tiendas verificadas.
 
-  - **Si incluimos un sistema de reseñas y valoraciones verificadas** por parte de los consumidores,  
-  **entonces** aumentará la confianza del usuario en las ofertas publicadas y la reputación online de los negocios,  
-  **porque asumimos** que los usuarios confían más en experiencias de otros compradores que en anuncios directos,  
-  **mediremos** el número de reseñas publicadas, la calificación promedio de negocios y el impacto en la interacción con ofertas.  
+  - **Si ofrecemos a los negocios especializados un panel web intuitivo** para registrar productos, publicar promociones y destacar novedades en tiempo real,
+  **entonces** aumentará la frecuencia con la que los negocios actualizan su catálogo y promociones dentro de GeoPS,
+**porque asumimos** que una herramienta simple y rápida reducirá la dependencia exclusiva de redes sociales y facilitará la promoción digital de productos especializados,
+**mediremos** la frecuencia de publicación de productos, número de promociones activas por negocio y tasa de actualización semanal del catálogo.  
 
-  - **Si integramos un mapa interactivo** con la ubicación de los negocios afiliados y la distancia desde el usuario,  
-  **entonces** facilitaremos la decisión de visitar un local cercano,  
-  **porque asumimos** que la ubicación y la conveniencia influyen directamente en la elección de compra,  
-  **mediremos** el número de búsquedas realizadas en el mapa, clics en rutas sugeridas y visitas a negocios asociados.
+  - **Si integramos un mapa interactivo** con tiendas especializadas en productos asiáticos y la distancia respecto al usuario,
+**entonces** facilitaremos la decisión de visitar una tienda física cercana,
+**porque asumimos** que la proximidad y la conveniencia son factores clave cuando los consumidores buscan productos específicos en el momento,
+**mediremos** la cantidad de interacciones con el mapa, clics en “cómo llegar” y número de visitas a perfiles de tiendas desde la vista geolocalizada.
+
+  - **Si incorporamos un sistema de reseñas y valoraciones verificadas** sobre tiendas y productos orientales,
+**entonces** aumentará la percepción de confianza y credibilidad dentro de la plataforma,
+**porque asumimos** que los consumidores confían más en la experiencia de otros compradores al momento de probar productos importados o poco conocidos,
+**mediremos** el número de reseñas publicadas, calificación promedio por tienda, tasa de interacción con reseñas y su impacto en la visualización de productos.
   
   ##### 1.2.2.4. Lean UX Canvas
 
