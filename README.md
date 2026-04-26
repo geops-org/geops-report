@@ -198,15 +198,17 @@ A través de una plataforma web accesible desde cualquier navegador, los usuario
 
 ### 1.2. Solution Profile
 
-**GeoPS Labs (Geo Publicity Service)** es una plataforma web que conecta comercios locales con consumidores mediante **geolocalización inteligente** y **notificaciones web push**, ofreciendo promociones y publicidad relevante en tiempo real.  
+  **GeoPS Labs (Geo Publicity Service)** es una plataforma web que centraliza comercios de productos asiáticos y orientales (Corea, Japón y China) con consumidores en Lima Moderna mediante geolocalización inteligente y notificaciones web push, ofreciendo promociones y publicidad relevante en tiempo real.
 
-La solución permite a los negocios gestionar **campañas digitales** de manera sencilla y accesible desde un navegador, mientras que los usuarios disfrutan de una **experiencia rápida y personalizada** sin necesidad de descargar aplicaciones.  
+  La solución permite a los negocios especializados gestionar campañas digitales de manera sencilla y accesible desde un navegador, mientras que los usuarios disfrutan de una experiencia rápida y personalizada para localizar artículos de gastronomía o cosmética oriental sin necesidad de descargar aplicaciones adicionales.
 
-Con un **diseño responsive** que se adapta a cualquier dispositivo, **GeoPS Labs** busca:  
+  Con un diseño responsive que se adapta a cualquier dispositivo, **GeoPS Labs** busca:
 
-- Mejorar la experiencia de compra diaria.  
-- Impulsar la **digitalización de las PyMEs**.  
-- Fortalecer la conexión entre negocios y clientes en el **entorno urbano peruano**.  
+  - Optimizar la búsqueda de productos asiáticos específicos y de tendencia en zonas de conveniencia.
+
+  - Impulsar la digitalización de las PyMEs dedicadas al rubro oriental en el mercado peruano.
+
+  - Fortalecer la conexión entre negocios especializados y clientes interesados en la cultura asiática dentro de Lima Moderna. 
 
   #### 1.2.1 Antecedentes y problemática
   Las pequeñas y medianas empresas (PyMEs) en el Perú, que representan más del 99% del sector empresarial, enfrentan barreras para implementar marketing digital debido a costos, falta de conocimiento y complejidad tecnológica, lo que las mantiene dependientes de métodos tradicionales poco medibles (PCM, 2023). A la par, los consumidores urbanos muestran fatiga publicitaria, pues más del 60% desconfía de anuncios genéricos y exige mensajes relevantes y auténticos (Reyes et al., 2021). Aunque existen plataformas como Groupon o Tiendeo, estas suelen centrarse en cupones generales sin personalización profunda, dejando un vacío en la conexión real entre negocios y clientes locales. Este problema se intensifica considerando que los peruanos pasan más de 5 horas diarias en internet (Loza, 2024), pero carecen de un espacio centralizado para acceder a ofertas verificadas. Así, mientras las PyMEs pierden oportunidades por no poder digitalizarse con eficiencia (OECD, 2020), los consumidores ignoran promociones valiosas por falta de confianza y saturación. GeoPS Web busca cerrar esta brecha ofreciendo una plataforma responsiva y accesible desde cualquier navegador, que conecte de manera transparente y personalizada a usuarios y negocios locales.
