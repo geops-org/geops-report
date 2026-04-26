@@ -189,7 +189,7 @@
   <img src="resources/imgs/chapter-i/Santiago.jpg" width="500"><br>
   **Santiago**
 
-  <img src="resources/imgs/chapter-i/Nicolas.jpg" width="500"><br>
+  <img src="resources/imgs/chapter-i/Nicolas.png" width="150"><br>
   **Nicolas**
   
   </div>
