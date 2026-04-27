@@ -3428,6 +3428,26 @@ A continuación se muestran las evidencias de la implementación de la Landing P
   #### 5.2.3. Implemented Frontend-Web Application Evidence
 
 <div align="center">
+  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture1.jpg" width="700">
+</div>
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture2.jpg" width="700">
+</div>
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture3.jpg" width="700">
+</div>
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture4.jpg" width="700">
+</div>
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture5.jpg" width="700">
+</div>
+
+<div align="center">
   <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture6.jpg" width="700">
 </div>
 
