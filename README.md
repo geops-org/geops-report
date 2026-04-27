@@ -3408,65 +3408,94 @@ A continuación se muestran las evidencias de la implementación de la Landing P
 <div align="center">
   <img src="resources/imgs/LandingPage/LandingPagePicture1.jpg" width="700">
 </div>
+
 En esta sección la aplicación presenta su propuesta de valor como un radar hiperlocal en Lima, ofreciendo un acceso directo para que los usuarios creen su cuenta y exploren el ecosistema.
 
 <div align="center">
   <img src="resources/imgs/LandingPage/LandingPagePicture2.jpg" width="700">
 </div>
+
 Aquí la plataforma detalla su proceso operativo basado en la búsqueda de productos, la geolocalización exacta de stands y la verificación de inventario real en tiendas aliadas.
+
 <div align="center">
   <img src="resources/imgs/LandingPage/LandingPagePicture3.jpg" width="700">
 </div>
+
 La interfaz permite elegir entre perfiles de consumidor o negocio, resaltando funciones para comparar precios y navegar con precisión dentro de las galerías más importantes de la ciudad.
+
 <div align="center">
   <img src="resources/imgs/LandingPage/LandingPagePicture4.jpg" width="700">
 </div>
+
 La Landing Page utiliza este espacio para mostrar su funcionamiento interno mediante videos demostrativos y presentar al equipo responsable de la transformación digital de los comercios asiáticos.
+
 <div align="center">
   <img src="resources/imgs/LandingPage/LandingPagePicture5.jpg" width="700">
 </div>
+
 En esta ventana final, el sistema resuelve dudas frecuentes de los usuarios sobre costos y beneficios, proporcionando además los accesos para el registro formal de nuevos proveedores.
+
   #### 5.2.3. Implemented Frontend-Web Application Evidence
 
 <div align="center">
   <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture1.jpg" width="700">
 </div>
 
+La aplicación muestra el formulario de inicio de sesión donde el usuario ingresa sus credenciales para acceder al panel de administración de su negocio.
+
 <div align="center">
   <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture2.jpg" width="700">
 </div>
+
+En esta ventana, la plataforma permite el registro de nuevos usuarios recolectando datos básicos y definiendo el tipo de perfil, ya sea como consumidor o proveedor.
 
 <div align="center">
   <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture3.jpg" width="700">
 </div>
 
+El sistema presenta un tablero de resumen con métricas clave como impresiones, clics y CTR promedio para monitorear el rendimiento general de las campañas activas.
+
 <div align="center">
   <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture4.jpg" width="700">
 </div>
+
+Aquí la interfaz organiza las campañas por estados (activas, pausadas o finalizadas), permitiendo al administrador editar, pausar o finalizar cada anuncio de forma individual.
 
 <div align="center">
   <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture5.jpg" width="700">
 </div>
 
+La plataforma ofrece un formulario para crear nuevas campañas publicitarias, donde se define el nombre, descripción, fechas de vigencia y el presupuesto estimado en soles.
+
 <div align="center">
   <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture6.jpg" width="700">
 </div>
+
+En esta sección, la app genera reportes detallados que se pueden filtrar y exportar en formato JSON, mostrando un resumen general de la inversión y el impacto alcanzado.
 
 <div align="center">
   <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture7.jpg" width="700">
 </div>
 
+La ventana de comentarios permite al dueño del negocio visualizar la calificación promedio y leer las reseñas de los clientes para gestionar la reputación del establecimiento.
+
 <div align="center">
   <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture8.jpg" width="700">
 </div>
+
+La aplicación cuenta con un centro de ayuda integrado que resuelve dudas frecuentes sobre la creación de campañas, gestión de métricas y estados de los anuncios.
 
 <div align="center">
   <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture9.jpg" width="700">
 </div>
 
+Aquí se muestra el perfil del negocio con información de contacto, el plan actual de suscripción y un resumen de ofertas guardadas o ubicaciones frecuentes.
+
 <div align="center">
   <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture10.jpg" width="700">
 </div>
+
+La interfaz de configuración permite editar detalles críticos del negocio como el RUC, tipo de establecimiento (ej. Chifa), dirección física, horarios de atención y enlaces web.
 
   #### 5.2.4. Implemented RESTful API and/or Serverless Backend Evidence
 
