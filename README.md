@@ -3469,6 +3469,26 @@ A continuación se muestran las evidencias de la implementación de la Landing P
 
   #### 5.2.4. Implemented RESTful API and/or Serverless Backend Evidence
 
+<div align="center">
+  <img src="resources/imgs/Chapter5/Backend/BackendPicture1.jpg" width="700">
+</div>
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/Backend/BackendPicture2.jpg" width="700">
+</div>
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/Backend/BackendPicture3.jpg" width="700">
+</div>
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/Backend/BackendPicture4.jpg" width="700">
+</div>
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/Backend/BackendPicture5.jpg" width="700">
+</div>
+
   #### 5.2.5. RESTful API documentation
 
   #### 5.2.6. Team Collaboration Insights
