@@ -3402,6 +3402,16 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
   #### 5.2.1. Sprint Backlogs
   
   #### 5.2.2. Implemented Landing Page Evidence
+
+![Landing Page Picture 1](imgs/LandingPagePicture1.jpg)
+
+![Landing Page Picture 2](imgs/LandingPagePicture2.jpg)
+
+![Landing Page Picture 3](imgs/LandingPagePicture3.jpg)
+
+![Landing Page Picture 4](imgs/LandingPagePicture4.jpg)
+
+![Landing Page Picture 5](imgs/LandingPagePicture5.jpg)
   
   #### 5.2.3. Implemented Frontend-Web Application Evidence
 
