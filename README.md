@@ -50,7 +50,7 @@
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :---- | :---- | :---- | :---- |
-| TB1 | 27/04/2026 | Barba Estrada, Bryan Eduardo <br> Cárdenas Concha, Santiago Iván <br> Diestra Zambrano Adriana Maria <br> Valverde Portuguez, Natalia Ximena <br> Salazar Caballero, Alvaro Fabrizzio <br> Choy Robles, Vanessa May Lang <br> Vera Nuñez, Nicolas Alejandro | En la primera entrega del informe de nuestro proyecto, hemos realizado los primeros 5 capítulos del informe y también entregamos la primera versión del landing page de GeoPS. |
+| TB1 | 27/04/2026 | Barba Estrada, Bryan Eduardo <br> Cárdenas Concha, Santiago Iván <br> Diestra Zambrano Adriana Maria <br> Valverde Portuguez, Natalia Ximena <br> Salazar Caballero, Alvaro Fabrizzio <br> Choy Robles, Vanessa May Lang | En la primera entrega del informe de nuestro proyecto, hemos realizado los primeros 5 capítulos del informe y también entregamos la primera versión del landing page de GeoPS. |
 
 ---
 
@@ -163,18 +163,16 @@
 
 ### 1.1. Startup Profile
   #### 1.1.1. Descripcion del Startup
-
-**GeoPS Labs** es una startup enfocada en el desarrollo de soluciones tecnológicas que centralizan la oferta de productos asiáticos y orientales en la zona de Lima Moderna, conectando este creciente mercado de cultura oriental (gastronomía, cosmética e insumos coreanos, japoneses y chinos) con usuarios mediante publicidad hiperlocalizada basada en análisis de geolocalización inteligente.
-
-A través de una plataforma web accesible desde cualquier navegador, los usuarios pueden visualizar ofertas de insumos, alimentos y artículos orientales en tiempo real, mientras que los comercios especializados acceden a un panel de gestión de campañas con herramientas de marketing basadas en proximidad y perfil de movimiento. Esto permite aumentar la conversión de sus estrategias publicitarias con un menor costo y mayor control de resultados en un mercado de nicho. **GeoPS Labs** apuesta por combinar tecnología, datos y experiencia de usuario para generar beneficios reales, priorizando siempre la privacidad y la relevancia en la entrega de contenidos.
+  
+  **GeoPS Labs** es una startup enfocada en el desarrollo de soluciones tecnológicas que conectan comercios locales con usuarios mediante publicidad **hiperlocalizada** basada en análisis de **geolocalización inteligente**. A través de una **plataforma web accesible** desde cualquier navegador, los usuarios pueden visualizar ofertas en tiempo real, mientras que los comercios acceden a un **panel de gestión de campañas** con herramientas de marketing basadas en proximidad y perfil de   movimiento. Esto permite aumentar la conversión de sus estrategias publicitarias con un menor costo y mayor control de resultados. **GeoPS Labs** apuesta por combinar **tecnología, datos y experiencia de usuario** para generar beneficios reales, priorizando siempre la **privacidad** y la **relevancia** en la entrega de contenidos.
   
   **Misión**
 
-  Conectar personas y comercios de productos orientales en Lima Moderna de manera inteligente y relevante, facilitando el acceso a la cultura y productos de origen asiático mediante tecnología web de geolocalización respetuosa y personalizada.
+  Conectar personas y comercios de manera inteligente y relevante, mejorando la experiencia de compra diaria mediante tecnología web de geolocalización respetuosa y personalizada.
   
   **Visión**
 
-  Ser la plataforma web líder en la centralización y publicidad hiperlocalizada de productos asiáticos en Latinoamérica, revolucionando la manera en que los comercios especializados y usuarios interactúan en el entorno digital urbano.
+  Ser la **plataforma web líder en publicidad hiperlocalizada en Latinoamérica**, revolucionando la manera en que los comercios y usuarios interactúan en el entorno digital urbano.
   
   #### 1.1.2. Perfiles de Integrantes del equipo
 
@@ -190,91 +188,77 @@ A través de una plataforma web accesible desde cualquier navegador, los usuario
   
   <img src="resources/imgs/chapter-i/Santiago.jpg" width="500"><br>
   **Santiago**
-
-  <img src="resources/imgs/chapter-i/Nicolas.png" width="150"><br>
-  **Nicolas**
   
   </div>
 
 ### 1.2. Solution Profile
 
-  **GeoPS Labs (Geo Publicity Service)** es una plataforma web que centraliza comercios de productos asiáticos y orientales (Corea, Japón y China) con consumidores en Lima Moderna mediante geolocalización inteligente y notificaciones web push, ofreciendo promociones y publicidad relevante en tiempo real.
+**GeoPS Labs (Geo Publicity Service)** es una plataforma web que conecta comercios locales con consumidores mediante **geolocalización inteligente** y **notificaciones web push**, ofreciendo promociones y publicidad relevante en tiempo real.  
 
-  La solución permite a los negocios especializados gestionar campañas digitales de manera sencilla y accesible desde un navegador, mientras que los usuarios disfrutan de una experiencia rápida y personalizada para localizar artículos de gastronomía o cosmética oriental sin necesidad de descargar aplicaciones adicionales.
+La solución permite a los negocios gestionar **campañas digitales** de manera sencilla y accesible desde un navegador, mientras que los usuarios disfrutan de una **experiencia rápida y personalizada** sin necesidad de descargar aplicaciones.  
 
-  Con un diseño responsive que se adapta a cualquier dispositivo, **GeoPS Labs** busca:
+Con un **diseño responsive** que se adapta a cualquier dispositivo, **GeoPS Labs** busca:  
 
-  - Optimizar la búsqueda de productos asiáticos específicos y de tendencia en zonas de conveniencia.
-
-  - Impulsar la digitalización de las PyMEs dedicadas al rubro oriental en el mercado peruano.
-
-  - Fortalecer la conexión entre negocios especializados y clientes interesados en la cultura asiática dentro de Lima Moderna. 
+- Mejorar la experiencia de compra diaria.  
+- Impulsar la **digitalización de las PyMEs**.  
+- Fortalecer la conexión entre negocios y clientes en el **entorno urbano peruano**.  
 
   #### 1.2.1 Antecedentes y problemática
-  En el Perú, las PyMEs del sector de importación y comercialización de productos asiáticos enfrentan barreras críticas para digitalizarse, dependiendo aún de métodos tradicionales o redes sociales saturadas donde el mensaje se pierde (PCM, 2023). En Lima Moderna, el interés por la gastronomía, cosmética e insumos orientales ha crecido exponencialmente, logrando que la penetración de marcas asiáticas en los hogares pase del 9.3% al 24.6% en solo tres años (Kantar, 2025). Sin embargo, los consumidores experimentan fatiga publicitaria, desconfiando de anuncios genéricos, pese a que el 83% de peruanos declara preferir activamente estos productos (IPSOS, 2025).
-
-  Aunque existen apps de delivery, estas cobran comisiones de hasta el 30%, lo que asfixia el margen de las PyMEs y deja un vacío para que los comercios locales conecten directamente con los vecinos. Con peruanos pasando más de 5 horas diarias conectados (Loza, 2024), existe una desconexión: el cliente quiere el producto asiático de tendencia que está cerca, pero no tiene una herramienta eficiente para localizarlo. GeoPS Labs cierra esta brecha centralizando la oferta oriental en una plataforma web responsiva que elimina los altos costos de intermediación.
-
+  Las pequeñas y medianas empresas (PyMEs) en el Perú, que representan más del 99% del sector empresarial, enfrentan barreras para implementar marketing digital debido a costos, falta de conocimiento y complejidad tecnológica, lo que las mantiene dependientes de métodos tradicionales poco medibles (PCM, 2023). A la par, los consumidores urbanos muestran fatiga publicitaria, pues más del 60% desconfía de anuncios genéricos y exige mensajes relevantes y auténticos (Reyes et al., 2021). Aunque existen plataformas como Groupon o Tiendeo, estas suelen centrarse en cupones generales sin personalización profunda, dejando un vacío en la conexión real entre negocios y clientes locales. Este problema se intensifica considerando que los peruanos pasan más de 5 horas diarias en internet (Loza, 2024), pero carecen de un espacio centralizado para acceder a ofertas verificadas. Así, mientras las PyMEs pierden oportunidades por no poder digitalizarse con eficiencia (OECD, 2020), los consumidores ignoran promociones valiosas por falta de confianza y saturación. GeoPS Web busca cerrar esta brecha ofreciendo una plataforma responsiva y accesible desde cualquier navegador, que conecte de manera transparente y personalizada a usuarios y negocios locales.
 
   ###### 1.2.1.1. What
   ###### 1.2.1.1.1. ¿Cuál es el problema?
-  Las PyMEs de productos asiáticos en Lima enfrentan altos costos para pautar en grandes plataformas y falta de herramientas para medir cuántos usuarios de su entorno cercano realmente ingresan a su establecimiento físico. Según el BID (2020), el 74% de las micro y pequeñas empresas carece de capacidades para adoptar herramientas digitales competitivas. A esto se suma que el 64% de los usuarios considera la publicidad online irrelevante (Nielsen, 2021), ignorando ofertas de productos orientales por no considerarlas oportunas o geográficamente accesibles.
+  Las PyMEs latinoamericanas enfrentan barreras estructurales para implementar estrategias de marketing digital: altos costos de inversión, falta de conocimiento técnico y dificultad para medir resultados. El Banco Interamericano de Desarrollo (BID, 2020) reporta que el 74% de las micro y pequeñas empresas de la región carece de capacidades para adoptar herramientas digitales que mejoren su competitividad. Por otro lado, los consumidores manifiestan una creciente fatiga publicitaria: un estudio de Nielsen (2021) indica que el 64% de los usuarios en América Latina considera los anuncios en línea excesivos o irrelevantes, lo que genera desconfianza y menor efectividad en la comunicación comercial.
 
   ###### 1.2.1.1.2. ¿Cuál es la relación con la persona en cuestión?
-  Para el consumidor de Lima Moderna, la problemática se traduce en frustración: recibe publicidad de productos asiáticos genéricos que no puede adquirir de inmediato o que requieren envíos costosos, perdiendo oportunidades de ahorro en su zona. Para el comerciante, implica ineficiencia: invierte en publicidad sin métricas de proximidad claras, limitando su capacidad de competir con grandes importadoras que dominan el entorno digital (World Bank, 2019).
+  Para los consumidores urbanos, la problemática se traduce en frustración: reciben publicidad genérica que no responde a su contexto ni necesidades inmediatas, lo que significa pérdida de oportunidades de ahorro y tiempo. Para las PyMEs, implica ineficiencia: continúan invirtiendo en publicidad tradicional o redes sociales sin métricas claras, lo que reduce su retorno de inversión y limita su capacidad de competir con grandes empresas (World Bank, 2019). Ante este panorama, GeoPS Web surge como una solución que, a través de una plataforma accesible desde cualquier navegador, conecta directamente a negocios locales con usuarios mediante publicidad hiperlocal y ofertas contextualizadas en tiempo real.
 
   ###### 1.2.1.2. When
   ###### 1.2.1.2.1. ¿Cuándo sucede el problema?
-  El problema es crítico en el momento de la intención de compra inmediata, cuando el usuario busca un insumo o producto asiático específico y la publicidad que recibe no es contextual. Según el Informe Digital 2024 (Kemp, 2024), aunque los peruanos pasan más de 5 horas conectados, la saturación de anuncios masivos disminuye la utilidad de la información en el momento clave de decisión.
+  El problema se hace más evidente en los momentos de decisión de compra, cuando los consumidores buscan información sobre productos o servicios cercanos y la publicidad que reciben no es contextual ni personalizada. Según el Informe Digital 2023 de DataReportal (Kemp, 2023), los usuarios peruanos pasan en promedio 5 horas y 28 minutos al día conectados a internet, gran parte de ese tiempo navegando en buscadores, redes sociales y plataformas de comercio electrónico. Sin embargo, en esos momentos clave, la publicidad que encuentran suele ser masiva y poco segmentada, lo que disminuye su utilidad y su capacidad de influir en la decisión de compra.
 
   ###### 1.2.1.2.2. ¿Cuándo utiliza el cliente el producto?
-  Los consumidores pueden acceder a GeoPS Web en cualquier momento de su jornada digital, ya sea desde dispositivos de escritorio en sus hogares o mediante smartphones. A diferencia de las aplicaciones móviles que requieren instalación, esta solución web elimina fricciones y permite un acceso inmediato, especialmente en instantes donde la proximidad y la oportunidad de adquirir productos asiáticos son factores decisivos. Esto resulta clave porque, de acuerdo con Think with Google (2019), el 76% de las personas que buscan algo cercano en su dispositivo visitan un negocio relacionado en el plazo de 24 horas, y el 28% de esas búsquedas resultan en una compra. Con GeoPS Web, se busca que estas oportunidades de mercado no se pierdan por falta de visibilidad o relevancia geográfica de los comercios especializados.
+  Los consumidores pueden acceder a GeoPS Web en cualquier momento de su jornada digital, ya sea desde la computadora en el trabajo, la laptop en casa o el smartphone en movilidad. A diferencia de las aplicaciones móviles que requieren instalación, la versión web elimina fricciones y permite un acceso inmediato, especialmente en instantes donde la proximidad y la oportunidad son factores decisivos. Esto resulta clave porque, de acuerdo con Think with Google (2019), el 76% de las personas que buscan algo cercano en su dispositivo visitan un negocio relacionado en el plazo de 24 horas, y el 28% de esas búsquedas resultan en una compra. Con GeoPS Web, se busca que esas oportunidades no se pierdan por falta de visibilidad o relevancia.
 
   ###### 1.2.1.3. Where
   ###### 1.2.1.3.1. ¿Dónde está el cliente cuando usa el producto?
-  El cliente se encuentra principalmente en los distritos que conforman Lima Moderna (San Borja, Surco, Miraflores, San Isidro, Jesús María, Lince, Magdalena y Pueblo Libre), navegando desde su smartphone o laptop. La geolocalización habilitada en los navegadores modernos permite que la experiencia de GeoPS Web sea fluida y precisa, detectando la ubicación del usuario en tiempo real para mostrar ofertas exclusivas de tiendas de productos orientales y asiáticos situadas a pocos metros de su posición actual.
+  El cliente puede acceder a GeoPS Web desde cualquier lugar con conexión a internet: en casa, en el trabajo o en movilidad desde un dispositivo con navegador. Gracias a la geolocalización habilitada en navegadores modernos, la plataforma identifica la ubicación en tiempo real y muestra ofertas relevantes al contexto inmediato. Este acceso multiplataforma permite que la experiencia sea consistente sin importar si se navega desde una computadora, una laptop o un teléfono. Según el Pew Research Center (2021), más del 90% de usuarios en economías emergentes usan varios dispositivos para conectarse a internet, lo que refuerza la necesidad de soluciones responsivas como GeoPS Web.
 
   ###### 1.2.1.3.2. ¿A dónde se dirige?
-  El usuario suele estar en trayectos hacia su hogar, oficina o centros de estudio. GeoPS Web aprovecha estos desplazamientos para recomendar promociones en comercios especializados que se encuentran en su ruta habitual dentro de los distritos de la zona moderna.
+  Generalmente, el usuario se desplaza hacia lugares de trabajo, estudio, compras u ocio, y es en esos trayectos donde las ofertas cercanas adquieren mayor valor. GeoPS Web aprovecha estos desplazamientos para recomendar promociones en comercios ubicados a lo largo de las rutas habituales o en zonas de tránsito frecuente. Este enfoque se justifica porque, de acuerdo con Think with Google (2019), el 76% de las personas que realizan búsquedas locales en su dispositivo visitan un negocio relacionado en las siguientes 24 horas, lo que demuestra la relevancia de la publicidad contextualizada por proximidad.
 
   ###### 1.2.1.3.3. ¿Dónde surge el problema?
-  El problema surge en los entornos comerciales de Lima Moderna, donde la alta densidad de negocios asiáticos carece de un canal digital centralizado que organice su oferta para el público local. Según el Banco Mundial (2019), esta desconexión tecnológica limita la competitividad de las PyMEs y genera pérdidas al no conectar el stock de nicho con consumidores cercanos. GeoPS Labs resuelve esta brecha mediante publicidad hiperlocal desde el navegador, vinculando la oferta especializada con la demanda urbana en tiempo real.
+  La problemática surge principalmente en entornos urbanos, donde existe una amplia variedad de comercios pero los consumidores no cuentan con un canal digital centralizado que organice y personalice la información. Los usuarios suelen recibir anuncios masivos y dispersos, mientras que las PyMEs carecen de herramientas accesibles para llegar a clientes cercanos. Según el Banco Mundial (2019), esta desconexión limita la competitividad de los pequeños negocios en América Latina y genera pérdidas tanto para comerciantes como para consumidores que buscan opciones relevantes. GeoPS Web busca resolver esta brecha mediante publicidad hiperlocal y transparente desde el navegador.
 
   ###### 1.2.1.4. Who
   ###### 1.2.1.4.1. ¿Quiénes están involucrados?
-  En el ecosistema de GeoPS Web intervienen principalmente tres actores clave que dan vida a la plataforma:
-
-  - Consumidores de Cultura Asiática: Usuarios residentes o visitantes de Lima Moderna que buscan productos auténticos de tendencia (K-Beauty, J-Food, snacks coreanos, cosmética japonesa, etc.) de forma rápida, verificada y sin pagar sobrecostos por envíos a larga distancia.
-
-  - PyMEs Orientales Especializadas: Pequeños y medianos comercios (markets, boutiques de skincare o restaurantes) que necesitan digitalizar su oferta de nicho para captar al público de su entorno geográfico inmediato de manera eficiente.
-
-  - Administradores de GeoPS Labs: Actúan como el facilitador tecnológico responsable de garantizar la seguridad de los datos, la usabilidad de la plataforma web y la transparencia en la entrega de las notificaciones de proximidad.
+  En el ecosistema de GeoPS Web intervienen principalmente tres actores: los consumidores urbanos, que buscan ofertas relevantes y verificadas; las PyMEs locales, que requieren herramientas accesibles para digitalizar su publicidad; y los administradores de la plataforma, responsables de garantizar la seguridad, usabilidad y transparencia del servicio. Según el Banco Interamericano de Desarrollo (2020), la digitalización de las PyMEs es un factor clave para el crecimiento económico regional, pero necesita de intermediarios tecnológicos que faciliten el acceso. GeoPS Web cumple este rol de puente al conectar intereses complementarios.
 
   ###### 1.2.1.4.2. ¿A quiénes les sucede el problema?
-  El problema afecta a los consumidores de Lima Moderna, quienes debido a la fatiga publicitaria y la falta de información centralizada, pierden oportunidades de ahorro en productos asiáticos cercanos, y a las PyMEs del sector oriental, que quedan invisibilizadas frente a grandes cadenas al no poder costear marketing digital ni altas comisiones de delivery. Según Nielsen (2021), esta desconexión se refleja en que el 64% de los usuarios considera irrelevante la publicidad actual, mientras que el Banco Mundial (2019) advierte que esta falta de herramientas de proximidad limita severamente la competitividad de los pequeños negocios locales.
+  El problema afecta directamente a los consumidores que reciben publicidad genérica e irrelevante, lo que genera desconfianza y pérdida de oportunidades de ahorro. También impacta en las PyMEs, que no logran competir en igualdad de condiciones frente a grandes empresas con mayores recursos en marketing digital. Un estudio de Nielsen (2021) reveló que el 64% de los usuarios en Latinoamérica considera que los anuncios digitales no se ajustan a sus necesidades, lo que refuerza la brecha entre lo que las PyMEs ofrecen y lo que los consumidores esperan encontrar.
   
   ###### 1.2.1.4.3. ¿Quién lo utilizará?
-  La plataforma será utilizada por consumidores entusiastas de la cultura asiática en Lima Moderna, quienes buscan acceso inmediato a promociones de K-Beauty o J-Food sin descargar aplicaciones adicionales, y por dueños de PyMEs orientales, que requieren un panel sencillo para autogestionar su publicidad hiperlocal sin depender de intermediarios costosos. Este formato de aplicación web responde a la tendencia marcada por Statista (2022), donde más del 70% de los usuarios prefieren soluciones digitales de acceso directo y sin procesos complejos de instalación, consolidando a GeoPS Web como una herramienta ágil para conectar la oferta especializada con la demanda local en tiempo real.
+  La plataforma será usada por dos públicos principales: los usuarios finales, que accederán desde el navegador para descubrir promociones locales personalizadas en tiempo real, y las PyMEs afiliadas, que utilizarán el panel web para crear, gestionar y medir campañas de manera sencilla. A diferencia de una app móvil que requiere instalación, el formato web permite un acceso inmediato y multiplataforma, eliminando barreras técnicas. De acuerdo con Statista (2022), más del 70% de los consumidores valoran soluciones digitales fáciles de usar y sin procesos complejos de instalación, lo que refuerza el valor de GeoPS como aplicación web responsiva.
   
   ###### 1.2.1.5. Why
   ###### 1.2.1.5.1. ¿Cuál es la causa del problema?
-  La causa principal radica en una brecha estructural de acceso tecnológico y económico: las PyMEs de productos asiáticos carecen de los recursos financieros y conocimientos técnicos para competir en canales digitales tradicionales o costear comisiones de delivery, lo que las mantiene atadas a métodos de difusión ineficientes (BID, 2020). Por otro lado, para los consumidores, la saturación de publicidad genérica y la falta de una plataforma centralizada que organice la oferta por proximidad generan desconfianza y fatiga publicitaria (Nielsen, 2021). Esta combinación de factores, sumada a la limitada adopción de herramientas de geolocalización por parte de los pequeños comercios, crea una desconexión donde la oferta especializada no logra alcanzar al público interesado que se encuentra en su entorno inmediato (World Bank, 2019).
+  Las causas se dividen entre consumidores y negocios. En el caso de las PyMEs, la principal barrera es la falta de recursos financieros, conocimientos técnicos y personal especializado para ejecutar campañas digitales, lo que las mantiene atadas a métodos tradicionales poco medibles (BID, 2020). Para los usuarios, la saturación de publicidad genérica y la baja credibilidad de los anuncios en línea generan desconfianza y reducen el interés en interactuar con ofertas (Nielsen, 2021). A nivel estructural, el Banco Mundial (2019) identifica que la limitada adopción tecnológica en América Latina frena la competitividad de los pequeños negocios frente a grandes cadenas con mayor inversión digital. En conjunto, estas causas alimentan una brecha: comercios que no logran llegar a sus clientes cercanos y consumidores que no encuentran información relevante en el momento oportuno.
 
   ###### 1.2.1.6. How
   ###### 1.2.1.6.1. ¿En qué condiciones los clientes usan nuestro producto?
-  Los usuarios acceden a GeoPS Web desde el navegador en momentos de necesidad inmediata, ya sea para localizar ofertas de productos asiáticos cerca de su posición o al planear una compra de tendencia en Lima Moderna. Bajo estas condiciones, el cliente demanda rapidez, personalización y simplicidad sin fricciones de descarga; mientras tanto, las PyMEs lo utilizan como una herramienta de bajo costo y fácil gestión para visibilizar su stock en tiempo real. Según Think with Google (2019), esta capacidad de respuesta inmediata es decisiva, ya que la mayoría de las búsquedas de proximidad se realizan bajo condiciones de movilidad y resultan en una visita al negocio físico en menos de 24 horas.
+  Los usuarios acceden a GeoPS Web desde navegadores en momentos de necesidad inmediata, cuando buscan ofertas cercanas o planean una compra. Requieren rapidez, personalización y simplicidad, mientras que las PyMEs lo usan en condiciones de bajo costo y facilidad de gestión (Think with Google, 2019).
 
   ###### 1.2.1.6.2. ¿Cómo nos conocieron los compradores?
-  La plataforma se da a conocer estratégicamente mediante redes sociales, motores de búsqueda y marketing de contenidos enfocado en tendencias asiáticas. En el Perú, más del 70% de los usuarios descubre nuevas marcas en línea, principalmente a través de anuncios digitales y recomendaciones en comunidades especializadas (Kemp, 2024). GeoPS Web aprovecha este comportamiento para captar al público de Lima Moderna que ya consume contenido sobre cultura oriental, convirtiendo ese interés digital en visitas presenciales a los comercios locales.
+  La plataforma puede darse a conocer mediante redes sociales, buscadores y marketing de contenidos. En Perú, más del 70% de los usuarios descubre nuevas marcas en línea, principalmente a través de anuncios digitales y recomendaciones (Kemp, 2023).
   
   ###### 1.2.1.6.3. ¿Cómo prefieren los usuarios acceder a nuestro contenido?
-  Los usuarios prefieren la inmediatez de las notificaciones web push combinada con la autonomía de la búsqueda activa dentro de la plataforma. Esta preferencia por la personalización contextual es clave para GeoPS Web, considerando que un 60% de los consumidores latinoamericanos valora que la publicidad sea relevante según su ubicación (Nielsen, 2021).
+  Prefieren una combinación de notificaciones web push (inmediatez) y búsqueda activa dentro del sitio (autonomía). Un 60% de consumidores latinoamericanos valoran la personalización contextual de la publicidad (Nielsen, 2021).
   
   ###### 1.2.1.6.4. ¿Qué llevó a la persona a llegar a esta situación?
-  Los consumidores llegaron a esta situación debido a la saturación de publicidad genérica y la creciente falta de confianza en anuncios que no coinciden con su ubicación real. Por su parte, las PyMEs del sector asiático se enfrentan a la presión de digitalizarse bajo barreras económicas y técnicas que las mantienen invisibilizadas. Según el Banco Mundial (2019), esta desconexión es una consecuencia directa de la falta de herramientas tecnológicas accesibles que permitan a los pequeños comercios competir en igualdad de condiciones en el entorno digital.
+  Los consumidores llegaron aquí por la saturación de publicidad genérica y la falta de confianza en anuncios. Las PyMEs, en cambio, por la presión de digitalizarse y las barreras económicas y técnicas que enfrentan (World Bank, 2019).
   
   ###### 1.2.1.7. How much
-  El impacto de la problemática es considerable: las PyMEs pierden clientes cercanos al no contar con herramientas para medir su alcance, mientras que el BID (2020) estima que la digitalización puede aumentar sus ventas en más de un 30%. Por otro lado, para los consumidores, esto se traduce en una pérdida de ahorro de tiempo y dinero al no acceder a ofertas oportunas. GeoPS Web captura este valor mediante un modelo de proximidad accesible desde el navegador que optimiza la inversión publicitaria y la eficiencia de compra en el distrito.
+  El impacto económico y social de la problemática es considerable. Para las PyMEs, representa pérdidas al no captar clientes cercanos ni medir el retorno de inversión en publicidad. El BID (2020) estima que la digitalización puede aumentar en más de 30% las ventas de pequeñas empresas que adoptan herramientas tecnológicas. Para los consumidores, implica ahorro de tiempo y dinero al acceder a ofertas relevantes en el momento oportuno. GeoPS Web busca capturar ese valor mediante un modelo accesible y medible desde el navegador.
 
   **Figura 1**<br>
   *How much — KPIs objetivo*
@@ -288,76 +272,69 @@ A través de una plataforma web accesible desde cualquier navegador, los usuario
   #### 1.2.2. Lean UX Process
   
   ##### 1.2.2.1. Lean UX Problem Statements
-  - Hemos observado que los consumidores interesados en productos orientales/asiáticos en Lima Moderna descubren constantemente productos atractivos en redes sociales, pero tienen dificultades para encontrar dónde comprarlos cerca, verificar su disponibilidad o identificar tiendas confiables que los ofrezcan.
-  **¿Cómo podríamos ayudar a estos consumidores a descubrir productos asiáticos auténticos, cercanos y disponibles en tiempo real desde una sola plataforma?**
+  - Hemos observado que las PyMEs locales tienen dificultades para llegar a clientes cercanos de manera digital, ya que dependen de publicidad tradicional poco efectiva y costosa.  
+  **¿Cómo podemos ayudar a estos negocios a atraer clientes cercanos mediante un canal web accesible y medible?**
 
-  - Hemos observado que los negocios especializados en productos orientales/asiáticos dependen principalmente de redes sociales para promocionarse, lo que limita su visibilidad local, dificulta captar clientes cercanos en el momento de compra y reduce su capacidad de convertir interés digital en visitas al local.
-  **¿Cómo podríamos ayudar a estos negocios a aumentar su visibilidad hiperlocal y atraer consumidores cercanos con intención real de compra?**
+  - Hemos observado que los consumidores urbanos se sienten abrumados por publicidad genérica e irrelevante que no responde a su contexto inmediato.  
+  **¿Cómo podemos ofrecerles publicidad personalizada y contextual que mejore su experiencia y confianza al buscar ofertas locales?**
 
-  - Hemos observado que los consumidores desconfían de promociones poco claras, productos no auténticos o publicaciones desactualizadas, especialmente cuando descubren productos importados en redes sociales sin información verificable sobre precio, ubicación o disponibilidad.
-  **¿Cómo podríamos ofrecer una experiencia confiable y transparente que permita descubrir productos orientales con mayor seguridad y confianza?**
+  - Hemos observado que muchas PyMEs no cuentan con métricas claras para evaluar la efectividad de su publicidad.  
+  **¿Cómo podemos proveerles un panel web simple y con analítica en tiempo real que les permita medir y optimizar sus campañas?**
 
-  - Hemos observado que muchas tiendas especializadas en productos asiáticos tienen una oferta valiosa y diferenciada, pero no cuentan con herramientas simples para comunicar promociones, disponibilidad y novedades de forma geolocalizada y en tiempo real.  
-  **¿Cómo podríamos facilitar a estos negocios una forma simple y efectiva de promocionar sus productos a consumidores cercanos sin depender exclusivamente de redes sociales?**
+  - Hemos observado que los usuarios desconfían de las ofertas online por experiencias pasadas con anuncios engañosos.  
+  **¿Cómo podemos garantizar que las ofertas en GeoPS Web sean auténticas y transparentes, reforzando la credibilidad de la plataforma?**
 
   ##### 1.2.2.2. Lean UX Assumptions
   
   **Business Outcomes (Resultados de negocio que esperamos)**  
-  - Incrementar en al menos un 20% la visibilidad digital de tiendas especializadas en productos asiáticos durante los primeros 6 meses, mediante una plataforma enfocada en descubrimiento hiperlocal.
-  - Aumentar en un 15% la afluencia de clientes a negocios afiliados en Lima Moderna durante el primer semestre, gracias a promociones geolocalizadas y descubrimiento contextual.
-  - Lograr que al menos el 30% de los negocios afiliados publiquen promociones activas semanalmente durante los primeros 3 meses, validando el uso recurrente de la plataforma.
-  - Consolidar un modelo de monetización escalable basado en suscripciones premium y promoción destacada para negocios especializados.
+  - Incrementar en al menos un 20% las ventas de las PyMEs afiliadas en los primeros 6 meses, gracias a la visibilidad que obtendrán en GeoPS Web (BID, 2020).  
+  - Mejorar el retorno de inversión en marketing digital de las PyMEs en un 15% durante el primer año, al reemplazar publicidad genérica por campañas segmentadas.  
+  - Aumentar en un 30% la adopción de herramientas digitales por parte de las PyMEs en el primer año, impulsando su transición hacia modelos de publicidad más eficientes.  
+  - Garantizar un crecimiento sostenido de ingresos para GeoPSLabs a través de un modelo freemium/publicidad pagada, escalable en el tiempo.  
 
   **User Outcomes (Resultados esperados para los usuarios)**  
-  - Los consumidores podrán descubrir productos orientales auténticos de forma rápida y centralizada, evitando búsquedas dispersas en redes sociales o tiendas no verificadas.
-  - Los usuarios encontrarán tiendas cercanas con productos asiáticos disponibles, promociones vigentes y ubicación clara, reduciendo tiempo e incertidumbre en el proceso de compra.
-  - Los consumidores recibirán una experiencia más confiable al visualizar información relevante y actualizada sobre productos, precios, disponibilidad y reputación del negocio. 
-  - Los negocios podrán promocionar productos específicos, comunicar novedades y atraer clientes cercanos sin depender únicamente de Instagram o TikTok.
+  - Los consumidores podrán descubrir con facilidad ofertas locales verificadas desde cualquier navegador, ahorrando tiempo y dinero.  
+  - Los usuarios recibirán notificaciones web push con promociones relevantes según su ubicación y preferencias, reduciendo la saturación publicitaria.  
+  - Las PyMEs podrán crear y gestionar campañas en pocos pasos, con métricas claras (alcance, clics, conversiones) accesibles en tiempo real.  
+  - Se generará mayor confianza al transparentar información sobre vigencia, condiciones de ofertas y reseñas de otros usuarios.  
 
   **Features (Características clave que lo habilitan)**  
 
   *Para consumidores:*
-  - Descubrimiento de productos asiáticos por ubicación y categoría
-  - Mapa interactivo con tiendas orientales cercanas
-  - Visualización de productos destacados, promociones y disponibilidad
-  - Sistema de reseñas y validación de tiendas
-  - Guardado de productos y tiendas favoritas
-  - Notificaciones sobre nuevos productos o promociones cercanas
+  - Listado de ofertas y promociones filtrables por ubicación, categoría y distancia.  
+  - Mapa interactivo con geolocalización vía navegador.  
+  - Notificaciones web push sobre ofertas cercanas.  
+  - Posibilidad de guardar y compartir promociones.  
+  - Sistema de reseñas y calificación de comercios.  
 
   *Para negocios:*  
-  - Panel web para registrar productos, promociones y stock destacado  
-  - Publicación de ofertas en tiempo real 
-  - Visibilidad geolocalizada dentro de Lima Moderna
-  - Gestión de promociones por producto y categoría
-  - Métricas de interacción (clics, vistas, guardados)
-  - Herramientas para destacar productos nuevos o en tendencia
+  - Panel web para creación y gestión de campañas publicitarias.  
+  - Segmentación de audiencia por ubicación y preferencias.  
+  - Analítica en tiempo real con métricas de conversión.  
+  - Opciones de campañas flexibles (costo por clic, impresiones, tiempo de vigencia).  
+  - Herramientas para fidelización (promociones exclusivas para clientes recurrentes).  
 
   ##### 1.2.2.3. Lean UX Hypothesis Statements
 
-  - **Si implementamos una plataforma de descubrimiento geolocalizado** que permita a los usuarios encontrar productos orientales/asiáticos cercanos según su ubicación,
-**entonces** observaremos que los consumidores descubrirán tiendas y productos de interés con mayor rapidez y frecuencia,
-**porque asumimos** que los usuarios valoran encontrar productos auténticos y difíciles de conseguir de forma inmediata, cercana y centralizada,
-**mediremos** el tiempo promedio de descubrimiento, cantidad de búsquedas realizadas por usuario y número de clics en productos o tiendas cercanas.
+  - **Si implementamos un sistema de notificaciones web push** para informar a los consumidores sobre ofertas cercanas y relevantes,  
+  **entonces** observaremos que los usuarios interactúan con mayor frecuencia con la plataforma y visitan más negocios locales,  
+  **porque asumimos** que los consumidores valoran información inmediata y contextual para decidir sus compras,  
+  **mediremos** la tasa de apertura de notificaciones, clics en ofertas y visitas a negocios registrados.  
 
-  - **Si ofrecemos a los consumidores información clara y verificada** sobre productos asiáticos, incluyendo precio, disponibilidad, ubicación y autenticidad,
-**entonces** aumentará la confianza del usuario al explorar productos y tiendas dentro de la plataforma,
-**porque asumimos** que los consumidores desconfían de publicaciones ambiguas o desactualizadas y prefieren información transparente antes de decidir una compra,
-**mediremos** la tasa de interacción con productos verificados, tiempo de permanencia en fichas de producto y porcentaje de consultas realizadas sobre tiendas verificadas.
+  - **Si ofrecemos a las PyMEs un panel web intuitivo** para crear y gestionar campañas con segmentación por ubicación y categoría,  
+  **entonces** aumentará la efectividad de sus campañas y mejorará el retorno de inversión,  
+  **porque asumimos** que la simplicidad y la personalización harán más accesible el marketing digital,  
+  **mediremos** el CTR (Click Through Rate), conversiones registradas y ROI de campañas creadas en la plataforma.  
 
-  - **Si ofrecemos a los negocios especializados un panel web intuitivo** para registrar productos, publicar promociones y destacar novedades en tiempo real,
-  **entonces** aumentará la frecuencia con la que los negocios actualizan su catálogo y promociones dentro de GeoPS,
-**porque asumimos** que una herramienta simple y rápida reducirá la dependencia exclusiva de redes sociales y facilitará la promoción digital de productos especializados,
-**mediremos** la frecuencia de publicación de productos, número de promociones activas por negocio y tasa de actualización semanal del catálogo.  
+  - **Si incluimos un sistema de reseñas y valoraciones verificadas** por parte de los consumidores,  
+  **entonces** aumentará la confianza del usuario en las ofertas publicadas y la reputación online de los negocios,  
+  **porque asumimos** que los usuarios confían más en experiencias de otros compradores que en anuncios directos,  
+  **mediremos** el número de reseñas publicadas, la calificación promedio de negocios y el impacto en la interacción con ofertas.  
 
-  - **Si integramos un mapa interactivo** con tiendas especializadas en productos asiáticos y la distancia respecto al usuario,
-**entonces** facilitaremos la decisión de visitar una tienda física cercana,
-**porque asumimos** que la proximidad y la conveniencia son factores clave cuando los consumidores buscan productos específicos en el momento,
-**mediremos** la cantidad de interacciones con el mapa, clics en “cómo llegar” y número de visitas a perfiles de tiendas desde la vista geolocalizada.
-
-  - **Si incorporamos un sistema de reseñas y valoraciones verificadas** sobre tiendas y productos orientales,
-**entonces** aumentará la percepción de confianza y credibilidad dentro de la plataforma,
-**porque asumimos** que los consumidores confían más en la experiencia de otros compradores al momento de probar productos importados o poco conocidos,
-**mediremos** el número de reseñas publicadas, calificación promedio por tienda, tasa de interacción con reseñas y su impacto en la visualización de productos.
+  - **Si integramos un mapa interactivo** con la ubicación de los negocios afiliados y la distancia desde el usuario,  
+  **entonces** facilitaremos la decisión de visitar un local cercano,  
+  **porque asumimos** que la ubicación y la conveniencia influyen directamente en la elección de compra,  
+  **mediremos** el número de búsquedas realizadas en el mapa, clics en rutas sugeridas y visitas a negocios asociados.
   
   ##### 1.2.2.4. Lean UX Canvas
 
@@ -365,52 +342,44 @@ A través de una plataforma web accesible desde cualquier navegador, los usuario
   *Lean UX Canvas — GeoPS*
 
   <div align="center">
-      <img src="resources/imgs/chapter-i/Lean_UX_Canvas.png" alt="Lean UX Canvas GeoPS" width="600">
+      <img src="resources/imgs/chapter-i/Lean_UX_Canvas.jpg" alt="Lean UX Canvas GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia.
 
 ### 1.3. Segmentos objetivos
 
-**Segmento Objetivo #1: Negocios especializados en productos orientales/asiáticos**
+**Segmento Objetivo #1: Dueños de negocios locales**
 
 **Aspectos Demográficos**  
 - Sexo: Todos los géneros.  
-- Edad: 24 años a más.  
-- Nivel Socioeconómico: Medio (propietarios o administradores de pequeños y medianos negocios).
-- Ocupación: Dueños, administradores o encargados de negocios especializados.   
+- Edad: 25 años a más.  
+- Nivel Socioeconómico: Medio (propietarios o administradores de pequeños y medianos negocios).  
 
 **Aspectos Geográficos**  
 - Nacionalidad: Peruana.  
-- Zona Geográfica: Lima Moderna.
-- Distritos objetivo: Jesús María, Lince, Magdalena del Mar, Pueblo Libre, Surquillo y San Miguel.
+- Zona Geográfica: Áreas urbanas con alta competencia comercial.  
 
 **Aspectos Psicográficos**  
-- Dolor Principal: Tienen productos con alta demanda e interés creciente, pero carecen de visibilidad hiperlocal y herramientas accesibles para conectar con consumidores cercanos en el momento exacto de compra.
+- Dolor Principal: No poder atraer clientes fácilmente debido a la saturación de publicidad tradicional y digital poco efectiva.  
+- Objetividad: Pequeños y medianos empresarios que buscan aumentar su visibilidad y atraer clientes cercanos con bajo costo.  
+- Nuestra Solución: Brindar un panel web intuitivo con campañas segmentadas, métricas en tiempo real y opciones de publicidad accesible para aumentar la competitividad.  
 
-- Objetividad: Aumentar su visibilidad, atraer clientes cercanos y convertir interés digital en visitas al local mediante promociones segmentadas y descubrimiento geolocalizado.
-
-- Nuestra Solución: GeoPS les ofrece una plataforma web donde pueden promocionar productos asiáticos, publicar ofertas en tiempo real, aparecer en búsquedas geolocalizadas y conectar con consumidores cercanos interesados en este tipo de productos.
-
-**Segmento Objetivo #2: Consumidores urbanos interesados en productos orientales/asiáticos**
+**Segmento Objetivo #2: Consumidores de ofertas locales**
 
 **Aspectos Demográficos**  
 - Sexo: Todos los géneros.  
 - Edad: 18 a 45 años.  
 - Nivel Socioeconómico: Medio y medio–alto (jóvenes profesionales, estudiantes, familias).  
-- Ocupación: Estudiantes, jóvenes profesionales y consumidores digitales.
 
 **Aspectos Geográficos**  
 - Nacionalidad: Peruana.  
-- Zona Geográfica: Lima Moderna.
-- Distritos objetivo: Jesús María, Lince, Magdalena del Mar, Pueblo Libre, Surquillo y San Miguel.
+- Zona Geográfica: Áreas urbanas con alta concentración de comercios.  
 
 **Aspectos Psicográficos**  
-- Dolor Principal: Descubren productos orientales en redes sociales o por recomendación, pero no saben dónde encontrarlos cerca, si están disponibles o si realmente valen la pena.
-
-- Objetividad: Descubrir productos asiáticos auténticos, tiendas cercanas y promociones relevantes de manera rápida, confiable y centralizada.
-
-- Nuestra Solución: GeoPS les permite descubrir productos orientales cercanos, explorar tiendas especializadas, recibir promociones relevantes y encontrar productos auténticos en tiempo real desde una sola plataforma.
+- Dolor Principal: Dificultad para encontrar promociones relevantes y confiables en el momento de compra.  
+- Objetividad: Consumidores que buscan ahorrar tiempo y dinero accediendo a ofertas locales actualizadas.  
+- Nuestra Solución: Proveer una plataforma web con notificaciones personalizadas, mapa interactivo y reseñas verificadas para facilitar el descubrimiento de promociones cercanas.  
 
 ---
 
@@ -530,8 +499,9 @@ A través de una plataforma web accesible desde cualquier navegador, los usuario
 
   | Número de registro | Datos del entrevistado | Captura |
   |--------------------|-------------------------|---------|
-  | **1** | **Nombre:** Ariana Puscan <br> **Edad:** 28 años <br> **Distrito:** Magdalena <br> **Ocupación:** Abogada <br> **Duración de la entrevista:** 5 minutos y 49 segundos <br> **Enlace:** https://l1nq.com/8gjygzw <br> **Resumen:** En este video, se entrevista a Ariana Puscan, una joven de 28 años del distrito de Magdalena. Es una consumidora recurrente de snacks asiáticos, adquiriéndolos mensualmente. Su descubrimiento de productos se basa principalmente en recomendaciones y ofertas vistas en Instagram y TikTok. Sus compras son mayoritariamente impulsivas o casuales cuando encuentra artículos en supermercados, sin apoyarse en aplicaciones específicas. Recientemente, visitó un establecimiento tras verlo en redes sociales, teniendo una experiencia satisfactoria. Finalmente, considera que nuestra aplicación sería de gran valor. La percibe como una herramienta clave para localizar puntos de venta exactos y facilitar el acceso a una mayor variedad de productos asiáticos.| **Figura 6**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista1_segmento2.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
-  | **2** | **Nombre:** Olga Consuelo Arce Quesada <br> **Edad:** 25 años <br> **Distrito:** Magdalena <br> **Ocupación:** Comunicadora Corporativa <br> **Duración de la entrevista:** 7 minutos y 16 segundos <br> **Enlace:** https://l1nq.com/ck0dyrh <br> **Resumen:** En este video, Olga Consuelo Arce Quesada, de 25 años, de Magdalena. Es una consumidora frecuente de snacks, bebidas y productos de belleza. Si bien descubre tiendas asiáticas mediante redes sociales o de forma presencial, señala una brecha en la información: las ofertas no están digitalizadas y solo las descubre al visitar el punto de venta. Su experiencia revela una dificultad específica al buscar productos de belleza, ya que no suelen estar disponibles en cadenas comerciales como Miniso. Actualmente, su búsqueda depende exclusivamente de la suerte al encontrar recomendaciones en TikTok, lo que dificulta la compra efectiva. Olga valida positivamente la propuesta de nuestra aplicación. Destaca la importancia de una plataforma integral que geolocalice tiendas cercanas, ofrezca visibilidad de ofertas en tiempo real y permita filtrar los establecimientos por categorías para optimizar su experiencia de compra. | **Figura 7**<br> *Entrevista 2 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista2_segmento2.png" alt="Entrevista 2 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+  | **1** | **Nombre:** Andrés Torres <br> **Edad:** 19 años <br> **Distrito:** San Miguel <br> **Duración de la entrevista:** 3 minutos y 29 segundos <br> **Enlace:** https://youtu.be/lss8fRI5_3g <br> **Resumen:** En este video, se entrevista a Andrés Torres, un joven de 19 años del distrito de San Miguel. Habla sobre cómo busca ofertas para el cine usando aplicaciones como Yape. Le molesta la publicidad intrusiva en la calle y en aplicaciones que no le interesa. Su confianza en las promociones depende de la reputación de la empresa, aunque también consideraría ofertas de empresas menos conocidas si tienen buena presentación. Andrés sugiere que las promociones deberían adaptarse a los intereses de los usuarios y que las aplicaciones deberían solicitar datos básicos a los creadores de los proyectos para generar mayor seguridad. | **Figura 6**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista1_segmento2.jpg" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+  | **2** | **Nombre:** Ángel José <br> **Edad:** 22 años <br> **Distrito:** Cercado de Lima <br> **Duración de la entrevista:** 4 minutos y 47 segundos <br> **Enlace:** https://youtu.be/s_zL-OGBqJE <br> **Resumen:** En este video, Ángel José, de 22 años, del Cercado de Lima, comparte su experiencia buscando ofertas. Explica que usa plataformas como Yape, Instagram y Facebook. Le molesta tener que buscar manualmente y a menudo pide recomendaciones a conocidos. Desconfía de los descuentos muy altos que podrían ser estafas o productos falsos. Su experiencia ideal sería recibir notificaciones de ofertas que le interesen, que sean de locales conocidos y fáciles de canjear. Además, se sentiría seguro compartiendo sus datos si la empresa es profesional y cifra la información. | **Figura 7**<br> *Entrevista 2 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista2_segmento2.jpg" alt="Entrevista 2 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+  | **3** | **Nombre:** Elian <br> **Edad:** 25 años <br> **Distrito:** San Martín de Porres <br> **Duración de la entrevista:** 5 minutos y 10 segundos <br> **Enlace:** https://youtu.be/h1kiEyQ9aIY <br> **Resumen:** En esta entrevista, Elian, de 25 años, del distrito de San Martín de Porres, habla sobre su experiencia con la búsqueda de ofertas en línea. Menciona que las páginas web no son fáciles de usar y le molesta la publicidad de ofertas que ya no están vigentes. Su principal interés es encontrar ofertas de manera rápida y fácil. Desconfía de las promociones "demasiado buenas para ser verdad" y sugiere que las plataformas deberían personalizar las ofertas según su historial de compras. No le preocupa compartir sus datos o ubicación, ya que es algo común en aplicaciones de entrega. Su experiencia ideal sería encontrar ofertas buenas y cercanas a su ubicación. | **Figura 8**<br> *Entrevista 3 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista3_segmento2.jpg" alt="Entrevista 3 — Segmento 2" width="600"> </div> *Nota.* Elaboración propia. |
 
   *Nota.* Elaboración propia.
 
@@ -696,11 +666,9 @@ A través de ellas se traduce lo que los usuarios quieren lograr al usar el prod
 
 | Epic                                               | ID   |
 |----------------------------------------------------|------|
-| Registro y Autenticación                           | EP01 |
-| Descubrimiento y Gestión de Ofertas (Clientes)     | EP02 |
-| Gestión de Campañas Publicitarias (Proveedores)    | EP03 |
-| Planes y Suscripciones (Clientes y Proveedores)    | EP04 |
-| Experiencia del Usuario y Contenido                | EP05 |
+| Gestion Platafoma Web                              | EP01 |
+| Descubrimiento y Gestión de Ofertas                | EP02 |
+| Gestión de Campañas Publicitarias                  | EP03 |
 
 *Nota.* Elaboración propia.
 
@@ -713,47 +681,21 @@ A través de ellas se traduce lo que los usuarios quieren lograr al usar el prod
 | US02     | Inicio de Sesión de Usuario en la Plataforma Web             | Como usuario, quiero poder iniciar sesión en la plataforma web con mi correo electrónico y contraseña para acceder a mis ofertas guardadas.                        | Escenario 01: Dado que estoy en la página de inicio de sesión, Cuando ingreso mis credenciales correctas y hago clic en “Iniciar sesión”, Entonces el sistema autentica y me redirige a “Mis ofertas guardadas”.                                   | EP01                       |
 | US03     | Registro de Negocio en la Plataforma Web                     | Como dueño de negocio, quiero poder registrar mi negocio proporcionando información detallada para poder crear campañas publicitarias.                             | Escenario 01: Dado que estoy en la página de registro de negocio, Cuando ingreso un correo válido, contraseña y datos obligatorios, Entonces el sistema crea la cuenta del negocio y muestra un mensaje de éxito.                                   | EP01                       |
 | US04     | Inicio de Sesión de Negocio en la Plataforma Web             | Como dueño de negocio, quiero poder iniciar sesión con mi correo electrónico y contraseña para acceder al panel de gestión de campañas.                           | Escenario 01: Dado que estoy en la página de inicio de sesión de negocios, Cuando ingreso mis credenciales correctas, Entonces el sistema autentica y me redirige al panel de gestión.                                                             | EP01                       |
-| US05     | Recuperación de Contraseña en la Plataforma Web              | Como usuario o dueño de negocio, quiero poder recuperar mi contraseña para restablecer el acceso en caso de olvido.                                                | Escenario 01: Dado que estoy en la página de recuperación de contraseña, Cuando ingreso un correo válido y confirmo la acción, Entonces el sistema envía un enlace de restablecimiento y muestra un mensaje de confirmación.                        | EP01                       |
-| US06     | Búsqueda de Ofertas por Ubicación en la Plataforma Web       | Como usuario, quiero poder buscar ofertas cercanas a mi ubicación para encontrar promociones convenientes y ahorrar tiempo.                                        | Escenario 01: Dado que permití el acceso a mi ubicación, Cuando realizo una búsqueda, Entonces el sistema muestra un listado de promociones ordenadas por cercanía.                                                                                 | EP02                       |
-| US07     | Búsqueda de Ofertas por Categoría en la Plataforma Web       | Como usuario, quiero poder filtrar ofertas por categoría para encontrar fácilmente las promociones que me interesan.                                              | Escenario 01: Dado que estoy en la sección de búsqueda, Cuando selecciono una categoría, Entonces el sistema muestra solo las ofertas correspondientes.                                                                                            | EP02                       |
-| US08     | Visualización de Detalles de Oferta en la Plataforma Web     | Como usuario, quiero poder visualizar los detalles de una oferta para conocer toda la información antes de aprovecharla.                                          | Escenario 01: Dado que estoy en el listado de ofertas, Cuando selecciono una oferta, Entonces el sistema muestra la información detallada (descripción, precio, vigencia, ubicación, condiciones de uso).                                            | EP02                       |
-| US09     | Visualización de Ofertas en Mapa en la Plataforma Web        | Como usuario, quiero visualizar las ofertas en un mapa para ubicar rápidamente negocios cercanos.                                                                  | Escenario 01: Dado que estoy en la sección de ofertas, Cuando selecciono “Ver en mapa”, Entonces el sistema muestra un mapa interactivo con ubicación de negocios y ofertas.                                                                        | EP02                       |
-| US10     | Guardar Ofertas en la Plataforma Web                         | Como usuario, quiero poder guardar ofertas para revisarlas más tarde y no perder promociones de interés.                                                           | Escenario 01: Dado que estoy viendo una oferta, Cuando hago clic en “Guardar oferta”, Entonces el sistema la almacena en mi perfil y me permite acceder desde “Mis ofertas guardadas”.                                                              | EP02                       |
-| US11     | Creación de Campaña Publicitaria en la Plataforma Web        | Como dueño de negocio, quiero crear campañas publicitarias para promocionar mis productos o servicios.                                                             | Escenario 01: Dado que estoy en el panel de gestión, Cuando completo los campos obligatorios, Entonces el sistema guarda la campaña y la muestra en la lista de campañas activas.                                                                   | EP03                       |
-| US12     | Edición de Campaña Publicitaria en la Plataforma Web         | Como dueño de negocio, quiero editar campañas publicitarias existentes para actualizar información y mejorar efectividad.                                          | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y modifico sus datos, Entonces el sistema guarda cambios y actualiza la información visible.                                                               | EP03                       |
-| US13     | Eliminación de Campaña Publicitaria en la Plataforma Web     | Como dueño de negocio, quiero eliminar campañas publicitarias para retirar promociones que ya no deseo mantener.                                                   | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y confirmo “Eliminar”, Entonces el sistema elimina la campaña y desaparece de la lista de activas.                                                         | EP03                       |
-| US14     | Visualización de Campañas Activas en la Plataforma Web       | Como dueño de negocio, quiero visualizar todas mis campañas activas para dar seguimiento.                                                                          | Escenario 01: Dado que estoy en el panel de gestión, Cuando accedo a “Campañas Activas”, Entonces el sistema muestra un listado de todas las campañas vigentes.                                                                                      | EP03                       |
-| US15     | Visualización de Métricas de Campañas en la Plataforma Web   | Como dueño de negocio, quiero visualizar métricas de mis campañas para evaluar desempeño y tomar decisiones.                                                       | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña específica y accedo a métricas, Entonces el sistema muestra visualizaciones, clics, interacciones y duración.                                                      | EP03                       |
-| US16     | Filtrado de Campañas por Estado en la Plataforma Web         | Como dueño de negocio, quiero filtrar mis campañas por estado para gestionarlas fácilmente.                                                                        | Escenario 01: Dado que estoy en la sección de gestión, Cuando selecciono un estado específico, Entonces el sistema muestra únicamente campañas de ese estado.                                                                                        | EP03                       |
-| US17     | Notificaciones de Rendimiento de Campaña en la Plataforma Web| Como dueño de negocio, quiero recibir notificaciones sobre el rendimiento de mis campañas sin revisarlas constantemente.                                           | Escenario 01: Dado que tengo una campaña activa, Cuando ocurre un evento relevante (ej. campaña por finalizar), Entonces el sistema me muestra una notificación con resumen del evento.                                                              | EP03                       |
-| US18     | Exportación de Reportes de Campañas en la Plataforma Web     | Como dueño de negocio, quiero exportar reportes de mis campañas para analizarlos externamente.                                                                     | Escenario 01: Dado que estoy en la sección de métricas, Cuando selecciono “Exportar reporte”, Entonces el sistema genera archivo en PDF o Excel con información de la campaña.                                                                       | EP03                       |
-| US19     | Configuración de Presupuesto de Campaña en la Plataforma Web | Como dueño de negocio, quiero configurar presupuesto de campañas para controlar gastos y optimizar inversión.                                                      | Escenario 01: Dado que estoy creando o editando una campaña, Cuando ingreso presupuesto y confirmo, Entonces el sistema guarda el presupuesto y lo muestra en el panel.                                                                               | EP03                       |
-| US20     | Pausar Campaña Publicitaria en la Plataforma Web             | Como dueño de negocio, quiero pausar campañas temporalmente sin eliminarlas.                                                                                      | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y hago clic en “Pausar”, Entonces el sistema cambia estado a “Pausada”.                                                                                    | EP03                       |
-| US21     | Reactivar Campaña Publicitaria en la Plataforma Web          | Como dueño de negocio, quiero reactivar campañas pausadas para retomar su difusión.                                                                               | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña pausada y hago clic en “Reactivar”, Entonces el sistema cambia estado a “Activa”.                                                                                  | EP03                       |
-| US22     | Programar Fecha de Inicio de Campaña en la Plataforma Web    | Como dueño de negocio, quiero programar fecha de inicio para campañas.                                                                                             | Escenario 01: Dado que estoy creando campaña, Cuando selecciono fecha futura, Entonces el sistema guarda programación y activa automáticamente la campaña en esa fecha.                                                                              | EP03                       |
-| US23     | Programar Fecha de Fin de Campaña en la Plataforma Web       | Como dueño de negocio, quiero programar fecha de fin para campañas.                                                                                                | Escenario 01: Dado que estoy creando o editando campaña, Cuando selecciono fecha de fin, Entonces el sistema cambia estado a “Finalizada” automáticamente al concluir el periodo.                                                                    | EP03                       |
-| US24     | Segmentación de Campañas por Ubicación en la Plataforma Web  | Como dueño de negocio, quiero segmentar campañas por ubicación para dirigir anuncios a usuarios de un área objetivo.                                               | Escenario 01: Dado que estoy creando o editando campaña, Cuando defino una zona geográfica o radio, Entonces el sistema limita visualización de la campaña a usuarios dentro del área configurada.                                                    | EP03                       |
-| US25     | Segmentación de Campañas por Demografía en la Plataforma Web | Como dueño de negocio, quiero segmentar campañas por demografía e intereses para dirigirlas al público más relevante.                                              | Escenario 01: Dado que estoy creando o editando campaña, Cuando selecciono filtros de segmentación (edad, género, intereses), Entonces el sistema configura campaña solo para usuarios que cumplen esos criterios.                                      | EP03                       |
-| US26     | Duplicar Campaña Publicitaria en la Plataforma Web           | Como dueño de negocio, quiero duplicar campañas existentes para ahorrar tiempo en creación.                                                                        | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña y hago clic en “Duplicar”, Entonces el sistema crea nueva campaña con mismos datos de la original.                                                                 | EP03                       |
-| US27     | Previsualización de Campaña en la Plataforma Web             | Como dueño de negocio, quiero previsualizar campañas antes de publicarlas.                                                                                         | Escenario 01: Dado que estoy en proceso de creación o edición, Cuando hago clic en “Previsualizar”, Entonces el sistema muestra vista simulada de cómo se verá publicada la campaña.                                                                  | EP03                       |
-| US28     | Historial de Campañas en la Plataforma Web                   | Como dueño de negocio, quiero visualizar historial de todas mis campañas para llevar registro de promociones realizadas.                                           | Escenario 01: Dado que estoy en el panel de gestión, Cuando accedo a “Historial de campañas”, Entonces el sistema muestra listado con todas las finalizadas y sus datos principales.                                                                  | EP03                       |
-| US29     | Configuración de Idioma en la Plataforma Web                 | Como usuario, quiero seleccionar idioma de la plataforma para visualizar contenido en mi preferencia.                                                              | Escenario 01: Dado que estoy en la página principal, Cuando selecciono un idioma en el selector, Entonces el sistema cambia todo el contenido al idioma elegido.                                                                                      | EP05                       |
-| US30     | Accesibilidad en la Plataforma Web                           | Como usuario, quiero que la plataforma cumpla criterios de accesibilidad (contraste, lectores de pantalla, navegación con teclado).                                | Escenario 01: Dado que navego en la plataforma, Cuando interactúo con elementos, Entonces el sistema permite usarlos de manera accesible.                                                                                                            | EP05                       |
-| US31     | Registro de Puntos de Interés Habituales en la Plataforma Web| Como usuario, quiero registrar puntos de interés habituales para recibir promociones en esas zonas.                                                                | Escenario 01: Dado que estoy en mi perfil, Cuando agrego dirección o selecciono punto en mapa, Entonces el sistema guarda ese punto de interés y muestra promociones cercanas.                                                                        | EP04                       |
-| US32     | Suscripción a Plan Premium (Proveedor)                       | Como proveedor, quiero suscribirme al plan Premium para acceder a estadísticas y herramientas avanzadas.                                                           | Escenario 01: Dado que estoy en la página de planes, Cuando selecciono “Hazte Premium” y completo pago, Entonces el sistema actualiza cuenta a Premium y habilita beneficios avanzados.                                                               | EP04                       |
-| US33     | Suscripción a Plan Premium (Cliente)                         | Como cliente, quiero suscribirme al plan Premium para acceder a descuentos exclusivos y promociones especiales.                                                    | Escenario 01: Dado que estoy en página de planes, Cuando selecciono “Hazte Premium” y completo pago, Entonces el sistema actualiza mi cuenta a Premium y habilita beneficios exclusivos.                                                              | EP04                       |
-| US34     | Gestión de Suscripción (Cliente/Proveedor)                   | Como usuario, quiero gestionar mi suscripción para cambiar de plan, renovar o cancelar.                                                                            | Escenario 01: Dado que estoy en Mi cuenta → Suscripción, Cuando selecciono una acción y confirmo, Entonces el sistema aplica cambios y muestra confirmación.                                                                                         | EP04                       |
-| US35     | Encabezado con navegación                                    | Como visitante, quiero un encabezado con menú de navegación.                                                                                                       | Escenario 01: Dado que accedo a la landing, Cuando interactúo con el encabezado, Entonces puedo navegar entre secciones principales.                                                                                                                 | EP05                       |
-| US36     | Información en el footer                                     | Como visitante, quiero ver información útil en el pie de página.                                                                                                   | Escenario 01: Dado que navego en la página principal, Cuando llego al pie de página, Entonces observo enlaces a contacto, términos y redes sociales.                                                                                                  | EP05                       |
-| US37     | Visualización de Encabezado con Navegación en Landing Page   | Como visitante, quiero ver un encabezado con navegación a las secciones principales.                                                                               | Escenario 01: Dado que accedo a la landing page, Cuando visualizo la parte superior, Entonces el sistema muestra un encabezado con enlaces a secciones principales.                                                                                   | EP05                       |
-| US38     | Visualización de Hero Section en la Landing Page             | Como visitante, quiero ver un mensaje principal con un call-to-action en la parte superior.                                                                        | Escenario 01: Dado que accedo a la landing, Cuando llego a la sección principal, Entonces visualizo mensaje destacado y un botón de acción (ej. “Únete ahora”).                                                                                      | EP05                       |
-| US39     | Visualización de Sección de Promociones en Landing Page      | Como visitante, quiero ver una sección con promociones disponibles.                                                                                                | Escenario 01: Dado que navego en la landing, Cuando llego a “Ver Promociones”, Entonces el sistema muestra promociones representativas con información básica.                                                                                        | EP05                       |
-| US40     | Visualización de Marcas y Tiendas en la Landing Page         | Como visitante, quiero ver logos e información de marcas asociadas para confiar en la plataforma.                                                                  | Escenario 01: Dado que navego en la landing, Cuando llego a “Marcas y Tiendas Asociadas”, Entonces el sistema muestra logos e información básica de negocios afiliados.                                                                              | EP05                       |
-| US41     | Visualización de “Quiénes Somos” en Landing Page             | Como visitante, quiero ver sección “Quiénes Somos” para comprender misión de GeoPS.                                                                                | Escenario 01: Dado que navego en la landing, Cuando llego a “Quiénes Somos”, Entonces el sistema muestra información sobre misión de GeoPS de forma clara y atractiva.                                                                               | EP05                       |
-| US42     | Consulta de Preguntas Frecuentes en Landing Page             | Como visitante, quiero acceder a sección de FAQ para resolver dudas sin contactar soporte.                                                                         | Escenario 01: Dado que navego en la landing, Cuando despliego una pregunta, Entonces el sistema muestra respuesta correspondiente de manera clara.                                                                                                    | EP05                       |
-| US43     | Visualización de Footer con Información de Contacto          | Como visitante, quiero ver un pie de página con redes sociales y datos de contacto.                                                                                | Escenario 01: Dado que navego en la landing, Cuando llego al pie de página, Entonces el sistema muestra enlaces activos a redes sociales y datos de contacto.                                                                                        | EP05                       |
-| US44     | Diseño Responsivo en la Landing Page                         | Como visitante, quiero que la landing se adapte automáticamente a mi dispositivo.                                                                                  | Escenario 01: Dado que accedo a la landing desde móvil o tablet, Cuando navego, Entonces el sistema muestra contenido ajustado correctamente al tamaño de pantalla.                                                                                   | EP05                       |
-| US45     | Optimización y Pruebas Finales de la Landing Page            | Como visitante, quiero que la landing funcione en distintos navegadores y cargue rápido.                                                                           | Escenario 01: Dado que accedo a la landing desde diferentes navegadores y dispositivos, Cuando navego por las secciones, Entonces el sistema mantiene buen rendimiento, muestra todo correctamente y no presenta errores de compatibilidad.            | EP05                       |
+| US05     | Búsqueda de Ofertas por Categoría en la Plataforma Web       | Como usuario, quiero poder filtrar ofertas por categoría para encontrar fácilmente las promociones que me interesan.                                              | Escenario 01: Dado que estoy en la sección de búsqueda, Cuando selecciono una categoría, Entonces el sistema muestra solo las ofertas correspondientes.                                                                                            | EP02                       |
+| US06     | Visualización de Detalles de Oferta en la Plataforma Web     | Como usuario, quiero poder visualizar los detalles de una oferta para conocer toda la información antes de aprovecharla.                                          | Escenario 01: Dado que estoy en el listado de ofertas, Cuando selecciono una oferta, Entonces el sistema muestra la información detallada (descripción, precio, vigencia, ubicación, condiciones de uso).                                            | EP02                       |
+| US07     | Guardar Ofertas en la Plataforma Web                         | Como usuario, quiero poder guardar ofertas para revisarlas más tarde y no perder promociones de interés.                                                           | Escenario 01: Dado que estoy viendo una oferta, Cuando hago clic en “Guardar oferta”, Entonces el sistema la almacena en mi perfil y me permite acceder desde “Mis ofertas guardadas”.                                                              | EP02                       |
+| US08     | Creación de Campaña Publicitaria en la Plataforma Web        | Como dueño de negocio, quiero crear campañas publicitarias para promocionar mis productos o servicios.                                                             | Escenario 01: Dado que estoy en el panel de gestión, Cuando completo los campos obligatorios, Entonces el sistema guarda la campaña y la muestra en la lista de campañas activas.                                                                   | EP03                       |
+| US09     | Edición de Campaña Publicitaria en la Plataforma Web         | Como dueño de negocio, quiero editar campañas publicitarias existentes para actualizar información y mejorar efectividad.                                          | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y modifico sus datos, Entonces el sistema guarda cambios y actualiza la información visible.                                                               | EP03                       |
+| US10     | Eliminación de Campaña Publicitaria en la Plataforma Web     | Como dueño de negocio, quiero eliminar campañas publicitarias para retirar promociones que ya no deseo mantener.                                                   | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y confirmo “Eliminar”, Entonces el sistema elimina la campaña y desaparece de la lista de activas.                                                         | EP03                       |
+| US11     | Visualización de Campañas Activas en la Plataforma Web       | Como dueño de negocio, quiero visualizar todas mis campañas activas para dar seguimiento.                                                                          | Escenario 01: Dado que estoy en el panel de gestión, Cuando accedo a “Campañas Activas”, Entonces el sistema muestra un listado de todas las campañas vigentes.                                                                                      | EP03                       |
+| US12     | Configuración de Presupuesto de Campaña en la Plataforma Web | Como dueño de negocio, quiero configurar presupuesto de campañas para controlar gastos y optimizar inversión.                                                      | Escenario 01: Dado que estoy creando o editando una campaña, Cuando ingreso presupuesto y confirmo, Entonces el sistema guarda el presupuesto y lo muestra en el panel.                                                                               | EP03                       |
+| US13     | Pausar Campaña Publicitaria en la Plataforma Web             | Como dueño de negocio, quiero pausar campañas temporalmente sin eliminarlas.                                                                                      | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y hago clic en “Pausar”, Entonces el sistema cambia estado a “Pausada”.                                                                                    | EP03                       |
+| US14     | Reactivar Campaña Publicitaria en la Plataforma Web          | Como dueño de negocio, quiero reactivar campañas pausadas para retomar su difusión.                                                                               | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña pausada y hago clic en “Reactivar”, Entonces el sistema cambia estado a “Activa”.                                                                                  | EP03                       |
+| US15     | Programar Fecha de Inicio de Campaña en la Plataforma Web    | Como dueño de negocio, quiero programar fecha de inicio para campañas.                                                                                             | Escenario 01: Dado que estoy creando campaña, Cuando selecciono fecha futura, Entonces el sistema guarda programación y activa automáticamente la campaña en esa fecha.                                                                              | EP03                       |
+| US16     | Programar Fecha de Fin de Campaña en la Plataforma Web       | Como dueño de negocio, quiero programar fecha de fin para campañas.                                                                                                | Escenario 01: Dado que estoy creando o editando campaña, Cuando selecciono fecha de fin, Entonces el sistema cambia estado a “Finalizada” automáticamente al concluir el periodo.                                                                    | EP03                       |
+| US17     | Configuración de Idioma en la Plataforma Web                 | Como usuario, quiero seleccionar idioma de la plataforma para visualizar contenido en mi preferencia.                                                              | Escenario 01: Dado que estoy en la página principal, Cuando selecciono un idioma en el selector, Entonces el sistema cambia todo el contenido al idioma elegido.                                                                                      | EP01                       |
+
+
 
 *Nota.* Elaboración propia.
 
@@ -769,14 +711,12 @@ Están orientadas al equipo de desarrollo y especifican aspectos relacionados co
 |----------|---------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
 | TS01     | Endpoint: Registrar usuario          | Como Developer, deseo exponer `POST /auth/register` para crear cuentas de usuario con validación de email y password. | **Scenario: Registro exitoso**<br> Dado un payload válido,<br> Cuando envío POST `/auth/register`,<br> Entonces responde 201 con id y email.<br><br> **Scenario: Email en uso**<br> Dado un email ya registrado,<br> Cuando envío POST `/auth/register`,<br> Entonces responde 409 con error `email_taken`. | US01 |
 | TS02     | Endpoint: Login de usuario           | Como Developer, deseo exponer `POST /auth/login` para autenticar usuarios y emitir un JWT. | **Scenario: Credenciales válidas**<br> Dado email y password correctos,<br> Cuando envío POST `/auth/login`,<br> Entonces responde 200 con `access_token`.<br><br> **Scenario: Credenciales inválidas**<br> Dado password incorrecto,<br> Cuando envío POST `/auth/login`,<br> Entonces responde 401 con error `invalid_credentials`. | US02 |
-| TS03     | Endpoint: Recuperar contraseña       | Como Developer, deseo exponer `POST /auth/forgot-password` para enviar un link de reseteo vía email. | **Scenario: Solicitud válida**<br> Dado un email registrado,<br> Cuando envío POST `/auth/forgot-password`,<br> Entonces responde 202 con status=`email_sent`.<br><br> **Scenario: Email no registrado**<br> Dado email inexistente,<br> Cuando envío POST `/auth/forgot-password`,<br> Entonces responde 202 sin revelar existencia. | US05 |
-| TS04     | Endpoint: Búsqueda de ofertas por ubicación | Como Developer, deseo exponer `GET /offers?lat={lat}&lng={lng}&radiusKm={r}` para listar ofertas cercanas. | **Scenario: Consulta válida**<br> Dado coordenadas correctas,<br> Cuando envío GET,<br> Entonces responde 200 con lista de ofertas.<br><br> **Scenario: Parámetros faltantes**<br> Dado falta lat/lng,<br> Cuando envío GET,<br> Entonces responde 400 con error `invalid_params`. | US06 |
-| TS05     | Endpoint: Ofertas por categoría      | Como Developer, deseo exponer `GET /offers?category={slug}` para filtrar ofertas. | **Scenario: Categoría válida**<br> Dado category existente,<br> Cuando envío GET,<br> Entonces responde 200 con lista de ofertas.<br><br> **Scenario: Categoría inválida**<br> Dado category no existe,<br> Cuando envío GET,<br> Entonces responde 200 con lista vacía. | US07 |
-| TS06     | Endpoint: Detalle de oferta          | Como Developer, deseo exponer `GET /offers/{id}` para obtener detalles completos. | **Scenario: Oferta encontrada**<br> Dado id válido,<br> Cuando envío GET,<br> Entonces responde 200 con detalle.<br><br> **Scenario: Oferta inexistente**<br> Dado id inválido,<br> Cuando envío GET,<br> Entonces responde 404 con error `not_found`. | US08 |
-| TS07     | Endpoint: Guardar oferta (favoritos) | Como Developer, deseo exponer `POST /users/me/saved-offers` para guardar ofertas de usuario autenticado. | **Scenario: Guardado exitoso**<br> Dado token válido,<br> Cuando envío POST con offerId,<br> Entonces responde 201 con `saved=true`.<br><br> **Scenario: Sin autenticación**<br> Dado falta token,<br> Cuando envío POST,<br> Entonces responde 401 con error `unauthorized`. | US10 |
-| TS08     | Endpoint: Crear campaña              | Como Developer, deseo exponer `POST /campaigns` para que un proveedor cree campañas publicitarias. | **Scenario: Creación válida**<br> Dado payload con título, fechas y presupuesto correctos,<br> Cuando envío POST,<br> Entonces responde 201 con estado `draft`.<br><br> **Scenario: Fechas inválidas**<br> Dado `endDate < startDate`,<br> Cuando envío POST,<br> Entonces responde 422 con error `invalid_dates`. | US11 |
-| TS09     | Endpoint: Editar campaña             | Como Developer, deseo exponer `PUT /campaigns/{id}` para editar campañas existentes. | **Scenario: Actualización válida**<br> Dado proveedor dueño de campaña,<br> Cuando envío PUT,<br> Entonces responde 200 con `updated=true`.<br><br> **Scenario: Sin permisos**<br> Dado proveedor no dueño,<br> Cuando envío PUT,<br> Entonces responde 403 con error `forbidden`. | US12 |
-| TS10     | Endpoint: Pausar/Reactivar campaña   | Como Developer, deseo exponer `PATCH /campaigns/{id}/pause` y `/resume` para controlar estado. | **Scenario: Pausa válida**<br> Dado campaña activa,<br> Cuando envío PATCH `/pause`,<br> Entonces responde 200 con status=`paused`.<br><br> **Scenario: Reactivación válida**<br> Dado campaña pausada,<br> Cuando envío PATCH `/resume`,<br> Entonces responde 200 con status=`active`. | US20 / US21 |
+| TS03     | Endpoint: Ofertas por categoría      | Como Developer, deseo exponer `GET /offers?category={slug}` para filtrar ofertas. | **Scenario: Categoría válida**<br> Dado category existente,<br> Cuando envío GET,<br> Entonces responde 200 con lista de ofertas.<br><br> **Scenario: Categoría inválida**<br> Dado category no existe,<br> Cuando envío GET,<br> Entonces responde 200 con lista vacía. | US07 |
+| TS04     | Endpoint: Detalle de oferta          | Como Developer, deseo exponer `GET /offers/{id}` para obtener detalles completos. | **Scenario: Oferta encontrada**<br> Dado id válido,<br> Cuando envío GET,<br> Entonces responde 200 con detalle.<br><br> **Scenario: Oferta inexistente**<br> Dado id inválido,<br> Cuando envío GET,<br> Entonces responde 404 con error `not_found`. | US08 |
+| TS05     | Endpoint: Guardar oferta (favoritos) | Como Developer, deseo exponer `POST /users/me/saved-offers` para guardar ofertas de usuario autenticado. | **Scenario: Guardado exitoso**<br> Dado token válido,<br> Cuando envío POST con offerId,<br> Entonces responde 201 con `saved=true`.<br><br> **Scenario: Sin autenticación**<br> Dado falta token,<br> Cuando envío POST,<br> Entonces responde 401 con error `unauthorized`. | US10 |
+| TS06     | Endpoint: Crear campaña              | Como Developer, deseo exponer `POST /campaigns` para que un proveedor cree campañas publicitarias. | **Scenario: Creación válida**<br> Dado payload con título, fechas y presupuesto correctos,<br> Cuando envío POST,<br> Entonces responde 201 con estado `draft`.<br><br> **Scenario: Fechas inválidas**<br> Dado `endDate < startDate`,<br> Cuando envío POST,<br> Entonces responde 422 con error `invalid_dates`. | US11 |
+| TS07     | Endpoint: Editar campaña             | Como Developer, deseo exponer `PUT /campaigns/{id}` para editar campañas existentes. | **Scenario: Actualización válida**<br> Dado proveedor dueño de campaña,<br> Cuando envío PUT,<br> Entonces responde 200 con `updated=true`.<br><br> **Scenario: Sin permisos**<br> Dado proveedor no dueño,<br> Cuando envío PUT,<br> Entonces responde 403 con error `forbidden`. | US12 |
+| TS08     | Endpoint: Pausar/Reactivar campaña   | Como Developer, deseo exponer `PATCH /campaigns/{id}/pause` y `/resume` para controlar estado. | **Scenario: Pausa válida**<br> Dado campaña activa,<br> Cuando envío PATCH `/pause`,<br> Entonces responde 200 con status=`paused`.<br><br> **Scenario: Reactivación válida**<br> Dado campaña pausada,<br> Cuando envío PATCH `/resume`,<br> Entonces responde 200 con status=`active`. | US20 / US21 |
 
 *Nota.* Elaboración propia.
 
@@ -798,69 +738,41 @@ El Impact Mapping es una técnica de planificación estratégica que conecta los
 El **Product Backlog** es una lista priorizada de funcionalidades, mejoras y requisitos técnicos que guiarán la evolución del producto.  
 Su propósito es organizar el trabajo en función del valor que aporta al usuario y al negocio, sirviendo como una hoja de ruta flexible y adaptable durante el desarrollo.
 
-**Enlace al Tablero:** https://trello.com/invite/b/6827b176ac2901fb01dfde7f/ATTI41e099b86c4d473204a21f0e3359cadd5F57D4C1/product-backlog-geops
+**Enlace al Tablero:** https://geops-org.atlassian.net/jira/software/projects/GEOP/boards/69/backlog?atlOrigin=eyJpIjoiODc2NDI0MDBkOGE4NGZmMGFiOWYzNmZiZTY5NDk5ZWUiLCJwIjoiaiJ9
 
-**Vista del Product Backlog en Trello**
+**Vista del Product Backlog en Jira**
 
 **Figura 15**<br>
 *Product Backlog — GeoPS*
 
 <div align="center">
-    <img src="resources/imgs/chapter-iii/Product Backlog - Trello.jpg" alt="Product Backlog — GeoPS" width="600">
+    <img src="resources/imgs/Product-Backlog-2026.png" alt="Product Backlog — GeoPS" width="600">
 </div>
 
-*Nota.* Elaboración propia (realizado en Trello).
+*Nota.* Elaboración propia (realizado en Jira).
 
 **Tabla 9**   
 *Product Backlog — Priorización de funcionalidades del producto GeoPS*  
 
 | # Orden | User Story ID | Título | Descripción | Story Points |
 |---------|---------------|--------|-------------|--------------|
-| 1  | US35 | Encabezado con navegación | Como visitante, deseo ver un encabezado con navegación para desplazarme fácilmente por la landing page. | 2 |
-| 2  | US36 | Información en el footer | Como visitante, deseo visualizar un pie de página con enlaces a contacto y redes sociales para resolver dudas y confiar en la plataforma. | 2 |
-| 3  | US37 | Visualización de Encabezado con Navegación en la Landing Page | Como visitante de la página web, quiero ver un encabezado con navegación a las secciones principales para poder desplazarme fácilmente por la landing page. | 2 |
-| 4  | US38 | Visualización de Hero Section | Como visitante, deseo ver un mensaje principal con un botón de acción para comprender la propuesta de valor y registrarme. | 3 |
-| 5  | US39 | Visualización de Sección de Promociones | Como visitante, deseo ver promociones destacadas en la página principal para identificar beneficios de usar la plataforma. | 3 |
-| 6  | US40 | Visualización de Marcas y Tiendas Asociadas | Como visitante, deseo ver logos e información de negocios asociados para confiar en la plataforma. | 3 |
-| 7  | US41 | Visualización de la Sección “Quiénes Somos” | Como visitante, deseo conocer la misión y visión de la empresa para confiar en la plataforma. | 3 |
-| 8  | US42 | Consulta de Preguntas Frecuentes | Como visitante, deseo acceder a una sección de FAQ para resolver mis dudas sin necesidad de soporte. | 3 |
-| 9  | US43 | Visualización de Footer con Contacto y Redes Sociales | Como visitante, deseo ver enlaces de contacto y redes sociales para comunicarme fácilmente. | 2 |
-| 10 | US44 | Diseño Responsivo | Como visitante, deseo que la página se adapte a móviles y tablets para visualizar el contenido correctamente. | 5 |
-| 11 | US45 | Optimización y Pruebas Finales | Como visitante, deseo que la página funcione en cualquier navegador y cargue rápido para tener una experiencia fluida. | 2 |
-| 12 | US29 | Configuración de Idioma | Como usuario, deseo cambiar el idioma de la plataforma para usarla en mi preferencia. | 2 |
-| 13 | US30 | Accesibilidad | Como usuario, deseo que la plataforma sea accesible para poder usarla sin limitaciones. | 3 |
-| 14 | US31 | Registro de Puntos de Interés Habituales | Como usuario, deseo registrar puntos de interés habituales para recibir promociones de esas zonas. | 5 |
-| 15 | US06 | Búsqueda de Ofertas por Ubicación | Como usuario, deseo buscar ofertas cercanas a mi ubicación para aprovechar promociones locales. | 5 |
-| 16 | US07 | Búsqueda de Ofertas por Categoría | Como usuario, deseo filtrar ofertas por categoría para encontrar fácilmente las de mi interés. | 3 |
-| 17 | US08 | Visualización de Detalles de Oferta | Como usuario, deseo ver la información detallada de una oferta para decidir si la aprovecho. | 2 |
-| 18 | US09 | Visualización de Ofertas en Mapa | Como usuario, deseo ver ofertas en un mapa para ubicar negocios cercanos. | 5 |
-| 19 | US10 | Guardar Ofertas | Como usuario, deseo guardar ofertas para revisarlas más tarde. | 3 |
-| 20 | US32 | Suscripción a Plan Premium (Proveedor) | Como proveedor, deseo suscribirme al plan Premium para acceder a estadísticas y segmentación. | 5 |
-| 21 | US33 | Suscripción a Plan Premium (Cliente) | Como cliente, deseo suscribirme al plan Premium para acceder a descuentos exclusivos. | 5 |
-| 22 | US34 | Gestión de Suscripción | Como usuario, deseo gestionar mi suscripción (cambiar, renovar, cancelar) según mis necesidades. | 5 |
-| 23 | US01 | Registro de Usuario | Como usuario, deseo registrarme en la plataforma con mi correo y contraseña para acceder a promociones personalizadas. | 5 |
-| 24 | US02 | Inicio de Sesión de Usuario | Como usuario, deseo iniciar sesión en la plataforma con mis credenciales para acceder a mi cuenta. | 3 |
-| 25 | US03 | Registro de Negocio | Como proveedor, deseo registrar mi negocio para poder crear campañas. | 5 |
-| 26 | US04 | Inicio de Sesión de Negocio | Como proveedor, deseo iniciar sesión en la plataforma con mis credenciales para acceder a mi panel. | 3 |
-| 27 | US05 | Recuperación de Contraseña | Como usuario/proveedor, deseo recuperar mi contraseña en caso de olvido para restablecer el acceso. | 3 |
-| 28 | US11 | Creación de Campaña Publicitaria | Como proveedor, deseo crear campañas publicitarias para promocionar mis productos o servicios. | 8 |
-| 29 | US12 | Edición de Campaña Publicitaria | Como proveedor, deseo editar campañas publicitarias para actualizar su información. | 5 |
-| 30 | US13 | Eliminación de Campaña Publicitaria | Como proveedor, deseo eliminar campañas para retirar promociones que ya no deseo mantener. | 3 |
-| 31 | US14 | Visualización de Campañas Activas | Como proveedor, deseo ver mis campañas activas para hacer seguimiento. | 3 |
-| 32 | US15 | Visualización de Métricas de Campañas | Como proveedor, deseo ver métricas de mis campañas para evaluar su desempeño. | 5 |
-| 33 | US16 | Filtrado de Campañas por Estado | Como proveedor, deseo filtrar campañas por estado para organizarlas mejor. | 3 |
-| 34 | US17 | Notificaciones de Rendimiento de Campaña | Como proveedor, deseo recibir notificaciones sobre el rendimiento de mis campañas. | 3 |
-| 35 | US18 | Exportación de Reportes de Campañas | Como proveedor, deseo exportar reportes en PDF/Excel para analizarlos externamente. | 5 |
-| 36 | US19 | Configuración de Presupuesto | Como proveedor, deseo configurar el presupuesto de una campaña para controlar mis gastos. | 3 |
-| 37 | US20 | Pausar Campaña Publicitaria | Como proveedor, deseo pausar campañas para detener temporalmente su difusión. | 2 |
-| 38 | US21 | Reactivar Campaña Publicitaria | Como proveedor, deseo reactivar campañas pausadas para retomar su difusión. | 2 |
-| 39 | US22 | Programar Fecha de Inicio de Campaña | Como proveedor, deseo programar la fecha de inicio de una campaña para automatizar su publicación. | 3 |
-| 40 | US23 | Programar Fecha de Fin de Campaña | Como proveedor, deseo programar la fecha de fin de una campaña para que se cierre automáticamente. | 3 |
-| 41 | US24 | Segmentación de Campañas por Ubicación | Como proveedor, deseo segmentar mis campañas por ubicación para llegar al público adecuado. | 5 |
-| 42 | US25 | Segmentación de Campañas por Demografía e Intereses | Como proveedor, deseo segmentar mis campañas por demografía e intereses para dirigirlas mejor. | 5 |
-| 43 | US26 | Duplicar Campaña Publicitaria | Como proveedor, deseo duplicar campañas para reutilizar configuraciones anteriores. | 3 |
-| 44 | US27 | Previsualización de Campaña Publicitaria | Como proveedor, deseo previsualizar campañas antes de publicarlas. | 3 |
-| 45 | US28 | Historial de Campañas Publicitarias | Como proveedor, deseo ver un historial de campañas anteriores para llevar registro. | 3 |
+| 1  | US01 | Registro de Usuario en la Plataforma Web | Como usuario, quiero poder registrarme en la plataforma web con mi correo electrónico y contraseña para poder acceder a las ofertas personalizadas. | 5 |
+| 2  | US02 | Inicio de Sesión de Usuario en la Plataforma Web | Como usuario, quiero poder iniciar sesión en la plataforma web con mi correo electrónico y contraseña para acceder a mis ofertas guardadas. | 3 |
+| 3  | US03 | Registro de Negocio en la Plataforma Web | Como dueño de negocio, quiero poder registrar mi negocio proporcionando información detallada para poder crear campañas publicitarias. | 5 |
+| 4  | US04 | Inicio de Sesión de Negocio en la Plataforma Web | Como dueño de negocio, quiero poder iniciar sesión con mi correo electrónico y contraseña para acceder al panel de gestión de campañas. | 3 |
+| 5  | US05 | Búsqueda de Ofertas por Categoría en la Plataforma Web | Como usuario, quiero poder filtrar ofertas por categoría para encontrar fácilmente las promociones que me interesan. | 3 |
+| 6  | US06 | Visualización de Detalles de Oferta en la Plataforma Web | Como usuario, quiero poder visualizar los detalles de una oferta para conocer toda la información antes de aprovecharla. | 2 |
+| 7  | US07 | Guardar Ofertas en la Plataforma Web | Como usuario, quiero poder guardar ofertas para revisarlas más tarde y no perder promociones de interés. | 3 |
+| 8  | US08 | Creación de Campaña Publicitaria en la Plataforma Web | Como dueño de negocio, quiero crear campañas publicitarias para promocionar mis productos o servicios. | 8 |
+| 9  | US09 | Edición de Campaña Publicitaria en la Plataforma Web | Como dueño de negocio, quiero editar campañas publicitarias existentes para actualizar información y mejorar efectividad. | 5 |
+| 10 | US10 | Eliminación de Campaña Publicitaria en la Plataforma Web | Como dueño de negocio, quiero eliminar campañas publicitarias para retirar promociones que ya no deseo mantener. | 3 |
+| 11 | US11 | Visualización de Campañas Activas en la Plataforma Web | Como dueño de negocio, quiero visualizar todas mis campañas activas para dar seguimiento. | 3 |
+| 12 | US12 | Configuración de Presupuesto de Campaña en la Plataforma Web | Como dueño de negocio, quiero configurar presupuesto de campañas para controlar gastos y optimizar inversión. | 3 |
+| 13 | US13 | Pausar Campaña Publicitaria en la Plataforma Web | Como dueño de negocio, quiero pausar campañas temporalmente sin eliminarlas. | 2 |
+| 14 | US14 | Reactivar Campaña Publicitaria en la Plataforma Web | Como dueño de negocio, quiero reactivar campañas pausadas para retomar su difusión. | 2 |
+| 15 | US15 | Programar Fecha de Inicio de Campaña en la Plataforma Web | Como dueño de negocio, quiero programar fecha de inicio para campañas. | 3 |
+| 16 | US16 | Programar Fecha de Fin de Campaña en la Plataforma Web | Como dueño de negocio, quiero programar fecha de fin para campañas. | 3 |
+| 17 | US17 | Configuración de Idioma en la Plataforma Web | Como usuario, quiero seleccionar idioma de la plataforma para visualizar contenido en mi preferencia. | 2 |
 
 *Nota.* Elaboración propia.
 
@@ -1888,21 +1800,9 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Nota.* Elaboración propia (realizado en Figma).
   <br>
 
-  **Planes**
-
-  **Figura 72**<br>
-  *Mock-up — Planes*
-
-  <div align="center">
-      <img src="resources/imgs/capitulo-4/plans-geops-mockup.jpg" alt="Mock-up Planes Consumidor — GeoPS" width="600">
-  </div>
-
-  *Nota.* Elaboración propia (realizado en Figma).
-  <br>
-
   **Acceso Ubicación**
 
-  **Figura 73**<br>
+  **Figura 72**<br>
   *Mock-up — Solicitud de Acceso a Ubicación*
 
   <div align="center">
@@ -1914,7 +1814,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 
   **Ubicación Permitida**
 
-  **Figura 74**<br>
+  **Figura 73**<br>
   *Mock-up — Ubicación Permitida*
 
   <div align="center">
@@ -1928,7 +1828,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 
   - Cines
 
-    **Figura 75**<br>
+    **Figura 74**<br>
     *Mock-up — Sección Cines*
 
     <div align="center">
@@ -1940,7 +1840,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 
   - Buffets
 
-    **Figura 76**<br>
+    **Figura 75**<br>
     *Mock-up — Sección Buffets*
 
     <div align="center">
@@ -1952,7 +1852,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 
   - Parques
 
-    **Figura 77**<br>
+    **Figura 76**<br>
     *Mock-up — Sección Parques*
 
     <div align="center">
@@ -1964,7 +1864,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 
   - Juegos
 
-    **Figura 78**<br>
+    **Figura 77**<br>
     *Mock-up — Sección Juegos*
 
     <div align="center">
@@ -1976,7 +1876,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 
   - Makis
 
-    **Figura 79**<br>
+    **Figura 78**<br>
     *Mock-up — Sección Makis*
 
     <div align="center">
@@ -1988,7 +1888,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 
   - Belleza
 
-    **Figura 80**<br>
+    **Figura 79**<br>
     *Mock-up — Sección Belleza*
 
     <div align="center">
@@ -2002,7 +1902,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 
   - Agregar Oferta al Carrito
 
-    **Figura 81**<br>
+    **Figura 80**<br>
     *Mock-up — Agregar Oferta al Carrito*
 
     <div align="center">
@@ -2014,7 +1914,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 
   - Oferta Agregada al Carrito
 
-    **Figura 82**<br>
+    **Figura 81**<br>
     *Mock-up — Oferta Agregada al Carrito*
 
     <div align="center">
@@ -2024,37 +1924,10 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Nota.* Elaboración propia (realizado en Figma).
     <br>
 
-  **Pago**
-
-  - Ver Carrito
-
-    **Figura 83**<br>
-    *Mock-up — Carrito de Compras*
-
-    <div align="center">
-        <img src="resources/imgs/capitulo-4/carrito-geops-mockup.jpg" alt="Mock-up Carrito de Compras Consumidor — GeoPS" width="600">
-    </div>
-
-    *Nota.* Elaboración propia (realizado en Figma).
-    <br>
-
-  - Procesar Pago
-
-    **Figura 84**<br>
-    *Mock-up — Proceso de Pago*
-
-    <div align="center">
-        <img src="resources/imgs/capitulo-4/pago-geops-mockup.jpg" alt="Mock-up Proceso de Pago Consumidor — GeoPS" width="600">
-    </div>
-
-    *Nota.* Elaboración propia (realizado en Figma).
-    <br>
     
   **Ayuda**
 
-  **Figura 85**<br>
-  * *
-
+  **Figura 82**<br>
   <div align="center">
       <img src="resources/imgs/capitulo-4/centroayudaclient-geops-mockup.jpg" alt="Mock-up Centro de Ayuda Consumidor — GeoPS" width="600">
   </div>
@@ -2076,33 +1949,9 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Nota.* Elaboración propia (realizado en Figma).
     <br>
 
-  - Notificaciones Leídas
-
-    **Figura 87**<br>
-    *Mock-up — Notificaciones leídas*
-
-    <div align="center">
-        <img src="resources/imgs/capitulo-4/noticlientseen-geops-mockup.jpg" alt="Mock-up Notificaciones Leídas Consumidor — GeoPS" width="600">
-    </div>
-
-    *Nota.* Elaboración propia (realizado en Figma).
-    <br>
-
-  - Sin Notificaciones
-
-    **Figura 88**<br>
-    *Mock-up — Sin Notificaciones*
-
-    <div align="center">
-        <img src="resources/imgs/capitulo-4/noticlear-geops-mockup.jpg" alt="Mock-up Sin Notificaciones Consumidor — GeoPS" width="600">
-    </div>
-
-    *Nota.* Elaboración propia (realizado en Figma).
-    <br>
-
   **Perfil**
 
-  **Figura 89**<br>
+  **Figura 87**<br>
   *Mock-up — Perfil*
 
   <div align="center">
@@ -2114,7 +1963,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 
   - Editar Perfil
 
-    **Figura 90**<br>
+    **Figura 88**<br>
     *Mock-up — Editar Perfil*
 
     <div align="center">
@@ -2223,16 +2072,6 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 
   **Planes**
 
-  **Figura 99**<br>
-  *Mockup — Planes Proveedor*
-
-  <div align="center">
-      <img src="resources/imgs/capitulo-4/plans-suppliers-geops-mockup.jpg" alt="Planes Proveedor GeoPS" width="600">
-  </div>
-
-  *Nota.* Elaboración propia (realizado en Figma).  
-  <br>
-
   **Ayuda**
 
   **Figura 100**<br>
@@ -2244,44 +2083,6 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 
   *Nota.* Elaboración propia (realizado en Figma).  
   <br>
-
-  **Notificaciones**
-
-  - Notificaciones Generales
-
-    **Figura 101**<br>
-    *Mockup — Notificaciones Proveedor*
-
-    <div align="center">
-        <img src="resources/imgs/capitulo-4/notisuppliers-geops-mockup.jpg" alt="Notificaciones Proveedor GeoPS" width="600">
-    </div>
-
-    *Nota.* Elaboración propia (realizado en Figma).  
-    <br>
-
-  - Notificaciones Leídas
-
-    **Figura 102**<br>
-    *Mockup — Notificaciones Leídas Proveedor*
-  
-    <div align="center">
-        <img src="resources/imgs/capitulo-4/notiseensuppliers-geops-mockup.jpg" alt="Notificaciones Leídas Proveedor GeoPS" width="600">
-    </div>
-  
-    *Nota.* Elaboración propia (realizado en Figma).  
-    <br>
-
-  - Sin Notificaciones
-
-    **Figura 103**<br>
-    *Mockup — Sin Notificaciones Proveedor*
-
-    <div align="center">
-        <img src="resources/imgs/capitulo-4/noticlearsuppliers-geops-mockup.jpg" alt="Sin Notificaciones Proveedor GeoPS" width="600">
-    </div>
-
-    *Nota.* Elaboración propia (realizado en Figma).  
-    <br>
 
   **Perfil**
 
@@ -3266,262 +3067,30 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
 
   #### 5.1.4. Software Deployment Configuration
 
-  Para el despliegue de la plataforma GeoPS, hemos implementado un proceso de deployment automatizado utilizando GitHub Pages, lo cual nos permite alojar y mantener nuestra Landing Page de manera eficiente y gratuita.
+  En esta sección presentamos los pasos que seguimos para desplegar los proyectos incluidos en este trabajo:
 
-  **Configuración de GitHub Pages para Landing Page**
+  - **Landing Page:**  
+  Para el despliegue de la landing page, escogimos GitHub Pages, un servicio de hosting gratuito que permite publicar sitios web estáticos directamente desde repositorios de GitHub. Esta alternativa nos permitió centralizar el código fuente y la página web en un mismo entorno, facilitando el control de versiones y asegurando que cada actualización realizada en el repositorio se refleje automáticamente en el sitio publicado.
 
-  El deployment de nuestra Landing Page se realiza a través de GitHub Pages, una solución de hosting estático integrada directamente con nuestro repositorio de GitHub. A continuación se detalla el proceso de configuración implementado:
+  - **Base de Datos:**  
+  Para el despliegue de la base de datos, optamos por Railway como plataforma. Esta herramienta nos permite crear instancias de bases de datos, como PostgreSQL o MySQL, en pocos pasos desde su panel de administración. Además, Railway genera de forma automática las credenciales de acceso y gestiona las variables de entorno.
 
-  **Repositorio de la Landing Page:**
-  + **Enlace Repositorio Landing Page:** https://github.com/geops-org/geops-landing
-  + **Enlace Landing Page Deploy:** https://github.com/geops-org/geops-landing
+  - **Backend:**  
+  El backend fue desplegado también en Railway, aprovechando la facilidad que ofrece esta plataforma para gestionar tanto la base de datos como la aplicación dentro de un mismo ecosistema. Para ello, implementamos un Dockerfile optimizado que encapsula la aplicación Java junto con todas sus dependencias y configuraciones necesarias. Railway detecta automáticamente este archivo, construye la imagen del contenedor y realiza el despliegue correspondiente.
 
-  **1. Configuración General del Repositorio**
+  - **Frontend:**  
+  Para el despliegue de la aplicación frontend, elegimos Vercel con una integración eficiente con repositorios Git. Esta plataforma automatiza el proceso de compilación y despliegue, de manera que cada cambio enviado a la rama configurada genera una nueva versión de la aplicación en producción.
 
-  La configuración inicial del repositorio incluye la configuración del nombre, template repository, y configuraciones de seguridad para contribuciones:
-
-  **Figura 126**   
-  *Configuración general del repositorio de la Landing Page — GitHub*
-
-  <div align="center">
-    <img src="resources/images/chapter-5/repositorio-landing-page-settings.jpg" alt="Configuración del repositorio Landing Page en GitHub" width="1000">
-  </div>
-
-  *Nota.* Elaboración propia.
-
-  **Configuraciones Clave:**
-  + **Repository Name:** Landing
-  + **Default Branch:** main
-  + **Template Repository:** Deshabilitado
-  + **Require contributors to sign off on web-based commits:** Habilitado para mantener la integridad del código
-
-  **2. Configuración de GitHub Pages**
-
-  La configuración de GitHub Pages se realiza desde la sección "Pages" en la configuración del repositorio:
-
-  **Figura 127**   
-  *Configuración de GitHub Pages — Landing Page GeoPS*
-
-  <div align="center">
-    <img src="resources/images/chapter-5/github-pages.jpg" alt="Configuración GitHub Pages para GeoPS" width="1000">
-  </div>
-
-  *Nota.* Elaboración propia.
-
-  **Configuración de Deployment:**
-  + **Source:** Deploy from a branch
-  + **Branch:** main / (root)
-  + **Custom Domain:** No configurado (usando dominio por defecto)
-  + **HTTPS:** Habilitado automáticamente
-  + **Enlace Landing Page Deploy:** <https://opensourcedevupc.github.io/Landing/>
-
-  **3. Estado del Repositorio y Deployment**
-
-  El repositorio muestra información detallada sobre el estado del deployment y las características técnicas del proyecto:
-
-  **Figura 128**   
-  *Estado del repositorio y configuración de deployment — Landing Page GeoPS*
-
-  <div align="center">
-    <img src="resources/images/chapter-5/repositorio-landing-page.jpg" alt="Estado del repositorio Landing Page en GitHub" width="1000">
-  </div>
-
-  *Nota.* Elaboración propia.
-
-  **Métricas del Proyecto:**
-  + **Lenguajes:** CSS (48.4%), HTML (35.4%), TypeScript (16.2%)
-  + **Último Deployment:** github-pages (4 days ago)
-  + **Commits Recientes:** 19 commits desde GilbertHuarcaya
-  + **Actividad:** Merge pull request #2 con nuevas imágenes y funcionalidades TypeScript
-
-  **4. Landing Page Desplegada**
-
-  El resultado final del deployment es la landing page completamente funcional y accesible públicamente:
-
-  **Figura 129**   
-  *Landing Page desplegada públicamente — GeoPS*
-
-  <div align="center">
-    <img src="resources/images/chapter-5/github-pages-landing-page.jpg" alt="Landing Page GeoPS en producción GitHub Pages" width="1000">
-  </div>
-
-  *Nota.* Elaboración propia.
-
-  **Ventajas del Deployment con GitHub Pages:**
-
-  + **Hosting Gratuito:** No requiere costos adicionales de hosting
-  + **Integración Nativa:** Completamente integrado con el workflow de GitHub
-  + **Deployment Automático:** Se actualiza automáticamente con cada push al branch main
-  + **HTTPS por Defecto:** Seguridad habilitada automáticamente
-  + **Custom Domains:** Posibilidad de configurar dominios personalizados
-  + **Escalabilidad:** Manejo eficiente de tráfico para sitios estáticos
-  + **Versionado:** Historial completo de deployments vinculado a commits
-  + **Rollback Sencillo:** Capacidad de revertir a versiones anteriores fácilmente
-
-  **Ventajas de GitHub Pages para GeoPS:**
-
-  - **Integración Nativa:** Conexión directa con nuestro flujo de trabajo en GitHub
-  - **SSL Automático:** Certificados HTTPS configurados automáticamente
-  - **Deployment Automático:** Actualizaciones instantáneas al hacer push al repositorio
-  - **Rendimiento:** CDN global de GitHub para carga rápida
-  - **Costo:** Servicio gratuito para proyectos open source
-
-  **Configuración de Archivos del Proyecto:**
-
-  Para asegurar el correcto funcionamiento del deployment, la estructura del repositorio mantiene:
-
-  ```
-  Landing/
-  ├── index.html          # Página principal
-  ├── css/
-  │   └── styles.css      # Estilos de la landing page
-  ├── js/
-  │   └── main.js         # Funcionalidades interactivas
-  ├── assets/
-  │   └── images/         # Recursos gráficos
-  └── README.md           # Documentación del proyecto
-  ```
-
-  *Imagen de referencia: Estructura de archivos del repositorio*
-
-  **Verificación del Deployment:**
-
-  Una vez completado el deployment, se puede verificar el estado del mismo en:
-  - **GitHub Actions:** Pestaña "Actions" del repositorio para ver el historial de deployments
-  - **Settings > Pages:** Estado actual del deployment y URL activa
-  - **Enlace Landing Page Deploy:** Verificación directa accediendo a https://opensourcedevupc.github.io/Landing/
-
-  *Imagen de referencia: Verificación exitosa del deployment*
-
-  Esta configuración nos permite mantener nuestra Landing Page actualizada de manera automática y eficiente, asegurando que cualquier cambio en el código se refleje inmediatamente en la versión en producción.
-
-  En esta sección, documentaremos y explicaremos el progreso del Sprint 1 en términos de desarrollo de la plataforma GeoPS y colaboración del equipo. Abordaremos varios aspectos clave, incluyendo la planificación del sprint centrada en funcionalidades de geolocalización y publicidad hiperlocalizada.
 
 ### 5.2. Product Implementation & Deployment.
 
   #### 5.2.1. Sprint Backlogs
   
   #### 5.2.2. Implemented Landing Page Evidence
-
-Este sitio web representa la cara pública del proyecto, desplegado eficientemente a través de GitHub Pages para garantizar una alta disponibilidad y tiempos de carga rápidos. La landing page funciona como el punto de entrada principal, presentando la identidad visual de la marca y explicando de forma interactiva el valor del ecosistema hiperlocal para conectar a los usuarios con la cultura asiática en Lima.
-
-<div align="center">
-  <img src="resources/imgs/LandingPage/LandingPagePicture1.jpg" width="700">
-</div>
-
-En esta sección la aplicación presenta su propuesta de valor como un radar hiperlocal en Lima, ofreciendo un acceso directo para que los usuarios creen su cuenta y exploren el ecosistema.
-
-<div align="center">
-  <img src="resources/imgs/LandingPage/LandingPagePicture2.jpg" width="700">
-</div>
-
-Aquí la plataforma detalla su proceso operativo basado en la búsqueda de productos, la geolocalización exacta de stands y la verificación de inventario real en tiendas aliadas.
-
-<div align="center">
-  <img src="resources/imgs/LandingPage/LandingPagePicture3.jpg" width="700">
-</div>
-
-La interfaz permite elegir entre perfiles de consumidor o negocio, resaltando funciones para comparar precios y navegar con precisión dentro de las galerías más importantes de la ciudad.
-
-<div align="center">
-  <img src="resources/imgs/LandingPage/LandingPagePicture4.jpg" width="700">
-</div>
-
-La Landing Page utiliza este espacio para mostrar su funcionamiento interno mediante videos demostrativos y presentar al equipo responsable de la transformación digital de los comercios asiáticos.
-
-<div align="center">
-  <img src="resources/imgs/LandingPage/LandingPagePicture5.jpg" width="700">
-</div>
-
-En esta ventana final, el sistema resuelve dudas frecuentes de los usuarios sobre costos y beneficios, proporcionando además los accesos para el registro formal de nuevos proveedores.
-
+  
   #### 5.2.3. Implemented Frontend-Web Application Evidence
 
-Aquí se presenta el frontend de la aplicación completamente desplegado en Vercel, ofreciendo una interfaz de usuario rápida, responsiva y optimizada para la interacción en tiempo real. Esta implementación permite que tanto usuarios como dueños de negocios accedan a todas las funcionalidades del ecosistema GeoPS de manera fluida y segura directamente desde la web.
-  
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture1.jpg" width="700">
-</div>
-
-La aplicación muestra el formulario de inicio de sesión donde el usuario ingresa sus credenciales para acceder al panel de administración de su negocio.
-
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture2.jpg" width="700">
-</div>
-
-En esta ventana, la plataforma permite el registro de nuevos usuarios recolectando datos básicos y definiendo el tipo de perfil, ya sea como consumidor o proveedor.
-
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture3.jpg" width="700">
-</div>
-
-El sistema presenta un tablero de resumen con métricas clave como impresiones, clics y CTR promedio para monitorear el rendimiento general de las campañas activas.
-
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture4.jpg" width="700">
-</div>
-
-Aquí la interfaz organiza las campañas por estados (activas, pausadas o finalizadas), permitiendo al administrador editar, pausar o finalizar cada anuncio de forma individual.
-
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture5.jpg" width="700">
-</div>
-
-La plataforma ofrece un formulario para crear nuevas campañas publicitarias, donde se define el nombre, descripción, fechas de vigencia y el presupuesto estimado en soles.
-
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture6.jpg" width="700">
-</div>
-
-En esta sección, la app genera reportes detallados que se pueden filtrar y exportar en formato JSON, mostrando un resumen general de la inversión y el impacto alcanzado.
-
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture7.jpg" width="700">
-</div>
-
-La ventana de comentarios permite al dueño del negocio visualizar la calificación promedio y leer las reseñas de los clientes para gestionar la reputación del establecimiento.
-
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture8.jpg" width="700">
-</div>
-
-La aplicación cuenta con un centro de ayuda integrado que resuelve dudas frecuentes sobre la creación de campañas, gestión de métricas y estados de los anuncios.
-
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture9.jpg" width="700">
-</div>
-
-Aquí se muestra el perfil del negocio con información de contacto, el plan actual de suscripción y un resumen de ofertas guardadas o ubicaciones frecuentes.
-
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture10.jpg" width="700">
-</div>
-
-La interfaz de configuración permite editar detalles críticos del negocio como el RUC, tipo de establecimiento (ej. Chifa), dirección física, horarios de atención y enlaces web.
-
   #### 5.2.4. Implemented RESTful API and/or Serverless Backend Evidence
-
-Aquí se observa el backend del proyecto desplegado y documentado con Swagger UI, lo cual permite visualizar y probar de forma interactiva todos los endpoints de la API. La interfaz facilita la gestión del CRUD y la verificación de la lógica de negocio directamente desde el navegador, asegurando que la comunicación entre el servidor y la base de datos sea correcta.
-
-<div align="center">
-  <img src="resources/imgs/Chapter5/Backend/BackendPicture1.jpg" width="700">
-</div>
-
-<div align="center">
-  <img src="resources/imgs/Chapter5/Backend/BackendPicture2.jpg" width="700">
-</div>
-
-<div align="center">
-  <img src="resources/imgs/Chapter5/Backend/BackendPicture3.jpg" width="700">
-</div>
-
-<div align="center">
-  <img src="resources/imgs/Chapter5/Backend/BackendPicture4.jpg" width="700">
-</div>
-
-<div align="center">
-  <img src="resources/imgs/Chapter5/Backend/BackendPicture5.jpg" width="700">
-</div>
 
   #### 5.2.5. RESTful API documentation
 
@@ -3539,8 +3108,6 @@ Aquí se observa el backend del proyecto desplegado y documentado con Swagger UI
 **Conclusiones y Recomendaciones**
 
 El desarrollo del proyecto GeoPS permitió transformar una idea inicial en una solución tecnológica completa y funcional, integrando landing page, frontend interactivo con Angular y backend robusto con Spring Boot desplegado en la nube. A lo largo de los cuatro sprints se evidenció un progreso consistente en la capacidad técnica del equipo, tanto en términos de diseño de interfaces como en arquitectura de software, integración de servicios y despliegue continuo en plataformas de producción.
-
-A lo largo del proyecto se evidenció una mejora progresiva en la organización del trabajo y en la coordinación del equipo. El uso de metodologías ágiles (Scrum) **SE DEBE EVITAR EL USO DE "metodologías ágiles" REVISAR ANEXO E**, control de versiones mediante GitHub, gestión visual en Trello y comunicación por Discord y Google Meet permitió mantener un flujo de trabajo ordenado y eficiente. Cada sprint aportó valor incremental, fortaleciendo la arquitectura y asegurando la cohesión entre las distintas funcionalidades desarrolladas. El Sprint 4 marcó la culminación del MVP con la implementación del módulo completo de Proveedores, permitiendo a los negocios gestionar campañas publicitarias de manera efectiva.
 
 Desde el punto de vista técnico, se construyó una plataforma sólida que integra módulos esenciales como autenticación, gestión de usuarios, favoritos, ofertas, reseñas, cupones, carritos, pagos, suscripciones y el nuevo módulo de campañas publicitarias para proveedores. El despliegue del backend en Railway y del frontend en Vercel confirma la capacidad del equipo para trabajar con servicios en la nube, manejando entornos reales de producción. La documentación completa del API con Swagger UI facilita la comprensión de los endpoints y permite la futura expansión del sistema.
 
