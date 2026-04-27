@@ -3427,6 +3427,26 @@ A continuación se muestran las evidencias de la implementación de la Landing P
   
   #### 5.2.3. Implemented Frontend-Web Application Evidence
 
+<div align="center">
+  <img src="Chapter5/WebApplication/WebApplicationPicture6.jpg" width="700">
+</div>
+
+<div align="center">
+  <img src="Chapter5/WebApplication/WebApplicationPicture7.jpg" width="700">
+</div>
+
+<div align="center">
+  <img src="Chapter5/WebApplication/WebApplicationPicture8.jpg" width="700">
+</div>
+
+<div align="center">
+  <img src="Chapter5/WebApplication/WebApplicationPicture9.jpg" width="700">
+</div>
+
+<div align="center">
+  <img src="Chapter5/WebApplication/WebApplicationPicture10.jpg" width="700">
+</div>
+
   #### 5.2.4. Implemented RESTful API and/or Serverless Backend Evidence
 
   #### 5.2.5. RESTful API documentation
