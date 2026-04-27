@@ -697,10 +697,8 @@ A través de ellas se traduce lo que los usuarios quieren lograr al usar el prod
 | Epic                                               | ID   |
 |----------------------------------------------------|------|
 | Registro y Autenticación                           | EP01 |
-| Descubrimiento y Gestión de Ofertas (Clientes)     | EP02 |
-| Gestión de Campañas Publicitarias (Proveedores)    | EP03 |
-| Planes y Suscripciones (Clientes y Proveedores)    | EP04 |
-| Experiencia del Usuario y Contenido                | EP05 |
+| Descubrimiento y Gestión de Ofertas                | EP02 |
+| Gestión de Campañas Publicitarias                  | EP03 |
 
 *Nota.* Elaboración propia.
 
@@ -713,47 +711,19 @@ A través de ellas se traduce lo que los usuarios quieren lograr al usar el prod
 | US02     | Inicio de Sesión de Usuario en la Plataforma Web             | Como usuario, quiero poder iniciar sesión en la plataforma web con mi correo electrónico y contraseña para acceder a mis ofertas guardadas.                        | Escenario 01: Dado que estoy en la página de inicio de sesión, Cuando ingreso mis credenciales correctas y hago clic en “Iniciar sesión”, Entonces el sistema autentica y me redirige a “Mis ofertas guardadas”.                                   | EP01                       |
 | US03     | Registro de Negocio en la Plataforma Web                     | Como dueño de negocio, quiero poder registrar mi negocio proporcionando información detallada para poder crear campañas publicitarias.                             | Escenario 01: Dado que estoy en la página de registro de negocio, Cuando ingreso un correo válido, contraseña y datos obligatorios, Entonces el sistema crea la cuenta del negocio y muestra un mensaje de éxito.                                   | EP01                       |
 | US04     | Inicio de Sesión de Negocio en la Plataforma Web             | Como dueño de negocio, quiero poder iniciar sesión con mi correo electrónico y contraseña para acceder al panel de gestión de campañas.                           | Escenario 01: Dado que estoy en la página de inicio de sesión de negocios, Cuando ingreso mis credenciales correctas, Entonces el sistema autentica y me redirige al panel de gestión.                                                             | EP01                       |
-| US05     | Recuperación de Contraseña en la Plataforma Web              | Como usuario o dueño de negocio, quiero poder recuperar mi contraseña para restablecer el acceso en caso de olvido.                                                | Escenario 01: Dado que estoy en la página de recuperación de contraseña, Cuando ingreso un correo válido y confirmo la acción, Entonces el sistema envía un enlace de restablecimiento y muestra un mensaje de confirmación.                        | EP01                       |
-| US06     | Búsqueda de Ofertas por Ubicación en la Plataforma Web       | Como usuario, quiero poder buscar ofertas cercanas a mi ubicación para encontrar promociones convenientes y ahorrar tiempo.                                        | Escenario 01: Dado que permití el acceso a mi ubicación, Cuando realizo una búsqueda, Entonces el sistema muestra un listado de promociones ordenadas por cercanía.                                                                                 | EP02                       |
-| US07     | Búsqueda de Ofertas por Categoría en la Plataforma Web       | Como usuario, quiero poder filtrar ofertas por categoría para encontrar fácilmente las promociones que me interesan.                                              | Escenario 01: Dado que estoy en la sección de búsqueda, Cuando selecciono una categoría, Entonces el sistema muestra solo las ofertas correspondientes.                                                                                            | EP02                       |
-| US08     | Visualización de Detalles de Oferta en la Plataforma Web     | Como usuario, quiero poder visualizar los detalles de una oferta para conocer toda la información antes de aprovecharla.                                          | Escenario 01: Dado que estoy en el listado de ofertas, Cuando selecciono una oferta, Entonces el sistema muestra la información detallada (descripción, precio, vigencia, ubicación, condiciones de uso).                                            | EP02                       |
-| US09     | Visualización de Ofertas en Mapa en la Plataforma Web        | Como usuario, quiero visualizar las ofertas en un mapa para ubicar rápidamente negocios cercanos.                                                                  | Escenario 01: Dado que estoy en la sección de ofertas, Cuando selecciono “Ver en mapa”, Entonces el sistema muestra un mapa interactivo con ubicación de negocios y ofertas.                                                                        | EP02                       |
-| US10     | Guardar Ofertas en la Plataforma Web                         | Como usuario, quiero poder guardar ofertas para revisarlas más tarde y no perder promociones de interés.                                                           | Escenario 01: Dado que estoy viendo una oferta, Cuando hago clic en “Guardar oferta”, Entonces el sistema la almacena en mi perfil y me permite acceder desde “Mis ofertas guardadas”.                                                              | EP02                       |
-| US11     | Creación de Campaña Publicitaria en la Plataforma Web        | Como dueño de negocio, quiero crear campañas publicitarias para promocionar mis productos o servicios.                                                             | Escenario 01: Dado que estoy en el panel de gestión, Cuando completo los campos obligatorios, Entonces el sistema guarda la campaña y la muestra en la lista de campañas activas.                                                                   | EP03                       |
-| US12     | Edición de Campaña Publicitaria en la Plataforma Web         | Como dueño de negocio, quiero editar campañas publicitarias existentes para actualizar información y mejorar efectividad.                                          | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y modifico sus datos, Entonces el sistema guarda cambios y actualiza la información visible.                                                               | EP03                       |
-| US13     | Eliminación de Campaña Publicitaria en la Plataforma Web     | Como dueño de negocio, quiero eliminar campañas publicitarias para retirar promociones que ya no deseo mantener.                                                   | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y confirmo “Eliminar”, Entonces el sistema elimina la campaña y desaparece de la lista de activas.                                                         | EP03                       |
-| US14     | Visualización de Campañas Activas en la Plataforma Web       | Como dueño de negocio, quiero visualizar todas mis campañas activas para dar seguimiento.                                                                          | Escenario 01: Dado que estoy en el panel de gestión, Cuando accedo a “Campañas Activas”, Entonces el sistema muestra un listado de todas las campañas vigentes.                                                                                      | EP03                       |
-| US15     | Visualización de Métricas de Campañas en la Plataforma Web   | Como dueño de negocio, quiero visualizar métricas de mis campañas para evaluar desempeño y tomar decisiones.                                                       | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña específica y accedo a métricas, Entonces el sistema muestra visualizaciones, clics, interacciones y duración.                                                      | EP03                       |
-| US16     | Filtrado de Campañas por Estado en la Plataforma Web         | Como dueño de negocio, quiero filtrar mis campañas por estado para gestionarlas fácilmente.                                                                        | Escenario 01: Dado que estoy en la sección de gestión, Cuando selecciono un estado específico, Entonces el sistema muestra únicamente campañas de ese estado.                                                                                        | EP03                       |
-| US17     | Notificaciones de Rendimiento de Campaña en la Plataforma Web| Como dueño de negocio, quiero recibir notificaciones sobre el rendimiento de mis campañas sin revisarlas constantemente.                                           | Escenario 01: Dado que tengo una campaña activa, Cuando ocurre un evento relevante (ej. campaña por finalizar), Entonces el sistema me muestra una notificación con resumen del evento.                                                              | EP03                       |
-| US18     | Exportación de Reportes de Campañas en la Plataforma Web     | Como dueño de negocio, quiero exportar reportes de mis campañas para analizarlos externamente.                                                                     | Escenario 01: Dado que estoy en la sección de métricas, Cuando selecciono “Exportar reporte”, Entonces el sistema genera archivo en PDF o Excel con información de la campaña.                                                                       | EP03                       |
-| US19     | Configuración de Presupuesto de Campaña en la Plataforma Web | Como dueño de negocio, quiero configurar presupuesto de campañas para controlar gastos y optimizar inversión.                                                      | Escenario 01: Dado que estoy creando o editando una campaña, Cuando ingreso presupuesto y confirmo, Entonces el sistema guarda el presupuesto y lo muestra en el panel.                                                                               | EP03                       |
-| US20     | Pausar Campaña Publicitaria en la Plataforma Web             | Como dueño de negocio, quiero pausar campañas temporalmente sin eliminarlas.                                                                                      | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y hago clic en “Pausar”, Entonces el sistema cambia estado a “Pausada”.                                                                                    | EP03                       |
-| US21     | Reactivar Campaña Publicitaria en la Plataforma Web          | Como dueño de negocio, quiero reactivar campañas pausadas para retomar su difusión.                                                                               | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña pausada y hago clic en “Reactivar”, Entonces el sistema cambia estado a “Activa”.                                                                                  | EP03                       |
-| US22     | Programar Fecha de Inicio de Campaña en la Plataforma Web    | Como dueño de negocio, quiero programar fecha de inicio para campañas.                                                                                             | Escenario 01: Dado que estoy creando campaña, Cuando selecciono fecha futura, Entonces el sistema guarda programación y activa automáticamente la campaña en esa fecha.                                                                              | EP03                       |
-| US23     | Programar Fecha de Fin de Campaña en la Plataforma Web       | Como dueño de negocio, quiero programar fecha de fin para campañas.                                                                                                | Escenario 01: Dado que estoy creando o editando campaña, Cuando selecciono fecha de fin, Entonces el sistema cambia estado a “Finalizada” automáticamente al concluir el periodo.                                                                    | EP03                       |
-| US24     | Segmentación de Campañas por Ubicación en la Plataforma Web  | Como dueño de negocio, quiero segmentar campañas por ubicación para dirigir anuncios a usuarios de un área objetivo.                                               | Escenario 01: Dado que estoy creando o editando campaña, Cuando defino una zona geográfica o radio, Entonces el sistema limita visualización de la campaña a usuarios dentro del área configurada.                                                    | EP03                       |
-| US25     | Segmentación de Campañas por Demografía en la Plataforma Web | Como dueño de negocio, quiero segmentar campañas por demografía e intereses para dirigirlas al público más relevante.                                              | Escenario 01: Dado que estoy creando o editando campaña, Cuando selecciono filtros de segmentación (edad, género, intereses), Entonces el sistema configura campaña solo para usuarios que cumplen esos criterios.                                      | EP03                       |
-| US26     | Duplicar Campaña Publicitaria en la Plataforma Web           | Como dueño de negocio, quiero duplicar campañas existentes para ahorrar tiempo en creación.                                                                        | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña y hago clic en “Duplicar”, Entonces el sistema crea nueva campaña con mismos datos de la original.                                                                 | EP03                       |
-| US27     | Previsualización de Campaña en la Plataforma Web             | Como dueño de negocio, quiero previsualizar campañas antes de publicarlas.                                                                                         | Escenario 01: Dado que estoy en proceso de creación o edición, Cuando hago clic en “Previsualizar”, Entonces el sistema muestra vista simulada de cómo se verá publicada la campaña.                                                                  | EP03                       |
-| US28     | Historial de Campañas en la Plataforma Web                   | Como dueño de negocio, quiero visualizar historial de todas mis campañas para llevar registro de promociones realizadas.                                           | Escenario 01: Dado que estoy en el panel de gestión, Cuando accedo a “Historial de campañas”, Entonces el sistema muestra listado con todas las finalizadas y sus datos principales.                                                                  | EP03                       |
-| US29     | Configuración de Idioma en la Plataforma Web                 | Como usuario, quiero seleccionar idioma de la plataforma para visualizar contenido en mi preferencia.                                                              | Escenario 01: Dado que estoy en la página principal, Cuando selecciono un idioma en el selector, Entonces el sistema cambia todo el contenido al idioma elegido.                                                                                      | EP05                       |
-| US30     | Accesibilidad en la Plataforma Web                           | Como usuario, quiero que la plataforma cumpla criterios de accesibilidad (contraste, lectores de pantalla, navegación con teclado).                                | Escenario 01: Dado que navego en la plataforma, Cuando interactúo con elementos, Entonces el sistema permite usarlos de manera accesible.                                                                                                            | EP05                       |
-| US31     | Registro de Puntos de Interés Habituales en la Plataforma Web| Como usuario, quiero registrar puntos de interés habituales para recibir promociones en esas zonas.                                                                | Escenario 01: Dado que estoy en mi perfil, Cuando agrego dirección o selecciono punto en mapa, Entonces el sistema guarda ese punto de interés y muestra promociones cercanas.                                                                        | EP04                       |
-| US32     | Suscripción a Plan Premium (Proveedor)                       | Como proveedor, quiero suscribirme al plan Premium para acceder a estadísticas y herramientas avanzadas.                                                           | Escenario 01: Dado que estoy en la página de planes, Cuando selecciono “Hazte Premium” y completo pago, Entonces el sistema actualiza cuenta a Premium y habilita beneficios avanzados.                                                               | EP04                       |
-| US33     | Suscripción a Plan Premium (Cliente)                         | Como cliente, quiero suscribirme al plan Premium para acceder a descuentos exclusivos y promociones especiales.                                                    | Escenario 01: Dado que estoy en página de planes, Cuando selecciono “Hazte Premium” y completo pago, Entonces el sistema actualiza mi cuenta a Premium y habilita beneficios exclusivos.                                                              | EP04                       |
-| US34     | Gestión de Suscripción (Cliente/Proveedor)                   | Como usuario, quiero gestionar mi suscripción para cambiar de plan, renovar o cancelar.                                                                            | Escenario 01: Dado que estoy en Mi cuenta → Suscripción, Cuando selecciono una acción y confirmo, Entonces el sistema aplica cambios y muestra confirmación.                                                                                         | EP04                       |
-| US35     | Encabezado con navegación                                    | Como visitante, quiero un encabezado con menú de navegación.                                                                                                       | Escenario 01: Dado que accedo a la landing, Cuando interactúo con el encabezado, Entonces puedo navegar entre secciones principales.                                                                                                                 | EP05                       |
-| US36     | Información en el footer                                     | Como visitante, quiero ver información útil en el pie de página.                                                                                                   | Escenario 01: Dado que navego en la página principal, Cuando llego al pie de página, Entonces observo enlaces a contacto, términos y redes sociales.                                                                                                  | EP05                       |
-| US37     | Visualización de Encabezado con Navegación en Landing Page   | Como visitante, quiero ver un encabezado con navegación a las secciones principales.                                                                               | Escenario 01: Dado que accedo a la landing page, Cuando visualizo la parte superior, Entonces el sistema muestra un encabezado con enlaces a secciones principales.                                                                                   | EP05                       |
-| US38     | Visualización de Hero Section en la Landing Page             | Como visitante, quiero ver un mensaje principal con un call-to-action en la parte superior.                                                                        | Escenario 01: Dado que accedo a la landing, Cuando llego a la sección principal, Entonces visualizo mensaje destacado y un botón de acción (ej. “Únete ahora”).                                                                                      | EP05                       |
-| US39     | Visualización de Sección de Promociones en Landing Page      | Como visitante, quiero ver una sección con promociones disponibles.                                                                                                | Escenario 01: Dado que navego en la landing, Cuando llego a “Ver Promociones”, Entonces el sistema muestra promociones representativas con información básica.                                                                                        | EP05                       |
-| US40     | Visualización de Marcas y Tiendas en la Landing Page         | Como visitante, quiero ver logos e información de marcas asociadas para confiar en la plataforma.                                                                  | Escenario 01: Dado que navego en la landing, Cuando llego a “Marcas y Tiendas Asociadas”, Entonces el sistema muestra logos e información básica de negocios afiliados.                                                                              | EP05                       |
-| US41     | Visualización de “Quiénes Somos” en Landing Page             | Como visitante, quiero ver sección “Quiénes Somos” para comprender misión de GeoPS.                                                                                | Escenario 01: Dado que navego en la landing, Cuando llego a “Quiénes Somos”, Entonces el sistema muestra información sobre misión de GeoPS de forma clara y atractiva.                                                                               | EP05                       |
-| US42     | Consulta de Preguntas Frecuentes en Landing Page             | Como visitante, quiero acceder a sección de FAQ para resolver dudas sin contactar soporte.                                                                         | Escenario 01: Dado que navego en la landing, Cuando despliego una pregunta, Entonces el sistema muestra respuesta correspondiente de manera clara.                                                                                                    | EP05                       |
-| US43     | Visualización de Footer con Información de Contacto          | Como visitante, quiero ver un pie de página con redes sociales y datos de contacto.                                                                                | Escenario 01: Dado que navego en la landing, Cuando llego al pie de página, Entonces el sistema muestra enlaces activos a redes sociales y datos de contacto.                                                                                        | EP05                       |
-| US44     | Diseño Responsivo en la Landing Page                         | Como visitante, quiero que la landing se adapte automáticamente a mi dispositivo.                                                                                  | Escenario 01: Dado que accedo a la landing desde móvil o tablet, Cuando navego, Entonces el sistema muestra contenido ajustado correctamente al tamaño de pantalla.                                                                                   | EP05                       |
-| US45     | Optimización y Pruebas Finales de la Landing Page            | Como visitante, quiero que la landing funcione en distintos navegadores y cargue rápido.                                                                           | Escenario 01: Dado que accedo a la landing desde diferentes navegadores y dispositivos, Cuando navego por las secciones, Entonces el sistema mantiene buen rendimiento, muestra todo correctamente y no presenta errores de compatibilidad.            | EP05                       |
+| US05     | Búsqueda de Ofertas por Categoría en la Plataforma Web       | Como usuario, quiero poder filtrar ofertas por categoría para encontrar fácilmente las promociones que me interesan.                                              | Escenario 01: Dado que estoy en la sección de búsqueda, Cuando selecciono una categoría, Entonces el sistema muestra solo las ofertas correspondientes.                                                                                            | EP02                       |
+| US06     | Visualización de Detalles de Oferta en la Plataforma Web     | Como usuario, quiero poder visualizar los detalles de una oferta para conocer toda la información antes de aprovecharla.                                          | Escenario 01: Dado que estoy en el listado de ofertas, Cuando selecciono una oferta, Entonces el sistema muestra la información detallada (descripción, precio, vigencia, ubicación, condiciones de uso).                                            | EP02                       |
+| US07     | Guardar Ofertas en la Plataforma Web                         | Como usuario, quiero poder guardar ofertas para revisarlas más tarde y no perder promociones de interés.                                                           | Escenario 01: Dado que estoy viendo una oferta, Cuando hago clic en “Guardar oferta”, Entonces el sistema la almacena en mi perfil y me permite acceder desde “Mis ofertas guardadas”.                                                              | EP02                       |
+| US08     | Creación de Campaña Publicitaria en la Plataforma Web        | Como dueño de negocio, quiero crear campañas publicitarias para promocionar mis productos o servicios.                                                             | Escenario 01: Dado que estoy en el panel de gestión, Cuando completo los campos obligatorios, Entonces el sistema guarda la campaña y la muestra en la lista de campañas activas.                                                                   | EP03                       |
+| US09     | Edición de Campaña Publicitaria en la Plataforma Web         | Como dueño de negocio, quiero editar campañas publicitarias existentes para actualizar información y mejorar efectividad.                                          | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y modifico sus datos, Entonces el sistema guarda cambios y actualiza la información visible.                                                               | EP03                       |
+| US10     | Eliminación de Campaña Publicitaria en la Plataforma Web     | Como dueño de negocio, quiero eliminar campañas publicitarias para retirar promociones que ya no deseo mantener.                                                   | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y confirmo “Eliminar”, Entonces el sistema elimina la campaña y desaparece de la lista de activas.                                                         | EP03                       |
+| US11     | Visualización de Campañas Activas en la Plataforma Web       | Como dueño de negocio, quiero visualizar todas mis campañas activas para dar seguimiento.                                                                          | Escenario 01: Dado que estoy en el panel de gestión, Cuando accedo a “Campañas Activas”, Entonces el sistema muestra un listado de todas las campañas vigentes.                                                                                      | EP03                       |
+| US12     | Configuración de Presupuesto de Campaña en la Plataforma Web | Como dueño de negocio, quiero configurar presupuesto de campañas para controlar gastos y optimizar inversión.                                                      | Escenario 01: Dado que estoy creando o editando una campaña, Cuando ingreso presupuesto y confirmo, Entonces el sistema guarda el presupuesto y lo muestra en el panel.                                                                               | EP03                       |
+| US13     | Pausar Campaña Publicitaria en la Plataforma Web             | Como dueño de negocio, quiero pausar campañas temporalmente sin eliminarlas.                                                                                      | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y hago clic en “Pausar”, Entonces el sistema cambia estado a “Pausada”.                                                                                    | EP03                       |
+| US14     | Reactivar Campaña Publicitaria en la Plataforma Web          | Como dueño de negocio, quiero reactivar campañas pausadas para retomar su difusión.                                                                               | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña pausada y hago clic en “Reactivar”, Entonces el sistema cambia estado a “Activa”.                                                                                  | EP03                       |
+| US15     | Programar Fecha de Inicio de Campaña en la Plataforma Web    | Como dueño de negocio, quiero programar fecha de inicio para campañas.                                                                                             | Escenario 01: Dado que estoy creando campaña, Cuando selecciono fecha futura, Entonces el sistema guarda programación y activa automáticamente la campaña en esa fecha.                                                                              | EP03                       |
+| US16     | Programar Fecha de Fin de Campaña en la Plataforma Web       | Como dueño de negocio, quiero programar fecha de fin para campañas.                                                                                                | Escenario 01: Dado que estoy creando o editando campaña, Cuando selecciono fecha de fin, Entonces el sistema cambia estado a “Finalizada” automáticamente al concluir el periodo.                                                                    | EP03                       |
+| US17     | Configuración de Idioma en la Plataforma Web                 | Como usuario, quiero seleccionar idioma de la plataforma para visualizar contenido en mi preferencia.                                                              | Escenario 01: Dado que estoy en la página principal, Cuando selecciono un idioma en el selector, Entonces el sistema cambia todo el contenido al idioma elegido.                                                                                      | EP05                       |
 
 *Nota.* Elaboración propia.
 
@@ -769,14 +739,12 @@ Están orientadas al equipo de desarrollo y especifican aspectos relacionados co
 |----------|---------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
 | TS01     | Endpoint: Registrar usuario          | Como Developer, deseo exponer `POST /auth/register` para crear cuentas de usuario con validación de email y password. | **Scenario: Registro exitoso**<br> Dado un payload válido,<br> Cuando envío POST `/auth/register`,<br> Entonces responde 201 con id y email.<br><br> **Scenario: Email en uso**<br> Dado un email ya registrado,<br> Cuando envío POST `/auth/register`,<br> Entonces responde 409 con error `email_taken`. | US01 |
 | TS02     | Endpoint: Login de usuario           | Como Developer, deseo exponer `POST /auth/login` para autenticar usuarios y emitir un JWT. | **Scenario: Credenciales válidas**<br> Dado email y password correctos,<br> Cuando envío POST `/auth/login`,<br> Entonces responde 200 con `access_token`.<br><br> **Scenario: Credenciales inválidas**<br> Dado password incorrecto,<br> Cuando envío POST `/auth/login`,<br> Entonces responde 401 con error `invalid_credentials`. | US02 |
-| TS03     | Endpoint: Recuperar contraseña       | Como Developer, deseo exponer `POST /auth/forgot-password` para enviar un link de reseteo vía email. | **Scenario: Solicitud válida**<br> Dado un email registrado,<br> Cuando envío POST `/auth/forgot-password`,<br> Entonces responde 202 con status=`email_sent`.<br><br> **Scenario: Email no registrado**<br> Dado email inexistente,<br> Cuando envío POST `/auth/forgot-password`,<br> Entonces responde 202 sin revelar existencia. | US05 |
-| TS04     | Endpoint: Búsqueda de ofertas por ubicación | Como Developer, deseo exponer `GET /offers?lat={lat}&lng={lng}&radiusKm={r}` para listar ofertas cercanas. | **Scenario: Consulta válida**<br> Dado coordenadas correctas,<br> Cuando envío GET,<br> Entonces responde 200 con lista de ofertas.<br><br> **Scenario: Parámetros faltantes**<br> Dado falta lat/lng,<br> Cuando envío GET,<br> Entonces responde 400 con error `invalid_params`. | US06 |
-| TS05     | Endpoint: Ofertas por categoría      | Como Developer, deseo exponer `GET /offers?category={slug}` para filtrar ofertas. | **Scenario: Categoría válida**<br> Dado category existente,<br> Cuando envío GET,<br> Entonces responde 200 con lista de ofertas.<br><br> **Scenario: Categoría inválida**<br> Dado category no existe,<br> Cuando envío GET,<br> Entonces responde 200 con lista vacía. | US07 |
-| TS06     | Endpoint: Detalle de oferta          | Como Developer, deseo exponer `GET /offers/{id}` para obtener detalles completos. | **Scenario: Oferta encontrada**<br> Dado id válido,<br> Cuando envío GET,<br> Entonces responde 200 con detalle.<br><br> **Scenario: Oferta inexistente**<br> Dado id inválido,<br> Cuando envío GET,<br> Entonces responde 404 con error `not_found`. | US08 |
-| TS07     | Endpoint: Guardar oferta (favoritos) | Como Developer, deseo exponer `POST /users/me/saved-offers` para guardar ofertas de usuario autenticado. | **Scenario: Guardado exitoso**<br> Dado token válido,<br> Cuando envío POST con offerId,<br> Entonces responde 201 con `saved=true`.<br><br> **Scenario: Sin autenticación**<br> Dado falta token,<br> Cuando envío POST,<br> Entonces responde 401 con error `unauthorized`. | US10 |
-| TS08     | Endpoint: Crear campaña              | Como Developer, deseo exponer `POST /campaigns` para que un proveedor cree campañas publicitarias. | **Scenario: Creación válida**<br> Dado payload con título, fechas y presupuesto correctos,<br> Cuando envío POST,<br> Entonces responde 201 con estado `draft`.<br><br> **Scenario: Fechas inválidas**<br> Dado `endDate < startDate`,<br> Cuando envío POST,<br> Entonces responde 422 con error `invalid_dates`. | US11 |
-| TS09     | Endpoint: Editar campaña             | Como Developer, deseo exponer `PUT /campaigns/{id}` para editar campañas existentes. | **Scenario: Actualización válida**<br> Dado proveedor dueño de campaña,<br> Cuando envío PUT,<br> Entonces responde 200 con `updated=true`.<br><br> **Scenario: Sin permisos**<br> Dado proveedor no dueño,<br> Cuando envío PUT,<br> Entonces responde 403 con error `forbidden`. | US12 |
-| TS10     | Endpoint: Pausar/Reactivar campaña   | Como Developer, deseo exponer `PATCH /campaigns/{id}/pause` y `/resume` para controlar estado. | **Scenario: Pausa válida**<br> Dado campaña activa,<br> Cuando envío PATCH `/pause`,<br> Entonces responde 200 con status=`paused`.<br><br> **Scenario: Reactivación válida**<br> Dado campaña pausada,<br> Cuando envío PATCH `/resume`,<br> Entonces responde 200 con status=`active`. | US20 / US21 |
+| TS04     | Endpoint: Búsqueda de ofertas por categoría | Como Developer, deseo exponer `GET /offers?category={slug}` para filtrar ofertas. | **Scenario: Categoría válida**<br> Dado category existente,<br> Cuando envío GET,<br> Entonces responde 200 con lista de ofertas.<br><br> **Scenario: Categoría inválida**<br> Dado category no existe,<br> Cuando envío GET,<br> Entonces responde 200 con lista vacía. | US05 |
+| TS05     | Endpoint: Detalle de oferta          | Como Developer, deseo exponer `GET /offers/{id}` para obtener detalles completos. | **Scenario: Oferta encontrada**<br> Dado id válido,<br> Cuando envío GET,<br> Entonces responde 200 con detalle.<br><br> **Scenario: Oferta inexistente**<br> Dado id inválido,<br> Cuando envío GET,<br> Entonces responde 404 con error `not_found`. | US06 |
+| TS06     | Endpoint: Guardar oferta (favoritos) | Como Developer, deseo exponer `POST /users/me/saved-offers` para guardar ofertas de usuario autenticado. | **Scenario: Guardado exitoso**<br> Dado token válido,<br> Cuando envío POST con offerId,<br> Entonces responde 201 con `saved=true`.<br><br> **Scenario: Sin autenticación**<br> Dado falta token,<br> Cuando envío POST,<br> Entonces responde 401 con error `unauthorized`. | US07 |
+| TS07     | Endpoint: Crear campaña              | Como Developer, deseo exponer `POST /campaigns` para que un proveedor cree campañas publicitarias. | **Scenario: Creación válida**<br> Dado payload con título, fechas y presupuesto correctos,<br> Cuando envío POST,<br> Entonces responde 201 con estado `draft`.<br><br> **Scenario: Fechas inválidas**<br> Dado `endDate < startDate`,<br> Cuando envío POST,<br> Entonces responde 422 con error `invalid_dates`. | US08 |
+| TS08     | Endpoint: Editar campaña             | Como Developer, deseo exponer `PUT /campaigns/{id}` para editar campañas existentes. | **Scenario: Actualización válida**<br> Dado proveedor dueño de campaña,<br> Cuando envío PUT,<br> Entonces responde 200 con `updated=true`.<br><br> **Scenario: Sin permisos**<br> Dado proveedor no dueño,<br> Cuando envío PUT,<br> Entonces responde 403 con error `forbidden`. | US09 |
+| TS09     | Endpoint: Pausar/Reactivar campaña   | Como Developer, deseo exponer `PATCH /campaigns/{id}/pause` y `/resume` para controlar estado. | **Scenario: Pausa válida**<br> Dado campaña activa,<br> Cuando envío PATCH `/pause`,<br> Entonces responde 200 con status=`paused`.<br><br> **Scenario: Reactivación válida**<br> Dado campaña pausada,<br> Cuando envío PATCH `/resume`,<br> Entonces responde 200 con status=`active`. | US13 / US14 |
 
 *Nota.* Elaboración propia.
 
@@ -798,69 +766,41 @@ El Impact Mapping es una técnica de planificación estratégica que conecta los
 El **Product Backlog** es una lista priorizada de funcionalidades, mejoras y requisitos técnicos que guiarán la evolución del producto.  
 Su propósito es organizar el trabajo en función del valor que aporta al usuario y al negocio, sirviendo como una hoja de ruta flexible y adaptable durante el desarrollo.
 
-**Enlace al Tablero:** https://trello.com/invite/b/6827b176ac2901fb01dfde7f/ATTI41e099b86c4d473204a21f0e3359cadd5F57D4C1/product-backlog-geops
+**Enlace al Tablero:** https://geops-org.atlassian.net/jira/software/projects/GEOP/boards/69/backlog?atlOrigin=eyJpIjoiODc2NDI0MDBkOGE4NGZmMGFiOWYzNmZiZTY5NDk5ZWUiLCJwIjoiaiJ9
 
-**Vista del Product Backlog en Trello**
+**Vista del Product Backlog en Jira**
 
 **Figura 15**<br>
 *Product Backlog — GeoPS*
 
 <div align="center">
-    <img src="resources/imgs/chapter-iii/Product Backlog - Trello.jpg" alt="Product Backlog — GeoPS" width="600">
+    <img src="resources/imgs/Product-Backlog-2026.png/" alt="Product Backlog — GeoPS" width="600">
 </div>
 
-*Nota.* Elaboración propia (realizado en Trello).
+*Nota.* Elaboración propia (realizado en Jira).
 
 **Tabla 9**   
 *Product Backlog — Priorización de funcionalidades del producto GeoPS*  
 
 | # Orden | User Story ID | Título | Descripción | Story Points |
 |---------|---------------|--------|-------------|--------------|
-| 1  | US35 | Encabezado con navegación | Como visitante, deseo ver un encabezado con navegación para desplazarme fácilmente por la landing page. | 2 |
-| 2  | US36 | Información en el footer | Como visitante, deseo visualizar un pie de página con enlaces a contacto y redes sociales para resolver dudas y confiar en la plataforma. | 2 |
-| 3  | US37 | Visualización de Encabezado con Navegación en la Landing Page | Como visitante de la página web, quiero ver un encabezado con navegación a las secciones principales para poder desplazarme fácilmente por la landing page. | 2 |
-| 4  | US38 | Visualización de Hero Section | Como visitante, deseo ver un mensaje principal con un botón de acción para comprender la propuesta de valor y registrarme. | 3 |
-| 5  | US39 | Visualización de Sección de Promociones | Como visitante, deseo ver promociones destacadas en la página principal para identificar beneficios de usar la plataforma. | 3 |
-| 6  | US40 | Visualización de Marcas y Tiendas Asociadas | Como visitante, deseo ver logos e información de negocios asociados para confiar en la plataforma. | 3 |
-| 7  | US41 | Visualización de la Sección “Quiénes Somos” | Como visitante, deseo conocer la misión y visión de la empresa para confiar en la plataforma. | 3 |
-| 8  | US42 | Consulta de Preguntas Frecuentes | Como visitante, deseo acceder a una sección de FAQ para resolver mis dudas sin necesidad de soporte. | 3 |
-| 9  | US43 | Visualización de Footer con Contacto y Redes Sociales | Como visitante, deseo ver enlaces de contacto y redes sociales para comunicarme fácilmente. | 2 |
-| 10 | US44 | Diseño Responsivo | Como visitante, deseo que la página se adapte a móviles y tablets para visualizar el contenido correctamente. | 5 |
-| 11 | US45 | Optimización y Pruebas Finales | Como visitante, deseo que la página funcione en cualquier navegador y cargue rápido para tener una experiencia fluida. | 2 |
-| 12 | US29 | Configuración de Idioma | Como usuario, deseo cambiar el idioma de la plataforma para usarla en mi preferencia. | 2 |
-| 13 | US30 | Accesibilidad | Como usuario, deseo que la plataforma sea accesible para poder usarla sin limitaciones. | 3 |
-| 14 | US31 | Registro de Puntos de Interés Habituales | Como usuario, deseo registrar puntos de interés habituales para recibir promociones de esas zonas. | 5 |
-| 15 | US06 | Búsqueda de Ofertas por Ubicación | Como usuario, deseo buscar ofertas cercanas a mi ubicación para aprovechar promociones locales. | 5 |
-| 16 | US07 | Búsqueda de Ofertas por Categoría | Como usuario, deseo filtrar ofertas por categoría para encontrar fácilmente las de mi interés. | 3 |
-| 17 | US08 | Visualización de Detalles de Oferta | Como usuario, deseo ver la información detallada de una oferta para decidir si la aprovecho. | 2 |
-| 18 | US09 | Visualización de Ofertas en Mapa | Como usuario, deseo ver ofertas en un mapa para ubicar negocios cercanos. | 5 |
-| 19 | US10 | Guardar Ofertas | Como usuario, deseo guardar ofertas para revisarlas más tarde. | 3 |
-| 20 | US32 | Suscripción a Plan Premium (Proveedor) | Como proveedor, deseo suscribirme al plan Premium para acceder a estadísticas y segmentación. | 5 |
-| 21 | US33 | Suscripción a Plan Premium (Cliente) | Como cliente, deseo suscribirme al plan Premium para acceder a descuentos exclusivos. | 5 |
-| 22 | US34 | Gestión de Suscripción | Como usuario, deseo gestionar mi suscripción (cambiar, renovar, cancelar) según mis necesidades. | 5 |
-| 23 | US01 | Registro de Usuario | Como usuario, deseo registrarme en la plataforma con mi correo y contraseña para acceder a promociones personalizadas. | 5 |
-| 24 | US02 | Inicio de Sesión de Usuario | Como usuario, deseo iniciar sesión en la plataforma con mis credenciales para acceder a mi cuenta. | 3 |
-| 25 | US03 | Registro de Negocio | Como proveedor, deseo registrar mi negocio para poder crear campañas. | 5 |
-| 26 | US04 | Inicio de Sesión de Negocio | Como proveedor, deseo iniciar sesión en la plataforma con mis credenciales para acceder a mi panel. | 3 |
-| 27 | US05 | Recuperación de Contraseña | Como usuario/proveedor, deseo recuperar mi contraseña en caso de olvido para restablecer el acceso. | 3 |
-| 28 | US11 | Creación de Campaña Publicitaria | Como proveedor, deseo crear campañas publicitarias para promocionar mis productos o servicios. | 8 |
-| 29 | US12 | Edición de Campaña Publicitaria | Como proveedor, deseo editar campañas publicitarias para actualizar su información. | 5 |
-| 30 | US13 | Eliminación de Campaña Publicitaria | Como proveedor, deseo eliminar campañas para retirar promociones que ya no deseo mantener. | 3 |
-| 31 | US14 | Visualización de Campañas Activas | Como proveedor, deseo ver mis campañas activas para hacer seguimiento. | 3 |
-| 32 | US15 | Visualización de Métricas de Campañas | Como proveedor, deseo ver métricas de mis campañas para evaluar su desempeño. | 5 |
-| 33 | US16 | Filtrado de Campañas por Estado | Como proveedor, deseo filtrar campañas por estado para organizarlas mejor. | 3 |
-| 34 | US17 | Notificaciones de Rendimiento de Campaña | Como proveedor, deseo recibir notificaciones sobre el rendimiento de mis campañas. | 3 |
-| 35 | US18 | Exportación de Reportes de Campañas | Como proveedor, deseo exportar reportes en PDF/Excel para analizarlos externamente. | 5 |
-| 36 | US19 | Configuración de Presupuesto | Como proveedor, deseo configurar el presupuesto de una campaña para controlar mis gastos. | 3 |
-| 37 | US20 | Pausar Campaña Publicitaria | Como proveedor, deseo pausar campañas para detener temporalmente su difusión. | 2 |
-| 38 | US21 | Reactivar Campaña Publicitaria | Como proveedor, deseo reactivar campañas pausadas para retomar su difusión. | 2 |
-| 39 | US22 | Programar Fecha de Inicio de Campaña | Como proveedor, deseo programar la fecha de inicio de una campaña para automatizar su publicación. | 3 |
-| 40 | US23 | Programar Fecha de Fin de Campaña | Como proveedor, deseo programar la fecha de fin de una campaña para que se cierre automáticamente. | 3 |
-| 41 | US24 | Segmentación de Campañas por Ubicación | Como proveedor, deseo segmentar mis campañas por ubicación para llegar al público adecuado. | 5 |
-| 42 | US25 | Segmentación de Campañas por Demografía e Intereses | Como proveedor, deseo segmentar mis campañas por demografía e intereses para dirigirlas mejor. | 5 |
-| 43 | US26 | Duplicar Campaña Publicitaria | Como proveedor, deseo duplicar campañas para reutilizar configuraciones anteriores. | 3 |
-| 44 | US27 | Previsualización de Campaña Publicitaria | Como proveedor, deseo previsualizar campañas antes de publicarlas. | 3 |
-| 45 | US28 | Historial de Campañas Publicitarias | Como proveedor, deseo ver un historial de campañas anteriores para llevar registro. | 3 |
+| 1  | US01 | Registro de Usuario en la Plataforma Web | Como usuario, quiero poder registrarme en la plataforma web con mi correo electrónico y contraseña para poder acceder a las ofertas personalizadas. | 5 |
+| 2  | US02 | Inicio de Sesión de Usuario en la Plataforma Web | Como usuario, quiero poder iniciar sesión en la plataforma web con mi correo electrónico y contraseña para acceder a mis ofertas guardadas. | 3 |
+| 3  | US03 | Registro de Negocio en la Plataforma Web | Como dueño de negocio, quiero poder registrar mi negocio proporcionando información detallada para poder crear campañas publicitarias. | 5 |
+| 4  | US04 | Inicio de Sesión de Negocio en la Plataforma Web | Como dueño de negocio, quiero poder iniciar sesión con mi correo electrónico y contraseña para acceder al panel de gestión de campañas. | 3 |
+| 5  | US05 | Búsqueda de Ofertas por Categoría en la Plataforma Web | Como usuario, quiero poder filtrar ofertas por categoría para encontrar fácilmente las promociones que me interesan. | 3 |
+| 6  | US06 | Visualización de Detalles de Oferta en la Plataforma Web | Como usuario, quiero poder visualizar los detalles de una oferta para conocer toda la información antes de aprovecharla. | 2 |
+| 7  | US07 | Guardar Ofertas en la Plataforma Web | Como usuario, quiero poder guardar ofertas para revisarlas más tarde y no perder promociones de interés. | 3 |
+| 8  | US08 | Creación de Campaña Publicitaria en la Plataforma Web | Como dueño de negocio, quiero crear campañas publicitarias para promocionar mis productos o servicios. | 8 |
+| 9  | US09 | Edición de Campaña Publicitaria en la Plataforma Web | Como dueño de negocio, quiero editar campañas publicitarias existentes para actualizar información y mejorar efectividad. | 5 |
+| 10 | US10 | Eliminación de Campaña Publicitaria en la Plataforma Web | Como dueño de negocio, quiero eliminar campañas publicitarias para retirar promociones que ya no deseo mantener. | 3 |
+| 11 | US11 | Visualización de Campañas Activas en la Plataforma Web | Como dueño de negocio, quiero visualizar todas mis campañas activas para dar seguimiento. | 3 |
+| 12 | US12 | Configuración de Presupuesto de Campaña en la Plataforma Web | Como dueño de negocio, quiero configurar presupuesto de campañas para controlar gastos y optimizar inversión. | 3 |
+| 13 | US13 | Pausar Campaña Publicitaria en la Plataforma Web | Como dueño de negocio, quiero pausar campañas temporalmente sin eliminarlas. | 2 |
+| 14 | US14 | Reactivar Campaña Publicitaria en la Plataforma Web | Como dueño de negocio, quiero reactivar campañas pausadas para retomar su difusión. | 2 |
+| 15 | US15 | Programar Fecha de Inicio de Campaña en la Plataforma Web | Como dueño de negocio, quiero programar fecha de inicio para campañas. | 3 |
+| 16 | US16 | Programar Fecha de Fin de Campaña en la Plataforma Web | Como dueño de negocio, quiero programar fecha de fin para campañas. | 3 |
+| 17 | US17 | Configuración de Idioma en la Plataforma Web | Como usuario, quiero seleccionar idioma de la plataforma para visualizar contenido en mi preferencia. | 2 |
 
 *Nota.* Elaboración propia.
 
@@ -3265,137 +3205,19 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
   ```
 
   #### 5.1.4. Software Deployment Configuration
+  En esta sección presentamos los pasos que seguimos para desplegar los proyectos incluidos en este trabajo:
 
-  Para el despliegue de la plataforma GeoPS, hemos implementado un proceso de deployment automatizado utilizando GitHub Pages, lo cual nos permite alojar y mantener nuestra Landing Page de manera eficiente y gratuita.
+  - **Landing Page:**  
+    Para el despliegue de la landing page, escogimos GitHub Pages, un servicio de hosting gratuito que permite publicar sitios web estáticos directamente desde repositorios de GitHub. Esta alternativa nos permitió centralizar el código fuente y la página web en un mismo entorno, facilitando el control de versiones y asegurando que cada actualización realizada en el repositorio se refleje automáticamente en el sitio publicado.
 
-  **Configuración de GitHub Pages para Landing Page**
+  - **Base de Datos:**  
+    Para el despliegue de la base de datos, optamos por Railway como plataforma. Esta herramienta simplifica considerablemente el proceso de aprovisionamiento, ya que permite crear instancias de bases de datos, como PostgreSQL o MySQL, en pocos pasos desde su panel de administración. Además, Railway genera de forma automática las credenciales de acceso y gestiona las variables de entorno, lo que reduce la complejidad de la configuración manual. Asimismo, incorpora funcionalidades como copias de seguridad automáticas y monitoreo integrado, lo que facilita la administración de la infraestructura.
 
-  El deployment de nuestra Landing Page se realiza a través de GitHub Pages, una solución de hosting estático integrada directamente con nuestro repositorio de GitHub. A continuación se detalla el proceso de configuración implementado:
+  - **Backend:**  
+    El backend fue desplegado también en Railway, aprovechando la facilidad que ofrece esta plataforma para gestionar tanto la base de datos como la aplicación dentro de un mismo ecosistema. Para ello, implementamos un Dockerfile optimizado que encapsula la aplicación Java junto con todas sus dependencias y configuraciones necesarias. Railway detecta automáticamente este archivo, construye la imagen del contenedor y realiza el despliegue correspondiente. De este modo, pudimos definir las variables de entorno desde el panel de la plataforma, reduciendo significativamente la complejidad de la configuración inicial y beneficiándonos de funcionalidades como el escalado automático, los despliegues continuos y el monitoreo integrado.
 
-  **Repositorio de la Landing Page:**
-  + **Enlace Repositorio Landing Page:** https://github.com/geops-org/geops-landing
-  + **Enlace Landing Page Deploy:** https://github.com/geops-org/geops-landing
-
-  **1. Configuración General del Repositorio**
-
-  La configuración inicial del repositorio incluye la configuración del nombre, template repository, y configuraciones de seguridad para contribuciones:
-
-  **Figura 126**   
-  *Configuración general del repositorio de la Landing Page — GitHub*
-
-  <div align="center">
-    <img src="resources/images/chapter-5/repositorio-landing-page-settings.jpg" alt="Configuración del repositorio Landing Page en GitHub" width="1000">
-  </div>
-
-  *Nota.* Elaboración propia.
-
-  **Configuraciones Clave:**
-  + **Repository Name:** Landing
-  + **Default Branch:** main
-  + **Template Repository:** Deshabilitado
-  + **Require contributors to sign off on web-based commits:** Habilitado para mantener la integridad del código
-
-  **2. Configuración de GitHub Pages**
-
-  La configuración de GitHub Pages se realiza desde la sección "Pages" en la configuración del repositorio:
-
-  **Figura 127**   
-  *Configuración de GitHub Pages — Landing Page GeoPS*
-
-  <div align="center">
-    <img src="resources/images/chapter-5/github-pages.jpg" alt="Configuración GitHub Pages para GeoPS" width="1000">
-  </div>
-
-  *Nota.* Elaboración propia.
-
-  **Configuración de Deployment:**
-  + **Source:** Deploy from a branch
-  + **Branch:** main / (root)
-  + **Custom Domain:** No configurado (usando dominio por defecto)
-  + **HTTPS:** Habilitado automáticamente
-  + **Enlace Landing Page Deploy:** <https://opensourcedevupc.github.io/Landing/>
-
-  **3. Estado del Repositorio y Deployment**
-
-  El repositorio muestra información detallada sobre el estado del deployment y las características técnicas del proyecto:
-
-  **Figura 128**   
-  *Estado del repositorio y configuración de deployment — Landing Page GeoPS*
-
-  <div align="center">
-    <img src="resources/images/chapter-5/repositorio-landing-page.jpg" alt="Estado del repositorio Landing Page en GitHub" width="1000">
-  </div>
-
-  *Nota.* Elaboración propia.
-
-  **Métricas del Proyecto:**
-  + **Lenguajes:** CSS (48.4%), HTML (35.4%), TypeScript (16.2%)
-  + **Último Deployment:** github-pages (4 days ago)
-  + **Commits Recientes:** 19 commits desde GilbertHuarcaya
-  + **Actividad:** Merge pull request #2 con nuevas imágenes y funcionalidades TypeScript
-
-  **4. Landing Page Desplegada**
-
-  El resultado final del deployment es la landing page completamente funcional y accesible públicamente:
-
-  **Figura 129**   
-  *Landing Page desplegada públicamente — GeoPS*
-
-  <div align="center">
-    <img src="resources/images/chapter-5/github-pages-landing-page.jpg" alt="Landing Page GeoPS en producción GitHub Pages" width="1000">
-  </div>
-
-  *Nota.* Elaboración propia.
-
-  **Ventajas del Deployment con GitHub Pages:**
-
-  + **Hosting Gratuito:** No requiere costos adicionales de hosting
-  + **Integración Nativa:** Completamente integrado con el workflow de GitHub
-  + **Deployment Automático:** Se actualiza automáticamente con cada push al branch main
-  + **HTTPS por Defecto:** Seguridad habilitada automáticamente
-  + **Custom Domains:** Posibilidad de configurar dominios personalizados
-  + **Escalabilidad:** Manejo eficiente de tráfico para sitios estáticos
-  + **Versionado:** Historial completo de deployments vinculado a commits
-  + **Rollback Sencillo:** Capacidad de revertir a versiones anteriores fácilmente
-
-  **Ventajas de GitHub Pages para GeoPS:**
-
-  - **Integración Nativa:** Conexión directa con nuestro flujo de trabajo en GitHub
-  - **SSL Automático:** Certificados HTTPS configurados automáticamente
-  - **Deployment Automático:** Actualizaciones instantáneas al hacer push al repositorio
-  - **Rendimiento:** CDN global de GitHub para carga rápida
-  - **Costo:** Servicio gratuito para proyectos open source
-
-  **Configuración de Archivos del Proyecto:**
-
-  Para asegurar el correcto funcionamiento del deployment, la estructura del repositorio mantiene:
-
-  ```
-  Landing/
-  ├── index.html          # Página principal
-  ├── css/
-  │   └── styles.css      # Estilos de la landing page
-  ├── js/
-  │   └── main.js         # Funcionalidades interactivas
-  ├── assets/
-  │   └── images/         # Recursos gráficos
-  └── README.md           # Documentación del proyecto
-  ```
-
-  *Imagen de referencia: Estructura de archivos del repositorio*
-
-  **Verificación del Deployment:**
-
-  Una vez completado el deployment, se puede verificar el estado del mismo en:
-  - **GitHub Actions:** Pestaña "Actions" del repositorio para ver el historial de deployments
-  - **Settings > Pages:** Estado actual del deployment y URL activa
-  - **Enlace Landing Page Deploy:** Verificación directa accediendo a https://opensourcedevupc.github.io/Landing/
-
-  *Imagen de referencia: Verificación exitosa del deployment*
-
-  Esta configuración nos permite mantener nuestra Landing Page actualizada de manera automática y eficiente, asegurando que cualquier cambio en el código se refleje inmediatamente en la versión en producción.
-
-  En esta sección, documentaremos y explicaremos el progreso del Sprint 1 en términos de desarrollo de la plataforma GeoPS y colaboración del equipo. Abordaremos varios aspectos clave, incluyendo la planificación del sprint centrada en funcionalidades de geolocalización y publicidad hiperlocalizada.
+  - **Frontend:**  
+    Para el despliegue de la aplicación frontend, elegimos Vercel, una plataforma especializada en el hosting de aplicaciones web modernas y con una integración eficiente con repositorios Git. Esta plataforma automatiza el proceso de compilación y despliegue, de manera que cada cambio enviado a la rama configurada genera una nueva versión de la aplicación en producción. Además, Vercel optimiza el rendimiento de forma automática y proporciona características avanzadas como vistas previas de despliegue, lo que facilita el flujo de trabajo durante el desarrollo y la publicación.
 
 ### 5.2. Product Implementation & Deployment.
 
