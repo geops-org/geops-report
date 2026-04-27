@@ -3406,23 +3406,23 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
 A continuación se muestran las evidencias de la implementación de la Landing Page:
 
 <div align="center">
-  <img src="imgs/LandingPagePicture1.jpg" width="700">
+  <img src="imgs/LandingPage/LandingPagePicture1.jpg" width="700">
 </div>
 
 <div align="center">
-  <img src="imgs/LandingPagePicture2.jpg" width="700">
+  <img src="imgs/LandingPage/LandingPagePicture2.jpg" width="700">
 </div>
 
 <div align="center">
-  <img src="imgs/LandingPagePicture3.jpg" width="700">
+  <img src="imgs/LandingPage/LandingPagePicture3.jpg" width="700">
 </div>
 
 <div align="center">
-  <img src="imgs/LandingPagePicture4.jpg" width="700">
+  <img src="imgs/LandingPage/LandingPagePicture4.jpg" width="700">
 </div>
 
 <div align="center">
-  <img src="imgs/LandingPagePicture5.jpg" width="700">
+  <img src="imgs/LandingPage/LandingPagePicture5.jpg" width="700">
 </div>
   
   #### 5.2.3. Implemented Frontend-Web Application Evidence
