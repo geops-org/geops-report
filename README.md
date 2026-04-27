@@ -3403,7 +3403,7 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
   
   #### 5.2.2. Implemented Landing Page Evidence
 
-A continuación se muestran las evidencias de la implementación de la Landing Page:
+Este sitio web representa la cara pública del proyecto, desplegado eficientemente a través de GitHub Pages para garantizar una alta disponibilidad y tiempos de carga rápidos. La landing page funciona como el punto de entrada principal, presentando la identidad visual de la marca y explicando de forma interactiva el valor del ecosistema hiperlocal para conectar a los usuarios con la cultura asiática en Lima.
 
 <div align="center">
   <img src="resources/imgs/LandingPage/LandingPagePicture1.jpg" width="700">
@@ -3437,6 +3437,8 @@ En esta ventana final, el sistema resuelve dudas frecuentes de los usuarios sobr
 
   #### 5.2.3. Implemented Frontend-Web Application Evidence
 
+Aquí se presenta el frontend de la aplicación completamente desplegado en Vercel, ofreciendo una interfaz de usuario rápida, responsiva y optimizada para la interacción en tiempo real. Esta implementación permite que tanto usuarios como dueños de negocios accedan a todas las funcionalidades del ecosistema GeoPS de manera fluida y segura directamente desde la web.
+  
 <div align="center">
   <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture1.jpg" width="700">
 </div>
@@ -3498,6 +3500,8 @@ Aquí se muestra el perfil del negocio con información de contacto, el plan act
 La interfaz de configuración permite editar detalles críticos del negocio como el RUC, tipo de establecimiento (ej. Chifa), dirección física, horarios de atención y enlaces web.
 
   #### 5.2.4. Implemented RESTful API and/or Serverless Backend Evidence
+
+Aquí se observa el backend del proyecto desplegado y documentado con Swagger UI, lo cual permite visualizar y probar de forma interactiva todos los endpoints de la API. La interfaz facilita la gestión del CRUD y la verificación de la lógica de negocio directamente desde el navegador, asegurando que la comunicación entre el servidor y la base de datos sea correcta.
 
 <div align="center">
   <img src="resources/imgs/Chapter5/Backend/BackendPicture1.jpg" width="700">
