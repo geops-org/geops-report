@@ -3405,15 +3405,25 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
 
 A continuación se muestran las evidencias de la implementación de la Landing Page:
 
-![Landing Page 1](resources/imgs/LandingPagePicture1.jpg)
+<div align="center">
+  <img src="imgs/LandingPagePicture1.jpg" width="700">
+</div>
 
-![Landing Page 2](resourcesimgs/LandingPagePicture2.jpg)
+<div align="center">
+  <img src="imgs/LandingPagePicture2.jpg" width="700">
+</div>
 
-![Landing Page 3](resourcesimgs/LandingPagePicture3.jpg)
+<div align="center">
+  <img src="imgs/LandingPagePicture3.jpg" width="700">
+</div>
 
-![Landing Page 4](resourcesimgs/LandingPagePicture4.jpg)
+<div align="center">
+  <img src="imgs/LandingPagePicture4.jpg" width="700">
+</div>
 
-![Landing Page 5](resourcesimgs/LandingPagePicture5.jpg)
+<div align="center">
+  <img src="imgs/LandingPagePicture5.jpg" width="700">
+</div>
   
   #### 5.2.3. Implemented Frontend-Web Application Evidence
 
