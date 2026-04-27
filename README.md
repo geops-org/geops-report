@@ -50,7 +50,7 @@
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :---- | :---- | :---- | :---- |
-| TB1 | 27/04/2026 | Barba Estrada, Bryan Eduardo <br> Cárdenas Concha, Santiago Iván <br> Diestra Zambrano Adriana Maria <br> Valverde Portuguez, Natalia Ximena <br> Salazar Caballero, Alvaro Fabrizzio <br> Choy Robles, Vanessa May Lang | En la primera entrega del informe de nuestro proyecto, hemos realizado los primeros 5 capítulos del informe y también entregamos la primera versión del landing page de GeoPS. |
+| TB1 | 27/04/2026 | Barba Estrada, Bryan Eduardo <br> Cárdenas Concha, Santiago Iván <br> Diestra Zambrano Adriana Maria <br> Valverde Portuguez, Natalia Ximena <br> Salazar Caballero, Alvaro Fabrizzio <br> Choy Robles, Vanessa May Lang <br> Vera Nuñez, Nicolas Alejandro | En la primera entrega del informe de nuestro proyecto, hemos realizado los primeros 5 capítulos del informe y también entregamos la primera versión del landing page de GeoPS. |
 
 ---
 
@@ -163,16 +163,18 @@
 
 ### 1.1. Startup Profile
   #### 1.1.1. Descripcion del Startup
-  
-  **GeoPS Labs** es una startup enfocada en el desarrollo de soluciones tecnológicas que conectan comercios locales con usuarios mediante publicidad **hiperlocalizada** basada en análisis de **geolocalización inteligente**. A través de una **plataforma web accesible** desde cualquier navegador, los usuarios pueden visualizar ofertas en tiempo real, mientras que los comercios acceden a un **panel de gestión de campañas** con herramientas de marketing basadas en proximidad y perfil de   movimiento. Esto permite aumentar la conversión de sus estrategias publicitarias con un menor costo y mayor control de resultados. **GeoPS Labs** apuesta por combinar **tecnología, datos y experiencia de usuario** para generar beneficios reales, priorizando siempre la **privacidad** y la **relevancia** en la entrega de contenidos.
+
+**GeoPS Labs** es una startup enfocada en el desarrollo de soluciones tecnológicas que centralizan la oferta de productos asiáticos y orientales en la zona de Lima Moderna, conectando este creciente mercado de cultura oriental (gastronomía, cosmética e insumos coreanos, japoneses y chinos) con usuarios mediante publicidad hiperlocalizada basada en análisis de geolocalización inteligente.
+
+A través de una plataforma web accesible desde cualquier navegador, los usuarios pueden visualizar ofertas de insumos, alimentos y artículos orientales en tiempo real, mientras que los comercios especializados acceden a un panel de gestión de campañas con herramientas de marketing basadas en proximidad y perfil de movimiento. Esto permite aumentar la conversión de sus estrategias publicitarias con un menor costo y mayor control de resultados en un mercado de nicho. **GeoPS Labs** apuesta por combinar tecnología, datos y experiencia de usuario para generar beneficios reales, priorizando siempre la privacidad y la relevancia en la entrega de contenidos.
   
   **Misión**
 
-  Conectar personas y comercios de manera inteligente y relevante, mejorando la experiencia de compra diaria mediante tecnología web de geolocalización respetuosa y personalizada.
+  Conectar personas y comercios de productos orientales en Lima Moderna de manera inteligente y relevante, facilitando el acceso a la cultura y productos de origen asiático mediante tecnología web de geolocalización respetuosa y personalizada.
   
   **Visión**
 
-  Ser la **plataforma web líder en publicidad hiperlocalizada en Latinoamérica**, revolucionando la manera en que los comercios y usuarios interactúan en el entorno digital urbano.
+  Ser la plataforma web líder en la centralización y publicidad hiperlocalizada de productos asiáticos en Latinoamérica, revolucionando la manera en que los comercios especializados y usuarios interactúan en el entorno digital urbano.
   
   #### 1.1.2. Perfiles de Integrantes del equipo
 
@@ -188,77 +190,91 @@
   
   <img src="resources/imgs/chapter-i/Santiago.jpg" width="500"><br>
   **Santiago**
+
+  <img src="resources/imgs/chapter-i/Nicolas.png" width="150"><br>
+  **Nicolas**
   
   </div>
 
 ### 1.2. Solution Profile
 
-**GeoPS Labs (Geo Publicity Service)** es una plataforma web que conecta comercios locales con consumidores mediante **geolocalización inteligente** y **notificaciones web push**, ofreciendo promociones y publicidad relevante en tiempo real.  
+  **GeoPS Labs (Geo Publicity Service)** es una plataforma web que centraliza comercios de productos asiáticos y orientales (Corea, Japón y China) con consumidores en Lima Moderna mediante geolocalización inteligente y notificaciones web push, ofreciendo promociones y publicidad relevante en tiempo real.
 
-La solución permite a los negocios gestionar **campañas digitales** de manera sencilla y accesible desde un navegador, mientras que los usuarios disfrutan de una **experiencia rápida y personalizada** sin necesidad de descargar aplicaciones.  
+  La solución permite a los negocios especializados gestionar campañas digitales de manera sencilla y accesible desde un navegador, mientras que los usuarios disfrutan de una experiencia rápida y personalizada para localizar artículos de gastronomía o cosmética oriental sin necesidad de descargar aplicaciones adicionales.
 
-Con un **diseño responsive** que se adapta a cualquier dispositivo, **GeoPS Labs** busca:  
+  Con un diseño responsive que se adapta a cualquier dispositivo, **GeoPS Labs** busca:
 
-- Mejorar la experiencia de compra diaria.  
-- Impulsar la **digitalización de las PyMEs**.  
-- Fortalecer la conexión entre negocios y clientes en el **entorno urbano peruano**.  
+  - Optimizar la búsqueda de productos asiáticos específicos y de tendencia en zonas de conveniencia.
+
+  - Impulsar la digitalización de las PyMEs dedicadas al rubro oriental en el mercado peruano.
+
+  - Fortalecer la conexión entre negocios especializados y clientes interesados en la cultura asiática dentro de Lima Moderna. 
 
   #### 1.2.1 Antecedentes y problemática
-  Las pequeñas y medianas empresas (PyMEs) en el Perú, que representan más del 99% del sector empresarial, enfrentan barreras para implementar marketing digital debido a costos, falta de conocimiento y complejidad tecnológica, lo que las mantiene dependientes de métodos tradicionales poco medibles (PCM, 2023). A la par, los consumidores urbanos muestran fatiga publicitaria, pues más del 60% desconfía de anuncios genéricos y exige mensajes relevantes y auténticos (Reyes et al., 2021). Aunque existen plataformas como Groupon o Tiendeo, estas suelen centrarse en cupones generales sin personalización profunda, dejando un vacío en la conexión real entre negocios y clientes locales. Este problema se intensifica considerando que los peruanos pasan más de 5 horas diarias en internet (Loza, 2024), pero carecen de un espacio centralizado para acceder a ofertas verificadas. Así, mientras las PyMEs pierden oportunidades por no poder digitalizarse con eficiencia (OECD, 2020), los consumidores ignoran promociones valiosas por falta de confianza y saturación. GeoPS Web busca cerrar esta brecha ofreciendo una plataforma responsiva y accesible desde cualquier navegador, que conecte de manera transparente y personalizada a usuarios y negocios locales.
+  En el Perú, las PyMEs del sector de importación y comercialización de productos asiáticos enfrentan barreras críticas para digitalizarse, dependiendo aún de métodos tradicionales o redes sociales saturadas donde el mensaje se pierde (PCM, 2023). En Lima Moderna, el interés por la gastronomía, cosmética e insumos orientales ha crecido exponencialmente, logrando que la penetración de marcas asiáticas en los hogares pase del 9.3% al 24.6% en solo tres años (Kantar, 2025). Sin embargo, los consumidores experimentan fatiga publicitaria, desconfiando de anuncios genéricos, pese a que el 83% de peruanos declara preferir activamente estos productos (IPSOS, 2025).
+
+  Aunque existen apps de delivery, estas cobran comisiones de hasta el 30%, lo que asfixia el margen de las PyMEs y deja un vacío para que los comercios locales conecten directamente con los vecinos. Con peruanos pasando más de 5 horas diarias conectados (Loza, 2024), existe una desconexión: el cliente quiere el producto asiático de tendencia que está cerca, pero no tiene una herramienta eficiente para localizarlo. GeoPS Labs cierra esta brecha centralizando la oferta oriental en una plataforma web responsiva que elimina los altos costos de intermediación.
+
 
   ###### 1.2.1.1. What
   ###### 1.2.1.1.1. ¿Cuál es el problema?
-  Las PyMEs latinoamericanas enfrentan barreras estructurales para implementar estrategias de marketing digital: altos costos de inversión, falta de conocimiento técnico y dificultad para medir resultados. El Banco Interamericano de Desarrollo (BID, 2020) reporta que el 74% de las micro y pequeñas empresas de la región carece de capacidades para adoptar herramientas digitales que mejoren su competitividad. Por otro lado, los consumidores manifiestan una creciente fatiga publicitaria: un estudio de Nielsen (2021) indica que el 64% de los usuarios en América Latina considera los anuncios en línea excesivos o irrelevantes, lo que genera desconfianza y menor efectividad en la comunicación comercial.
+  Las PyMEs de productos asiáticos en Lima enfrentan altos costos para pautar en grandes plataformas y falta de herramientas para medir cuántos usuarios de su entorno cercano realmente ingresan a su establecimiento físico. Según el BID (2020), el 74% de las micro y pequeñas empresas carece de capacidades para adoptar herramientas digitales competitivas. A esto se suma que el 64% de los usuarios considera la publicidad online irrelevante (Nielsen, 2021), ignorando ofertas de productos orientales por no considerarlas oportunas o geográficamente accesibles.
 
   ###### 1.2.1.1.2. ¿Cuál es la relación con la persona en cuestión?
-  Para los consumidores urbanos, la problemática se traduce en frustración: reciben publicidad genérica que no responde a su contexto ni necesidades inmediatas, lo que significa pérdida de oportunidades de ahorro y tiempo. Para las PyMEs, implica ineficiencia: continúan invirtiendo en publicidad tradicional o redes sociales sin métricas claras, lo que reduce su retorno de inversión y limita su capacidad de competir con grandes empresas (World Bank, 2019). Ante este panorama, GeoPS Web surge como una solución que, a través de una plataforma accesible desde cualquier navegador, conecta directamente a negocios locales con usuarios mediante publicidad hiperlocal y ofertas contextualizadas en tiempo real.
+  Para el consumidor de Lima Moderna, la problemática se traduce en frustración: recibe publicidad de productos asiáticos genéricos que no puede adquirir de inmediato o que requieren envíos costosos, perdiendo oportunidades de ahorro en su zona. Para el comerciante, implica ineficiencia: invierte en publicidad sin métricas de proximidad claras, limitando su capacidad de competir con grandes importadoras que dominan el entorno digital (World Bank, 2019).
 
   ###### 1.2.1.2. When
   ###### 1.2.1.2.1. ¿Cuándo sucede el problema?
-  El problema se hace más evidente en los momentos de decisión de compra, cuando los consumidores buscan información sobre productos o servicios cercanos y la publicidad que reciben no es contextual ni personalizada. Según el Informe Digital 2023 de DataReportal (Kemp, 2023), los usuarios peruanos pasan en promedio 5 horas y 28 minutos al día conectados a internet, gran parte de ese tiempo navegando en buscadores, redes sociales y plataformas de comercio electrónico. Sin embargo, en esos momentos clave, la publicidad que encuentran suele ser masiva y poco segmentada, lo que disminuye su utilidad y su capacidad de influir en la decisión de compra.
+  El problema es crítico en el momento de la intención de compra inmediata, cuando el usuario busca un insumo o producto asiático específico y la publicidad que recibe no es contextual. Según el Informe Digital 2024 (Kemp, 2024), aunque los peruanos pasan más de 5 horas conectados, la saturación de anuncios masivos disminuye la utilidad de la información en el momento clave de decisión.
 
   ###### 1.2.1.2.2. ¿Cuándo utiliza el cliente el producto?
-  Los consumidores pueden acceder a GeoPS Web en cualquier momento de su jornada digital, ya sea desde la computadora en el trabajo, la laptop en casa o el smartphone en movilidad. A diferencia de las aplicaciones móviles que requieren instalación, la versión web elimina fricciones y permite un acceso inmediato, especialmente en instantes donde la proximidad y la oportunidad son factores decisivos. Esto resulta clave porque, de acuerdo con Think with Google (2019), el 76% de las personas que buscan algo cercano en su dispositivo visitan un negocio relacionado en el plazo de 24 horas, y el 28% de esas búsquedas resultan en una compra. Con GeoPS Web, se busca que esas oportunidades no se pierdan por falta de visibilidad o relevancia.
+  Los consumidores pueden acceder a GeoPS Web en cualquier momento de su jornada digital, ya sea desde dispositivos de escritorio en sus hogares o mediante smartphones. A diferencia de las aplicaciones móviles que requieren instalación, esta solución web elimina fricciones y permite un acceso inmediato, especialmente en instantes donde la proximidad y la oportunidad de adquirir productos asiáticos son factores decisivos. Esto resulta clave porque, de acuerdo con Think with Google (2019), el 76% de las personas que buscan algo cercano en su dispositivo visitan un negocio relacionado en el plazo de 24 horas, y el 28% de esas búsquedas resultan en una compra. Con GeoPS Web, se busca que estas oportunidades de mercado no se pierdan por falta de visibilidad o relevancia geográfica de los comercios especializados.
 
   ###### 1.2.1.3. Where
   ###### 1.2.1.3.1. ¿Dónde está el cliente cuando usa el producto?
-  El cliente puede acceder a GeoPS Web desde cualquier lugar con conexión a internet: en casa, en el trabajo o en movilidad desde un dispositivo con navegador. Gracias a la geolocalización habilitada en navegadores modernos, la plataforma identifica la ubicación en tiempo real y muestra ofertas relevantes al contexto inmediato. Este acceso multiplataforma permite que la experiencia sea consistente sin importar si se navega desde una computadora, una laptop o un teléfono. Según el Pew Research Center (2021), más del 90% de usuarios en economías emergentes usan varios dispositivos para conectarse a internet, lo que refuerza la necesidad de soluciones responsivas como GeoPS Web.
+  El cliente se encuentra principalmente en los distritos que conforman Lima Moderna (San Borja, Surco, Miraflores, San Isidro, Jesús María, Lince, Magdalena y Pueblo Libre), navegando desde su smartphone o laptop. La geolocalización habilitada en los navegadores modernos permite que la experiencia de GeoPS Web sea fluida y precisa, detectando la ubicación del usuario en tiempo real para mostrar ofertas exclusivas de tiendas de productos orientales y asiáticos situadas a pocos metros de su posición actual.
 
   ###### 1.2.1.3.2. ¿A dónde se dirige?
-  Generalmente, el usuario se desplaza hacia lugares de trabajo, estudio, compras u ocio, y es en esos trayectos donde las ofertas cercanas adquieren mayor valor. GeoPS Web aprovecha estos desplazamientos para recomendar promociones en comercios ubicados a lo largo de las rutas habituales o en zonas de tránsito frecuente. Este enfoque se justifica porque, de acuerdo con Think with Google (2019), el 76% de las personas que realizan búsquedas locales en su dispositivo visitan un negocio relacionado en las siguientes 24 horas, lo que demuestra la relevancia de la publicidad contextualizada por proximidad.
+  El usuario suele estar en trayectos hacia su hogar, oficina o centros de estudio. GeoPS Web aprovecha estos desplazamientos para recomendar promociones en comercios especializados que se encuentran en su ruta habitual dentro de los distritos de la zona moderna.
 
   ###### 1.2.1.3.3. ¿Dónde surge el problema?
-  La problemática surge principalmente en entornos urbanos, donde existe una amplia variedad de comercios pero los consumidores no cuentan con un canal digital centralizado que organice y personalice la información. Los usuarios suelen recibir anuncios masivos y dispersos, mientras que las PyMEs carecen de herramientas accesibles para llegar a clientes cercanos. Según el Banco Mundial (2019), esta desconexión limita la competitividad de los pequeños negocios en América Latina y genera pérdidas tanto para comerciantes como para consumidores que buscan opciones relevantes. GeoPS Web busca resolver esta brecha mediante publicidad hiperlocal y transparente desde el navegador.
+  El problema surge en los entornos comerciales de Lima Moderna, donde la alta densidad de negocios asiáticos carece de un canal digital centralizado que organice su oferta para el público local. Según el Banco Mundial (2019), esta desconexión tecnológica limita la competitividad de las PyMEs y genera pérdidas al no conectar el stock de nicho con consumidores cercanos. GeoPS Labs resuelve esta brecha mediante publicidad hiperlocal desde el navegador, vinculando la oferta especializada con la demanda urbana en tiempo real.
 
   ###### 1.2.1.4. Who
   ###### 1.2.1.4.1. ¿Quiénes están involucrados?
-  En el ecosistema de GeoPS Web intervienen principalmente tres actores: los consumidores urbanos, que buscan ofertas relevantes y verificadas; las PyMEs locales, que requieren herramientas accesibles para digitalizar su publicidad; y los administradores de la plataforma, responsables de garantizar la seguridad, usabilidad y transparencia del servicio. Según el Banco Interamericano de Desarrollo (2020), la digitalización de las PyMEs es un factor clave para el crecimiento económico regional, pero necesita de intermediarios tecnológicos que faciliten el acceso. GeoPS Web cumple este rol de puente al conectar intereses complementarios.
+  En el ecosistema de GeoPS Web intervienen principalmente tres actores clave que dan vida a la plataforma:
+
+  - Consumidores de Cultura Asiática: Usuarios residentes o visitantes de Lima Moderna que buscan productos auténticos de tendencia (K-Beauty, J-Food, snacks coreanos, cosmética japonesa, etc.) de forma rápida, verificada y sin pagar sobrecostos por envíos a larga distancia.
+
+  - PyMEs Orientales Especializadas: Pequeños y medianos comercios (markets, boutiques de skincare o restaurantes) que necesitan digitalizar su oferta de nicho para captar al público de su entorno geográfico inmediato de manera eficiente.
+
+  - Administradores de GeoPS Labs: Actúan como el facilitador tecnológico responsable de garantizar la seguridad de los datos, la usabilidad de la plataforma web y la transparencia en la entrega de las notificaciones de proximidad.
 
   ###### 1.2.1.4.2. ¿A quiénes les sucede el problema?
-  El problema afecta directamente a los consumidores que reciben publicidad genérica e irrelevante, lo que genera desconfianza y pérdida de oportunidades de ahorro. También impacta en las PyMEs, que no logran competir en igualdad de condiciones frente a grandes empresas con mayores recursos en marketing digital. Un estudio de Nielsen (2021) reveló que el 64% de los usuarios en Latinoamérica considera que los anuncios digitales no se ajustan a sus necesidades, lo que refuerza la brecha entre lo que las PyMEs ofrecen y lo que los consumidores esperan encontrar.
+  El problema afecta a los consumidores de Lima Moderna, quienes debido a la fatiga publicitaria y la falta de información centralizada, pierden oportunidades de ahorro en productos asiáticos cercanos, y a las PyMEs del sector oriental, que quedan invisibilizadas frente a grandes cadenas al no poder costear marketing digital ni altas comisiones de delivery. Según Nielsen (2021), esta desconexión se refleja en que el 64% de los usuarios considera irrelevante la publicidad actual, mientras que el Banco Mundial (2019) advierte que esta falta de herramientas de proximidad limita severamente la competitividad de los pequeños negocios locales.
   
   ###### 1.2.1.4.3. ¿Quién lo utilizará?
-  La plataforma será usada por dos públicos principales: los usuarios finales, que accederán desde el navegador para descubrir promociones locales personalizadas en tiempo real, y las PyMEs afiliadas, que utilizarán el panel web para crear, gestionar y medir campañas de manera sencilla. A diferencia de una app móvil que requiere instalación, el formato web permite un acceso inmediato y multiplataforma, eliminando barreras técnicas. De acuerdo con Statista (2022), más del 70% de los consumidores valoran soluciones digitales fáciles de usar y sin procesos complejos de instalación, lo que refuerza el valor de GeoPS como aplicación web responsiva.
+  La plataforma será utilizada por consumidores entusiastas de la cultura asiática en Lima Moderna, quienes buscan acceso inmediato a promociones de K-Beauty o J-Food sin descargar aplicaciones adicionales, y por dueños de PyMEs orientales, que requieren un panel sencillo para autogestionar su publicidad hiperlocal sin depender de intermediarios costosos. Este formato de aplicación web responde a la tendencia marcada por Statista (2022), donde más del 70% de los usuarios prefieren soluciones digitales de acceso directo y sin procesos complejos de instalación, consolidando a GeoPS Web como una herramienta ágil para conectar la oferta especializada con la demanda local en tiempo real.
   
   ###### 1.2.1.5. Why
   ###### 1.2.1.5.1. ¿Cuál es la causa del problema?
-  Las causas se dividen entre consumidores y negocios. En el caso de las PyMEs, la principal barrera es la falta de recursos financieros, conocimientos técnicos y personal especializado para ejecutar campañas digitales, lo que las mantiene atadas a métodos tradicionales poco medibles (BID, 2020). Para los usuarios, la saturación de publicidad genérica y la baja credibilidad de los anuncios en línea generan desconfianza y reducen el interés en interactuar con ofertas (Nielsen, 2021). A nivel estructural, el Banco Mundial (2019) identifica que la limitada adopción tecnológica en América Latina frena la competitividad de los pequeños negocios frente a grandes cadenas con mayor inversión digital. En conjunto, estas causas alimentan una brecha: comercios que no logran llegar a sus clientes cercanos y consumidores que no encuentran información relevante en el momento oportuno.
+  La causa principal radica en una brecha estructural de acceso tecnológico y económico: las PyMEs de productos asiáticos carecen de los recursos financieros y conocimientos técnicos para competir en canales digitales tradicionales o costear comisiones de delivery, lo que las mantiene atadas a métodos de difusión ineficientes (BID, 2020). Por otro lado, para los consumidores, la saturación de publicidad genérica y la falta de una plataforma centralizada que organice la oferta por proximidad generan desconfianza y fatiga publicitaria (Nielsen, 2021). Esta combinación de factores, sumada a la limitada adopción de herramientas de geolocalización por parte de los pequeños comercios, crea una desconexión donde la oferta especializada no logra alcanzar al público interesado que se encuentra en su entorno inmediato (World Bank, 2019).
 
   ###### 1.2.1.6. How
   ###### 1.2.1.6.1. ¿En qué condiciones los clientes usan nuestro producto?
-  Los usuarios acceden a GeoPS Web desde navegadores en momentos de necesidad inmediata, cuando buscan ofertas cercanas o planean una compra. Requieren rapidez, personalización y simplicidad, mientras que las PyMEs lo usan en condiciones de bajo costo y facilidad de gestión (Think with Google, 2019).
+  Los usuarios acceden a GeoPS Web desde el navegador en momentos de necesidad inmediata, ya sea para localizar ofertas de productos asiáticos cerca de su posición o al planear una compra de tendencia en Lima Moderna. Bajo estas condiciones, el cliente demanda rapidez, personalización y simplicidad sin fricciones de descarga; mientras tanto, las PyMEs lo utilizan como una herramienta de bajo costo y fácil gestión para visibilizar su stock en tiempo real. Según Think with Google (2019), esta capacidad de respuesta inmediata es decisiva, ya que la mayoría de las búsquedas de proximidad se realizan bajo condiciones de movilidad y resultan en una visita al negocio físico en menos de 24 horas.
 
   ###### 1.2.1.6.2. ¿Cómo nos conocieron los compradores?
-  La plataforma puede darse a conocer mediante redes sociales, buscadores y marketing de contenidos. En Perú, más del 70% de los usuarios descubre nuevas marcas en línea, principalmente a través de anuncios digitales y recomendaciones (Kemp, 2023).
+  La plataforma se da a conocer estratégicamente mediante redes sociales, motores de búsqueda y marketing de contenidos enfocado en tendencias asiáticas. En el Perú, más del 70% de los usuarios descubre nuevas marcas en línea, principalmente a través de anuncios digitales y recomendaciones en comunidades especializadas (Kemp, 2024). GeoPS Web aprovecha este comportamiento para captar al público de Lima Moderna que ya consume contenido sobre cultura oriental, convirtiendo ese interés digital en visitas presenciales a los comercios locales.
   
   ###### 1.2.1.6.3. ¿Cómo prefieren los usuarios acceder a nuestro contenido?
-  Prefieren una combinación de notificaciones web push (inmediatez) y búsqueda activa dentro del sitio (autonomía). Un 60% de consumidores latinoamericanos valoran la personalización contextual de la publicidad (Nielsen, 2021).
+  Los usuarios prefieren la inmediatez de las notificaciones web push combinada con la autonomía de la búsqueda activa dentro de la plataforma. Esta preferencia por la personalización contextual es clave para GeoPS Web, considerando que un 60% de los consumidores latinoamericanos valora que la publicidad sea relevante según su ubicación (Nielsen, 2021).
   
   ###### 1.2.1.6.4. ¿Qué llevó a la persona a llegar a esta situación?
-  Los consumidores llegaron aquí por la saturación de publicidad genérica y la falta de confianza en anuncios. Las PyMEs, en cambio, por la presión de digitalizarse y las barreras económicas y técnicas que enfrentan (World Bank, 2019).
+  Los consumidores llegaron a esta situación debido a la saturación de publicidad genérica y la creciente falta de confianza en anuncios que no coinciden con su ubicación real. Por su parte, las PyMEs del sector asiático se enfrentan a la presión de digitalizarse bajo barreras económicas y técnicas que las mantienen invisibilizadas. Según el Banco Mundial (2019), esta desconexión es una consecuencia directa de la falta de herramientas tecnológicas accesibles que permitan a los pequeños comercios competir en igualdad de condiciones en el entorno digital.
   
   ###### 1.2.1.7. How much
-  El impacto económico y social de la problemática es considerable. Para las PyMEs, representa pérdidas al no captar clientes cercanos ni medir el retorno de inversión en publicidad. El BID (2020) estima que la digitalización puede aumentar en más de 30% las ventas de pequeñas empresas que adoptan herramientas tecnológicas. Para los consumidores, implica ahorro de tiempo y dinero al acceder a ofertas relevantes en el momento oportuno. GeoPS Web busca capturar ese valor mediante un modelo accesible y medible desde el navegador.
+  El impacto de la problemática es considerable: las PyMEs pierden clientes cercanos al no contar con herramientas para medir su alcance, mientras que el BID (2020) estima que la digitalización puede aumentar sus ventas en más de un 30%. Por otro lado, para los consumidores, esto se traduce en una pérdida de ahorro de tiempo y dinero al no acceder a ofertas oportunas. GeoPS Web captura este valor mediante un modelo de proximidad accesible desde el navegador que optimiza la inversión publicitaria y la eficiencia de compra en el distrito.
 
   **Figura 1**<br>
   *How much — KPIs objetivo*
@@ -272,69 +288,76 @@ Con un **diseño responsive** que se adapta a cualquier dispositivo, **GeoPS Lab
   #### 1.2.2. Lean UX Process
   
   ##### 1.2.2.1. Lean UX Problem Statements
-  - Hemos observado que las PyMEs locales tienen dificultades para llegar a clientes cercanos de manera digital, ya que dependen de publicidad tradicional poco efectiva y costosa.  
-  **¿Cómo podemos ayudar a estos negocios a atraer clientes cercanos mediante un canal web accesible y medible?**
+  - Hemos observado que los consumidores interesados en productos orientales/asiáticos en Lima Moderna descubren constantemente productos atractivos en redes sociales, pero tienen dificultades para encontrar dónde comprarlos cerca, verificar su disponibilidad o identificar tiendas confiables que los ofrezcan.
+  **¿Cómo podríamos ayudar a estos consumidores a descubrir productos asiáticos auténticos, cercanos y disponibles en tiempo real desde una sola plataforma?**
 
-  - Hemos observado que los consumidores urbanos se sienten abrumados por publicidad genérica e irrelevante que no responde a su contexto inmediato.  
-  **¿Cómo podemos ofrecerles publicidad personalizada y contextual que mejore su experiencia y confianza al buscar ofertas locales?**
+  - Hemos observado que los negocios especializados en productos orientales/asiáticos dependen principalmente de redes sociales para promocionarse, lo que limita su visibilidad local, dificulta captar clientes cercanos en el momento de compra y reduce su capacidad de convertir interés digital en visitas al local.
+  **¿Cómo podríamos ayudar a estos negocios a aumentar su visibilidad hiperlocal y atraer consumidores cercanos con intención real de compra?**
 
-  - Hemos observado que muchas PyMEs no cuentan con métricas claras para evaluar la efectividad de su publicidad.  
-  **¿Cómo podemos proveerles un panel web simple y con analítica en tiempo real que les permita medir y optimizar sus campañas?**
+  - Hemos observado que los consumidores desconfían de promociones poco claras, productos no auténticos o publicaciones desactualizadas, especialmente cuando descubren productos importados en redes sociales sin información verificable sobre precio, ubicación o disponibilidad.
+  **¿Cómo podríamos ofrecer una experiencia confiable y transparente que permita descubrir productos orientales con mayor seguridad y confianza?**
 
-  - Hemos observado que los usuarios desconfían de las ofertas online por experiencias pasadas con anuncios engañosos.  
-  **¿Cómo podemos garantizar que las ofertas en GeoPS Web sean auténticas y transparentes, reforzando la credibilidad de la plataforma?**
+  - Hemos observado que muchas tiendas especializadas en productos asiáticos tienen una oferta valiosa y diferenciada, pero no cuentan con herramientas simples para comunicar promociones, disponibilidad y novedades de forma geolocalizada y en tiempo real.  
+  **¿Cómo podríamos facilitar a estos negocios una forma simple y efectiva de promocionar sus productos a consumidores cercanos sin depender exclusivamente de redes sociales?**
 
   ##### 1.2.2.2. Lean UX Assumptions
   
   **Business Outcomes (Resultados de negocio que esperamos)**  
-  - Incrementar en al menos un 20% las ventas de las PyMEs afiliadas en los primeros 6 meses, gracias a la visibilidad que obtendrán en GeoPS Web (BID, 2020).  
-  - Mejorar el retorno de inversión en marketing digital de las PyMEs en un 15% durante el primer año, al reemplazar publicidad genérica por campañas segmentadas.  
-  - Aumentar en un 30% la adopción de herramientas digitales por parte de las PyMEs en el primer año, impulsando su transición hacia modelos de publicidad más eficientes.  
-  - Garantizar un crecimiento sostenido de ingresos para GeoPSLabs a través de un modelo freemium/publicidad pagada, escalable en el tiempo.  
+  - Incrementar en al menos un 20% la visibilidad digital de tiendas especializadas en productos asiáticos durante los primeros 6 meses, mediante una plataforma enfocada en descubrimiento hiperlocal.
+  - Aumentar en un 15% la afluencia de clientes a negocios afiliados en Lima Moderna durante el primer semestre, gracias a promociones geolocalizadas y descubrimiento contextual.
+  - Lograr que al menos el 30% de los negocios afiliados publiquen promociones activas semanalmente durante los primeros 3 meses, validando el uso recurrente de la plataforma.
+  - Consolidar un modelo de monetización escalable basado en suscripciones premium y promoción destacada para negocios especializados.
 
   **User Outcomes (Resultados esperados para los usuarios)**  
-  - Los consumidores podrán descubrir con facilidad ofertas locales verificadas desde cualquier navegador, ahorrando tiempo y dinero.  
-  - Los usuarios recibirán notificaciones web push con promociones relevantes según su ubicación y preferencias, reduciendo la saturación publicitaria.  
-  - Las PyMEs podrán crear y gestionar campañas en pocos pasos, con métricas claras (alcance, clics, conversiones) accesibles en tiempo real.  
-  - Se generará mayor confianza al transparentar información sobre vigencia, condiciones de ofertas y reseñas de otros usuarios.  
+  - Los consumidores podrán descubrir productos orientales auténticos de forma rápida y centralizada, evitando búsquedas dispersas en redes sociales o tiendas no verificadas.
+  - Los usuarios encontrarán tiendas cercanas con productos asiáticos disponibles, promociones vigentes y ubicación clara, reduciendo tiempo e incertidumbre en el proceso de compra.
+  - Los consumidores recibirán una experiencia más confiable al visualizar información relevante y actualizada sobre productos, precios, disponibilidad y reputación del negocio. 
+  - Los negocios podrán promocionar productos específicos, comunicar novedades y atraer clientes cercanos sin depender únicamente de Instagram o TikTok.
 
   **Features (Características clave que lo habilitan)**  
 
   *Para consumidores:*
-  - Listado de ofertas y promociones filtrables por ubicación, categoría y distancia.  
-  - Mapa interactivo con geolocalización vía navegador.  
-  - Notificaciones web push sobre ofertas cercanas.  
-  - Posibilidad de guardar y compartir promociones.  
-  - Sistema de reseñas y calificación de comercios.  
+  - Descubrimiento de productos asiáticos por ubicación y categoría
+  - Mapa interactivo con tiendas orientales cercanas
+  - Visualización de productos destacados, promociones y disponibilidad
+  - Sistema de reseñas y validación de tiendas
+  - Guardado de productos y tiendas favoritas
+  - Notificaciones sobre nuevos productos o promociones cercanas
 
   *Para negocios:*  
-  - Panel web para creación y gestión de campañas publicitarias.  
-  - Segmentación de audiencia por ubicación y preferencias.  
-  - Analítica en tiempo real con métricas de conversión.  
-  - Opciones de campañas flexibles (costo por clic, impresiones, tiempo de vigencia).  
-  - Herramientas para fidelización (promociones exclusivas para clientes recurrentes).  
+  - Panel web para registrar productos, promociones y stock destacado  
+  - Publicación de ofertas en tiempo real 
+  - Visibilidad geolocalizada dentro de Lima Moderna
+  - Gestión de promociones por producto y categoría
+  - Métricas de interacción (clics, vistas, guardados)
+  - Herramientas para destacar productos nuevos o en tendencia
 
   ##### 1.2.2.3. Lean UX Hypothesis Statements
 
-  - **Si implementamos un sistema de notificaciones web push** para informar a los consumidores sobre ofertas cercanas y relevantes,  
-  **entonces** observaremos que los usuarios interactúan con mayor frecuencia con la plataforma y visitan más negocios locales,  
-  **porque asumimos** que los consumidores valoran información inmediata y contextual para decidir sus compras,  
-  **mediremos** la tasa de apertura de notificaciones, clics en ofertas y visitas a negocios registrados.  
+  - **Si implementamos una plataforma de descubrimiento geolocalizado** que permita a los usuarios encontrar productos orientales/asiáticos cercanos según su ubicación,
+**entonces** observaremos que los consumidores descubrirán tiendas y productos de interés con mayor rapidez y frecuencia,
+**porque asumimos** que los usuarios valoran encontrar productos auténticos y difíciles de conseguir de forma inmediata, cercana y centralizada,
+**mediremos** el tiempo promedio de descubrimiento, cantidad de búsquedas realizadas por usuario y número de clics en productos o tiendas cercanas.
 
-  - **Si ofrecemos a las PyMEs un panel web intuitivo** para crear y gestionar campañas con segmentación por ubicación y categoría,  
-  **entonces** aumentará la efectividad de sus campañas y mejorará el retorno de inversión,  
-  **porque asumimos** que la simplicidad y la personalización harán más accesible el marketing digital,  
-  **mediremos** el CTR (Click Through Rate), conversiones registradas y ROI de campañas creadas en la plataforma.  
+  - **Si ofrecemos a los consumidores información clara y verificada** sobre productos asiáticos, incluyendo precio, disponibilidad, ubicación y autenticidad,
+**entonces** aumentará la confianza del usuario al explorar productos y tiendas dentro de la plataforma,
+**porque asumimos** que los consumidores desconfían de publicaciones ambiguas o desactualizadas y prefieren información transparente antes de decidir una compra,
+**mediremos** la tasa de interacción con productos verificados, tiempo de permanencia en fichas de producto y porcentaje de consultas realizadas sobre tiendas verificadas.
 
-  - **Si incluimos un sistema de reseñas y valoraciones verificadas** por parte de los consumidores,  
-  **entonces** aumentará la confianza del usuario en las ofertas publicadas y la reputación online de los negocios,  
-  **porque asumimos** que los usuarios confían más en experiencias de otros compradores que en anuncios directos,  
-  **mediremos** el número de reseñas publicadas, la calificación promedio de negocios y el impacto en la interacción con ofertas.  
+  - **Si ofrecemos a los negocios especializados un panel web intuitivo** para registrar productos, publicar promociones y destacar novedades en tiempo real,
+  **entonces** aumentará la frecuencia con la que los negocios actualizan su catálogo y promociones dentro de GeoPS,
+**porque asumimos** que una herramienta simple y rápida reducirá la dependencia exclusiva de redes sociales y facilitará la promoción digital de productos especializados,
+**mediremos** la frecuencia de publicación de productos, número de promociones activas por negocio y tasa de actualización semanal del catálogo.  
 
-  - **Si integramos un mapa interactivo** con la ubicación de los negocios afiliados y la distancia desde el usuario,  
-  **entonces** facilitaremos la decisión de visitar un local cercano,  
-  **porque asumimos** que la ubicación y la conveniencia influyen directamente en la elección de compra,  
-  **mediremos** el número de búsquedas realizadas en el mapa, clics en rutas sugeridas y visitas a negocios asociados.
+  - **Si integramos un mapa interactivo** con tiendas especializadas en productos asiáticos y la distancia respecto al usuario,
+**entonces** facilitaremos la decisión de visitar una tienda física cercana,
+**porque asumimos** que la proximidad y la conveniencia son factores clave cuando los consumidores buscan productos específicos en el momento,
+**mediremos** la cantidad de interacciones con el mapa, clics en “cómo llegar” y número de visitas a perfiles de tiendas desde la vista geolocalizada.
+
+  - **Si incorporamos un sistema de reseñas y valoraciones verificadas** sobre tiendas y productos orientales,
+**entonces** aumentará la percepción de confianza y credibilidad dentro de la plataforma,
+**porque asumimos** que los consumidores confían más en la experiencia de otros compradores al momento de probar productos importados o poco conocidos,
+**mediremos** el número de reseñas publicadas, calificación promedio por tienda, tasa de interacción con reseñas y su impacto en la visualización de productos.
   
   ##### 1.2.2.4. Lean UX Canvas
 
@@ -342,44 +365,52 @@ Con un **diseño responsive** que se adapta a cualquier dispositivo, **GeoPS Lab
   *Lean UX Canvas — GeoPS*
 
   <div align="center">
-      <img src="resources/imgs/chapter-i/Lean_UX_Canvas.jpg" alt="Lean UX Canvas GeoPS" width="600">
+      <img src="resources/imgs/chapter-i/Lean_UX_Canvas.png" alt="Lean UX Canvas GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia.
 
 ### 1.3. Segmentos objetivos
 
-**Segmento Objetivo #1: Dueños de negocios locales**
+**Segmento Objetivo #1: Negocios especializados en productos orientales/asiáticos**
 
 **Aspectos Demográficos**  
 - Sexo: Todos los géneros.  
-- Edad: 25 años a más.  
-- Nivel Socioeconómico: Medio (propietarios o administradores de pequeños y medianos negocios).  
+- Edad: 24 años a más.  
+- Nivel Socioeconómico: Medio (propietarios o administradores de pequeños y medianos negocios).
+- Ocupación: Dueños, administradores o encargados de negocios especializados.   
 
 **Aspectos Geográficos**  
 - Nacionalidad: Peruana.  
-- Zona Geográfica: Áreas urbanas con alta competencia comercial.  
+- Zona Geográfica: Lima Moderna.
+- Distritos objetivo: Jesús María, Lince, Magdalena del Mar, Pueblo Libre, Surquillo y San Miguel.
 
 **Aspectos Psicográficos**  
-- Dolor Principal: No poder atraer clientes fácilmente debido a la saturación de publicidad tradicional y digital poco efectiva.  
-- Objetividad: Pequeños y medianos empresarios que buscan aumentar su visibilidad y atraer clientes cercanos con bajo costo.  
-- Nuestra Solución: Brindar un panel web intuitivo con campañas segmentadas, métricas en tiempo real y opciones de publicidad accesible para aumentar la competitividad.  
+- Dolor Principal: Tienen productos con alta demanda e interés creciente, pero carecen de visibilidad hiperlocal y herramientas accesibles para conectar con consumidores cercanos en el momento exacto de compra.
 
-**Segmento Objetivo #2: Consumidores de ofertas locales**
+- Objetividad: Aumentar su visibilidad, atraer clientes cercanos y convertir interés digital en visitas al local mediante promociones segmentadas y descubrimiento geolocalizado.
+
+- Nuestra Solución: GeoPS les ofrece una plataforma web donde pueden promocionar productos asiáticos, publicar ofertas en tiempo real, aparecer en búsquedas geolocalizadas y conectar con consumidores cercanos interesados en este tipo de productos.
+
+**Segmento Objetivo #2: Consumidores urbanos interesados en productos orientales/asiáticos**
 
 **Aspectos Demográficos**  
 - Sexo: Todos los géneros.  
 - Edad: 18 a 45 años.  
 - Nivel Socioeconómico: Medio y medio–alto (jóvenes profesionales, estudiantes, familias).  
+- Ocupación: Estudiantes, jóvenes profesionales y consumidores digitales.
 
 **Aspectos Geográficos**  
 - Nacionalidad: Peruana.  
-- Zona Geográfica: Áreas urbanas con alta concentración de comercios.  
+- Zona Geográfica: Lima Moderna.
+- Distritos objetivo: Jesús María, Lince, Magdalena del Mar, Pueblo Libre, Surquillo y San Miguel.
 
 **Aspectos Psicográficos**  
-- Dolor Principal: Dificultad para encontrar promociones relevantes y confiables en el momento de compra.  
-- Objetividad: Consumidores que buscan ahorrar tiempo y dinero accediendo a ofertas locales actualizadas.  
-- Nuestra Solución: Proveer una plataforma web con notificaciones personalizadas, mapa interactivo y reseñas verificadas para facilitar el descubrimiento de promociones cercanas.  
+- Dolor Principal: Descubren productos orientales en redes sociales o por recomendación, pero no saben dónde encontrarlos cerca, si están disponibles o si realmente valen la pena.
+
+- Objetividad: Descubrir productos asiáticos auténticos, tiendas cercanas y promociones relevantes de manera rápida, confiable y centralizada.
+
+- Nuestra Solución: GeoPS les permite descubrir productos orientales cercanos, explorar tiendas especializadas, recibir promociones relevantes y encontrar productos auténticos en tiempo real desde una sola plataforma.
 
 ---
 
@@ -499,9 +530,8 @@ Con un **diseño responsive** que se adapta a cualquier dispositivo, **GeoPS Lab
 
   | Número de registro | Datos del entrevistado | Captura |
   |--------------------|-------------------------|---------|
-  | **1** | **Nombre:** Andrés Torres <br> **Edad:** 19 años <br> **Distrito:** San Miguel <br> **Duración de la entrevista:** 3 minutos y 29 segundos <br> **Enlace:** https://youtu.be/lss8fRI5_3g <br> **Resumen:** En este video, se entrevista a Andrés Torres, un joven de 19 años del distrito de San Miguel. Habla sobre cómo busca ofertas para el cine usando aplicaciones como Yape. Le molesta la publicidad intrusiva en la calle y en aplicaciones que no le interesa. Su confianza en las promociones depende de la reputación de la empresa, aunque también consideraría ofertas de empresas menos conocidas si tienen buena presentación. Andrés sugiere que las promociones deberían adaptarse a los intereses de los usuarios y que las aplicaciones deberían solicitar datos básicos a los creadores de los proyectos para generar mayor seguridad. | **Figura 6**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista1_segmento2.jpg" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
-  | **2** | **Nombre:** Ángel José <br> **Edad:** 22 años <br> **Distrito:** Cercado de Lima <br> **Duración de la entrevista:** 4 minutos y 47 segundos <br> **Enlace:** https://youtu.be/s_zL-OGBqJE <br> **Resumen:** En este video, Ángel José, de 22 años, del Cercado de Lima, comparte su experiencia buscando ofertas. Explica que usa plataformas como Yape, Instagram y Facebook. Le molesta tener que buscar manualmente y a menudo pide recomendaciones a conocidos. Desconfía de los descuentos muy altos que podrían ser estafas o productos falsos. Su experiencia ideal sería recibir notificaciones de ofertas que le interesen, que sean de locales conocidos y fáciles de canjear. Además, se sentiría seguro compartiendo sus datos si la empresa es profesional y cifra la información. | **Figura 7**<br> *Entrevista 2 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista2_segmento2.jpg" alt="Entrevista 2 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
-  | **3** | **Nombre:** Elian <br> **Edad:** 25 años <br> **Distrito:** San Martín de Porres <br> **Duración de la entrevista:** 5 minutos y 10 segundos <br> **Enlace:** https://youtu.be/h1kiEyQ9aIY <br> **Resumen:** En esta entrevista, Elian, de 25 años, del distrito de San Martín de Porres, habla sobre su experiencia con la búsqueda de ofertas en línea. Menciona que las páginas web no son fáciles de usar y le molesta la publicidad de ofertas que ya no están vigentes. Su principal interés es encontrar ofertas de manera rápida y fácil. Desconfía de las promociones "demasiado buenas para ser verdad" y sugiere que las plataformas deberían personalizar las ofertas según su historial de compras. No le preocupa compartir sus datos o ubicación, ya que es algo común en aplicaciones de entrega. Su experiencia ideal sería encontrar ofertas buenas y cercanas a su ubicación. | **Figura 8**<br> *Entrevista 3 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista3_segmento2.jpg" alt="Entrevista 3 — Segmento 2" width="600"> </div> *Nota.* Elaboración propia. |
+  | **1** | **Nombre:** Ariana Puscan <br> **Edad:** 28 años <br> **Distrito:** Magdalena <br> **Ocupación:** Abogada <br> **Duración de la entrevista:** 5 minutos y 49 segundos <br> **Enlace:** https://l1nq.com/8gjygzw <br> **Resumen:** En este video, se entrevista a Ariana Puscan, una joven de 28 años del distrito de Magdalena. Es una consumidora recurrente de snacks asiáticos, adquiriéndolos mensualmente. Su descubrimiento de productos se basa principalmente en recomendaciones y ofertas vistas en Instagram y TikTok. Sus compras son mayoritariamente impulsivas o casuales cuando encuentra artículos en supermercados, sin apoyarse en aplicaciones específicas. Recientemente, visitó un establecimiento tras verlo en redes sociales, teniendo una experiencia satisfactoria. Finalmente, considera que nuestra aplicación sería de gran valor. La percibe como una herramienta clave para localizar puntos de venta exactos y facilitar el acceso a una mayor variedad de productos asiáticos.| **Figura 6**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista1_segmento2.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+  | **2** | **Nombre:** Olga Consuelo Arce Quesada <br> **Edad:** 25 años <br> **Distrito:** Magdalena <br> **Ocupación:** Comunicadora Corporativa <br> **Duración de la entrevista:** 7 minutos y 16 segundos <br> **Enlace:** https://l1nq.com/ck0dyrh <br> **Resumen:** En este video, Olga Consuelo Arce Quesada, de 25 años, de Magdalena. Es una consumidora frecuente de snacks, bebidas y productos de belleza. Si bien descubre tiendas asiáticas mediante redes sociales o de forma presencial, señala una brecha en la información: las ofertas no están digitalizadas y solo las descubre al visitar el punto de venta. Su experiencia revela una dificultad específica al buscar productos de belleza, ya que no suelen estar disponibles en cadenas comerciales como Miniso. Actualmente, su búsqueda depende exclusivamente de la suerte al encontrar recomendaciones en TikTok, lo que dificulta la compra efectiva. Olga valida positivamente la propuesta de nuestra aplicación. Destaca la importancia de una plataforma integral que geolocalice tiendas cercanas, ofrezca visibilidad de ofertas en tiempo real y permita filtrar los establecimientos por categorías para optimizar su experiencia de compra. | **Figura 7**<br> *Entrevista 2 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista2_segmento2.png" alt="Entrevista 2 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
 
   *Nota.* Elaboración propia.
 
@@ -3372,10 +3402,126 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
   #### 5.2.1. Sprint Backlogs
   
   #### 5.2.2. Implemented Landing Page Evidence
-  
+
+Este sitio web representa la cara pública del proyecto, desplegado eficientemente a través de GitHub Pages para garantizar una alta disponibilidad y tiempos de carga rápidos. La landing page funciona como el punto de entrada principal, presentando la identidad visual de la marca y explicando de forma interactiva el valor del ecosistema hiperlocal para conectar a los usuarios con la cultura asiática en Lima.
+
+<div align="center">
+  <img src="resources/imgs/LandingPage/LandingPagePicture1.jpg" width="700">
+</div>
+
+En esta sección la aplicación presenta su propuesta de valor como un radar hiperlocal en Lima, ofreciendo un acceso directo para que los usuarios creen su cuenta y exploren el ecosistema.
+
+<div align="center">
+  <img src="resources/imgs/LandingPage/LandingPagePicture2.jpg" width="700">
+</div>
+
+Aquí la plataforma detalla su proceso operativo basado en la búsqueda de productos, la geolocalización exacta de stands y la verificación de inventario real en tiendas aliadas.
+
+<div align="center">
+  <img src="resources/imgs/LandingPage/LandingPagePicture3.jpg" width="700">
+</div>
+
+La interfaz permite elegir entre perfiles de consumidor o negocio, resaltando funciones para comparar precios y navegar con precisión dentro de las galerías más importantes de la ciudad.
+
+<div align="center">
+  <img src="resources/imgs/LandingPage/LandingPagePicture4.jpg" width="700">
+</div>
+
+La Landing Page utiliza este espacio para mostrar su funcionamiento interno mediante videos demostrativos y presentar al equipo responsable de la transformación digital de los comercios asiáticos.
+
+<div align="center">
+  <img src="resources/imgs/LandingPage/LandingPagePicture5.jpg" width="700">
+</div>
+
+En esta ventana final, el sistema resuelve dudas frecuentes de los usuarios sobre costos y beneficios, proporcionando además los accesos para el registro formal de nuevos proveedores.
+
   #### 5.2.3. Implemented Frontend-Web Application Evidence
 
+Aquí se presenta el frontend de la aplicación completamente desplegado en Vercel, ofreciendo una interfaz de usuario rápida, responsiva y optimizada para la interacción en tiempo real. Esta implementación permite que tanto usuarios como dueños de negocios accedan a todas las funcionalidades del ecosistema GeoPS de manera fluida y segura directamente desde la web.
+  
+<div align="center">
+  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture1.jpg" width="700">
+</div>
+
+La aplicación muestra el formulario de inicio de sesión donde el usuario ingresa sus credenciales para acceder al panel de administración de su negocio.
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture2.jpg" width="700">
+</div>
+
+En esta ventana, la plataforma permite el registro de nuevos usuarios recolectando datos básicos y definiendo el tipo de perfil, ya sea como consumidor o proveedor.
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture3.jpg" width="700">
+</div>
+
+El sistema presenta un tablero de resumen con métricas clave como impresiones, clics y CTR promedio para monitorear el rendimiento general de las campañas activas.
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture4.jpg" width="700">
+</div>
+
+Aquí la interfaz organiza las campañas por estados (activas, pausadas o finalizadas), permitiendo al administrador editar, pausar o finalizar cada anuncio de forma individual.
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture5.jpg" width="700">
+</div>
+
+La plataforma ofrece un formulario para crear nuevas campañas publicitarias, donde se define el nombre, descripción, fechas de vigencia y el presupuesto estimado en soles.
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture6.jpg" width="700">
+</div>
+
+En esta sección, la app genera reportes detallados que se pueden filtrar y exportar en formato JSON, mostrando un resumen general de la inversión y el impacto alcanzado.
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture7.jpg" width="700">
+</div>
+
+La ventana de comentarios permite al dueño del negocio visualizar la calificación promedio y leer las reseñas de los clientes para gestionar la reputación del establecimiento.
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture8.jpg" width="700">
+</div>
+
+La aplicación cuenta con un centro de ayuda integrado que resuelve dudas frecuentes sobre la creación de campañas, gestión de métricas y estados de los anuncios.
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture9.jpg" width="700">
+</div>
+
+Aquí se muestra el perfil del negocio con información de contacto, el plan actual de suscripción y un resumen de ofertas guardadas o ubicaciones frecuentes.
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture10.jpg" width="700">
+</div>
+
+La interfaz de configuración permite editar detalles críticos del negocio como el RUC, tipo de establecimiento (ej. Chifa), dirección física, horarios de atención y enlaces web.
+
   #### 5.2.4. Implemented RESTful API and/or Serverless Backend Evidence
+
+Aquí se observa el backend del proyecto desplegado y documentado con Swagger UI, lo cual permite visualizar y probar de forma interactiva todos los endpoints de la API. La interfaz facilita la gestión del CRUD y la verificación de la lógica de negocio directamente desde el navegador, asegurando que la comunicación entre el servidor y la base de datos sea correcta.
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/Backend/BackendPicture1.jpg" width="700">
+</div>
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/Backend/BackendPicture2.jpg" width="700">
+</div>
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/Backend/BackendPicture3.jpg" width="700">
+</div>
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/Backend/BackendPicture4.jpg" width="700">
+</div>
+
+<div align="center">
+  <img src="resources/imgs/Chapter5/Backend/BackendPicture5.jpg" width="700">
+</div>
 
   #### 5.2.5. RESTful API documentation
 
