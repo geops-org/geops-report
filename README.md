@@ -3408,23 +3408,24 @@ A continuación se muestran las evidencias de la implementación de la Landing P
 <div align="center">
   <img src="resources/imgs/LandingPage/LandingPagePicture1.jpg" width="700">
 </div>
+En esta sección la aplicación presenta su propuesta de valor como un radar hiperlocal en Lima, ofreciendo un acceso directo para que los usuarios creen su cuenta y exploren el ecosistema.
 
 <div align="center">
   <img src="resources/imgs/LandingPage/LandingPagePicture2.jpg" width="700">
 </div>
-
+Aquí la plataforma detalla su proceso operativo basado en la búsqueda de productos, la geolocalización exacta de stands y la verificación de inventario real en tiendas aliadas.
 <div align="center">
   <img src="resources/imgs/LandingPage/LandingPagePicture3.jpg" width="700">
 </div>
-
+La interfaz permite elegir entre perfiles de consumidor o negocio, resaltando funciones para comparar precios y navegar con precisión dentro de las galerías más importantes de la ciudad.
 <div align="center">
   <img src="resources/imgs/LandingPage/LandingPagePicture4.jpg" width="700">
 </div>
-
+La Landing Page utiliza este espacio para mostrar su funcionamiento interno mediante videos demostrativos y presentar al equipo responsable de la transformación digital de los comercios asiáticos.
 <div align="center">
   <img src="resources/imgs/LandingPage/LandingPagePicture5.jpg" width="700">
 </div>
-  
+En esta ventana final, el sistema resuelve dudas frecuentes de los usuarios sobre costos y beneficios, proporcionando además los accesos para el registro formal de nuevos proveedores.
   #### 5.2.3. Implemented Frontend-Web Application Evidence
 
 <div align="center">
