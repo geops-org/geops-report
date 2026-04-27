@@ -428,7 +428,7 @@ Realizar este análisis competitivo es vital porque valida la propuesta de valor
 
 ---
 
-| Categoría | Detalle | **Startup: GeoPS** | **Competidor 1: Cuponatic** | **Competidor 2: Tiendeo** | **Competidor 3: Mesa 24/7** |
+| Categoría | Detalle | **Startup: GeoPS** <div align="center"><img src="resources/imgs/images for chapter ii/geops-logo.png" width="400" alt="Imagen centrada"></div> | **Competidor 1: Cuponatic** <div align="center"><img src="resources/imgs/images for chapter ii/Cuponatic-Logo.png" width="400" alt="Imagen centrada"></div> | **Competidor 2: Tiendeo** <div align="center"><img src="resources/imgs/images for chapter ii/Tiendeo-Logo.png" width="400" alt="Imagen centrada"></div> | **Competidor 3: Mesa 24/7** <div align="center"><img src="resources/imgs/images for chapter ii/Mesa247-Logo.png" width="400" alt="Imagen centrada"></div> |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Perfil** | **Overview** | Plataforma de publicidad hiperlocalizada en Lima enfocada en negocios de cultura asiática (gastronomía, belleza, hobbies). | Plataforma consolidada de venta de cupones de descuento masivos para una amplia gama de productos y servicios a nivel nacional. | Directorio y agregador de folletos digitales y ofertas geolocalizadas, enfocado en grandes cadenas de retail y supermercados. | Plataforma peruana líder en reservas de restaurantes que utiliza geolocalización y ofrece beneficios por asistencia. |
 | | **Ventaja Competitiva** | **Especialización y Comunidad:** Promociones inmediatas de nichos específicos (K-Beauty, ramen) cerca del usuario. | **Descuentos agresivos:** Atrae volumen de tráfico con precios muy por debajo del mercado. | **Centralización de retail:** Facilita comparar folletos de grandes marcas en un solo lugar. | **Credibilidad gastronómica:** Reseñas validadas y sistema de fidelización (puntos/cashback). |
@@ -440,7 +440,8 @@ Realizar este análisis competitivo es vital porque valida la propuesta de valor
 | | **Debilidades** | Dependencia de alta densidad de negocios inicial para evitar un "mapa vacío". | Fricción de pago adelantado y atracción de clientes con baja fidelidad. | Modelo excluyente que ignora a las PyMEs y pequeños negocios locales. | Enfoque limitado a restaurantes, dejando fuera otros rubros comerciales. |
 | | **Oportunidades** | Crecimiento de cultura Otaku/K-pop, alianzas con micro-influencers y rutas temáticas. | Diversificación de servicios digitales y programas de fidelidad. | Integración con e-commerce y notificaciones ultra-personalizadas por distrito. | Expansión a segmentos de fast food o integración con tarjetas de crédito. |
 | | **Amenazas** | Competencia de gigantes (Google Maps, TikTok) o apps masivas abriendo nichos. | Fatiga del modelo de cupones y pérdida de cuota ante apps de nicho. | Crecimiento del e-commerce directo de marcas y Google Shopping. | Reservas directas vía WhatsApp Business o Instagram sin intermediarios. |
-  *Nota.* Elaboración propia.
+
+*Nota.* Elaboración propia.
 
   #### 2.1.2. Estrategias y tácticas frente a competidores 
 
@@ -476,47 +477,59 @@ Realizar este análisis competitivo es vital porque valida la propuesta de valor
 ### 2.2. Entrevistas
   #### 2.2.1. Diseño de entrevistas
 
-  **Segmento #1: Dueños de negocios locales**
+  **Segmento #1: Usuario Proveedor / Tienda (GeoPS Business)
 
-  **Características demográficas:**
-  * ¿Cuál es tu edad?
-  * ¿De qué rubro es tu negocio?
-  * ¿Dónde se encuentra ubicado tu local principal?
-  
-  **Preguntas principales:**
-  * ¿Cuál consideras que es el mayor reto para atraer nuevos clientes hoy en día?
-  * ¿Qué estrategias de promoción has usado antes? ¿Cuáles funcionaron y cuáles no?
-  * ¿Qué tan efectivas son para ti las redes sociales como canal publicitario?
-  * ¿Qué temores o barreras tienes al invertir en nuevas formas de publicidad?
-  * ¿Cómo mides actualmente si tu publicidad está funcionando?
-  * ¿Qué papel juegan las ofertas y descuentos en tu estrategia de ventas?
-  
-  **Preguntas sobre el proyecto:**
-  * Si existiera una plataforma que conecte tu negocio con clientes cercanos, ¿qué funcionalidades te gustaría que tuviera?
-  * ¿Qué tipo de clientes te interesa atraer más (nuevos, frecuentes, turistas, vecinos)?
-  * ¿Qué tan dispuesto estarías a pagar por una herramienta digital que realmente te acerque a clientes locales?
-  * Si pudieras diseñar la aplicación perfecta para promocionar tu negocio, ¿qué funciones no podrían faltar?
+## Fase 1: Identificación y Perfilamiento del Negocio
+* **Establecimiento y Cargo:** Nombre del local y cargo del entrevistado.
+* **Tipo de negocio:** (Restaurante, Minimarket, Tienda temática, etc.)
+* **Origen de productos:** (Coreano, Japonés, Chino, etc.)
+* **Perfil del cliente:** ¿Cuál es el perfil de su cliente principal?
+* **Rotación:** ¿Qué productos o platos son los que más rápido se agotan o tienen mayor rotación?
 
-  **Segmento #2: Consumidores de ofertas de diferentes ámbitos**
+## Fase 2: Comportamiento y Marketing Actual
+1. ¿Qué medios utiliza actualmente para promocionar sus productos o nuevas ofertas?
+2. ¿Cómo se asegura de que las personas que viven o trabajan cerca se enteren de que usted tiene una oferta hoy?
 
-  **Características demográficas:**
-  * ¿Cuál es tu edad?
-  * ¿En qué distrito/ciudad vives?
-  * ¿Con qué frecuencia sueles buscar o aprovechar ofertas?
-  * ¿Qué tan familiarizado estás con el uso de plataformas digitales?
+## Fase 3: Identificación de Puntos de Dolor (El Problema)
+1. ¿Qué tan difícil es para usted atraer a nuevos clientes que no conocen su local pero están caminando a pocas cuadras de distancia?
+2. ¿Tiene productos que a veces no se venden porque los clientes no saben que los tiene en stock o que están en oferta?
+3. Si quisiera liquidar un stock rápidamente (oferta relámpago), ¿tiene alguna forma de avisar al instante a la gente que está en los alrededores?
+
+## Fase 4: Validación de la Solución (GeoPS Business)
+1. Si existiera una aplicación donde usted pudiera publicar una oferta en 2 minutos y que les aparezca en el mapa a todos los que están cerca, **¿qué tan útil le resultaría del 1 al 5?**
+2. ¿Le interesaría que la aplicación enviará una notificación automática a los celulares de los usuarios cuando estos pasen cerca de su tienda?
+3. ¿Qué datos de sus clientes le gustaría conocer a través de la app? (Preferencias, horarios de mayor flujo, etc.)
+
+## Fase 5: Cierre y Sugerencias
+* ¿Hay alguna funcionalidad adicional que usted, como dueño de negocio, consideraría indispensable?
+
+  **Segmento #2: Usuario Consumidor (GeoPS)
   
-  **Preguntas principales:** 
-  * Cuéntame de la última vez que buscaste ofertas locales. ¿Cómo fue la experiencia?
-  * ¿Qué aspectos te resultan más molestos o poco prácticos en la forma en que te enteras de promociones hoy?
-  * ¿Qué tipo de publicidad sueles ignorar o rechazar? ¿Por qué?
-  * ¿Qué tan importante es para ti la facilidad y rapidez al encontrar una oferta?
-  * ¿Usas herramientas como Google Maps o redes sociales para decidir si visitar un local? ¿Por qué sí o por qué no?
-  * ¿Qué factores te hacen confiar o desconfiar de una promoción?
-  
-  **Preguntas sobre el proyecto:**
-  * ¿Qué te gustaría que fuera diferente en la forma de recibir promociones cerca de ti?
-  * ¿Qué preocupaciones tendrías al compartir tu ubicación o datos personales en una app de este tipo? ¿Qué te daría seguridad?
-  * ¿Cómo sería para ti la experiencia ideal al descubrir ofertas en tu zona?
+## Fase 1: Identificación y Perfilamiento (Filiación)
+* **Nombre completo:**
+* **Edad:**
+* **Ocupación:**
+* **Distrito de residencia:**
+* **Frecuencia de consumo:** ¿Con qué frecuencia consumes o compras productos de origen asiático?
+* **Intereses:** ¿Qué tipo de productos buscas con mayor frecuencia? (Comida, belleza, hobbies, etc.)
+
+## Fase 2: Comportamiento y Hábitos de Compra
+1. ¿Cómo te enteras habitualmente de nuevas tiendas o restaurantes de productos orientales?
+2. ¿Sueles planificar tus compras de estos productos o los compras cuando los encuentras por casualidad?
+3. ¿Qué tan lejos estás dispuesto a desplazarte para conseguir un ingrediente o producto asiático específico?
+4. ¿Utilizas actualmente alguna aplicación para buscar ofertas o ubicar negocios locales? ¿Cuál y por qué?
+
+## Fase 3: Identificación de Puntos de Dolor (El Problema)
+1. Cuéntame de la última vez que quisiste comprar un producto asiático específico y no sabías dónde encontrarlo cerca de ti. ¿Qué hiciste?
+2. ¿Qué tan difícil te resulta comparar precios entre diferentes tiendas orientales de tu zona?
+
+## Fase 4: Validación de la Solución (GeoPS)
+1. Si existiera una aplicación que te mostrara en un mapa interactivo solo las tiendas asiáticas con ofertas activas cerca de donde estás, **¿qué tan útil te resultaría del 1 al 5?**
+2. ¿Qué te parecería recibir una notificación push en tu celular cuando estés caminando cerca de una tienda que tenga en oferta tu snack o ingrediente favorito?
+3. ¿Qué información es indispensable para ti antes de decidir visitar una tienda nueva que aparece en el mapa?
+
+## Fase 5: Cierre y Sugerencias
+* ¿Hay alguna funcionalidad adicional que te gustaría que tuviera una app dedicada a encontrar productos orientales?
 
   #### 2.2.2. Registro de entrevistas
 
@@ -525,11 +538,10 @@ Realizar este análisis competitivo es vital porque valida la propuesta de valor
   **Tabla 2**   
   *Registro de entrevistas — Segmento 1*
 
-  | Número de registro | Datos del entrevistado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Captura                                                                                                                                                                                                                      |
-  | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | **1**              | **Nombre:** Mirta <br> **Edad:** 57 años <br> **Distrito:** Jesús María <br> **Duración de la entrevista:** 5 minutos y 54 segundos <br> **Enlace:** https://youtu.be/fC130lduBCM <br> **Resumen:** En esta entrevista, Mirta, una comerciante de 57 años, dueña de una piñatería, habla sobre los desafíos de su negocio, especialmente la promoción y la competencia. Menciona que utiliza redes sociales como Instagram y Facebook, pero que la clave para ella es el trato personalizado al cliente y las recomendaciones de boca en boca. Prefiere usar WhatsApp para comunicarse con sus clientes y valora la interacción directa. También expresa su interés en una herramienta digital que la conecte con clientes locales.                                                                                                                                                               | **Figura 3**<br>*Entrevista 1 — Segmento 1* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista1_segmento1.jpg" alt="Entrevista 1 — Segmento 1" width="4000"> </div> *Nota.* Elaboración propia.  |
-  | **2**              | **Nombre:** Kelly <br> **Edad:** 21 años <br> **Distrito:** Jesús María <br> **Duración de la entrevista:** 3 minutos y 8 segundos <br> **Enlace:** https://youtu.be/k7YhV_pqApc <br> **Resumen:** En esta entrevista, Kelly, la dueña de una tienda de mascotas, de 21 años, comparte sus ideas sobre el marketing digital. Destaca que el mayor desafío es el uso de las redes sociales para atraer clientes, y que las ofertas como "compra uno y lleva uno gratis" han sido muy efectivas. También menciona que se están enfocando en TikTok para transmisiones en vivo, lo cual ha aumentado sus ventas y seguidores. Explica que miden el éxito de su publicidad directamente a través de las ventas y que buscan clientes recurrentes. Finalmente, describe una aplicación ideal que le gustaría para su negocio, con funciones para ver productos, ofertas y realizar compras desde casa. | **Figura 4**<br> *Entrevista 2 — Segmento 1* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista2_segmento1.jpg" alt="Entrevista 2 — Segmento 1" width="4000"> </div> *Nota.* Elaboración propia. |
-  | **3**              | **Nombre:** Cesar <br> **Edad:** 50 años <br> **Distrito:** Miraflores <br> **Duración de la entrevista:** 3 minutos y 34 segundos <br> **Enlace:** https://youtu.be/VHkTCRW2Igc <br> **Resumen:** En este video, se entrevista al dueño de un negocio de comida. Habla sobre la efectividad del "boca a boca" y el uso de WhatsApp para las ventas. Mide el éxito de su promoción directamente a través de las ventas generadas por WhatsApp. Expresa interés en una plataforma digital para negocios locales que le permita mostrar sus platos con fotos y videos, y que le ayude a atraer clientes, especialmente turistas, ya que considera que tienen mayor poder adquisitivo. Además, está dispuesto a pagar por una aplicación si esta le garantiza la captación de clientes locales de manera efectiva.                                                                                   | **Figura 5**<br> *Entrevista 3 — Segmento 1* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista3_segmento1.jpg" alt="Entrevista 3 — Segmento 1" width="4000"> </div> *Nota.* Elaboración propia. |
+| Número de registro | Datos del entrevistado | Captura |
+| :--- | :--- | :--- |
+| **1** | **Nombre:** Cristian Salvador<br>**Edad:** 28 años<br>**Establecimiento:** Tienda de productos importados (Referente)<br>**Cargo:** Dueño / Encargado<br>**Duración:** Aprox. 5 minutos<br>**Resumen:** El entrevistado maneja una tienda con alta variedad de productos, siendo las sopas instantáneas, snacks y bebidas los más buscados. Actualmente usa Instagram, WhatsApp y carteles físicos, pero nota que la publicidad digital a veces llega a personas muy lejanas que no concretan la compra. Califica la solución de GeoPS con un **5**, destacando su utilidad para liquidar stock próximo a vencer y atraer clientes que transitan por la zona. Le interesa contar con estadísticas de visualizaciones y rutas para medir la efectividad de sus ofertas. Expresó preocupación por el costo y la curva de aprendizaje, sugiriendo una interfaz sencilla. |  **Figura 4**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista1_segmento1.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **2** | **Nombre:** Néstor Rojas<br>**Establecimiento:** Terra Inc.<br>**Giro:** Inciensos, plantas y productos orgánicos asiáticos<br>**Duración:** Aprox. 8 minutos<br>**Resumen:** Néstor opera un negocio con clientes de diversos distritos que llegan principalmente por canales online. Indica que los inciensos tienen alta rotación, mientras que las plantas demoran más en venderse. Valora la propuesta de GeoPS con un **5**, resaltando que facilitaría captar al público que transita cerca y le ahorraría costos en publicidad tradicional como volantes. Le entusiasma la idea de notificaciones automáticas para liquidar saldos de inventario y evitar pérdidas por vencimiento. Como aporte adicional, sugiere que el mapa de la aplicación incluya coordenadas exactas y guías de accesibilidad para evitar que el cliente se desanime al no encontrar el local. |  **Figura 5**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista1_segmento1.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
 
   *Nota.* Elaboración propia.
 
@@ -538,34 +550,46 @@ Realizar este análisis competitivo es vital porque valida la propuesta de valor
   **Tabla 3**   
   *Registro de entrevistas — Segmento 2*  
 
-  | Número de registro | Datos del entrevistado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Captura                                                                                                                                                                                                                      |
-  | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | **1**              | **Nombre:** Ariana Puscan <br> **Edad:** 28 años <br> **Distrito:** Magdalena <br> **Ocupación:** Abogada <br> **Duración de la entrevista:** 5 minutos y 49 segundos <br> **Enlace:** https://l1nq.com/8gjygzw <br> **Resumen:** En este video, se entrevista a Ariana Puscan, una joven de 28 años del distrito de Magdalena. Es una consumidora recurrente de snacks asiáticos, adquiriéndolos mensualmente. Su descubrimiento de productos se basa principalmente en recomendaciones y ofertas vistas en Instagram y TikTok. Sus compras son mayoritariamente impulsivas o casuales cuando encuentra artículos en supermercados, sin apoyarse en aplicaciones específicas. Recientemente, visitó un establecimiento tras verlo en redes sociales, teniendo una experiencia satisfactoria. Finalmente, considera que nuestra aplicación sería de gran valor. La percibe como una herramienta clave para localizar puntos de venta exactos y facilitar el acceso a una mayor variedad de productos asiáticos.                                                                                                                                                                                                          | **Figura 6**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista1_segmento2.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
-  | **2**              | **Nombre:** Olga Consuelo Arce Quesada <br> **Edad:** 25 años <br> **Distrito:** Magdalena <br> **Ocupación:** Comunicadora Corporativa <br> **Duración de la entrevista:** 7 minutos y 16 segundos <br> **Enlace:** https://l1nq.com/ck0dyrh <br> **Resumen:** En este video, Olga Consuelo Arce Quesada, de 25 años, de Magdalena. Es una consumidora frecuente de snacks, bebidas y productos de belleza. Si bien descubre tiendas asiáticas mediante redes sociales o de forma presencial, señala una brecha en la información: las ofertas no están digitalizadas y solo las descubre al visitar el punto de venta. Su experiencia revela una dificultad específica al buscar productos de belleza, ya que no suelen estar disponibles en cadenas comerciales como Miniso. Actualmente, su búsqueda depende exclusivamente de la suerte al encontrar recomendaciones en TikTok, lo que dificulta la compra efectiva. Olga valida positivamente la propuesta de nuestra aplicación. Destaca la importancia de una plataforma integral que geolocalice tiendas cercanas, ofrezca visibilidad de ofertas en tiempo real y permita filtrar los establecimientos por categorías para optimizar su experiencia de compra. | **Figura 7**<br> *Entrevista 2 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista2_segmento2.png" alt="Entrevista 2 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
-
-  *Nota.* Elaboración propia.
+| Número de registro | Datos del entrevistado | Captura |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1** | **Nombre:** Ariana Puscan <br> **Edad:** 28 años <br> **Distrito:** Magdalena <br> **Ocupación:** Abogada <br> **Duración de la entrevista:** 5 minutos y 49 segundos <br> **Enlace:** https://l1nq.com/8gjygzw <br> **Resumen:** En este video, se entrevista a Ariana Puscan, una joven de 28 años del distrito de Magdalena. Es una consumidora recurrente de snacks asiáticos, adquiriéndolos mensualmente. Su descubrimiento de productos se basa principalmente en recomendaciones y ofertas vistas en Instagram y TikTok. Sus compras son mayoritariamente impulsivas o casuales cuando encuentra artículos en supermercados, sin apoyarse en aplicaciones específicas. Recientemente, visitó un establecimiento tras verlo en redes sociales, teniendo una experiencia satisfactoria. Finalmente, considera que nuestra aplicación sería de gran valor. La percibe como una herramienta clave para localizar puntos de venta exactos y facilitar el acceso a una mayor variedad de productos asiáticos. | **Figura 6**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista1_segmento2.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **2** | **Nombre:** Olga Consuelo Arce Quesada <br> **Edad:** 25 años <br> **Distrito:** Magdalena <br> **Ocupación:** Comunicadora Corporativa <br> **Duración de la entrevista:** 7 minutos y 16 segundos <br> **Enlace:** https://l1nq.com/ck0dyrh <br> **Resumen:** En este video, Olga Consuelo Arce Quesada, de 25 años, de Magdalena. Es una consumidora frecuente de snacks, bebidas y productos de belleza. Si bien descubre tiendas asiáticas mediante redes sociales o de forma presencial, señala una brecha en la información: las ofertas no están digitalizadas y solo las descubre al visitar el punto de venta. Su experiencia revela una dificultad específica al buscar productos de belleza, ya que no suelen estar disponibles en cadenas comerciales como Miniso. Actualmente, su búsqueda depende exclusivamente de la suerte al encontrar recomendaciones en TikTok, lo que dificulta la compra efectiva. Olga valida positivamente la propuesta de nuestra aplicación. Destaca la importancia de una plataforma integral que geolocalice tiendas cercanas, ofrezca visibilidad de ofertas en tiempo real y permita filtrar los establecimientos por categorías para optimizar su experiencia de compra. | **Figura 7**<br> *Entrevista 2 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista2_segmento2.png" alt="Entrevista 2 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **3** | **Nombre:** Lupe de la Cruz <br> **Edad:** 22 años <br> **Distrito:** Jesús María <br> **Ocupación:** Estudiante <br> **Duración de la entrevista:** Aprox. 5 minutos <br> **Enlace:** [Insertar Enlace Aquí] <br> **Resumen:** En esta entrevista se conversó con Lupe de la Cruz, una joven estudiante de Jesús María. Es una consumidora quincenal de productos orientales, enfocada principalmente en snacks, dulces y bebidas. Su descubrimiento de locales se basa en redes sociales y exploración física ocasional. Relató una mala experiencia reciente al encontrar un local cerrado por falta de información actualizada, lo que validó la utilidad de la aplicación. Califica la utilidad del mapa interactivo con un puntaje de 4 a 5 estrellas. Valora positivamente las notificaciones push personalizadas y considera indispensable que la app muestre horarios de atención y listas de precios. Finalmente, propuso como feedback la posibilidad de realizar reservas de productos a través de la plataforma. | **Figura 8**<br> *Entrevista 3 — Segmento 1* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista3_segmento2.png" alt="Entrevista 3 — Segmento 1" width="4000"> </div> *Nota.* Elaboración propia. |
 
   #### 2.2.3. Análisis de entrevistas
 
-  **Segmento #1: Dueños de negocios locales**
+### 1. Segmento: Usuario Consumidor
+Este segmento agrupa a jóvenes de entre 22 y 28 años residentes en distritos de Lima Moderna como Magdalena y Jesús María, interesados en el nicho de productos asiáticos.
 
-  A partir de las entrevistas a tres dueños de negocios, de edades y rubros variados, podemos extraer las siguientes conclusiones:
+#### Características Objetivas (Perfil y Comportamiento)
+* **Frecuencia de Consumo:** El **100%** de las entrevistadas consume productos asiáticos de forma recurrente, variando entre una frecuencia mensual y quincenal.
+* **Canales de Descubrimiento:** El **100%** identifica a las redes sociales (Instagram y TikTok) como su principal fuente de información sobre nuevas tiendas y ofertas.
+* **Preferencia de Productos:** Existe una tendencia marcada (**100%**) hacia la búsqueda de snacks, dulces y bebidas importadas.
+* **Planificación de Compra:** El **100%** de los usuarios realiza compras impulsivas o casuales cuando encuentra locales durante sus trayectos diarios, aunque ocasionalmente planifican si buscan algo específico.
+* **Radio de Desplazamiento:** Se identifica un límite de movilidad de aproximadamente **5 kilómetros** para compras específicas.
 
-  **a) La tecnología es una herramienta de apoyo, no un reemplazo de las estrategias tradicionales.** El 100% de los entrevistados (Mirta, Kelly y Cesar) enfatiza la importancia del contacto personal y el "boca a boca". Aunque todos usan plataformas digitales (WhatsApp, Facebook, Instagram, TikTok), lo hacen para complementar sus métodos tradicionales, como el trato personalizado o la venta directa. Esto demuestra que valoran la conexión humana tanto o más que las herramientas digitales.
+#### Características Subjetivas (Puntos de Dolor y Expectativas)
+* **Incertidumbre en el Servicio:** El **100%** de las entrevistadas reportó frustraciones relacionadas con la falta de información actualizada, como encontrar locales cerrados o no hallar el stock deseado.
+* **Valoración de la Solución:** La utilidad percibida de un mapa interactivo es extremadamente alta (**100%**), con calificaciones de entre 4 y 5 estrellas.
+* **Factores Críticos de Decisión:** La disponibilidad de **listas de precios** y **horarios de atención** son considerados elementos indispensables antes de visitar un local nuevo.
+* **Deseo de Personalización:** Existe un alto interés (**100%**) en recibir notificaciones push siempre que el contenido sea acorde a sus preferencias específicas de snacks o bebidas.
 
-  **b) Existe una clara y urgente necesidad de una plataforma digital centralizada y adaptada a negocios locales.** El 100% de los entrevistados expresa su interés en una herramienta digital que resuelva problemas específicos. Mirta busca una que la conecte con clientes locales, Kelly describe una app ideal para mostrar productos y gestionar ventas, y Cesar menciona que pagaría por una solución que le garantice la captación de clientes de su zona. Esto evidencia que los dueños de negocios están buscando una solución que vaya más allá de las redes sociales genéricas, y que les ofrezca funcionalidades específicas para su tipo de negocio.
+---
 
-  **c) El éxito del marketing digital se mide directamente en ventas, no en interacciones superficiales.** El 100% de los entrevistados evalúa la efectividad de sus esfuerzos de promoción en función de los resultados tangibles. Kelly y Cesar mencionan explícitamente que miden su éxito a través de las ventas generadas por WhatsApp, y Mirta se enfoca en que sus acciones de marketing se traduzcan en nuevas recomendaciones. Esto indica que para este segmento, el objetivo principal de cualquier herramienta digital es el crecimiento de los ingresos.
+### 2. Segmento: Usuario Proveedor / Dueño de Tienda
+Este segmento comprende a propietarios y administradores de negocios especializados en productos orientales, desde alimentos importados hasta productos orgánicos.
 
-  **Segmento #2: Consumidores de ofertas de diferentes ámbitos**
+#### Características Objetivas (Gestión y Marketing)
+* **Canales de Difusión Actual:** El **100%** utiliza una combinación de redes sociales (Instagram/WhatsApp) y carteles físicos fuera de sus locales para promocionarse.
+* **Eficacia Publicitaria:** El **50%** de los proveedores siente que la publicidad en redes sociales es ineficiente al atraer consultas de personas que viven muy lejos y no concretan la compra.
+* **Gestión de Inventario:** Existe una preocupación compartida (**100%**) por la rotación de stock, especialmente en productos próximos a vencer o plantas de lenta salida.
+* **Presencia Digital Básica:** El **50%** ya utiliza herramientas como Google Maps para posicionar su dirección y recibir referencias de clientes.
 
-  A partir de de las entrevistas a tres jóvenes consumidores de ofertas, podemos extraer las siguientes conclusiones:
-
-  **a) Existe una desconfianza generalizada hacia la publicidad intrusiva y las ofertas poco realistas.** Un 100% de los entrevistados (Andrés, Ángel y Elian) manifiesta su rechazo a las estrategias de marketing que no son de su interés. Andrés detesta la publicidad en la calle, Ángel desconfía de los descuentos "muy llamativos" que parecen estafas, y a Elian le molesta la publicidad de ofertas ya caducadas. Esto demuestra que este segmento prefiere la proactividad de buscar sus propias ofertas en plataformas que confían en vez de ser interrumpidos por información irrelevante o sospechosa.
-
-  **b) La conveniencia, la relevancia y la personalización son elementos clave para la adopción de plataformas de ofertas.** El 100% de los entrevistados valora la facilidad de uso y la personalización. Andrés sugiere que las promociones se adapten a sus intereses, mientras que Elian desearía ofertas personalizadas basadas en su historial de compras, similar a TikTok. Ángel, por su parte, busca recibir notificaciones de ofertas que le interesen sin tener que buscar manualmente. Para este segmento, una experiencia ideal no implica buscar constantemente, sino que las ofertas adecuadas "lleguen a ellos" de manera organizada y relevante.
-
-  **c) La seguridad y la transparencia son esenciales para generar confianza.** Dos de los tres entrevistados (Andrés y Ángel) mencionan la importancia de la confianza. Andrés afirma que la reputación de la empresa es crucial y sugiere que las aplicaciones deberían solicitar datos a los creadores para generar seguridad. Ángel se sentiría seguro compartiendo sus datos si la empresa es profesional y cifra la información. Por otro lado, Elian, que no tiene preocupaciones sobre compartir datos en aplicaciones de entrega, muestra que la confianza se puede construir si la plataforma es conocida y tiene un historial de uso común, como un app de delivery. Esto demuestra que este segmento tiene un nivel de conciencia sobre la seguridad de sus datos y que la transparencia es fundamental para que se sientan cómodos usando una plataforma de ofertas.
+#### Características Subjetivas (Necesidades y Riesgos)
+* **Aceptación de Geolocalización:** El **100%** de los entrevistados otorgó una calificación de **5/5** a la función de ofertas geolocalizadas para atraer público cercano y vender stock rápidamente.
+* **Interés en Analítica:** Los dueños de negocio consideran vital (**100%**) conocer estadísticas sobre cuánta gente vio su publicación para medir la efectividad de sus campañas.
+* **Barreras de Adopción:** Las principales preocupaciones subjetivas son el **costo** del servicio y la **complejidad de uso**, priorizando herramientas sencillas.
+* **Visión de Accesibilidad:** Los proveedores sugieren que el mapa debe incluir coordenadas exactas y guías de accesibilidad para evitar que el cliente se desanime al no encontrar el local.
 
 ### 2.3. Needfinding
   #### 2.3.1. User Personas
