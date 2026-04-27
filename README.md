@@ -30,15 +30,15 @@
 
 #### Relación de integrantes
 
-| Integrante                              | Código       |
-|-----------------------------------------|--------------|
-| Barba Estrada, Bryan Eduardo            | U202323479   |
-| Salazar Caballero, Alvaro Fabrizzio     | U202321941   |
-| Cárdenas Concha, Santiago Iván          | U202311207   |
-| Vera Nuñez Nicolas Alejandro            | U202214869   |
-| Valverde Portuguez, Natalia Ximena      | U20231a816   |
-| Choy Robles, Vanessa May Lang           | U202317450   |
-| Diestra Zambrano Adriana Maria          | U202218110   |
+| Integrante                          | Código     |
+| ----------------------------------- | ---------- |
+| Barba Estrada, Bryan Eduardo        | U202323479 |
+| Salazar Caballero, Alvaro Fabrizzio | U202321941 |
+| Cárdenas Concha, Santiago Iván      | U202311207 |
+| Vera Nuñez Nicolas Alejandro        | U202214869 |
+| Valverde Portuguez, Natalia Ximena  | U20231a816 |
+| Choy Robles, Vanessa May Lang       | U202317450 |
+| Diestra Zambrano Adriana Maria      | U202218110 |
 
 <div align="center"><h3>Abril 2026</h3></div><br>
 
@@ -48,9 +48,9 @@
 
 ### Registro de Versiones
 
-| Versión | Fecha | Autor | Descripción de modificación |
-| :---- | :---- | :---- | :---- |
-| TB1 | 27/04/2026 | Barba Estrada, Bryan Eduardo <br> Cárdenas Concha, Santiago Iván <br> Diestra Zambrano Adriana Maria <br> Valverde Portuguez, Natalia Ximena <br> Salazar Caballero, Alvaro Fabrizzio <br> Choy Robles, Vanessa May Lang <br> Vera Nuñez, Nicolas Alejandro | En la primera entrega del informe de nuestro proyecto, hemos realizado los primeros 5 capítulos del informe y también entregamos la primera versión del landing page de GeoPS. |
+| Versión | Fecha      | Autor                                                                                                                                                                                                                                                       | Descripción de modificación                                                                                                                                                    |
+| :------ | :--------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| TB1     | 27/04/2026 | Barba Estrada, Bryan Eduardo <br> Cárdenas Concha, Santiago Iván <br> Diestra Zambrano Adriana Maria <br> Valverde Portuguez, Natalia Ximena <br> Salazar Caballero, Alvaro Fabrizzio <br> Choy Robles, Vanessa May Lang <br> Vera Nuñez, Nicolas Alejandro | En la primera entrega del informe de nuestro proyecto, hemos realizado los primeros 5 capítulos del informe y también entregamos la primera versión del landing page de GeoPS. |
 
 ---
 
@@ -150,7 +150,6 @@
     - [5.2.3. Implemented Frontend-Web Application Evidence](#523-implemented-frontend-web-application-evidence)
     - [5.2.4. Implemented RESTful API and/or Serverless Backend Evidence](#524-implemented-restful-api-andor-serverless-backend-evidence)
     - [5.2.5. RESTful API documentation](#525-restful-api-documentation)
-    - [5.2.6. Team Collaboration Insights](#526-team-collaboration-insights)
   - [5.3 Video About-the-Product](#53-video-about-the-product)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
@@ -182,7 +181,7 @@ A través de una plataforma web accesible desde cualquier navegador, los usuario
 
   <div align="center">
   
-  <img src="resources/imgs/chapter-i/Bryan.jpg" width="500"><br>
+  <img src="resources/imgs/chapter-i/Perfil-Bryan.jpg" width="500"><br>
   **Bryan**
   
   <img src="resources/imgs/chapter-i/Alvaro.jpg" width="500"><br>
@@ -526,11 +525,11 @@ Realizar este análisis competitivo es vital porque valida la propuesta de valor
   **Tabla 2**   
   *Registro de entrevistas — Segmento 1*
 
-  | Número de registro | Datos del entrevistado | Captura |
-  |--------------------|-------------------------|---------|
-  | **1** | **Nombre:** Mirta <br> **Edad:** 57 años <br> **Distrito:** Jesús María <br> **Duración de la entrevista:** 5 minutos y 54 segundos <br> **Enlace:** https://youtu.be/fC130lduBCM <br> **Resumen:** En esta entrevista, Mirta, una comerciante de 57 años, dueña de una piñatería, habla sobre los desafíos de su negocio, especialmente la promoción y la competencia. Menciona que utiliza redes sociales como Instagram y Facebook, pero que la clave para ella es el trato personalizado al cliente y las recomendaciones de boca en boca. Prefiere usar WhatsApp para comunicarse con sus clientes y valora la interacción directa. También expresa su interés en una herramienta digital que la conecte con clientes locales. | **Figura 3**<br>*Entrevista 1 — Segmento 1* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista1_segmento1.jpg" alt="Entrevista 1 — Segmento 1" width="4000"> </div> *Nota.* Elaboración propia. |
-  | **2** | **Nombre:** Kelly <br> **Edad:** 21 años <br> **Distrito:** Jesús María <br> **Duración de la entrevista:** 3 minutos y 8 segundos <br> **Enlace:** https://youtu.be/k7YhV_pqApc <br> **Resumen:** En esta entrevista, Kelly, la dueña de una tienda de mascotas, de 21 años, comparte sus ideas sobre el marketing digital. Destaca que el mayor desafío es el uso de las redes sociales para atraer clientes, y que las ofertas como "compra uno y lleva uno gratis" han sido muy efectivas. También menciona que se están enfocando en TikTok para transmisiones en vivo, lo cual ha aumentado sus ventas y seguidores. Explica que miden el éxito de su publicidad directamente a través de las ventas y que buscan clientes recurrentes. Finalmente, describe una aplicación ideal que le gustaría para su negocio, con funciones para ver productos, ofertas y realizar compras desde casa. | **Figura 4**<br> *Entrevista 2 — Segmento 1* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista2_segmento1.jpg" alt="Entrevista 2 — Segmento 1" width="4000"> </div> *Nota.* Elaboración propia. |
-  | **3** | **Nombre:** Cesar <br> **Edad:** 50 años <br> **Distrito:** Miraflores <br> **Duración de la entrevista:** 3 minutos y 34 segundos <br> **Enlace:** https://youtu.be/VHkTCRW2Igc <br> **Resumen:** En este video, se entrevista al dueño de un negocio de comida. Habla sobre la efectividad del "boca a boca" y el uso de WhatsApp para las ventas. Mide el éxito de su promoción directamente a través de las ventas generadas por WhatsApp. Expresa interés en una plataforma digital para negocios locales que le permita mostrar sus platos con fotos y videos, y que le ayude a atraer clientes, especialmente turistas, ya que considera que tienen mayor poder adquisitivo. Además, está dispuesto a pagar por una aplicación si esta le garantiza la captación de clientes locales de manera efectiva. | **Figura 5**<br> *Entrevista 3 — Segmento 1* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista3_segmento1.jpg" alt="Entrevista 3 — Segmento 1" width="4000"> </div> *Nota.* Elaboración propia. |
+  | Número de registro | Datos del entrevistado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Captura                                                                                                                                                                                                                      |
+  | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | **1**              | **Nombre:** Mirta <br> **Edad:** 57 años <br> **Distrito:** Jesús María <br> **Duración de la entrevista:** 5 minutos y 54 segundos <br> **Enlace:** https://youtu.be/fC130lduBCM <br> **Resumen:** En esta entrevista, Mirta, una comerciante de 57 años, dueña de una piñatería, habla sobre los desafíos de su negocio, especialmente la promoción y la competencia. Menciona que utiliza redes sociales como Instagram y Facebook, pero que la clave para ella es el trato personalizado al cliente y las recomendaciones de boca en boca. Prefiere usar WhatsApp para comunicarse con sus clientes y valora la interacción directa. También expresa su interés en una herramienta digital que la conecte con clientes locales.                                                                                                                                                               | **Figura 3**<br>*Entrevista 1 — Segmento 1* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista1_segmento1.jpg" alt="Entrevista 1 — Segmento 1" width="4000"> </div> *Nota.* Elaboración propia.  |
+  | **2**              | **Nombre:** Kelly <br> **Edad:** 21 años <br> **Distrito:** Jesús María <br> **Duración de la entrevista:** 3 minutos y 8 segundos <br> **Enlace:** https://youtu.be/k7YhV_pqApc <br> **Resumen:** En esta entrevista, Kelly, la dueña de una tienda de mascotas, de 21 años, comparte sus ideas sobre el marketing digital. Destaca que el mayor desafío es el uso de las redes sociales para atraer clientes, y que las ofertas como "compra uno y lleva uno gratis" han sido muy efectivas. También menciona que se están enfocando en TikTok para transmisiones en vivo, lo cual ha aumentado sus ventas y seguidores. Explica que miden el éxito de su publicidad directamente a través de las ventas y que buscan clientes recurrentes. Finalmente, describe una aplicación ideal que le gustaría para su negocio, con funciones para ver productos, ofertas y realizar compras desde casa. | **Figura 4**<br> *Entrevista 2 — Segmento 1* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista2_segmento1.jpg" alt="Entrevista 2 — Segmento 1" width="4000"> </div> *Nota.* Elaboración propia. |
+  | **3**              | **Nombre:** Cesar <br> **Edad:** 50 años <br> **Distrito:** Miraflores <br> **Duración de la entrevista:** 3 minutos y 34 segundos <br> **Enlace:** https://youtu.be/VHkTCRW2Igc <br> **Resumen:** En este video, se entrevista al dueño de un negocio de comida. Habla sobre la efectividad del "boca a boca" y el uso de WhatsApp para las ventas. Mide el éxito de su promoción directamente a través de las ventas generadas por WhatsApp. Expresa interés en una plataforma digital para negocios locales que le permita mostrar sus platos con fotos y videos, y que le ayude a atraer clientes, especialmente turistas, ya que considera que tienen mayor poder adquisitivo. Además, está dispuesto a pagar por una aplicación si esta le garantiza la captación de clientes locales de manera efectiva.                                                                                   | **Figura 5**<br> *Entrevista 3 — Segmento 1* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista3_segmento1.jpg" alt="Entrevista 3 — Segmento 1" width="4000"> </div> *Nota.* Elaboración propia. |
 
   *Nota.* Elaboración propia.
 
@@ -539,10 +538,10 @@ Realizar este análisis competitivo es vital porque valida la propuesta de valor
   **Tabla 3**   
   *Registro de entrevistas — Segmento 2*  
 
-  | Número de registro | Datos del entrevistado | Captura |
-  |--------------------|-------------------------|---------|
-  | **1** | **Nombre:** Ariana Puscan <br> **Edad:** 28 años <br> **Distrito:** Magdalena <br> **Ocupación:** Abogada <br> **Duración de la entrevista:** 5 minutos y 49 segundos <br> **Enlace:** https://l1nq.com/8gjygzw <br> **Resumen:** En este video, se entrevista a Ariana Puscan, una joven de 28 años del distrito de Magdalena. Es una consumidora recurrente de snacks asiáticos, adquiriéndolos mensualmente. Su descubrimiento de productos se basa principalmente en recomendaciones y ofertas vistas en Instagram y TikTok. Sus compras son mayoritariamente impulsivas o casuales cuando encuentra artículos en supermercados, sin apoyarse en aplicaciones específicas. Recientemente, visitó un establecimiento tras verlo en redes sociales, teniendo una experiencia satisfactoria. Finalmente, considera que nuestra aplicación sería de gran valor. La percibe como una herramienta clave para localizar puntos de venta exactos y facilitar el acceso a una mayor variedad de productos asiáticos.| **Figura 6**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista1_segmento2.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
-  | **2** | **Nombre:** Olga Consuelo Arce Quesada <br> **Edad:** 25 años <br> **Distrito:** Magdalena <br> **Ocupación:** Comunicadora Corporativa <br> **Duración de la entrevista:** 7 minutos y 16 segundos <br> **Enlace:** https://l1nq.com/ck0dyrh <br> **Resumen:** En este video, Olga Consuelo Arce Quesada, de 25 años, de Magdalena. Es una consumidora frecuente de snacks, bebidas y productos de belleza. Si bien descubre tiendas asiáticas mediante redes sociales o de forma presencial, señala una brecha en la información: las ofertas no están digitalizadas y solo las descubre al visitar el punto de venta. Su experiencia revela una dificultad específica al buscar productos de belleza, ya que no suelen estar disponibles en cadenas comerciales como Miniso. Actualmente, su búsqueda depende exclusivamente de la suerte al encontrar recomendaciones en TikTok, lo que dificulta la compra efectiva. Olga valida positivamente la propuesta de nuestra aplicación. Destaca la importancia de una plataforma integral que geolocalice tiendas cercanas, ofrezca visibilidad de ofertas en tiempo real y permita filtrar los establecimientos por categorías para optimizar su experiencia de compra. | **Figura 7**<br> *Entrevista 2 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista2_segmento2.png" alt="Entrevista 2 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+  | Número de registro | Datos del entrevistado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Captura                                                                                                                                                                                                                      |
+  | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | **1**              | **Nombre:** Ariana Puscan <br> **Edad:** 28 años <br> **Distrito:** Magdalena <br> **Ocupación:** Abogada <br> **Duración de la entrevista:** 5 minutos y 49 segundos <br> **Enlace:** https://l1nq.com/8gjygzw <br> **Resumen:** En este video, se entrevista a Ariana Puscan, una joven de 28 años del distrito de Magdalena. Es una consumidora recurrente de snacks asiáticos, adquiriéndolos mensualmente. Su descubrimiento de productos se basa principalmente en recomendaciones y ofertas vistas en Instagram y TikTok. Sus compras son mayoritariamente impulsivas o casuales cuando encuentra artículos en supermercados, sin apoyarse en aplicaciones específicas. Recientemente, visitó un establecimiento tras verlo en redes sociales, teniendo una experiencia satisfactoria. Finalmente, considera que nuestra aplicación sería de gran valor. La percibe como una herramienta clave para localizar puntos de venta exactos y facilitar el acceso a una mayor variedad de productos asiáticos.                                                                                                                                                                                                          | **Figura 6**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista1_segmento2.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+  | **2**              | **Nombre:** Olga Consuelo Arce Quesada <br> **Edad:** 25 años <br> **Distrito:** Magdalena <br> **Ocupación:** Comunicadora Corporativa <br> **Duración de la entrevista:** 7 minutos y 16 segundos <br> **Enlace:** https://l1nq.com/ck0dyrh <br> **Resumen:** En este video, Olga Consuelo Arce Quesada, de 25 años, de Magdalena. Es una consumidora frecuente de snacks, bebidas y productos de belleza. Si bien descubre tiendas asiáticas mediante redes sociales o de forma presencial, señala una brecha en la información: las ofertas no están digitalizadas y solo las descubre al visitar el punto de venta. Su experiencia revela una dificultad específica al buscar productos de belleza, ya que no suelen estar disponibles en cadenas comerciales como Miniso. Actualmente, su búsqueda depende exclusivamente de la suerte al encontrar recomendaciones en TikTok, lo que dificulta la compra efectiva. Olga valida positivamente la propuesta de nuestra aplicación. Destaca la importancia de una plataforma integral que geolocalice tiendas cercanas, ofrezca visibilidad de ofertas en tiempo real y permita filtrar los establecimientos por categorías para optimizar su experiencia de compra. | **Figura 7**<br> *Entrevista 2 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista2_segmento2.png" alt="Entrevista 2 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
 
   *Nota.* Elaboración propia.
 
@@ -600,15 +599,15 @@ Realizar este análisis competitivo es vital porque valida la propuesta de valor
   **Tabla 4**
   *User Task Matrix — Segmento 1*  
 
-  | Task                                                                  | Frecuencia | Importancia |
-  |-----------------------------------------------------------------------|------------|-------------|
-  | Promocionar productos y servicios en redes sociales                   | Alto       | Alto        |
-  | Responder a consultas de clientes por diversos canales                | Alto       | Alto        |
-  | Crear y publicar ofertas especiales o promociones                     | Medio      | Alto        |
-  | Actualizar el inventario de productos y sus precios                   | Medio      | Medio       |
-  | Buscar nuevas ideas de marketing o tendencias digitales               | Bajo       | Medio       |
-  | Registrar y dar seguimiento a nuevos clientes                         | Alto       | Alto        |
-  | Analizar qué tipo de promoción genera más ventas                      | Bajo       | Medio       |
+  | Task                                                                    | Frecuencia | Importancia |
+  | ----------------------------------------------------------------------- | ---------- | ----------- |
+  | Promocionar productos y servicios en redes sociales                     | Alto       | Alto        |
+  | Responder a consultas de clientes por diversos canales                  | Alto       | Alto        |
+  | Crear y publicar ofertas especiales o promociones                       | Medio      | Alto        |
+  | Actualizar el inventario de productos y sus precios                     | Medio      | Medio       |
+  | Buscar nuevas ideas de marketing o tendencias digitales                 | Bajo       | Medio       |
+  | Registrar y dar seguimiento a nuevos clientes                           | Alto       | Alto        |
+  | Analizar qué tipo de promoción genera más ventas                        | Bajo       | Medio       |
   | Interactuar con comentarios o mensajes de clientes en sus publicaciones | Medio      | Alto        |
 
   *Nota.* Elaboración propia.
@@ -618,16 +617,16 @@ Realizar este análisis competitivo es vital porque valida la propuesta de valor
   **Tabla 5**   
   *User Task Matrix — Segmento 2*
 
-  | Task                                                                 | Frecuencia | Importancia |
-  |----------------------------------------------------------------------|------------|-------------|
-  | Buscar activamente ofertas para productos o servicios específicos    | Alto       | Alto        |
-  | Validar la credibilidad de una oferta (reputación, comentarios)       | Alto       | Alto        |
-  | Comparar precios y promociones entre diferentes tiendas o apps        | Alto       | Alto        |
-  | Leer reseñas y opiniones de otros usuarios                            | Medio      | Alto        |
-  | Planificar gastos personales y asignar un presupuesto para ocio       | Alto       | Alto        |
-  | Revisar notificaciones de ofertas que le interesan                    | Alto       | Alto        |
-  | Compartir ofertas encontradas con amigos o familiares                 | Bajo       | Bajo        |
-  | Guardar ofertas para usarlas en el futuro                             | Medio      | Medio       |
+  | Task                                                              | Frecuencia | Importancia |
+  | ----------------------------------------------------------------- | ---------- | ----------- |
+  | Buscar activamente ofertas para productos o servicios específicos | Alto       | Alto        |
+  | Validar la credibilidad de una oferta (reputación, comentarios)   | Alto       | Alto        |
+  | Comparar precios y promociones entre diferentes tiendas o apps    | Alto       | Alto        |
+  | Leer reseñas y opiniones de otros usuarios                        | Medio      | Alto        |
+  | Planificar gastos personales y asignar un presupuesto para ocio   | Alto       | Alto        |
+  | Revisar notificaciones de ofertas que le interesan                | Alto       | Alto        |
+  | Compartir ofertas encontradas con amigos o familiares             | Bajo       | Bajo        |
+  | Guardar ofertas para usarlas en el futuro                         | Medio      | Medio       |
 
   *Nota.* Elaboración propia.
   
@@ -705,66 +704,36 @@ A través de ellas se traduce lo que los usuarios quieren lograr al usar el prod
 **Tabla 6**   
 *Epics — Agrupación de requerimientos de alto nivel del producto GeoPS*  
 
-| Epic                                               | ID   |
-|----------------------------------------------------|------|
-| Registro y Autenticación                           | EP01 |
-| Descubrimiento y Gestión de Ofertas (Clientes)     | EP02 |
-| Gestión de Campañas Publicitarias (Proveedores)    | EP03 |
-| Planes y Suscripciones (Clientes y Proveedores)    | EP04 |
-| Experiencia del Usuario y Contenido                | EP05 |
+| Epic                                | ID   |
+| ----------------------------------- | ---- |
+| Registro y Autenticación            | EP01 |
+| Descubrimiento y Gestión de Ofertas | EP02 |
+| Gestión de Campañas Publicitarias   | EP03 |
 
 *Nota.* Elaboración propia.
 
 **Tabla 7**   
 *User Stories — Especificación de requerimientos funcionales de GeoPS*  
 
-| Story ID | Título                                                      | Descripción                                                                                                                                                       | Criterios de aceptación                                                                                                                                                                                                                           | Relacionado con (Epic ID) |
-|----------|--------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
-| US01     | Registro de Usuario en la Plataforma Web                    | Como usuario, quiero poder registrarme en la plataforma web con mi correo electrónico y contraseña para poder acceder a las ofertas personalizadas.                | Escenario 01: Dado que estoy en la página de registro, Cuando ingreso un correo electrónico válido, una contraseña segura, confirmo la contraseña y hago clic en “Registrar”, Entonces el sistema crea la cuenta y muestra mensaje de éxito.       | EP01                       |
-| US02     | Inicio de Sesión de Usuario en la Plataforma Web             | Como usuario, quiero poder iniciar sesión en la plataforma web con mi correo electrónico y contraseña para acceder a mis ofertas guardadas.                        | Escenario 01: Dado que estoy en la página de inicio de sesión, Cuando ingreso mis credenciales correctas y hago clic en “Iniciar sesión”, Entonces el sistema autentica y me redirige a “Mis ofertas guardadas”.                                   | EP01                       |
-| US03     | Registro de Negocio en la Plataforma Web                     | Como dueño de negocio, quiero poder registrar mi negocio proporcionando información detallada para poder crear campañas publicitarias.                             | Escenario 01: Dado que estoy en la página de registro de negocio, Cuando ingreso un correo válido, contraseña y datos obligatorios, Entonces el sistema crea la cuenta del negocio y muestra un mensaje de éxito.                                   | EP01                       |
-| US04     | Inicio de Sesión de Negocio en la Plataforma Web             | Como dueño de negocio, quiero poder iniciar sesión con mi correo electrónico y contraseña para acceder al panel de gestión de campañas.                           | Escenario 01: Dado que estoy en la página de inicio de sesión de negocios, Cuando ingreso mis credenciales correctas, Entonces el sistema autentica y me redirige al panel de gestión.                                                             | EP01                       |
-| US05     | Recuperación de Contraseña en la Plataforma Web              | Como usuario o dueño de negocio, quiero poder recuperar mi contraseña para restablecer el acceso en caso de olvido.                                                | Escenario 01: Dado que estoy en la página de recuperación de contraseña, Cuando ingreso un correo válido y confirmo la acción, Entonces el sistema envía un enlace de restablecimiento y muestra un mensaje de confirmación.                        | EP01                       |
-| US06     | Búsqueda de Ofertas por Ubicación en la Plataforma Web       | Como usuario, quiero poder buscar ofertas cercanas a mi ubicación para encontrar promociones convenientes y ahorrar tiempo.                                        | Escenario 01: Dado que permití el acceso a mi ubicación, Cuando realizo una búsqueda, Entonces el sistema muestra un listado de promociones ordenadas por cercanía.                                                                                 | EP02                       |
-| US07     | Búsqueda de Ofertas por Categoría en la Plataforma Web       | Como usuario, quiero poder filtrar ofertas por categoría para encontrar fácilmente las promociones que me interesan.                                              | Escenario 01: Dado que estoy en la sección de búsqueda, Cuando selecciono una categoría, Entonces el sistema muestra solo las ofertas correspondientes.                                                                                            | EP02                       |
-| US08     | Visualización de Detalles de Oferta en la Plataforma Web     | Como usuario, quiero poder visualizar los detalles de una oferta para conocer toda la información antes de aprovecharla.                                          | Escenario 01: Dado que estoy en el listado de ofertas, Cuando selecciono una oferta, Entonces el sistema muestra la información detallada (descripción, precio, vigencia, ubicación, condiciones de uso).                                            | EP02                       |
-| US09     | Visualización de Ofertas en Mapa en la Plataforma Web        | Como usuario, quiero visualizar las ofertas en un mapa para ubicar rápidamente negocios cercanos.                                                                  | Escenario 01: Dado que estoy en la sección de ofertas, Cuando selecciono “Ver en mapa”, Entonces el sistema muestra un mapa interactivo con ubicación de negocios y ofertas.                                                                        | EP02                       |
-| US10     | Guardar Ofertas en la Plataforma Web                         | Como usuario, quiero poder guardar ofertas para revisarlas más tarde y no perder promociones de interés.                                                           | Escenario 01: Dado que estoy viendo una oferta, Cuando hago clic en “Guardar oferta”, Entonces el sistema la almacena en mi perfil y me permite acceder desde “Mis ofertas guardadas”.                                                              | EP02                       |
-| US11     | Creación de Campaña Publicitaria en la Plataforma Web        | Como dueño de negocio, quiero crear campañas publicitarias para promocionar mis productos o servicios.                                                             | Escenario 01: Dado que estoy en el panel de gestión, Cuando completo los campos obligatorios, Entonces el sistema guarda la campaña y la muestra en la lista de campañas activas.                                                                   | EP03                       |
-| US12     | Edición de Campaña Publicitaria en la Plataforma Web         | Como dueño de negocio, quiero editar campañas publicitarias existentes para actualizar información y mejorar efectividad.                                          | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y modifico sus datos, Entonces el sistema guarda cambios y actualiza la información visible.                                                               | EP03                       |
-| US13     | Eliminación de Campaña Publicitaria en la Plataforma Web     | Como dueño de negocio, quiero eliminar campañas publicitarias para retirar promociones que ya no deseo mantener.                                                   | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y confirmo “Eliminar”, Entonces el sistema elimina la campaña y desaparece de la lista de activas.                                                         | EP03                       |
-| US14     | Visualización de Campañas Activas en la Plataforma Web       | Como dueño de negocio, quiero visualizar todas mis campañas activas para dar seguimiento.                                                                          | Escenario 01: Dado que estoy en el panel de gestión, Cuando accedo a “Campañas Activas”, Entonces el sistema muestra un listado de todas las campañas vigentes.                                                                                      | EP03                       |
-| US15     | Visualización de Métricas de Campañas en la Plataforma Web   | Como dueño de negocio, quiero visualizar métricas de mis campañas para evaluar desempeño y tomar decisiones.                                                       | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña específica y accedo a métricas, Entonces el sistema muestra visualizaciones, clics, interacciones y duración.                                                      | EP03                       |
-| US16     | Filtrado de Campañas por Estado en la Plataforma Web         | Como dueño de negocio, quiero filtrar mis campañas por estado para gestionarlas fácilmente.                                                                        | Escenario 01: Dado que estoy en la sección de gestión, Cuando selecciono un estado específico, Entonces el sistema muestra únicamente campañas de ese estado.                                                                                        | EP03                       |
-| US17     | Notificaciones de Rendimiento de Campaña en la Plataforma Web| Como dueño de negocio, quiero recibir notificaciones sobre el rendimiento de mis campañas sin revisarlas constantemente.                                           | Escenario 01: Dado que tengo una campaña activa, Cuando ocurre un evento relevante (ej. campaña por finalizar), Entonces el sistema me muestra una notificación con resumen del evento.                                                              | EP03                       |
-| US18     | Exportación de Reportes de Campañas en la Plataforma Web     | Como dueño de negocio, quiero exportar reportes de mis campañas para analizarlos externamente.                                                                     | Escenario 01: Dado que estoy en la sección de métricas, Cuando selecciono “Exportar reporte”, Entonces el sistema genera archivo en PDF o Excel con información de la campaña.                                                                       | EP03                       |
-| US19     | Configuración de Presupuesto de Campaña en la Plataforma Web | Como dueño de negocio, quiero configurar presupuesto de campañas para controlar gastos y optimizar inversión.                                                      | Escenario 01: Dado que estoy creando o editando una campaña, Cuando ingreso presupuesto y confirmo, Entonces el sistema guarda el presupuesto y lo muestra en el panel.                                                                               | EP03                       |
-| US20     | Pausar Campaña Publicitaria en la Plataforma Web             | Como dueño de negocio, quiero pausar campañas temporalmente sin eliminarlas.                                                                                      | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y hago clic en “Pausar”, Entonces el sistema cambia estado a “Pausada”.                                                                                    | EP03                       |
-| US21     | Reactivar Campaña Publicitaria en la Plataforma Web          | Como dueño de negocio, quiero reactivar campañas pausadas para retomar su difusión.                                                                               | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña pausada y hago clic en “Reactivar”, Entonces el sistema cambia estado a “Activa”.                                                                                  | EP03                       |
-| US22     | Programar Fecha de Inicio de Campaña en la Plataforma Web    | Como dueño de negocio, quiero programar fecha de inicio para campañas.                                                                                             | Escenario 01: Dado que estoy creando campaña, Cuando selecciono fecha futura, Entonces el sistema guarda programación y activa automáticamente la campaña en esa fecha.                                                                              | EP03                       |
-| US23     | Programar Fecha de Fin de Campaña en la Plataforma Web       | Como dueño de negocio, quiero programar fecha de fin para campañas.                                                                                                | Escenario 01: Dado que estoy creando o editando campaña, Cuando selecciono fecha de fin, Entonces el sistema cambia estado a “Finalizada” automáticamente al concluir el periodo.                                                                    | EP03                       |
-| US24     | Segmentación de Campañas por Ubicación en la Plataforma Web  | Como dueño de negocio, quiero segmentar campañas por ubicación para dirigir anuncios a usuarios de un área objetivo.                                               | Escenario 01: Dado que estoy creando o editando campaña, Cuando defino una zona geográfica o radio, Entonces el sistema limita visualización de la campaña a usuarios dentro del área configurada.                                                    | EP03                       |
-| US25     | Segmentación de Campañas por Demografía en la Plataforma Web | Como dueño de negocio, quiero segmentar campañas por demografía e intereses para dirigirlas al público más relevante.                                              | Escenario 01: Dado que estoy creando o editando campaña, Cuando selecciono filtros de segmentación (edad, género, intereses), Entonces el sistema configura campaña solo para usuarios que cumplen esos criterios.                                      | EP03                       |
-| US26     | Duplicar Campaña Publicitaria en la Plataforma Web           | Como dueño de negocio, quiero duplicar campañas existentes para ahorrar tiempo en creación.                                                                        | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña y hago clic en “Duplicar”, Entonces el sistema crea nueva campaña con mismos datos de la original.                                                                 | EP03                       |
-| US27     | Previsualización de Campaña en la Plataforma Web             | Como dueño de negocio, quiero previsualizar campañas antes de publicarlas.                                                                                         | Escenario 01: Dado que estoy en proceso de creación o edición, Cuando hago clic en “Previsualizar”, Entonces el sistema muestra vista simulada de cómo se verá publicada la campaña.                                                                  | EP03                       |
-| US28     | Historial de Campañas en la Plataforma Web                   | Como dueño de negocio, quiero visualizar historial de todas mis campañas para llevar registro de promociones realizadas.                                           | Escenario 01: Dado que estoy en el panel de gestión, Cuando accedo a “Historial de campañas”, Entonces el sistema muestra listado con todas las finalizadas y sus datos principales.                                                                  | EP03                       |
-| US29     | Configuración de Idioma en la Plataforma Web                 | Como usuario, quiero seleccionar idioma de la plataforma para visualizar contenido en mi preferencia.                                                              | Escenario 01: Dado que estoy en la página principal, Cuando selecciono un idioma en el selector, Entonces el sistema cambia todo el contenido al idioma elegido.                                                                                      | EP05                       |
-| US30     | Accesibilidad en la Plataforma Web                           | Como usuario, quiero que la plataforma cumpla criterios de accesibilidad (contraste, lectores de pantalla, navegación con teclado).                                | Escenario 01: Dado que navego en la plataforma, Cuando interactúo con elementos, Entonces el sistema permite usarlos de manera accesible.                                                                                                            | EP05                       |
-| US31     | Registro de Puntos de Interés Habituales en la Plataforma Web| Como usuario, quiero registrar puntos de interés habituales para recibir promociones en esas zonas.                                                                | Escenario 01: Dado que estoy en mi perfil, Cuando agrego dirección o selecciono punto en mapa, Entonces el sistema guarda ese punto de interés y muestra promociones cercanas.                                                                        | EP04                       |
-| US32     | Suscripción a Plan Premium (Proveedor)                       | Como proveedor, quiero suscribirme al plan Premium para acceder a estadísticas y herramientas avanzadas.                                                           | Escenario 01: Dado que estoy en la página de planes, Cuando selecciono “Hazte Premium” y completo pago, Entonces el sistema actualiza cuenta a Premium y habilita beneficios avanzados.                                                               | EP04                       |
-| US33     | Suscripción a Plan Premium (Cliente)                         | Como cliente, quiero suscribirme al plan Premium para acceder a descuentos exclusivos y promociones especiales.                                                    | Escenario 01: Dado que estoy en página de planes, Cuando selecciono “Hazte Premium” y completo pago, Entonces el sistema actualiza mi cuenta a Premium y habilita beneficios exclusivos.                                                              | EP04                       |
-| US34     | Gestión de Suscripción (Cliente/Proveedor)                   | Como usuario, quiero gestionar mi suscripción para cambiar de plan, renovar o cancelar.                                                                            | Escenario 01: Dado que estoy en Mi cuenta → Suscripción, Cuando selecciono una acción y confirmo, Entonces el sistema aplica cambios y muestra confirmación.                                                                                         | EP04                       |
-| US35     | Encabezado con navegación                                    | Como visitante, quiero un encabezado con menú de navegación.                                                                                                       | Escenario 01: Dado que accedo a la landing, Cuando interactúo con el encabezado, Entonces puedo navegar entre secciones principales.                                                                                                                 | EP05                       |
-| US36     | Información en el footer                                     | Como visitante, quiero ver información útil en el pie de página.                                                                                                   | Escenario 01: Dado que navego en la página principal, Cuando llego al pie de página, Entonces observo enlaces a contacto, términos y redes sociales.                                                                                                  | EP05                       |
-| US37     | Visualización de Encabezado con Navegación en Landing Page   | Como visitante, quiero ver un encabezado con navegación a las secciones principales.                                                                               | Escenario 01: Dado que accedo a la landing page, Cuando visualizo la parte superior, Entonces el sistema muestra un encabezado con enlaces a secciones principales.                                                                                   | EP05                       |
-| US38     | Visualización de Hero Section en la Landing Page             | Como visitante, quiero ver un mensaje principal con un call-to-action en la parte superior.                                                                        | Escenario 01: Dado que accedo a la landing, Cuando llego a la sección principal, Entonces visualizo mensaje destacado y un botón de acción (ej. “Únete ahora”).                                                                                      | EP05                       |
-| US39     | Visualización de Sección de Promociones en Landing Page      | Como visitante, quiero ver una sección con promociones disponibles.                                                                                                | Escenario 01: Dado que navego en la landing, Cuando llego a “Ver Promociones”, Entonces el sistema muestra promociones representativas con información básica.                                                                                        | EP05                       |
-| US40     | Visualización de Marcas y Tiendas en la Landing Page         | Como visitante, quiero ver logos e información de marcas asociadas para confiar en la plataforma.                                                                  | Escenario 01: Dado que navego en la landing, Cuando llego a “Marcas y Tiendas Asociadas”, Entonces el sistema muestra logos e información básica de negocios afiliados.                                                                              | EP05                       |
-| US41     | Visualización de “Quiénes Somos” en Landing Page             | Como visitante, quiero ver sección “Quiénes Somos” para comprender misión de GeoPS.                                                                                | Escenario 01: Dado que navego en la landing, Cuando llego a “Quiénes Somos”, Entonces el sistema muestra información sobre misión de GeoPS de forma clara y atractiva.                                                                               | EP05                       |
-| US42     | Consulta de Preguntas Frecuentes en Landing Page             | Como visitante, quiero acceder a sección de FAQ para resolver dudas sin contactar soporte.                                                                         | Escenario 01: Dado que navego en la landing, Cuando despliego una pregunta, Entonces el sistema muestra respuesta correspondiente de manera clara.                                                                                                    | EP05                       |
-| US43     | Visualización de Footer con Información de Contacto          | Como visitante, quiero ver un pie de página con redes sociales y datos de contacto.                                                                                | Escenario 01: Dado que navego en la landing, Cuando llego al pie de página, Entonces el sistema muestra enlaces activos a redes sociales y datos de contacto.                                                                                        | EP05                       |
-| US44     | Diseño Responsivo en la Landing Page                         | Como visitante, quiero que la landing se adapte automáticamente a mi dispositivo.                                                                                  | Escenario 01: Dado que accedo a la landing desde móvil o tablet, Cuando navego, Entonces el sistema muestra contenido ajustado correctamente al tamaño de pantalla.                                                                                   | EP05                       |
-| US45     | Optimización y Pruebas Finales de la Landing Page            | Como visitante, quiero que la landing funcione en distintos navegadores y cargue rápido.                                                                           | Escenario 01: Dado que accedo a la landing desde diferentes navegadores y dispositivos, Cuando navego por las secciones, Entonces el sistema mantiene buen rendimiento, muestra todo correctamente y no presenta errores de compatibilidad.            | EP05                       |
+| Story ID | Título                                                       | Descripción                                                                                                                                         | Criterios de aceptación                                                                                                                                                                                                                      | Relacionado con (Epic ID) |
+| -------- | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| US01     | Registro de Usuario en la Plataforma Web                     | Como usuario, quiero poder registrarme en la plataforma web con mi correo electrónico y contraseña para poder acceder a las ofertas personalizadas. | Escenario 01: Dado que estoy en la página de registro, Cuando ingreso un correo electrónico válido, una contraseña segura, confirmo la contraseña y hago clic en “Registrar”, Entonces el sistema crea la cuenta y muestra mensaje de éxito. | EP01                      |
+| US02     | Inicio de Sesión de Usuario en la Plataforma Web             | Como usuario, quiero poder iniciar sesión en la plataforma web con mi correo electrónico y contraseña para acceder a mis ofertas guardadas.         | Escenario 01: Dado que estoy en la página de inicio de sesión, Cuando ingreso mis credenciales correctas y hago clic en “Iniciar sesión”, Entonces el sistema autentica y me redirige a “Mis ofertas guardadas”.                             | EP01                      |
+| US03     | Registro de Negocio en la Plataforma Web                     | Como dueño de negocio, quiero poder registrar mi negocio proporcionando información detallada para poder crear campañas publicitarias.              | Escenario 01: Dado que estoy en la página de registro de negocio, Cuando ingreso un correo válido, contraseña y datos obligatorios, Entonces el sistema crea la cuenta del negocio y muestra un mensaje de éxito.                            | EP01                      |
+| US04     | Inicio de Sesión de Negocio en la Plataforma Web             | Como dueño de negocio, quiero poder iniciar sesión con mi correo electrónico y contraseña para acceder al panel de gestión de campañas.             | Escenario 01: Dado que estoy en la página de inicio de sesión de negocios, Cuando ingreso mis credenciales correctas, Entonces el sistema autentica y me redirige al panel de gestión.                                                       | EP01                      |
+| US05     | Búsqueda de Ofertas por Categoría en la Plataforma Web       | Como usuario, quiero poder filtrar ofertas por categoría para encontrar fácilmente las promociones que me interesan.                                | Escenario 01: Dado que estoy en la sección de búsqueda, Cuando selecciono una categoría, Entonces el sistema muestra solo las ofertas correspondientes.                                                                                      | EP02                      |
+| US06     | Visualización de Detalles de Oferta en la Plataforma Web     | Como usuario, quiero poder visualizar los detalles de una oferta para conocer toda la información antes de aprovecharla.                            | Escenario 01: Dado que estoy en el listado de ofertas, Cuando selecciono una oferta, Entonces el sistema muestra la información detallada (descripción, precio, vigencia, ubicación, condiciones de uso).                                    | EP02                      |
+| US07     | Guardar Ofertas en la Plataforma Web                         | Como usuario, quiero poder guardar ofertas para revisarlas más tarde y no perder promociones de interés.                                            | Escenario 01: Dado que estoy viendo una oferta, Cuando hago clic en “Guardar oferta”, Entonces el sistema la almacena en mi perfil y me permite acceder desde “Mis ofertas guardadas”.                                                       | EP02                      |
+| US08     | Creación de Campaña Publicitaria en la Plataforma Web        | Como dueño de negocio, quiero crear campañas publicitarias para promocionar mis productos o servicios.                                              | Escenario 01: Dado que estoy en el panel de gestión, Cuando completo los campos obligatorios, Entonces el sistema guarda la campaña y la muestra en la lista de campañas activas.                                                            | EP03                      |
+| US09     | Edición de Campaña Publicitaria en la Plataforma Web         | Como dueño de negocio, quiero editar campañas publicitarias existentes para actualizar información y mejorar efectividad.                           | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y modifico sus datos, Entonces el sistema guarda cambios y actualiza la información visible.                                                       | EP03                      |
+| US10     | Eliminación de Campaña Publicitaria en la Plataforma Web     | Como dueño de negocio, quiero eliminar campañas publicitarias para retirar promociones que ya no deseo mantener.                                    | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y confirmo “Eliminar”, Entonces el sistema elimina la campaña y desaparece de la lista de activas.                                                 | EP03                      |
+| US11     | Visualización de Campañas Activas en la Plataforma Web       | Como dueño de negocio, quiero visualizar todas mis campañas activas para dar seguimiento.                                                           | Escenario 01: Dado que estoy en el panel de gestión, Cuando accedo a “Campañas Activas”, Entonces el sistema muestra un listado de todas las campañas vigentes.                                                                              | EP03                      |
+| US12     | Configuración de Presupuesto de Campaña en la Plataforma Web | Como dueño de negocio, quiero configurar presupuesto de campañas para controlar gastos y optimizar inversión.                                       | Escenario 01: Dado que estoy creando o editando una campaña, Cuando ingreso presupuesto y confirmo, Entonces el sistema guarda el presupuesto y lo muestra en el panel.                                                                      | EP03                      |
+| US13     | Pausar Campaña Publicitaria en la Plataforma Web             | Como dueño de negocio, quiero pausar campañas temporalmente sin eliminarlas.                                                                        | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y hago clic en “Pausar”, Entonces el sistema cambia estado a “Pausada”.                                                                            | EP03                      |
+| US14     | Reactivar Campaña Publicitaria en la Plataforma Web          | Como dueño de negocio, quiero reactivar campañas pausadas para retomar su difusión.                                                                 | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña pausada y hago clic en “Reactivar”, Entonces el sistema cambia estado a “Activa”.                                                                         | EP03                      |
+| US15     | Programar Fecha de Inicio de Campaña en la Plataforma Web    | Como dueño de negocio, quiero programar fecha de inicio para campañas.                                                                              | Escenario 01: Dado que estoy creando campaña, Cuando selecciono fecha futura, Entonces el sistema guarda programación y activa automáticamente la campaña en esa fecha.                                                                      | EP03                      |
+| US16     | Programar Fecha de Fin de Campaña en la Plataforma Web       | Como dueño de negocio, quiero programar fecha de fin para campañas.                                                                                 | Escenario 01: Dado que estoy creando o editando campaña, Cuando selecciono fecha de fin, Entonces el sistema cambia estado a “Finalizada” automáticamente al concluir el periodo.                                                            | EP03                      |
+| US17     | Configuración de Idioma en la Plataforma Web                 | Como usuario, quiero seleccionar idioma de la plataforma para visualizar contenido en mi preferencia.                                               | Escenario 01: Dado que estoy en la página principal, Cuando selecciono un idioma en el selector, Entonces el sistema cambia todo el contenido al idioma elegido.                                                                             | EP05                      |
 
 *Nota.* Elaboración propia.
 
@@ -776,18 +745,16 @@ Están orientadas al equipo de desarrollo y especifican aspectos relacionados co
 **Tabla 8**  
 *Technical Stories — Requerimientos técnicos para la implementación del producto GeoPS*  
 
-| Story ID | Título                               | Descripción                                                                 | Criterios de Aceptación                                                                                                                                                                  | Relacionado con (US ID) |
-|----------|---------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
-| TS01     | Endpoint: Registrar usuario          | Como Developer, deseo exponer `POST /auth/register` para crear cuentas de usuario con validación de email y password. | **Scenario: Registro exitoso**<br> Dado un payload válido,<br> Cuando envío POST `/auth/register`,<br> Entonces responde 201 con id y email.<br><br> **Scenario: Email en uso**<br> Dado un email ya registrado,<br> Cuando envío POST `/auth/register`,<br> Entonces responde 409 con error `email_taken`. | US01 |
-| TS02     | Endpoint: Login de usuario           | Como Developer, deseo exponer `POST /auth/login` para autenticar usuarios y emitir un JWT. | **Scenario: Credenciales válidas**<br> Dado email y password correctos,<br> Cuando envío POST `/auth/login`,<br> Entonces responde 200 con `access_token`.<br><br> **Scenario: Credenciales inválidas**<br> Dado password incorrecto,<br> Cuando envío POST `/auth/login`,<br> Entonces responde 401 con error `invalid_credentials`. | US02 |
-| TS03     | Endpoint: Recuperar contraseña       | Como Developer, deseo exponer `POST /auth/forgot-password` para enviar un link de reseteo vía email. | **Scenario: Solicitud válida**<br> Dado un email registrado,<br> Cuando envío POST `/auth/forgot-password`,<br> Entonces responde 202 con status=`email_sent`.<br><br> **Scenario: Email no registrado**<br> Dado email inexistente,<br> Cuando envío POST `/auth/forgot-password`,<br> Entonces responde 202 sin revelar existencia. | US05 |
-| TS04     | Endpoint: Búsqueda de ofertas por ubicación | Como Developer, deseo exponer `GET /offers?lat={lat}&lng={lng}&radiusKm={r}` para listar ofertas cercanas. | **Scenario: Consulta válida**<br> Dado coordenadas correctas,<br> Cuando envío GET,<br> Entonces responde 200 con lista de ofertas.<br><br> **Scenario: Parámetros faltantes**<br> Dado falta lat/lng,<br> Cuando envío GET,<br> Entonces responde 400 con error `invalid_params`. | US06 |
-| TS05     | Endpoint: Ofertas por categoría      | Como Developer, deseo exponer `GET /offers?category={slug}` para filtrar ofertas. | **Scenario: Categoría válida**<br> Dado category existente,<br> Cuando envío GET,<br> Entonces responde 200 con lista de ofertas.<br><br> **Scenario: Categoría inválida**<br> Dado category no existe,<br> Cuando envío GET,<br> Entonces responde 200 con lista vacía. | US07 |
-| TS06     | Endpoint: Detalle de oferta          | Como Developer, deseo exponer `GET /offers/{id}` para obtener detalles completos. | **Scenario: Oferta encontrada**<br> Dado id válido,<br> Cuando envío GET,<br> Entonces responde 200 con detalle.<br><br> **Scenario: Oferta inexistente**<br> Dado id inválido,<br> Cuando envío GET,<br> Entonces responde 404 con error `not_found`. | US08 |
-| TS07     | Endpoint: Guardar oferta (favoritos) | Como Developer, deseo exponer `POST /users/me/saved-offers` para guardar ofertas de usuario autenticado. | **Scenario: Guardado exitoso**<br> Dado token válido,<br> Cuando envío POST con offerId,<br> Entonces responde 201 con `saved=true`.<br><br> **Scenario: Sin autenticación**<br> Dado falta token,<br> Cuando envío POST,<br> Entonces responde 401 con error `unauthorized`. | US10 |
-| TS08     | Endpoint: Crear campaña              | Como Developer, deseo exponer `POST /campaigns` para que un proveedor cree campañas publicitarias. | **Scenario: Creación válida**<br> Dado payload con título, fechas y presupuesto correctos,<br> Cuando envío POST,<br> Entonces responde 201 con estado `draft`.<br><br> **Scenario: Fechas inválidas**<br> Dado `endDate < startDate`,<br> Cuando envío POST,<br> Entonces responde 422 con error `invalid_dates`. | US11 |
-| TS09     | Endpoint: Editar campaña             | Como Developer, deseo exponer `PUT /campaigns/{id}` para editar campañas existentes. | **Scenario: Actualización válida**<br> Dado proveedor dueño de campaña,<br> Cuando envío PUT,<br> Entonces responde 200 con `updated=true`.<br><br> **Scenario: Sin permisos**<br> Dado proveedor no dueño,<br> Cuando envío PUT,<br> Entonces responde 403 con error `forbidden`. | US12 |
-| TS10     | Endpoint: Pausar/Reactivar campaña   | Como Developer, deseo exponer `PATCH /campaigns/{id}/pause` y `/resume` para controlar estado. | **Scenario: Pausa válida**<br> Dado campaña activa,<br> Cuando envío PATCH `/pause`,<br> Entonces responde 200 con status=`paused`.<br><br> **Scenario: Reactivación válida**<br> Dado campaña pausada,<br> Cuando envío PATCH `/resume`,<br> Entonces responde 200 con status=`active`. | US20 / US21 |
+| Story ID | Título                                      | Descripción                                                                                                           | Criterios de Aceptación                                                                                                                                                                                                                                                                                                               | Relacionado con (US ID) |
+| -------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| TS01     | Endpoint: Registrar usuario                 | Como Developer, deseo exponer `POST /auth/register` para crear cuentas de usuario con validación de email y password. | **Scenario: Registro exitoso**<br> Dado un payload válido,<br> Cuando envío POST `/auth/register`,<br> Entonces responde 201 con id y email.<br><br> **Scenario: Email en uso**<br> Dado un email ya registrado,<br> Cuando envío POST `/auth/register`,<br> Entonces responde 409 con error `email_taken`.                           | US01                    |
+| TS02     | Endpoint: Login de usuario                  | Como Developer, deseo exponer `POST /auth/login` para autenticar usuarios y emitir un JWT.                            | **Scenario: Credenciales válidas**<br> Dado email y password correctos,<br> Cuando envío POST `/auth/login`,<br> Entonces responde 200 con `access_token`.<br><br> **Scenario: Credenciales inválidas**<br> Dado password incorrecto,<br> Cuando envío POST `/auth/login`,<br> Entonces responde 401 con error `invalid_credentials`. | US02                    |
+| TS04     | Endpoint: Búsqueda de ofertas por categoría | Como Developer, deseo exponer `GET /offers?category={slug}` para filtrar ofertas.                                     | **Scenario: Categoría válida**<br> Dado category existente,<br> Cuando envío GET,<br> Entonces responde 200 con lista de ofertas.<br><br> **Scenario: Categoría inválida**<br> Dado category no existe,<br> Cuando envío GET,<br> Entonces responde 200 con lista vacía.                                                              | US05                    |
+| TS05     | Endpoint: Detalle de oferta                 | Como Developer, deseo exponer `GET /offers/{id}` para obtener detalles completos.                                     | **Scenario: Oferta encontrada**<br> Dado id válido,<br> Cuando envío GET,<br> Entonces responde 200 con detalle.<br><br> **Scenario: Oferta inexistente**<br> Dado id inválido,<br> Cuando envío GET,<br> Entonces responde 404 con error `not_found`.                                                                                | US06                    |
+| TS06     | Endpoint: Guardar oferta (favoritos)        | Como Developer, deseo exponer `POST /users/me/saved-offers` para guardar ofertas de usuario autenticado.              | **Scenario: Guardado exitoso**<br> Dado token válido,<br> Cuando envío POST con offerId,<br> Entonces responde 201 con `saved=true`.<br><br> **Scenario: Sin autenticación**<br> Dado falta token,<br> Cuando envío POST,<br> Entonces responde 401 con error `unauthorized`.                                                         | US07                    |
+| TS07     | Endpoint: Crear campaña                     | Como Developer, deseo exponer `POST /campaigns` para que un proveedor cree campañas publicitarias.                    | **Scenario: Creación válida**<br> Dado payload con título, fechas y presupuesto correctos,<br> Cuando envío POST,<br> Entonces responde 201 con estado `draft`.<br><br> **Scenario: Fechas inválidas**<br> Dado `endDate < startDate`,<br> Cuando envío POST,<br> Entonces responde 422 con error `invalid_dates`.                    | US08                    |
+| TS08     | Endpoint: Editar campaña                    | Como Developer, deseo exponer `PUT /campaigns/{id}` para editar campañas existentes.                                  | **Scenario: Actualización válida**<br> Dado proveedor dueño de campaña,<br> Cuando envío PUT,<br> Entonces responde 200 con `updated=true`.<br><br> **Scenario: Sin permisos**<br> Dado proveedor no dueño,<br> Cuando envío PUT,<br> Entonces responde 403 con error `forbidden`.                                                    | US09                    |
+| TS09     | Endpoint: Pausar/Reactivar campaña          | Como Developer, deseo exponer `PATCH /campaigns/{id}/pause` y `/resume` para controlar estado.                        | **Scenario: Pausa válida**<br> Dado campaña activa,<br> Cuando envío PATCH `/pause`,<br> Entonces responde 200 con status=`paused`.<br><br> **Scenario: Reactivación válida**<br> Dado campaña pausada,<br> Cuando envío PATCH `/resume`,<br> Entonces responde 200 con status=`active`.                                              | US13 / US14             |
 
 *Nota.* Elaboración propia.
 
@@ -809,69 +776,41 @@ El Impact Mapping es una técnica de planificación estratégica que conecta los
 El **Product Backlog** es una lista priorizada de funcionalidades, mejoras y requisitos técnicos que guiarán la evolución del producto.  
 Su propósito es organizar el trabajo en función del valor que aporta al usuario y al negocio, sirviendo como una hoja de ruta flexible y adaptable durante el desarrollo.
 
-**Enlace al Tablero:** https://trello.com/invite/b/6827b176ac2901fb01dfde7f/ATTI41e099b86c4d473204a21f0e3359cadd5F57D4C1/product-backlog-geops
+**Enlace al Tablero:** https://geops-org.atlassian.net/jira/software/projects/GEOP/boards/69/backlog?atlOrigin=eyJpIjoiODc2NDI0MDBkOGE4NGZmMGFiOWYzNmZiZTY5NDk5ZWUiLCJwIjoiaiJ9
 
-**Vista del Product Backlog en Trello**
+**Vista del Product Backlog en Jira**
 
 **Figura 15**<br>
 *Product Backlog — GeoPS*
 
 <div align="center">
-    <img src="resources/imgs/chapter-iii/Product Backlog - Trello.jpg" alt="Product Backlog — GeoPS" width="600">
+    <img src="resources/imgs/Product-Backlog-2026.png/" alt="Product Backlog — GeoPS" width="600">
 </div>
 
-*Nota.* Elaboración propia (realizado en Trello).
+*Nota.* Elaboración propia (realizado en Jira).
 
 **Tabla 9**   
 *Product Backlog — Priorización de funcionalidades del producto GeoPS*  
 
-| # Orden | User Story ID | Título | Descripción | Story Points |
-|---------|---------------|--------|-------------|--------------|
-| 1  | US35 | Encabezado con navegación | Como visitante, deseo ver un encabezado con navegación para desplazarme fácilmente por la landing page. | 2 |
-| 2  | US36 | Información en el footer | Como visitante, deseo visualizar un pie de página con enlaces a contacto y redes sociales para resolver dudas y confiar en la plataforma. | 2 |
-| 3  | US37 | Visualización de Encabezado con Navegación en la Landing Page | Como visitante de la página web, quiero ver un encabezado con navegación a las secciones principales para poder desplazarme fácilmente por la landing page. | 2 |
-| 4  | US38 | Visualización de Hero Section | Como visitante, deseo ver un mensaje principal con un botón de acción para comprender la propuesta de valor y registrarme. | 3 |
-| 5  | US39 | Visualización de Sección de Promociones | Como visitante, deseo ver promociones destacadas en la página principal para identificar beneficios de usar la plataforma. | 3 |
-| 6  | US40 | Visualización de Marcas y Tiendas Asociadas | Como visitante, deseo ver logos e información de negocios asociados para confiar en la plataforma. | 3 |
-| 7  | US41 | Visualización de la Sección “Quiénes Somos” | Como visitante, deseo conocer la misión y visión de la empresa para confiar en la plataforma. | 3 |
-| 8  | US42 | Consulta de Preguntas Frecuentes | Como visitante, deseo acceder a una sección de FAQ para resolver mis dudas sin necesidad de soporte. | 3 |
-| 9  | US43 | Visualización de Footer con Contacto y Redes Sociales | Como visitante, deseo ver enlaces de contacto y redes sociales para comunicarme fácilmente. | 2 |
-| 10 | US44 | Diseño Responsivo | Como visitante, deseo que la página se adapte a móviles y tablets para visualizar el contenido correctamente. | 5 |
-| 11 | US45 | Optimización y Pruebas Finales | Como visitante, deseo que la página funcione en cualquier navegador y cargue rápido para tener una experiencia fluida. | 2 |
-| 12 | US29 | Configuración de Idioma | Como usuario, deseo cambiar el idioma de la plataforma para usarla en mi preferencia. | 2 |
-| 13 | US30 | Accesibilidad | Como usuario, deseo que la plataforma sea accesible para poder usarla sin limitaciones. | 3 |
-| 14 | US31 | Registro de Puntos de Interés Habituales | Como usuario, deseo registrar puntos de interés habituales para recibir promociones de esas zonas. | 5 |
-| 15 | US06 | Búsqueda de Ofertas por Ubicación | Como usuario, deseo buscar ofertas cercanas a mi ubicación para aprovechar promociones locales. | 5 |
-| 16 | US07 | Búsqueda de Ofertas por Categoría | Como usuario, deseo filtrar ofertas por categoría para encontrar fácilmente las de mi interés. | 3 |
-| 17 | US08 | Visualización de Detalles de Oferta | Como usuario, deseo ver la información detallada de una oferta para decidir si la aprovecho. | 2 |
-| 18 | US09 | Visualización de Ofertas en Mapa | Como usuario, deseo ver ofertas en un mapa para ubicar negocios cercanos. | 5 |
-| 19 | US10 | Guardar Ofertas | Como usuario, deseo guardar ofertas para revisarlas más tarde. | 3 |
-| 20 | US32 | Suscripción a Plan Premium (Proveedor) | Como proveedor, deseo suscribirme al plan Premium para acceder a estadísticas y segmentación. | 5 |
-| 21 | US33 | Suscripción a Plan Premium (Cliente) | Como cliente, deseo suscribirme al plan Premium para acceder a descuentos exclusivos. | 5 |
-| 22 | US34 | Gestión de Suscripción | Como usuario, deseo gestionar mi suscripción (cambiar, renovar, cancelar) según mis necesidades. | 5 |
-| 23 | US01 | Registro de Usuario | Como usuario, deseo registrarme en la plataforma con mi correo y contraseña para acceder a promociones personalizadas. | 5 |
-| 24 | US02 | Inicio de Sesión de Usuario | Como usuario, deseo iniciar sesión en la plataforma con mis credenciales para acceder a mi cuenta. | 3 |
-| 25 | US03 | Registro de Negocio | Como proveedor, deseo registrar mi negocio para poder crear campañas. | 5 |
-| 26 | US04 | Inicio de Sesión de Negocio | Como proveedor, deseo iniciar sesión en la plataforma con mis credenciales para acceder a mi panel. | 3 |
-| 27 | US05 | Recuperación de Contraseña | Como usuario/proveedor, deseo recuperar mi contraseña en caso de olvido para restablecer el acceso. | 3 |
-| 28 | US11 | Creación de Campaña Publicitaria | Como proveedor, deseo crear campañas publicitarias para promocionar mis productos o servicios. | 8 |
-| 29 | US12 | Edición de Campaña Publicitaria | Como proveedor, deseo editar campañas publicitarias para actualizar su información. | 5 |
-| 30 | US13 | Eliminación de Campaña Publicitaria | Como proveedor, deseo eliminar campañas para retirar promociones que ya no deseo mantener. | 3 |
-| 31 | US14 | Visualización de Campañas Activas | Como proveedor, deseo ver mis campañas activas para hacer seguimiento. | 3 |
-| 32 | US15 | Visualización de Métricas de Campañas | Como proveedor, deseo ver métricas de mis campañas para evaluar su desempeño. | 5 |
-| 33 | US16 | Filtrado de Campañas por Estado | Como proveedor, deseo filtrar campañas por estado para organizarlas mejor. | 3 |
-| 34 | US17 | Notificaciones de Rendimiento de Campaña | Como proveedor, deseo recibir notificaciones sobre el rendimiento de mis campañas. | 3 |
-| 35 | US18 | Exportación de Reportes de Campañas | Como proveedor, deseo exportar reportes en PDF/Excel para analizarlos externamente. | 5 |
-| 36 | US19 | Configuración de Presupuesto | Como proveedor, deseo configurar el presupuesto de una campaña para controlar mis gastos. | 3 |
-| 37 | US20 | Pausar Campaña Publicitaria | Como proveedor, deseo pausar campañas para detener temporalmente su difusión. | 2 |
-| 38 | US21 | Reactivar Campaña Publicitaria | Como proveedor, deseo reactivar campañas pausadas para retomar su difusión. | 2 |
-| 39 | US22 | Programar Fecha de Inicio de Campaña | Como proveedor, deseo programar la fecha de inicio de una campaña para automatizar su publicación. | 3 |
-| 40 | US23 | Programar Fecha de Fin de Campaña | Como proveedor, deseo programar la fecha de fin de una campaña para que se cierre automáticamente. | 3 |
-| 41 | US24 | Segmentación de Campañas por Ubicación | Como proveedor, deseo segmentar mis campañas por ubicación para llegar al público adecuado. | 5 |
-| 42 | US25 | Segmentación de Campañas por Demografía e Intereses | Como proveedor, deseo segmentar mis campañas por demografía e intereses para dirigirlas mejor. | 5 |
-| 43 | US26 | Duplicar Campaña Publicitaria | Como proveedor, deseo duplicar campañas para reutilizar configuraciones anteriores. | 3 |
-| 44 | US27 | Previsualización de Campaña Publicitaria | Como proveedor, deseo previsualizar campañas antes de publicarlas. | 3 |
-| 45 | US28 | Historial de Campañas Publicitarias | Como proveedor, deseo ver un historial de campañas anteriores para llevar registro. | 3 |
+| # Orden | User Story ID | Título                                                       | Descripción                                                                                                                                         | Story Points |
+| ------- | ------------- | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| 1       | US01          | Registro de Usuario en la Plataforma Web                     | Como usuario, quiero poder registrarme en la plataforma web con mi correo electrónico y contraseña para poder acceder a las ofertas personalizadas. | 5            |
+| 2       | US02          | Inicio de Sesión de Usuario en la Plataforma Web             | Como usuario, quiero poder iniciar sesión en la plataforma web con mi correo electrónico y contraseña para acceder a mis ofertas guardadas.         | 3            |
+| 3       | US03          | Registro de Negocio en la Plataforma Web                     | Como dueño de negocio, quiero poder registrar mi negocio proporcionando información detallada para poder crear campañas publicitarias.              | 5            |
+| 4       | US04          | Inicio de Sesión de Negocio en la Plataforma Web             | Como dueño de negocio, quiero poder iniciar sesión con mi correo electrónico y contraseña para acceder al panel de gestión de campañas.             | 3            |
+| 5       | US05          | Búsqueda de Ofertas por Categoría en la Plataforma Web       | Como usuario, quiero poder filtrar ofertas por categoría para encontrar fácilmente las promociones que me interesan.                                | 3            |
+| 6       | US06          | Visualización de Detalles de Oferta en la Plataforma Web     | Como usuario, quiero poder visualizar los detalles de una oferta para conocer toda la información antes de aprovecharla.                            | 2            |
+| 7       | US07          | Guardar Ofertas en la Plataforma Web                         | Como usuario, quiero poder guardar ofertas para revisarlas más tarde y no perder promociones de interés.                                            | 3            |
+| 8       | US08          | Creación de Campaña Publicitaria en la Plataforma Web        | Como dueño de negocio, quiero crear campañas publicitarias para promocionar mis productos o servicios.                                              | 8            |
+| 9       | US09          | Edición de Campaña Publicitaria en la Plataforma Web         | Como dueño de negocio, quiero editar campañas publicitarias existentes para actualizar información y mejorar efectividad.                           | 5            |
+| 10      | US10          | Eliminación de Campaña Publicitaria en la Plataforma Web     | Como dueño de negocio, quiero eliminar campañas publicitarias para retirar promociones que ya no deseo mantener.                                    | 3            |
+| 11      | US11          | Visualización de Campañas Activas en la Plataforma Web       | Como dueño de negocio, quiero visualizar todas mis campañas activas para dar seguimiento.                                                           | 3            |
+| 12      | US12          | Configuración de Presupuesto de Campaña en la Plataforma Web | Como dueño de negocio, quiero configurar presupuesto de campañas para controlar gastos y optimizar inversión.                                       | 3            |
+| 13      | US13          | Pausar Campaña Publicitaria en la Plataforma Web             | Como dueño de negocio, quiero pausar campañas temporalmente sin eliminarlas.                                                                        | 2            |
+| 14      | US14          | Reactivar Campaña Publicitaria en la Plataforma Web          | Como dueño de negocio, quiero reactivar campañas pausadas para retomar su difusión.                                                                 | 2            |
+| 15      | US15          | Programar Fecha de Inicio de Campaña en la Plataforma Web    | Como dueño de negocio, quiero programar fecha de inicio para campañas.                                                                              | 3            |
+| 16      | US16          | Programar Fecha de Fin de Campaña en la Plataforma Web       | Como dueño de negocio, quiero programar fecha de fin para campañas.                                                                                 | 3            |
+| 17      | US17          | Configuración de Idioma en la Plataforma Web                 | Como usuario, quiero seleccionar idioma de la plataforma para visualizar contenido en mi preferencia.                                               | 2            |
 
 *Nota.* Elaboración propia.
 
@@ -2694,15 +2633,15 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   **Tabla 10**   
   *Class Dictionary — Identity BC*  
 
-  | **Clase**                 | **Atributos**                                                                                                                                     | **Descripción**                                                                                                                                       |
-  | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | **User**                  | - id: Long<br>- name: String<br>- email: String<br>- phone: String<br>- password: String<br>- role: String<br>- userType: String                 | Aggregate root que representa usuarios del sistema. Extiende AuditableAbstractAggregateRoot para auditoría automática (createdAt, updatedAt).        |
-  | **UserCommandService**    | + handle(CreateUserCommand): Optional\<User\><br>+ handle(UpdateUserCommand): Optional\<User\><br>+ handle(DeleteUserCommand): boolean           | Interfaz del dominio para operaciones de escritura siguiendo patrón CQRS.                                                                            |
-  | **UserQueryService**      | + handle(GetUserByIdQuery): Optional\<User\><br>+ handle(GetAllUsersQuery): List\<User\><br>+ handle(GetUserByEmailQuery): Optional\<User\>      | Interfaz del dominio para operaciones de lectura siguiendo patrón CQRS.                                                                              |
-  | **UserController**        | + getAllUsers(): ResponseEntity<br>+ getUserById(id): ResponseEntity<br>+ createUser(resource): ResponseEntity<br>+ updateUser(): ResponseEntity  | REST Controller que expone endpoints en /api/v1/users. Usa UserCommandService y UserQueryService.                                                    |
-  | **UserRepository**        | + findByEmail(email): Optional\<User\><br>+ findByPhone(phone): Optional\<User\><br>+ existsByEmail(email): boolean                              | Repositorio JPA con métodos de consulta personalizados. Extiende JpaRepository.                                                                      |
-  | **CreateUserCommand**     | + name: String<br>+ email: String<br>+ phone: String<br>+ password: String                                                                       | Record inmutable que representa el comando para crear usuario (patrón CQRS).                                                                         |
-  | **UserResource**          | + id: Long<br>+ name: String<br>+ email: String<br>+ phone: String<br>+ role: String<br>+ userType: String                                       | Código para respuestas API. Transformado desde User mediante UserResourceFromEntityAssembler.                                                           |
+  | **Clase**              | **Atributos**                                                                                                                                    | **Descripción**                                                                                                                               |
+  | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+  | **User**               | - id: Long<br>- name: String<br>- email: String<br>- phone: String<br>- password: String<br>- role: String<br>- userType: String                 | Aggregate root que representa usuarios del sistema. Extiende AuditableAbstractAggregateRoot para auditoría automática (createdAt, updatedAt). |
+  | **UserCommandService** | + handle(CreateUserCommand): Optional\<User\><br>+ handle(UpdateUserCommand): Optional\<User\><br>+ handle(DeleteUserCommand): boolean           | Interfaz del dominio para operaciones de escritura siguiendo patrón CQRS.                                                                     |
+  | **UserQueryService**   | + handle(GetUserByIdQuery): Optional\<User\><br>+ handle(GetAllUsersQuery): List\<User\><br>+ handle(GetUserByEmailQuery): Optional\<User\>      | Interfaz del dominio para operaciones de lectura siguiendo patrón CQRS.                                                                       |
+  | **UserController**     | + getAllUsers(): ResponseEntity<br>+ getUserById(id): ResponseEntity<br>+ createUser(resource): ResponseEntity<br>+ updateUser(): ResponseEntity | REST Controller que expone endpoints en /api/v1/users. Usa UserCommandService y UserQueryService.                                             |
+  | **UserRepository**     | + findByEmail(email): Optional\<User\><br>+ findByPhone(phone): Optional\<User\><br>+ existsByEmail(email): boolean                              | Repositorio JPA con métodos de consulta personalizados. Extiende JpaRepository.                                                               |
+  | **CreateUserCommand**  | + name: String<br>+ email: String<br>+ phone: String<br>+ password: String                                                                       | Record inmutable que representa el comando para crear usuario (patrón CQRS).                                                                  |
+  | **UserResource**       | + id: Long<br>+ name: String<br>+ email: String<br>+ phone: String<br>+ role: String<br>+ userType: String                                       | Código para respuestas API. Transformado desde User mediante UserResourceFromEntityAssembler.                                                 |
 
   *Nota.* Elaboración propia.
 
@@ -2711,15 +2650,15 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   **Tabla 11**   
   *Class Dictionary — Offers BC*  
 
-  | **Clase**                 | **Atributos**                                                                                                                                                                                                  | **Descripción**                                                                                                                             |
-  | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-  | **Offer**                 | - id: Long<br>- campaign: Campaign<br>- title: String<br>- partner: String<br>- price: BigDecimal<br>- originalPrice: BigDecimal<br>- category: String<br>- location: String<br>- latitude/longitude: Double | Aggregate root de ofertas. Relación ManyToOne con Campaign. Incluye geolocalización (latitude, longitude) para targeting.                  |
-  | **OfferCommandService**   | + handle(CreateOfferCommand): Optional\<Offer\><br>+ handle(UpdateOfferCommand): Optional\<Offer\><br>+ handle(DeleteOfferCommand): void                                                                      | Servicio de comandos para operaciones de escritura en ofertas.                                                                              |
-  | **OfferQueryService**     | + handle(GetOfferByIdQuery): Optional\<Offer\><br>+ handle(GetAllOffersQuery): List\<Offer\><br>+ handle(GetOffersByIdsQuery): List\<Offer\>                                                                  | Servicio de consultas para operaciones de lectura en ofertas.                                                                               |
-  | **OfferController**       | + getAllOffers(): ResponseEntity<br>+ getOfferById(id): ResponseEntity<br>+ createOffer(resource): ResponseEntity<br>+ updateOffer(): ResponseEntity                                                          | REST Controller en /api/v1/offers. Implementa endpoints CRUD completos.                                                                     |
-  | **OfferRepository**       | + findByCategory(category): List\<Offer\><br>+ findByValidUntilAfter(date): List\<Offer\>                                                                                                                     | Repositorio JPA con consultas por categoría y validez temporal.                                                                             |
-  | **CreateOfferCommand**    | + campaignId: Long<br>+ title: String<br>+ partner: String<br>+ price: BigDecimal<br>+ description: String<br>+ category: String                                                                              | Command para creación de ofertas con validación de Campaign existente.                                                                      |
-  | **OfferResource**         | + id: Long<br>+ title: String<br>+ partner: String<br>+ price: BigDecimal<br>+ category: String<br>+ location: String<br>+ imageUrl: String                                                                   | Código de respuesta para ofertas. Transformado mediante OfferResourceFromEntityAssembler.                                                      |
+  | **Clase**               | **Atributos**                                                                                                                                                                                                | **Descripción**                                                                                                           |
+  | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+  | **Offer**               | - id: Long<br>- campaign: Campaign<br>- title: String<br>- partner: String<br>- price: BigDecimal<br>- originalPrice: BigDecimal<br>- category: String<br>- location: String<br>- latitude/longitude: Double | Aggregate root de ofertas. Relación ManyToOne con Campaign. Incluye geolocalización (latitude, longitude) para targeting. |
+  | **OfferCommandService** | + handle(CreateOfferCommand): Optional\<Offer\><br>+ handle(UpdateOfferCommand): Optional\<Offer\><br>+ handle(DeleteOfferCommand): void                                                                     | Servicio de comandos para operaciones de escritura en ofertas.                                                            |
+  | **OfferQueryService**   | + handle(GetOfferByIdQuery): Optional\<Offer\><br>+ handle(GetAllOffersQuery): List\<Offer\><br>+ handle(GetOffersByIdsQuery): List\<Offer\>                                                                 | Servicio de consultas para operaciones de lectura en ofertas.                                                             |
+  | **OfferController**     | + getAllOffers(): ResponseEntity<br>+ getOfferById(id): ResponseEntity<br>+ createOffer(resource): ResponseEntity<br>+ updateOffer(): ResponseEntity                                                         | REST Controller en /api/v1/offers. Implementa endpoints CRUD completos.                                                   |
+  | **OfferRepository**     | + findByCategory(category): List\<Offer\><br>+ findByValidUntilAfter(date): List\<Offer\>                                                                                                                    | Repositorio JPA con consultas por categoría y validez temporal.                                                           |
+  | **CreateOfferCommand**  | + campaignId: Long<br>+ title: String<br>+ partner: String<br>+ price: BigDecimal<br>+ description: String<br>+ category: String                                                                             | Command para creación de ofertas con validación de Campaign existente.                                                    |
+  | **OfferResource**       | + id: Long<br>+ title: String<br>+ partner: String<br>+ price: BigDecimal<br>+ category: String<br>+ location: String<br>+ imageUrl: String                                                                  | Código de respuesta para ofertas. Transformado mediante OfferResourceFromEntityAssembler.                                 |
 
   *Nota.* Elaboración propia.
 
@@ -2728,16 +2667,16 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   **Tabla 12**   
   *Class Dictionary — Cart BC*  
 
-  | **Clase**                 | **Atributos**                                                                                                                                         | **Descripción**                                                                                                                           |
-  | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-  | **Cart**                  | - id: Long<br>- user: User<br>- items: List\<CartItem\><br>- totalItems: Integer<br>- totalAmount: Double                                            | Aggregate root del carrito. Relación ManyToOne con User y OneToMany con CartItem. Calcula totales automáticamente.                       |
-  | **CartItem**              | - id: Long<br>- cart: Cart<br>- offerId: Long<br>- offerTitle: String<br>- offerPrice: Double<br>- quantity: Integer<br>- total: Double             | Entity dentro del aggregate Cart. Almacena snapshot de información de la oferta para independencia del bounded context Offers.           |
-  | **CartCommandService**    | + handle(AddItemToCartCommand): Optional\<Cart\><br>+ handle(UpdateCartItemCommand): Optional\<Cart\><br>+ handle(ClearCartCommand): boolean        | Servicio de comandos. Valida existencia de User y Offer antes de agregar items.                                                          |
-  | **CartQueryService**      | + handle(GetCartByUserIdQuery): Optional\<Cart\><br>+ handle(GetCartByIdQuery): Optional\<Cart\>                                                     | Servicio de consultas para recuperar carritos por usuario o ID.                                                                          |
-  | **CartController**        | + getCartByUserId(userId): ResponseEntity<br>+ addItemToCart(userId, resource): ResponseEntity<br>+ updateCartItem(): ResponseEntity                | REST Controller en /api/v1/cart. Gestiona ciclo completo del carrito.                                                                    |
-  | **CartRepository**        | + findByUserId(userId): Optional\<Cart\>                                                                                                              | Repositorio JPA. Un usuario tiene un único carrito activo.                                                                                |
-  | **AddItemToCartCommand**  | + userId: Long<br>+ offerId: Long<br>+ quantity: Integer                                                                                              | Command para agregar items. Valida stock y disponibilidad de oferta.                                                                     |
-  | **CartResource**          | + id: Long<br>+ userId: Long<br>+ items: List\<CartItemResource\><br>+ totalItems: Integer<br>+ totalAmount: Double                                  | Código de respuesta con estructura completa del carrito incluyendo items anidados.                                                          |
+  | **Clase**                | **Atributos**                                                                                                                                | **Descripción**                                                                                                                |
+  | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+  | **Cart**                 | - id: Long<br>- user: User<br>- items: List\<CartItem\><br>- totalItems: Integer<br>- totalAmount: Double                                    | Aggregate root del carrito. Relación ManyToOne con User y OneToMany con CartItem. Calcula totales automáticamente.             |
+  | **CartItem**             | - id: Long<br>- cart: Cart<br>- offerId: Long<br>- offerTitle: String<br>- offerPrice: Double<br>- quantity: Integer<br>- total: Double      | Entity dentro del aggregate Cart. Almacena snapshot de información de la oferta para independencia del bounded context Offers. |
+  | **CartCommandService**   | + handle(AddItemToCartCommand): Optional\<Cart\><br>+ handle(UpdateCartItemCommand): Optional\<Cart\><br>+ handle(ClearCartCommand): boolean | Servicio de comandos. Valida existencia de User y Offer antes de agregar items.                                                |
+  | **CartQueryService**     | + handle(GetCartByUserIdQuery): Optional\<Cart\><br>+ handle(GetCartByIdQuery): Optional\<Cart\>                                             | Servicio de consultas para recuperar carritos por usuario o ID.                                                                |
+  | **CartController**       | + getCartByUserId(userId): ResponseEntity<br>+ addItemToCart(userId, resource): ResponseEntity<br>+ updateCartItem(): ResponseEntity         | REST Controller en /api/v1/cart. Gestiona ciclo completo del carrito.                                                          |
+  | **CartRepository**       | + findByUserId(userId): Optional\<Cart\>                                                                                                     | Repositorio JPA. Un usuario tiene un único carrito activo.                                                                     |
+  | **AddItemToCartCommand** | + userId: Long<br>+ offerId: Long<br>+ quantity: Integer                                                                                     | Command para agregar items. Valida stock y disponibilidad de oferta.                                                           |
+  | **CartResource**         | + id: Long<br>+ userId: Long<br>+ items: List\<CartItemResource\><br>+ totalItems: Integer<br>+ totalAmount: Double                          | Código de respuesta con estructura completa del carrito incluyendo items anidados.                                             |
 
   *Nota.* Elaboración propia.
 
@@ -2746,17 +2685,17 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   **Tabla 13**   
   *Class Dictionary — Payments BC*  
 
-  | **Clase**                  | **Atributos**                                                                                                                                                                 | **Descripción**                                                                                                                                    |
-  | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | **Payment**                | - id: Long<br>- userId: Long<br>- cartId: Long<br>- amount: BigDecimal<br>- paymentMethod: PaymentMethod<br>- status: PaymentStatus<br>- paymentCode: String<br>- completedAt: String | Aggregate root de pagos. Almacena IDs de User y Cart para trazabilidad sin acoplamiento fuerte.                                                   |
-  | **PaymentMethod**          | CARD, YAPE, PLIN                                                                                                                                                              | Enum con métodos de pago soportados (tarjeta de crédito, Yape, Plin).                                                                             |
-  | **PaymentStatus**          | PENDING, COMPLETED, FAILED                                                                                                                                                    | Enum con estados del pago durante su ciclo de vida.                                                                                               |
-  | **PaymentCommandService**  | + handle(CreatePaymentCommand): Optional\<Payment\><br>+ completePayment(paymentId, completedAt): Optional\<Payment\><br>+ failPayment(paymentId): Optional\<Payment\>       | Servicio de comandos. completePayment() dispara creación de notificaciones vía NotificationFactoryService (integración cross-context).            |
-  | **PaymentQueryService**    | + handle(GetPaymentByIdQuery): Optional\<Payment\><br>+ handle(GetAllPaymentsByUserIdQuery): List\<Payment\>                                                                 | Servicio de consultas para historial de pagos del usuario.                                                                                        |
-  | **PaymentController**      | + createPayment(resource): ResponseEntity<br>+ getPaymentById(id): ResponseEntity<br>+ completePayment(id): ResponseEntity<br>+ failPayment(id): ResponseEntity             | REST Controller en /api/v1/payments. Endpoint PUT /payments/{id}/complete marca pago como completado.                                             |
-  | **PaymentRepository**      | + findByUserId(userId): List\<Payment\><br>+ findByCartId(cartId): List\<Payment\><br>+ findByStatus(status): List\<Payment\>                                                | Repositorio JPA con consultas por usuario, carrito y estado.                                                                                      |
-  | **CreatePaymentCommand**   | + userId: Long<br>+ cartId: Long<br>+ amount: BigDecimal<br>+ paymentMethod: String<br>+ customerEmail: String                                                               | Command para iniciar pago. Captura información del cliente para procesamiento.                                                                    |
-  | **PaymentResource**        | + id: Long<br>+ userId: Long<br>+ amount: BigDecimal<br>+ paymentMethod: String<br>+ status: String<br>+ paymentCodes: List<br>+ completedAt: String                         | Código de respuesta con información completa del pago incluyendo códigos de cupones generados.                                                       |
+  | **Clase**                 | **Atributos**                                                                                                                                                                         | **Descripción**                                                                                                                        |
+  | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+  | **Payment**               | - id: Long<br>- userId: Long<br>- cartId: Long<br>- amount: BigDecimal<br>- paymentMethod: PaymentMethod<br>- status: PaymentStatus<br>- paymentCode: String<br>- completedAt: String | Aggregate root de pagos. Almacena IDs de User y Cart para trazabilidad sin acoplamiento fuerte.                                        |
+  | **PaymentMethod**         | CARD, YAPE, PLIN                                                                                                                                                                      | Enum con métodos de pago soportados (tarjeta de crédito, Yape, Plin).                                                                  |
+  | **PaymentStatus**         | PENDING, COMPLETED, FAILED                                                                                                                                                            | Enum con estados del pago durante su ciclo de vida.                                                                                    |
+  | **PaymentCommandService** | + handle(CreatePaymentCommand): Optional\<Payment\><br>+ completePayment(paymentId, completedAt): Optional\<Payment\><br>+ failPayment(paymentId): Optional\<Payment\>                | Servicio de comandos. completePayment() dispara creación de notificaciones vía NotificationFactoryService (integración cross-context). |
+  | **PaymentQueryService**   | + handle(GetPaymentByIdQuery): Optional\<Payment\><br>+ handle(GetAllPaymentsByUserIdQuery): List\<Payment\>                                                                          | Servicio de consultas para historial de pagos del usuario.                                                                             |
+  | **PaymentController**     | + createPayment(resource): ResponseEntity<br>+ getPaymentById(id): ResponseEntity<br>+ completePayment(id): ResponseEntity<br>+ failPayment(id): ResponseEntity                       | REST Controller en /api/v1/payments. Endpoint PUT /payments/{id}/complete marca pago como completado.                                  |
+  | **PaymentRepository**     | + findByUserId(userId): List\<Payment\><br>+ findByCartId(cartId): List\<Payment\><br>+ findByStatus(status): List\<Payment\>                                                         | Repositorio JPA con consultas por usuario, carrito y estado.                                                                           |
+  | **CreatePaymentCommand**  | + userId: Long<br>+ cartId: Long<br>+ amount: BigDecimal<br>+ paymentMethod: String<br>+ customerEmail: String                                                                        | Command para iniciar pago. Captura información del cliente para procesamiento.                                                         |
+  | **PaymentResource**       | + id: Long<br>+ userId: Long<br>+ amount: BigDecimal<br>+ paymentMethod: String<br>+ status: String<br>+ paymentCodes: List<br>+ completedAt: String                                  | Código de respuesta con información completa del pago incluyendo códigos de cupones generados.                                         |
 
   *Nota.* Elaboración propia.
 
@@ -2765,16 +2704,16 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   **Tabla 14**   
   *Class Dictionary — Notifications BC*  
 
-  | **Clase**                     | **Atributos**                                                                                                                                                                             | **Descripción**                                                                                                                                |
-  | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-  | **Notification**              | - id: Long<br>- userId: Long<br>- type: NotificationType<br>- title: String<br>- message: String<br>- isRead: boolean<br>- relatedEntityId: String<br>- actionUrl: String                | Aggregate root de notificaciones. Usa NotificationType enum para categorizar. Incluye URL de acción para navegación directa.                  |
-  | **NotificationType**          | PAYMENT, PREMIUM_UPGRADE, PROFILE_UPDATE, FAVORITE, COUPON_EXPIRATION, REVIEW_COMMENT                                                                                                    | Enum con tipos de notificaciones soportadas en el sistema.                                                                                    |
-  | **NotificationFactoryService**| + createPaymentNotification(userId, paymentId, amount)<br>+ createPremiumUpgradeNotification(userId)<br>+ createFavoriteAddedNotification(userId, offerId, title)                       | Servicio de aplicación que crea notificaciones específicas. Usado por otros bounded contexts (Payments, Reviews, Favorites) para integración.|
-  | **NotificationCommandService**| + handle(CreateNotificationCommand): Optional\<Notification\><br>+ handle(MarkNotificationAsReadCommand): Optional\<Notification\>                                                        | Servicio de comandos para crear y marcar como leídas.                                                                                         |
-  | **NotificationQueryService**  | + handle(GetNotificationsByUserIdQuery): List\<Notification\><br>+ handle(GetUnreadCountByUserIdQuery): Long                                                                             | Servicio de consultas. Incluye conteo de no leídas para badge en UI.                                                                          |
-  | **NotificationController**    | + getNotificationsByUserId(userId): ResponseEntity<br>+ markAsRead(id): ResponseEntity<br>+ markAllAsRead(userId): ResponseEntity<br>+ deleteNotification(id): ResponseEntity           | REST Controller en /api/v1/notifications. Soporte para marcar todas como leídas.                                                              |
-  | **NotificationRepository**    | + findByUserId(userId): List\<Notification\><br>+ findByUserIdAndIsRead(userId, isRead): List\<Notification\><br>+ countByUserIdAndIsRead(userId, isRead): Long                          | Repositorio JPA con consultas filtradas por estado de lectura y conteo.                                                                       |
-  | **NotificationResource**      | + id: Long<br>+ userId: Long<br>+ type: String<br>+ title: String<br>+ message: String<br>+ isRead: boolean<br>+ relatedEntityId: String<br>+ actionUrl: String<br>+ createdAt: String   | Código de respuesta con información completa incluyendo timestamp de creación.                                                                    |
+  | **Clase**                      | **Atributos**                                                                                                                                                                          | **Descripción**                                                                                                                               |
+  | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+  | **Notification**               | - id: Long<br>- userId: Long<br>- type: NotificationType<br>- title: String<br>- message: String<br>- isRead: boolean<br>- relatedEntityId: String<br>- actionUrl: String              | Aggregate root de notificaciones. Usa NotificationType enum para categorizar. Incluye URL de acción para navegación directa.                  |
+  | **NotificationType**           | PAYMENT, PREMIUM_UPGRADE, PROFILE_UPDATE, FAVORITE, COUPON_EXPIRATION, REVIEW_COMMENT                                                                                                  | Enum con tipos de notificaciones soportadas en el sistema.                                                                                    |
+  | **NotificationFactoryService** | + createPaymentNotification(userId, paymentId, amount)<br>+ createPremiumUpgradeNotification(userId)<br>+ createFavoriteAddedNotification(userId, offerId, title)                      | Servicio de aplicación que crea notificaciones específicas. Usado por otros bounded contexts (Payments, Reviews, Favorites) para integración. |
+  | **NotificationCommandService** | + handle(CreateNotificationCommand): Optional\<Notification\><br>+ handle(MarkNotificationAsReadCommand): Optional\<Notification\>                                                     | Servicio de comandos para crear y marcar como leídas.                                                                                         |
+  | **NotificationQueryService**   | + handle(GetNotificationsByUserIdQuery): List\<Notification\><br>+ handle(GetUnreadCountByUserIdQuery): Long                                                                           | Servicio de consultas. Incluye conteo de no leídas para badge en UI.                                                                          |
+  | **NotificationController**     | + getNotificationsByUserId(userId): ResponseEntity<br>+ markAsRead(id): ResponseEntity<br>+ markAllAsRead(userId): ResponseEntity<br>+ deleteNotification(id): ResponseEntity          | REST Controller en /api/v1/notifications. Soporte para marcar todas como leídas.                                                              |
+  | **NotificationRepository**     | + findByUserId(userId): List\<Notification\><br>+ findByUserIdAndIsRead(userId, isRead): List\<Notification\><br>+ countByUserIdAndIsRead(userId, isRead): Long                        | Repositorio JPA con consultas filtradas por estado de lectura y conteo.                                                                       |
+  | **NotificationResource**       | + id: Long<br>+ userId: Long<br>+ type: String<br>+ title: String<br>+ message: String<br>+ isRead: boolean<br>+ relatedEntityId: String<br>+ actionUrl: String<br>+ createdAt: String | Código de respuesta con información completa incluyendo timestamp de creación.                                                                |
 
   *Nota.* Elaboración propia.
 
@@ -2783,14 +2722,14 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   **Tabla 15**   
   *Class Dictionary — Shared BC*  
 
-  | **Clase**                                    | **Atributos / Métodos**                                                                                    | **Descripción**                                                                                                                |
-  | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-  | **AuditableAbstractAggregateRoot**           | - id: Long<br>- createdAt: Date<br>- updatedAt: Date<br>+ getId(): Long<br>+ getCreatedAt(): Date         | Clase base abstracta para todos los aggregates. Proporciona auditoría automática con @CreatedDate y @LastModifiedDate de JPA. |
+  | **Clase**                                              | **Atributos / Métodos**                                                                               | **Descripción**                                                                                                               |
+  | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+  | **AuditableAbstractAggregateRoot**                     | - id: Long<br>- createdAt: Date<br>- updatedAt: Date<br>+ getId(): Long<br>+ getCreatedAt(): Date     | Clase base abstracta para todos los aggregates. Proporciona auditoría automática con @CreatedDate y @LastModifiedDate de JPA. |
   | **SnakeCaseWithPluralizedTablePhysicalNamingStrategy** | + toPhysicalTableName(name, context): Identifier<br>+ toPhysicalColumnName(name, context): Identifier | Naming strategy personalizada de Hibernate. Convierte nombres de Java (camelCase) a snake_case con tablas pluralizadas.       |
-  | **JpaAuditingConfiguration**                 | + auditorAware(): AuditorAware\<String\>                                                                   | Configuración Spring para habilitar JPA Auditing (@EnableJpaAuditing).                                                        |
-  | **OpenApiConfiguration**                     | + customOpenAPI(): OpenAPI                                                                                 | Configuración de SpringDoc OpenAPI para documentación automática de API REST en /swagger-ui.html.                             |
-  | **CorsConfiguration**                        | + corsConfigurationSource(): CorsConfigurationSource                                                       | Configuración CORS para permitir peticiones desde frontend Angular (origins, methods, headers).                                |
-  | **MessageResource**                          | + message: String                                                                                          | Código genérico para respuestas simples de texto en endpoints (ej: mensajes de éxito, error).                                    |
+  | **JpaAuditingConfiguration**                           | + auditorAware(): AuditorAware\<String\>                                                              | Configuración Spring para habilitar JPA Auditing (@EnableJpaAuditing).                                                        |
+  | **OpenApiConfiguration**                               | + customOpenAPI(): OpenAPI                                                                            | Configuración de SpringDoc OpenAPI para documentación automática de API REST en /swagger-ui.html.                             |
+  | **CorsConfiguration**                                  | + corsConfigurationSource(): CorsConfigurationSource                                                  | Configuración CORS para permitir peticiones desde frontend Angular (origins, methods, headers).                               |
+  | **MessageResource**                                    | + message: String                                                                                     | Código genérico para respuestas simples de texto en endpoints (ej: mensajes de éxito, error).                                 |
 
   *Nota.* Elaboración propia.
 
@@ -3276,137 +3215,19 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
   ```
 
   #### 5.1.4. Software Deployment Configuration
+  En esta sección presentamos los pasos que seguimos para desplegar los proyectos incluidos en este trabajo:
 
-  Para el despliegue de la plataforma GeoPS, hemos implementado un proceso de deployment automatizado utilizando GitHub Pages, lo cual nos permite alojar y mantener nuestra Landing Page de manera eficiente y gratuita.
+  - **Landing Page:**  
+    Para el despliegue de la landing page, escogimos GitHub Pages, un servicio de hosting gratuito que permite publicar sitios web estáticos directamente desde repositorios de GitHub. Esta alternativa nos permitió centralizar el código fuente y la página web en un mismo entorno, facilitando el control de versiones y asegurando que cada actualización realizada en el repositorio se refleje automáticamente en el sitio publicado.
 
-  **Configuración de GitHub Pages para Landing Page**
+  - **Base de Datos:**  
+    Para el despliegue de la base de datos, optamos por Railway como plataforma. Esta herramienta simplifica considerablemente el proceso de aprovisionamiento, ya que permite crear instancias de bases de datos, como PostgreSQL o MySQL, en pocos pasos desde su panel de administración. Además, Railway genera de forma automática las credenciales de acceso y gestiona las variables de entorno, lo que reduce la complejidad de la configuración manual. Asimismo, incorpora funcionalidades como copias de seguridad automáticas y monitoreo integrado, lo que facilita la administración de la infraestructura.
 
-  El deployment de nuestra Landing Page se realiza a través de GitHub Pages, una solución de hosting estático integrada directamente con nuestro repositorio de GitHub. A continuación se detalla el proceso de configuración implementado:
+  - **Backend:**  
+    El backend fue desplegado también en Railway, aprovechando la facilidad que ofrece esta plataforma para gestionar tanto la base de datos como la aplicación dentro de un mismo ecosistema. Para ello, implementamos un Dockerfile optimizado que encapsula la aplicación Java junto con todas sus dependencias y configuraciones necesarias. Railway detecta automáticamente este archivo, construye la imagen del contenedor y realiza el despliegue correspondiente. De este modo, pudimos definir las variables de entorno desde el panel de la plataforma, reduciendo significativamente la complejidad de la configuración inicial y beneficiándonos de funcionalidades como el escalado automático, los despliegues continuos y el monitoreo integrado.
 
-  **Repositorio de la Landing Page:**
-  + **Enlace Repositorio Landing Page:** https://github.com/geops-org/geops-landing
-  + **Enlace Landing Page Deploy:** https://github.com/geops-org/geops-landing
-
-  **1. Configuración General del Repositorio**
-
-  La configuración inicial del repositorio incluye la configuración del nombre, template repository, y configuraciones de seguridad para contribuciones:
-
-  **Figura 126**   
-  *Configuración general del repositorio de la Landing Page — GitHub*
-
-  <div align="center">
-    <img src="resources/images/chapter-5/repositorio-landing-page-settings.jpg" alt="Configuración del repositorio Landing Page en GitHub" width="1000">
-  </div>
-
-  *Nota.* Elaboración propia.
-
-  **Configuraciones Clave:**
-  + **Repository Name:** Landing
-  + **Default Branch:** main
-  + **Template Repository:** Deshabilitado
-  + **Require contributors to sign off on web-based commits:** Habilitado para mantener la integridad del código
-
-  **2. Configuración de GitHub Pages**
-
-  La configuración de GitHub Pages se realiza desde la sección "Pages" en la configuración del repositorio:
-
-  **Figura 127**   
-  *Configuración de GitHub Pages — Landing Page GeoPS*
-
-  <div align="center">
-    <img src="resources/images/chapter-5/github-pages.jpg" alt="Configuración GitHub Pages para GeoPS" width="1000">
-  </div>
-
-  *Nota.* Elaboración propia.
-
-  **Configuración de Deployment:**
-  + **Source:** Deploy from a branch
-  + **Branch:** main / (root)
-  + **Custom Domain:** No configurado (usando dominio por defecto)
-  + **HTTPS:** Habilitado automáticamente
-  + **Enlace Landing Page Deploy:** <https://opensourcedevupc.github.io/Landing/>
-
-  **3. Estado del Repositorio y Deployment**
-
-  El repositorio muestra información detallada sobre el estado del deployment y las características técnicas del proyecto:
-
-  **Figura 128**   
-  *Estado del repositorio y configuración de deployment — Landing Page GeoPS*
-
-  <div align="center">
-    <img src="resources/images/chapter-5/repositorio-landing-page.jpg" alt="Estado del repositorio Landing Page en GitHub" width="1000">
-  </div>
-
-  *Nota.* Elaboración propia.
-
-  **Métricas del Proyecto:**
-  + **Lenguajes:** CSS (48.4%), HTML (35.4%), TypeScript (16.2%)
-  + **Último Deployment:** github-pages (4 days ago)
-  + **Commits Recientes:** 19 commits desde GilbertHuarcaya
-  + **Actividad:** Merge pull request #2 con nuevas imágenes y funcionalidades TypeScript
-
-  **4. Landing Page Desplegada**
-
-  El resultado final del deployment es la landing page completamente funcional y accesible públicamente:
-
-  **Figura 129**   
-  *Landing Page desplegada públicamente — GeoPS*
-
-  <div align="center">
-    <img src="resources/images/chapter-5/github-pages-landing-page.jpg" alt="Landing Page GeoPS en producción GitHub Pages" width="1000">
-  </div>
-
-  *Nota.* Elaboración propia.
-
-  **Ventajas del Deployment con GitHub Pages:**
-
-  + **Hosting Gratuito:** No requiere costos adicionales de hosting
-  + **Integración Nativa:** Completamente integrado con el workflow de GitHub
-  + **Deployment Automático:** Se actualiza automáticamente con cada push al branch main
-  + **HTTPS por Defecto:** Seguridad habilitada automáticamente
-  + **Custom Domains:** Posibilidad de configurar dominios personalizados
-  + **Escalabilidad:** Manejo eficiente de tráfico para sitios estáticos
-  + **Versionado:** Historial completo de deployments vinculado a commits
-  + **Rollback Sencillo:** Capacidad de revertir a versiones anteriores fácilmente
-
-  **Ventajas de GitHub Pages para GeoPS:**
-
-  - **Integración Nativa:** Conexión directa con nuestro flujo de trabajo en GitHub
-  - **SSL Automático:** Certificados HTTPS configurados automáticamente
-  - **Deployment Automático:** Actualizaciones instantáneas al hacer push al repositorio
-  - **Rendimiento:** CDN global de GitHub para carga rápida
-  - **Costo:** Servicio gratuito para proyectos open source
-
-  **Configuración de Archivos del Proyecto:**
-
-  Para asegurar el correcto funcionamiento del deployment, la estructura del repositorio mantiene:
-
-  ```
-  Landing/
-  ├── index.html          # Página principal
-  ├── css/
-  │   └── styles.css      # Estilos de la landing page
-  ├── js/
-  │   └── main.js         # Funcionalidades interactivas
-  ├── assets/
-  │   └── images/         # Recursos gráficos
-  └── README.md           # Documentación del proyecto
-  ```
-
-  *Imagen de referencia: Estructura de archivos del repositorio*
-
-  **Verificación del Deployment:**
-
-  Una vez completado el deployment, se puede verificar el estado del mismo en:
-  - **GitHub Actions:** Pestaña "Actions" del repositorio para ver el historial de deployments
-  - **Settings > Pages:** Estado actual del deployment y URL activa
-  - **Enlace Landing Page Deploy:** Verificación directa accediendo a https://opensourcedevupc.github.io/Landing/
-
-  *Imagen de referencia: Verificación exitosa del deployment*
-
-  Esta configuración nos permite mantener nuestra Landing Page actualizada de manera automática y eficiente, asegurando que cualquier cambio en el código se refleje inmediatamente en la versión en producción.
-
-  En esta sección, documentaremos y explicaremos el progreso del Sprint 1 en términos de desarrollo de la plataforma GeoPS y colaboración del equipo. Abordaremos varios aspectos clave, incluyendo la planificación del sprint centrada en funcionalidades de geolocalización y publicidad hiperlocalizada.
+  - **Frontend:**  
+    Para el despliegue de la aplicación frontend, elegimos Vercel, una plataforma especializada en el hosting de aplicaciones web modernas y con una integración eficiente con repositorios Git. Esta plataforma automatiza el proceso de compilación y despliegue, de manera que cada cambio enviado a la rama configurada genera una nueva versión de la aplicación en producción. Además, Vercel optimiza el rendimiento de forma automática y proporciona características avanzadas como vistas previas de despliegue, lo que facilita el flujo de trabajo durante el desarrollo y la publicación.
 
 ### 5.2. Product Implementation & Deployment.
 
@@ -3414,129 +3235,128 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
   
   #### 5.2.2. Implemented Landing Page Evidence
 
-Este sitio web representa la cara pública del proyecto, desplegado eficientemente a través de GitHub Pages para garantizar una alta disponibilidad y tiempos de carga rápidos. La landing page funciona como el punto de entrada principal, presentando la identidad visual de la marca y explicando de forma interactiva el valor del ecosistema hiperlocal para conectar a los usuarios con la cultura asiática en Lima.
+  Este sitio web representa la cara pública del proyecto, desplegado eficientemente a través de GitHub Pages para garantizar una alta disponibilidad y tiempos de carga rápidos. La landing page funciona como el punto de entrada principal, presentando la identidad visual de la marca y explicando de forma interactiva el valor del ecosistema hiperlocal para conectar a los usuarios con la cultura asiática en Lima.
 
-<div align="center">
-  <img src="resources/imgs/LandingPage/LandingPagePicture1.jpg" width="700">
-</div>
+  <div align="center">
+    <img src="resources/imgs/LandingPage/LandingPagePicture1.jpg" width="700">
+  </div>
 
-En esta sección la aplicación presenta su propuesta de valor como un radar hiperlocal en Lima, ofreciendo un acceso directo para que los usuarios creen su cuenta y exploren el ecosistema.
+  En esta sección la aplicación presenta su propuesta de valor como un radar hiperlocal en Lima, ofreciendo un acceso directo para que los usuarios creen su cuenta y exploren el ecosistema.
 
-<div align="center">
-  <img src="resources/imgs/LandingPage/LandingPagePicture2.jpg" width="700">
-</div>
+  <div align="center">
+    <img src="resources/imgs/LandingPage/LandingPagePicture2.jpg" width="700">
+  </div>
 
-Aquí la plataforma detalla su proceso operativo basado en la búsqueda de productos, la geolocalización exacta de stands y la verificación de inventario real en tiendas aliadas.
+  Aquí la plataforma detalla su proceso operativo basado en la búsqueda de productos, la geolocalización exacta de stands y la verificación de inventario real en tiendas aliadas.
 
-<div align="center">
-  <img src="resources/imgs/LandingPage/LandingPagePicture3.jpg" width="700">
-</div>
+  <div align="center">
+    <img src="resources/imgs/LandingPage/LandingPagePicture3.jpg" width="700">
+  </div>
 
-La interfaz permite elegir entre perfiles de consumidor o negocio, resaltando funciones para comparar precios y navegar con precisión dentro de las galerías más importantes de la ciudad.
+  La interfaz permite elegir entre perfiles de consumidor o negocio, resaltando funciones para comparar precios y navegar con precisión dentro de las galerías más importantes de la ciudad.
 
-<div align="center">
-  <img src="resources/imgs/LandingPage/LandingPagePicture4.jpg" width="700">
-</div>
+  <div align="center">
+    <img src="resources/imgs/LandingPage/LandingPagePicture4.jpg" width="700">
+  </div>
 
-La Landing Page utiliza este espacio para mostrar su funcionamiento interno mediante videos demostrativos y presentar al equipo responsable de la transformación digital de los comercios asiáticos.
+  La Landing Page utiliza este espacio para mostrar su funcionamiento interno mediante videos demostrativos y presentar al equipo responsable de la transformación digital de los comercios asiáticos.
 
-<div align="center">
-  <img src="resources/imgs/LandingPage/LandingPagePicture5.jpg" width="700">
-</div>
+  <div align="center">
+    <img src="resources/imgs/LandingPage/LandingPagePicture5.jpg" width="700">
+  </div>
 
-En esta ventana final, el sistema resuelve dudas frecuentes de los usuarios sobre costos y beneficios, proporcionando además los accesos para el registro formal de nuevos proveedores.
+  En esta ventana final, el sistema resuelve dudas frecuentes de los usuarios sobre costos y beneficios, proporcionando además los accesos para el registro formal de nuevos proveedores.
 
   #### 5.2.3. Implemented Frontend-Web Application Evidence
-
-Aquí se presenta el frontend de la aplicación completamente desplegado en Vercel, ofreciendo una interfaz de usuario rápida, responsiva y optimizada para la interacción en tiempo real. Esta implementación permite que tanto usuarios como dueños de negocios accedan a todas las funcionalidades del ecosistema GeoPS de manera fluida y segura directamente desde la web.
   
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture1.jpg" width="700">
-</div>
+  Aquí se presenta el frontend de la aplicación completamente desplegado en Vercel, ofreciendo una interfaz de usuario rápida, responsiva y optimizada para la interacción en tiempo real. Esta implementación permite que tanto usuarios como dueños de negocios accedan a todas las funcionalidades del ecosistema GeoPS de manera fluida y segura directamente desde la web.
+    
+  <div align="center">
+    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture1.jpg" width="700">
+  </div>
 
-La aplicación muestra el formulario de inicio de sesión donde el usuario ingresa sus credenciales para acceder al panel de administración de su negocio.
+  La aplicación muestra el formulario de inicio de sesión donde el usuario ingresa sus credenciales para acceder al panel de administración de su negocio.
 
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture2.jpg" width="700">
-</div>
+  <div align="center">
+    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture2.jpg" width="700">
+  </div>
 
-En esta ventana, la plataforma permite el registro de nuevos usuarios recolectando datos básicos y definiendo el tipo de perfil, ya sea como consumidor o proveedor.
+  En esta ventana, la plataforma permite el registro de nuevos usuarios recolectando datos básicos y definiendo el tipo de perfil, ya sea como consumidor o proveedor.
 
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture3.jpg" width="700">
-</div>
+  <div align="center">
+    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture3.jpg" width="700">
+  </div>
 
-El sistema presenta un tablero de resumen con métricas clave como impresiones, clics y CTR promedio para monitorear el rendimiento general de las campañas activas.
+  El sistema presenta un tablero de resumen con métricas clave como impresiones, clics y CTR promedio para monitorear el rendimiento general de las campañas activas.
 
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture4.jpg" width="700">
-</div>
+  <div align="center">
+    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture4.jpg" width="700">
+  </div>
 
-Aquí la interfaz organiza las campañas por estados (activas, pausadas o finalizadas), permitiendo al administrador editar, pausar o finalizar cada anuncio de forma individual.
+  Aquí la interfaz organiza las campañas por estados (activas, pausadas o finalizadas), permitiendo al administrador editar, pausar o finalizar cada anuncio de forma individual.
 
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture5.jpg" width="700">
-</div>
+  <div align="center">
+    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture5.jpg" width="700">
+  </div>
 
-La plataforma ofrece un formulario para crear nuevas campañas publicitarias, donde se define el nombre, descripción, fechas de vigencia y el presupuesto estimado en soles.
+  La plataforma ofrece un formulario para crear nuevas campañas publicitarias, donde se define el nombre, descripción, fechas de vigencia y el presupuesto estimado en soles.
 
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture6.jpg" width="700">
-</div>
+  <div align="center">
+    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture6.jpg" width="700">
+  </div>
 
-En esta sección, la app genera reportes detallados que se pueden filtrar y exportar en formato JSON, mostrando un resumen general de la inversión y el impacto alcanzado.
+  En esta sección, la app genera reportes detallados que se pueden filtrar y exportar en formato JSON, mostrando un resumen general de la inversión y el impacto alcanzado.
 
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture7.jpg" width="700">
-</div>
+  <div align="center">
+    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture7.jpg" width="700">
+  </div>
 
-La ventana de comentarios permite al dueño del negocio visualizar la calificación promedio y leer las reseñas de los clientes para gestionar la reputación del establecimiento.
+  La ventana de comentarios permite al dueño del negocio visualizar la calificación promedio y leer las reseñas de los clientes para gestionar la reputación del establecimiento.
 
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture8.jpg" width="700">
-</div>
+  <div align="center">
+    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture8.jpg" width="700">
+  </div>
 
-La aplicación cuenta con un centro de ayuda integrado que resuelve dudas frecuentes sobre la creación de campañas, gestión de métricas y estados de los anuncios.
+  La aplicación cuenta con un centro de ayuda integrado que resuelve dudas frecuentes sobre la creación de campañas, gestión de métricas y estados de los anuncios.
 
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture9.jpg" width="700">
-</div>
+  <div align="center">
+    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture9.jpg" width="700">
+  </div>
 
-Aquí se muestra el perfil del negocio con información de contacto, el plan actual de suscripción y un resumen de ofertas guardadas o ubicaciones frecuentes.
+  Aquí se muestra el perfil del negocio con información de contacto, el plan actual de suscripción y un resumen de ofertas guardadas o ubicaciones frecuentes.
 
-<div align="center">
-  <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture10.jpg" width="700">
-</div>
+  <div align="center">
+    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture10.jpg" width="700">
+  </div>
 
-La interfaz de configuración permite editar detalles críticos del negocio como el RUC, tipo de establecimiento (ej. Chifa), dirección física, horarios de atención y enlaces web.
+  La interfaz de configuración permite editar detalles críticos del negocio como el RUC, tipo de establecimiento (ej. Chifa), dirección física, horarios de atención y enlaces web.
 
   #### 5.2.4. Implemented RESTful API and/or Serverless Backend Evidence
 
-Aquí se observa el backend del proyecto desplegado y documentado con Swagger UI, lo cual permite visualizar y probar de forma interactiva todos los endpoints de la API. La interfaz facilita la gestión del CRUD y la verificación de la lógica de negocio directamente desde el navegador, asegurando que la comunicación entre el servidor y la base de datos sea correcta.
-
-<div align="center">
-  <img src="resources/imgs/Chapter5/Backend/BackendPicture1.jpg" width="700">
-</div>
-
-<div align="center">
-  <img src="resources/imgs/Chapter5/Backend/BackendPicture2.jpg" width="700">
-</div>
-
-<div align="center">
-  <img src="resources/imgs/Chapter5/Backend/BackendPicture3.jpg" width="700">
-</div>
-
-<div align="center">
-  <img src="resources/imgs/Chapter5/Backend/BackendPicture4.jpg" width="700">
-</div>
-
-<div align="center">
-  <img src="resources/imgs/Chapter5/Backend/BackendPicture5.jpg" width="700">
-</div>
-
+  
+  
   #### 5.2.5. RESTful API documentation
+  Aquí se observa el backend del proyecto desplegado y documentado con Swagger UI, lo cual permite visualizar y probar de forma interactiva todos los endpoints de la API. La interfaz facilita la gestión del CRUD y la verificación de la lógica de negocio directamente desde el navegador, asegurando que la comunicación entre el servidor y la base de datos sea correcta.
 
-  #### 5.2.6. Team Collaboration Insights
+  <div align="center">
+    <img src="resources/imgs/Chapter5/Backend/BackendPicture1.jpg" width="700">
+  </div>
+
+  <div align="center">
+    <img src="resources/imgs/Chapter5/Backend/BackendPicture2.jpg" width="700">
+  </div>
+
+  <div align="center">
+    <img src="resources/imgs/Chapter5/Backend/BackendPicture3.jpg" width="700">
+  </div>
+
+  <div align="center">
+    <img src="resources/imgs/Chapter5/Backend/BackendPicture4.jpg" width="700">
+  </div>
+
+  <div align="center">
+    <img src="resources/imgs/Chapter5/Backend/BackendPicture5.jpg" width="700">
+  </div>
 
 
 ### 5.3 Video About-the-Product
@@ -3551,7 +3371,7 @@ Aquí se observa el backend del proyecto desplegado y documentado con Swagger UI
 
 El desarrollo del proyecto GeoPS permitió transformar una idea inicial en una solución tecnológica completa y funcional, integrando landing page, frontend interactivo con Angular y backend robusto con Spring Boot desplegado en la nube. A lo largo de los cuatro sprints se evidenció un progreso consistente en la capacidad técnica del equipo, tanto en términos de diseño de interfaces como en arquitectura de software, integración de servicios y despliegue continuo en plataformas de producción.
 
-A lo largo del proyecto se evidenció una mejora progresiva en la organización del trabajo y en la coordinación del equipo. El uso de metodologías ágiles (Scrum) **SE DEBE EVITAR EL USO DE "metodologías ágiles" REVISAR ANEXO E**, control de versiones mediante GitHub, gestión visual en Trello y comunicación por Discord y Google Meet permitió mantener un flujo de trabajo ordenado y eficiente. Cada sprint aportó valor incremental, fortaleciendo la arquitectura y asegurando la cohesión entre las distintas funcionalidades desarrolladas. El Sprint 4 marcó la culminación del MVP con la implementación del módulo completo de Proveedores, permitiendo a los negocios gestionar campañas publicitarias de manera efectiva.
+A lo largo del proyecto se evidenció una mejora progresiva en la organización del trabajo y en la coordinación del equipo. El uso de metodologías ágiles (Scrum), control de versiones mediante GitHub, gestión visual en Trello y comunicación por Discord y Google Meet permitió mantener un flujo de trabajo ordenado y eficiente. Cada sprint aportó valor incremental, fortaleciendo la arquitectura y asegurando la cohesión entre las distintas funcionalidades desarrolladas. El Sprint 4 marcó la culminación del MVP con la implementación del módulo completo de Proveedores, permitiendo a los negocios gestionar campañas publicitarias de manera efectiva.
 
 Desde el punto de vista técnico, se construyó una plataforma sólida que integra módulos esenciales como autenticación, gestión de usuarios, favoritos, ofertas, reseñas, cupones, carritos, pagos, suscripciones y el nuevo módulo de campañas publicitarias para proveedores. El despliegue del backend en Railway y del frontend en Vercel confirma la capacidad del equipo para trabajar con servicios en la nube, manejando entornos reales de producción. La documentación completa del API con Swagger UI facilita la comprensión de los endpoints y permite la futura expansión del sistema.
 
@@ -3579,21 +3399,18 @@ World Bank. (2019). *World Development Report 2019: The Changing Nature of Work*
 
 ## Anexos
 
-**Enlace Organización OpenSourceDevUPC - GeoPs:** https://github.com/OpenSourceDevUPC
+**Enlace Organización - GeoPs:** https://github.com/geops-org
 
 **Despliegues y Documentación**
 
-- Enlace API Externo: https://developers.google.com/maps/documentation/javascript/overview?hl=es-419
-
-- Enlace Documentación Swagger: https://geops-backend-production-6f35.up.railway.app/swagger-ui/index.html
+- Enlace Documentación Swagger: https://geops-api-production.up.railway.app/swagger-ui/index.html
   
-- Enlace del Proyecto (BackEnd) API Deploy: https://geops-backend-production-6f35.up.railway.app
+- Enlace del Proyecto (BackEnd) API Deploy: https://geops-api-production.up.railway.app/
   
 - Enlace del Proyecto (FrontEnd) Deploy: https://geops-frontend.vercel.app/login
 
-- Enlace Landing Page Deploy: https://opensourcedevupc.github.io/Landing/
+- Enlace Landing Page Deploy: https://geops-org.github.io/geops-landing/
 
-- Enlace del Servicio JSON Server API: https://json-server-1-p24l.onrender.com/
 
 **Repositorios GitHub**
 
@@ -3606,26 +3423,11 @@ World Bank. (2019). *World Development Report 2019: The Changing Nature of Work*
 - Enlace Repositorio Project Report: https://github.com/geops-org/geops-report
 
 
-**Videos Exposiciones**
-
-- Enlace Video Exposición TB1: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318049_upc_edu_pe/IQAYAOtcnJkrSJ5sMW1GzIvGAXt4Ff89DrfcOtG7Mzwu_LM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=oLgDTu
-
-
-**Videos About The Team**
-
-- Enlace Video About The Team - GeoPs: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318049_upc_edu_pe/IQC8deLfhAB-QabaXnuLVJ5oAW9Vq4hqnyj1-bRnjYHHfmY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=P5W6WY
-
 **Video About The Product**
 
 - Enlace Video About The Product - GeoPs: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318049_upc_edu_pe/IQClpsJt1lv0SJVXaTq_7_RwAZulho-4j7SJR3cHofT9Bpo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pc3X8P
 
-**Videos Aplicación**
 
-- Enlace Video Web Application Prototype: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318049_upc_edu_pe/IQD6SaN-XMsAR6NvgRD_Ev7BAf-nnmSLy5uYleYv0lLnt0Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=V5Lp6h
-
-- Enlace Video Presentación FrontEnd: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318049_upc_edu_pe/IQBZ_u4YlUBrR5aUuwOgdlXyAayryes00Z1WWwE3w-MPhtU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=i2d5ve
-
-- Enlace Video Presentación BackEnd: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202322855_upc_edu_pe/IQBaDGRLY_lmR7SNyWP_vuefAWi2TUcGcgn4Ua-R3ckkmzM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=b90mcr
 
 **Diseño Figma**
 
