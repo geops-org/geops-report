@@ -372,7 +372,6 @@ El mercado de productos orientales en el Perú se sustenta en un crecimiento rob
 **mediremos** el número de reseñas publicadas, calificación promedio por tienda, tasa de interacción con reseñas y su impacto en la visualización de productos.
   
 ##### 1.2.2.4. Lean UX Canvas
-
 **Figura 1**<br>
 *Lean UX Canvas — GeoPS Labs*
 
@@ -426,22 +425,21 @@ El mercado de productos orientales en el Perú se sustenta en un crecimiento rob
 
 ---
 
-
 ## Capitulo 2: Requirements Elicitation & Analysis
 ### 2.1. Competidores
-  #### 2.1.1. Analisis competitivo
+#### 2.1.1. Analisis competitivo
 
-  **Tabla 1**   
-  *Análisis competitivo — GeoPS vs Competidores*
 
-# Competitive Analysis Landscape
 
-### ¿Por qué llevar a cabo este análisis?
+#### ¿Por qué llevar a cabo este análisis?
 Realizar este análisis competitivo es vital porque valida la propuesta de valor única de **GeoPS** al demostrar cómo su enfoque hiperlocalizado resuelve carencias de las plataformas masivas. Además, fundamenta empíricamente los supuestos del **Lean UX**, permitiendo crear tácticas defensivas y de crecimiento más realistas y adaptadas al entorno limeño. Finalmente, optimiza los valiosos recursos del equipo de ingeniería, asegurando que el desarrollo de software se enfoque exclusivamente en programar funcionalidades que marquen una verdadera diferencia competitiva.
 
----
 
-| Categoría | Detalle | **Startup: GeoPS** <div align="center"><img src="resources/imgs/images for chapter ii/geops-logo.png" width="400" alt="Imagen centrada"></div> | **Competidor 1: Cuponatic** <div align="center"><img src="resources/imgs/images for chapter ii/Cuponatic-Logo.png" width="400" alt="Imagen centrada"></div> | **Competidor 2: Tiendeo** <div align="center"><img src="resources/imgs/images for chapter ii/Tiendeo-Logo.png" width="400" alt="Imagen centrada"></div> | **Competidor 3: Mesa 24/7** <div align="center"><img src="resources/imgs/images for chapter ii/Mesa247-Logo.png" width="400" alt="Imagen centrada"></div> |
+
+**Tabla 1**   
+*Análisis competitivo — GeoPS vs Competidores*
+
+| Categoría | Detalle |**Startup: GeoPS** <div align="center"><img src="resources/imgs/chapter-ii/geops-logo.png" width="150"></div> | **Competidor 1: Cuponatic** <div align="center"><img src="resources/imgs/chapter-ii/cuponatic-logo.png" width="150"></div> | **Competidor 2: Tiendeo** <div align="center"><img src="resources/imgs/chapter-ii/tiendeo-logo.png" width="150"></div> | **Competidor 3: Mesa 24/7** <div align="center"><img src="resources/imgs/chapter-ii/mesa247-logo.png" width="150"></div> |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Perfil** | **Overview** | Plataforma de publicidad hiperlocalizada en Lima enfocada en negocios de cultura asiática (gastronomía, belleza, hobbies). | Plataforma consolidada de venta de cupones de descuento masivos para una amplia gama de productos y servicios a nivel nacional. | Directorio y agregador de folletos digitales y ofertas geolocalizadas, enfocado en grandes cadenas de retail y supermercados. | Plataforma peruana líder en reservas de restaurantes que utiliza geolocalización y ofrece beneficios por asistencia. |
 | | **Ventaja Competitiva** | **Especialización y Comunidad:** Promociones inmediatas de nichos específicos (K-Beauty, ramen) cerca del usuario. | **Descuentos agresivos:** Atrae volumen de tráfico con precios muy por debajo del mercado. | **Centralización de retail:** Facilita comparar folletos de grandes marcas en un solo lugar. | **Credibilidad gastronómica:** Reseñas validadas y sistema de fidelización (puntos/cashback). |
@@ -456,11 +454,11 @@ Realizar este análisis competitivo es vital porque valida la propuesta de valor
 
 *Nota.* Elaboración propia.
 
-  #### 2.1.2. Estrategias y tácticas frente a competidores 
+#### 2.1.2. Estrategias y tácticas frente a competidores 
 
- Este documento detalla el enfoque estratégico preliminar para posicionar a **GeoPS** frente a los actores establecidos del mercado, capitalizando nuestra especialización en el nicho de cultura asiática.
+Este documento detalla el enfoque estratégico preliminar para posicionar a **GeoPS** frente a los actores establecidos del mercado, capitalizando nuestra especialización en el nicho de cultura asiática.
 
-## 1. Estrategias Ofensivas: Aprovechando Debilidades de la Competencia
+#### 1. Estrategias Ofensivas: Aprovechando Debilidades de la Competencia
 
 | Debilidad del Competidor | Estrategia de GeoPS | Táctica de Implementación |
 | :--- | :--- | :--- |
@@ -468,57 +466,56 @@ Realizar este análisis competitivo es vital porque valida la propuesta de valor
 | **Fricción de Pago (Cuponatic):** Obligar al usuario a pagar antes de probar el servicio genera desconfianza. | **Conversión Directa:** Eliminar la barrera del prepago para fomentar el flujo de clientes al local. | Utilizar cupones de **"Muestra y Canje"** mediante códigos QR que se validan directamente en el establecimiento físico. |
 | **Falta de Especialización (Mesa 24/7):** Las plataformas genéricas no entienden las dinámicas de comunidades específicas. | **Curaduría de Nicho:** Crear una experiencia de usuario que hable el lenguaje de la comunidad (Otaku, K-pop, Foodie). | Lanzamiento de **Mapas Temáticos** (ej. "La Ruta del Ramen" o "K-Beauty Tour") que guíen al usuario por circuitos específicos de Lima. |
 
-## 2. Estrategias Defensivas: Afrontando Fortalezas de la Competencia
+#### 2. Estrategias Defensivas: Afrontando Fortalezas de la Competencia
 
 | Fortaleza del Competidor | Estrategia de GeoPS | Táctica de Implementación |
 | :--- | :--- | :--- |
 | **Gran Volumen de Tráfico (Gigantes):** Plataformas masivas tienen millones de usuarios. | **Fidelización por Relevancia:** No buscamos el tráfico masivo, sino el tráfico de alta conversión mediante proximidad. | Sistema de **Geofencing** que envíe notificaciones push personalizadas solo cuando el usuario esté a menos de 500m de un local de su interés. |
 | **Credibilidad y Reseñas (Mesa 24/7):** Los usuarios confían en plataformas con historial. | **Validación Social de Nicho:** Construir credibilidad a través de las figuras de autoridad dentro de la comunidad. | Alianzas con **Micro-influencers** de cultura asiática en Lima para que validen y recomienden locales a través de la Web App. |
 
-## 3. Aprovechamiento del Contexto (Oportunidades y Amenazas)
+#### 3. Aprovechamiento del Contexto (Oportunidades y Amenazas)
 
-### 🟢 Oportunidades: Impulso del Crecimiento
+#### 🟢 Oportunidades: Impulso del Crecimiento
 * **Táctica de Gamificación:** Aprovechar el auge de la cultura gamer y otaku creando un sistema de "Check-ins" en locales que otorgue insignias virtuales o descuentos exclusivos por nivel de fidelidad.
 * **Alianzas Estratégicas:** Colaborar con eventos masivos en Lima (como convenciones de anime o festivales gastronómicos) para ser el mapa oficial del evento dentro de la aplicación.
 
-### 🔴 Amenazas: Mitigación de Riesgos
+#### 🔴 Amenazas: Mitigación de Riesgos
 * **Estrategia Anti-Plataformas (Google Maps/TikTok):** A diferencia de Google Maps, que es informativo, GeoPS debe ser **transaccional y comunitario**. 
 * **Táctica:** Fomentar la creación de una "Pizarra de Anuncios" comunitaria donde los locales puedan publicar ofertas relámpago de última hora (ej. "Happy Hour de Bubble Tea por la próxima hora"), algo que los algoritmos globales no procesan con rapidez.
 
----
 
 ### 2.2. Entrevistas
-  #### 2.2.1. Diseño de entrevistas
+#### 2.2.1. Diseño de entrevistas
 
-  **Segmento #1: Usuario Proveedor / Tienda (GeoPS Business)
+####Segmento #1: Usuario Proveedor / Tienda (GeoPS Business)
 
-## Fase 1: Identificación y Perfilamiento del Negocio
+#### Fase 1: Identificación y Perfilamiento del Negocio
 * **Establecimiento y Cargo:** Nombre del local y cargo del entrevistado.
 * **Tipo de negocio:** (Restaurante, Minimarket, Tienda temática, etc.)
 * **Origen de productos:** (Coreano, Japonés, Chino, etc.)
 * **Perfil del cliente:** ¿Cuál es el perfil de su cliente principal?
 * **Rotación:** ¿Qué productos o platos son los que más rápido se agotan o tienen mayor rotación?
 
-## Fase 2: Comportamiento y Marketing Actual
+#### Fase 2: Comportamiento y Marketing Actual
 1. ¿Qué medios utiliza actualmente para promocionar sus productos o nuevas ofertas?
 2. ¿Cómo se asegura de que las personas que viven o trabajan cerca se enteren de que usted tiene una oferta hoy?
 
-## Fase 3: Identificación de Puntos de Dolor (El Problema)
+#### Fase 3: Identificación de Puntos de Dolor (El Problema)
 1. ¿Qué tan difícil es para usted atraer a nuevos clientes que no conocen su local pero están caminando a pocas cuadras de distancia?
 2. ¿Tiene productos que a veces no se venden porque los clientes no saben que los tiene en stock o que están en oferta?
 3. Si quisiera liquidar un stock rápidamente (oferta relámpago), ¿tiene alguna forma de avisar al instante a la gente que está en los alrededores?
 
-## Fase 4: Validación de la Solución (GeoPS Business)
+#### Fase 4: Validación de la Solución (GeoPS Business)
 1. Si existiera una aplicación donde usted pudiera publicar una oferta en 2 minutos y que les aparezca en el mapa a todos los que están cerca, **¿qué tan útil le resultaría del 1 al 5?**
 2. ¿Le interesaría que la aplicación enviará una notificación automática a los celulares de los usuarios cuando estos pasen cerca de su tienda?
 3. ¿Qué datos de sus clientes le gustaría conocer a través de la app? (Preferencias, horarios de mayor flujo, etc.)
 
-## Fase 5: Cierre y Sugerencias
+#### Fase 5: Cierre y Sugerencias
 * ¿Hay alguna funcionalidad adicional que usted, como dueño de negocio, consideraría indispensable?
 
-  **Segmento #2: Usuario Consumidor (GeoPS)
+####Segmento #2: Usuario Consumidor (GeoPS)
   
-## Fase 1: Identificación y Perfilamiento (Filiación)
+#### Fase 1: Identificación y Perfilamiento (Filiación)
 * **Nombre completo:**
 * **Edad:**
 * **Ocupación:**
@@ -526,50 +523,50 @@ Realizar este análisis competitivo es vital porque valida la propuesta de valor
 * **Frecuencia de consumo:** ¿Con qué frecuencia consumes o compras productos de origen asiático?
 * **Intereses:** ¿Qué tipo de productos buscas con mayor frecuencia? (Comida, belleza, hobbies, etc.)
 
-## Fase 2: Comportamiento y Hábitos de Compra
+#### Fase 2: Comportamiento y Hábitos de Compra
 1. ¿Cómo te enteras habitualmente de nuevas tiendas o restaurantes de productos orientales?
 2. ¿Sueles planificar tus compras de estos productos o los compras cuando los encuentras por casualidad?
 3. ¿Qué tan lejos estás dispuesto a desplazarte para conseguir un ingrediente o producto asiático específico?
 4. ¿Utilizas actualmente alguna aplicación para buscar ofertas o ubicar negocios locales? ¿Cuál y por qué?
 
-## Fase 3: Identificación de Puntos de Dolor (El Problema)
+#### Fase 3: Identificación de Puntos de Dolor (El Problema)
 1. Cuéntame de la última vez que quisiste comprar un producto asiático específico y no sabías dónde encontrarlo cerca de ti. ¿Qué hiciste?
 2. ¿Qué tan difícil te resulta comparar precios entre diferentes tiendas orientales de tu zona?
 
-## Fase 4: Validación de la Solución (GeoPS)
+#### Fase 4: Validación de la Solución (GeoPS)
 1. Si existiera una aplicación que te mostrara en un mapa interactivo solo las tiendas asiáticas con ofertas activas cerca de donde estás, **¿qué tan útil te resultaría del 1 al 5?**
 2. ¿Qué te parecería recibir una notificación push en tu celular cuando estés caminando cerca de una tienda que tenga en oferta tu snack o ingrediente favorito?
 3. ¿Qué información es indispensable para ti antes de decidir visitar una tienda nueva que aparece en el mapa?
 
-## Fase 5: Cierre y Sugerencias
+#### Fase 5: Cierre y Sugerencias
 * ¿Hay alguna funcionalidad adicional que te gustaría que tuviera una app dedicada a encontrar productos orientales?
 
-  #### 2.2.2. Registro de entrevistas
+#### 2.2.2. Registro de entrevistas
 
-  **Segmento #1: Dueños de negocios locales**
+Segmento #1: Dueños de negocios locales
 
-  **Tabla 2**   
-  *Registro de entrevistas — Segmento 1*
+**Tabla 2**   
+*Registro de entrevistas — Segmento 1*
 
 | Número de registro | Datos del entrevistado | Captura |
 | :--- | :--- | :--- |
-| **1** | **Nombre:** Cristian Salvador<br>**Edad:** 28 años<br>**Establecimiento:** Tienda de productos importados (Referente)<br>**Cargo:** Dueño / Encargado<br>**Duración:** Aprox. 5 minutos<br>**Resumen:** El entrevistado maneja una tienda con alta variedad de productos, siendo las sopas instantáneas, snacks y bebidas los más buscados. Actualmente usa Instagram, WhatsApp y carteles físicos, pero nota que la publicidad digital a veces llega a personas muy lejanas que no concretan la compra. Califica la solución de GeoPS con un **5**, destacando su utilidad para liquidar stock próximo a vencer y atraer clientes que transitan por la zona. Le interesa contar con estadísticas de visualizaciones y rutas para medir la efectividad de sus ofertas. Expresó preocupación por el costo y la curva de aprendizaje, sugiriendo una interfaz sencilla. |  **Figura 4**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista1_segmento1.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
-| **2** | **Nombre:** Néstor Rojas<br>**Establecimiento:** Terra Inc.<br>**Giro:** Inciensos, plantas y productos orgánicos asiáticos<br>**Duración:** Aprox. 8 minutos<br>**Resumen:** Néstor opera un negocio con clientes de diversos distritos que llegan principalmente por canales online. Indica que los inciensos tienen alta rotación, mientras que las plantas demoran más en venderse. Valora la propuesta de GeoPS con un **5**, resaltando que facilitaría captar al público que transita cerca y le ahorraría costos en publicidad tradicional como volantes. Le entusiasma la idea de notificaciones automáticas para liquidar saldos de inventario y evitar pérdidas por vencimiento. Como aporte adicional, sugiere que el mapa de la aplicación incluya coordenadas exactas y guías de accesibilidad para evitar que el cliente se desanime al no encontrar el local. |  **Figura 5**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista1_segmento1.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **1** | **Nombre:** Cristian Salvador<br>**Edad:** 28 años<br>**Establecimiento:** Tienda de productos importados (Referente)<br>**Cargo:** Dueño / Encargado<br>**Duración:** Aprox. 5 minutos<br> **Enlace:** [https://l1nq.com/8gjygzw](https://acortar.link/gTCaPh) <br> **Resumen:** El entrevistado maneja una tienda con alta variedad de productos, siendo las sopas instantáneas, snacks y bebidas los más buscados. Actualmente usa Instagram, WhatsApp y carteles físicos, pero nota que la publicidad digital a veces llega a personas muy lejanas que no concretan la compra. Califica la solución de GeoPS con un **5**, destacando su utilidad para liquidar stock próximo a vencer y atraer clientes que transitan por la zona. Le interesa contar con estadísticas de visualizaciones y rutas para medir la efectividad de sus ofertas. Expresó preocupación por el costo y la curva de aprendizaje, sugiriendo una interfaz sencilla. |  **Figura 4**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista1_segmento1.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **2** | **Nombre:** Néstor Rojas<br>**Establecimiento:** Terra Inc.<br>**Giro:** Inciensos, plantas y productos orgánicos asiáticos<br>**Duración:** Aprox. 8 minutos<br> **Enlace:** https://acortar.link/aSbB2F <br>**Resumen:** Néstor opera un negocio con clientes de diversos distritos que llegan principalmente por canales online. Indica que los inciensos tienen alta rotación, mientras que las plantas demoran más en venderse. Valora la propuesta de GeoPS con un **5**, resaltando que facilitaría captar al público que transita cerca y le ahorraría costos en publicidad tradicional como volantes. Le entusiasma la idea de notificaciones automáticas para liquidar saldos de inventario y evitar pérdidas por vencimiento. Como aporte adicional, sugiere que el mapa de la aplicación incluya coordenadas exactas y guías de accesibilidad para evitar que el cliente se desanime al no encontrar el local. |  **Figura 5**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista2_segmento1.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
 
-  *Nota.* Elaboración propia.
+*Nota.* Elaboración propia.
 
-  **Segmento #2: Consumidores de ofertas de diferentes ámbitos**
+Segmento #2: Consumidores de ofertas de diferentes ámbitos
 
-  **Tabla 3**   
-  *Registro de entrevistas — Segmento 2*  
+**Tabla 3**   
+*Registro de entrevistas — Segmento 2*  
 
 | Número de registro | Datos del entrevistado | Captura |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1** | **Nombre:** Ariana Puscan <br> **Edad:** 28 años <br> **Distrito:** Magdalena <br> **Ocupación:** Abogada <br> **Duración de la entrevista:** 5 minutos y 49 segundos <br> **Enlace:** https://l1nq.com/8gjygzw <br> **Resumen:** En este video, se entrevista a Ariana Puscan, una joven de 28 años del distrito de Magdalena. Es una consumidora recurrente de snacks asiáticos, adquiriéndolos mensualmente. Su descubrimiento de productos se basa principalmente en recomendaciones y ofertas vistas en Instagram y TikTok. Sus compras son mayoritariamente impulsivas o casuales cuando encuentra artículos en supermercados, sin apoyarse en aplicaciones específicas. Recientemente, visitó un establecimiento tras verlo en redes sociales, teniendo una experiencia satisfactoria. Finalmente, considera que nuestra aplicación sería de gran valor. La percibe como una herramienta clave para localizar puntos de venta exactos y facilitar el acceso a una mayor variedad de productos asiáticos. | **Figura 6**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista1_segmento2.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
-| **2** | **Nombre:** Olga Consuelo Arce Quesada <br> **Edad:** 25 años <br> **Distrito:** Magdalena <br> **Ocupación:** Comunicadora Corporativa <br> **Duración de la entrevista:** 7 minutos y 16 segundos <br> **Enlace:** https://l1nq.com/ck0dyrh <br> **Resumen:** En este video, Olga Consuelo Arce Quesada, de 25 años, de Magdalena. Es una consumidora frecuente de snacks, bebidas y productos de belleza. Si bien descubre tiendas asiáticas mediante redes sociales o de forma presencial, señala una brecha en la información: las ofertas no están digitalizadas y solo las descubre al visitar el punto de venta. Su experiencia revela una dificultad específica al buscar productos de belleza, ya que no suelen estar disponibles en cadenas comerciales como Miniso. Actualmente, su búsqueda depende exclusivamente de la suerte al encontrar recomendaciones en TikTok, lo que dificulta la compra efectiva. Olga valida positivamente la propuesta de nuestra aplicación. Destaca la importancia de una plataforma integral que geolocalice tiendas cercanas, ofrezca visibilidad de ofertas en tiempo real y permita filtrar los establecimientos por categorías para optimizar su experiencia de compra. | **Figura 7**<br> *Entrevista 2 — Segmento 2* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista2_segmento2.png" alt="Entrevista 2 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
-| **3** | **Nombre:** Lupe de la Cruz <br> **Edad:** 22 años <br> **Distrito:** Jesús María <br> **Ocupación:** Estudiante <br> **Duración de la entrevista:** Aprox. 5 minutos <br> **Enlace:** [Insertar Enlace Aquí] <br> **Resumen:** En esta entrevista se conversó con Lupe de la Cruz, una joven estudiante de Jesús María. Es una consumidora quincenal de productos orientales, enfocada principalmente en snacks, dulces y bebidas. Su descubrimiento de locales se basa en redes sociales y exploración física ocasional. Relató una mala experiencia reciente al encontrar un local cerrado por falta de información actualizada, lo que validó la utilidad de la aplicación. Califica la utilidad del mapa interactivo con un puntaje de 4 a 5 estrellas. Valora positivamente las notificaciones push personalizadas y considera indispensable que la app muestre horarios de atención y listas de precios. Finalmente, propuso como feedback la posibilidad de realizar reservas de productos a través de la plataforma. | **Figura 8**<br> *Entrevista 3 — Segmento 1* <div align="center"> <img src="resources/imgs/images for chapter ii/entrevista3_segmento2.png" alt="Entrevista 3 — Segmento 1" width="4000"> </div> *Nota.* Elaboración propia. |
+| :--- | :--- | :--- |
+| **1** | **Nombre:** Ariana Puscan <br> **Edad:** 28 años <br> **Distrito:** Magdalena <br> **Ocupación:** Abogada <br> **Duración de la entrevista:** 5 minutos y 49 segundos <br> **Enlace:** https://l1nq.com/8gjygzw <br> **Resumen:** En este video, se entrevista a Ariana Puscan, una joven de 28 años del distrito de Magdalena. Es una consumidora recurrente de snacks asiáticos, adquiriéndolos mensualmente. Su descubrimiento de productos se basa principalmente en recomendaciones y ofertas vistas en Instagram y TikTok. Sus compras son mayoritariamente impulsivas o casuales cuando encuentra artículos en supermercados, sin apoyarse en aplicaciones específicas. Recientemente, visitó un establecimiento tras verlo en redes sociales, teniendo una experiencia satisfactoria. Finalmente, considera que nuestra aplicación sería de gran valor. La percibe como una herramienta clave para localizar puntos de venta exactos y facilitar el acceso a una mayor variedad de productos asiáticos. | **Figura 6**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista1_segmento2.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **2** | **Nombre:** Olga Consuelo Arce Quesada <br> **Edad:** 25 años <br> **Distrito:** Magdalena <br> **Ocupación:** Comunicadora Corporativa <br> **Duración de la entrevista:** 7 minutos y 16 segundos <br> **Enlace:** https://l1nq.com/ck0dyrh <br> **Resumen:** En este video, Olga Consuelo Arce Quesada, de 25 años, de Magdalena. Es una consumidora frecuente de snacks, bebidas y productos de belleza. Si bien descubre tiendas asiáticas mediante redes sociales o de forma presencial, señala una brecha en la información: las ofertas no están digitalizadas y solo las descubre al visitar el punto de venta. Su experiencia revela una dificultad específica al buscar productos de belleza, ya que no suelen estar disponibles en cadenas comerciales como Miniso. Actualmente, su búsqueda depende exclusivamente de la suerte al encontrar recomendaciones en TikTok, lo que dificulta la compra efectiva. Olga valida positivamente la propuesta de nuestra aplicación. Destaca la importancia de una plataforma integral que geolocalice tiendas cercanas, ofrezca visibilidad de ofertas en tiempo real y permita filtrar los establecimientos por categorías para optimizar su experiencia de compra. | **Figura 7**<br> *Entrevista 2 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista2_segmento2.png" alt="Entrevista 2 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **3** | **Nombre:** Lupe de la Cruz <br> **Edad:** 22 años <br> **Distrito:** Jesús María <br> **Ocupación:** Estudiante <br> **Duración de la entrevista:** Aprox. 5 minutos <br> **Enlace:** https://acortar.link/BfP5q1 <br> **Resumen:** En esta entrevista se conversó con Lupe de la Cruz, una joven estudiante de Jesús María. Es una consumidora quincenal de productos orientales, enfocada principalmente en snacks, dulces y bebidas. Su descubrimiento de locales se basa en redes sociales y exploración física ocasional. Relató una mala experiencia reciente al encontrar un local cerrado por falta de información actualizada, lo que validó la utilidad de la aplicación. Califica la utilidad del mapa interactivo con un puntaje de 4 a 5 estrellas. Valora positivamente las notificaciones push personalizadas y considera indispensable que la app muestre horarios de atención y listas de precios. Finalmente, propuso como feedback la posibilidad de realizar reservas de productos a través de la plataforma. | **Figura 8**<br> *Entrevista 3 — Segmento 1* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista3_segmento2.png" alt="Entrevista 3 — Segmento 1" width="4000"> </div> *Nota.* Elaboración propia. |
 
-  #### 2.2.3. Análisis de entrevistas
+#### 2.2.3. Análisis de entrevistas
 
 ### 1. Segmento: Usuario Consumidor
 Este segmento agrupa a jóvenes de entre 22 y 28 años residentes en distritos de Lima Moderna como Magdalena y Jesús María, interesados en el nicho de productos asiáticos.
@@ -587,8 +584,6 @@ Este segmento agrupa a jóvenes de entre 22 y 28 años residentes en distritos d
 * **Factores Críticos de Decisión:** La disponibilidad de **listas de precios** y **horarios de atención** son considerados elementos indispensables antes de visitar un local nuevo.
 * **Deseo de Personalización:** Existe un alto interés (**100%**) en recibir notificaciones push siempre que el contenido sea acorde a sus preferencias específicas de snacks o bebidas.
 
----
-
 ### 2. Segmento: Usuario Proveedor / Dueño de Tienda
 Este segmento comprende a propietarios y administradores de negocios especializados en productos orientales, desde alimentos importados hasta productos orgánicos.
 
@@ -605,26 +600,26 @@ Este segmento comprende a propietarios y administradores de negocios especializa
 * **Visión de Accesibilidad:** Los proveedores sugieren que el mapa debe incluir coordenadas exactas y guías de accesibilidad para evitar que el cliente se desanime al no encontrar el local.
 
 ### 2.3. Needfinding
-  #### 2.3.1. User Personas
+#### 2.3.1. User Personas
   
-  **Segmento #1: Dueños de negocios locales**
+**Segmento #1: Dueños de negocios locales**
 
-  **Figura 9**<br>
-  *User Persona — Segmento 1*
+**Figura 9**<br>
+*User Persona — Segmento 1*
 
   <div align="center">
-      <img src="resources/imgs/images for chapter ii/userpersona_segmento1.jpg" alt="User Persona Segmento 1 — GeoPS" width="600">
+      <img src="resources/imgs/chapter-ii/userpersona_segmento1.jpg" alt="User Persona Segmento 1 — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Uxpressia).
 
-  **Segmento #2: Consumidores de ofertas de diferentes ámbitos**
+**Segmento #2: Consumidores de ofertas de diferentes ámbitos**
 
   **Figura 10**<br>
   *User Persona — Segmento 2*
 
   <div align="center">
-      <img src="resources/imgs/images for chapter ii/userpersona_segmento2.jpg" alt="User Persona Segmento 2 — GeoPS" width="600">
+      <img src="resources/imgs/chapter-ii/userpersona_segmento2.jpg" alt="User Persona Segmento 2 — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Uxpressia).
@@ -675,7 +670,7 @@ Este segmento comprende a propietarios y administradores de negocios especializa
   *User Journey Mapping — Segmento 1*
 
   <div align="center">
-      <img src="resources/imgs/images for chapter ii/journeymap_segmento1.jpg" alt="User Journey Mapping Segmento 1 — GeoPS" width="600">
+      <img src="resources/imgs/chapter-ii/journeymap_segmento1.jpg" alt="User Journey Mapping Segmento 1 — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Uxpressia).
@@ -686,7 +681,7 @@ Este segmento comprende a propietarios y administradores de negocios especializa
   *User Journey Mapping — Segmento 2*
 
   <div align="center">
-      <img src="resources/imgs/images for chapter ii/journeymap_segmento2.jpg" alt="User Journey Mapping Segmento 2 — GeoPS" width="600">
+      <img src="resources/imgs/chapter-ii/journeymap_segmento2.jpg" alt="User Journey Mapping Segmento 2 — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Uxpressia).
@@ -699,7 +694,7 @@ Este segmento comprende a propietarios y administradores de negocios especializa
   *Empathy Mapping — Segmento 1*
 
   <div align="center">
-      <img src="resources/imgs/images for chapter ii/empathymap_segmento1.jpg" alt="Empathy Mapping Segmento 1 — GeoPS" width="600">
+      <img src="resources/imgs/chapter-ii/empathymap_segmento_1.jpg" alt="Empathy Mapping Segmento 1 — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Uxpressia).
@@ -710,7 +705,7 @@ Este segmento comprende a propietarios y administradores de negocios especializa
   *Empathy Mapping — Segmento 2*
 
   <div align="center">
-      <img src="resources/imgs/images for chapter ii/empathymap_segmento2.jpg" alt="Empathy Mapping Segmento 2 — GeoPS" width="600">
+      <img src="resources/imgs/chapter-ii/empathymap_segmento_2.jpg" alt="Empathy Mapping Segmento 2 — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Uxpressia).
@@ -731,6 +726,8 @@ Este segmento comprende a propietarios y administradores de negocios especializa
 * **Canje:** El proceso en el que un consumidor valida y utiliza una oferta para obtener el beneficio prometido por el negocio.
 
 * **Fidelización:** Las estrategias que un negocio implementa para retener a sus clientes y fomentar que repitan sus compras a largo plazo.
+
+---
 
 ## Capitulo 3: Requirements Specification 
 ### 3.1. User Stories
