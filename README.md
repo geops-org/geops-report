@@ -3413,6 +3413,161 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
 **Enlace Video About The Product - GeoPs:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318049_upc_edu_pe/IQClpsJt1lv0SJVXaTq_7_RwAZulho-4j7SJR3cHofT9Bpo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pc3X8P
 
 
+# Capítulo 6: Product Verification & Validation
+
+## 6.1. Testing Suites & Validation
+
+### 6.1.1. Core Entities Unit Tests
+Se han implementado pruebas unitarias para validar la lógica de negocio de las entidades principales en ambos extremos de la aplicación.
+
+* **Frontend (Angular):** Utilizando **Jasmine** y **Karma**, se validan los modelos de datos y la lógica de los componentes en `src/app/components`. Se asegura que las clases de TypeScript procesen correctamente los datos antes de enviarlos a la API.
+
+<div align="center">
+    <img src="resources/imgs/capitulo6/test_frontend.png" 
+    alt="Evidencias Test Frontend" width="700">
+</div>
+
+* **Backend (Java + JUnit):** Se implementaron pruebas unitarias utilizando **JUnit 5** para verificar la lógica de los modelos y entidades de dominio (ej. `Promotion`, `Business`, `User`). Se validaron reglas de negocio como la estructura de los identificadores, cálculos de descuentos y restricciones de campos obligatorios, asegurando que los métodos devuelvan los valores esperados sin errores de lógica interna.
+
+<div align="center">
+    <img src="resources/imgs/capitulo6/test_backend.png" 
+    alt="Evidencias Test Backend" width="700">
+</div>
+
+#### 6.1.2. Core Integration Tests
+Se realizaron pruebas de integración para asegurar la correcta interoperabilidad entre los módulos del sistema, enfocándose en el flujo de datos entre las capas de la aplicación.
+
+* **Interacción API-Base de Datos:** Se validó que el backend en Java se comunique correctamente con la base de datos **MySQL Workbench**, verificando que las operaciones de persistencia (Guardar negocio, buscar promociones) se ejecuten íntegramente.
+
+<div align="center">
+    <img src="resources/imgs/capitulo6/mensajes_error_DB.png" 
+    alt="Evidencias Mensajes Error Base de Datos" width="700">
+</div>
+
+* **Comunicación Frontend-Backend:** Se probaron los servicios de Angular que consumen la API REST en Java, asegurando que los objetos JSON sean mapeados correctamente y que los códigos de estado HTTP (200, 201, 400, 404) sean manejados de forma adecuada por la interfaz.
+
+<div align="center">
+    <img src="resources/imgs/capitulo6/mensajes_error_front_back.png" 
+    alt="Evidencias Mensajes Error Frontend Backend" width="700">
+</div>
+
+#### 6.1.3. Core Behavior-Driven Development (BDD)
+Se aplicaron técnicas de BDD para definir el comportamiento del sistema desde la perspectiva del usuario final, utilizando el lenguaje Gherkin para describir los escenarios de interacción.
+
+* **Herramienta:** Se redactaron los escenarios siguiendo el formato de **Cucumber** para garantizar que las funcionalidades de GeoPS cumplan con los criterios de aceptación.
+* **Escenario de Ejemplo: Búsqueda de productos asiáticos por proximidad.**
+    * **Given** que el usuario consumidor se encuentra en el distrito de Lince.
+    * **When** selecciona la categoría "Snacks Coreanos" en la plataforma.
+    * **Then** el sistema debe mostrar una lista de tiendas en un radio de 3km con stock disponible.
+
+<div align="center">
+    <img src="resources/imgs/capitulo6/BDD.png" 
+    alt="Evidencias BDD" width="700">
+</div>
+
+#### 6.1.4. Core System Tests
+Se ejecutaron pruebas de sistema de flujo completo para validar que GeoPS funciona correctamente en su totalidad. Estas pruebas cubrieron la navegación integral de la aplicación web responsiva, simulando el comportamiento real de los dos segmentos objetivo:
+
+* **Flujo del Negocio:** Registro de tienda, carga de catálogo de productos asiáticos y publicación de una oferta flash.
+* **Flujo del Consumidor:** Registro, búsqueda geolocalizada de ofertas en Lima Moderna y visualización de detalles de contacto del comercio.
+* **Validación de Entorno:** Se verificó la respuesta del sistema y la adaptación del diseño (UI/UX) tanto en navegadores de escritorio como en dispositivos móviles, asegurando una experiencia fluida y sin errores en la integración con las APIs de mapas y geolocalización.
+
+<div align="center">
+    <img src="resources/imgs/capitulo6/registro1.png" 
+    alt="Evidencias Registro 1" width="700">
+</div>
+<div align="center">
+    <img src="resources/imgs/capitulo6/registro2.png" 
+    alt="Evidencias Registro 2" width="700">
+</div>
+<div align="center">
+    <img src="resources/imgs/capitulo6/inicio.png" 
+    alt="Evidencias Inicio de Sesion" width="700">
+</div>
+<div align="center">
+    <img src="resources/imgs/capitulo6/otro.png" 
+    alt="Evidencias OTRO" width="700">
+</div>
+
+# Capítulo 7: DevOps Practices
+
+# Capítulo VII: DevOps Practices
+
+## 7.1. Continuous Integration
+
+### 7.1.1. Tools and Practices
+En **GeoPS Labs**, empleamos una variedad de herramientas que optimizan tanto la creación como la validación de la funcionalidad. Seguimos las metodologías de Desarrollo Orientado por Comportamiento (**BDD**) y Desarrollo Orientado por Pruebas (**TDD**) para asegurar que nuestras soluciones mantengan altos niveles de calidad técnica y estén alineadas con las necesidades del negocio.
+
+| Herramienta | Tipo | Descripción | Propósito |
+| :--- | :--- | :--- | :--- |
+| **JUnit 5** | Pruebas (TDD) | Framework para pruebas unitarias en Java. | Ejecutar pruebas automáticas en los componentes del backend para asegurar su correcto funcionamiento. |
+| **Mockito** | Simulaciones (TDD) | Librería de simulación de objetos para Java. | Imitar el comportamiento de objetos externos (como repositorios) para realizar pruebas efectivas en aislamiento. |
+| **Jasmine / Karma** | Pruebas (Frontend) | Framework y test runner para Angular. | Validar la lógica de los componentes y servicios de la interfaz de usuario en el navegador. |
+| **Cucumber** | Herramienta de BDD | Framework para pruebas basadas en comportamiento. | Crear escenarios de prueba en lenguaje Gherkin que aseguren que el desarrollo cumpla con las historias de usuario. |
+
+### 7.1.2. Build & Test Suite Pipeline Components
+Nuestro pipeline de CI automatiza la integración y pruebas del código mediante **GitHub Actions**, manteniendo el proyecto siempre listo para un despliegue. Los componentes son:
+1. **Compilación del Backend:** Uso de **Maven** para compilar el código Java y gestionar las dependencias.
+2. **Pruebas de Backend:** Ejecución automática de la suite de pruebas unitarias con **JUnit**.
+3. **Compilación del Frontend:** Uso de **Angular CLI** para compilar la aplicación y verificar errores de sintaxis.
+4. **Pruebas de Frontend:** Ejecución de pruebas unitarias con **Karma** en modo *headless*.
+
+
+## 7.2. Continuous Delivery
+
+### 7.2.1. Tools and Practices
+El objetivo es automatizar la entrega, manteniendo una etapa de validación previa al despliegue final en producción.
+
+**Tools:**
+* **GitHub Actions:** Automatiza el pipeline completo, permitiendo configurar etapas de despliegue manual.
+* **Trello:** Utilizado para gestionar el proceso de aprobación; un administrador debe revisar y autorizar el paso a producción.
+* **Docker:** Se usa para contenerizar la aplicación backend (Spring Boot), asegurando consistencia entre los entornos de desarrollo y staging.
+
+**Practices:**
+* **Feature Branching:** Las funcionalidades se desarrollan en ramas separadas y se fusionan a una rama estable tras pasar las pruebas automáticas.
+* **Pipeline de Validación en Staging:** El código se valida en un entorno que simula las condiciones de producción antes del despliegue definitivo.
+* **Despliegue Semiautomático:** El pipeline prepara la aplicación, pero el despliegue final requiere una **Aprobación Manual** por parte de un responsable del proyecto.
+
+### 7.2.2. Stages Deployment Pipeline Components
+1. **Integración Continua (CI):** Ejecución de pruebas al hacer un commit en la rama de desarrollo.
+2. **Validación en Staging:** Simulación de escenarios de producción y pruebas de carga o seguridad.
+3. **Despliegue Manual:** El paso final queda en espera de la aprobación de una persona para minimizar riesgos en los usuarios finales.
+4. **Monitoreo y Feedback:** Análisis del rendimiento del nuevo código en el entorno de staging.
+
+
+## 7.3. Continuous Deployment
+
+### 7.3.1. Tools and Practices
+El objetivo de **Continuous Deployment (CD)** es que los cambios aprobados pasen automáticamente a producción sin intervención manual, siempre que superen todas las validaciones.
+
+**Tools:**
+* **GitHub Actions:** Orquestador del pipeline de despliegue automático.
+* **Docker:** Contenerización del backend en Java para asegurar la portabilidad.
+* **Railway:** Gestión automatizada de la base de datos **MySQL**, incluyendo migraciones y backups.
+* **Render:** Plataforma para el despliegue automático y monitoreo del backend en Spring Boot.
+* **Firebase Hosting:** Para el frontend en Angular, garantizando un despliegue rápido mediante una CDN global.
+
+**Practices:**
+* **Commit-based Deployment:** Cada commit exitoso en la rama `main` o `develop` activa automáticamente el proceso de construcción y despliegue.
+* **Rollback Automático:** En caso de detectar fallos post-despliegue, el sistema restaura automáticamente la versión anterior estable.
+
+### 7.3.2. Production Deployment Pipeline Components
+
+**Componentes del Pipeline de la Base de Datos (Railway):**
+1. **Gestión de Migraciones:** Spring Boot gestiona automáticamente los cambios en el esquema de MySQL en Railway al modificar las entidades Java.
+2. **Backup Automático:** Creación de copias de seguridad antes de aplicar migraciones críticas para evitar pérdida de datos.
+3. **Validación de Esquema:** Scripts automatizados que aseguran que las nuevas tablas y relaciones están correctamente configuradas.
+
+**Componentes del Pipeline del Backend (Render para Spring Boot):**
+1. **Integración:** Render detecta el cambio, toma el código y lo construye con Maven.
+2. **Construcción Docker:** Se genera la imagen del contenedor con todas las dependencias incluidas.
+3. **Despliegue y Monitoreo:** Implementación de la nueva versión con alertas de rendimiento en tiempo real.
+
+**Componentes del Pipeline del Frontend (Firebase para Angular):**
+1. **Compilación:** Firebase CLI inicia el proceso de construcción en modo producción (`prod`).
+2. **Despliegue en Hosting:** Implementación automática en los servidores de Firebase tras pasar las pruebas unitarias.
+3. **Invalidación de Caché:** Limpieza automática de caché para que los usuarios de **GeoPS** reciban la versión más reciente al instante.
+
 
 ## Conclusiones
 
