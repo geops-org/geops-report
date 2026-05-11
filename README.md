@@ -1193,14 +1193,14 @@ EP03: Gestión de Campañas Hiperlocalizadas
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Title</b></td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px;">Configuración de Idioma en la Plataforma Web</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px;">Configuración de Idioma (Español/Ingles) en la Plataforma Web</td>
   </tr>
   <tr>
     <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Description</b></td>
   </tr>
   <tr>
     <td colspan="4" style="border: 1px solid black; padding: 15px;">
-      Como usuario, quiero seleccionar el idioma de la plataforma para visualizar contenido en mi preferencia.
+      Como usuario, quiero seleccionar el idioma de español o ingles en la plataforma para visualizar contenido en mi preferencia.
     </td>
   </tr>
   <tr>
