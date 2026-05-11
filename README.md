@@ -201,8 +201,12 @@ La colaboración se distribuyó de manera equitativa entre los 7 integrantes:
   - [4.5. Web Applications Prototyping](#45-web-applications-prototyping)
   - [4.6. Domain-Driven Software Architecture](#46-domain-driven-software-architecture)
     - [4.6.1. Software Architecture Context Diagram](#461-software-architecture-context-diagram)
-    - [4.6.3. Software Architecture Container Diagrams](#463-software-architecture-container-diagrams)
-    - [4.6.4. Software Architecture Components Diagrams](#464-software-architecture-components-diagrams)
+- [4.6.2. Software Architecture Container Diagram](#462-software-architecture-container-diagram)
+- [4.6.3. Software Architecture Components Diagrams](#463-software-architecture-components-diagrams)
+  - [4.6.3.1. Identity Context Components Diagram](#4631-identity-context-components-diagram)
+  - [4.6.3.2. Campaign Context Components Diagram](#4632-campaign-context-components-diagram)
+  - [4.6.3.3. Offers Context Components Diagram](#4633-offers-context-components-diagram)
+  - [4.6.3.4. Shared Kernel Components Diagram](#4634-shared-kernel-components-diagram)
   - [4.7. Software Object-Oriented Design](#47-software-object-oriented-design)
     - [4.7.1. Class Diagrams](#471-class-diagrams)
     - [4.7.2. Class Dictionary](#472-class-dictionary)
@@ -2848,478 +2852,445 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 
   **Enlace Video Web Application Prototype:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318049_upc_edu_pe/IQD6SaN-XMsAR6NvgRD_Ev7BAf-nnmSLy5uYleYv0lLnt0Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=V5Lp6h
 
-  ### 4.6. Domain-Driven Software Architecture
+### 4.6. Domain-Driven Software Architecture
 
-  La arquitectura de software basada en Domain-Driven Design (DDD) se centra en el dominio del negocio, buscando que la aplicación represente de forma fiel los procesos, reglas y necesidades de los usuarios. Con este enfoque, el desarrollo se mantiene alineado con los objetivos estratégicos de la organización y se favorece una comunicación más clara y efectiva entre los equipos técnicos y los expertos del negocio.
+La arquitectura de software de GeoPS API está basada en un enfoque de **monolito modular orientado por Domain-Driven Design (DDD)**. El backend se implementa como una aplicación Spring Boot organizada internamente en módulos de dominio, lo que permite mantener una estructura clara, mantenible y alineada con las responsabilidades del negocio.
 
-  Se utilizó el modelo C4 (Contexto, contenedor y componentes), el cual permite visualizar el sistema en diferentes capas.
+El backend se organiza en bounded contexts que representan responsabilidades específicas del sistema: **Identity**, **Campaign**, **Offers** y un módulo transversal denominado **Shared Kernel**. Cada bounded context mantiene una separación interna entre las capas de dominio, aplicación, infraestructura e interfaces REST, lo que facilita la mantenibilidad del código y permite que cada módulo evolucione de forma ordenada.
 
-  #### 4.6.1. Software Architecture Context Diagram
+GeoPS API aplica una separación tipo **CQRS ligero**, diferenciando los servicios de comando, encargados de operaciones de escritura, de los servicios de consulta, encargados de operaciones de lectura. Esta separación permite organizar mejor los casos de uso y reducir la mezcla de responsabilidades dentro de cada bounded context.
 
-  **Figura 119**<br>
-  *Software Architecture Context Diagram — GeoPS*
+Se utilizó el modelo C4 para representar la arquitectura desde diferentes niveles de abstracción: contexto, contenedores y componentes. En esta versión del sistema, los diagramas representan una aplicación web Angular que consume una API REST desarrollada en Spring Boot, la cual persiste información en una base de datos MySQL.
 
-  <div align="center">
-      <img src="resources/imgs/chapter-iv/GeoPS_System_Context.jpg" alt="GeoPS Software Architecture Context Diagram" width="900">
-  </div>
+#### 4.6.1. Software Architecture Context Diagram
 
-  *Nota.* Elaboración propia (realizado en Structurizr).  
-  
-  El Diagrama de Contexto del sistema de GeoPS muestra una visión de alto nivel de sus componentes y cómo interactúan con usuarios y servicios externos. Este diagrama es útil para comprender la funcionalidad del sistema y sus dependencias.
+**Figura 115**<br>
+*Software Architecture Context Diagram — GeoPS*
 
-  En el centro del diagrama se encuentra GeoPS, la plataforma principal. Su propósito es gestionar la creación de campañas publicitarias geolocalizadas y analizar su audiencia.
+<div align="center">
+    <img src="resources/imgs/chapter-iv/GeoPS_System_Context.png" alt="GeoPS Software Architecture Context Diagram" width="900">
+</div>
 
-  **Actores principales**:
-  Los principales actores que interactúan con el sistema GeoPS son:
+*Nota.* Elaboración propia (realizado en Structurizr).  
 
-  - Consumidor: Este usuario busca ofertas y promociones basadas en su ubicación actual. Interactúa con campañas publicitarias.
+El Diagrama de Contexto de GeoPS muestra la interacción entre los actores principales del sistema y la plataforma web. Los consumidores urbanos interesados en productos orientales/asiáticos utilizan la aplicación para consultar ofertas y promociones disponibles, mientras que los negocios especializados en productos orientales/asiáticos acceden al sistema para gestionar campañas publicitarias y publicar ofertas asociadas. Los administradores pueden supervisar la operación general de la plataforma.
 
-  - Propietario de Negocio: Este usuario es dueño de una empresa que crea y gestiona campañas publicitarias para promover sus productos y servicios.
+A nivel externo, el sistema se compone de la aplicación web GeoPS, el backend GeoPS API, la base de datos MySQL y servicios externos utilizados por la interfaz web. La aplicación web consume los endpoints REST expuestos por GeoPS API mediante HTTP y JSON. La autenticación se gestiona mediante tokens JWT generados por el backend.
 
-  **Servicios Externos**:
+La plataforma utiliza **Google Maps API desde el frontend** para mostrar mapas, apoyar la visualización de ubicaciones y facilitar la experiencia de exploración de ofertas o negocios cercanos dentro de la aplicación web.
 
-  Para su funcionamiento, GeoPS se apoya en varios servicios externos:
+**Actores principales:**
 
-  - **Servicio OAuth** (Autenticación): Permite a los usuarios autenticarse a través de proveedores como Google, Facebook y Microsoft, garantizando un acceso seguro.
+- **Negocios especializados en productos orientales/asiáticos:** Propietarios o administradores de comercios que gestionan campañas publicitarias y publican ofertas asociadas a productos orientales o asiáticos.
+- **Consumidores urbanos interesados en productos orientales/asiáticos:** Usuarios que consultan ofertas, promociones y productos orientales o asiáticos disponibles dentro de la plataforma.
+- **Administrador:** Usuario encargado de supervisar la operación general del sistema.
 
-  - **SendGrid** (Servicio de envío): Se encarga de enviar notificaciones por correo electrónico y confirmaciones a los usuarios.
+**Sistemas y dependencias principales:**
 
-  - **Google Maps API** (Proveedor de servicios): Proporciona servicios de geolocalización, mapas y cálculos de distancia, que son esenciales para las campañas geolocalizadas.
+- **GeoPS Web Application:** Aplicación web desarrollada en Angular, utilizada por consumidores y propietarios de negocio.
+- **GeoPS API:** Backend desarrollado en Spring Boot que centraliza la lógica de negocio y expone endpoints REST.
+- **MySQL Database:** Base de datos relacional utilizada para almacenar usuarios, perfiles, campañas, ofertas y datos de auditoría.
+- **JWT Authentication:** Mecanismo de autenticación basado en tokens para proteger las operaciones del sistema.
+- **Google Maps API:** Servicio utilizado desde el frontend para visualización de mapas y soporte de ubicación.
 
-  - **Stripe/PayPal** (Procesador de pagos): Maneja los pagos, aportes y suscripciones a planes de la plataforma.
-  - **Firebase Cloud Messaging** (Servicio de notificaciones): Permite el envío de notificaciones push para dispositivos móviles y web, habilitando la comunicación en tiempo real.
+#### 4.6.2. Software Architecture Container Diagram
 
-  #### 4.6.3. Software Architecture Container Diagrams
+**Figura 116**<br>
+*Software Architecture — Container Diagram GeoPS*
 
-  **Figura 120**<br>
-  *Software Architecture — Container Diagram GeoPS*
+<div align="center">
+    <img src="resources/imgs/chapter-iv/GeoPS-Container_Architecture.png" alt="GeoPS Software Architecture Container Diagram" width="900">
+</div>
 
-  <div align="center">
-      <img src="resources/imgs/chapter-iv/GeoPS-Container_Architecture.jpg" alt="GeoPS Software Architecture Container Diagram" width="900">
-  </div>
+*Nota.* Elaboración propia (realizado en Structurizr).  
 
-  *Nota.* Elaboración propia (realizado en Structurizr).  
+El Diagrama de Contenedores de GeoPS muestra los elementos desplegables principales del sistema. La aplicación web Angular funciona como cliente principal y permite a los consumidores urbanos interesados en productos orientales/asiáticos consultar promociones y ubicaciones mediante Google Maps API, mientras que los negocios especializados en productos orientales/asiáticos pueden gestionar campañas y ofertas desde la misma plataforma.
 
-  Los usuarios principales, Consumidor y Propietario de Negocio, acceden al sistema a través de distintas aplicaciones web. Los Consumidores utilizan una Aplicación Web , que les permite explorar ofertas y promociones. Por otro lado, los Propietarios de Negocio acceden a una Aplicación Web, donde gestionan sus campañas publicitarias. Ambas aplicaciones se comunican con el backend a través de un API Gateway.
+GeoPS API es el contenedor backend principal. Está desarrollado con Spring Boot y centraliza la lógica de negocio del sistema mediante bounded contexts internos. Dentro de este contenedor se encuentran los módulos **Identity**, **Campaign**, **Offers** y **Shared Kernel**.
 
-  El backend está compuesto por varios microservicios que manejan funcionalidades específicas del sistema:
+La base de datos MySQL funciona como el contenedor de persistencia del sistema. En ella se almacenan los usuarios, detalles de consumidores, detalles de propietarios, campañas, ofertas y campos de auditoría. La comunicación entre GeoPS API y MySQL se realiza mediante Spring Data JPA y JDBC.
 
-  - **Servicio de Autenticación**: Gestiona el inicio de sesión y la seguridad de los usuarios.
+**Contenedores principales:**
 
-  - **Servicio de Campañas**: Permite la creación y gestión de las campañas publicitarias geolocalizadas.
+- **Angular Web Application:** Interfaz web utilizada por consumidores urbanos interesados en productos orientales/asiáticos y por negocios especializados en productos orientales/asiáticos para acceder a las funcionalidades de GeoPS.
+- **GeoPS API - Spring Boot:** Backend modular que expone endpoints REST y contiene la lógica de negocio.
+- **MySQL Database:** Base de datos relacional que almacena la información persistente del sistema.
+- **Google Maps API:** Servicio externo consumido desde el frontend para mostrar mapas y apoyar funcionalidades basadas en ubicación.
 
-  - **Servicio de Negocios**: Se encarga de la información de las empresas y sus productos.
+**Módulos internos de GeoPS API:**
 
-  - **Servicio de Geoposicionamiento**: Maneja la lógica relacionada con la ubicación y las distancias.
+- **Identity Context:** Gestiona usuarios, autenticación, roles, JWT y perfiles de consumidores o propietarios.
+- **Campaign Context:** Gestiona campañas publicitarias, validaciones de fechas, presupuesto, estados y métricas básicas.
+- **Offers Context:** Gestiona ofertas asociadas a campañas y valida que pertenezcan a campañas existentes y activas.
+- **Shared Kernel:** Contiene elementos transversales como auditoría, roles, configuración CORS, OpenAPI, sanitización de texto y estrategia de nombres para persistencia.
 
-  - **Servicio de Analítica**: Procesa los datos para generar estadísticas sobre las campañas.
+#### 4.6.3. Software Architecture Components Diagrams
 
-  - **Servicio de Notificaciones**: Administra las notificaciones internas del sistema.
+Los diagramas de componentes detallan la estructura interna del contenedor backend **GeoPS API**. Debido a que el backend está organizado como un monolito modular basado en Domain-Driven Design, los componentes se presentan por bounded context. Esta decisión permite representar con mayor claridad las responsabilidades internas de cada módulo y evita saturar un único diagrama con todos los controladores, servicios, repositorios y componentes transversales.
 
-  **Almacenamiento de Datos y Caching**
+Cada bounded context mantiene una separación interna entre controladores REST, servicios de aplicación, modelos de dominio, repositorios e integraciones internas. Los bounded contexts representados son **Identity**, **Campaign**, **Offers** y **Shared Kernel**.
 
-  El sistema utiliza varios contenedores para la persistencia y el manejo de datos:
+---
 
-  - **Base de Datos Relacional** (PostgreSQL): Almacena los datos principales del sistema, como información de usuarios, negocios y campañas.
+##### 4.6.3.1. Identity Context Components Diagram
 
-  - **Base de Datos Analítica**: Guarda la información utilizada para generar reportes y análisis.
+**Figura 117**<br>
+*Software Architecture — Identity Context Components Diagram*
 
-  - **Almacenamiento de Archivos** (Cloud Storage): Se utiliza para almacenar activos como imágenes y logotipos.
+<div align="center">
+    <img src="resources/imgs/chapter-iv/GeoPS-Identity_Context_Components.png" alt="GeoPS Identity Context Components Diagram" width="900">
+</div>
 
-  - **Cache Redis**: Mejora el rendimiento del sistema almacenando datos de acceso frecuente para reducir la carga de la base de datos principal.
+*Nota.* Elaboración propia (realizado en Structurizr).
 
-  **Integración con Servicios Externos**
+El **Identity Context** es el bounded context encargado de gestionar la identidad de los usuarios dentro de GeoPS. Sus responsabilidades principales incluyen el registro de usuarios, inicio de sesión, generación de tokens JWT, validación de credenciales, hashing de contraseñas, administración de roles y gestión de información complementaria de los usuarios.
 
-  Para complementar su funcionalidad, GeoPS se integra con diversos servicios externos:
+Este contexto soporta los dos segmentos principales del sistema: **consumidores urbanos interesados en productos orientales/asiáticos** y **negocios especializados en productos orientales/asiáticos**. Para ello, contiene entidades como `User`, `DetailsConsumer` y `DetailsOwner`. La entidad `User` representa la identidad principal del sistema, mientras que `DetailsConsumer` y `DetailsOwner` permiten almacenar información específica según el tipo de usuario.
 
-  **Servicio de Autenticación** (OAuth): Permite a los usuarios autenticarse a través de terceros.
+A nivel de componentes, Identity se organiza mediante controladores REST, servicios de comando, servicios de consulta, servicios de seguridad y repositorios JPA. Los controladores reciben las solicitudes HTTP desde la aplicación web, los servicios de aplicación ejecutan los casos de uso, y los repositorios permiten persistir o consultar información en la base de datos MySQL.
 
-  **Google Maps API**: Proveedor esencial para los servicios de mapas y geolocalización.
+**Componentes principales de Identity Context:**
 
-  **SendGrid**: Encargado del envío de correos electrónicos transaccionales y de notificaciones.
+- `AuthenticationController`
+- `UserController`
+- `DetailsConsumerController`
+- `DetailsOwnerController`
+- `UserCommandService`
+- `UserQueryService`
+- `DetailsConsumerCommandService`
+- `DetailsConsumerQueryService`
+- `DetailsOwnerCommandService`
+- `DetailsOwnerQueryService`
+- `TokenService`
+- `HashingService`
+- `UserRepository`
+- `DetailsConsumerRepository`
+- `DetailsOwnerRepository`
 
-  **Stripe/PayPal**: Procesan los pagos y las suscripciones a los planes de la plataforma.
+**Relaciones principales:**
 
-  **Firebase Cloud Messaging**: Habilita el envío de notificaciones push a dispositivos móviles y web.
+- La aplicación web consume los endpoints de autenticación, usuarios y perfiles mediante HTTP/JSON.
+- `AuthenticationController` delega el registro e inicio de sesión a los servicios de usuario, token y hashing.
+- `UserController` utiliza servicios de comando y consulta para actualizar y recuperar información de usuarios.
+- `DetailsConsumerController` y `DetailsOwnerController` administran la información complementaria de consumidores y negocios.
+- Los repositorios JPA acceden a MySQL para persistir usuarios y perfiles.
 
-  Este diagrama ilustra la arquitectura modular y escalable de GeoPS, mostrando cómo todos sus componentes se comunican para dar soporte a las operaciones principales de la plataforma publicitaria geolocalizada.
+---
 
-  #### 4.6.4. Software Architecture Components Diagrams
+##### 4.6.3.2. Campaign Context Components Diagram
 
-  **Servicio de Analíticas**
-  
-  **Figura 121**<br>
-  *Software Architecture — Analytics Service Components Diagram*
+**Figura 118**<br>
+*Software Architecture — Campaign Context Components Diagram*
 
-  <div align="center">
-      <img src="resources/imgs/chapter-iv/GeoPS-Analytics_Service_Components.jpg" alt="GeoPS Analytics Service Components Diagram" width="900">
-  </div>
+<div align="center">
+    <img src="resources/imgs/chapter-iv/GeoPS-Campaign_Context_Components.png" alt="GeoPS Campaign Context Components Diagram" width="900">
+</div>
 
-  *Nota.* Elaboración propia (realizado en Structurizr).
+*Nota.* Elaboración propia (realizado en Structurizr).
 
-  El diagrama muestra la arquitectura de componentes del Servicio de Analítica de GeoPS, detallando cómo se gestionan y procesan los datos para la generación de reportes y métricas. Este servicio es fundamental para que los Propietarios de Negocio puedan medir el rendimiento de sus campañas.
+El **Campaign Context** es el bounded context encargado de gestionar las campañas publicitarias creadas por los negocios especializados en productos orientales/asiáticos. Sus responsabilidades principales incluyen la creación, consulta, actualización y eliminación de campañas, además de la validación de reglas de negocio asociadas a fechas, presupuesto, estado y métricas básicas.
 
-  **Componentes principales**
-  El flujo de datos comienza con dos puntos de entrada:
+La entidad principal de este contexto es `Campaign`, que representa una campaña publicitaria dentro de la plataforma. Esta entidad contiene información como identificador del propietario, nombre, descripción, fecha de inicio, fecha de fin, estado, presupuesto estimado, impresiones, clics y CTR. El CTR se calcula a partir de la relación entre clics e impresiones, permitiendo medir el rendimiento básico de una campaña.
 
-  **API Gateway**: Sirve como un punto de entrada único y seguro para las solicitudes de reportes provenientes del frontend.
+Campaign se comunica internamente con Identity mediante el puerto `UserExistenceChecker`, utilizado para validar que el usuario asociado a una campaña exista. Esta relación mantiene el bajo acoplamiento entre contextos, ya que Campaign no necesita conocer directamente la implementación interna de Identity.
 
-  **Cola de Mensajes** (RabbitMQ): Recibe eventos de interacción en tiempo real desde otros servicios del sistema.
+**Componentes principales de Campaign Context:**
 
-  Una vez que los datos o solicitudes ingresan al sistema, son procesados por los siguientes componentes:
+- `CampaignController`
+- `CampaignCommandService`
+- `CampaignQueryService`
+- `CampaignRepository`
+- `CreateCampaignCommand`
+- `UpdateCampaignCommand`
+- `DeleteCampaignCommand`
+- `GetCampaignByIdQuery`
+- `GetAllCampaignsQuery`
+- `GetAllCampaignsByUserIdQuery`
+- `UserExistenceChecker`
+- `TextSanitizer`
 
-  **Analytics Controller**: Es la API principal del servicio. Recibe las solicitudes de reportes desde el API Gateway y delega la tarea de generar los informes y exportar los datos.
+**Relaciones principales:**
 
-  **Procesador de Eventos** (Event Loop): Consume los eventos de la Cola de Mensajes en tiempo real y los procesa para su posterior análisis.
+- La aplicación web consume los endpoints de campañas mediante HTTP/JSON.
+- `CampaignController` recibe solicitudes de creación, consulta, actualización y eliminación de campañas.
+- `CampaignCommandService` ejecuta operaciones de escritura y aplica reglas de negocio.
+- `CampaignQueryService` ejecuta operaciones de lectura sobre campañas.
+- `CampaignRepository` persiste y consulta campañas en MySQL.
+- `UserExistenceChecker` valida la existencia del usuario propietario mediante el Identity Context.
+- `TextSanitizer` se utiliza para limpiar campos de texto como nombre y descripción de la campaña.
 
-  **Agregador de Métricas**: Recibe los eventos procesados y calcula las métricas y los indicadores clave de rendimiento (KPIs) de negocio. Almacena estas métricas calculadas en la base de datos.
+---
 
-  **Generador de Reportes**: Se encarga de crear los reportes de rendimiento de las campañas, consultando los datos históricos y las métricas calculadas almacenadas.
+##### 4.6.3.3. Offers Context Components Diagram
 
-  **Exportador de Datos**: Permite exportar los datos analíticos en múltiples formatos.
+**Figura 119**<br>
+*Software Architecture — Offers Context Components Diagram*
 
-  **Servicio de Campañas**
+<div align="center">
+    <img src="resources/imgs/chapter-iv/GeoPS-Offers_Context_Components.png" alt="GeoPS Offers Context Components Diagram" width="900">
+</div>
 
-  **Figura 122**<br>
-  *Software Architecture — Campaign Service Components Diagram*
+*Nota.* Elaboración propia (realizado en Structurizr).
 
-  <div align="center">
-      <img src="resources/imgs/chapter-iv/GeoPS-Analytics_Service_Components-Campaign.jpg" alt="GeoPS Campaign Service Components Diagram" width="900">
-  </div>
+El **Offers Context** es el bounded context encargado de administrar las ofertas o promociones asociadas a campañas. Sus responsabilidades principales incluyen la creación, consulta, actualización y eliminación de ofertas, así como la validación de que cada oferta pertenezca a una campaña existente y activa.
 
-  *Nota.* Elaboración propia (realizado en Structurizr).
+La entidad principal de este contexto es `Offer`, que contiene datos como identificador de campaña, título, negocio asociado, precio, fecha de validez, calificación, ubicación, categoría e imagen. Este contexto representa la parte visible de las promociones que los consumidores urbanos interesados en productos orientales/asiáticos pueden consultar dentro de la plataforma.
 
-  Este diagrama representa la arquitectura de los componentes del Servicio de Campañas en GeoPS, encargado de gestionar la creación, publicación, administración y disponibilidad de las campañas dentro de la plataforma.
+Offers se comunica internamente con Campaign mediante el puerto `CampaignValidationPort`, utilizado para validar la existencia y el estado de la campaña asociada. Esta estructura permite que Offers dependa de Campaign únicamente mediante una interfaz de validación, evitando acoplamiento directo con la implementación interna del contexto de campañas.
 
-  **Flujo de Datos y Componentes**
+**Componentes principales de Offers Context:**
 
-  El flujo inicia con las acciones del **Propietario de Negocio**, que interactúa con el sistema para crear o gestionar una campaña:
+- `OfferController`
+- `OfferCommandService`
+- `OfferQueryService`
+- `OfferRepository`
+- `CreateOfferCommand`
+- `UpdateOfferCommand`
+- `DeleteOfferCommand`
+- `GetOfferByIdQuery`
+- `GetAllOffersQuery`
+- `GetOffersByCampaignIdQuery`
+- `CampaignValidationPort`
 
-  - **API Gateway**  
-    Actúa como punto central de comunicación, enviando solicitudes al servicio.
+**Relaciones principales:**
 
-  - **Campaign Controller**  
-    Interpreta las solicitudes relacionadas a la creación, edición, activación o consulta de campañas.
+- La aplicación web consume los endpoints de ofertas mediante HTTP/JSON.
+- `OfferController` recibe solicitudes para crear, consultar, actualizar y eliminar ofertas.
+- `OfferCommandService` ejecuta operaciones de escritura sobre ofertas.
+- `OfferQueryService` ejecuta operaciones de lectura.
+- `OfferRepository` persiste y consulta ofertas en MySQL.
+- `CampaignValidationPort` valida que la campaña asociada exista y se encuentre activa.
 
-  - **Gestor de Campañas**  
-    Aplica reglas de negocio: validación de fechas, segmentación, disponibilidad, límites de uso, etc.
+---
 
-  - **Campaign Repository**  
-    Persiste la información de campañas en la base de datos y permite consultas rápidas.
+##### 4.6.3.4. Shared Kernel Components Diagram
 
-  Además, los cambios importantes son registrados en el sistema a través del:
+**Figura 120**<br>
+*Software Architecture — Shared Kernel Components Diagram*
 
-  - **Event Publisher**  
-    Publica eventos como:
-    - *Campaña Creada*
-    - *Campaña Activada*
-    - *Campaña Actualizada*
+<div align="center">
+    <img src="resources/imgs/chapter-iv/GeoPS-Shared_Kernel_Components.png" alt="GeoPS Shared Kernel Components Diagram" width="900">
+</div>
 
-  Estos eventos son consumidos por otros servicios como **Analítica** o **Notificaciones**, habilitando la actualización en tiempo real del estado y el seguimiento de métricas.
+*Nota.* Elaboración propia (realizado en Structurizr).
 
-  **Objetivo General del Servicio**
+El **Shared Kernel** agrupa elementos transversales utilizados por los distintos bounded contexts del backend. Este módulo contiene componentes comunes que no pertenecen exclusivamente a Identity, Campaign u Offers, pero que son necesarios para el funcionamiento general del sistema.
 
-  Garantizar que los Propietarios de Negocios cuenten con herramientas para:
+Entre sus responsabilidades se encuentran la auditoría automática, la definición de roles, la configuración CORS para permitir la comunicación con la aplicación web Angular, la configuración OpenAPI para documentar los endpoints REST, la sanitización de texto, los recursos de respuesta comunes y la estrategia personalizada de nombres para tablas y columnas en la base de datos.
 
-  - Crear campañas personalizadas  
-  - Activarlas según la geolocalización del público objetivo  
-  - Gestionar su disponibilidad y contenido  
-  - Mantener consistencia en los datos del negocio  
+**Componentes principales de Shared Kernel:**
 
-  **Servicio de Geolocalización**
+- `AuditableAbstractAggregateRoot`
+- `AuditableModel`
+- `ERole`
+- `WebConfig`
+- `OpenApiConfiguration`
+- `TextSanitizer`
+- `SnakeCaseWithPluralizedTablePhysicalNamingStrategy`
+- `MessageResource`
 
-  **Figura 123**<br>
-  *Software Architecture — Geolocation Service Components Diagram*
+**Relaciones principales:**
 
-  <div align="center">
-      <img src="resources/imgs/chapter-iv/GeoPS-Geolocation_Service_Components.jpg" alt="GeoPS Geolocation Service Components Diagram" width="900">
-  </div>
+- Los bounded contexts utilizan `ERole` para validar roles del sistema.
+- Las entidades principales heredan o utilizan modelos auditables para registrar `createdAt` y `updatedAt`.
+- `WebConfig` permite la comunicación entre el frontend Angular y GeoPS API.
+- `OpenApiConfiguration` documenta los endpoints REST disponibles.
+- `TextSanitizer` apoya la limpieza de campos de texto usados por los casos de uso.
+- `MessageResource` se utiliza para respuestas simples de la API.
 
-  *Nota.* Elaboración propia (realizado en Structurizr).
+---
 
-  Este diagrama detalla la arquitectura de componentes del Servicio de Geoposicionamiento de GeoPS, mostrando cómo se gestionan las funcionalidades basadas en la ubicación. El servicio permite a la plataforma determinar la proximidad geográfica y filtrar contenido relevante para los usuarios.
+**Patrones arquitectónicos implementados**
 
-  **Flujo de Datos y Componentes**
-  El flujo comienza con el API Gateway, que recibe las solicitudes de geolocalización. Estas solicitudes son dirigidas al Geolocalización Controller, que actúa como la API principal del servicio, gestionando la lógica de ubicación y proximidad.
+Los patrones arquitectónicos implementados en GeoPS API son **Domain-Driven Design**, **monolito modular**, **arquitectura por capas** y **CQRS ligero**. DDD se evidencia en la separación del backend por bounded contexts y en el uso de entidades, comandos, consultas y servicios de dominio. El monolito modular permite desplegar el backend como una sola aplicación Spring Boot, manteniendo separación lógica entre módulos. La arquitectura por capas organiza el código en dominio, aplicación, infraestructura e interfaces REST. Finalmente, CQRS ligero se aplica mediante la separación entre servicios de comando para escritura y servicios de consulta para lectura.
 
-  El servicio se apoya en los siguientes componentes para procesar la información geográfica:
-
-  **Validador de Ubicación**: Es el primer punto de validación. Se asegura de que las coordenadas proporcionadas estén dentro de rangos y zonas permitidas. También se comunica con servicios externos, como la Google Maps API, para validar y enriquecer la información de ubicación, así como para realizar cálculos de distancia.
-
-  **Filtro Geográfico**: Una vez que la ubicación es validada, este componente filtra el contenido (como campañas o negocios) basándose en la ubicación actual del usuario.
-
-  **Calculador de Distancias**: Utiliza los datos del usuario y del contenido para calcular la distancia geográfica. Este componente consulta un Cache Geográfico para optimizar el rendimiento y evitar cálculos repetitivos.
-
-  **Cache Geográfico** (Redis): Almacena resultados de cálculos de distancias y ubicaciones frecuentes. También se utiliza un Cache Redis para guardar las sesiones de los usuarios, lo que mejora la velocidad del servicio al recordar la ubicación del usuario y los filtros aplicados.
-
-  **Almacenamiento y Servicios Externos**
-
-  **Base de Datos Principal**: Almacena la información de los negocios, las campañas y las relaciones principales, que el servicio de geolocalización consulta para determinar el contenido relevante.
-
-  **Google Maps API**: Es un servicio externo vital que provee las funcionalidades de geolocalización, mapas y cálculo de distancias.
+Además, se aplican patrones como **Repository Pattern**, para abstraer el acceso a datos mediante repositorios JPA, y **Assembler / Transformer Pattern**, para convertir entidades de dominio en recursos REST y viceversa.
 
 ### 4.7. Software Object-Oriented Design
 
-  #### 4.7.1. Class Diagrams
+#### 4.7.1. Class Diagrams
 
-  El diagrama de clases de GeoPS está organizado siguiendo los principios de Domain-Driven Design (DDD) con arquitectura hexagonal y CQRS, dividido en 11 bounded contexts que representan las áreas principales del negocio. El diseño sigue una separación clara entre las capas de dominio, aplicación, infraestructura e interfaces.
+El diseño orientado a objetos de GeoPS se organiza siguiendo los principios de Domain-Driven Design, con separación entre entidades de dominio, comandos, consultas, servicios de aplicación, repositorios y controladores REST. El backend se encuentra dividido en tres bounded contexts principales: **Identity**, **Campaign** y **Offers**, además de un **Shared Kernel** para elementos transversales.
 
-  **Figura 124**<br>
-  *Diagrama de Clases de GeoPS*
-  
-  <div align="center">
-      <img src="resources/class-diagran-geops.svg" alt="Diagrama de Clases GeoPS" width="900">
-  </div>
+Cada bounded context concentra sus propias clases de dominio y sus propios casos de uso. Identity agrupa las clases relacionadas con usuarios, autenticación y perfiles; Campaign agrupa las clases relacionadas con campañas publicitarias, estados y métricas; Offers agrupa las clases relacionadas con ofertas asociadas a campañas; y Shared contiene clases comunes de configuración, auditoría, roles y utilidades. Esta estructura permite mantener una separación clara entre responsabilidades y evita mezclar lógica de negocio de distintos módulos.
 
-  **Bounded Contexts implementados:**
+**Figura 121**<br>
+*Diagrama de Clases de GeoPS*
 
-  **Contextos Core (4):**
-  1. **Identity BC**: Gestiona usuarios, autenticación y perfiles (User aggregate)
-  2. **Offers BC**: Maneja ofertas geolocalizadas vinculadas a campañas (Offer aggregate)
-  3. **Cart BC**: Gestión del carrito de compras y items (Cart, CartItem aggregates)
-  4. **Payments BC**: Procesamiento de pagos con múltiples métodos (Payment aggregate, PaymentMethod, PaymentStatus enums)
+<div align="center">
+    <img src="resources/class-diagran-geops.svg" alt="Diagrama de Clases GeoPS" width="900">
+</div>
 
-  **Contextos Supporting (6):**
-  5. **Coupons BC**: Generación y redención de cupones tras compras (Coupon aggregate)
-  6. **Notifications BC**: Sistema de notificaciones en tiempo real (Notification aggregate, NotificationType enum, NotificationFactoryService)
-  7. **Reviews BC**: Reseñas y calificaciones de ofertas (Review aggregate)
-  8. **Favorites BC**: Gestión de ofertas favoritas por usuario (Favorite aggregate)
-  9. **Subscriptions BC**: Planes Free y Premium (Subscription aggregate, SubscriptionType enum)
-  10. **Campaign BC**: Gestión de campañas publicitarias (Campaign aggregate, CampaignStatus enum)
+*Nota.* Elaboración propia.
 
-  **Shared Kernel (1):**
-  11. **Shared BC**: Componentes compartidos (AuditableAbstractAggregateRoot, configuraciones JPA, CORS, OpenAPI)
+**Bounded Contexts implementados:**
 
-  **Arquitectura por capas:**
+**Contextos principales:**
 
-  - **Domain Layer**: Aggregates, Entities, Value Objects, Commands, Queries, Service Interfaces
-  - **Application Layer**: CommandServiceImpl, QueryServiceImpl (implementan CQRS)
-  - **Infrastructure Layer**: JPA Repositories con Spring Data
-  - **Interfaces Layer**: REST Controllers, Resources, Assemblers
+1. **Identity BC:** Gestiona usuarios, autenticación, roles, JWT y perfiles de consumidores o propietarios.
+2. **Campaign BC:** Gestiona campañas publicitarias, validaciones de fechas, estados, presupuesto, métricas básicas e interacción con usuarios propietarios.
+3. **Offers BC:** Gestiona ofertas asociadas a campañas y valida que solo se creen ofertas sobre campañas existentes y activas.
 
-  #### 4.7.2. Class Dictionary
+**Shared Kernel:**
 
-  **Identity Bounded Context**
+4. **Shared Kernel:** Agrupa componentes transversales como auditoría, roles, configuración CORS, configuración OpenAPI, sanitización de texto, recursos comunes y estrategia de nombres para persistencia.
 
-  **Tabla 10**   
-  *Class Dictionary — Identity BC*  
+**Arquitectura por capas:**
 
-  | **Clase**              | **Atributos**                                                                                                                                    | **Descripción**                                                                                                                               |
-  | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
-  | **User**               | - id: Long<br>- name: String<br>- email: String<br>- phone: String<br>- password: String<br>- role: String<br>- userType: String                 | Aggregate root que representa usuarios del sistema. Extiende AuditableAbstractAggregateRoot para auditoría automática (createdAt, updatedAt). |
-  | **UserCommandService** | + handle(CreateUserCommand): Optional\<User\><br>+ handle(UpdateUserCommand): Optional\<User\><br>+ handle(DeleteUserCommand): boolean           | Interfaz del dominio para operaciones de escritura siguiendo patrón CQRS.                                                                     |
-  | **UserQueryService**   | + handle(GetUserByIdQuery): Optional\<User\><br>+ handle(GetAllUsersQuery): List\<User\><br>+ handle(GetUserByEmailQuery): Optional\<User\>      | Interfaz del dominio para operaciones de lectura siguiendo patrón CQRS.                                                                       |
-  | **UserController**     | + getAllUsers(): ResponseEntity<br>+ getUserById(id): ResponseEntity<br>+ createUser(resource): ResponseEntity<br>+ updateUser(): ResponseEntity | REST Controller que expone endpoints en /api/v1/users. Usa UserCommandService y UserQueryService.                                             |
-  | **UserRepository**     | + findByEmail(email): Optional\<User\><br>+ findByPhone(phone): Optional\<User\><br>+ existsByEmail(email): boolean                              | Repositorio JPA con métodos de consulta personalizados. Extiende JpaRepository.                                                               |
-  | **CreateUserCommand**  | + name: String<br>+ email: String<br>+ phone: String<br>+ password: String                                                                       | Record inmutable que representa el comando para crear usuario (patrón CQRS).                                                                  |
-  | **UserResource**       | + id: Long<br>+ name: String<br>+ email: String<br>+ phone: String<br>+ role: String<br>+ userType: String                                       | Código para respuestas API. Transformado desde User mediante UserResourceFromEntityAssembler.                                                 |
+- **Domain Layer:** Aggregates, value objects, commands, queries y service interfaces.
+- **Application Layer:** Command services y query services para la ejecución de casos de uso.
+- **Infrastructure Layer:** Repositories, persistencia con Spring Data JPA, seguridad, hashing y tokens.
+- **Interfaces Layer:** REST controllers, resources y assemblers/transformers.
 
-  *Nota.* Elaboración propia.
+#### 4.7.2. Class Dictionary
 
-  **Offers Bounded Context**
+**Identity Bounded Context**
 
-  **Tabla 11**   
-  *Class Dictionary — Offers BC*  
+**Tabla 10**   
+*Class Dictionary — Identity BC*  
 
-  | **Clase**               | **Atributos**                                                                                                                                                                                                | **Descripción**                                                                                                           |
-  | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-  | **Offer**               | - id: Long<br>- campaign: Campaign<br>- title: String<br>- partner: String<br>- price: BigDecimal<br>- originalPrice: BigDecimal<br>- category: String<br>- location: String<br>- latitude/longitude: Double | Aggregate root de ofertas. Relación ManyToOne con Campaign. Incluye geolocalización (latitude, longitude) para targeting. |
-  | **OfferCommandService** | + handle(CreateOfferCommand): Optional\<Offer\><br>+ handle(UpdateOfferCommand): Optional\<Offer\><br>+ handle(DeleteOfferCommand): void                                                                     | Servicio de comandos para operaciones de escritura en ofertas.                                                            |
-  | **OfferQueryService**   | + handle(GetOfferByIdQuery): Optional\<Offer\><br>+ handle(GetAllOffersQuery): List\<Offer\><br>+ handle(GetOffersByIdsQuery): List\<Offer\>                                                                 | Servicio de consultas para operaciones de lectura en ofertas.                                                             |
-  | **OfferController**     | + getAllOffers(): ResponseEntity<br>+ getOfferById(id): ResponseEntity<br>+ createOffer(resource): ResponseEntity<br>+ updateOffer(): ResponseEntity                                                         | REST Controller en /api/v1/offers. Implementa endpoints CRUD completos.                                                   |
-  | **OfferRepository**     | + findByCategory(category): List\<Offer\><br>+ findByValidUntilAfter(date): List\<Offer\>                                                                                                                    | Repositorio JPA con consultas por categoría y validez temporal.                                                           |
-  | **CreateOfferCommand**  | + campaignId: Long<br>+ title: String<br>+ partner: String<br>+ price: BigDecimal<br>+ description: String<br>+ category: String                                                                             | Command para creación de ofertas con validación de Campaign existente.                                                    |
-  | **OfferResource**       | + id: Long<br>+ title: String<br>+ partner: String<br>+ price: BigDecimal<br>+ category: String<br>+ location: String<br>+ imageUrl: String                                                                  | Código de respuesta para ofertas. Transformado mediante OfferResourceFromEntityAssembler.                                 |
+| **Clase** | **Atributos / Métodos principales** | **Descripción** |
+|---|---|---|
+| **User** | id, name, email, phone, password, role, plan, createdAt, updatedAt | Aggregate root que representa al usuario principal del sistema. Gestiona datos de identidad, rol y plan. |
+| **DetailsConsumer** | user, categoriasFavoritas, permisoUbicacion, direccionCasa, direccionTrabajo, direccionUniversidad | Entidad que almacena información complementaria del usuario consumidor. |
+| **DetailsOwner** | user, businessName, businessType, taxId, website, description, address, horarioAtencion | Entidad que almacena información complementaria del propietario de negocio. |
+| **UserCommandService** | handle(CreateUserCommand), handle(UpdateUserCommand), handle(DeleteUserCommand) | Servicio de comandos para operaciones de escritura sobre usuarios. |
+| **UserQueryService** | handle(GetUserByIdQuery), handle(GetUserByEmailQuery), handle(GetUserByPhoneQuery) | Servicio de consultas para recuperar información de usuarios. |
+| **AuthenticationController** | signUp(), signIn() | Controlador REST encargado del registro e inicio de sesión de usuarios. |
+| **UserController** | getUserById(), getUserByEmail(), updateUser() | Controlador REST para consulta y actualización de usuarios. |
+| **DetailsConsumerController** | getDetailsByUserId(), createDetails(), updateDetails() | Controlador REST para gestionar información adicional de consumidores. |
+| **DetailsOwnerController** | getDetailsByUserId(), createDetails(), updateDetails() | Controlador REST para gestionar información adicional de propietarios. |
+| **UserRepository** | findByEmail(), findByPhone(), existsByEmail(), existsByPhone() | Repositorio JPA para persistencia y consulta de usuarios. |
+| **TokenService** | generateToken(), validateToken(), getUsernameFromToken() | Servicio encargado de generar y validar tokens JWT. |
+| **HashingService** | encode(), matches() | Servicio encargado de aplicar hashing a contraseñas mediante BCrypt. |
 
-  *Nota.* Elaboración propia.
+*Nota.* Elaboración propia.
 
-  **Cart Bounded Context**
+**Campaign Bounded Context**
 
-  **Tabla 12**   
-  *Class Dictionary — Cart BC*  
+**Tabla 11**   
+*Class Dictionary — Campaign BC*  
 
-  | **Clase**                | **Atributos**                                                                                                                                | **Descripción**                                                                                                                |
-  | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-  | **Cart**                 | - id: Long<br>- user: User<br>- items: List\<CartItem\><br>- totalItems: Integer<br>- totalAmount: Double                                    | Aggregate root del carrito. Relación ManyToOne con User y OneToMany con CartItem. Calcula totales automáticamente.             |
-  | **CartItem**             | - id: Long<br>- cart: Cart<br>- offerId: Long<br>- offerTitle: String<br>- offerPrice: Double<br>- quantity: Integer<br>- total: Double      | Entity dentro del aggregate Cart. Almacena snapshot de información de la oferta para independencia del bounded context Offers. |
-  | **CartCommandService**   | + handle(AddItemToCartCommand): Optional\<Cart\><br>+ handle(UpdateCartItemCommand): Optional\<Cart\><br>+ handle(ClearCartCommand): boolean | Servicio de comandos. Valida existencia de User y Offer antes de agregar items.                                                |
-  | **CartQueryService**     | + handle(GetCartByUserIdQuery): Optional\<Cart\><br>+ handle(GetCartByIdQuery): Optional\<Cart\>                                             | Servicio de consultas para recuperar carritos por usuario o ID.                                                                |
-  | **CartController**       | + getCartByUserId(userId): ResponseEntity<br>+ addItemToCart(userId, resource): ResponseEntity<br>+ updateCartItem(): ResponseEntity         | REST Controller en /api/v1/cart. Gestiona ciclo completo del carrito.                                                          |
-  | **CartRepository**       | + findByUserId(userId): Optional\<Cart\>                                                                                                     | Repositorio JPA. Un usuario tiene un único carrito activo.                                                                     |
-  | **AddItemToCartCommand** | + userId: Long<br>+ offerId: Long<br>+ quantity: Integer                                                                                     | Command para agregar items. Valida stock y disponibilidad de oferta.                                                           |
-  | **CartResource**         | + id: Long<br>+ userId: Long<br>+ items: List\<CartItemResource\><br>+ totalItems: Integer<br>+ totalAmount: Double                          | Código de respuesta con estructura completa del carrito incluyendo items anidados.                                             |
+| **Clase** | **Atributos / Métodos principales** | **Descripción** |
+|---|---|---|
+| **Campaign** | id, userId, name, description, startDate, endDate, status, estimatedBudget, totalImpressions, totalClicks, CTR, createdAt, updatedAt | Aggregate root que representa una campaña publicitaria creada por un propietario de negocio. |
+| **CampaignStatus** | ACTIVE, FINALIZED | Enumeración que representa los estados disponibles de una campaña. |
+| **CreateCampaignCommand** | userId, name, description, startDate, endDate, estimatedBudget, requesterRole | Comando utilizado para crear una campaña. Valida fechas, presupuesto, texto y rol del usuario. |
+| **UpdateCampaignCommand** | id, name, description, startDate, endDate, status, estimatedBudget, totalImpressions, totalClicks | Comando utilizado para actualizar una campaña existente. |
+| **DeleteCampaignCommand** | id | Comando utilizado para eliminar una campaña. |
+| **CampaignCommandService** | handle(CreateCampaignCommand), handle(UpdateCampaignCommand), handle(DeleteCampaignCommand) | Servicio de comandos encargado de crear, actualizar y eliminar campañas. |
+| **CampaignQueryService** | handle(GetCampaignByIdQuery), handle(GetAllCampaignsQuery), handle(GetAllCampaignsByUserIdQuery) | Servicio de consultas encargado de obtener campañas por ID, por usuario o de forma general. |
+| **CampaignController** | createCampaign(), getAllCampaigns(), getCampaignById(), getCampaignsByUserId(), updateCampaign(), deleteCampaign() | Controlador REST que expone los endpoints de campañas. |
+| **CampaignRepository** | findByUserId(), findById(), save(), deleteById() | Repositorio JPA para persistencia y consulta de campañas. |
+| **UserExistenceChecker** | existsById() | Puerto interno utilizado para validar la existencia de un usuario desde el Campaign Context. |
 
-  *Nota.* Elaboración propia.
+*Nota.* Elaboración propia.
 
-  **Payments Bounded Context**
+**Offers Bounded Context**
 
-  **Tabla 13**   
-  *Class Dictionary — Payments BC*  
+**Tabla 12**   
+*Class Dictionary — Offers BC*  
 
-  | **Clase**                 | **Atributos**                                                                                                                                                                         | **Descripción**                                                                                                                        |
-  | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-  | **Payment**               | - id: Long<br>- userId: Long<br>- cartId: Long<br>- amount: BigDecimal<br>- paymentMethod: PaymentMethod<br>- status: PaymentStatus<br>- paymentCode: String<br>- completedAt: String | Aggregate root de pagos. Almacena IDs de User y Cart para trazabilidad sin acoplamiento fuerte.                                        |
-  | **PaymentMethod**         | CARD, YAPE, PLIN                                                                                                                                                                      | Enum con métodos de pago soportados (tarjeta de crédito, Yape, Plin).                                                                  |
-  | **PaymentStatus**         | PENDING, COMPLETED, FAILED                                                                                                                                                            | Enum con estados del pago durante su ciclo de vida.                                                                                    |
-  | **PaymentCommandService** | + handle(CreatePaymentCommand): Optional\<Payment\><br>+ completePayment(paymentId, completedAt): Optional\<Payment\><br>+ failPayment(paymentId): Optional\<Payment\>                | Servicio de comandos. completePayment() dispara creación de notificaciones vía NotificationFactoryService (integración cross-context). |
-  | **PaymentQueryService**   | + handle(GetPaymentByIdQuery): Optional\<Payment\><br>+ handle(GetAllPaymentsByUserIdQuery): List\<Payment\>                                                                          | Servicio de consultas para historial de pagos del usuario.                                                                             |
-  | **PaymentController**     | + createPayment(resource): ResponseEntity<br>+ getPaymentById(id): ResponseEntity<br>+ completePayment(id): ResponseEntity<br>+ failPayment(id): ResponseEntity                       | REST Controller en /api/v1/payments. Endpoint PUT /payments/{id}/complete marca pago como completado.                                  |
-  | **PaymentRepository**     | + findByUserId(userId): List\<Payment\><br>+ findByCartId(cartId): List\<Payment\><br>+ findByStatus(status): List\<Payment\>                                                         | Repositorio JPA con consultas por usuario, carrito y estado.                                                                           |
-  | **CreatePaymentCommand**  | + userId: Long<br>+ cartId: Long<br>+ amount: BigDecimal<br>+ paymentMethod: String<br>+ customerEmail: String                                                                        | Command para iniciar pago. Captura información del cliente para procesamiento.                                                         |
-  | **PaymentResource**       | + id: Long<br>+ userId: Long<br>+ amount: BigDecimal<br>+ paymentMethod: String<br>+ status: String<br>+ paymentCodes: List<br>+ completedAt: String                                  | Código de respuesta con información completa del pago incluyendo códigos de cupones generados.                                         |
+| **Clase** | **Atributos / Métodos principales** | **Descripción** |
+|---|---|---|
+| **Offer** | id, campaignId, title, partner, price, validTo, rating, location, category, imageUrl, createdAt, updatedAt | Aggregate root que representa una oferta asociada a una campaña. |
+| **CreateOfferCommand** | campaignId, title, partner, price, validTo, rating, location, category, imageUrl | Comando utilizado para crear una oferta. Valida datos obligatorios, precio, calificación y campaña asociada. |
+| **UpdateOfferCommand** | id, title, partner, price, validTo, rating, location, category, imageUrl | Comando utilizado para actualizar una oferta existente. |
+| **DeleteOfferCommand** | id | Comando utilizado para eliminar una oferta. |
+| **OfferCommandService** | handle(CreateOfferCommand), handle(UpdateOfferCommand), handle(DeleteOfferCommand) | Servicio de comandos encargado de crear, actualizar y eliminar ofertas. |
+| **OfferQueryService** | handle(GetOfferByIdQuery), handle(GetAllOffersQuery), handle(GetOffersByCampaignIdQuery) | Servicio de consultas encargado de obtener ofertas por ID, por campaña o de forma general. |
+| **OfferController** | createOffer(), getAllOffers(), getOfferById(), getOffersByCampaignId(), updateOffer(), deleteOffer() | Controlador REST que expone los endpoints de ofertas. |
+| **OfferRepository** | findByCampaignId(), findById(), save(), deleteById() | Repositorio JPA para persistencia y consulta de ofertas. |
+| **CampaignValidationPort** | existsById(), isActive() | Puerto interno utilizado para validar existencia y estado de una campaña desde el Offers Context. |
 
-  *Nota.* Elaboración propia.
+*Nota.* Elaboración propia.
 
-  **Notifications Bounded Context**
+**Shared Kernel**
 
-  **Tabla 14**   
-  *Class Dictionary — Notifications BC*  
+**Tabla 13**   
+*Class Dictionary — Shared Kernel*  
 
-  | **Clase**                      | **Atributos**                                                                                                                                                                          | **Descripción**                                                                                                                               |
-  | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-  | **Notification**               | - id: Long<br>- userId: Long<br>- type: NotificationType<br>- title: String<br>- message: String<br>- isRead: boolean<br>- relatedEntityId: String<br>- actionUrl: String              | Aggregate root de notificaciones. Usa NotificationType enum para categorizar. Incluye URL de acción para navegación directa.                  |
-  | **NotificationType**           | PAYMENT, PREMIUM_UPGRADE, PROFILE_UPDATE, FAVORITE, COUPON_EXPIRATION, REVIEW_COMMENT                                                                                                  | Enum con tipos de notificaciones soportadas en el sistema.                                                                                    |
-  | **NotificationFactoryService** | + createPaymentNotification(userId, paymentId, amount)<br>+ createPremiumUpgradeNotification(userId)<br>+ createFavoriteAddedNotification(userId, offerId, title)                      | Servicio de aplicación que crea notificaciones específicas. Usado por otros bounded contexts (Payments, Reviews, Favorites) para integración. |
-  | **NotificationCommandService** | + handle(CreateNotificationCommand): Optional\<Notification\><br>+ handle(MarkNotificationAsReadCommand): Optional\<Notification\>                                                     | Servicio de comandos para crear y marcar como leídas.                                                                                         |
-  | **NotificationQueryService**   | + handle(GetNotificationsByUserIdQuery): List\<Notification\><br>+ handle(GetUnreadCountByUserIdQuery): Long                                                                           | Servicio de consultas. Incluye conteo de no leídas para badge en UI.                                                                          |
-  | **NotificationController**     | + getNotificationsByUserId(userId): ResponseEntity<br>+ markAsRead(id): ResponseEntity<br>+ markAllAsRead(userId): ResponseEntity<br>+ deleteNotification(id): ResponseEntity          | REST Controller en /api/v1/notifications. Soporte para marcar todas como leídas.                                                              |
-  | **NotificationRepository**     | + findByUserId(userId): List\<Notification\><br>+ findByUserIdAndIsRead(userId, isRead): List\<Notification\><br>+ countByUserIdAndIsRead(userId, isRead): Long                        | Repositorio JPA con consultas filtradas por estado de lectura y conteo.                                                                       |
-  | **NotificationResource**       | + id: Long<br>+ userId: Long<br>+ type: String<br>+ title: String<br>+ message: String<br>+ isRead: boolean<br>+ relatedEntityId: String<br>+ actionUrl: String<br>+ createdAt: String | Código de respuesta con información completa incluyendo timestamp de creación.                                                                |
+| **Clase** | **Atributos / Métodos principales** | **Descripción** |
+|---|---|---|
+| **AuditableAbstractAggregateRoot** | id, createdAt, updatedAt | Clase base abstracta para aggregates con soporte de auditoría automática. |
+| **AuditableModel** | createdAt, updatedAt | Clase base para modelos auditables. |
+| **ERole** | CONSUMER, OWNER, SUPPLIER, ADMIN | Enumeración de roles disponibles en el sistema. |
+| **WebConfig** | addCorsMappings() | Configuración CORS para permitir comunicación con la aplicación web Angular. |
+| **OpenApiConfiguration** | customOpenAPI() | Configuración de documentación automática de endpoints mediante OpenAPI/Swagger. |
+| **TextSanitizer** | sanitize() | Utilidad para limpiar texto y reducir riesgos asociados a contenido HTML no deseado. |
+| **SnakeCaseWithPluralizedTablePhysicalNamingStrategy** | toPhysicalTableName(), toPhysicalColumnName() | Estrategia de nombres para convertir clases y atributos Java a nombres de tablas y columnas en snake_case. |
+| **MessageResource** | message | Recurso genérico para respuestas simples de API. |
 
-  *Nota.* Elaboración propia.
+*Nota.* Elaboración propia.
 
-  **Shared Kernel**
+**Patrones de diseño implementados:**
 
-  **Tabla 15**   
-  *Class Dictionary — Shared BC*  
-
-  | **Clase**                                              | **Atributos / Métodos**                                                                               | **Descripción**                                                                                                               |
-  | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-  | **AuditableAbstractAggregateRoot**                     | - id: Long<br>- createdAt: Date<br>- updatedAt: Date<br>+ getId(): Long<br>+ getCreatedAt(): Date     | Clase base abstracta para todos los aggregates. Proporciona auditoría automática con @CreatedDate y @LastModifiedDate de JPA. |
-  | **SnakeCaseWithPluralizedTablePhysicalNamingStrategy** | + toPhysicalTableName(name, context): Identifier<br>+ toPhysicalColumnName(name, context): Identifier | Naming strategy personalizada de Hibernate. Convierte nombres de Java (camelCase) a snake_case con tablas pluralizadas.       |
-  | **JpaAuditingConfiguration**                           | + auditorAware(): AuditorAware\<String\>                                                              | Configuración Spring para habilitar JPA Auditing (@EnableJpaAuditing).                                                        |
-  | **OpenApiConfiguration**                               | + customOpenAPI(): OpenAPI                                                                            | Configuración de SpringDoc OpenAPI para documentación automática de API REST en /swagger-ui.html.                             |
-  | **CorsConfiguration**                                  | + corsConfigurationSource(): CorsConfigurationSource                                                  | Configuración CORS para permitir peticiones desde frontend Angular (origins, methods, headers).                               |
-  | **MessageResource**                                    | + message: String                                                                                     | Código genérico para respuestas simples de texto en endpoints (ej: mensajes de éxito, error).                                 |
-
-  *Nota.* Elaboración propia.
-
-  **Patrones de diseño implementados:**
-
-  - **DDD (Domain-Driven Design)**: Organización en bounded contexts con aggregates claramente definidos
-  - **CQRS (Command Query Responsibility Segregation)**: Separación de servicios de comando y consulta
-
+- **Domain-Driven Design:** Organización del backend en bounded contexts con responsabilidades claramente definidas.
+- **Monolito modular:** Despliegue único de Spring Boot con separación lógica interna por módulos de dominio.
+- **CQRS ligero:** Separación entre servicios de comando y servicios de consulta.
+- **Arquitectura por capas:** Separación entre dominio, aplicación, infraestructura e interfaces REST.
+- **Repository Pattern:** Uso de repositorios JPA para abstraer el acceso a datos.
+- **Assembler / Transformer Pattern:** Conversión entre entidades de dominio y recursos REST.
 
 ### 4.8. Database Design
 
-  #### 4.8.1. Relational/Non-Relational Database Diagram
+#### 4.8.1. Relational/Non-Relational Database Diagram
 
-  El diseño de la base de datos de GeoPS implementa un esquema relacional robusto que soporta la arquitectura DDD y los 11 bounded contexts del sistema. La base de datos MySQL 8.0 está optimizada para transacciones, consultas geoespaciales mediante ubicació del usuario, y seguimiento completo de interacciones de usuarios con auditoría automática.
+El diseño de base de datos de GeoPS utiliza un modelo relacional basado en MySQL. La base de datos soporta los módulos actualmente implementados en el backend: usuarios, detalles de consumidores, detalles de propietarios, campañas y ofertas. El diseño mantiene campos de auditoría como fecha de creación y fecha de actualización, alineándose con la configuración de auditoría utilizada por la aplicación.
 
-  **Figura 125**<br>
-  *Diagrama de Base de Datos — GeoPS*
+La persistencia se centra en las entidades principales del sistema y en las relaciones lógicas entre ellas. Los datos se organizan de acuerdo con los bounded contexts definidos en la arquitectura del backend, manteniendo una separación clara entre identidad, campañas, ofertas y elementos compartidos.
 
-  <div align="center">
-      <img src="resources/imgs/chapter-iv/diagrama-db.jpg" alt="Database Design — Diagrama de Base de Datos GeoPS" width="900">
-  </div>
+**Figura 122**<br>
+*Diagrama de Base de Datos — GeoPS*
 
-  *Nota.* El script SQL completo de creación de la base de datos se encuentra en `geops-backend/geopsdb.sql`
+<div align="center">
+    <img src="resources/imgs/chapter-iv/diagrama-db.jpg" alt="Database Design — Diagrama de Base de Datos GeoPS" width="900">
+</div>
 
-  **Convenciones de nomenclatura implementadas:**
+*Nota.* Elaboración propia. El diseño representa las tablas principales implementadas actualmente en GeoPS API.
 
-  - **Nombres de tablas**: snake_case pluralizado (ej: `users`, `cart_items`, `notifications`)
-  - **Columnas**: snake_case (ej: `user_id`, `created_at`, `is_read`)
-  - **Primary Keys**: `BIGINT AUTO_INCREMENT` para soportar alto volumen de datos
-  - **Timestamps**: `DATETIME(6)` con precisión de microsegundos para auditoría exacta
-  - **Charset**: `utf8mb4` con collation `utf8mb4_unicode_ci` para soporte Unicode completo
-  - **Engine**: InnoDB para transacciones ACID y foreign keys
+**Convenciones de nomenclatura implementadas:**
 
-  **Descripción de las principales tablas por bounded context:**
+- **Nombres de tablas:** snake_case pluralizado, por ejemplo `users`, `campaigns`, `offers`.
+- **Columnas:** snake_case, por ejemplo `user_id`, `created_at`, `updated_at`.
+- **Primary Keys:** identificadores numéricos autogenerados.
+- **Timestamps:** campos de auditoría `created_at` y `updated_at`.
+- **Motor de base de datos:** MySQL con persistencia gestionada mediante Spring Data JPA.
+- **Relaciones lógicas entre módulos:** uso de identificadores como `user_id` y `campaign_id` para mantener bajo acoplamiento entre bounded contexts.
 
-  **Identity BC:**
-  - **users**: Tabla principal de usuarios con autenticación (id, name, email, phone, password, role, user_type, created_at, updated_at)
-    * Índice único en `email` para login rápido
-    * Soporte para roles y tipos de usuario (FREE, PREMIUM)
+**Descripción de las principales tablas por bounded context:**
 
-  **Offers BC:**
-  - **campaigns**: Campañas publicitarias (id, name, description, start_date, end_date, status, created_at, updated_at)
-    * Enum status: ACTIVE, INACTIVE, EXPIRED
-  - **offers**: Ofertas geolocalizadas (id, campaign_id, title, partner, price, original_price, description, category, location, latitude, longitude, image_url, valid_until, code_prefix, created_at, updated_at)
-    * FK a campaigns (ManyToOne)
-    * Índices en category y valid_until para filtrado rápido
-    * Coordenadas geográficas (DOUBLE) para cálculo de distancias
+**Identity BC:**
 
-  **Cart BC:**
-  - **carts**: Carrito de compras por usuario (id, user_id, total_items, total_amount, created_at, updated_at)
-    * FK a users (ManyToOne)
-    * Un carrito activo por usuario
-  - **cart_items**: Items individuales del carrito (id, cart_id, offer_id, offer_title, offer_price, offer_image_url, quantity, total, created_at, updated_at)
-    * FK a carts (ManyToOne)
-    * Snapshot de datos de la oferta para independencia
+- **users:** Tabla principal de usuarios del sistema. Almacena información como nombre, correo electrónico, teléfono, contraseña cifrada, rol, plan y campos de auditoría.
+- **details_consumers:** Tabla asociada a usuarios consumidores. Almacena preferencias, permisos de ubicación y direcciones relevantes.
+- **details_owners:** Tabla asociada a usuarios propietarios. Almacena información del negocio, como nombre comercial, tipo de negocio, RUC, sitio web, descripción, dirección y horario de atención.
 
-  **Payments BC:**
-  - **payments**: Transacciones de pago (id, user_id, cart_id, offer_id, amount, payment_method, status, payment_code, payment_codes, customer_email, customer_first_name, customer_last_name, completed_at, created_at, updated_at)
-    * Enum payment_method: CARD, YAPE, PLIN
-    * Enum status: PENDING, COMPLETED, FAILED
-    * JSON payment_codes para múltiples cupones generados
-    * Índices en user_id, cart_id y status
+**Campaign BC:**
 
-  **Coupons BC:**
-  - **coupons**: Cupones generados post-compra (id, user_id, payment_id, offer_id, code, product_type, payment_code, is_redeemed, redeemed_at, created_at, updated_at)
-    * FK a users, payments y offers
-    * Índice en code (UNIQUE) para validación rápida
-    * Boolean is_redeemed para control de uso
+- **campaigns:** Tabla que almacena las campañas publicitarias creadas por usuarios propietarios. Contiene información como `user_id`, nombre, descripción, fecha de inicio, fecha de fin, estado, presupuesto estimado, impresiones, clics, CTR y campos de auditoría.
+- El campo `user_id` permite asociar la campaña con el propietario responsable. Esta asociación se maneja como una referencia lógica entre el Campaign Context y el Identity Context.
 
-  **Notifications BC:**
-  - **notifications**: Sistema de notificaciones en tiempo real (id, user_id, type, title, message, is_read, related_entity_id, related_entity_type, action_url, created_at, updated_at)
-    * Enum type: PAYMENT, PREMIUM_UPGRADE, PROFILE_UPDATE, FAVORITE, COUPON_EXPIRATION, REVIEW_COMMENT
-    * Índices compuestos en (user_id, is_read) para consultas eficientes
-    * action_url para deep linking en la aplicación
+**Offers BC:**
 
-  **Reviews BC:**
-  - **reviews**: Reseñas y calificaciones de ofertas (id, offer_id, user_id, rating, comment, created_at, updated_at)
-    * FK a offers y users
-    * Rating INTEGER (1-5) con validación
-    * Índice en offer_id para listar reviews por oferta
+- **offers:** Tabla que almacena las ofertas asociadas a campañas. Contiene información como `campaign_id`, título, negocio asociado, precio, fecha de validez, calificación, ubicación, categoría, imagen y campos de auditoría.
+- El campo `campaign_id` permite asociar cada oferta con una campaña existente. Antes de crear una oferta, el backend valida que la campaña exista y que se encuentre activa.
 
-  **Favorites BC:**
-  - **favorites**: Ofertas marcadas como favoritas (id, user_id, offer_id, created_at, updated_at)
-    * FK a users y offers
-    * Índice único compuesto (user_id, offer_id) para prevenir duplicados
+**Características técnicas de optimización:**
 
-  **Subscriptions BC:**
-  - **subscriptions**: Planes de suscripción (id, name, type, price, benefits, is_active, created_at, updated_at)
-    * Enum type: FREE, PREMIUM
-    * JSON benefits para lista flexible de beneficios
-    * Boolean is_active para planes disponibles
+1. **Auditoría automática:** Las entidades principales incluyen campos como `created_at` y `updated_at`, gestionados por la configuración de auditoría de JPA.
+2. **Índices en campos relevantes:** Se recomienda indexar campos de búsqueda frecuente como `email`, `user_id`, `campaign_id`, `status` y fechas de vigencia.
+3. **Tipos de datos apropiados:** Se utilizan identificadores numéricos para claves primarias, cadenas para datos descriptivos, fechas para periodos de vigencia y valores numéricos para métricas y presupuesto.
+4. **Separación lógica por bounded context:** Aunque las tablas conviven en una misma base de datos, su diseño respeta la organización modular del backend.
 
-  **Características técnicas de optimización:**
+**Relaciones principales entre tablas:**
 
-  1. **Auditoría automática**: Todas las tablas incluyen `created_at` y `updated_at` gestionadas por JPA Auditing
-  2. **Índices estratégicos**: Creados en columnas de búsqueda frecuente (emails, fechas, estados, foreign keys)
-  3. **Tipos de datos optimizados**: 
-     - BIGINT para IDs (soporta hasta 9,223,372,036,854,775,807 registros)
-     - DECIMAL(10,2) para precios (precisión monetaria)
-     - VARCHAR con longitudes apropiadas según uso
-     - DATETIME(6) para timestamps de alta precisión
-  4. **Normalización**: 3ra forma normal (3NF) con desnormalización estratégica en CartItem para performance
+- `users` 1:1 `details_consumers`, según el tipo de usuario.
+- `users` 1:1 `details_owners`, según el tipo de usuario.
+- `users` 1:N `campaigns`, ya que un propietario puede crear varias campañas.
+- `campaigns` 1:N `offers`, ya que una campaña puede contener varias ofertas.
 
-  **Relaciones entre tablas:**
-
-  - users 1:N carts (Un usuario tiene un carrito)
-  - carts 1:N cart_items (Un carrito tiene múltiples items)
-  - campaigns 1:N offers (Una campaña tiene múltiples ofertas)
-  - offers 1:N cart_items (Una oferta puede estar en múltiples carritos)
-  - users 1:N payments (Un usuario tiene múltiples pagos)
-  - payments 1:N coupons (Un pago genera múltiples cupones)
-  - users 1:N notifications (Un usuario recibe múltiples notificaciones)
-  - offers 1:N reviews (Una oferta tiene múltiples reseñas)
-  - users 1:N favorites (Un usuario tiene múltiples favoritos)
-  - subscriptions 1:N users (Una subscripcion puede estar en muchos usuarios)
-
-  El diseño prioriza la escalabilidad, integridad de datos y performance en consultas frecuentes como listado de ofertas por categoría/ubicación, historial de pagos, notificaciones no leídas y gestión de carritos activos.
-
----
+El diseño prioriza la simplicidad, la integridad de datos y la alineación con el backend actualmente implementado. Funcionalidades como pagos, carritos, cupones, favoritos, reseñas, notificaciones avanzadas, cache distribuido o geolocalización avanzada pueden considerarse como extensiones futuras del sistema.
 
 ## Capítulo 5: Product Implementation
 
