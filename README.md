@@ -227,6 +227,10 @@ Ser la plataforma web líder en la centralización y publicidad hiperlocalizada 
 
   <img src="resources/imgs/chapter-i/perfil_ximena.jpg" width="600"><br>
   <strong>Ximena</strong>
+  <br><br>
+  
+  <img src="resources/imgs/chapter-i/perfil_adriana.jpg" width="600"><br>
+  <strong>Adriana</strong>
 </div>
 
 ### 1.2. Solution Profile
@@ -3835,6 +3839,22 @@ Se ejecutaron pruebas de sistema de flujo completo para validar que GeoPS funcio
 <div align="center">
     <img src="resources/imgs/chapter-vi/registro1.png" 
     alt="Evidencias Registro 1" width="300">
+</div>
+
+#### 6.1.5. Campaign Form Structure Tests
+
+Frontend (Angular): Utilizando Jasmine y Karma, se valida la estructura del formulario reactivo del componente de edición de campañas en src/app/components. Se asegura que el FormGroup sea construido correctamente con exactamente los 6 campos requeridos — name, description, startDate, endDate, estimatedBudget y status — garantizando que cualquier modificación accidental en la definición del formulario, como la eliminación o el renombrado de un control, sea detectada de inmediato por el test.
+
+<div align="center">
+    <img src="resources/imgs/chapter-vi/testCampaign_frontend.png" 
+    alt="Evidencias Test Frontend Campaign" width="700">
+</div>
+
+Pruebas de Integración del Backend (Campaigns): Se desarrollaron pruebas de integración en el backend utilizando Spring Boot Test y MockMvc para validar el endpoint de creación de campañas del bounded context Campaigns. Las pruebas verificaron la protección de entrada de datos, validando el formato de los campos, la seguridad de la información, los rangos de fechas y el presupuesto estimado, comprobando el correcto procesamiento de objetos JSON y el manejo de respuestas HTTP apropiadas.
+
+<div align="center">
+    <img src="resources/imgs/chapter-vi/testCampaign_backend.png" 
+    alt="Evidencias Test Backend Campaign" width="700">
 </div>
 
 # Capítulo 7: DevOps Practices
