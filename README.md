@@ -3787,11 +3787,6 @@ Se han implementado pruebas unitarias para validar la lógica de negocio de las 
 
 * **Backend (Java + JUnit):** Se implementaron pruebas unitarias utilizando **JUnit 5** para verificar la lógica de los modelos y entidades de dominio (ej. `Promotion`, `Business`, `User`). Se validaron reglas de negocio como la estructura de los identificadores, cálculos de descuentos y restricciones de campos obligatorios, asegurando que los métodos devuelvan los valores esperados sin errores de lógica interna.
 
-<div align="center">
-    <img src="resources/imgs/chapter-vi/test_backend.png" 
-    alt="Evidencias Test Backend" width="700">
-</div>
-
 #### 6.1.2. Core Integration Tests
 Se realizaron pruebas de integración para asegurar la correcta interoperabilidad entre los módulos del sistema, enfocándose en el flujo de datos entre las capas de la aplicación.
 
@@ -3829,10 +3824,6 @@ Se aplicaron técnicas de BDD para definir el comportamiento del sistema desde l
     * **When** selecciona la categoría "Snacks Coreanos" en la plataforma.
     * **Then** el sistema debe mostrar una lista de tiendas en un radio de 3km con stock disponible.
 
-<div align="center">
-    <img src="resources/imgs/chapter-vi/BDD.png" 
-    alt="Evidencias BDD" width="700">
-</div>
 
 #### 6.1.4. Core System Tests
 Se ejecutaron pruebas de sistema de flujo completo para validar que GeoPS funciona correctamente en su totalidad. Estas pruebas cubrieron la navegación integral de la aplicación web responsiva, simulando el comportamiento real de los dos segmentos objetivo:
@@ -3843,20 +3834,10 @@ Se ejecutaron pruebas de sistema de flujo completo para validar que GeoPS funcio
 
 <div align="center">
     <img src="resources/imgs/chapter-vi/registro1.png" 
-    alt="Evidencias Registro 1" width="700">
-</div>
-<div align="center">
-    <img src="resources/imgs/chapter-vi/inicio.png" 
-    alt="Evidencias Inicio de Sesion" width="700">
-</div>
-<div align="center">
-    <img src="resources/imgs/chapter-vi/otro.png" 
-    alt="Evidencias OTRO" width="700">
+    alt="Evidencias Registro 1" width="300">
 </div>
 
 # Capítulo 7: DevOps Practices
-
-# Capítulo VII: DevOps Practices
 
 ## 7.1. Continuous Integration
 
