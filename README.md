@@ -3809,6 +3809,17 @@ Se realizaron pruebas de integración para asegurar la correcta interoperabilida
     alt="Evidencias Mensajes Error Frontend Backend" width="700">
 </div>
 
+* **Pruebas de Integración del Backend (Identity):** Se desarrollaron pruebas de integración en el backend utilizando Spring Boot Test y MockMvc para validar el endpoint de registro de usuarios (/sign-up) del bounded context Identity. Las pruebas verificaron escenarios de registro exitoso, ausencia de campos obligatorios y solicitudes vacías, comprobando el correcto procesamiento de objetos JSON y el manejo de respuestas HTTP 200 OK y 400 Bad Request.
+
+<div align="center">
+    <img src="resources/imgs/chapter-vi/mensajes_error_back.png" 
+    alt="Evidencias Mensajes Error Backend" width="700">
+</div>
+* **Pruebas de Integración del Frontend (loyalty):** Se desarrollaron pruebas unitarias en el frontend con Jasmine para el componente OfertasComponent. La primera prueba valida el filtrado por categoría, asegurando que al seleccionar “Comida China” solo se mantengan las ofertas de esa categoría y se excluyan las demás. La segunda prueba verifica la visualización de detalles al hacer click, confirmando que se registre correctamente el campaignId mediante la llamada a recordCampaignClick, comprobando el comportamiento esperado del flujo de interacción del usuario.
+<div align="center">
+    <img src="resources/imgs/chapter-vi/UnitTestFrontend.jpg" 
+    alt="PruebasFrontend" width="700">
+</div>
 #### 6.1.3. Core Behavior-Driven Development (BDD)
 Se aplicaron técnicas de BDD para definir el comportamiento del sistema desde la perspectiva del usuario final, utilizando el lenguaje Gherkin para describir los escenarios de interacción.
 
