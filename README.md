@@ -509,7 +509,7 @@ Este documento detalla el enfoque estratégico preliminar para posicionar a **Ge
 ### 2.2. Entrevistas
 #### 2.2.1. Diseño de entrevistas
 
-####Segmento #1: Usuario Proveedor / Tienda (GeoPS Business)
+Segmento #1: Usuario Proveedor / Tienda (GeoPS Business)
 
 #### Fase 1: Identificación y Perfilamiento del Negocio
 * **Establecimiento y Cargo:** Nombre del local y cargo del entrevistado.
@@ -535,7 +535,7 @@ Este documento detalla el enfoque estratégico preliminar para posicionar a **Ge
 #### Fase 5: Cierre y Sugerencias
 * ¿Hay alguna funcionalidad adicional que usted, como dueño de negocio, consideraría indispensable?
 
-####Segmento #2: Usuario Consumidor (GeoPS)
+Segmento #2: Usuario Consumidor (GeoPS)
   
 #### Fase 1: Identificación y Perfilamiento (Filiación)
 * **Nombre completo:**
@@ -769,24 +769,382 @@ A través de ellas se traduce lo que los usuarios quieren lograr al usar el prod
 *Nota.* Elaboración propia.
 
 **Tabla 7**   
-*User Stories — Especificación de requerimientos funcionales de GeoPS*  
+*User Stories — Especificación de requerimientos funcionales de GeoPS*
 
-| Story ID | Título                                                       | Descripción                                                                                                                                         | Criterios de aceptación                                                                                                                                                                                                                      | Relacionado con (Epic ID) |
-| -------- | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| US01     | Registro de Usuario en la Plataforma Web                     | Como usuario, quiero poder registrarme en la plataforma web con mi correo electrónico y contraseña para poder acceder a las ofertas personalizadas. | Escenario 01: Dado que estoy en la página de registro, Cuando ingreso un correo electrónico válido, una contraseña segura, confirmo la contraseña y hago clic en “Registrar”, Entonces el sistema crea la cuenta y muestra mensaje de éxito. | EP01                      |
-| US02     | Inicio de Sesión de Usuario en la Plataforma Web             | Como usuario, quiero poder iniciar sesión en la plataforma web con mi correo electrónico y contraseña para acceder a mis ofertas guardadas.         | Escenario 01: Dado que estoy en la página de inicio de sesión, Cuando ingreso mis credenciales correctas y hago clic en “Iniciar sesión”, Entonces el sistema autentica y me redirige a “Mis ofertas guardadas”.                             | EP01                      |
-| US03     | Registro de Negocio en la Plataforma Web                     | Como dueño de negocio, quiero poder registrar mi negocio proporcionando información detallada para poder crear campañas publicitarias.              | Escenario 01: Dado que estoy en la página de registro de negocio, Cuando ingreso un correo válido, contraseña y datos obligatorios, Entonces el sistema crea la cuenta del negocio y muestra un mensaje de éxito.                            | EP01                      |
-| US04     | Inicio de Sesión de Negocio en la Plataforma Web             | Como dueño de negocio, quiero poder iniciar sesión con mi correo electrónico y contraseña para acceder al panel de gestión de campañas.             | Escenario 01: Dado que estoy en la página de inicio de sesión de negocios, Cuando ingreso mis credenciales correctas, Entonces el sistema autentica y me redirige al panel de gestión.                                                       | EP01                      |
-| US05     | Búsqueda de Ofertas por Categoría en la Plataforma Web       | Como usuario, quiero poder filtrar ofertas por categoría para encontrar fácilmente las promociones que me interesan.                                | Escenario 01: Dado que estoy en la sección de búsqueda, Cuando selecciono una categoría, Entonces el sistema muestra solo las ofertas correspondientes.                                                                                      | EP02                      |
-| US06     | Visualización de Detalles de Oferta en la Plataforma Web     | Como usuario, quiero poder visualizar los detalles de una oferta para conocer toda la información antes de aprovecharla.                            | Escenario 01: Dado que estoy en el listado de ofertas, Cuando selecciono una oferta, Entonces el sistema muestra la información detallada (descripción, precio, vigencia, ubicación, condiciones de uso).                                    | EP02                      |
-| US07     | Creación de Campaña Publicitaria en la Plataforma Web        | Como dueño de negocio, quiero crear campañas publicitarias para promocionar mis productos o servicios.                                              | Escenario 01: Dado que estoy en el panel de gestión, Cuando completo los campos obligatorios, Entonces el sistema guarda la campaña y la muestra en la lista de campañas activas.                                                            | EP03                      |
-| US08     | Edición de Campaña Publicitaria en la Plataforma Web         | Como dueño de negocio, quiero editar campañas publicitarias existentes para actualizar información y mejorar efectividad.                           | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y modifico sus datos, Entonces el sistema guarda cambios y actualiza la información visible.                                                       | EP03                      |
-| US9      | Eliminación de Campaña Publicitaria en la Plataforma Web     | Como dueño de negocio, quiero eliminar campañas publicitarias para retirar promociones que ya no deseo mantener.                                    | Escenario 01: Dado que estoy en el panel de gestión, Cuando selecciono una campaña activa y confirmo “Eliminar”, Entonces el sistema elimina la campaña y desaparece de la lista de activas.                                                 | EP03                      |
-| US10     | Visualización de Campañas Activas en la Plataforma Web       | Como dueño de negocio, quiero visualizar todas mis campañas activas para dar seguimiento.                                                           | Escenario 01: Dado que estoy en el panel de gestión, Cuando accedo a “Campañas Activas”, Entonces el sistema muestra un listado de todas las campañas vigentes.                                                                              | EP03                      |
-| US11     | Configuración de Presupuesto de Campaña en la Plataforma Web | Como dueño de negocio, quiero configurar presupuesto de campañas para controlar gastos y optimizar inversión.                                       | Escenario 01: Dado que estoy creando o editando una campaña, Cuando ingreso presupuesto y confirmo, Entonces el sistema guarda el presupuesto y lo muestra en el panel.                                                                      | EP03                      |
-| US12     | Programar Fecha de Inicio de Campaña en la Plataforma Web    | Como dueño de negocio, quiero programar fecha de inicio para campañas.                                                                              | Escenario 01: Dado que estoy creando campaña, Cuando selecciono fecha futura, Entonces el sistema guarda programación y activa automáticamente la campaña en esa fecha.                                                                      | EP03                      |
-| US13     | Programar Fecha de Fin de Campaña en la Plataforma Web       | Como dueño de negocio, quiero programar fecha de fin para campañas.                                                                                 | Escenario 01: Dado que estoy creando o editando campaña, Cuando selecciono fecha de fin, Entonces el sistema cambia estado a “Finalizada” automáticamente al concluir el periodo.                                                            | EP03                      |
-| US14     | Configuración de Idioma en la Plataforma Web                 | Como usuario, quiero seleccionar idioma de la plataforma para visualizar contenido en mi preferencia.                                               | Escenario 01: Dado que estoy en la página principal, Cuando selecciono un idioma en el selector, Entonces el sistema cambia todo el contenido al idioma elegido.                                                                             | EP02                      |
+### 3.1.2. User Stories
+
+EP01: Gestión de Cuentas y Accesos
+
+<table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; border: 1px solid black; margin-bottom: 20px;">
+  <tr style="text-align: center; background-color: #f2f2f2;">
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Story ID</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>User</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Priority</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Epic</b></td>
+  </tr>
+  <tr style="text-align: center;">
+    <td style="border: 1px solid black; padding: 8px;">US01</td>
+    <td style="border: 1px solid black; padding: 8px;">Usuario Final</td>
+    <td style="border: 1px solid black; padding: 8px;">1</td>
+    <td style="border: 1px solid black; padding: 8px;">EP01</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Title</b></td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px;">Registro de Usuario en la Plataforma Web</td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px;">
+      Como usuario, quiero poder registrarme en la plataforma web con mi correo electrónico y contraseña para poder acceder a las ofertas personalizadas.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Acceptance Criteria</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px; line-height: 1.6;">
+      <b>Escenario 1: Registro exitoso.</b> Dado que estoy en la página de registro, cuando ingreso un correo válido y contraseña segura, entonces el sistema crea la cuenta y muestra un mensaje de éxito.<br><br>
+      <b>Escenario 2: Correo duplicado.</b> Dado que ingreso un correo ya registrado, cuando hago clic en "Registrar", entonces el sistema muestra un error indicando que la cuenta ya existe.<br><br>
+      <b>Escenario 3: Contraseña débil.</b> Dado que ingreso una contraseña menor a 8 caracteres, cuando intento registrarme, entonces el sistema solicita una contraseña más robusta.
+    </td>
+  </tr>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; border: 1px solid black; margin-bottom: 20px;">
+  <tr style="text-align: center; background-color: #f2f2f2;">
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Story ID</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>User</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Priority</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Epic</b></td>
+  </tr>
+  <tr style="text-align: center;">
+    <td style="border: 1px solid black; padding: 8px;">US02</td>
+    <td style="border: 1px solid black; padding: 8px;">Usuario Final</td>
+    <td style="border: 1px solid black; padding: 8px;">1</td>
+    <td style="border: 1px solid black; padding: 8px;">EP01</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Title</b></td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px;">Inicio de Sesión de Usuario en la Plataforma Web</td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px;">
+      Como usuario, quiero poder iniciar sesión en la plataforma web con mi correo electrónico y contraseña para acceder a mis ofertas guardadas.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Acceptance Criteria</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px; line-height: 1.6;">
+      <b>Escenario 1: Autenticación correcta.</b> Dado que estoy en login, cuando ingreso credenciales válidas, entonces el sistema me redirige a "Mis ofertas guardadas".<br><br>
+      <b>Escenario 2: Credenciales incorrectas.</b> Dado que ingreso una contraseña errónea, cuando intento entrar, entonces el sistema muestra un mensaje de alerta y no permite el acceso.<br><br>
+      <b>Escenario 3: Recuperación de clave.</b> Dado que olvidé mi clave, cuando hago clic en "¿Olvidaste tu contraseña?", entonces el sistema envía un enlace de recuperación al correo registrado.
+    </td>
+  </tr>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; border: 1px solid black; margin-bottom: 20px;">
+  <tr style="text-align: center; background-color: #f2f2f2;">
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Story ID</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>User</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Priority</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Epic</b></td>
+  </tr>
+  <tr style="text-align: center;">
+    <td style="border: 1px solid black; padding: 8px;">US03</td>
+    <td style="border: 1px solid black; padding: 8px;">Dueño de Negocio</td>
+    <td style="border: 1px solid black; padding: 8px;">1</td>
+    <td style="border: 1px solid black; padding: 8px;">EP01</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Title</b></td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px;">Registro de Negocio en la Plataforma Web</td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px;">
+      Como dueño de negocio, quiero poder registrar mi negocio proporcionando información detallada para poder crear campañas publicitarias.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Acceptance Criteria</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px; line-height: 1.6;">
+      <b>Escenario 1: Registro completo.</b> Dado que ingreso datos obligatorios del negocio (RUC, nombre, rubro), cuando guardo, entonces el sistema crea el perfil empresarial.<br><br>
+      <b>Escenario 2: Validación de RUC.</b> Dado que ingreso un RUC inválido o mal formado, cuando intento registrarme, entonces el sistema bloquea la acción y solicita un número válido.<br><br>
+      <b>Escenario 3: Falta de documentos.</b> Dado que no adjunto la verificación de identidad solicitada, cuando guardo, entonces el sistema marca el perfil como "Pendiente de Validación".
+    </td>
+  </tr>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; border: 1px solid black; margin-bottom: 20px;">
+  <tr style="text-align: center; background-color: #f2f2f2;">
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Story ID</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>User</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Priority</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Epic</b></td>
+  </tr>
+  <tr style="text-align: center;">
+    <td style="border: 1px solid black; padding: 8px;">US04</td>
+    <td style="border: 1px solid black; padding: 8px;">Dueño de Negocio</td>
+    <td style="border: 1px solid black; padding: 8px;">1</td>
+    <td style="border: 1px solid black; padding: 8px;">EP01</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Title</b></td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px;">Inicio de Sesión de Negocio en la Plataforma Web</td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px;">
+      Como dueño de negocio, quiero poder iniciar sesión con mi correo electrónico y contraseña para acceder al panel de gestión de campañas.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Acceptance Criteria</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px; line-height: 1.6;">
+      <b>Escenario 1: Acceso al panel.</b> Dado que ingreso credenciales de empresa correctas, cuando autentico, entonces el sistema me muestra el Dashboard de gestión de campañas.<br><br>
+      <b>Escenario 2: Bloqueo por seguridad.</b> Dado que realizo 5 intentos fallidos consecutivos, cuando intento ingresar nuevamente, entonces el sistema bloquea la cuenta temporalmente por seguridad.
+    </td>
+  </tr>
+</table>
+
+EP02: Experiencia de Usuario y Navegación
+
+<table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; border: 1px solid black; margin-bottom: 20px;">
+  <tr style="text-align: center; background-color: #f2f2f2;">
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Story ID</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>User</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Priority</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Epic</b></td>
+  </tr>
+  <tr style="text-align: center;">
+    <td style="border: 1px solid black; padding: 8px;">US05</td>
+    <td style="border: 1px solid black; padding: 8px;">Usuario Final</td>
+    <td style="border: 1px solid black; padding: 8px;">2</td>
+    <td style="border: 1px solid black; padding: 8px;">EP02</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Title</b></td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px;">Búsqueda de Ofertas por Categoría</td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px;">
+      Como usuario, quiero poder filtrar ofertas por categoría (K-Beauty, Ramen, etc.) para encontrar fácilmente las promociones que me interesan.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Acceptance Criteria</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px; line-height: 1.6;">
+      <b>Escenario 1: Filtrado efectivo.</b> Dado que selecciono una categoría, cuando el sistema procesa la solicitud, entonces solo se visualizan los banners correspondientes.<br><br>
+      <b>Escenario 2: Categoría sin stock.</b> Dado que elijo una categoría sin ofertas vigentes, cuando filtro, entonces el sistema muestra un mensaje indicando "No hay ofertas por el momento".<br><br>
+      <b>Escenario 3: Limpiar filtros.</b> Dado que tengo un filtro activo, cuando presiono "Limpiar", entonces el sistema vuelve a mostrar todas las ofertas disponibles.
+    </td>
+  </tr>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; border: 1px solid black; margin-bottom: 20px;">
+  <tr style="text-align: center; background-color: #f2f2f2;">
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Story ID</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>User</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Priority</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Epic</b></td>
+  </tr>
+  <tr style="text-align: center;">
+    <td style="border: 1px solid black; padding: 8px;">US06</td>
+    <td style="border: 1px solid black; padding: 8px;">Usuario Final</td>
+    <td style="border: 1px solid black; padding: 8px;">1</td>
+    <td style="border: 1px solid black; padding: 8px;">EP02</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Title</b></td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px;">Visualización de Detalles de Oferta</td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px;">
+      Como usuario, quiero visualizar los detalles de una oferta para conocer toda la información antes de aprovecharla.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Acceptance Criteria</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px; line-height: 1.6;">
+      <b>Escenario 1: Carga de detalles.</b> Dado que selecciono una oferta, cuando carga la página, entonces visualizo descripción, precio, vigencia y ubicación en tiempo real.<br><br>
+      <b>Escenario 2: Oferta expirada.</b> Dado que intento entrar a una oferta que acaba de vencer, cuando el sistema valida, entonces muestra un aviso de "Oferta Finalizada".<br><br>
+      <b>Escenario 3: Enlace a mapas.</b> Dado que estoy viendo el detalle, cuando hago clic en la ubicación, entonces el sistema abre la navegación externa para guiarme al local.
+    </td>
+  </tr>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; border: 1px solid black; margin-bottom: 20px;">
+  <tr style="text-align: center; background-color: #f2f2f2;">
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Story ID</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>User</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Priority</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Epic</b></td>
+  </tr>
+  <tr style="text-align: center;">
+    <td style="border: 1px solid black; padding: 8px;">US14</td>
+    <td style="border: 1px solid black; padding: 8px;">Usuario Final</td>
+    <td style="border: 1px solid black; padding: 8px;">3</td>
+    <td style="border: 1px solid black; padding: 8px;">EP02</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Title</b></td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px;">Configuración de Idioma en la Plataforma Web</td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px;">
+      Como usuario, quiero seleccionar el idioma de la plataforma para visualizar contenido en mi preferencia.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Acceptance Criteria</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px; line-height: 1.6;">
+      <b>Escenario 1: Cambio inmediato.</b> Dado que selecciono un nuevo idioma, cuando confirmo, entonces toda la interfaz se traduce automáticamente.<br><br>
+      <b>Escenario 2: Persistencia.</b> Dado que cerré sesión tras cambiar el idioma, cuando vuelvo a ingresar, entonces la plataforma mantiene mi preferencia anterior.
+    </td>
+  </tr>
+</table>
+
+EP03: Gestión de Campañas Hiperlocalizadas
+
+<table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; border: 1px solid black; margin-bottom: 20px;">
+  <tr style="text-align: center; background-color: #f2f2f2;">
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Story ID</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>User</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Priority</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Epic</b></td>
+  </tr>
+  <tr style="text-align: center;">
+    <td style="border: 1px solid black; padding: 8px;">US05</td>
+    <td style="border: 1px solid black; padding: 8px;">Usuario Final</td>
+    <td style="border: 1px solid black; padding: 8px;">2</td>
+    <td style="border: 1px solid black; padding: 8px;">EP02</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Title</b></td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px;">Búsqueda de Ofertas por Categoría</td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px;">
+      Como usuario, quiero poder filtrar ofertas por categoría (K-Beauty, Ramen, etc.) para encontrar fácilmente las promociones que me interesan.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Acceptance Criteria</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px; line-height: 1.6;">
+      <b>Escenario 1: Filtrado efectivo.</b> Dado que selecciono una categoría, cuando el sistema procesa la solicitud, entonces solo se visualizan los banners correspondientes.<br><br>
+      <b>Escenario 2: Categoría sin stock.</b> Dado que elijo una categoría sin ofertas vigentes, cuando filtro, entonces el sistema muestra un mensaje indicando "No hay ofertas por el momento".<br><br>
+      <b>Escenario 3: Limpiar filtros.</b> Dado que tengo un filtro activo, cuando presiono "Limpiar", entonces el sistema vuelve a mostrar todas las ofertas disponibles.
+    </td>
+  </tr>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; border: 1px solid black; margin-bottom: 20px;">
+  <tr style="text-align: center; background-color: #f2f2f2;">
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Story ID</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>User</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Priority</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Epic</b></td>
+  </tr>
+  <tr style="text-align: center;">
+    <td style="border: 1px solid black; padding: 8px;">US06</td>
+    <td style="border: 1px solid black; padding: 8px;">Usuario Final</td>
+    <td style="border: 1px solid black; padding: 8px;">1</td>
+    <td style="border: 1px solid black; padding: 8px;">EP02</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Title</b></td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px;">Visualización de Detalles de Oferta</td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px;">
+      Como usuario, quiero visualizar los detalles de una oferta para conocer toda la información antes de aprovecharla.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Acceptance Criteria</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px; line-height: 1.6;">
+      <b>Escenario 1: Carga de detalles.</b> Dado que selecciono una oferta, cuando carga la página, entonces visualizo descripción, precio, vigencia y ubicación en tiempo real.<br><br>
+      <b>Escenario 2: Oferta expirada.</b> Dado que intento entrar a una oferta que acaba de vencer, cuando el sistema valida, entonces muestra un aviso de "Oferta Finalizada".<br><br>
+      <b>Escenario 3: Enlace a mapas.</b> Dado que estoy viendo el detalle, cuando hago clic en la ubicación, entonces el sistema abre la navegación externa para guiarme al local.
+    </td>
+  </tr>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; border: 1px solid black; margin-bottom: 20px;">
+  <tr style="text-align: center; background-color: #f2f2f2;">
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Story ID</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>User</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Priority</b></td>
+    <td style="border: 1px solid black; padding: 8px; width: 25%;"><b>Epic</b></td>
+  </tr>
+  <tr style="text-align: center;">
+    <td style="border: 1px solid black; padding: 8px;">US14</td>
+    <td style="border: 1px solid black; padding: 8px;">Usuario Final</td>
+    <td style="border: 1px solid black; padding: 8px;">3</td>
+    <td style="border: 1px solid black; padding: 8px;">EP02</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Title</b></td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px;">Configuración de Idioma en la Plataforma Web</td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px;">
+      Como usuario, quiero seleccionar el idioma de la plataforma para visualizar contenido en mi preferencia.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Acceptance Criteria</b></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border: 1px solid black; padding: 15px; line-height: 1.6;">
+      <b>Escenario 1: Cambio inmediato.</b> Dado que selecciono un nuevo idioma, cuando confirmo, entonces toda la interfaz se traduce automáticamente.<br><br>
+      <b>Escenario 2: Persistencia.</b> Dado que cerré sesión tras cambiar el idioma, cuando vuelvo a ingresar, entonces la plataforma mantiene mi preferencia anterior.
+    </td>
+  </tr>
+</table>
 
 *Nota.* Elaboración propia.
 
@@ -835,7 +1193,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 *Product Backlog — GeoPS*
 
 <div align="center">
-    <img src="resources/imgs/Product-Backlog-2026.png/" alt="Product Backlog — GeoPS" width="600">
+    <img src="resources/imgs/chapter-iii/product-backlog-2026.png/" alt="Product Backlog — GeoPS" width="600">
 </div>
 
 *Nota.* Elaboración propia (realizado en Jira).
@@ -882,7 +1240,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Logo — GeoPS*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/GeoPS-Logo.png" alt="Logo de GeoPS">
+      <img src="resources/imgs/chapter-iv/GeoPS-Logo.png" alt="Logo de GeoPS">
   </div>
 
   *Nota.* Elaboración propia.
@@ -911,7 +1269,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Paleta de Colores — GeoPS*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/Paleta-Colores.jpg" alt="Paleta de Colores — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/Paleta-Colores.jpg" alt="Paleta de Colores — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Coolors).
@@ -920,12 +1278,12 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 
   |                                                                         |                                                                                                                                                                                                                                                     |
   | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | <img src="resources/imgs/capitulo-4/Amatista.jpg" alt="Color amatista"> | El color amatista se utiliza principalmente en el menú vertical, el cual necesita resaltar. Este color representa la innovación y modernidad, atrayendo la atención de los usuarios sin tener que ser agresivo.                                     |
-  | <img src="resources/imgs/capitulo-4/Indigo.jpg" alt="Color indigo">     | El color índigo es utilizado para secciones que desean llamar la atención mostrando información importante, todo en un espacio pequeño. El color muestra elegancia, formalidad y confianza al ser un color fuerte.                                  |
-  | <img src="resources/imgs/capitulo-4/Blanco.jpg" alt="Color blanco">     | El color blanco es utilizado en el cuerpo de la página web. El color blanco muestra un área limpia, clara y donde hay espacio visual para mostrar las secciones de nuestra landing page.                                                            |
-  | <img src="resources/imgs/capitulo-4/Negro.jpg" alt="Color negro">       | El color negro es utilizado en botones principales y el footer de nuestra página. El color negro demuestra profesionalismo y un contraste fuerte con los otros colores utilizados, especialmente el color blanco.                                   |
-  | <img src="resources/imgs/capitulo-4/Uva.jpg" alt="Color uva">           | El color uva es utilizado en botones CTA de tamaño mediano y secciones con imágenes. Este color muestra energía, dinamismo y una personalidad fuerte, en comparación a otros botones principales. También ayuda a destacar el texto de los botones. |
-  | <img src="resources/imgs/capitulo-4/Veronica.jpg" alt="Color veronica"> | El color verónica es utilizado en botones pequeños CTA. Este color muestra juventud y frescura al ser un poco más claro que los otros colores de tono parecido.                                                                                     |
+  | <img src="resources/imgs/chapter-iv/Amatista.jpg" alt="Color amatista"> | El color amatista se utiliza principalmente en el menú vertical, el cual necesita resaltar. Este color representa la innovación y modernidad, atrayendo la atención de los usuarios sin tener que ser agresivo.                                     |
+  | <img src="resources/imgs/chapter-iv/Indigo.jpg" alt="Color indigo">     | El color índigo es utilizado para secciones que desean llamar la atención mostrando información importante, todo en un espacio pequeño. El color muestra elegancia, formalidad y confianza al ser un color fuerte.                                  |
+  | <img src="resources/imgs/chapter-iv/Blanco.jpg" alt="Color blanco">     | El color blanco es utilizado en el cuerpo de la página web. El color blanco muestra un área limpia, clara y donde hay espacio visual para mostrar las secciones de nuestra landing page.                                                            |
+  | <img src="resources/imgs/chapter-iv/Negro.jpg" alt="Color negro">       | El color negro es utilizado en botones principales y el footer de nuestra página. El color negro demuestra profesionalismo y un contraste fuerte con los otros colores utilizados, especialmente el color blanco.                                   |
+  | <img src="resources/imgs/chapter-iv/Uva.jpg" alt="Color uva">           | El color uva es utilizado en botones CTA de tamaño mediano y secciones con imágenes. Este color muestra energía, dinamismo y una personalidad fuerte, en comparación a otros botones principales. También ayuda a destacar el texto de los botones. |
+  | <img src="resources/imgs/chapter-iv/Veronica.jpg" alt="Color veronica"> | El color verónica es utilizado en botones pequeños CTA. Este color muestra juventud y frescura al ser un poco más claro que los otros colores de tono parecido.                                                                                     |
 
   **Spacing**
 
@@ -980,11 +1338,11 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Landing Page — GeoPS*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/landingpage-geops-1.jpg" alt="Landing Page GeoPS — Sección 1" width="600">
+      <img src="resources/imgs/chapter-iv/landingpage-geops-1.jpg" alt="Landing Page GeoPS — Sección 1" width="600">
       <br>
-      <img src="resources/imgs/capitulo-4/landingpage-geops-2.jpg" alt="Landing Page GeoPS — Sección 2" width="600">
+      <img src="resources/imgs/chapter-iv/landingpage-geops-2.jpg" alt="Landing Page GeoPS — Sección 2" width="600">
       <br>
-      <img src="resources/imgs/capitulo-4/landingpage-geops-3.jpg" alt="Landing Page GeoPS — Sección 3" width="600">
+      <img src="resources/imgs/chapter-iv/landingpage-geops-3.jpg" alt="Landing Page GeoPS — Sección 3" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1186,7 +1544,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Landing Page GeoPS*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/landingpage-geops-wireframe.jpg" alt="Wireframe Landing Page GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/landingpage-geops-wireframe.jpg" alt="Wireframe Landing Page GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1199,7 +1557,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mock-up — Landing Page GeoPS*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/landingpage-geops-mockup.jpg" alt="Mock-up Landing Page GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/landingpage-geops-mockup.jpg" alt="Mock-up Landing Page GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1218,7 +1576,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Inicio de Sesión y Registro*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/loginandregister-geops-wireframe.jpg" alt="Wireframe Inicio de Sesión y Registro — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/loginandregister-geops-wireframe.jpg" alt="Wireframe Inicio de Sesión y Registro — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1231,7 +1589,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Home Consumidor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/home-geops-wireframe.jpg" alt="Wireframe Home Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/home-geops-wireframe.jpg" alt="Wireframe Home Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1243,7 +1601,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Ofertas Consumidor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/offers-geops-wireframe.jpg" alt="Wireframe Ofertas Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/offers-geops-wireframe.jpg" alt="Wireframe Ofertas Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1255,7 +1613,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Categorías Consumidor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/categories-geops-wireframe.jpg" alt="Wireframe Categorías Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/categories-geops-wireframe.jpg" alt="Wireframe Categorías Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1267,7 +1625,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Favoritos Consumidor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/favs-geops-wireframe.jpg" alt="Wireframe Favoritos Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/favs-geops-wireframe.jpg" alt="Wireframe Favoritos Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1279,7 +1637,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Mis Cupones Consumidor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/coupons-geops-wireframe.jpg" alt="Wireframe Mis Cupones Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/coupons-geops-wireframe.jpg" alt="Wireframe Mis Cupones Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1291,7 +1649,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Planes Consumidor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/plans-geops-wireframe.jpg" alt="Wireframe Planes Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/plans-geops-wireframe.jpg" alt="Wireframe Planes Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1303,7 +1661,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Acceso a Ubicación Consumidor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/homeubi-geops-wireframe.jpg" alt="Wireframe Acceso a Ubicación Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/homeubi-geops-wireframe.jpg" alt="Wireframe Acceso a Ubicación Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1315,7 +1673,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Wireframe — Ubicación Permitida Consumidor*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/homeubiconfirm-geops-wireframe.jpg" alt="Wireframe Ubicación Permitida Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/homeubiconfirm-geops-wireframe.jpg" alt="Wireframe Ubicación Permitida Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -1327,7 +1685,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Secciones Consumidor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/home-seemore-geops-wireframe.jpg" alt="Wireframe Secciones Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/home-seemore-geops-wireframe.jpg" alt="Wireframe Secciones Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1339,7 +1697,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Agregar Oferta al Carrito Consumidor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/cart-geops-wireframe.jpg" alt="Wireframe Agregar Oferta al Carrito Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/cart-geops-wireframe.jpg" alt="Wireframe Agregar Oferta al Carrito Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1351,7 +1709,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Pago Consumidor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/payment-geops-wireframe.jpg" alt="Wireframe Pago Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/payment-geops-wireframe.jpg" alt="Wireframe Pago Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1363,7 +1721,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Ayuda Consumidor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/centroayudaclient-geops-wireframe.jpg" alt="Wireframe Ayuda Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/centroayudaclient-geops-wireframe.jpg" alt="Wireframe Ayuda Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1377,7 +1735,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Wireframe — Notificaciones Consumidor*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/noticlient-geops-wireframe.jpg" alt="Wireframe Notificaciones Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/noticlient-geops-wireframe.jpg" alt="Wireframe Notificaciones Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -1389,7 +1747,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Wireframe — Notificaciones Leídas Consumidor*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/notiseensuppliers-geops-wireframe.jpg" alt="Wireframe Notificaciones Leídas Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/notiseensuppliers-geops-wireframe.jpg" alt="Wireframe Notificaciones Leídas Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -1401,7 +1759,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Wireframe — Sin Notificaciones Consumidor*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/noticlear-geops-wireframe.jpg" alt="Wireframe Sin Notificaciones Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/noticlear-geops-wireframe.jpg" alt="Wireframe Sin Notificaciones Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -1413,7 +1771,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Perfil Consumidor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/profileclient-geops-wireframe.jpg" alt="Wireframe Perfil Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/profileclient-geops-wireframe.jpg" alt="Wireframe Perfil Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1425,7 +1783,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Wireframe — Editar Perfil Consumidor*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/editprofileclient-geops-wireframe.jpg" alt="Wireframe Editar Perfil Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/editprofileclient-geops-wireframe.jpg" alt="Wireframe Editar Perfil Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -1437,7 +1795,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Cerrar Sesión Consumidor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/logoutclient-geops-wireframe.jpg" alt="Wireframe Cerrar Sesión Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/logoutclient-geops-wireframe.jpg" alt="Wireframe Cerrar Sesión Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1450,7 +1808,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Resumen Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/resume-geops-wireframe.jpg" alt="Wireframe Resumen Proveedor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/resume-geops-wireframe.jpg" alt="Wireframe Resumen Proveedor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1462,7 +1820,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Campañas Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/campaigns-geops-wireframe.jpg" alt="Wireframe Campañas Proveedor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/campaigns-geops-wireframe.jpg" alt="Wireframe Campañas Proveedor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1474,7 +1832,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Crear Campaña Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/create-geops-wireframe.jpg" alt="Wireframe Crear Campaña Proveedor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/create-geops-wireframe.jpg" alt="Wireframe Crear Campaña Proveedor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1486,7 +1844,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Wireframe — Formulario Crear Campaña Proveedor*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/createform-geops-wireframe.jpg" alt="Wireframe Formulario Crear Campaña Proveedor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/createform-geops-wireframe.jpg" alt="Wireframe Formulario Crear Campaña Proveedor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -1498,7 +1856,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Wireframe — Campaña Creada Proveedor*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/createformconfirm-geops-wireframe.jpg" alt="Wireframe Campaña Creada Proveedor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/createformconfirm-geops-wireframe.jpg" alt="Wireframe Campaña Creada Proveedor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -1510,7 +1868,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Reportes Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/reports-geops-wireframe.jpg" alt="Wireframe Reportes Proveedor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/reports-geops-wireframe.jpg" alt="Wireframe Reportes Proveedor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1522,7 +1880,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Comentarios Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/commentssuppliers-geops-wireframe.jpg" alt="Wireframe Comentarios Proveedor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/commentssuppliers-geops-wireframe.jpg" alt="Wireframe Comentarios Proveedor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1534,7 +1892,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Planes Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/plans-suppliers-geops-wireframe.jpg" alt="Wireframe Planes Proveedor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/plans-suppliers-geops-wireframe.jpg" alt="Wireframe Planes Proveedor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1546,7 +1904,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Ayuda Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/helpsuppliers-geops-wireframe.jpg" alt="Wireframe Ayuda Proveedor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/helpsuppliers-geops-wireframe.jpg" alt="Wireframe Ayuda Proveedor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1560,7 +1918,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Wireframe — Notificaciones Proveedor*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/notisuppliers-geops-wireframe.jpg" alt="Wireframe Notificaciones Proveedor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/notisuppliers-geops-wireframe.jpg" alt="Wireframe Notificaciones Proveedor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -1572,7 +1930,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Wireframe — Notificaciones Leídas Proveedor*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/notiseensuppliers-geops-wireframe.jpg" alt="Wireframe Notificaciones Leídas Proveedor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/notiseensuppliers-geops-wireframe.jpg" alt="Wireframe Notificaciones Leídas Proveedor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -1584,7 +1942,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Wireframe — Sin Notificaciones Proveedor*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/noticlearsuppliers-geops-wireframe.jpg" alt="Wireframe Sin Notificaciones Proveedor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/noticlearsuppliers-geops-wireframe.jpg" alt="Wireframe Sin Notificaciones Proveedor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -1596,7 +1954,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Perfil Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/suppliersprofile-geops-wireframe.jpg" alt="Wireframe Perfil Proveedor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/suppliersprofile-geops-wireframe.jpg" alt="Wireframe Perfil Proveedor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1608,7 +1966,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Wireframe — Editar Perfil Proveedor*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/editsuppliersprofile-geops-wireframe.jpg" alt="Wireframe Editar Perfil Proveedor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/editsuppliersprofile-geops-wireframe.jpg" alt="Wireframe Editar Perfil Proveedor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -1620,7 +1978,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Wireframe — Cerrar Sesión Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/logoutsuppliers-geops-wireframe.jpg" alt="Wireframe Cerrar Sesión Proveedor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/logoutsuppliers-geops-wireframe.jpg" alt="Wireframe Cerrar Sesión Proveedor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1641,7 +1999,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *User Goal — Iniciar Sesión*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/usergoal_Iniciarsesion.jpg" alt="User Goal — Iniciar Sesión GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/usergoal_Iniciarsesion.jpg" alt="User Goal — Iniciar Sesión GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Overflow).
@@ -1658,7 +2016,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *User Goal — Visualizar Planes*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/cliente_usergoal_visualizarplanes.jpg" alt="User Goal Visualizar Planes Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/cliente_usergoal_visualizarplanes.jpg" alt="User Goal Visualizar Planes Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Overflow).
@@ -1674,7 +2032,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *User Goal — Permitir Acceso a Ubicación*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/cliente_usergoal_permitiraccesoubicación.jpg" alt="User Goal Permitir Acceso a Ubicación Consumidor — GeoPS" width="600">  
+        <img src="resources/imgs/chapter-iv/cliente_usergoal_permitiraccesoubicación.jpg" alt="User Goal Permitir Acceso a Ubicación Consumidor — GeoPS" width="600">  
     </div>
 
     *Nota.* Elaboración propia (realizado en Overflow).
@@ -1690,7 +2048,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *User Goal — Acceso a Ayuda, Notificaciones y Perfil*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/cliente_usergoal_accesoayudanotiperfil.jpg" alt="User Goal Acceso a Ayuda, Notificaciones y Perfil Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/cliente_usergoal_accesoayudanotiperfil.jpg" alt="User Goal Acceso a Ayuda, Notificaciones y Perfil Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Overflow).
@@ -1706,7 +2064,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *User Goal — Acceso a links Principales*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/cliente_usergoal_accesolinksprincipales.jpg" alt="User Goal Acceso a Links Principales Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/cliente_usergoal_accesolinksprincipales.jpg" alt="User Goal Acceso a Links Principales Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Overflow).
@@ -1722,7 +2080,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *User Goal — Detalle de Sección y Proceso de Pago*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/cliente_usergoal_detalleyprocesopago.jpg" alt="User Goal Detalle de Sección y Proceso de Pago — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/cliente_usergoal_detalleyprocesopago.jpg" alt="User Goal Detalle de Sección y Proceso de Pago — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Overflow).
@@ -1738,7 +2096,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *User Goal — Cerrar Sesión*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/cliente_usergoal_cerrarsesion.jpg" alt="User Goal Cerrar Sesión Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/cliente_usergoal_cerrarsesion.jpg" alt="User Goal Cerrar Sesión Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Overflow).
@@ -1755,7 +2113,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *User Goal — Visualizar Planes*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/proveedor_usergoal_visualizarplanes.jpg" alt="User Goal Visualizar Planes Proveedor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/proveedor_usergoal_visualizarplanes.jpg" alt="User Goal Visualizar Planes Proveedor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Overflow).
@@ -1771,7 +2129,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *User Goal — Acceso a Ayuda, Notificaciones y Perfil*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/proveedor_usergoal_accesoayudanotiperfil.jpg" alt="User Goal Acceso a Ayuda, Notificaciones y Perfil Proveedor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/proveedor_usergoal_accesoayudanotiperfil.jpg" alt="User Goal Acceso a Ayuda, Notificaciones y Perfil Proveedor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Overflow).
@@ -1787,7 +2145,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *User Goal — Acceso a links Principales*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/proveedor_usergoal_accesolinksprincipales.jpg" alt="User Goal Acceso a Links Principales Proveedor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/proveedor_usergoal_accesolinksprincipales.jpg" alt="User Goal Acceso a Links Principales Proveedor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Overflow).
@@ -1803,7 +2161,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *User Goal — Cerrar Sesión*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/proveedor_usergoal_cerrarsesion.jpg" alt="User Goal Cerrar Sesión Proveedor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/proveedor_usergoal_cerrarsesion.jpg" alt="User Goal Cerrar Sesión Proveedor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Overflow).
@@ -1820,7 +2178,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mock-up — Inicio de Sesión y Registro*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/loginandregister-geops-mockup.jpg" alt="Mock-up Inicio de Sesión y Registro Consumidor— GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/loginandregister-geops-mockup.jpg" alt="Mock-up Inicio de Sesión y Registro Consumidor— GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1833,7 +2191,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mock-up — Home*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/home-geops-mockup.jpg" alt="Mock-up Home Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/home-geops-mockup.jpg" alt="Mock-up Home Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1845,7 +2203,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mock-up — Ofertas*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/offers-geops-mockup.jpg" alt="Mock-up Ofertas Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/offers-geops-mockup.jpg" alt="Mock-up Ofertas Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1857,7 +2215,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mock-up — Categorías*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/categories-geops-mockup.jpg" alt="Mock-up Categorías Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/categories-geops-mockup.jpg" alt="Mock-up Categorías Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1869,7 +2227,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mock-up — Favoritos*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/favs-geops-mockup.jpg" alt="Mock-up Favoritos Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/favs-geops-mockup.jpg" alt="Mock-up Favoritos Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1881,7 +2239,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mock-up — Cupones*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/coupons-geops-mockup.jpg" alt="Mock-up Cupones Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/coupons-geops-mockup.jpg" alt="Mock-up Cupones Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1893,7 +2251,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mock-up — Planes*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/plans-geops-mockup.jpg" alt="Mock-up Planes Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/plans-geops-mockup.jpg" alt="Mock-up Planes Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1905,7 +2263,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mock-up — Solicitud de Acceso a Ubicación*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/homeubi-geops-mockup.jpg" alt="Mock-up Solicitud de Acceso a Ubicación Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/homeubi-geops-mockup.jpg" alt="Mock-up Solicitud de Acceso a Ubicación Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1917,7 +2275,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mock-up — Ubicación Permitida*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/homeubiconfirm-geops-mockup.jpg" alt="Mock-up Ubicación Permitida Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/homeubiconfirm-geops-mockup.jpg" alt="Mock-up Ubicación Permitida Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -1931,7 +2289,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mock-up — Sección Cines*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/cines-geops-mockup.jpg" alt="Mock-up Sección Cines Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/cines-geops-mockup.jpg" alt="Mock-up Sección Cines Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -1943,7 +2301,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mock-up — Sección Buffets*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/buffets-geops-mockup.jpg" alt="Mock-up Sección Buffets Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/buffets-geops-mockup.jpg" alt="Mock-up Sección Buffets Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -1955,7 +2313,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mock-up — Sección Parques*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/parques-geops-mockup.jpg" alt="Mock-up Sección Parques Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/parques-geops-mockup.jpg" alt="Mock-up Sección Parques Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -1967,7 +2325,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mock-up — Sección Juegos*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/juegos-geops-mockup.jpg" alt="Mock-up Sección Juegos Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/juegos-geops-mockup.jpg" alt="Mock-up Sección Juegos Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -1979,7 +2337,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mock-up — Sección Makis*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/makis-geops-mockup.jpg" alt="Mock-up Sección Makis Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/makis-geops-mockup.jpg" alt="Mock-up Sección Makis Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -1991,7 +2349,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mock-up — Sección Belleza*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/belleza-geops-mockup.jpg" alt="Mock-up Sección Belleza Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/belleza-geops-mockup.jpg" alt="Mock-up Sección Belleza Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -2005,7 +2363,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mock-up — Agregar Oferta al Carrito*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/vermas-geops-mockup.jpg" alt="Mock-up Agregar Oferta Al Carrito Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/vermas-geops-mockup.jpg" alt="Mock-up Agregar Oferta Al Carrito Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -2017,7 +2375,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mock-up — Oferta Agregada al Carrito*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/vermas1-geops-mockup.jpg" alt="Mock-up Oferta Agregada al Carrito Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/vermas1-geops-mockup.jpg" alt="Mock-up Oferta Agregada al Carrito Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -2031,7 +2389,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mock-up — Carrito de Compras*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/carrito-geops-mockup.jpg" alt="Mock-up Carrito de Compras Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/carrito-geops-mockup.jpg" alt="Mock-up Carrito de Compras Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -2043,7 +2401,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mock-up — Proceso de Pago*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/pago-geops-mockup.jpg" alt="Mock-up Proceso de Pago Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/pago-geops-mockup.jpg" alt="Mock-up Proceso de Pago Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -2055,7 +2413,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   * *
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/centroayudaclient-geops-mockup.jpg" alt="Mock-up Centro de Ayuda Consumidor — GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/centroayudaclient-geops-mockup.jpg" alt="Mock-up Centro de Ayuda Consumidor — GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -2069,7 +2427,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mock-up — Notificaciones Generales*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/noticlient-geops-mockup.jpg" alt="Mock-up Notificaciones Generales Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/noticlient-geops-mockup.jpg" alt="Mock-up Notificaciones Generales Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -2081,7 +2439,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mock-up — Notificaciones leídas*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/noticlientseen-geops-mockup.jpg" alt="Mock-up Notificaciones Leídas Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/noticlientseen-geops-mockup.jpg" alt="Mock-up Notificaciones Leídas Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -2093,7 +2451,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mock-up — Sin Notificaciones*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/noticlear-geops-mockup.jpg" alt="Mock-up Sin Notificaciones Consumidor — GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/noticlear-geops-mockup.jpg" alt="Mock-up Sin Notificaciones Consumidor — GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -2105,7 +2463,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mock-up — Perfil*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/perfilclient-geops-mockup.jpg" alt="Mock-up Perfil Consumidor GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/perfilclient-geops-mockup.jpg" alt="Mock-up Perfil Consumidor GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -2117,7 +2475,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mock-up — Editar Perfil*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/editperfilclient-geops-mockup.jpg" alt="Mock-up Editar Perfil Consumidor GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/editperfilclient-geops-mockup.jpg" alt="Mock-up Editar Perfil Consumidor GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).
@@ -2129,7 +2487,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mock-up — Cerrar Sesión*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/logout-geops-mockup.jpg" alt="Mock-up Cerrar Sesión Consumidor GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/logout-geops-mockup.jpg" alt="Mock-up Cerrar Sesión Consumidor GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -2142,7 +2500,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mockup — Resumen Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/resume-geops-mockup.jpg" alt="Resumen Proveedor GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/resume-geops-mockup.jpg" alt="Resumen Proveedor GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).  
@@ -2154,7 +2512,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mockup — Campañas Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/campaigns-geops-mockup.jpg" alt="Campañas Proveedor GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/campaigns-geops-mockup.jpg" alt="Campañas Proveedor GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).  
@@ -2166,7 +2524,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mockup — Sección Crear Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/create-geops-mockup.jpg" alt="Opción Crear Oferta Proveedor GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/create-geops-mockup.jpg" alt="Opción Crear Oferta Proveedor GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).  
@@ -2178,7 +2536,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mockup — Crear Campaña Proveedor*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/createform-geops-mockup.jpg" alt="Opción Crear Oferta Proveedor GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/createform-geops-mockup.jpg" alt="Opción Crear Oferta Proveedor GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).  
@@ -2190,7 +2548,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mockup — Campaña Creada Proveedor*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/createformconfirm-geops-mockup.jpg" alt="Oferta Creada Proveedor GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/createformconfirm-geops-mockup.jpg" alt="Oferta Creada Proveedor GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).  
@@ -2202,7 +2560,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mockup — Reportes Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/reports-geops-mockup.jpg" alt="Reportes Proveedor GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/reports-geops-mockup.jpg" alt="Reportes Proveedor GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).  
@@ -2214,7 +2572,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mockup — Comentarios Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/commentssuppliers-geops-mockup.jpg" alt="Comentarios Proveedor GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/commentssuppliers-geops-mockup.jpg" alt="Comentarios Proveedor GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).  
@@ -2226,7 +2584,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mockup — Planes Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/plans-suppliers-geops-mockup.jpg" alt="Planes Proveedor GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/plans-suppliers-geops-mockup.jpg" alt="Planes Proveedor GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).  
@@ -2238,7 +2596,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mockup — Ayuda Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/helpsuppliers-geops-mockup.jpg" alt="Ayuda Proveedor GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/helpsuppliers-geops-mockup.jpg" alt="Ayuda Proveedor GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).  
@@ -2252,7 +2610,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mockup — Notificaciones Proveedor*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/notisuppliers-geops-mockup.jpg" alt="Notificaciones Proveedor GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/notisuppliers-geops-mockup.jpg" alt="Notificaciones Proveedor GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).  
@@ -2264,7 +2622,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mockup — Notificaciones Leídas Proveedor*
   
     <div align="center">
-        <img src="resources/imgs/capitulo-4/notiseensuppliers-geops-mockup.jpg" alt="Notificaciones Leídas Proveedor GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/notiseensuppliers-geops-mockup.jpg" alt="Notificaciones Leídas Proveedor GeoPS" width="600">
     </div>
   
     *Nota.* Elaboración propia (realizado en Figma).  
@@ -2276,7 +2634,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mockup — Sin Notificaciones Proveedor*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/noticlearsuppliers-geops-mockup.jpg" alt="Sin Notificaciones Proveedor GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/noticlearsuppliers-geops-mockup.jpg" alt="Sin Notificaciones Proveedor GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).  
@@ -2288,7 +2646,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mockup — Perfil Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/suppliersprofile-geops-mockup.jpg" alt="Perfil Proveedor GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/suppliersprofile-geops-mockup.jpg" alt="Perfil Proveedor GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).  
@@ -2300,7 +2658,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
     *Mockup — Editar Perfil Proveedor*
 
     <div align="center">
-        <img src="resources/imgs/capitulo-4/editsuppliersprofile-geops-mockup.jpg" alt="Editar Perfil Proveedor GeoPS" width="600">
+        <img src="resources/imgs/chapter-iv/editsuppliersprofile-geops-mockup.jpg" alt="Editar Perfil Proveedor GeoPS" width="600">
     </div>
 
     *Nota.* Elaboración propia (realizado en Figma).  
@@ -2312,7 +2670,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Mockup — Cerrar Sesión Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/logoutsuppliers-geops-mockup.jpg" alt="Cerrar Sesión Proveedor GeoPS" width="600">
+      <img src="resources/imgs/chapter-iv/logoutsuppliers-geops-mockup.jpg" alt="Cerrar Sesión Proveedor GeoPS" width="600">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).
@@ -2327,7 +2685,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *USFD — Iniciar sesión (Cliente / Proveedor)*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/usfd2.jpg" alt="USFD Iniciar Sesión Cliente y Proveedor — GeoPS" width="650">
+      <img src="resources/imgs/chapter-iv/usfd2.jpg" alt="USFD Iniciar Sesión Cliente y Proveedor — GeoPS" width="650">
   </div>
 
   *Nota.* Elaboración propia.  
@@ -2341,7 +2699,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *USFD — Acceso a links principales Consumidor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/usfd5.jpg" alt="USFD Acceso a links principales Consumidor — GeoPS" width="650">
+      <img src="resources/imgs/chapter-iv/usfd5.jpg" alt="USFD Acceso a links principales Consumidor — GeoPS" width="650">
   </div>
 
   *Nota.* Elaboración propia.  
@@ -2353,7 +2711,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *USFD — Acceso a links principales Consumidor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/usfd5.jpg" alt="USFD Acceso a links principales Consumidor — GeoPS" width="650">
+      <img src="resources/imgs/chapter-iv/usfd5.jpg" alt="USFD Acceso a links principales Consumidor — GeoPS" width="650">
   </div>
 
   *Nota.* Elaboración propia.  
@@ -2365,7 +2723,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *USFD — Cerrar sesión Consumidor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/usfd4.jpg" alt="USFD Cerrar sesión Consumidor — GeoPS" width="650">
+      <img src="resources/imgs/chapter-iv/usfd4.jpg" alt="USFD Cerrar sesión Consumidor — GeoPS" width="650">
   </div>
 
   *Nota.* Elaboración propia.  
@@ -2379,7 +2737,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *USFD — Acceso a Links Principales Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/usfd5.jpg" alt="USFD Acceso a links principales Proveedor — GeoPS" width="650">
+      <img src="resources/imgs/chapter-iv/usfd5.jpg" alt="USFD Acceso a links principales Proveedor — GeoPS" width="650">
   </div>
 
   *Nota.* Elaboración propia.  
@@ -2391,7 +2749,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *USFD — Acceso a Ayuda, Notificaciones y Perfil Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/usfd6.jpg" alt="USFD Acceso a Ayuda Notificaciones y Perfil Proveedor — GeoPS" width="650">
+      <img src="resources/imgs/chapter-iv/usfd6.jpg" alt="USFD Acceso a Ayuda Notificaciones y Perfil Proveedor — GeoPS" width="650">
   </div>
 
   *Nota.* Elaboración propia.  
@@ -2403,7 +2761,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *USFD — Cerrar Sesión Proveedor*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/usfd4.jpg" alt="USFD Cerrar Sesión Proveedor — GeoPS" width="650">
+      <img src="resources/imgs/chapter-iv/usfd4.jpg" alt="USFD Cerrar Sesión Proveedor — GeoPS" width="650">
   </div>
 
   *Nota.* Elaboración propia.
@@ -2418,7 +2776,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Prototype — GeoPS*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/PrototypeGeoPs.jpg" alt="Prototype GeoPS — GeoPS" width="700">
+      <img src="resources/imgs/chapter-iv/PrototypeGeoPs.jpg" alt="Prototype GeoPS — GeoPS" width="700">
   </div>
 
   *Nota.* Elaboración propia (realizado en Figma).  
@@ -2438,7 +2796,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Software Architecture Context Diagram — GeoPS*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/GeoPS_System_Context.jpg" alt="GeoPS Software Architecture Context Diagram" width="900">
+      <img src="resources/imgs/chapter-iv/GeoPS_System_Context.jpg" alt="GeoPS Software Architecture Context Diagram" width="900">
   </div>
 
   *Nota.* Elaboración propia (realizado en Structurizr).  
@@ -2473,7 +2831,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Software Architecture — Container Diagram GeoPS*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/GeoPS-Container_Architecture.jpg" alt="GeoPS Software Architecture Container Diagram" width="900">
+      <img src="resources/imgs/chapter-iv/GeoPS-Container_Architecture.jpg" alt="GeoPS Software Architecture Container Diagram" width="900">
   </div>
 
   *Nota.* Elaboración propia (realizado en Structurizr).  
@@ -2530,7 +2888,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Software Architecture — Analytics Service Components Diagram*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/GeoPS-Analytics_Service_Components.jpg" alt="GeoPS Analytics Service Components Diagram" width="900">
+      <img src="resources/imgs/chapter-iv/GeoPS-Analytics_Service_Components.jpg" alt="GeoPS Analytics Service Components Diagram" width="900">
   </div>
 
   *Nota.* Elaboración propia (realizado en Structurizr).
@@ -2562,7 +2920,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Software Architecture — Campaign Service Components Diagram*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/GeoPS-Analytics_Service_Components-Campaign.jpg" alt="GeoPS Campaign Service Components Diagram" width="900">
+      <img src="resources/imgs/chapter-iv/GeoPS-Analytics_Service_Components-Campaign.jpg" alt="GeoPS Campaign Service Components Diagram" width="900">
   </div>
 
   *Nota.* Elaboración propia (realizado en Structurizr).
@@ -2610,7 +2968,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Software Architecture — Geolocation Service Components Diagram*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/GeoPS-Geolocation_Service_Components.jpg" alt="GeoPS Geolocation Service Components Diagram" width="900">
+      <img src="resources/imgs/chapter-iv/GeoPS-Geolocation_Service_Components.jpg" alt="GeoPS Geolocation Service Components Diagram" width="900">
   </div>
 
   *Nota.* Elaboración propia (realizado en Structurizr).
@@ -2798,7 +3156,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
   *Diagrama de Base de Datos — GeoPS*
 
   <div align="center">
-      <img src="resources/imgs/capitulo-4/diagrama-db.jpg" alt="Database Design — Diagrama de Base de Datos GeoPS" width="900">
+      <img src="resources/imgs/chapter-iv/diagrama-db.jpg" alt="Database Design — Diagrama de Base de Datos GeoPS" width="900">
   </div>
 
   *Nota.* El script SQL completo de creación de la base de datos se encuentra en `geops-backend/geopsdb.sql`
@@ -3321,61 +3679,61 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
   Aquí se presenta el frontend de la aplicación completamente desplegado en Vercel, ofreciendo una interfaz de usuario rápida, responsiva y optimizada para la interacción en tiempo real. Esta implementación permite que tanto usuarios como dueños de negocios accedan a todas las funcionalidades del ecosistema GeoPS de manera fluida y segura directamente desde la web.
     
   <div align="center">
-    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture1.jpg" width="700">
+    <img src="resources/imgs/chapter-v/WebApplication/WebApplicationPicture1.jpg" width="700">
   </div>
 
   La aplicación muestra el formulario de inicio de sesión donde el usuario ingresa sus credenciales para acceder al panel de administración de su negocio.
 
   <div align="center">
-    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture2.jpg" width="700">
+    <img src="resources/imgs/chapter-v/WebApplication/WebApplicationPicture2.jpg" width="700">
   </div>
 
   En esta ventana, la plataforma permite el registro de nuevos usuarios recolectando datos básicos y definiendo el tipo de perfil, ya sea como consumidor o proveedor.
 
   <div align="center">
-    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture3.jpg" width="700">
+    <img src="resources/imgs/chapter-v/WebApplication/WebApplicationPicture3.jpg" width="700">
   </div>
 
   El sistema presenta un tablero de resumen con métricas clave como impresiones, clics y CTR promedio para monitorear el rendimiento general de las campañas activas.
 
   <div align="center">
-    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture4.jpg" width="700">
+    <img src="resources/imgs/chapter-v/WebApplication/WebApplicationPicture4.jpg" width="700">
   </div>
 
   Aquí la interfaz organiza las campañas por estados (activas, pausadas o finalizadas), permitiendo al administrador editar, pausar o finalizar cada anuncio de forma individual.
 
   <div align="center">
-    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture5.jpg" width="700">
+    <img src="resources/imgs/chapter-v/WebApplication/WebApplicationPicture5.jpg" width="700">
   </div>
 
   La plataforma ofrece un formulario para crear nuevas campañas publicitarias, donde se define el nombre, descripción, fechas de vigencia y el presupuesto estimado en soles.
 
   <div align="center">
-    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture6.jpg" width="700">
+    <img src="resources/imgs/chapter-v/WebApplication/WebApplicationPicture6.jpg" width="700">
   </div>
 
   En esta sección, la app genera reportes detallados que se pueden filtrar y exportar en formato JSON, mostrando un resumen general de la inversión y el impacto alcanzado.
 
   <div align="center">
-    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture7.jpg" width="700">
+    <img src="resources/imgs/chapter-v/WebApplication/WebApplicationPicture7.jpg" width="700">
   </div>
 
   La ventana de comentarios permite al dueño del negocio visualizar la calificación promedio y leer las reseñas de los clientes para gestionar la reputación del establecimiento.
 
   <div align="center">
-    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture8.jpg" width="700">
+    <img src="resources/imgs/chapter-v/WebApplication/WebApplicationPicture8.jpg" width="700">
   </div>
 
   La aplicación cuenta con un centro de ayuda integrado que resuelve dudas frecuentes sobre la creación de campañas, gestión de métricas y estados de los anuncios.
 
   <div align="center">
-    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture9.jpg" width="700">
+    <img src="resources/imgs/chapter-v/WebApplication/WebApplicationPicture9.jpg" width="700">
   </div>
 
   Aquí se muestra el perfil del negocio con información de contacto, el plan actual de suscripción y un resumen de ofertas guardadas o ubicaciones frecuentes.
 
   <div align="center">
-    <img src="resources/imgs/Chapter5/WebApplication/WebApplicationPicture10.jpg" width="700">
+    <img src="resources/imgs/chapter-v/WebApplication/WebApplicationPicture10.jpg" width="700">
   </div>
 
   La interfaz de configuración permite editar detalles críticos del negocio como el RUC, tipo de establecimiento (ej. Chifa), dirección física, horarios de atención y enlaces web.
@@ -3388,23 +3746,23 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
   Aquí se observa el backend del proyecto desplegado y documentado con Swagger UI, lo cual permite visualizar y probar de forma interactiva todos los endpoints de la API. La interfaz facilita la gestión del CRUD y la verificación de la lógica de negocio directamente desde el navegador, asegurando que la comunicación entre el servidor y la base de datos sea correcta.
 
   <div align="center">
-    <img src="resources/imgs/Chapter5/Backend/BackendPicture1.jpg" width="700">
+    <img src="resources/imgs/chapter-v/Backend/BackendPicture1.jpg" width="700">
   </div>
 
   <div align="center">
-    <img src="resources/imgs/Chapter5/Backend/BackendPicture2.jpg" width="700">
+    <img src="resources/imgs/chapter-v/Backend/BackendPicture2.jpg" width="700">
   </div>
 
   <div align="center">
-    <img src="resources/imgs/Chapter5/Backend/BackendPicture3.jpg" width="700">
+    <img src="resources/imgs/chapter-v/Backend/BackendPicture3.jpg" width="700">
   </div>
 
   <div align="center">
-    <img src="resources/imgs/Chapter5/Backend/BackendPicture4.jpg" width="700">
+    <img src="resources/imgs/chapter-v/Backend/BackendPicture4.jpg" width="700">
   </div>
 
   <div align="center">
-    <img src="resources/imgs/Chapter5/Backend/BackendPicture5.jpg" width="700">
+    <img src="resources/imgs/chapter-v/Backend/BackendPicture5.jpg" width="700">
   </div>
 
 
@@ -3423,14 +3781,14 @@ Se han implementado pruebas unitarias para validar la lógica de negocio de las 
 * **Frontend (Angular):** Utilizando **Jasmine** y **Karma**, se validan los modelos de datos y la lógica de los componentes en `src/app/components`. Se asegura que las clases de TypeScript procesen correctamente los datos antes de enviarlos a la API.
 
 <div align="center">
-    <img src="resources/imgs/capitulo6/test_frontend.png" 
+    <img src="resources/imgs/chapter-vi/test_frontend.png" 
     alt="Evidencias Test Frontend" width="700">
 </div>
 
 * **Backend (Java + JUnit):** Se implementaron pruebas unitarias utilizando **JUnit 5** para verificar la lógica de los modelos y entidades de dominio (ej. `Promotion`, `Business`, `User`). Se validaron reglas de negocio como la estructura de los identificadores, cálculos de descuentos y restricciones de campos obligatorios, asegurando que los métodos devuelvan los valores esperados sin errores de lógica interna.
 
 <div align="center">
-    <img src="resources/imgs/capitulo6/test_backend.png" 
+    <img src="resources/imgs/chapter-vi/test_backend.png" 
     alt="Evidencias Test Backend" width="700">
 </div>
 
@@ -3440,14 +3798,14 @@ Se realizaron pruebas de integración para asegurar la correcta interoperabilida
 * **Interacción API-Base de Datos:** Se validó que el backend en Java se comunique correctamente con la base de datos **MySQL Workbench**, verificando que las operaciones de persistencia (Guardar negocio, buscar promociones) se ejecuten íntegramente.
 
 <div align="center">
-    <img src="resources/imgs/capitulo6/mensajes_error_DB.png" 
+    <img src="resources/imgs/chapter-vi/mensajes_error_DB.png" 
     alt="Evidencias Mensajes Error Base de Datos" width="700">
 </div>
 
 * **Comunicación Frontend-Backend:** Se probaron los servicios de Angular que consumen la API REST en Java, asegurando que los objetos JSON sean mapeados correctamente y que los códigos de estado HTTP (200, 201, 400, 404) sean manejados de forma adecuada por la interfaz.
 
 <div align="center">
-    <img src="resources/imgs/capitulo6/mensajes_error_front_back.png" 
+    <img src="resources/imgs/chapter-vi/mensajes_error_front_back.png" 
     alt="Evidencias Mensajes Error Frontend Backend" width="700">
 </div>
 
@@ -3461,7 +3819,7 @@ Se aplicaron técnicas de BDD para definir el comportamiento del sistema desde l
     * **Then** el sistema debe mostrar una lista de tiendas en un radio de 3km con stock disponible.
 
 <div align="center">
-    <img src="resources/imgs/capitulo6/BDD.png" 
+    <img src="resources/imgs/chapter-vi/BDD.png" 
     alt="Evidencias BDD" width="700">
 </div>
 
@@ -3473,19 +3831,19 @@ Se ejecutaron pruebas de sistema de flujo completo para validar que GeoPS funcio
 * **Validación de Entorno:** Se verificó la respuesta del sistema y la adaptación del diseño (UI/UX) tanto en navegadores de escritorio como en dispositivos móviles, asegurando una experiencia fluida y sin errores en la integración con las APIs de mapas y geolocalización.
 
 <div align="center">
-    <img src="resources/imgs/capitulo6/registro1.png" 
+    <img src="resources/imgs/chapter-vi/registro1.png" 
     alt="Evidencias Registro 1" width="700">
 </div>
 <div align="center">
-    <img src="resources/imgs/capitulo6/registro2.png" 
+    <img src="resources/imgs/chapter-vi/registro2.png" 
     alt="Evidencias Registro 2" width="700">
 </div>
 <div align="center">
-    <img src="resources/imgs/capitulo6/inicio.png" 
+    <img src="resources/imgs/chapter-vi/inicio.png" 
     alt="Evidencias Inicio de Sesion" width="700">
 </div>
 <div align="center">
-    <img src="resources/imgs/capitulo6/otro.png" 
+    <img src="resources/imgs/chapter-vi/otro.png" 
     alt="Evidencias OTRO" width="700">
 </div>
 
