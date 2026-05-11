@@ -55,6 +55,53 @@
 
 ---
 
+
+## Project Report Collaboration Insights
+
+### Project Report Collaboration Insights
+
+#### **TB1 / TP1**
+Todas las actividades asignadas para los hitos TB1 y TP1 de **GeoPS Labs** han sido completadas satisfactoriamente. El equipo implementó un flujo de trabajo basado en Gitflow, distribuyendo la carga de trabajo en tres repositorios principales para asegurar la modularidad y el control de versiones tanto del software como de la documentación técnica.
+
+La colaboración se distribuyó de manera equitativa entre los 7 integrantes:
+- **Choy Robles, Vanessa May Lang:** Lideró la especificación técnica y la validación de persistencia en el Backend, además de asegurar la integridad del registro en el Frontend.
+- **Valverde Portuguez, Natalia Ximena:** Dirigió la alineación estratégica, el Startup Profile y la coherencia del Lean UX Canvas en el Reporte.
+- **Barba Estrada, Bryan Eduardo:** Realizó el análisis del Startup Business Model y evaluó el impacto económico del modelo de publicidad hiperlocal.
+- **Salazar Caballero, Alvaro Fabrizzio:** Diseñó los User Personas y validó que el diseño responsive del Frontend respete la privacidad de ubicación del usuario.
+- **Cárdenas Concha, Santiago Iván:** Estuvo a cargo del diseño de la arquitectura de software (Diagramas de Contenedores y Clases) y la configuración del entorno.
+- **Vera Nuñez, Nicolas Alejandro:** Desarrolló el análisis competitivo y verificó que las estrategias de marketing no incurran en prácticas invasivas.
+- **Diestra Zambrano, Adriana Maria:** Sustentó el análisis "How Much" con datos globales y validó que la documentación de la API sea transparente y completa.
+
+#### **Evidencias de Colaboración (GitHub Insights)**
+
+**1. Repository: Project Report & Documentation**
+*Evidencia de la colaboración de los 7 integrantes en la redacción del informe técnico.*
+<p align="center">
+  <img src="./resources/imgs/evidencias/report-contributors.png" alt="Report Contributors Insight" width="600">
+</p>
+<p align="center">
+  <img src="./resources/imgs/evidencias/report-network.png" alt="Report Network Graph" width="600">
+</p>
+
+**2. Repository: Frontend Web Application**
+*Desarrollo de la interfaz responsiva y lógica de cliente (Angular).*
+<p align="center">
+  <img src="./resources/imgs/evidencias/frontend-contributors.png" alt="Frontend Contributors Insight" width="600">
+</p>
+<p align="center">
+  <img src="./resources/imgs/evidencias/frontend-network.png" alt="Frontend Network Graph" width="600">
+</p>
+
+**3. Repository: Backend RESTful API**
+*Desarrollo de la lógica de negocio, seguridad y persistencia (Spring Boot).*
+<p align="center">
+  <img src="./resources/imgs/evidencias/backend-contributors.png" alt="Backend Contributors Insight" width="600">
+</p>
+<p align="center">
+  <img src="./resources/imgs/evidencias/backend-network.png" alt="Backend Network Graph" width="600">
+</p>
+
+
 - [Universidad Peruana de Ciencias Aplicadas](#universidad-peruana-de-ciencias-aplicadas)
   - [Informe de TB1](#informe-de-tb1)
     - [Relación de integrantes](#relación-de-integrantes)
@@ -180,6 +227,18 @@
 
 
 ---
+
+## Student Outcome 
+
+**ABET – EAC - Student Outcome 4**
+
+La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales.
+
+En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del **ABET – EAC - Student Outcome 4**.
+
+| Criterio específico | Acciones Realizadas | Conclusiones |
+|:---|:---|:---|
+| **Responsabilidad ética y profesional** | **Choy Robles, Vanessa May Lang**<br>**TB1:** Lideró la especificación de requerimientos técnicos, asegurando que las User Stories priorizaran la seguridad de datos en el registro.<br>**TP1:** Implementó validaciones de registro y decidió retirar la sección de reviews para proteger la integridad de los comercios afiliados.<br><br>**Barba Estrada, Bryan Eduardo**<br>**TB1:** Realizó el análisis del Startup Business Model enfocado en PyMEs.<br>**TP1:** Evaluó el impacto económico del modelo de publicidad hiperlocal para asegurar un beneficio justo al comerciante.<br><br>**Salazar Caballero, Alvaro Fabrizzio**<br>**TB1:** Diseñó los User Personas basados en la cultura asiática.<br>**TP1:** Validó que el diseño responsive del Frontend respete la privacidad de ubicación del usuario final.<br><br>**Cárdenas Concha, Santiago Iván**<br>**TB1:** Elaboró el Impact Mapping y el Architecture Overview Diagram.<br>**TP1:** Aseguró que el diseño de clases y la arquitectura del sistema minimicen el uso innecesario de recursos del servidor.<br><br>**Vera Nuñez, Nicolas Alejandro**<br>**TB1:** Desarrolló el análisis competitivo frente a grandes plataformas.<br>**TP1:** Verificó que las estrategias de marketing de GeoPS no incurran en prácticas de publicidad invasiva.<br><br>**Valverde Portuguez, Natalia Ximena**<br>**TB1:** Dirigió la fase inicial de alineación estratégica, definiendo la misión y visión centrada en la digitalización ética de comercios locales.<br>**TP1:** Supervisó que el Lean UX Canvas mantuviera el enfoque en soluciones de bajo costo para las PyMEs.<br><br>**Diestra Zambrano, Adriana Maria**<br>**TB1:** Sustentó el análisis "How Much" con datos de importación globales.<br>**TP1:** Validó que la documentación de la API refleje con transparencia las capacidades del sistema. | El equipo demostró un juicio profesional sólido al equilibrar la innovación tecnológica con la responsabilidad social. Al asignar responsables específicos para la seguridad de datos y el análisis de impacto económico, se garantizó que **GeoPS Labs** no solo sea una herramienta funcional, sino un motor de crecimiento ético para las PyMEs orientales en Lima Moderna. Esta estructura permitió que cada decisión técnica, desde el manejo de la base de datos hasta la interfaz de usuario, estuviera alineada con los estándares de privacidad y transparencia.<br><br>Se consolidó un entorno de desarrollo responsable mediante la ejecución de los Sprints de TB1 y TP1, integrando arquitectura de software y diseño de bases de datos bajo principios profesionales. El cumplimiento de los objetivos se evidencia en la entrega de un producto que protege la reputación de los negocios locales y ofrece una experiencia segura al consumidor, transformando la problemática detectada en una solución de ingeniería consciente de su impacto global y económico. |
 
 ## Capítulo 1: Introducción
 
