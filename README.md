@@ -3835,10 +3835,6 @@ Se ejecutaron pruebas de sistema de flujo completo para validar que GeoPS funcio
     alt="Evidencias Registro 1" width="700">
 </div>
 <div align="center">
-    <img src="resources/imgs/chapter-vi/registro2.png" 
-    alt="Evidencias Registro 2" width="700">
-</div>
-<div align="center">
     <img src="resources/imgs/chapter-vi/inicio.png" 
     alt="Evidencias Inicio de Sesion" width="700">
 </div>
