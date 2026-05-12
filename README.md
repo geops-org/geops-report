@@ -1284,7 +1284,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 | 11      | US11          | Configuración de Presupuesto de Campaña en la Plataforma Web | Como dueño de negocio, quiero configurar presupuesto de campañas para controlar gastos y optimizar inversión.                                       | 3            |
 | 12      | US12          | Programar Fecha de Inicio de Campaña en la Plataforma Web    | Como dueño de negocio, quiero programar fecha de inicio para campañas.                                                                              | 3            |
 | 13      | US13          | Programar Fecha de Fin de Campaña en la Plataforma Web       | Como dueño de negocio, quiero programar fecha de fin para campañas.                                                                                 | 3            |
-| 14      | US14          | Configuración de Idioma en la Plataforma Web                 | Como usuario, quiero seleccionar idioma de la plataforma para visualizar contenido en mi preferencia.                                               | 2            |
+| 14      | US14          | Configuración de Idioma(Español/Ingles) en la Plataforma Web                 | Como usuario, quiero seleccionar idioma español o ingles en la plataforma para visualizar contenido en mi preferencia.                                               | 2            |
 
 
 *Nota.* Elaboración propia.
