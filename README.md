@@ -3773,7 +3773,21 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
 
   La interfaz de configuración permite editar detalles críticos del negocio como el RUC, tipo de establecimiento (ej. Chifa), dirección física, horarios de atención y enlaces web.
 
-  #### 5.2.4. Implemented RESTful API and/or Serverless Backend Evidence
+  #### 5.2.4. Acuerdo de servicio SaaS
+  1. Nuestros Términos de Servicio (SaaS Agreement)
+En GeoPS Labs, mantenemos la propiedad intelectual de nuestra plataforma, otorgando a los comercios una licencia de uso mediante suscripción mensual. Este acuerdo garantiza que los negocios accedan a nuestras herramientas de publicidad sin derecho a replicar, modificar o distribuir nuestro código fuente, asegurando que la tecnología siempre trabaje a favor del crecimiento del ecosistema local.
+
+2. Compromiso de Disponibilidad (SLA)
+Nos comprometemos a que GeoPS esté disponible y operativo al menos el 99% del tiempo. Entendemos que cada minuto cuenta para una PyME, por lo que establecemos un tiempo de respuesta técnica de máximo 24 horas ante incidencias críticas, garantizando que tus promociones nunca dejen de llegar a los clientes que caminan cerca de tu tienda.
+
+3. Privacidad y Geoprotección de Datos
+La confianza es nuestra prioridad. En GeoPS Labs, utilizamos la geolocalización de forma ética: capturamos la posición del usuario solo para mostrar la oferta más relevante en tiempo real. No almacenamos historiales de movimiento vinculados a identidades reales; una vez entregada la promoción, la información se anonimiza o se elimina, protegiendo la privacidad de tu comunidad.
+
+4. Resguardo de Confidencialidad (NDA)
+Toda nuestra arquitectura técnica, algoritmos de geovallado y bases de datos estratégicas sobre el mercado asiático en Lima son activos exclusivos de GeoPS Labs. Este acuerdo obliga a todos nuestros colaboradores y socios a mantener bajo estricta reserva cualquier información sensible, asegurando que nuestra ventaja competitiva y la de nuestros clientes esté siempre blindada.
+
+5. Política de Publicidad Responsable (Uso Aceptable)
+Para garantizar una experiencia de usuario de alta calidad, GeoPS Labs se reserva el derecho de dar de baja a comercios que realicen prácticas de spam o publicidad engañosa. Limitamos la frecuencia de notificaciones para evitar la fatiga publicitaria, asegurando que cada alerta sea una oportunidad real de ahorro y no una molestia para el vecino de Lima Moderna
 
   
   
