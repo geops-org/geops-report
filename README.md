@@ -3784,14 +3784,16 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
 
   Este acuerdo establece los términos de uso de la plataforma GeoPS para los comercios de productos asiáticos.
 
-  - Modelo de Suscripción: GeoPS opera bajo un modelo SaaS donde los dueños de negocios pagan una cuota mensual por el acceso al panel de analítica y publicidad hiperlocal.
+  1. Nuestros Términos de Servicio (SaaS Agreement) En GeoPS Labs, mantenemos la propiedad intelectual de nuestra plataforma, otorgando a los comercios una licencia de uso mediante suscripción mensual. Este acuerdo garantiza que los negocios accedan a nuestras herramientas de publicidad sin derecho a replicar, modificar o distribuir nuestro código fuente, asegurando que la tecnología siempre trabaje a favor del crecimiento del ecosistema local.
 
-  - Disponibilidad (SLA): Se garantiza un tiempo de actividad del 99.5% para asegurar que los anuncios de los comercios estén siempre visibles.
+  2. Compromiso de Disponibilidad (SLA) Nos comprometemos a que GeoPS esté disponible y operativo al menos el 99% del tiempo. Entendemos que cada minuto cuenta para una PyME, por lo que establecemos un tiempo de respuesta técnica de máximo 24 horas ante incidencias críticas, garantizando que tus promociones nunca dejen de llegar a los clientes que caminan cerca de tu tienda.
 
-  - Privacidad de Datos: De acuerdo con la Ley N° 29733 de Perú, GeoPS se compromete a no comercializar la ubicación exacta de los usuarios, usándola únicamente para el radar de proximidad.
+  3. Seguridad y Resguardo de Credenciales En GeoPS Labs, garantizamos la protección absoluta de las llaves de acceso a nuestra plataforma mediante protocolos de encriptación de alta seguridad. Nos comprometemos a que todas las contraseñas de usuarios y comercios sean almacenadas de forma cifrada, asegurando que solo el titular de la cuenta tenga el control sobre su perfil. Esta política impide cualquier acceso no autorizado a los paneles de gestión de campañas, manteniendo la integridad de las cuentas y la confianza en nuestro ecosistema digital.
 
-  - Propiedad Intelectual: El software, los algoritmos de recomendación y la marca GeoPS son propiedad exclusiva de GeoPS Labs.
-  
+  4. Resguardo de Confidencialidad (NDA) Toda nuestra arquitectura técnica, algoritmos de geovallado y bases de datos estratégicas sobre el mercado asiático en Lima son activos exclusivos de GeoPS Labs. Este acuerdo obliga a todos nuestros colaboradores y socios a mantener bajo estricta reserva cualquier información sensible, asegurando que nuestra ventaja competitiva y la de nuestros clientes esté siempre blindada.
+
+  5. Política de Publicidad Responsable (Uso Aceptable) Para garantizar una experiencia de usuario de alta calidad, GeoPS Labs se reserva el derecho de dar de baja a comercios que realicen prácticas de spam o publicidad engañosa. Limitamos la frecuencia de notificaciones para evitar la fatiga publicitaria, asegurando que cada alerta sea una oportunidad real de ahorro y no una molestia para el vecino de Lima Moderna
+    
 
   #### 5.2.5. Implemented Native-Mobile Application Evidence
 
