@@ -3703,6 +3703,13 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
 ### 5.2. Product Implementation & Deployment.
 
   #### 5.2.1. Sprint Backlogs
+
+  En esta sección se documenta la gestión del tiempo y tareas mediante la metodología Scrum.
+
+  Sprint 1: Enfoque en el Setup del proyecto, diseño de la arquitectura y desarrollo del Landing Page.
+
+  Sprint 2 (Actual): Implementación del CRUD de usuarios (Identity), diseño de base de datos MySQL y despliegue inicial de la API en Railway.
+  (Aquí debes insertar una captura de pantalla de tu tablero de Jira o Azure DevOps filtrado por Sprints).
   
   #### 5.2.2. Implemented Landing Page Evidence
 
@@ -3802,11 +3809,37 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
 
   La interfaz de configuración permite editar detalles críticos del negocio como el RUC, tipo de establecimiento (ej. Chifa), dirección física, horarios de atención y enlaces web.
 
-  #### 5.2.4. Implemented RESTful API and/or Serverless Backend Evidence
+  #### 5.2.4. Acuerdo de Servicio - SaaS
 
+  Este acuerdo establece los términos de uso de la plataforma GeoPS para los comercios de productos asiáticos.
+
+  - Modelo de Suscripción: GeoPS opera bajo un modelo SaaS donde los dueños de negocios pagan una cuota mensual por el acceso al panel de analítica y publicidad hiperlocal.
+
+  - Disponibilidad (SLA): Se garantiza un tiempo de actividad del 99.5% para asegurar que los anuncios de los comercios estén siempre visibles.
+
+  - Privacidad de Datos: De acuerdo con la Ley N° 29733 de Perú, GeoPS se compromete a no comercializar la ubicación exacta de los usuarios, usándola únicamente para el radar de proximidad.
+
+  - Propiedad Intelectual: El software, los algoritmos de recomendación y la marca GeoPS son propiedad exclusiva de GeoPS Labs.
   
-  
-  #### 5.2.5. RESTful API documentation
+
+  #### 5.2.5. Implemented Native-Mobile Application Evidence
+
+  (Si no han desarrollado una app móvil nativa aún, debes colocar lo siguiente para no dejar el punto vacío):
+  "Para la presente entrega (TP1), el equipo se ha centrado en la Progressive Web App (PWA) a través del Frontend-Web, garantizando que la interfaz sea totalmente responsiva y funcional en dispositivos móviles Android e iOS sin necesidad de instalación desde tiendas oficiales."
+  (Si la tienen, inserta capturas del emulador o celular).
+
+  #### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence
+
+  El backend está desarrollado con Spring Boot 3 y desplegado en Railway.
+
+  Persistencia: Se utiliza MySQL como base de datos relacional para gestionar la consistencia de usuarios, campañas y negocios.
+
+  Seguridad: Implementación de Spring Security para la autenticación de usuarios.
+
+  Enlace de API: https://geops-api-production.up.railway.app/
+  (Inserta captura de los logs de Railway o una respuesta JSON desde el navegador/Postman).
+
+  #### 5.2.7. RESTful API documentation
   Aquí se observa el backend del proyecto desplegado y documentado con Swagger UI, lo cual permite visualizar y probar de forma interactiva todos los endpoints de la API. La interfaz facilita la gestión del CRUD y la verificación de la lógica de negocio directamente desde el navegador, asegurando que la comunicación entre el servidor y la base de datos sea correcta.
 
   <div align="center">
@@ -3829,6 +3862,15 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
     <img src="resources/imgs/chapter-v/Backend/BackendPicture5.jpg" width="700">
   </div>
 
+ #### 5.2.8. Team Collaboration Insights 
+
+  *Evidencia de la colaboración de los 7 integrantes en la redacción del informe técnico.*
+  <p align="center">
+    <img src="./resources/imgs/evidencias/report-contributors.png" alt="Report Contributors Insight" width="600">
+  </p>
+  <p align="center">
+    <img src="./resources/imgs/evidencias/report-network.png" alt="Report Network Graph" width="600">
+  </p>
 
 ### 5.3 Video About-the-Product
 
