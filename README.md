@@ -20,7 +20,7 @@
 
 **Profesor:** Noriega Melendez, Julio Manuel
 
-### Informe de TB1
+### Informe de TP
 
 **Startup:** GeoPsLabs
 
@@ -103,7 +103,7 @@ La colaboración se distribuyó de manera equitativa entre los 7 integrantes:
 
 
 - [Universidad Peruana de Ciencias Aplicadas](#universidad-peruana-de-ciencias-aplicadas)
-  - [Informe de TB1](#informe-de-tb1)
+  - [Informe de TP](#informe-de-tp)
     - [Relación de integrantes](#relación-de-integrantes)
   - [Registro de Versiones](#registro-de-versiones)
 - [Capítulo 1: Introducción](#capítulo-1-introducción)
@@ -1282,9 +1282,8 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 | 9       | US9          | Eliminación de Campaña Publicitaria en la Plataforma Web     | Como dueño de negocio, quiero eliminar campañas publicitarias para retirar promociones que ya no deseo mantener.                                    | 3            |
 | 10      | US10          | Visualización de Campañas Activas en la Plataforma Web       | Como dueño de negocio, quiero visualizar todas mis campañas activas para dar seguimiento.                                                           | 3            |
 | 11      | US11          | Configuración de Presupuesto de Campaña en la Plataforma Web | Como dueño de negocio, quiero configurar presupuesto de campañas para controlar gastos y optimizar inversión.                                       | 3            |
-| 12      | US12          | Programar Fecha de Inicio de Campaña en la Plataforma Web    | Como dueño de negocio, quiero programar fecha de inicio para campañas.                                                                              | 3            |
-| 13      | US13          | Programar Fecha de Fin de Campaña en la Plataforma Web       | Como dueño de negocio, quiero programar fecha de fin para campañas.                                                                                 | 3            |
-| 14      | US14          | Configuración de Idioma(Español/Ingles) en la Plataforma Web                 | Como usuario, quiero seleccionar idioma español o ingles en la plataforma para visualizar contenido en mi preferencia.                                               | 2            |
+| 12      | US12          | Programar Fecha de Inicio y Fin de Campaña en la Plataforma Web    | Como dueño de negocio, quiero programar fecha de inicio y fin para campañas.                                                                              | 3            |
+| 13      | US13          | Configuración de Idioma(Español/Ingles) solo en elementos fijos de la  Plataforma Web                 | Como usuario, quiero seleccionar idioma español o ingles en la plataforma para visualizar contenido fijo segun mi preferencia.                                               | 2            |
 
 
 *Nota.* Elaboración propia.
