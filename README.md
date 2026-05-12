@@ -3780,8 +3780,8 @@ En GeoPS Labs, mantenemos la propiedad intelectual de nuestra plataforma, otorga
 2. Compromiso de Disponibilidad (SLA)
 Nos comprometemos a que GeoPS esté disponible y operativo al menos el 99% del tiempo. Entendemos que cada minuto cuenta para una PyME, por lo que establecemos un tiempo de respuesta técnica de máximo 24 horas ante incidencias críticas, garantizando que tus promociones nunca dejen de llegar a los clientes que caminan cerca de tu tienda.
 
-3. Privacidad y Geoprotección de Datos
-La confianza es nuestra prioridad. En GeoPS Labs, utilizamos la geolocalización de forma ética: capturamos la posición del usuario solo para mostrar la oferta más relevante en tiempo real. No almacenamos historiales de movimiento vinculados a identidades reales; una vez entregada la promoción, la información se anonimiza o se elimina, protegiendo la privacidad de tu comunidad.
+3. Seguridad y Resguardo de Credenciales
+En GeoPS Labs, garantizamos la protección absoluta de las llaves de acceso a nuestra plataforma mediante protocolos de encriptación de alta seguridad. Nos comprometemos a que todas las contraseñas de usuarios y comercios sean almacenadas de forma cifrada, asegurando que solo el titular de la cuenta tenga el control sobre su perfil. Esta política impide cualquier acceso no autorizado a los paneles de gestión de campañas, manteniendo la integridad de las cuentas y la confianza en nuestro ecosistema digital.
 
 4. Resguardo de Confidencialidad (NDA)
 Toda nuestra arquitectura técnica, algoritmos de geovallado y bases de datos estratégicas sobre el mercado asiático en Lima son activos exclusivos de GeoPS Labs. Este acuerdo obliga a todos nuestros colaboradores y socios a mantener bajo estricta reserva cualquier información sensible, asegurando que nuestra ventaja competitiva y la de nuestros clientes esté siempre blindada.
