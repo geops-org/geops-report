@@ -20,7 +20,7 @@
 
 **Profesor:** Noriega Melendez, Julio Manuel
 
-### Informe de TB1
+### Informe de TP1
 
 **Startup:** GeoPsLabs
 
