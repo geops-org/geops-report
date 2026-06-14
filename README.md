@@ -4022,37 +4022,179 @@ El objetivo de **Continuous Deployment (CD)** es que los cambios aprobados pasen
 
 ### 8.1.1. As-Is Summary
 
+La plataforma actual, GeoPS, se centra en conectar comercios de productos asiáticos y orientales con consumidores en Lima Moderna mediante geolocalización a través de una aplicación web responsiva (Web App). Actualmente, la plataforma ha completado su flujo principal: registro de usuarios, gestión de perfiles, publicación de campañas publicitarias por parte de las PyMEs y visualización de ofertas cercanas.
+
+Sin embargo, al tratarse de una solución 100% web (sin aplicación nativa instalable), la retención del usuario y la conversión física al local ("tráfico peatonal") presentan retos particulares. Existe el riesgo de que los usuarios cierren la pestaña del navegador y olviden la plataforma si no tienen una necesidad inmediata, perdiendo valiosas oportunidades de compras impulsivas.
+
+**Problemas identificados:**
+
+* **Baja retención o "enganche" (Engagement):** Al no ser una app instalada por defecto, el usuario debe recordar abrir el navegador web e ingresar a GeoPS.  
+* **Falta de métricas de conversión física (ROI):** Los dueños de las PyMEs visualizan interacciones web (clics, impresiones), pero no tienen certeza de cuántos de esos clics se tradujeron en una venta presencial.  
+* **Sobrecarga cognitiva en la interfaz:** Mostrar todos los negocios a la vez en el mapa web puede abrumar al usuario en pantallas móviles pequeñas, dificultando la exploración de nichos específicos.
+
+**Objetivos de mejora:**
+
+* **Estimular la compra impulsiva web:** Implementar Web Push Notifications de proximidad (mediante Service Workers) para recordar al usuario sobre ofertas cuando camina cerca de un negocio, sin necesidad de tener la pestaña activa en primer plano.  
+* **Cerrar el ciclo de conversión O2O (Online to Offline):** Desarrollar un sistema de canje de códigos QR utilizando la cámara del navegador móvil.  
+* **Fomentar los accesos directos:** Incentivar al usuario a agregar la Web App a su pantalla de inicio (PWA) ofreciendo beneficios de exploración, como las agrupaciones temáticas.
+
 ### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
+
+**Assumptions (Suposiciones):**
+
+* **Permisos del Navegador:** Asumimos que un segmento significativo de usuarios aceptará conceder permisos de "Ubicación" y "Notificaciones" en su navegador móvil si se les explica claramente el beneficio (descuentos cercanos).  
+* **Validación WebRTC:** Se asume que los dueños de negocios están dispuestos a conceder permisos de cámara a su navegador (Chrome/Safari) para escanear un código QR que valide las promociones.  
+* **Rutas Temáticas:** Se asume que los consumidores de cultura asiática valoran las experiencias guiadas (ej. "Ruta K-Beauty" o "Tour del Ramen").
+
+**Knowledge Gaps (Brechas de conocimiento):**
+
+* No sabemos cuál será la tasa de "Drop-off" (abandono) al momento en que el navegador web lance la ventana emergente ("pop-up") solicitando permisos de ubicación en segundo plano.  
+* Desconocemos si la calidad de las cámaras móviles combinada con la iluminación de los locales asiáticos permitirá una lectura HTML5/WebRTC fluida de los códigos QR.
+
+**Ideas:**
+
+* **Geofencing vía Web Push:** Usar la API de geolocalización de HTML5 y Service Workers para enviar notificaciones push automáticas cuando las coordenadas del usuario coincidan con el radio de una campaña.  
+* **Sistema de Canje QR Web:** Añadir un botón de "Generar QR" para el cliente y un escáner integrado en la web del proveedor.  
+* **Filtros de Rutas Temáticas:** Crear botones de acceso rápido que filtren el mapa para mostrar circuitos de negocios del mismo rubro.
+
+**Claims (Afirmaciones):**
+
+* Se afirma que un sistema de QR cerrará la brecha de desconfianza de los dueños de negocios respecto a la efectividad real de la plataforma web.  
+* Se postula que las notificaciones Web Push de proximidad aumentarán el tráfico peatonal impulsivo en al menos un 15%, compensando la falta de una app nativa.
 
 ### 8.1.3. Experiment-Ready Questions
 
+| Question | Confidence | Risk | Impact | Interest | Total Score |
+| :---- | :---- | :---- | :---- | :---- | :---- |
+| ¿Aumentará la afluencia física a las tiendas si implementamos **Web Push Notifications** hiperlocalizadas (radio 500m)? | 7 \- Estrategia comprobada, pero con fricción en web. | 6 \- Riesgo alto por dependencias de permisos del navegador (Safari/Chrome) y restricciones de ahorro de batería móvil. | 9 \- Alto impacto para sortear la ausencia de app nativa. | 8 \- Alto interés para las PyMEs que desean liquidar stock. | **30** |
+| ¿Mejorará la medición del ROI publicitario para las PyMEs integrando un sistema de **canje QR vía WebRTC**? | 8 \- El QR es estándar para validación O2O. | 4 \- Riesgo moderado por necesidad de permisos de cámara y compatibilidad en navegadores antiguos. | 8 \- Aumenta la confianza del negocio. | 8 \- Vital para justificar suscripciones premium. | **28** |
+| ¿Aumentará el tiempo de sesión de los consumidores si agregamos filtros de **Rutas Temáticas (Mapas de Nicho)**? | 6 \- Fomenta la exploración web. | 2 \- Riesgo técnico muy bajo, solo requiere un query adicional. | 6 \- Mejora el UX. | 7 \- Atractivo para la comunidad Otaku/K-pop. | **21** |
+
 ### 8.1.4. Question Backlog
 
+| Prioridad (1,2,3,5,8) | Pregunta |
+| :---- | :---- |
+| 1 | ¿Aumentará la afluencia física a las tiendas si implementamos Web Push Notifications hiperlocalizadas (radio 500m)? |
+| 2 | ¿Mejorará la medición del ROI publicitario para las PyMEs integrando un sistema de canje QR vía WebRTC? |
+| 5 | ¿Aumentará el tiempo de sesión de los consumidores si agregamos filtros de Rutas Temáticas (Mapas de Nicho)? |
+
 ### 8.1.5. Experiment Cards
+
+| Question | ¿Aumentará la afluencia física a las tiendas si implementamos Web Push Notifications hiperlocalizadas? |
+| :---- | :---- |
+| **Why** | Al ser una plataforma web, depender de que el usuario abra la pestaña por iniciativa propia limita drásticamente las conversiones. Alertarlo proactivamente mediante Service Workers capitaliza la intención de compra impulsiva. |
+| **What** | Implementar notificaciones Web Push y un algoritmo de geofencing en Angular utilizando la Geolocation API que, al detectar al usuario a \<500 metros de una campaña, envíe una alerta a su navegador móvil. |
+| **Hypothesis** | Se espera que, a pesar de la fricción de solicitar permisos del navegador, la implementación de alertas de proximidad incremente la tasa de retorno a la plataforma web en un 20% y genere un aumento del 15% en visitas físicas. |
+
+| Question | ¿Mejorará la medición del ROI publicitario para las PyMEs integrando un sistema de canje QR vía WebRTC? |
+| :---- | :---- |
+| **Why** | Los comercios invierten en la plataforma web pero no tienen forma de saber si el cliente físico llegó gracias a GeoPS o por medios tradicionales. |
+| **What** | Desarrollar un generador de QR dinámico en el frontend del consumidor y habilitar un escáner HTML5 (WebRTC) en el Dashboard web del proveedor que apunte al endpoint /offers/redeem. |
+| **Hypothesis** | Se espera que el 60% de las PyMEs adopte el escaneo de QR desde su navegador móvil, incrementando su percepción de valor (ROI) de GeoPS. |
 
 ## 8.2. Experiment Design
 
 ### 8.2.1. Hypotheses
 
+| Atributo | Detalle de la Hipótesis |
+| :---- | :---- |
+| **Question** | ¿Aumentará la afluencia física a las tiendas si implementamos Web Push Notifications hiperlocalizadas? |
+| **Belief** | Creemos que interceptar al usuario con una notificación web push en el momento geográfico exacto compensará la barrera de no tener una aplicación nativa instalada. |
+| **Hypothesis** | La habilitación de notificaciones de geofencing web incrementará el Click-Through Rate (CTR) en un 15% comparado con la navegación orgánica. *(Nota: Meta moderada por la tasa de rechazo de permisos web).* |
+| **Null Hypothesis** | Los usuarios rechazarán mayoritariamente los permisos de ubicación/notificaciones en el navegador, manteniendo el CTR sin variaciones significativas. |
+
+| Atributo | Detalle de la Hipótesis |
+| :---- | :---- |
+| **Question** | ¿Mejorará la medición del ROI publicitario para las PyMEs integrando un sistema de canje QR vía WebRTC? |
+| **Belief** | Proveer una herramienta directamente en el navegador del comerciante para validar tráfico físico demostrará la efectividad de GeoPS. |
+| **Hypothesis** | El sistema de canje QR web registrará al menos un 30% de conversiones físicas sobre el total de "Ofertas Guardadas" por los usuarios. |
+| **Null Hypothesis** | La necesidad de dar permisos de cámara al navegador desmotivará a los comerciantes o presentará fallos técnicos (iluminación/enfoque web), resultando en datos nulos de conversión. |
+
 ### 8.2.2. Domain Business Metrics
+
+Para mitigar el riesgo de fundamentar decisiones en métricas irrelevantes, las hipótesis de experimentación de GeoPS se vinculan directamente a los objetivos comerciales a través de las siguientes métricas de dominio. Las métricas aquí definidas son las únicas autorizadas para evaluar los resultados de las *Experiment Cards*.
+
+| Nombre de la Métrica | Descripción y Justificación | Fórmula de Cálculo | Técnica de Recolección | Meta Deseada |
+| :--- | :--- | :--- | :--- | :--- |
+| **Tasa de Clics (CTR) en Notificaciones Push** | Mide la efectividad de las alertas de proximidad (geofencing) para captar la atención del usuario e incentivarlo a revisar una oferta mientras camina cerca del local. | `(Número de clics en la notificación web / Número total de notificaciones entregadas) * 100` | Rastreo de eventos personalizados mediante Google Analytics 4 integrados en el Service Worker de Angular. | **> 10%** (Meta moderada debido a fricciones web). |
+| **Tasa de Aceptación de Permisos (Opt-in Rate)** | Mide la disposición de los usuarios para conceder permisos de geolocalización y notificaciones en su navegador móvil, lo cual es crítico al no contar con una aplicación nativa. | `(Usuarios que otorgan permisos en el navegador / Total de usuarios a los que se les muestra el cuadro de diálogo de solicitud) * 100` | Medición del estado de la API del navegador (`navigator.permissions`) reportado a Google Analytics 4. | **> 50%** de aceptación en nuevos usuarios registrados. |
+| **Tasa de Canje Físico (Redemption Rate)** | Mide el retorno de inversión (ROI) offline y el tráfico peatonal real generado. Representa la proporción de clientes que validan presencialmente la promoción en el establecimiento. | `(Cantidad de códigos QR validados exitosamente por los proveedores / Cantidad total de códigos QR generados por los consumidores) * 100` | Conteo directo en la base de datos backend sobre las peticiones HTTP exitosas al servicio de validación (`/offers/redeem`). | **> 25%** de los códigos generados deben ser canjeados físicamente. |
+| **Tiempo Promedio de Sesión (Session Duration)** | Evalúa si las funcionalidades de exploración visual (como los filtros de Rutas Temáticas de nicho asiático) fomentan una mayor retención del usuario dentro de la plataforma web. | `Suma total de la duración de todas las sesiones activas / Número total de sesiones` | Métricas automáticas capturadas por Vercel Analytics y Google Analytics 4 durante la navegación del usuario. | Incremento a un promedio mayor a **3 minutos** por sesión. |
 
 ### 8.2.3. Measures
 
+| Question | Measure (Métrica de evaluación) |
+| :---- | :---- |
+| Notificaciones Web Push (Geofencing) | **Tasa de Aceptación de Permisos (Opt-in Rate):** % de usuarios que aprueban los permisos de ubicación en Chrome/Safari. **CTR de Web Push:** % de clics sobre notificaciones web enviadas. **Ofertas Guardadas (Post-Push):** Incremento de cupones guardados tras el clic. |
+| Canje QR (WebRTC) | **Tasa de Canje (Redemption Rate):** Proporción de códigos generados vs. códigos escaneados exitosamente en la web del proveedor. |
+
 ### 8.2.4. Conditions
+
+| Question | Web Push Notifications hiperlocalizadas |
+| :---- | :---- |
+| **Condición Experimental** | El CTR de las notificaciones enviadas por geofencing web superará el 10% (considerando la fricción de permisos), y las visitas repetidas a la Web App aumentarán. |
+| **Condición de Control** | El tráfico y conversión dependerán estrictamente de las sesiones iniciadas manualmente por el usuario ingresando la URL en su navegador. |
 
 ### 8.2.5. Scale Calculations and Decisions
 
+| Factor / Hipótesis | Scale Calculation (Métrica) | Desfavorable | Aceptable | Ideal | Excelente (Decisión: Escalar) |
+| :---- | :---- | :---- | :---- | :---- | :---- |
+| **Geofencing Web:** Aumentar tráfico capturando al usuario a \<500m. | **CTR** de la notificación Web Push. | \< 3% | 3% \- 8% | **10%** | \> 15% (X) |
+| **Opt-in de Permisos:** Superar las restricciones del navegador. | **Opt-in Rate** (Permisos Aceptados). | \< 20% | 20% \- 40% | **50%** | \> 60% (X) |
+| **Canjes QR (WebRTC):** Validar ROI offline desde el navegador. | **Tasa de Canje** (QRs escaneados / Guardados). | \< 10% | 10% \- 20% | **25%** | \> 35% (X) |
+
 ### 8.2.6. Methods Selection
+
+| Herramienta | Precio | Capacidad de Análisis | Sencillez | Ventajas para GeoPS |
+| :---- | :---- | :---- | :---- | :---- |
+| **Google Analytics 4** | Gratuito | Análisis de eventos personalizados. | Aprendizaje moderado. | Integración nativa con Angular. Permite rastrear eventos de "Permiso Aceptado" y "QR Generado" en el navegador. |
+| **Google Lighthouse** | Gratuito | Rendimiento móvil, PWA y uso de APIs. | Automático. | Fundamental para garantizar que la Web App cumpla los estándares PWA (Progressive Web App) para soportar Service Workers y cargar rápido en 4G. |
+| **Vercel Analytics** | Incluido (Pro) | Monitoreo en tiempo real de Web Vitals. | Muy simple. | Al estar alojados en Vercel, provee datos de latencia reales del frontend web sin añadir peso al código. |
 
 ### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection
 
+Al no contar con una app nativa, el rendimiento de la Web App en redes móviles es el KPI más crítico para la supervivencia del experimento. Se configuraron auditorías con Google Lighthouse enfocadas en entornos móviles simulados:
+
+* **Endpoint evaluado:** https://geops-frontend.vercel.app/home  
+* **Performance:** 90/100 \- Crucial para que el escáner de cámara WebRTC cargue sin congelar el navegador del comercio.  
+* **PWA (Progressive Web App):** 100/100 \- La aplicación cumple con los requisitos para sugerir al usuario el pop-up "Agregar a la Pantalla de Inicio", mitigando el problema de retención web.  
+* **Best Practices:** 100/100 \- Requisito estricto (HTTPS) para poder solicitar permisos de geolocalización y cámara web.
+
 ### 8.2.8. Web and Mobile Tracking Plan
+
+Dado que la plataforma se accede vía navegador, el plan de seguimiento dividirá analíticamente el tráfico entre navegadores de escritorio (Desktop) y dispositivos móviles (Mobile Browsers):
+
+1. **Fase 1: Análisis de Permisos y Fricción (Semanas 1-2):**  
+   * *Opt-in Tracking (GA4):* Mediremos el porcentaje de usuarios móviles que otorgan permisos en la alerta nativa del navegador vs. los que la bloquean (navigator.permissions.query).  
+   * *UX Prompts:* Evaluaremos si mostrar una ventana "previa" (diseñada por GeoPS explicando por qué necesitamos la ubicación) mejora la aceptación antes de disparar el pop-up nativo de Chrome/Safari.  
+2. **Fase 2: Medición O2O \- Escaneo WebRTC (Semanas 3-4):**  
+   * *QR Generation Event:* Seguimiento en GA4 de clics en "Generar QR".  
+   * *Camera Load Time:* Mediremos la latencia desde que el negocio da clic en "Escanear" hasta que la API WebRTC levanta el video en el navegador.  
+   * *Validation Event:* Monitoreo de respuestas HTTP 200 vs 4xx en el endpoint /offers/redeem para medir la estabilidad de lectura del QR.
 
 ## 8.3. Experimentation
 
 ### 8.3.1. To-Be User Stories
 
+Estas Historias de Usuario corresponden a las funcionalidades experimentales diseñadas específicamente para el entorno web.
+
+| Story ID | Título | Descripción | Criterios de Aceptación | Relacionado (Epic) |
+| :---- | :---- | :---- | :---- | :---- |
+| **UA11** | **Recepción de Alertas Web Push por Proximidad** | Como consumidor en movilidad, quiero recibir notificaciones push en mi navegador móvil cuando esté cerca de promociones, para no perderme ofertas sin necesidad de abrir proactivamente la web. | **Escenario 1:** Permisos requeridos. *Given* que el usuario entra por primera vez a la Web App. *When* navega a la sección de ofertas. *Then* la web solicitará permisos de ubicación y notificaciones mediante un pop-up amigable previo al del navegador. **Escenario 2:** Envío vía Service Worker. *Given* que el usuario otorgó permisos y tiene el navegador en segundo plano. *When* entra a \<500m de una campaña. *Then* el Service Worker lanzará una Web Push Notification nativa en el SO del teléfono. | EP02 (Descubrimiento) |
+| **UA12** | **Generación Dinámica de QR en Navegador** | Como consumidor, quiero poder generar un código QR de una oferta en mi pantalla, para validar mi descuento presencialmente. | **Escenario 1:** Generación rápida. *Given* que estoy visualizando una oferta. *When* presiono "Usar Promoción". *Then* la web renderizará dinámicamente (HTML5 Canvas) un código QR único con mi sesión y la campaña. | EP02 (Descubrimiento) |
+| **UA13** | **Lector QR WebRTC para Negocios** | Como proveedor, quiero utilizar la cámara de mi celular desde la página web de GeoPS para escanear el QR del cliente y registrar la venta publicitaria. | **Escenario 1:** Escaneo exitoso. *Given* que abrí el panel web en mi celular. *When* doy clic a "Escanear QR" y concedo acceso a la cámara (WebRTC). *Then* el navegador activará la cámara, leerá el código y registrará la "Conversión Real" en mis métricas. | EP03 (Campañas) |
+
 ### 8.3.2. To-Be Product Backlog
+
+Incorporación de las funcionalidades experimentales orientadas a web al flujo de trabajo del equipo de desarrollo, estimadas en Story Points (Fibonacci).
+
+| \# Orden | User Story ID | Título | Descripción Técnica | Story Points (1/2/3/5/8) |
+| :---- | :---- | :---- | :---- | :---- |
+| **14** | **UA11** | Alertas Web Push y Geofencing en Angular | Configuración de Service Workers (@angular/service-worker), lógica de solicitud de permisos y cálculo Haversine para geofencing. | **8** |
+| **15** | **UA12** | Generación de Código QR en Frontend | Integración de librería (ej. angularx-qrcode) para generación de códigos QR visuales sin latencia de red. | **3** |
+| **16** | **UA13** | Escáner QR WebRTC para Proveedores | Implementación de html5-qrcode o similar en el panel del negocio para captura de video web y llamado al endpoint PUT /offers/redeem. | **5** |
+
+
 
 
 ## Conclusiones
