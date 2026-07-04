@@ -106,6 +106,7 @@ La colaboración se distribuyó de manera equitativa entre los 7 integrantes:
   - [Informe de TB1](#informe-de-tb1)
     - [Relación de integrantes](#relación-de-integrantes)
   - [Registro de Versiones](#registro-de-versiones)
+- [Part I: As-Is Software Project](#Part-I:-As-Is-Software-Project) 
 - [Capítulo 1: Introducción](#capítulo-1-introducción)
   - [1.1. Startup Profile](#11-startup-profile)
     - [1.1.1. Descripcion del Startup](#111-descripcion-del-startup)
@@ -225,6 +226,85 @@ La colaboración se distribuyó de manera equitativa entre los 7 integrantes:
     - [5.2.4. Implemented RESTful API and/or Serverless Backend Evidence](#524-implemented-restful-api-andor-serverless-backend-evidence)
     - [5.2.5. RESTful API documentation](#525-restful-api-documentation)
   - [5.3 Video About-the-Product](#53-video-about-the-product)
+- [Part II: Verification, Validation & Pipeline](#Part-II:-Verification,-Validation-&-Pipeline) 
+- [Capítulo VI: Product Verification & Validation](#)
+  - [6.1. Testing Suites & Validation](#)
+    - [6.1.1. Core Entities Unit Tests.](#)
+    - [6.1.2. Core Integration Tests.](#)
+    - [6.1.3. Core Behavior-Driven Development](#) 
+    - [6.1.4. Core System Tests.](#)
+  - [6.2. Static testing & Verification](#) 
+    - [6.2.1. Static Code Analysis](#)
+      - [6.2.1.1. Coding standard & Code conventions](#)
+      - [6.2.1.2. Code Quality & Code Security](#)
+    - [6.2.2. Reviews ](#)  
+  - [6.3. Validation Interviews](#)
+    - [6.3.1. Diseño de Entrevistas](#)
+    - [6.3.2. Registro de Entrevistas](#)
+    - [6.3.3. Evaluaciones según heurísticas](#)
+  - [6.4. Auditoría de Experiencias de Usuario ](#)
+    - [6.4.1. Auditoría realizada](#)
+      - [6.4.1.1. Información del grupo auditado](#)
+      - [6.4.1.2. Cronograma de auditoría realizada](#)
+      - [6.4.1.3. Contenido de auditoría realizad](#)
+    - [6.4.2. Auditoría recibida](#)
+      - [6.4.2.1. Información del grupo auditor](#)
+      - [6.4.2.2. Cronograma de auditoría recibida](#)
+      - [6.4.2.3. Contenido de auditoría recibida](#)
+      - [6.4.2.4. Resumen de modificaciones para subsanar hallazgo](#)
+- [Capítulo VII: DevOps Practices ](#)
+  - [7.1. Continuous Integration ](#)
+    - [7.1.1. Tools and Practices](#)
+    - [7.1.2. Build & Test Suite Pipeline Components](#)
+  - [7.2. Continuous Delivery](#) 
+    - [7.2.1. Tools and Practices](#)
+    - [7.2.2. Stages Deployment Pipeline Components](#)
+  - [7.3. Continuous deployment ](#)
+    - [7.3.1. Tools and Practices](#)
+    - [7.3.2. Production Deployment Pipeline Components](#)
+  - [7.4. Continuous Monitoring ](#)
+    - [7.4.1. Tools and Practices ](#)
+    - [7.4.2. Monitoring Pipeline Components ](#)
+    - [7.4.3. Alerting Pipeline Components ](#)
+    - [7.4.4. Notification Pipeline Components](#)
+- [Part III: Experiment-Driven Lifecycle ](#)
+- [Capítulo VIII: Experiment-Driven Development ](#)
+  - [8.1. Experiment Planning ](#)
+    - [8.1.1. As-Is Summary](#)
+    - [8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims](#)
+    - [8.1.3. Experiment-Ready Questions](#)
+    - [8.1.4. Question Backlog](#)
+    - [8.1.5. Experiment Cards](#) 
+  - [8.2. Experiment Design ](#)
+    - [8.2.1. Hypotheses](#)
+    - [8.2.2. Domain Business Metrics](#)
+    - [8.2.3. Measures](#)
+    - [8.2.4. Conditions](#)
+    - [8.2.5. Scale Calculations and Decisions](#)
+    - [8.2.6. Methods Selection](#)
+    - [8.2.7. Data Analytics: Goals, KPIs and Metrics Selection](#)
+    - [8.2.8. Web and Mobile Tracking Plan](#)
+  - [8.3. Experimentation](#)
+    - [8.3.1. To-Be User Stories](#)
+    - [8.3.2. To-Be Product Backlog](#)
+    - [8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle](#)
+      - [8.3.3.1. To-Be Sprint Backlogs](#)
+      - [8.3.3.2. Implemented To-Be Landing Page Evidence](#)
+      - [8.3.3.3. Implemented To-Be Frontend-Web Application Evidence](#)
+      - [8.3.3.4. Implemented To-Be Native-Mobile Application Evidence](#)
+      - [8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence](#)
+      - [8.3.3.6. Team Collaboration Insights](#)
+    - [8.3.4. To-Be Validation Interviews](#)
+      - [8.3.4.1. Diseño de Entrevistas](#)
+      - [8.3.4.2. Registro de Entrevistas](#)
+  - [8.4. Experiment Aftermath & Analysis](#)
+    - [8.4.1. Analysis and Interpretation of Results](#)
+    - [8.4.2. Re-scored and Re-prioritized Question Backlog](#)
+  - [8.5. Continuous Learning](#)
+    - [8.5.1. Shareback Session Artifacts: Learning Workflow](#)
+  - [8.6. To-Be Software Platform Pre-launch](#)
+    - [8.6.1. About-the-Product Intro Video](#)
+- [Matriz de Evaluación Etica y de Impacto](#)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -3866,7 +3946,7 @@ Se han implementado pruebas unitarias para validar la lógica de negocio de las 
 
 * **Backend (Java + JUnit):** Se implementaron pruebas unitarias utilizando **JUnit 5** para verificar la lógica de los modelos y entidades de dominio (ej. `Promotion`, `Business`, `User`). Se validaron reglas de negocio como la estructura de los identificadores, cálculos de descuentos y restricciones de campos obligatorios, asegurando que los métodos devuelvan los valores esperados sin errores de lógica interna.
 
-#### 6.1.2. Core Integration Tests
+### 6.1.2. Core Integration Tests
 Se realizaron pruebas de integración para asegurar la correcta interoperabilidad entre los módulos del sistema, enfocándose en el flujo de datos entre las capas de la aplicación.
 
 * **Interacción API-Base de Datos:** Se validó que el backend en Java se comunique correctamente con la base de datos **MySQL Workbench**, verificando que las operaciones de persistencia (Guardar negocio, buscar promociones) se ejecuten íntegramente.
@@ -3904,7 +3984,7 @@ Se aplicaron técnicas de BDD para definir el comportamiento del sistema desde l
     * **Then** el sistema debe mostrar una lista de tiendas en un radio de 3km con stock disponible.
 
 
-#### 6.1.4. Core System Tests
+### 6.1.4. Core System Tests
 Se ejecutaron pruebas de sistema de flujo completo para validar que GeoPS funciona correctamente en su totalidad. Estas pruebas cubrieron la navegación integral de la aplicación web responsiva, simulando el comportamiento real de los dos segmentos objetivo:
 
 * **Flujo del Negocio:** Registro de tienda, carga de catálogo de productos asiáticos y publicación de una oferta flash.
@@ -3916,7 +3996,7 @@ Se ejecutaron pruebas de sistema de flujo completo para validar que GeoPS funcio
     alt="Evidencias Registro 1" width="300">
 </div>
 
-#### 6.1.5. Campaign Form Structure Tests
+### 6.1.5. Campaign Form Structure Tests
 
 Frontend (Angular): Utilizando Jasmine y Karma, se valida la estructura del formulario reactivo del componente de edición de campañas en src/app/components. Se asegura que el FormGroup sea construido correctamente con exactamente los 6 campos requeridos — name, description, startDate, endDate, estimatedBudget y status — garantizando que cualquier modificación accidental en la definición del formulario, como la eliminación o el renombrado de un control, sea detectada de inmediato por el test.
 
@@ -3931,6 +4011,43 @@ Pruebas de Integración del Backend (Campaigns): Se desarrollaron pruebas de int
     <img src="resources/imgs/chapter-vi/testCampaign_backend.png" 
     alt="Evidencias Test Backend Campaign" width="700">
 </div>
+
+
+## 6.2. Static testing & Verification 
+### 6.2.1. Static Code Analysis 
+
+#### 6.2.1.1. Coding standard & Code conventions. 
+
+#### 6.2.1.2. Code Quality & Code Security. 
+
+#### 6.2.2. Reviews
+
+## 6.3. Validation Interviews. 
+### 6.3.1. Diseño de Entrevistas. 
+
+### 6.3.2. Registro de Entrevistas. 
+
+### 6.3.3. Evaluaciones según heurísticas. 
+
+## 6.4. Auditoría de Experiencias de Usuario 
+### 6.4.1. Auditoría realizada. 
+#### 6.4.1.1. Información del grupo auditado. 
+
+#### 6.4.1.2. Cronograma de auditoría realizada. 
+
+#### 6.4.1.3. Contenido de auditoría realizada. 
+
+### 6.4.2. Auditoría recibida. 
+#### 6.4.2.1. Información del grupo auditor.
+
+#### 6.4.2.2. Cronograma de auditoría recibida. 
+
+#### 6.4.2.3. Contenido de auditoría recibida. 
+
+#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos. 
+
+
+
 
 # Capítulo 7: DevOps Practices
 
@@ -4009,6 +4126,49 @@ El objetivo de **Continuous Deployment (CD)** es que los cambios aprobados pasen
 2. **Despliegue en Hosting:** Implementación automática en los servidores de Firebase tras pasar las pruebas unitarias.
 3. **Invalidación de Caché:** Limpieza automática de caché para que los usuarios de **GeoPS** reciban la versión más reciente al instante.
 
+## 7.4. Continuous Monitoring 
+### 7.4.1. Tools and Practices 
+### 7.4.2. Monitoring Pipeline Components 
+### 7.4.3. Alerting Pipeline Components 
+### 7.4.4. Notification Pipeline Components. 
+# Part III: Experiment-Driven Lifecycle 
+# Capítulo VIII: Experiment-Driven Development 
+## 8.1. Experiment Planning 
+### 8.1.1. As-Is Summary. 
+### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims. 
+### 8.1.3. Experiment-Ready Questions. 
+### 8.1.4. Question Backlog. 
+### 8.1.5. Experiment Cards. 
+## 8.2. Experiment Design 
+### 8.2.1. Hypotheses. 
+### 8.2.2. Domain Business Metrics 
+### 8.2.3. Measures. 
+### 8.2.4. Conditions. 
+### 8.2.5. Scale Calculations and Decisions. 
+### 8.2.6. Methods Selection. 
+### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection. 
+### 8.2.8. Web and Mobile Tracking Plan. 
+## 8.3. Experimentation 
+### 8.3.1. To-Be User Stories. 
+### 8.3.2. To-Be Product Backlog 
+### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle 
+#### 8.3.3.1. To-Be Sprint Backlogs 
+#### 8.3.3.2. Implemented To-Be Landing Page Evidence 
+#### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence 
+#### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence 
+#### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence 
+#### 8.3.3.6. Team Collaboration Insights
+### 8.3.4. To-Be Validation Interviews 
+#### 8.3.4.1. Diseño de Entrevistas. 
+#### 8.3.4.2. Registro de Entrevistas. 
+## 8.4. Experiment Aftermath & Analysis 
+### 8.4.1. Analysis and Interpretation of Results 
+### 8.4.2. Re-scored and Re-prioritized Question Backlog 
+## 8.5. Continuous Learning 
+### 8.5.1. Shareback Session Artifacts: Learning Workflow 
+## 8.6. To-Be Software Platform Pre-launch 
+### 8.6.1. About-the-Product Intro Video 
+### Matriz de Evaluación Etica y de Impacto 
 
 ## Conclusiones
 
