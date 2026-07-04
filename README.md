@@ -4025,9 +4025,243 @@ Pruebas de Integración del Backend (Campaigns): Se desarrollaron pruebas de int
 ## 6.3. Validation Interviews. 
 ### 6.3.1. Diseño de Entrevistas. 
 
+Segmento #1: Usuario Proveedor / Tienda (GeoPS Business)
+
+#### Fase 1: Identificación y Perfilamiento del Negocio
+* Establecimiento, Cargo, Giro de negocio y Origen de productos orientales.
+* Pregunta de control: ¿Mantiene actualmente problemas de visibilidad hiperlocal o inventario de baja rotación en Lima Moderna?
+
+#### Fase 2: Interacción Guiada con la Plataforma Web
+* Tarea 1: Ingrese al sitio web de GeoPS Business, complete el formulario de registro de su local y configure su ubicación exacta en el mapa.
+* Tarea 2: Intente crear y publicar una "Oferta Relámpago" (ej. 2x1 en Ramens coreanos próximos a vencer) definiendo un radio de geolocalización de 1 km a la redonda.
+
+#### Fase 3: Identificación de Puntos de Dolor en la Interfaz
+* ¿Logró comprender cómo delimitar el radio de alcance de su promoción en el mapa interactivo?
+* ¿Hubo algún paso del formulario de creación de anuncios que le generara confusión o desconfianza?
+
+#### Fase 4: Validación de la Solución e Intención de Uso
+* En comparación con sus métodos actuales (Instagram/WhatsApp), ¿qué tan útil le resulta esta primera versión web del 1 al 5 para atraer al público que transita a pocas cuadras?
+* ¿Qué opina del panel de control? ¿Qué métricas analíticas consideraría indispensables ver primero?
+
+#### Fase 5: Cierre y Sugerencias
+* ¿Qué funcionalidad o elemento gráfico añadiría para que la gestión de sus ofertas sea más rápida?
+
+Segmento #2: Usuario Consumidor (GeoPS)
+
+#### Fase 1: Identificación y Perfilamiento del Negocio
+* Nombre, Edad, Ocupación, Distrito de Lima Moderna y Frecuencia de consumo de artículos asiáticos.
+
+#### Fase 2: Interacción Guiada con el Producto Mínimo Viable
+* Tarea 1: Suponga que está buscando snacks o bebidas orientales en su distrito actual. Abra la plataforma web de GeoPS, explore el mapa dinámico y localice el comercio con descuento activo más cercano.
+* Tarea 2: Intente simular la aceptación de una notificación web push de proximidad para abrir los detalles, horarios de atención y stock de una tienda.
+
+#### Fase 3: Identificación de Puntos de Dolor en la Interfaz
+* Al desplazarse por el mapa, ¿los pines de las tiendas se visualizan de manera ordenada o experimentó saturación visual?
+* ¿Le resultó sencillo ubicar los horarios de atención, categorías y la lista de precios dentro del detalle del comercio?
+
+#### Fase 4: Validación de la Solución e Impacto
+* Si esta aplicación web estuviera completamente en producción, ¿qué tan útil le resultaría del 1 al 5 para evitar malas experiencias (como encontrar tiendas cerradas)?
+* ¿Permitiría de forma permanente que el navegador rastree su geolocalización para enviarle alertas push personalizadas?
+
+#### Fase 5: Cierre y Sugerencias
+* ¿Qué feedback o funcionalidad extra propondría para mejorar su experiencia de navegación en el mapa?
+
+
 ### 6.3.2. Registro de Entrevistas. 
 
+
+
+
+Para cada segmento se requiere de 3 a 5 entrevistas. Para cada una de las entrevistas se debe indicar la información de nombres, apellidos, edad, distrito, un screenshot de un cuadro de video y el URL del video subido en Microsoft Stream incluyendo el timing donde inicia la entrevista y su duración. La entrevista debe ser registrada en video, que sirve de evidencia de entrevistas. Para cada entrevista debe redactarse en este informe un resumen, que explique de forma descriptiva las principales apreciaciones del entrevistado con respecto a las tareas asignadas. Ver otras indicaciones importantes en el Anexo C. Indicaciones para secciones que incluyen Videos.
+
+
+
+Anexo C. Indicaciones para secciones que incluyen Videos 
+Indicaciones generales: 
+• Los videos deben demostrar un nivel de edición y acabado de calidad aceptable a destacable. Es necesario
+incluir una pantalla inicial de presentación, música de fondo, y garantizar que las escenas sigan una secuencia 
+coherente. Además, cada escena debe contar con una descripción en texto que detalle a los participantes
+involucrados y las actividades realizadas.
+• Asimismo, se debe incorporar elementos relacionados con el branding de la startup o producto, lo cual puede
+incluir animaciones que refuercen su identidad visual.
+
+
+Validation 
+Interviews 
+Cantidad de Videos: 1 
+Nomenclatura: 
+upc-pre-202610-1asi0732-<NRC>-<startup>- 
+validation-sprint-<n> 
+Formato: .mp4 
+Duración: En función a cantidad de entrevistas 
+(considerar edición de 3 a 5 minutos por 
+entrevista). 
+Consolida sesiones y 
+entrevistas de validación en 
+las que usuarios de los 
+segmentos objetivo 
+interactúen con el landing 
+page y con los prototipos 
+de experiencias web y 
+mobile, manifestando sus 
+observaciones. Para cada 
+entrevista se debe incluir 
+títulos con información del 
+entrevistado, el segmento 
+objetivo y la fecha de la 
+entrevista 
+Subir el video en Microsoft Stream con enlace 
+privado. 
+Incluir en el informe screenshot del video con 
+enlace al mismo. 
+Incluir redacción de introducción a la sección y 
+redacción de registro de cada entrevista, junto 
+con la evaluación de heurísticas de usabilidad, 
+arquitectura de información y diseño inclusivo 
+para la sesión de evaluación. Seguir 
+especificaciones del enunciado y formatos 
+indicados. 
+
+#### 2.2.2. Registro de entrevistas
+
+Segmento #1: Dueños de negocios locales
+
+**Tabla 2**   
+*Registro de entrevistas — Segmento 1*
+
+| Número de registro | Datos del entrevistado | Captura |
+| :--- | :--- | :--- |
+| **1** | **Nombre:** Cristian Salvador<br>**Edad:** 28 años<br>**Establecimiento:** Tienda de productos importados (Referente)<br>**Cargo:** Dueño / Encargado<br>**Duración:** Aprox. 5 minutos<br> **Enlace:** [https://l1nq.com/8gjygzw](https://acortar.link/gTCaPh) <br> **Resumen:** El entrevistado maneja una tienda con alta variedad de productos, siendo las sopas instantáneas, snacks y bebidas los más buscados. Actualmente usa Instagram, WhatsApp y carteles físicos, pero nota que la publicidad digital a veces llega a personas muy lejanas que no concretan la compra. Califica la solución de GeoPS con un **5**, destacando su utilidad para liquidar stock próximo a vencer y atraer clientes que transitan por la zona. Le interesa contar con estadísticas de visualizaciones y rutas para medir la efectividad de sus ofertas. Expresó preocupación por el costo y la curva de aprendizaje, sugiriendo una interfaz sencilla. |  **Figura 4**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista1_segmento1.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **2** | **Nombre:** Néstor Rojas<br>**Establecimiento:** Terra Inc.<br>**Giro:** Inciensos, plantas y productos orgánicos asiáticos<br>**Duración:** Aprox. 8 minutos<br> **Enlace:** https://acortar.link/aSbB2F <br>**Resumen:** Néstor opera un negocio con clientes de diversos distritos que llegan principalmente por canales online. Indica que los inciensos tienen alta rotación, mientras que las plantas demoran más en venderse. Valora la propuesta de GeoPS con un **5**, resaltando que facilitaría captar al público que transita cerca y le ahorraría costos en publicidad tradicional como volantes. Le entusiasma la idea de notificaciones automáticas para liquidar saldos de inventario y evitar pérdidas por vencimiento. Como aporte adicional, sugiere que el mapa de la aplicación incluya coordenadas exactas y guías de accesibilidad para evitar que el cliente se desanime al no encontrar el local. |  **Figura 5**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista2_segmento1.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+
+*Nota.* Elaboración propia.
+
+Segmento #2: Consumidores de ofertas de diferentes ámbitos
+
+**Tabla 3**   
+*Registro de entrevistas — Segmento 2*  
+
+| Número de registro | Datos del entrevistado | Captura |
+| :--- | :--- | :--- |
+| **1** | **Nombre:** Ariana Puscan <br> **Edad:** 28 años <br> **Distrito:** Magdalena <br> **Ocupación:** Abogada <br> **Duración de la entrevista:** 5 minutos y 49 segundos <br> **Enlace:** https://l1nq.com/8gjygzw <br> **Resumen:** En este video, se entrevista a Ariana Puscan, una joven de 28 años del distrito de Magdalena. Es una consumidora recurrente de snacks asiáticos, adquiriéndolos mensualmente. Su descubrimiento de productos se basa principalmente en recomendaciones y ofertas vistas en Instagram y TikTok. Sus compras son mayoritariamente impulsivas o casuales cuando encuentra artículos en supermercados, sin apoyarse en aplicaciones específicas. Recientemente, visitó un establecimiento tras verlo en redes sociales, teniendo una experiencia satisfactoria. Finalmente, considera que nuestra aplicación sería de gran valor. La percibe como una herramienta clave para localizar puntos de venta exactos y facilitar el acceso a una mayor variedad de productos asiáticos. | **Figura 6**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista1_segmento2.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **2** | **Nombre:** Olga Consuelo Arce Quesada <br> **Edad:** 25 años <br> **Distrito:** Magdalena <br> **Ocupación:** Comunicadora Corporativa <br> **Duración de la entrevista:** 7 minutos y 16 segundos <br> **Enlace:** https://l1nq.com/ck0dyrh <br> **Resumen:** En este video, Olga Consuelo Arce Quesada, de 25 años, de Magdalena. Es una consumidora frecuente de snacks, bebidas y productos de belleza. Si bien descubre tiendas asiáticas mediante redes sociales o de forma presencial, señala una brecha en la información: las ofertas no están digitalizadas y solo las descubre al visitar el punto de venta. Su experiencia revela una dificultad específica al buscar productos de belleza, ya que no suelen estar disponibles en cadenas comerciales como Miniso. Actualmente, su búsqueda depende exclusivamente de la suerte al encontrar recomendaciones en TikTok, lo que dificulta la compra efectiva. Olga valida positivamente la propuesta de nuestra aplicación. Destaca la importancia de una plataforma integral que geolocalice tiendas cercanas, ofrezca visibilidad de ofertas en tiempo real y permita filtrar los establecimientos por categorías para optimizar su experiencia de compra. | **Figura 7**<br> *Entrevista 2 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista2_segmento2.png" alt="Entrevista 2 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **3** | **Nombre:** Lupe de la Cruz <br> **Edad:** 22 años <br> **Distrito:** Jesús María <br> **Ocupación:** Estudiante <br> **Duración de la entrevista:** Aprox. 5 minutos <br> **Enlace:** https://acortar.link/BfP5q1 <br> **Resumen:** En esta entrevista se conversó con Lupe de la Cruz, una joven estudiante de Jesús María. Es una consumidora quincenal de productos orientales, enfocada principalmente en snacks, dulces y bebidas. Su descubrimiento de locales se basa en redes sociales y exploración física ocasional. Relató una mala experiencia reciente al encontrar un local cerrado por falta de información actualizada, lo que validó la utilidad de la aplicación. Califica la utilidad del mapa interactivo con un puntaje de 4 a 5 estrellas. Valora positivamente las notificaciones push personalizadas y considera indispensable que la app muestre horarios de atención y listas de precios. Finalmente, propuso como feedback la posibilidad de realizar reservas de productos a través de la plataforma. | **Figura 8**<br> *Entrevista 3 — Segmento 1* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista3_segmento2.png" alt="Entrevista 3 — Segmento 1" width="4000"> </div> *Nota.* Elaboración propia. |
+
+
 ### 6.3.3. Evaluaciones según heurísticas. 
+
+
+
+
+Esta sección contiene el proceso de evaluación de las sesiones de validación basado en heurísticas, considerando heurísticas de usabilidad, arquitectura de información e inclusive design de la experiencia propuesta. Para esto la sección debe contener la estructura del formato para evaluaciones de heurísticas indicado. Para esto la sección debe contener la estructura del formato para evaluaciones de heurísticas indicado en el Anexo D. Formato para Evaluación de User Experience según Heurísticas.
+
+Anexo D. Formato para Evaluación de User Experience según Heurísticas 
+UX Heuristics & Principles Evaluation 
+Usability – Inclusive Design – Information Architecture 
+CARRERA 
+CURSO 
+NRC 
+PROFESORES 
+AUDITOR 
+CLIENTE(S) 
+: Ingeniería de Software 
+: Diseño de Experimentos de Ingeniería de Software             
+: Código de la NRC 
+: Todos 
+: Nombre del Grupo que ejecuta la Sesión de evaluación 
+: Nombre de las personas que participan en la sesión 
+NOTA: Los contenidos de este formato (en color plomo) son referidos a un sitio web de ejemplo. Use 
+este formato como referencia de la estructura que tiene que ser entregada y elimine el contenido en 
+plomo. Coloque su contenido con color azul. 
+SITE o APP A EVALUAR: 
+Nombre de App 
+TAREAS A EVALUAR: 
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas: 
+1. Registro de un usuario nuevo
+2. Publicación de un post
+3. Búsqueda de un paquete turístico
+4. Reserva de un viaje
+5. Cancelación de una reserva
+6. Agregar ítems a un pedido
+7. Pago de un paquete turístico
+8. Etc.
+No están incluidas en esta versión de la evaluación las siguientes tareas: 
+1. Compartir reservas entre usuarios
+2. Presentar ofertas de último minuto
+3. Administrar puntos del programa de fidelización de viajes
+4. Guardar “alerta de paquetes”
+5. Etc.
+V1.0 
+50/53 
+ESCALA DE SEVERIDAD: 
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad 
+Nivel 
+1 
+Descripción 
+Problema superficial: puede ser fácilmente superador por el usuario ó ocurre con muy poco 
+frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. 
+2 
+Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de 
+superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente 
+reléase 
+3 
+Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es 
+importante que sean corregidos y se les debe asignar una prioridad alta. 
+4 
+Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de 
+la herramienta. Es imperativo que sea corregido antes del lanzamiento. 
+TABLA RESUMEN: 
+# 
+Problema 
+Escala de 
+severidad 
+1 No hay un control que permita regresar a la tienda 
+durante el trámite de compra 
+Heurística/Principio violada(o) 
+3 
+2 Se repiten constantemente algunas opciones 
+Usability: Libertad y control del 
+usuario 
+1 
+3 Imágenes sin atributo “alt” 
+Usability: Consistencia y 
+estándares 
+3 
+4 Incluye un botón “Ver más” pero no existe 
+contenido al que dirigirse 
+Inclusive Design: Proporciona 
+experiencias comparables 
+3 
+5 No incluye información de los planes de servicio 
+Information Architecture: Is it 
+usable? 
+2 
+… ….   
+Information Architecture: Is it 
+findable? 
+Etc. 
+DESCRIPCIÓN DE PROBLEMAS: 
+PROBLEMA #1: No hay un control que permita regresar a la tienda durante el trámite de compra 
+Severidad: 3 
+Heurística violada: Usabilidad - Libertad y control del usuario 
+Problema: 
+Al momento de ingresar nuestros datos, no podemos regresar a la tienda en caso así lo Una vez el cliente pase al trámite de 
+compra, en caso de que este quiera regresar a la tienda, no hay un botón que lo envié al inicio de la web, lo cual nos obliga a 
+efectuar el trámite y al momento de elegir más productos, realizar otro, incrementándose así la cantidad de esfuerzo del usuario. 
+(Incluir además una captura de pantalla ilustrando el problema). 
+Recomendación: 
+La más práctica es que al momento en que queramos realizar dicho trámite, el navegador lo abra en una ventana aparte para 
+no perder los cambios realizados en nuestro carrito de compras. 
+
+
+
+
+
+
+
+
+
+
 
 ## 6.4. Auditoría de Experiencias de Usuario 
 ### 6.4.1. Auditoría realizada. 
@@ -4158,9 +4392,74 @@ El objetivo de **Continuous Deployment (CD)** es que los cambios aprobados pasen
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence 
 #### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence 
 #### 8.3.3.6. Team Collaboration Insights
+
+
 ### 8.3.4. To-Be Validation Interviews 
 #### 8.3.4.1. Diseño de Entrevistas. 
+
+
+
+En esta sección el equipo establece por cada segmento objetivo los elementos a incluir en la sesión de validación, incluyendo el Landing Page y las aplicaciones. Aquí se especifica también cuáles serán los user flows de las aplicaciones, que formarán parte del proceso de validación. 
+
+
 #### 8.3.4.2. Registro de Entrevistas. 
+
+
+Para cada segmento se requiere de 3 a 5 entrevistas. Para cada una de las entrevistas se debe indicar la información de nombres, apellidos, edad, distrito, un screenshot de un cuadro de video y el URL del video subido en Microsoft Stream incluyendo el timing donde inicia la entrevista y su duración. La entrevista debe ser registrada en video, que sirve de evidencia de entrevistas. Para cada entrevista debe redactarse en este informe un resumen, que explique de forma descriptiva las principales apreciaciones del entrevistado con respecto a las tareas asignadas. Ver otras indicaciones importantes en el Anexo C. Indicaciones para secciones que incluyen Videos.
+
+
+Anexo C. Indicaciones para secciones que incluyen Videos 
+Indicaciones generales: 
+• Los videos deben demostrar un nivel de edición y acabado de calidad aceptable a destacable. Es necesario
+incluir una pantalla inicial de presentación, música de fondo, y garantizar que las escenas sigan una secuencia 
+coherente. Además, cada escena debe contar con una descripción en texto que detalle a los participantes
+involucrados y las actividades realizadas.
+• Asimismo, se debe incorporar elementos relacionados con el branding de la startup o producto, lo cual puede
+incluir animaciones que refuercen su identidad visual
+
+Validation 
+Interviews 
+Cantidad de Videos: 1 
+Nomenclatura: 
+upc-pre-202610-1asi0732-<NRC>-<startup>- 
+validation-sprint-<n> 
+Formato: .mp4 
+Duración: En función a cantidad de entrevistas 
+(considerar edición de 3 a 5 minutos por 
+entrevista). 
+Consolida sesiones y 
+entrevistas de validación en 
+las que usuarios de los 
+segmentos objetivo 
+interactúen con el landing 
+page y con los prototipos 
+de experiencias web y 
+mobile, manifestando sus 
+observaciones. Para cada 
+entrevista se debe incluir 
+títulos con información del 
+entrevistado, el segmento 
+objetivo y la fecha de la 
+entrevista 
+Subir el video en Microsoft Stream con enlace 
+privado. 
+Incluir en el informe screenshot del video con 
+enlace al mismo. 
+Incluir redacción de introducción a la sección y 
+redacción de registro de cada entrevista, junto 
+con la evaluación de heurísticas de usabilidad, 
+arquitectura de información y diseño inclusivo 
+para la sesión de evaluación. Seguir 
+especificaciones del enunciado y formatos 
+indicados. 
+
+
+
+
+
+
+
+
 ## 8.4. Experiment Aftermath & Analysis 
 ### 8.4.1. Analysis and Interpretation of Results 
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog 
