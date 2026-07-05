@@ -4327,10 +4327,48 @@ El objetivo de **Continuous Deployment (CD)** es que los cambios aprobados pasen
 3. **Invalidación de Caché:** Limpieza automática de caché para que los usuarios de **GeoPS** reciban la versión más reciente al instante.
 
 ## 7.4. Continuous Monitoring 
+
 ### 7.4.1. Tools and Practices 
+En **GeoPS Labs**, el monitoreo continuo se enfoca en garantizar la alta disponibilidad de la API, la estabilidad de la interfaz web y la detección temprana de excepciones de negocio. Dado que el backend implementa patrones complejos como **DDD y CQRS**, la observabilidad es clave para rastrear el flujo correcto de los *Commands* y *Queries* a través de las capas del sistema.
+
+| Herramienta | Tipo | Descripción | Propósito |
+| :--- | :--- | :--- | :--- |
+| **Spring Boot Actuator** | Telemetría (Backend) | Módulo nativo de Spring Boot incluido en el `pom.xml` de `geops-api`. | Exponer los endpoints de salud (`/actuator/health`) y métricas de consumo de hilos, base de datos y memoria JVM. |
+| **Sentry SDK (Java/Angular)** | Monitoreo de Errores (APM) | Integración multiplataforma en ambos repositorios. | Capturar excepciones no controladas en Angular (errores de UI o fallos de conexión) y excepciones críticas en los servicios de aplicación del backend. |
+| **Logback / Slf4j** | Registro (Logging) | Framework de logging estándar integrado en Spring Boot. | Generar trazas estructuradas durante la ejecución de los casos de uso (`Identity`, `Campaign`, `Offers`). |
+| **UptimeRobot** | Disponibilidad | Servicio externo de monitoreo sintético. | Validar la disponibilidad 24/7 de los controladores REST mediante sondeos HTTP cada 5 minutos. |
+
+#### Best Practices Implemented
+* **Structured Exception Logging:** Toda excepción lanzada por los validadores o fallos en el dominio (como errores de autenticación JWT o fallos al crear campañas) se registra de forma estructurada con su respectivo nivel de severidad (`WARN` o `ERROR`).
+* **Health Check Probing:** Uso del endpoint público de Actuator para que los orquestadores de contenedores (Docker) verifiquen si la instancia de la API está sana o requiere un reinicio automático.
+* **Front-End Error Catching:** Captura global de errores en Angular mediante un `ErrorHandler` personalizado que envía los *stack traces* directamente a Sentry, incluyendo el contexto del navegador del usuario.
+
 ### 7.4.2. Monitoring Pipeline Components 
+Este pipeline se encarga de la recolección activa y pasiva de los datos de comportamiento e infraestructura de **GeoPS**:
+
+1. **Ingesta de Métricas de la JVM:** Spring Boot Actuator recopila el estado de la máquina virtual de Java, el uso de CPU y el estado del pool de conexiones JPA/Hibernate hacia MySQL.
+2. **Colector de Eventos de la UI:** El frontend de Angular intercepta fallos de red (códigos HTTP 4xx o 5xx) a través de sus *Interceptors* y reporta las anomalías en tiempo real.
+3. **Persistencia de Trazas (Logs):** Los logs generados por el contenedor Docker de la API se centralizan en la plataforma de despliegue para permitir auditorías rápidas sobre operaciones sensibles (como el registro de usuarios o edición de campañas).
+
+<div align="center">
+    <img src="resources/imgs/chapter-vii/diagrama-pipeline-components.png" 
+    alt="Pipeline Architecture Diagram" width="700">
+</div>
+
 ### 7.4.3. Alerting Pipeline Components 
+Este componente procesa los datos monitoreados y decide de manera inteligente si el comportamiento del sistema requiere la intervención inmediata del equipo de desarrollo de GeoPS Labs:
+
+1. **Filtro de Excepciones DDD/CQRS:** Sentry clasifica las anomalías recolectadas de forma automática. Las excepciones por validación de negocio (por ejemplo, datos inválidos o mal formateados en un `CreateCampaignCommand`) se clasifican como advertencias (`Warning`). Por el contrario, los fallos de infraestructura, como la pérdida de conexión a la base de datos o fallos de tokens expirados en el backend, se elevan instantáneamente a estado `Critical`.
+2. **Evaluación de Umbrales de Infraestructura:** Se establece un disparador automático en el orquestador si el contenedor Docker de la API (`geops-api`) sobrepasa el **85%** de uso de memoria RAM asignada de forma sostenida por un lapso mayor a 3 minutos.
+3. **Mecanismo Anti-Falso Positivo:** UptimeRobot requiere que cualquier fallo de respuesta HTTP (códigos 5xx o timeout) en el endpoint público de la API sea confirmado de forma simultánea desde tres nodos geográficos distintos antes de activar formalmente una alerta general.
+
 ### 7.4.4. Notification Pipeline Components. 
+Una vez que el pipeline de alertas valida y confirma una anomalía real, este flujo distribuye la información de manera eficiente para mitigar los tiempos de respuesta y resolución:
+
+1. **Enriquecimiento del Evento:** Sentry y los recolectores de logs empaquetan la alerta añadiendo metadatos contextuales clave de forma automática: entorno afectado (`develop` o `main`), el endpoint específico del fallo (ej. `/api/v1/auth/signin`), el stack trace del error y el ID del último commit de GitHub asociado.
+2. **Despacho vía Webhooks (Slack/Discord):** Envío inmediato de la alerta en formato enriquecido e interactivo a los canales de comunicación internos dedicados al equipo de ingeniería y DevOps de GeoPS Labs.
+3. **Protocolo de Escalabilidad por Correo (SMTP):** Si una alerta catalogada con severidad `Critical` o `Fatal` (como la caída total del servicio de la API) no recibe una confirmación de recepción manual ("Acknowledge") por parte de un desarrollador en un lapso de 15 minutos, el pipeline escala de forma automatizada enviando correos electrónicos de alta prioridad con alertas persistentes a los líderes técnicos del proyecto.
+
 # Part III: Experiment-Driven Lifecycle 
 # Capítulo VIII: Experiment-Driven Development 
 ## 8.1. Experiment Planning 
