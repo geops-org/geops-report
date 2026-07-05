@@ -4651,7 +4651,76 @@ Segmento #2: Consumidores de ofertas de diferentes ámbitos
 
 
 ## 8.4. Experiment Aftermath & Analysis 
-### 8.4.1. Analysis and Interpretation of Results 
+### 8.4.1. Analysis and Interpretation of Results
+Las entrevistas de validación tuvieron como objetivo evaluar la aceptación y efectividad de las nuevas funcionalidades implementadas en la plataforma a partir de las hipótesis planteadas durante el desarrollo del proyecto. Estas entrevistas se realizaron con los dos segmentos objetivo: dueños de negocios locales y consumidores de ofertas de diferentes ámbitos, quienes interactuaron con las nuevas características del sistema y compartieron su percepción sobre su utilidad, facilidad de uso y aporte a la experiencia de usuario.
+
+Las preguntas fueron diseñadas para analizar aspectos relacionados con la accesibilidad de la plataforma, la confianza en los datos geolocalizados, la claridad de las métricas visuales, el impacto de las alertas en tiempo real y la utilidad del modo demo. Los resultados obtenidos permitieron identificar el nivel de aceptación de cada funcionalidad y verificar si estas responden adecuadamente a las necesidades de los usuarios, proporcionando información valiosa para la mejora continua de la plataforma.
+
+**Preguntas Formuladas**
+
+- ¿La necesidad de configuración geoespacial avanzada para locales reduce la adopción del sistema?
+- ¿Los usuarios finales y comercios confían en los datos de geolocalización generados por la app?
+- ¿Las recomendaciones personalizadas de ofertas generan un aumento real en las ventas y el ahorro?
+- ¿Las alertas de ofertas en tiempo real y hora punta modifican los hábitos de compra de los consumidores?
+- ¿Los comerciantes entienden las métricas de alcance y gráficos mostrados en el panel?
+- ¿Un modo demo sin necesidad de configurar tiendas físicas reales incrementa la intención de uso de la plataforma?
+
+Estas preguntas fueron respondidas por cinco participantes pertenecientes a los segmentos objetivo: dos dueños de negocios locales y tres consumidores de ofertas de diferentes ámbitos. A continuación, se presentan los resultados obtenidos.
+
+**Análisis de Datos Demográficos**
+
+Distribución de participantes: Las entrevistas fueron realizadas a cinco usuarios pertenecientes al público objetivo del proyecto.
+- Dueños de negocios locales: 2 participantes (40%).
+- Consumidores de ofertas de diferentes ámbitos: 3 participantes (60%).
+
+Distribución de edades: Las edades de los participantes oscilaron entre 20 y 52 años.
+- 20-23 años: 60%.
+- 45-52 años: 40%.
+
+Los resultados muestran que la plataforma resulta comprensible tanto para usuarios jóvenes que buscan ofertas de manera ágil como para dueños de negocios con mayor experiencia en la administración y promoción de sus locales.
+
+**Evaluación de Funcionalidades**
+
+- Modo Demo sin configuración real
+La totalidad de los participantes valoró positivamente la posibilidad de acceder al sistema mediante un modo demo interactivo, destacando que elimina la necesidad de configurar tiendas físicas o ingresar datos reales antes de conocer el funcionamiento de la plataforma. Los dueños de negocios consideraron que esta característica incrementa la intención de uso y agiliza la toma de decisiones, mientras que los consumidores resaltaron que pueden probar la visualización de ofertas sin comprometer información desde el inicio.
+Resultado observado: aceptación del 100%.  
+
+- Confianza en datos de geolocalización
+Los participantes indicaron que experimentar previamente con los mapas dinámicos incrementa la confianza en la precisión de la plataforma. Los consumidores validaron que las ofertas se muestran de manera exacta según su ubicación simulada, mientras que los dueños de negocios ganaron seguridad sobre cómo se visualizarán sus locales ante clientes reales, reduciendo la incertidumbre inicial del sistema.
+Resultado observado: acceptance del 100%.  
+
+- Comprensión de métricas e indicadores visuales
+Todos los entrevistados pertenecientes al segmento comercial consideraron que los indicadores de alcance, contadores de vistas y pines informativos del panel de control son fáciles de interpretar. Afirmaron que la distribución visual en las pantallas les permite entender claramente el rendimiento de sus campañas y el flujo proyectado de rutas de clientes hacia sus locales sin requerir asistencia técnica o conocimientos avanzados de analítica digital.
+Resultado observado: aceptación del 100%.
+
+- Recomendaciones personalizadas de ofertas
+Los cinco participantes afirmaron que el sistema de recomendaciones inteligentes aporta un valor claro. Los dueños de negocios destacaron su potencial para generar un aumento real en las ventas de productos de baja rotación y liquidar stock próximo a vencer, mientras que los consumidores señalaron que la personalización según sus ámbitos de interés facilita el descubrimiento oportuno de ofertas y el ahorro económico directo.
+Resultado observado: aceptación del 100%.
+
+- Alertas de ofertas en tiempo real y hora punta
+Todos los entrevistados indicaron que recibir alertas geoespaciales y notificaciones en tiempo real en momentos de alta afluencia comercial constituye un incentivo efectivo para modificar sus hábitos. Los consumidores mencionaron que cambiarían sus rutas de compra cotidianas para aprovechar cupones flash cercanos, mientras que los comercios validaron que estas notificaciones son clave para atraer de forma inmediata al público que transita por la zona.
+Resultado observado: aceptación del 100%.
+
+- Facilidad de configuración para locales
+La totalidad de los dueños de negocios entrevistados aclaró que el flujo guiado de la interfaz evita que la asignación geográfica de los comercios y la publicación de anuncios se vuelvan complejas. Coincidieron en que las herramientas de marcado en mapa y los formularios validados son intuitivos, asegurando que la plataforma no presenta barreras técnicas que pongan en riesgo la adopción del sistema por parte de comercios locales tradicionales.
+Resultado observado: aceptación del 100%.
+
+**Recomendaciones de los Usuarios**
+
+Durante las entrevistas también se identificaron aspectos que los participantes consideran especialmente valiosos para futuras versiones de la plataforma:
+
+- Mantener disponible el modo demo interactivo sin requisitos de configuración reales obligatorios desde el inicio.
+- Conservar el motor de geolocalización preciso, transparente y con horarios de atención actualizados para mantener alta la confianza en los datos del mapa.
+- Continuar mostrando las métricas de alcance e interacciones de anuncios a través de indicadores visuales limpios y paneles fáciles de interpretar para los comerciantes.
+- Potenciar las alertas configurables en tiempo real durante horas punta comerciales para dinamizar el flujo de usuarios en tránsito hacia las tiendas.
+- Ampliar las guías visuales dentro del panel de control e incluir mapas de calor sencillos u opciones de reserva para optimizar la gestión de las ofertas personalizadas del sistema.
+
+**Conclusión**
+
+Los resultados de las entrevistas de validación evidencian una aceptación muy favorable de las nuevas funcionalidades implementadas en la plataforma GeoPS. Tanto los dueños de negocios locales como los consumidores de ofertas de diferentes ámbitos coincidieron en que el modo demo facilita la adopción inicial, mientras que la precisión de los datos de geolocalización y el uso de clústeres numéricos reducen drásticamente la saturación visual en el mapa.
+
+Asimismo, los paneles con indicadores simplificados, el sistema de recomendaciones personalizadas y las alertas en tiempo real en hora punta fueron percibidos como herramientas útiles que mejoran la experiencia del usuario y favorecen el beneficio mutuo de ambos segmentos. En conjunto, los resultados permiten validar las hipótesis planteadas para estas funcionalidades y respaldan su incorporación dentro de la versión final de la plataforma, evidenciando un alto nivel de aceptación por parte de ambos segmentos objetivo.
+
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog 
 ## 8.5. Continuous Learning 
 ### 8.5.1. Shareback Session Artifacts: Learning Workflow 
