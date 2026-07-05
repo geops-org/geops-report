@@ -233,11 +233,11 @@ La colaboración se distribuyó de manera equitativa entre los 7 integrantes:
     - [6.1.2. Core Integration Tests.](#)
     - [6.1.3. Core Behavior-Driven Development](#) 
     - [6.1.4. Core System Tests.](#)
-  - [6.2. Static testing & Verification](#) 
-    - [6.2.1. Static Code Analysis](#)
-      - [6.2.1.1. Coding standard & Code conventions](#)
-      - [6.2.1.2. Code Quality & Code Security](#)
-    - [6.2.2. Reviews ](#)  
+  - [6.2. Static Testing \& Verification](#62-static-testing--verification)
+    - [6.2.1. Static Code Analysis](#621-static-code-analysis)
+      - [6.2.1.1. Coding Standard \& Code Conventions](#6211-coding-standard--code-conventions)
+      - [6.2.1.2. Code Quality \& Code Security](#6212-code-quality--code-security)
+    - [6.2.2. Reviews](#622-reviews)
   - [6.3. Validation Interviews](#)
     - [6.3.1. Diseño de Entrevistas](#)
     - [6.3.2. Registro de Entrevistas](#)
@@ -4014,7 +4014,60 @@ Pruebas de Integración del Backend (Campaigns): Se desarrollaron pruebas de int
 
 
 ## 6.2. Static testing & Verification 
+
+La verificación estática del proyecto GeoPS tiene como objetivo revisar la calidad, seguridad y mantenibilidad del código fuente sin ejecutar directamente los flujos funcionales de la aplicación. Esta actividad complementa las pruebas unitarias, de integración, BDD y pruebas de sistema desarrolladas en la sección 6.1, ya que permite identificar errores de estructura, incumplimiento de estándares, posibles vulnerabilidades y malas prácticas antes de integrar cambios al repositorio principal o desplegar una nueva versión.
+
+En GeoPS, la verificación estática se aplica sobre los principales productos de software del proyecto: la Landing Page, la aplicación Frontend Web desarrollada en Angular y TypeScript, el Backend RESTful API desarrollado con Spring Boot, la documentación de endpoints mediante Swagger/OpenAPI y las configuraciones de seguridad vinculadas con autenticación JWT, CORS, validación de datos, hashing de credenciales y variables de entorno.
+
+Esta revisión resulta necesaria porque GeoPS administra información de usuarios, dueños de negocio, campañas publicitarias, ofertas, métricas de impresiones, clics, CTR y datos relacionados con la geolocalización de comercios. Por ello, el código debe mantenerse legible, consistente, seguro y alineado con la arquitectura de monolito modular basada en Domain-Driven Design, organizada en los bounded contexts Identity, Campaign, Offers y Shared Kernel.
+
+
 ### 6.2.1. Static Code Analysis 
+
+El análisis estático de código consiste en inspeccionar el código fuente y sus configuraciones sin ejecutar la aplicación, con el propósito de detectar errores potenciales, problemas de formato, duplicación, malas prácticas, vulnerabilidades y dependencias inseguras. En el proyecto GeoPS, este análisis se aplica de forma diferenciada al frontend, backend y documentación técnica, considerando las tecnologías utilizadas en cada componente.
+
+Para el frontend, se revisan los componentes Angular, servicios, rutas, formularios reactivos, interfaces TypeScript, archivos HTML y hojas de estilo CSS. La revisión busca asegurar que los componentes mantengan responsabilidades claras, que los nombres sean descriptivos, que los formularios tengan validaciones consistentes y que la estructura de la interfaz mantenga coherencia con el diseño responsivo definido para la plataforma.
+
+Para el backend, se revisan los controladores REST, servicios de aplicación, entidades de dominio, repositorios, DTOs, configuraciones de seguridad y archivos de documentación OpenAPI. La revisión busca verificar que la lógica de negocio no esté mezclada con la lógica de persistencia o presentación, que los endpoints sigan una estructura clara y que los bounded contexts mantengan sus responsabilidades separadas.
+
+Asimismo, el análisis estático se relaciona con el flujo de trabajo del equipo en GitHub. Antes de integrar cambios a las ramas principales, se revisa que el código cumpla los estándares definidos, que los commits sigan Conventional Commits y que la rama utilizada corresponda al flujo GitFlow establecido para el proyecto.
+
+Tabla 15
+Static Code Analysis — Componentes evaluados en GeoPS
+
+| Componente evaluado      | Tecnología principal             | Elementos revisados                                                                  | Propósito de la revisión                                                                |
+| ------------------------ | -------------------------------- | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| Landing Page             | HTML5, CSS3, TypeScript          | Estructura semántica, estilos, accesibilidad, navegación y diseño responsive         | Asegurar una presentación clara, accesible y coherente con la identidad visual de GeoPS |
+| Frontend Web Application | Angular, TypeScript              | Componentes, servicios, rutas, formularios, interfaces y validaciones                | Verificar que la aplicación web mantenga código modular, legible y validable            |
+| Backend RESTful API      | Java, Spring Boot                | Controladores, servicios, entidades, repositorios, DTOs y configuración de seguridad | Confirmar separación de responsabilidades, reglas de negocio y consistencia con DDD     |
+| Base de Datos            | MySQL                            | Entidades, relaciones, nombres de tablas y campos                                    | Mantener coherencia entre el modelo de dominio y la persistencia                        |
+| API Documentation        | Swagger/OpenAPI                  | Endpoints, métodos HTTP, parámetros, respuestas y códigos de estado                  | Facilitar la verificación y prueba de los servicios REST                                |
+| Seguridad                | JWT, CORS, hashing, validaciones | Protección de endpoints, credenciales, entradas de usuario y secretos                | Reducir riesgos de acceso no autorizado y exposición de datos sensibles                 |
+| Repositorios             | GitHub, GitFlow                  | Ramas, commits, pull requests y revisión de cambios                                  | Mantener trazabilidad y control colaborativo del código fuente                          |
+
+Nota. Elaboración propia.
+
+El proceso de análisis estático se ejecuta siguiendo los pasos descritos a continuación:
+
+Se revisa el código del frontend para verificar estructura de componentes, nombres de archivos, uso de servicios, formularios reactivos y validaciones.
+Se revisa el código del backend para comprobar que los controladores, servicios, entidades y repositorios estén organizados según los bounded contexts definidos.
+Se valida que las rutas REST sean coherentes, estén documentadas y usen métodos HTTP adecuados.
+Se revisa que los datos sensibles no estén escritos directamente en el código fuente.
+Se inspecciona el cumplimiento de convenciones de nombres, indentación, comentarios y organización del proyecto.
+Se revisan posibles riesgos de seguridad, como entradas no validadas, exposición de credenciales, manejo incorrecto de tokens o endpoints sin protección.
+Se registra la evidencia mediante capturas de consola, GitHub Actions, Pull Requests, Swagger UI o herramientas de análisis estático.
+
+Figura X. Static Code Analysis — Frontend Web Application
+Nota. Elaboración propia.
+
+Figura X. Static Code Analysis — Backend RESTful API
+Nota. Elaboración propia.
+
+Figura X. Static Code Analysis — Swagger/OpenAPI Documentation
+Nota. Elaboración propia.
+
+
+
 
 #### 6.2.1.1. Coding standard & Code conventions. 
 
