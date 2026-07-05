@@ -4066,67 +4066,11 @@ Segmento #2: Usuario Consumidor (GeoPS)
 #### Fase 5: Cierre y Sugerencias
 * ¿Qué feedback o funcionalidad extra propondría para mejorar su experiencia de navegación en el mapa?
 
-
 ### 6.3.2. Registro de Entrevistas. 
-
-
-
-
-Para cada segmento se requiere de 3 a 5 entrevistas. Para cada una de las entrevistas se debe indicar la información de nombres, apellidos, edad, distrito, un screenshot de un cuadro de video y el URL del video subido en Microsoft Stream incluyendo el timing donde inicia la entrevista y su duración. La entrevista debe ser registrada en video, que sirve de evidencia de entrevistas. Para cada entrevista debe redactarse en este informe un resumen, que explique de forma descriptiva las principales apreciaciones del entrevistado con respecto a las tareas asignadas. Ver otras indicaciones importantes en el Anexo C. Indicaciones para secciones que incluyen Videos.
-
-
-
-Anexo C. Indicaciones para secciones que incluyen Videos 
-Indicaciones generales: 
-• Los videos deben demostrar un nivel de edición y acabado de calidad aceptable a destacable. Es necesario
-incluir una pantalla inicial de presentación, música de fondo, y garantizar que las escenas sigan una secuencia 
-coherente. Además, cada escena debe contar con una descripción en texto que detalle a los participantes
-involucrados y las actividades realizadas.
-• Asimismo, se debe incorporar elementos relacionados con el branding de la startup o producto, lo cual puede
-incluir animaciones que refuercen su identidad visual.
-
-
-Validation 
-Interviews 
-Cantidad de Videos: 1 
-Nomenclatura: 
-upc-pre-202610-1asi0732-<NRC>-<startup>- 
-validation-sprint-<n> 
-Formato: .mp4 
-Duración: En función a cantidad de entrevistas 
-(considerar edición de 3 a 5 minutos por 
-entrevista). 
-Consolida sesiones y 
-entrevistas de validación en 
-las que usuarios de los 
-segmentos objetivo 
-interactúen con el landing 
-page y con los prototipos 
-de experiencias web y 
-mobile, manifestando sus 
-observaciones. Para cada 
-entrevista se debe incluir 
-títulos con información del 
-entrevistado, el segmento 
-objetivo y la fecha de la 
-entrevista 
-Subir el video en Microsoft Stream con enlace 
-privado. 
-Incluir en el informe screenshot del video con 
-enlace al mismo. 
-Incluir redacción de introducción a la sección y 
-redacción de registro de cada entrevista, junto 
-con la evaluación de heurísticas de usabilidad, 
-arquitectura de información y diseño inclusivo 
-para la sesión de evaluación. Seguir 
-especificaciones del enunciado y formatos 
-indicados. 
-
-#### 2.2.2. Registro de entrevistas
 
 Segmento #1: Dueños de negocios locales
 
-**Tabla 2**   
+**Tabla 14**   
 *Registro de entrevistas — Segmento 1*
 
 | Número de registro | Datos del entrevistado | Captura |
@@ -4138,7 +4082,7 @@ Segmento #1: Dueños de negocios locales
 
 Segmento #2: Consumidores de ofertas de diferentes ámbitos
 
-**Tabla 3**   
+**Tabla 15**   
 *Registro de entrevistas — Segmento 2*  
 
 | Número de registro | Datos del entrevistado | Captura |
@@ -4150,67 +4094,35 @@ Segmento #2: Consumidores de ofertas de diferentes ámbitos
 
 ### 6.3.3. Evaluaciones según heurísticas. 
 
+#### SITE o APP A EVALUAR:
+GeoPS
+
+#### TAREAS A EVALUAR: 
+* Registro de comercios locales
+* Publicación de ofertas locales 
+* Exploración de ofertas en mapa responsive
+* Simulación de alertas web push.
+
+#### ESCALA DE SEVERIDAD: 
+| Nivel | Descripción |
+| :--- | :--- |
+| **1** | **Problema superficial:** puede ser fácilmente superador por el usuario ó ocurre con muy poco frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| **2** | **Problema menor:** puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase  |
+| **3** | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta.  |
+| **4** | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento.  |
 
 
+#### TABLA RESUMEN: 
 
-Esta sección contiene el proceso de evaluación de las sesiones de validación basado en heurísticas, considerando heurísticas de usabilidad, arquitectura de información e inclusive design de la experiencia propuesta. Para esto la sección debe contener la estructura del formato para evaluaciones de heurísticas indicado. Para esto la sección debe contener la estructura del formato para evaluaciones de heurísticas indicado en el Anexo D. Formato para Evaluación de User Experience según Heurísticas.
+| # | Problema | Escala de severidad  | Heurística/Principio violada |
+| :--- | :--- | :--- | :--- |
+| **1** | **Formulario Publicación** El sistema permite publicar ofertas sin una imagen obligatoria, generando contenedores rotos en el feed del consumidor. | 4 | Usability |
+| **2** | **Mapa Interactivo** Los marcadores de tiendas se superponen caóticamente en zonas densas (falta de clusterización). | 3 | Information Architecture |
+| **3** | **Alcance de Plataforma** Ausencia de flujos y prototipos UX/UI específicos para la aplicación móvil nativa (Android/iOS) requerida en el Statement inicial. | 4 | Information Architecture |
+| **4** | **Registro Comercial** Ausencia de validaciones de formato en tiempo real para el número de RUC de la tienda durante el registro de GeoPS Business. | 2 | Usability |
+| **5** | **Flujo de Usuario** Inexistencia del mapeo del escenario actual (As-Is Scenario Mapping), impidiendo trazar la experiencia previa del usuario. | 3 | Information Architecture |
 
-Anexo D. Formato para Evaluación de User Experience según Heurísticas 
-UX Heuristics & Principles Evaluation 
-Usability – Inclusive Design – Information Architecture 
-CARRERA 
-CURSO 
-NRC 
-PROFESORES 
-AUDITOR 
-CLIENTE(S) 
-: Ingeniería de Software 
-: Diseño de Experimentos de Ingeniería de Software             
-: Código de la NRC 
-: Todos 
-: Nombre del Grupo que ejecuta la Sesión de evaluación 
-: Nombre de las personas que participan en la sesión 
-NOTA: Los contenidos de este formato (en color plomo) son referidos a un sitio web de ejemplo. Use 
-este formato como referencia de la estructura que tiene que ser entregada y elimine el contenido en 
-plomo. Coloque su contenido con color azul. 
-SITE o APP A EVALUAR: 
-Nombre de App 
-TAREAS A EVALUAR: 
-El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas: 
-1. Registro de un usuario nuevo
-2. Publicación de un post
-3. Búsqueda de un paquete turístico
-4. Reserva de un viaje
-5. Cancelación de una reserva
-6. Agregar ítems a un pedido
-7. Pago de un paquete turístico
-8. Etc.
-No están incluidas en esta versión de la evaluación las siguientes tareas: 
-1. Compartir reservas entre usuarios
-2. Presentar ofertas de último minuto
-3. Administrar puntos del programa de fidelización de viajes
-4. Guardar “alerta de paquetes”
-5. Etc.
-V1.0 
-50/53 
-ESCALA DE SEVERIDAD: 
-Los errores serán puntuados tomando en cuenta la siguiente escala de severidad 
-Nivel 
-1 
-Descripción 
-Problema superficial: puede ser fácilmente superador por el usuario ó ocurre con muy poco 
-frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. 
-2 
-Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de 
-superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente 
-reléase 
-3 
-Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es 
-importante que sean corregidos y se les debe asignar una prioridad alta. 
-4 
-Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de 
-la herramienta. Es imperativo que sea corregido antes del lanzamiento. 
-TABLA RESUMEN: 
+
 # 
 Problema 
 Escala de 
@@ -4240,7 +4152,8 @@ usable?
 Information Architecture: Is it 
 findable? 
 Etc. 
-DESCRIPCIÓN DE PROBLEMAS: 
+
+#### DESCRIPCIÓN DE PROBLEMAS: 
 PROBLEMA #1: No hay un control que permita regresar a la tienda durante el trámite de compra 
 Severidad: 3 
 Heurística violada: Usabilidad - Libertad y control del usuario 
