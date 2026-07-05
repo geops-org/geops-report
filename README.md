@@ -233,11 +233,11 @@ La colaboración se distribuyó de manera equitativa entre los 7 integrantes:
     - [6.1.2. Core Integration Tests.](#)
     - [6.1.3. Core Behavior-Driven Development](#) 
     - [6.1.4. Core System Tests.](#)
-  - [6.2. Static testing & Verification](#) 
-    - [6.2.1. Static Code Analysis](#)
-      - [6.2.1.1. Coding standard & Code conventions](#)
-      - [6.2.1.2. Code Quality & Code Security](#)
-    - [6.2.2. Reviews ](#)  
+  - [6.2. Static Testing \& Verification](#62-static-testing--verification)
+    - [6.2.1. Static Code Analysis](#621-static-code-analysis)
+      - [6.2.1.1. Coding Standard \& Code Conventions](#6211-coding-standard--code-conventions)
+      - [6.2.1.2. Code Quality \& Code Security](#6212-code-quality--code-security)
+    - [6.2.2. Reviews](#622-reviews)
   - [6.3. Validation Interviews](#)
     - [6.3.1. Diseño de Entrevistas](#)
     - [6.3.2. Registro de Entrevistas](#)
@@ -4014,13 +4014,229 @@ Pruebas de Integración del Backend (Campaigns): Se desarrollaron pruebas de int
 
 
 ## 6.2. Static testing & Verification 
+
+La verificación estática del proyecto GeoPS tiene como objetivo revisar la calidad, seguridad y mantenibilidad del código fuente sin ejecutar directamente los flujos funcionales de la aplicación. Esta actividad complementa las pruebas unitarias, de integración, BDD y pruebas de sistema desarrolladas en la sección 6.1, ya que permite identificar errores de estructura, incumplimiento de estándares, posibles vulnerabilidades y malas prácticas antes de integrar cambios al repositorio principal o desplegar una nueva versión.
+
+En GeoPS, la verificación estática se aplica sobre los principales productos de software del proyecto: la Landing Page, la aplicación Frontend Web desarrollada en Angular y TypeScript, el Backend RESTful API desarrollado con Spring Boot, la documentación de endpoints mediante Swagger/OpenAPI y las configuraciones de seguridad vinculadas con autenticación JWT, CORS, validación de datos, hashing de credenciales y variables de entorno.
+
+Esta revisión resulta necesaria porque GeoPS administra información de usuarios, dueños de negocio, campañas publicitarias, ofertas, métricas de impresiones, clics, CTR y datos relacionados con la geolocalización de comercios. Por ello, el código debe mantenerse legible, consistente, seguro y alineado con la arquitectura de monolito modular basada en Domain-Driven Design, organizada en los bounded contexts Identity, Campaign, Offers y Shared Kernel.
+
+
 ### 6.2.1. Static Code Analysis 
+
+El análisis estático de código consiste en inspeccionar el código fuente y sus configuraciones sin ejecutar la aplicación, con el propósito de detectar errores potenciales, problemas de formato, duplicación, malas prácticas, vulnerabilidades y dependencias inseguras. En el proyecto GeoPS, este análisis se aplica de forma diferenciada al frontend, backend y documentación técnica, considerando las tecnologías utilizadas en cada componente.
+
+Para el frontend, se revisan los componentes Angular, servicios, rutas, formularios reactivos, interfaces TypeScript, archivos HTML y hojas de estilo CSS. La revisión busca asegurar que los componentes mantengan responsabilidades claras, que los nombres sean descriptivos, que los formularios tengan validaciones consistentes y que la estructura de la interfaz mantenga coherencia con el diseño responsivo definido para la plataforma.
+
+Para el backend, se revisan los controladores REST, servicios de aplicación, entidades de dominio, repositorios, DTOs, configuraciones de seguridad y archivos de documentación OpenAPI. La revisión busca verificar que la lógica de negocio no esté mezclada con la lógica de persistencia o presentación, que los endpoints sigan una estructura clara y que los bounded contexts mantengan sus responsabilidades separadas.
+
+Asimismo, el análisis estático se relaciona con el flujo de trabajo del equipo en GitHub. Antes de integrar cambios a las ramas principales, se revisa que el código cumpla los estándares definidos, que los commits sigan Conventional Commits y que la rama utilizada corresponda al flujo GitFlow establecido para el proyecto.
+
+Tabla 15
+Static Code Analysis — Componentes evaluados en GeoPS
+
+| Componente evaluado      | Tecnología principal             | Elementos revisados                                                                  | Propósito de la revisión                                                                |
+| ------------------------ | -------------------------------- | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| Landing Page             | HTML5, CSS3, TypeScript          | Estructura semántica, estilos, accesibilidad, navegación y diseño responsive         | Asegurar una presentación clara, accesible y coherente con la identidad visual de GeoPS |
+| Frontend Web Application | Angular, TypeScript              | Componentes, servicios, rutas, formularios, interfaces y validaciones                | Verificar que la aplicación web mantenga código modular, legible y validable            |
+| Backend RESTful API      | Java, Spring Boot                | Controladores, servicios, entidades, repositorios, DTOs y configuración de seguridad | Confirmar separación de responsabilidades, reglas de negocio y consistencia con DDD     |
+| Base de Datos            | MySQL                            | Entidades, relaciones, nombres de tablas y campos                                    | Mantener coherencia entre el modelo de dominio y la persistencia                        |
+| API Documentation        | Swagger/OpenAPI                  | Endpoints, métodos HTTP, parámetros, respuestas y códigos de estado                  | Facilitar la verificación y prueba de los servicios REST                                |
+| Seguridad                | JWT, CORS, hashing, validaciones | Protección de endpoints, credenciales, entradas de usuario y secretos                | Reducir riesgos de acceso no autorizado y exposición de datos sensibles                 |
+| Repositorios             | GitHub, GitFlow                  | Ramas, commits, pull requests y revisión de cambios                                  | Mantener trazabilidad y control colaborativo del código fuente                          |
+
+Nota. Elaboración propia.
+
+El proceso de análisis estático se ejecuta siguiendo los pasos descritos a continuación:
+
+Se revisa el código del frontend para verificar estructura de componentes, nombres de archivos, uso de servicios, formularios reactivos y validaciones.
+Se revisa el código del backend para comprobar que los controladores, servicios, entidades y repositorios estén organizados según los bounded contexts definidos.
+Se valida que las rutas REST sean coherentes, estén documentadas y usen métodos HTTP adecuados.
+Se revisa que los datos sensibles no estén escritos directamente en el código fuente.
+Se inspecciona el cumplimiento de convenciones de nombres, indentación, comentarios y organización del proyecto.
+Se revisan posibles riesgos de seguridad, como entradas no validadas, exposición de credenciales, manejo incorrecto de tokens o endpoints sin protección.
+Se registra la evidencia mediante capturas de consola, GitHub Actions, Pull Requests, Swagger UI o herramientas de análisis estático.
+
+Figura X. Static Code Analysis — Frontend Web Application
+Nota. Elaboración propia.
+
+Figura X. Static Code Analysis — Backend RESTful API
+Nota. Elaboración propia.
+
+Figura X. Static Code Analysis — Swagger/OpenAPI Documentation
+Nota. Elaboración propia.
+
+
+
 
 #### 6.2.1.1. Coding standard & Code conventions. 
 
+Los estándares de codificación permiten mantener una estructura uniforme en todos los repositorios del proyecto GeoPS. Su aplicación facilita la lectura del código, reduce errores de integración, mejora la colaboración entre integrantes y permite que las funcionalidades futuras puedan agregarse sin afectar la mantenibilidad del sistema.
+
+En el frontend, se utilizan convenciones propias de Angular y TypeScript. Los nombres de variables, métodos y funciones se redactan en inglés y bajo el estilo camelCase. Los componentes, servicios e interfaces deben tener nombres descriptivos relacionados con su responsabilidad. Las clases CSS se escriben en kebab-case y deben representar claramente la sección, componente o elemento visual al que pertenecen.
+
+En el backend, se siguen convenciones de Java y Spring Boot. Las clases se escriben en PascalCase, los métodos y atributos en camelCase, y los paquetes se organizan de acuerdo con el contexto funcional correspondiente. Esta organización permite mantener coherencia con la arquitectura DDD del proyecto, separando responsabilidades entre Identity, Campaign, Offers y Shared Kernel.
+
+Además, el equipo utiliza GitFlow para organizar el trabajo colaborativo en ramas y Conventional Commits para mantener trazabilidad en el historial del repositorio. Esto permite identificar rápidamente si un cambio corresponde a una nueva funcionalidad, corrección de errores, documentación, refactorización o pruebas.
+
+Tabla 16
+Coding Standard & Code Conventions — Estándares aplicados en GeoPS
+
+| Área                 | Estándar aplicado                        | Ejemplo aplicado en GeoPS                                 |
+| -------------------- | ---------------------------------------- | --------------------------------------------------------- |
+| Variables TypeScript | camelCase                                | selectedCategory, currentUser, campaignList               |
+| Métodos TypeScript   | camelCase y verbo descriptivo            | loadOffers(), submitCampaign(), filterByCategory()        |
+| Componentes Angular  | Nombre descriptivo según responsabilidad | LoginComponent, RegisterComponent, CampaignsComponent     |
+| Servicios Angular    | Sufijo Service                           | AuthService, CampaignService, OfferService                |
+| Clases CSS           | kebab-case                               | promotion-card, campaign-form, navbar-section             |
+| Clases Java          | PascalCase                               | CampaignController, UserCommandService, OfferRepository   |
+| Métodos Java         | camelCase                                | createCampaign(), getOfferById(), validateUserExistence() |
+| Paquetes backend     | Minúsculas y agrupados por contexto      | identity, campaign, offers, shared                        |
+| Endpoints REST       | Rutas orientadas a recursos              | /auth/login, /offers/{id}, /campaigns                     |
+| Commits              | Conventional Commits                     | feat, fix, docs, style, refactor, test                    |
+| Ramas                | GitFlow                                  | main, develop, feature/, release/, hotfix/                |
+
+Nota. Elaboración propia.
+
+Para verificar el cumplimiento de estos estándares, se revisan los siguientes criterios:
+
+- Los nombres de variables, funciones, clases y archivos deben ser claros y representar su responsabilidad.
+
+- El código debe mantener una indentación uniforme y evitar mezclas innecesarias de estilos.
+
+- Los componentes del frontend no deben concentrar lógica que corresponde a servicios.
+
+- Los controladores del backend no deben contener reglas de negocio extensas; estas deben estar en servicios de aplicación.
+
+- Las entidades, repositorios y servicios deben estar ubicados en el bounded context correspondiente.
+
+- Los commits deben indicar claramente la naturaleza del cambio realizado.
+
+- Las ramas deben usarse de acuerdo con GitFlow para evitar cambios directos sobre producción.
+
+Tabla 17
+Checklist de Coding Standards
+| Criterio revisado                                                | Cumple | Observación                                                                 |
+| ---------------------------------------------------------------- | ------ | --------------------------------------------------------------------------- |
+| Uso de nombres descriptivos en variables, clases y métodos       | Sí     | Se emplean nombres asociados a autenticación, campañas, ofertas y usuarios  |
+| Uso de camelCase en TypeScript y Java                            | Sí     | Se mantiene consistencia en métodos y atributos                             |
+| Uso de PascalCase en clases Java y componentes Angular           | Sí     | Las clases representan controladores, servicios, repositorios y componentes |
+| Organización por bounded contexts                                | Sí     | El backend se organiza en Identity, Campaign, Offers y Shared Kernel        |
+| Uso de rutas REST orientadas a recursos                          | Sí     | Los endpoints se agrupan por autenticación, usuarios, campañas y ofertas    |
+| Uso de GitFlow                                                   | Sí     | Se consideran ramas main, develop, feature, release y hotfix                |
+| Uso de Conventional Commits                                      | Sí     | Se aplican prefijos como feat, fix, docs, refactor y test                   |
+| Separación entre lógica visual, lógica de negocio y persistencia | Sí     | Se diferencia frontend, servicios backend y repositorios                    |
+
+Nota. Elaboración propia.
+
 #### 6.2.1.2. Code Quality & Code Security. 
+La revisión de calidad y seguridad del código busca asegurar que GeoPS sea una plataforma mantenible, robusta y segura para los usuarios consumidores y los dueños de negocio. La calidad del código se evalúa considerando legibilidad, complejidad, duplicación, separación de responsabilidades, mantenibilidad y documentación técnica. La seguridad se evalúa considerando autenticación, autorización, validación de datos, protección de credenciales, configuración CORS, manejo de JWT y prevención de vulnerabilidades comunes.
+
+En cuanto a calidad, la arquitectura del backend mantiene una separación modular mediante bounded contexts. Identity concentra la autenticación, usuarios, roles, JWT, hashing y perfiles. Campaign gestiona la creación, edición, eliminación, presupuesto, fechas, impresiones, clics y CTR de las campañas. Offers administra las promociones asociadas a campañas. Shared Kernel agrupa configuraciones transversales como auditoría, roles, CORS, OpenAPI, sanitización de texto y recursos comunes. Esta separación evita que el código crezca de manera desordenada y permite que futuras funcionalidades puedan integrarse con menor riesgo.
+
+En cuanto a seguridad, GeoPS debe proteger los endpoints sensibles mediante JWT, evitar el almacenamiento de contraseñas en texto plano, validar los datos recibidos desde formularios y solicitudes HTTP, controlar los orígenes permitidos mediante CORS y evitar la exposición de credenciales en el repositorio. Estas prácticas son importantes porque la plataforma maneja cuentas de usuarios, información de negocios, campañas, ofertas, métricas de rendimiento y datos relacionados con ubicación.
+
+Tabla 18
+Code Quality — Criterios de calidad evaluados
+| Criterio              | Aplicación en GeoPS                                                              | Resultado esperado                                 |
+| --------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------- |
+| Legibilidad           | Uso de nombres claros, estructura por módulos y responsabilidades definidas      | Código comprensible para el equipo                 |
+| Mantenibilidad        | Separación entre componentes, servicios, controladores, repositorios y entidades | Cambios futuros con menor impacto                  |
+| Bajo acoplamiento     | Comunicación entre contextos mediante servicios o puertos específicos            | Menor dependencia directa entre módulos            |
+| Alta cohesión         | Cada contexto concentra responsabilidades relacionadas                           | Código más ordenado y fácil de probar              |
+| Duplicación reducida  | Uso de servicios reutilizables y Shared Kernel                                   | Menor repetición de configuraciones o lógica común |
+| Documentación técnica | Uso de Swagger/OpenAPI para endpoints REST                                       | Mayor facilidad de prueba y comprensión de la API  |
+| Trazabilidad          | Uso de GitHub, ramas y Conventional Commits                                      | Historial claro de cambios del proyecto            |
+
+Nota. Elaboración propia.
+
+Tabla 19
+Code Security — Criterios de seguridad evaluados
+| Riesgo revisado                 | Control aplicado en GeoPS                                              | Resultado esperado                                      |
+| ------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------- |
+| Acceso no autorizado            | Protección de endpoints mediante JWT                                   | Solo usuarios autenticados acceden a funciones privadas |
+| Contraseñas expuestas           | Hashing de credenciales                                                | Las contraseñas no se almacenan en texto plano          |
+| Manipulación de campañas ajenas | Validación del usuario propietario antes de editar o eliminar campañas | Solo el dueño autorizado modifica sus campañas          |
+| Datos inválidos                 | Validaciones en formularios, DTOs y servicios                          | Se rechazan solicitudes incompletas o mal formadas      |
+| Inyección de contenido          | Sanitización de campos de texto                                        | Se reduce el riesgo de contenido malicioso              |
+| Cross-Site Scripting XSS        | Validación y control del contenido mostrado en la interfaz             | Se evita mostrar información peligrosa al usuario       |
+| SQL Injection                   | Uso de Spring Data JPA y consultas parametrizadas                      | Se reduce el riesgo de inyección SQL                    |
+| Exposición de API               | Configuración CORS                                                     | Solo orígenes autorizados consumen el backend           |
+| Secretos en repositorio         | Uso de variables de entorno                                            | Las credenciales no se publican en GitHub               |
+| Dependencias vulnerables        | Revisión de dependencias del frontend y backend                        | Se identifican librerías con riesgos conocidos          |
+
+Nota. Elaboración propia.
+
+Como parte de la verificación de seguridad, se revisan los formularios y endpoints principales del sistema. En el registro y login, se valida el formato del correo, la contraseña y la respuesta ante credenciales incorrectas. En campañas, se revisa que los datos como nombre, descripción, fecha de inicio, fecha de fin, presupuesto y estado sean obligatorios y consistentes. En ofertas, se valida que la oferta esté asociada a una campaña existente y activa. En perfiles de negocio, se revisan datos como correo, teléfono, RUC, dirección, horario de atención y enlaces web.
+
+Tabla 20
+Static Code Analysis Results — Resultado de verificación estática
+| Producto revisado        | Herramienta o método de revisión                          | Resultado obtenido                                           | Evidencia |
+| ------------------------ | --------------------------------------------------------- | ------------------------------------------------------------ | --------- |
+| Landing Page             | Revisión manual de HTML, CSS y TypeScript                 | Estructura semántica, responsive y navegación revisadas      | Figura X  |
+| Frontend Web Application | Revisión de Angular, TypeScript y formularios reactivos   | Componentes, servicios y validaciones revisados              | Figura X  |
+| Backend RESTful API      | Revisión de Java, Spring Boot y organización por paquetes | Controladores, servicios, repositorios y entidades revisados | Figura X  |
+| API Documentation        | Revisión de Swagger UI                                    | Endpoints visibles y agrupados por recurso                   | Figura X  |
+| Seguridad                | Revisión de JWT, CORS, hashing y variables de entorno     | Controles de acceso y protección de credenciales revisados   | Figura X  |
+| Repositorio GitHub       | Revisión de ramas, commits y pull requests                | Trazabilidad de cambios verificada                           | Figura X  |
+
+Nota. Elaboración propia.
+
+Figura X. Code Quality Verification — Frontend Web Application
+Nota. Elaboración propia.
+
+Figura X. Code Quality Verification — Backend RESTful API
+Nota. Elaboración propia.
+
+Figura X. Code Security Verification — Repository and Environment Variables
+Nota. Elaboración propia.
 
 #### 6.2.2. Reviews
+
+Las revisiones del proyecto GeoPS se realizan como parte del proceso de aseguramiento de calidad previo a la integración de cambios en el repositorio. Estas revisiones permiten detectar errores de implementación, incumplimiento de estándares, problemas de seguridad, inconsistencias en la documentación y posibles riesgos de mantenimiento antes de que el código sea desplegado.
+
+El equipo aplica revisiones sobre los principales artefactos del proyecto: código fuente del frontend, código fuente del backend, documentación Swagger/OpenAPI, estructura de ramas, commits, pull requests y configuraciones de despliegue. Estas revisiones se alinean con el flujo GitFlow, ya que las funcionalidades se desarrollan en ramas feature y luego pasan por revisión antes de integrarse a develop o main.
+
+Durante la revisión, se considera que cada cambio cumpla con los estándares definidos en la sección anterior. En el frontend, se valida que los componentes Angular sean claros, que los formularios mantengan sus controles requeridos y que la interfaz sea consistente. En el backend, se verifica que los endpoints respondan a responsabilidades concretas, que los servicios contengan la lógica de negocio y que los repositorios se limiten a la persistencia. En seguridad, se revisa que no existan credenciales expuestas, que los endpoints sensibles estén protegidos y que las entradas sean validadas.
+
+Tabla 21
+Reviews — Criterios de revisión del proyecto GeoPS
+| Criterio de revisión      | Descripción                                                                                                | Resultado esperado                                               |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Revisión de funcionalidad | Se verifica que el cambio implementado corresponda a una User Story, Technical Story o corrección definida | El cambio tiene trazabilidad con el backlog                      |
+| Revisión de estándares    | Se valida el uso de nombres, indentación, estructura y convenciones del proyecto                           | El código es consistente y legible                               |
+| Revisión de arquitectura  | Se confirma que el cambio respete los bounded contexts y responsabilidades definidas                       | No se mezclan responsabilidades entre módulos                    |
+| Revisión de seguridad     | Se revisan JWT, validaciones, CORS, hashing y variables de entorno                                         | No se exponen datos sensibles ni endpoints inseguros             |
+| Revisión de documentación | Se valida que los endpoints y cambios relevantes estén documentados                                        | La API y el informe se mantienen actualizados                    |
+| Revisión de pruebas       | Se verifica que el cambio no afecte pruebas unitarias, de integración o BDD                                | El código puede integrarse sin romper funcionalidades existentes |
+| Revisión de repositorio   | Se revisa la rama, el commit y el Pull Request asociado                                                    | El historial del proyecto mantiene trazabilidad                  |
+
+Nota. Elaboración propia.
+
+Tabla 22
+Code Review Log — Registro de revisiones realizadas
+
+| ID    | Artefacto revisado       | Responsable de revisión | Hallazgo principal                                                                                 | Acción realizada                                                              | Estado  |
+| ----- | ------------------------ | ----------------------- | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------- |
+| RV-01 | Frontend Web Application | Equipo de desarrollo    | Revisión de componentes, rutas y formularios de autenticación                                      | Se validó consistencia de nombres, estructura y controles requeridos          | Cerrado |
+| RV-02 | Campaign Form            | Equipo de desarrollo    | Revisión de campos name, description, startDate, endDate, estimatedBudget y status                 | Se verificó que el formulario mantenga los controles necesarios para campañas | Cerrado |
+| RV-03 | Backend RESTful API      | Equipo de desarrollo    | Revisión de controladores, servicios y repositorios por contexto                                   | Se confirmó separación entre Identity, Campaign, Offers y Shared Kernel       | Cerrado |
+| RV-04 | Swagger/OpenAPI          | Equipo de desarrollo    | Revisión de endpoints disponibles para autenticación, usuarios, ofertas, campañas y notificaciones | Se verificó que los endpoints puedan visualizarse y probarse desde Swagger UI | Cerrado |
+| RV-05 | Seguridad                | Equipo de desarrollo    | Revisión de JWT, CORS, hashing, validaciones y variables de entorno                                | Se verificó que las credenciales no estén expuestas en el código fuente       | Cerrado |
+| RV-06 | GitHub Repository        | Equipo de desarrollo    | Revisión de ramas, commits y trazabilidad de cambios                                               | Se validó el uso de GitFlow y Conventional Commits                            | Cerrado |
+
+Nota. Elaboración propia.
+
+Como resultado de las revisiones, el equipo confirma que el proyecto GeoPS mantiene una estructura de código coherente con su arquitectura y con los estándares definidos para el desarrollo. Las revisiones permitieron reforzar la calidad técnica del frontend, backend y documentación de servicios, así como reducir riesgos asociados a seguridad, mantenimiento y despliegue. Además, el uso de GitHub, GitFlow, Conventional Commits y Pull Requests contribuye a mantener un proceso colaborativo controlado, verificable y alineado con las buenas prácticas de ingeniería de software.
+
+Figura X. Pull Request Review Evidence — GitHub
+Nota. Elaboración propia.
+
+Figura X. Repository Commit History — Conventional Commits
+Nota. Elaboración propia.
+
+Figura X. Static Review Evidence — Backend and Frontend
+Nota. Elaboración propia.
 
 ## 6.3. Validation Interviews. 
 ### 6.3.1. Diseño de Entrevistas. 
@@ -4291,10 +4507,48 @@ El objetivo de **Continuous Deployment (CD)** es que los cambios aprobados pasen
 3. **Invalidación de Caché:** Limpieza automática de caché para que los usuarios de **GeoPS** reciban la versión más reciente al instante.
 
 ## 7.4. Continuous Monitoring 
+
 ### 7.4.1. Tools and Practices 
+En **GeoPS Labs**, el monitoreo continuo se enfoca en garantizar la alta disponibilidad de la API, la estabilidad de la interfaz web y la detección temprana de excepciones de negocio. Dado que el backend implementa patrones complejos como **DDD y CQRS**, la observabilidad es clave para rastrear el flujo correcto de los *Commands* y *Queries* a través de las capas del sistema.
+
+| Herramienta | Tipo | Descripción | Propósito |
+| :--- | :--- | :--- | :--- |
+| **Spring Boot Actuator** | Telemetría (Backend) | Módulo nativo de Spring Boot incluido en el `pom.xml` de `geops-api`. | Exponer los endpoints de salud (`/actuator/health`) y métricas de consumo de hilos, base de datos y memoria JVM. |
+| **Sentry SDK (Java/Angular)** | Monitoreo de Errores (APM) | Integración multiplataforma en ambos repositorios. | Capturar excepciones no controladas en Angular (errores de UI o fallos de conexión) y excepciones críticas en los servicios de aplicación del backend. |
+| **Logback / Slf4j** | Registro (Logging) | Framework de logging estándar integrado en Spring Boot. | Generar trazas estructuradas durante la ejecución de los casos de uso (`Identity`, `Campaign`, `Offers`). |
+| **UptimeRobot** | Disponibilidad | Servicio externo de monitoreo sintético. | Validar la disponibilidad 24/7 de los controladores REST mediante sondeos HTTP cada 5 minutos. |
+
+#### Best Practices Implemented
+* **Structured Exception Logging:** Toda excepción lanzada por los validadores o fallos en el dominio (como errores de autenticación JWT o fallos al crear campañas) se registra de forma estructurada con su respectivo nivel de severidad (`WARN` o `ERROR`).
+* **Health Check Probing:** Uso del endpoint público de Actuator para que los orquestadores de contenedores (Docker) verifiquen si la instancia de la API está sana o requiere un reinicio automático.
+* **Front-End Error Catching:** Captura global de errores en Angular mediante un `ErrorHandler` personalizado que envía los *stack traces* directamente a Sentry, incluyendo el contexto del navegador del usuario.
+
 ### 7.4.2. Monitoring Pipeline Components 
+Este pipeline se encarga de la recolección activa y pasiva de los datos de comportamiento e infraestructura de **GeoPS**:
+
+1. **Ingesta de Métricas de la JVM:** Spring Boot Actuator recopila el estado de la máquina virtual de Java, el uso de CPU y el estado del pool de conexiones JPA/Hibernate hacia MySQL.
+2. **Colector de Eventos de la UI:** El frontend de Angular intercepta fallos de red (códigos HTTP 4xx o 5xx) a través de sus *Interceptors* y reporta las anomalías en tiempo real.
+3. **Persistencia de Trazas (Logs):** Los logs generados por el contenedor Docker de la API se centralizan en la plataforma de despliegue para permitir auditorías rápidas sobre operaciones sensibles (como el registro de usuarios o edición de campañas).
+
+<div align="center">
+    <img src="resources/imgs/chapter-vii/diagrama-pipeline-components.png" 
+    alt="Pipeline Architecture Diagram" width="700">
+</div>
+
 ### 7.4.3. Alerting Pipeline Components 
+Este componente procesa los datos monitoreados y decide de manera inteligente si el comportamiento del sistema requiere la intervención inmediata del equipo de desarrollo de GeoPS Labs:
+
+1. **Filtro de Excepciones DDD/CQRS:** Sentry clasifica las anomalías recolectadas de forma automática. Las excepciones por validación de negocio (por ejemplo, datos inválidos o mal formateados en un `CreateCampaignCommand`) se clasifican como advertencias (`Warning`). Por el contrario, los fallos de infraestructura, como la pérdida de conexión a la base de datos o fallos de tokens expirados en el backend, se elevan instantáneamente a estado `Critical`.
+2. **Evaluación de Umbrales de Infraestructura:** Se establece un disparador automático en el orquestador si el contenedor Docker de la API (`geops-api`) sobrepasa el **85%** de uso de memoria RAM asignada de forma sostenida por un lapso mayor a 3 minutos.
+3. **Mecanismo Anti-Falso Positivo:** UptimeRobot requiere que cualquier fallo de respuesta HTTP (códigos 5xx o timeout) en el endpoint público de la API sea confirmado de forma simultánea desde tres nodos geográficos distintos antes de activar formalmente una alerta general.
+
 ### 7.4.4. Notification Pipeline Components. 
+Una vez que el pipeline de alertas valida y confirma una anomalía real, este flujo distribuye la información de manera eficiente para mitigar los tiempos de respuesta y resolución:
+
+1. **Enriquecimiento del Evento:** Sentry y los recolectores de logs empaquetan la alerta añadiendo metadatos contextuales clave de forma automática: entorno afectado (`develop` o `main`), el endpoint específico del fallo (ej. `/api/v1/auth/signin`), el stack trace del error y el ID del último commit de GitHub asociado.
+2. **Despacho vía Webhooks (Slack/Discord):** Envío inmediato de la alerta en formato enriquecido e interactivo a los canales de comunicación internos dedicados al equipo de ingeniería y DevOps de GeoPS Labs.
+3. **Protocolo de Escalabilidad por Correo (SMTP):** Si una alerta catalogada con severidad `Critical` o `Fatal` (como la caída total del servicio de la API) no recibe una confirmación de recepción manual ("Acknowledge") por parte de un desarrollador en un lapso de 15 minutos, el pipeline escala de forma automatizada enviando correos electrónicos de alta prioridad con alertas persistentes a los líderes técnicos del proyecto.
+
 # Part III: Experiment-Driven Lifecycle 
 # Capítulo VIII: Experiment-Driven Development 
 ## 8.1. Experiment Planning 
