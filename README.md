@@ -4025,9 +4025,9 @@ Pruebas de Integración del Backend (Campaigns): Se desarrollaron pruebas de int
 ## 6.3. Validation Interviews. 
 ### 6.3.1. Diseño de Entrevistas. 
 
-Segmento #1: Usuario Proveedor / Tienda (GeoPS Business)
+##### Segmento #1: Usuario Proveedor / Tienda (GeoPS Business)
 
-#### Fase 1: Identificación y Perfilamiento del Negocio
+#### Fase 1: Identificación y Perfilamiento del Consumidor
 * Establecimiento, Cargo, Giro de negocio y Origen de productos orientales.
 * Pregunta de control: ¿Mantiene actualmente problemas de visibilidad hiperlocal o inventario de baja rotación en Lima Moderna?
 
@@ -4046,7 +4046,7 @@ Segmento #1: Usuario Proveedor / Tienda (GeoPS Business)
 #### Fase 5: Cierre y Sugerencias
 * ¿Qué funcionalidad o elemento gráfico añadiría para que la gestión de sus ofertas sea más rápida?
 
-Segmento #2: Usuario Consumidor (GeoPS)
+##### Segmento #2: Usuario Consumidor (GeoPS)
 
 #### Fase 1: Identificación y Perfilamiento del Negocio
 * Nombre, Edad, Ocupación, Distrito de Lima Moderna y Frecuencia de consumo de artículos asiáticos.
@@ -4122,58 +4122,75 @@ GeoPS
 | **4** | **Registro Comercial** Ausencia de validaciones de formato en tiempo real para el número de RUC de la tienda durante el registro de GeoPS Business. | 2 | Usability |
 | **5** | **Flujo de Usuario** Inexistencia del mapeo del escenario actual (As-Is Scenario Mapping), impidiendo trazar la experiencia previa del usuario. | 3 | Information Architecture |
 
-
-# 
-Problema 
-Escala de 
-severidad 
-1 No hay un control que permita regresar a la tienda 
-durante el trámite de compra 
-Heurística/Principio violada(o) 
-3 
-2 Se repiten constantemente algunas opciones 
-Usability: Libertad y control del 
-usuario 
-1 
-3 Imágenes sin atributo “alt” 
-Usability: Consistencia y 
-estándares 
-3 
-4 Incluye un botón “Ver más” pero no existe 
-contenido al que dirigirse 
-Inclusive Design: Proporciona 
-experiencias comparables 
-3 
-5 No incluye información de los planes de servicio 
-Information Architecture: Is it 
-usable? 
-2 
-… ….   
-Information Architecture: Is it 
-findable? 
-Etc. 
-
 #### DESCRIPCIÓN DE PROBLEMAS: 
-PROBLEMA #1: No hay un control que permita regresar a la tienda durante el trámite de compra 
-Severidad: 3 
-Heurística violada: Usabilidad - Libertad y control del usuario 
+
+##### PROBLEMA #1: Restricción de Medios en Formulario de Publicación
+
+Severidad: 4 
+Heurística violada: Prevención de Errores (Usability).
+
 Problema: 
-Al momento de ingresar nuestros datos, no podemos regresar a la tienda en caso así lo Una vez el cliente pase al trámite de 
-compra, en caso de que este quiera regresar a la tienda, no hay un botón que lo envié al inicio de la web, lo cual nos obliga a 
-efectuar el trámite y al momento de elegir más productos, realizar otro, incrementándose así la cantidad de esfuerzo del usuario. 
-(Incluir además una captura de pantalla ilustrando el problema). 
+Durante las pruebas de usabilidad del lado del comercio, la interfaz web permitió procesar, guardar y propagar una campaña promocional hiperlocal sin exigir de manera obligatoria la carga de un archivo de imagen. Esto provoca un error visual directo en el feed del usuario consumidor, quien visualiza un contenedor con el icono de imagen rota, afectando severamente la estética y la confiabilidad del negocio.
+
+<div align="center"> <img src="resources/imgs/chapter-vi/problema1.png" alt="Evidencia Problema 1" width="4000"> </div> 
+
 Recomendación: 
-La más práctica es que al momento en que queramos realizar dicho trámite, el navegador lo abra en una ventana aparte para 
-no perder los cambios realizados en nuestro carrito de compras. 
+Implementar una regla de validación estricta en el Frontend mediante esquemas de datos (como Zod o Yup) vinculados a los estados del formulario en React/Next.js. El botón de envío debe permanecer deshabilitado e indicar visualmente un estado de error hasta que el archivo de imagen sea cargado y procesado correctamente.
 
 
+##### PROBLEMA #2: Superposición de Marcadores en el Mapa Interactivo
+
+Severidad: 3
+Heurística violada: Organización Visual y Carga Cognitiva (Information Architecture).
+
+Problema: 
+Al simular la navegación en zonas con alta concentración de comercios orientales en Lima Moderna (como las fronteras de Jesús María y Lince), los pines de ubicación geográfica se enciman caóticamente unos sobre otros. Esto impide al consumidor discriminar los locales de manera individual, bloquea la lectura de los nombres de las tiendas y genera frustración al intentar hacer clic en un comercio específico.
+
+<div align="center"> <img src="resources/imgs/chapter-vi/problema2.png" alt="Evidencia Problema 2" width="4000"> </div> 
+
+Recomendación: 
+Integrar una librería de clusterización de marcadores (como @googlemaps/markerclusterer o equivalentes en Leaflet/Mapbox). Esta solución agrupa dinámicamente los pines cercanos en un solo indicador numérico según el nivel de zoom del navegador, expandiéndose fluidamente cuando el usuario se acerca a la zona.
 
 
+##### PROBLEMA #3: Brecha de Diseño en el Alcance Multiplataforma
+
+Severidad: 4
+Heurística violada: Consistencia con el Estándar y Cumplimiento de Requisitos (Information Architecture).
+
+Problema: 
+Tal como se detalló en el informe "Auditoria GeoPS.pdf", el proyecto presenta de forma óptima los flujos del entorno web, pero carece por completo de los artefactos de diseño móvil (Style Guidelines, Wireframes, Mockups, User Flows y Prototipos para Android/iOS) exigidos taxativamente en el Statement del curso. Esta omisión rompe la trazabilidad técnica global del producto.
+
+<div align="center"> <img src="resources/imgs/chapter-vi/problema3.png" alt="Evidencia Problema 3" width="4000"> </div> 
+
+Recomendación: 
+Incorporar un apartado formal de "Definición y Delimitación del Alcance Técnico" dentro del documento. En este bloque se debe justificar que GeoPS se ha estructurado estratégicamente como una Plataforma Web Responsive Integrada. Esto se argumenta bajo criterios de ingeniería: optimización de costos en infraestructura en la nube para PyMEs, uso nativo de APIs de Geolocalización del navegador y Service Workers para notificaciones Web Push, lo cual mitiga la fricción de instalación en el smartphone del consumidor.
+
+##### PROBLEMA #4: Falta de Validación de Formato en Registro Comercial
+
+Severidad: 2
+Heurística violada: Validación de Datos y Ayuda al Usuario (Usability).
+
+Problema: 
+El campo destinado al ingreso del Registro Único de Contribuyentes (RUC) del comercio no cuenta con máscaras de entrada ni validación asíncrona o sintáctica en tiempo real. Un administrador puede tipear una cantidad errónea de dígitos, letras o caracteres especiales, y la interfaz procesa el envío al backend sin alertar al usuario de que los datos de su filiación comercial son inválidos.
+
+<div align="center"> <img src="resources/imgs/chapter-vi/problema4.png" alt="Evidencia Problema 4" width="4000"> </div> 
+
+Recomendación: 
+Aplicar una máscara de texto estructurada en el input que limite la entrada a exactamente 11 caracteres numéricos. Complementariamente, añadir una expresión regular (RegEx) que valide que el número inicie con los prefijos comerciales peruanos válidos (10, 15 o 20) antes de autorizar la llamada a la API de registro.
 
 
+##### PROBLEMA #5: Ausencia del Diagrama de Escenario Actual
 
+Severidad: 3
+Heurística violada: Trazabilidad Metodológica Centrada en el Usuario (Information Architecture).
 
+Problema: 
+De acuerdo con los hallazgos del reporte "Auditoria GeoPS.pdf", se identificó una desconexión metodológica importante al no incluirse el artefacto As-Is Scenario Mapping. Al no documentar formalmente la secuencia de pasos, dolores y canales ineficientes que experimentan hoy en día los usuarios (como guiarse únicamente por tendencias de TikTok o buscar tiendas a ciegas), se debilita el sustento empírico de la solución propuesta.
 
+<div align="center"> <img src="resources/imgs/chapter-vi/problema4.png" alt="Evidencia Problema 4" width="4000"> </div> 
+
+Recomendación: 
+Diseñar y anexar de forma inmediata en el Capítulo II el diagrama de As-Is Scenario Mapping para ambos segmentos objetivos. Se deben plasmar las fases de descubrimiento presencial accidental, la desactualización de datos físicos de las tiendas orientales y la ineficiencia de la publicidad masiva no localizada, mapeando las frustraciones reales extraídas de las entrevistas iniciales de su Needfinding.
 
 
 ## 6.4. Auditoría de Experiencias de Usuario 
@@ -4310,67 +4327,73 @@ El objetivo de **Continuous Deployment (CD)** es que los cambios aprobados pasen
 ### 8.3.4. To-Be Validation Interviews 
 #### 8.3.4.1. Diseño de Entrevistas. 
 
+### 6.3.1. Diseño de Entrevistas. 
 
+##### Segmento #1: Usuario Proveedor / Tienda (GeoPS Business)
 
-En esta sección el equipo establece por cada segmento objetivo los elementos a incluir en la sesión de validación, incluyendo el Landing Page y las aplicaciones. Aquí se especifica también cuáles serán los user flows de las aplicaciones, que formarán parte del proceso de validación. 
+#### Fase 1: Identificación y Perfilamiento del Negocio
+* Establecimiento, Cargo, Giro de negocio y Origen de productos orientales.
+* Pregunta de control experimental: Recordando la experiencia previa (As-Is), ¿qué tan crítico consideraba el riesgo de publicar un anuncio incompleto o con errores de formato?
 
+#### Fase 2: Interacción Guiada con el Incremento de Software
+* Tarea 1: Ingrese al nuevo formulario de registro de empresa e intente digitar un número de RUC con letras o con menos de 11 dígitos para probar las restricciones automáticas.
+* Tarea 2: Inicie el flujo asistido por pasos (Wizard Step-by-Step) para crear una "Oferta Relámpago" e intente forzar la publicación del anuncio dejando vacío el campo de carga de imágenes.
+
+#### Fase 3: Validación de Soluciones a Puntos de Dolor e Interfaz
+* ¿Considera que el nuevo sistema por pasos facilita la creación de anuncios sin generar fatiga en comparación con el formulario único anterior?
+* ¿El bloqueo reactivo del botón "Publicar" ante la falta de una imagen le ayudó a prevenir de forma efectiva un error de visualización en la plataforma?
+
+#### Fase 4: Validación de la Solución Avanzada e Intención de Uso
+* Evaluando las nuevas validaciones en tiempo real y las restricciones de medios, ¿qué tan confiable le resulta esta versión web optimizada del 1 al 5 para gestionar las ofertas de su local?
+* ¿Cómo califica el nivel de seguridad y control que le provee el sistema al validar obligatoriamente sus credenciales e información comercial (RUC)?
+
+#### Fase 5: Cierre y Sugerencias
+* ¿Qué otra regla de validación o automatización técnica consideraría útil agregar al panel de GeoPS Business para agilizar su labor diaria?
+
+##### Segmento #2: Usuario Consumidor (GeoPS)
+
+#### Fase 1: Identificación y Perfilamiento del Consumidor
+* Nombre, Edad, Ocupación, Distrito de Lima Moderna y Frecuencia de consumo de artículos asiáticos.
+
+#### Fase 2: Interacción Guiada con el Incremento de Software
+* Tarea 1: Abra la plataforma web responsive de GeoPS desde su smartphone, diríjase al mapa interactivo en una zona densamente poblada de comercios (ej. límites de Jesús María o Lince) y navegue utilizando los nuevos agrupadores numéricos.
+* Tarea 2: Realice un acercamiento (zoom-in) sobre un grupo o clúster específico para verificar cómo se desagregan los pines individuales de las tiendas asiáticas y acceda a los detalles de una de ellas.
+
+#### Fase 3: Validación de Soluciones a Puntos de Dolor e Interfaz
+* Al interactuar con el mapa de alta densidad de comercios, ¿considera que la agrupación por clústeres eliminó con éxito la superposición caótica y la saturación visual previa?
+* ¿El rendimiento dinámico del mapa y el despliegue fluido de los pines facilitaron la discriminación y selección de los locales de su interés?
+
+#### Fase 4: Validación de la Solución Web Integrada e Impacto
+* Dado que toda la experiencia de geolocalización y alertas funciona de forma fluida directamente desde el navegador de su smartphone, ¿qué tan satisfactoria le resulta esta solución web responsive del 1 al 5, prescindiendo de la necesidad de descargar una app nativa?
+* ¿Considera que el mapa interactivo actual le brinda la claridad visual necesaria para planificar su ruta de compra de snacks orientales de forma eficiente?
+
+#### Fase 5: Cierre y Sugerencias
+* Con las mejoras de clusterización e interfaces responsive implementadas, ¿existe algún elemento visual adicional que sugeriría modificar para optimizar su experiencia de navegación?
 
 #### 8.3.4.2. Registro de Entrevistas. 
 
+Segmento #1: Dueños de negocios locales
 
-Para cada segmento se requiere de 3 a 5 entrevistas. Para cada una de las entrevistas se debe indicar la información de nombres, apellidos, edad, distrito, un screenshot de un cuadro de video y el URL del video subido en Microsoft Stream incluyendo el timing donde inicia la entrevista y su duración. La entrevista debe ser registrada en video, que sirve de evidencia de entrevistas. Para cada entrevista debe redactarse en este informe un resumen, que explique de forma descriptiva las principales apreciaciones del entrevistado con respecto a las tareas asignadas. Ver otras indicaciones importantes en el Anexo C. Indicaciones para secciones que incluyen Videos.
+**Tabla 16**   
+*Registro de entrevistas — Segmento 1*
 
+| Número de registro | Datos del entrevistado | Captura |
+| :--- | :--- | :--- |
+| **1** | **Nombre:** Cristian Salvador<br>**Edad:** 28 años<br>**Establecimiento:** Tienda de productos importados (Referente)<br>**Cargo:** Dueño / Encargado<br>**Duración:** Aprox. 5 minutos<br> **Enlace:** [https://l1nq.com/8gjygzw](https://acortar.link/gTCaPh) <br> **Resumen:** El entrevistado maneja una tienda con alta variedad de productos, siendo las sopas instantáneas, snacks y bebidas los más buscados. Actualmente usa Instagram, WhatsApp y carteles físicos, pero nota que la publicidad digital a veces llega a personas muy lejanas que no concretan la compra. Califica la solución de GeoPS con un **5**, destacando su utilidad para liquidar stock próximo a vencer y atraer clientes que transitan por la zona. Le interesa contar con estadísticas de visualizaciones y rutas para medir la efectividad de sus ofertas. Expresó preocupación por el costo y la curva de aprendizaje, sugiriendo una interfaz sencilla. |  **Figura 4**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista1_segmento1.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **2** | **Nombre:** Néstor Rojas<br>**Establecimiento:** Terra Inc.<br>**Giro:** Inciensos, plantas y productos orgánicos asiáticos<br>**Duración:** Aprox. 8 minutos<br> **Enlace:** https://acortar.link/aSbB2F <br>**Resumen:** Néstor opera un negocio con clientes de diversos distritos que llegan principalmente por canales online. Indica que los inciensos tienen alta rotación, mientras que las plantas demoran más en venderse. Valora la propuesta de GeoPS con un **5**, resaltando que facilitaría captar al público que transita cerca y le ahorraría costos en publicidad tradicional como volantes. Le entusiasma la idea de notificaciones automáticas para liquidar saldos de inventario y evitar pérdidas por vencimiento. Como aporte adicional, sugiere que el mapa de la aplicación incluya coordenadas exactas y guías de accesibilidad para evitar que el cliente se desanime al no encontrar el local. |  **Figura 5**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista2_segmento1.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
 
-Anexo C. Indicaciones para secciones que incluyen Videos 
-Indicaciones generales: 
-• Los videos deben demostrar un nivel de edición y acabado de calidad aceptable a destacable. Es necesario
-incluir una pantalla inicial de presentación, música de fondo, y garantizar que las escenas sigan una secuencia 
-coherente. Además, cada escena debe contar con una descripción en texto que detalle a los participantes
-involucrados y las actividades realizadas.
-• Asimismo, se debe incorporar elementos relacionados con el branding de la startup o producto, lo cual puede
-incluir animaciones que refuercen su identidad visual
+*Nota.* Elaboración propia.
 
-Validation 
-Interviews 
-Cantidad de Videos: 1 
-Nomenclatura: 
-upc-pre-202610-1asi0732-<NRC>-<startup>- 
-validation-sprint-<n> 
-Formato: .mp4 
-Duración: En función a cantidad de entrevistas 
-(considerar edición de 3 a 5 minutos por 
-entrevista). 
-Consolida sesiones y 
-entrevistas de validación en 
-las que usuarios de los 
-segmentos objetivo 
-interactúen con el landing 
-page y con los prototipos 
-de experiencias web y 
-mobile, manifestando sus 
-observaciones. Para cada 
-entrevista se debe incluir 
-títulos con información del 
-entrevistado, el segmento 
-objetivo y la fecha de la 
-entrevista 
-Subir el video en Microsoft Stream con enlace 
-privado. 
-Incluir en el informe screenshot del video con 
-enlace al mismo. 
-Incluir redacción de introducción a la sección y 
-redacción de registro de cada entrevista, junto 
-con la evaluación de heurísticas de usabilidad, 
-arquitectura de información y diseño inclusivo 
-para la sesión de evaluación. Seguir 
-especificaciones del enunciado y formatos 
-indicados. 
+Segmento #2: Consumidores de ofertas de diferentes ámbitos
 
+**Tabla 17**   
+*Registro de entrevistas — Segmento 2*  
 
-
-
-
-
+| Número de registro | Datos del entrevistado | Captura |
+| :--- | :--- | :--- |
+| **1** | **Nombre:** Ariana Puscan <br> **Edad:** 28 años <br> **Distrito:** Magdalena <br> **Ocupación:** Abogada <br> **Duración de la entrevista:** 5 minutos y 49 segundos <br> **Enlace:** https://l1nq.com/8gjygzw <br> **Resumen:** En este video, se entrevista a Ariana Puscan, una joven de 28 años del distrito de Magdalena. Es una consumidora recurrente de snacks asiáticos, adquiriéndolos mensualmente. Su descubrimiento de productos se basa principalmente en recomendaciones y ofertas vistas en Instagram y TikTok. Sus compras son mayoritariamente impulsivas o casuales cuando encuentra artículos en supermercados, sin apoyarse en aplicaciones específicas. Recientemente, visitó un establecimiento tras verlo en redes sociales, teniendo una experiencia satisfactoria. Finalmente, considera que nuestra aplicación sería de gran valor. La percibe como una herramienta clave para localizar puntos de venta exactos y facilitar el acceso a una mayor variedad de productos asiáticos. | **Figura 6**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista1_segmento2.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **2** | **Nombre:** Olga Consuelo Arce Quesada <br> **Edad:** 25 años <br> **Distrito:** Magdalena <br> **Ocupación:** Comunicadora Corporativa <br> **Duración de la entrevista:** 7 minutos y 16 segundos <br> **Enlace:** https://l1nq.com/ck0dyrh <br> **Resumen:** En este video, Olga Consuelo Arce Quesada, de 25 años, de Magdalena. Es una consumidora frecuente de snacks, bebidas y productos de belleza. Si bien descubre tiendas asiáticas mediante redes sociales o de forma presencial, señala una brecha en la información: las ofertas no están digitalizadas y solo las descubre al visitar el punto de venta. Su experiencia revela una dificultad específica al buscar productos de belleza, ya que no suelen estar disponibles en cadenas comerciales como Miniso. Actualmente, su búsqueda depende exclusivamente de la suerte al encontrar recomendaciones en TikTok, lo que dificulta la compra efectiva. Olga valida positivamente la propuesta de nuestra aplicación. Destaca la importancia de una plataforma integral que geolocalice tiendas cercanas, ofrezca visibilidad de ofertas en tiempo real y permita filtrar los establecimientos por categorías para optimizar su experiencia de compra. | **Figura 7**<br> *Entrevista 2 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista2_segmento2.png" alt="Entrevista 2 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **3** | **Nombre:** Lupe de la Cruz <br> **Edad:** 22 años <br> **Distrito:** Jesús María <br> **Ocupación:** Estudiante <br> **Duración de la entrevista:** Aprox. 5 minutos <br> **Enlace:** https://acortar.link/BfP5q1 <br> **Resumen:** En esta entrevista se conversó con Lupe de la Cruz, una joven estudiante de Jesús María. Es una consumidora quincenal de productos orientales, enfocada principalmente en snacks, dulces y bebidas. Su descubrimiento de locales se basa en redes sociales y exploración física ocasional. Relató una mala experiencia reciente al encontrar un local cerrado por falta de información actualizada, lo que validó la utilidad de la aplicación. Califica la utilidad del mapa interactivo con un puntaje de 4 a 5 estrellas. Valora positivamente las notificaciones push personalizadas y considera indispensable que la app muestre horarios de atención y listas de precios. Finalmente, propuso como feedback la posibilidad de realizar reservas de productos a través de la plataforma. | **Figura 8**<br> *Entrevista 3 — Segmento 1* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista3_segmento2.png" alt="Entrevista 3 — Segmento 1" width="4000"> </div> *Nota.* Elaboración propia. |
 
 
 ## 8.4. Experiment Aftermath & Analysis 
