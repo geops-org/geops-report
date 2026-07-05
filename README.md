@@ -4722,6 +4722,16 @@ Los resultados de las entrevistas de validación evidencian una aceptación muy 
 Asimismo, los paneles con indicadores simplificados, el sistema de recomendaciones personalizadas y las alertas en tiempo real en hora punta fueron percibidos como herramientas útiles que mejoran la experiencia del usuario y favorecen el beneficio mutuo de ambos segmentos. En conjunto, los resultados permiten validar las hipótesis planteadas para estas funcionalidades y respaldan su incorporación dentro de la versión final de la plataforma, evidenciando un alto nivel de aceptación por parte de ambos segmentos objetivo.
 
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog 
+
+| Prioridad (1,2,3,5,8) | ID | Pregunta |
+| :---: | :---: | :--- |
+| **8** | Q1 | ¿La necesidad de configuración geoespacial avanzada para locales reduce la adopción del sistema? |
+| **5** | Q2 | ¿Los usuarios finales y comercios confían en los datos de geolocalización generados por la app? |
+| **3** | Q3 | ¿Las recomendaciones personalizadas de ofertas generan un aumento real en las ventas y el ahorro? |
+| **2** | Q4 | ¿Las alertas de ofertas en tiempo real y hora punta modifican los hábitos de compra de los consumidores? |
+| **1** | Q5 | ¿Los comerciantes entienden las métricas de alcance y gráficos mostrados en el panel? |
+| **1** | Q6 | ¿Un modo demo sin necesidad de configurar tiendas físicas reales incrementa la intención de uso de la plataforma? |
+
 ## 8.5. Continuous Learning 
 ### 8.5.1. Shareback Session Artifacts: Learning Workflow 
 ## 8.6. To-Be Software Platform Pre-launch 
