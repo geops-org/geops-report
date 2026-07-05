@@ -4071,6 +4071,57 @@ Nota. Elaboración propia.
 
 #### 6.2.1.1. Coding standard & Code conventions. 
 
+Los estándares de codificación permiten mantener una estructura uniforme en todos los repositorios del proyecto GeoPS. Su aplicación facilita la lectura del código, reduce errores de integración, mejora la colaboración entre integrantes y permite que las funcionalidades futuras puedan agregarse sin afectar la mantenibilidad del sistema.
+
+En el frontend, se utilizan convenciones propias de Angular y TypeScript. Los nombres de variables, métodos y funciones se redactan en inglés y bajo el estilo camelCase. Los componentes, servicios e interfaces deben tener nombres descriptivos relacionados con su responsabilidad. Las clases CSS se escriben en kebab-case y deben representar claramente la sección, componente o elemento visual al que pertenecen.
+
+En el backend, se siguen convenciones de Java y Spring Boot. Las clases se escriben en PascalCase, los métodos y atributos en camelCase, y los paquetes se organizan de acuerdo con el contexto funcional correspondiente. Esta organización permite mantener coherencia con la arquitectura DDD del proyecto, separando responsabilidades entre Identity, Campaign, Offers y Shared Kernel.
+
+Además, el equipo utiliza GitFlow para organizar el trabajo colaborativo en ramas y Conventional Commits para mantener trazabilidad en el historial del repositorio. Esto permite identificar rápidamente si un cambio corresponde a una nueva funcionalidad, corrección de errores, documentación, refactorización o pruebas.
+
+Tabla 16
+Coding Standard & Code Conventions — Estándares aplicados en GeoPS
+
+| Área                 | Estándar aplicado                        | Ejemplo aplicado en GeoPS                                 |
+| -------------------- | ---------------------------------------- | --------------------------------------------------------- |
+| Variables TypeScript | camelCase                                | selectedCategory, currentUser, campaignList               |
+| Métodos TypeScript   | camelCase y verbo descriptivo            | loadOffers(), submitCampaign(), filterByCategory()        |
+| Componentes Angular  | Nombre descriptivo según responsabilidad | LoginComponent, RegisterComponent, CampaignsComponent     |
+| Servicios Angular    | Sufijo Service                           | AuthService, CampaignService, OfferService                |
+| Clases CSS           | kebab-case                               | promotion-card, campaign-form, navbar-section             |
+| Clases Java          | PascalCase                               | CampaignController, UserCommandService, OfferRepository   |
+| Métodos Java         | camelCase                                | createCampaign(), getOfferById(), validateUserExistence() |
+| Paquetes backend     | Minúsculas y agrupados por contexto      | identity, campaign, offers, shared                        |
+| Endpoints REST       | Rutas orientadas a recursos              | /auth/login, /offers/{id}, /campaigns                     |
+| Commits              | Conventional Commits                     | feat, fix, docs, style, refactor, test                    |
+| Ramas                | GitFlow                                  | main, develop, feature/, release/, hotfix/                |
+
+Nota. Elaboración propia.
+
+Para verificar el cumplimiento de estos estándares, se revisan los siguientes criterios:
+
+Los nombres de variables, funciones, clases y archivos deben ser claros y representar su responsabilidad.
+El código debe mantener una indentación uniforme y evitar mezclas innecesarias de estilos.
+Los componentes del frontend no deben concentrar lógica que corresponde a servicios.
+Los controladores del backend no deben contener reglas de negocio extensas; estas deben estar en servicios de aplicación.
+Las entidades, repositorios y servicios deben estar ubicados en el bounded context correspondiente.
+Los commits deben indicar claramente la naturaleza del cambio realizado.
+Las ramas deben usarse de acuerdo con GitFlow para evitar cambios directos sobre producción.
+
+Tabla 17
+Checklist de Coding Standards
+| Criterio revisado                                                | Cumple | Observación                                                                 |
+| ---------------------------------------------------------------- | ------ | --------------------------------------------------------------------------- |
+| Uso de nombres descriptivos en variables, clases y métodos       | Sí     | Se emplean nombres asociados a autenticación, campañas, ofertas y usuarios  |
+| Uso de camelCase en TypeScript y Java                            | Sí     | Se mantiene consistencia en métodos y atributos                             |
+| Uso de PascalCase en clases Java y componentes Angular           | Sí     | Las clases representan controladores, servicios, repositorios y componentes |
+| Organización por bounded contexts                                | Sí     | El backend se organiza en Identity, Campaign, Offers y Shared Kernel        |
+| Uso de rutas REST orientadas a recursos                          | Sí     | Los endpoints se agrupan por autenticación, usuarios, campañas y ofertas    |
+| Uso de GitFlow                                                   | Sí     | Se consideran ramas main, develop, feature, release y hotfix                |
+| Uso de Conventional Commits                                      | Sí     | Se aplican prefijos como feat, fix, docs, refactor y test                   |
+| Separación entre lógica visual, lógica de negocio y persistencia | Sí     | Se diferencia frontend, servicios backend y repositorios                    |
+
+Nota. Elaboración propia.
 #### 6.2.1.2. Code Quality & Code Security. 
 
 #### 6.2.2. Reviews
