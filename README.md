@@ -4100,13 +4100,19 @@ Nota. Elaboración propia.
 
 Para verificar el cumplimiento de estos estándares, se revisan los siguientes criterios:
 
-Los nombres de variables, funciones, clases y archivos deben ser claros y representar su responsabilidad.
-El código debe mantener una indentación uniforme y evitar mezclas innecesarias de estilos.
-Los componentes del frontend no deben concentrar lógica que corresponde a servicios.
-Los controladores del backend no deben contener reglas de negocio extensas; estas deben estar en servicios de aplicación.
-Las entidades, repositorios y servicios deben estar ubicados en el bounded context correspondiente.
-Los commits deben indicar claramente la naturaleza del cambio realizado.
-Las ramas deben usarse de acuerdo con GitFlow para evitar cambios directos sobre producción.
+- Los nombres de variables, funciones, clases y archivos deben ser claros y representar su responsabilidad.
+
+- El código debe mantener una indentación uniforme y evitar mezclas innecesarias de estilos.
+
+- Los componentes del frontend no deben concentrar lógica que corresponde a servicios.
+
+- Los controladores del backend no deben contener reglas de negocio extensas; estas deben estar en servicios de aplicación.
+
+- Las entidades, repositorios y servicios deben estar ubicados en el bounded context correspondiente.
+
+- Los commits deben indicar claramente la naturaleza del cambio realizado.
+
+- Las ramas deben usarse de acuerdo con GitFlow para evitar cambios directos sobre producción.
 
 Tabla 17
 Checklist de Coding Standards
@@ -4122,7 +4128,68 @@ Checklist de Coding Standards
 | Separación entre lógica visual, lógica de negocio y persistencia | Sí     | Se diferencia frontend, servicios backend y repositorios                    |
 
 Nota. Elaboración propia.
+
 #### 6.2.1.2. Code Quality & Code Security. 
+La revisión de calidad y seguridad del código busca asegurar que GeoPS sea una plataforma mantenible, robusta y segura para los usuarios consumidores y los dueños de negocio. La calidad del código se evalúa considerando legibilidad, complejidad, duplicación, separación de responsabilidades, mantenibilidad y documentación técnica. La seguridad se evalúa considerando autenticación, autorización, validación de datos, protección de credenciales, configuración CORS, manejo de JWT y prevención de vulnerabilidades comunes.
+
+En cuanto a calidad, la arquitectura del backend mantiene una separación modular mediante bounded contexts. Identity concentra la autenticación, usuarios, roles, JWT, hashing y perfiles. Campaign gestiona la creación, edición, eliminación, presupuesto, fechas, impresiones, clics y CTR de las campañas. Offers administra las promociones asociadas a campañas. Shared Kernel agrupa configuraciones transversales como auditoría, roles, CORS, OpenAPI, sanitización de texto y recursos comunes. Esta separación evita que el código crezca de manera desordenada y permite que futuras funcionalidades puedan integrarse con menor riesgo.
+
+En cuanto a seguridad, GeoPS debe proteger los endpoints sensibles mediante JWT, evitar el almacenamiento de contraseñas en texto plano, validar los datos recibidos desde formularios y solicitudes HTTP, controlar los orígenes permitidos mediante CORS y evitar la exposición de credenciales en el repositorio. Estas prácticas son importantes porque la plataforma maneja cuentas de usuarios, información de negocios, campañas, ofertas, métricas de rendimiento y datos relacionados con ubicación.
+
+Tabla 18
+Code Quality — Criterios de calidad evaluados
+| Criterio              | Aplicación en GeoPS                                                              | Resultado esperado                                 |
+| --------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------- |
+| Legibilidad           | Uso de nombres claros, estructura por módulos y responsabilidades definidas      | Código comprensible para el equipo                 |
+| Mantenibilidad        | Separación entre componentes, servicios, controladores, repositorios y entidades | Cambios futuros con menor impacto                  |
+| Bajo acoplamiento     | Comunicación entre contextos mediante servicios o puertos específicos            | Menor dependencia directa entre módulos            |
+| Alta cohesión         | Cada contexto concentra responsabilidades relacionadas                           | Código más ordenado y fácil de probar              |
+| Duplicación reducida  | Uso de servicios reutilizables y Shared Kernel                                   | Menor repetición de configuraciones o lógica común |
+| Documentación técnica | Uso de Swagger/OpenAPI para endpoints REST                                       | Mayor facilidad de prueba y comprensión de la API  |
+| Trazabilidad          | Uso de GitHub, ramas y Conventional Commits                                      | Historial claro de cambios del proyecto            |
+
+Nota. Elaboración propia.
+
+Tabla 19
+Code Security — Criterios de seguridad evaluados
+| Riesgo revisado                 | Control aplicado en GeoPS                                              | Resultado esperado                                      |
+| ------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------- |
+| Acceso no autorizado            | Protección de endpoints mediante JWT                                   | Solo usuarios autenticados acceden a funciones privadas |
+| Contraseñas expuestas           | Hashing de credenciales                                                | Las contraseñas no se almacenan en texto plano          |
+| Manipulación de campañas ajenas | Validación del usuario propietario antes de editar o eliminar campañas | Solo el dueño autorizado modifica sus campañas          |
+| Datos inválidos                 | Validaciones en formularios, DTOs y servicios                          | Se rechazan solicitudes incompletas o mal formadas      |
+| Inyección de contenido          | Sanitización de campos de texto                                        | Se reduce el riesgo de contenido malicioso              |
+| Cross-Site Scripting XSS        | Validación y control del contenido mostrado en la interfaz             | Se evita mostrar información peligrosa al usuario       |
+| SQL Injection                   | Uso de Spring Data JPA y consultas parametrizadas                      | Se reduce el riesgo de inyección SQL                    |
+| Exposición de API               | Configuración CORS                                                     | Solo orígenes autorizados consumen el backend           |
+| Secretos en repositorio         | Uso de variables de entorno                                            | Las credenciales no se publican en GitHub               |
+| Dependencias vulnerables        | Revisión de dependencias del frontend y backend                        | Se identifican librerías con riesgos conocidos          |
+
+Nota. Elaboración propia.
+
+Como parte de la verificación de seguridad, se revisan los formularios y endpoints principales del sistema. En el registro y login, se valida el formato del correo, la contraseña y la respuesta ante credenciales incorrectas. En campañas, se revisa que los datos como nombre, descripción, fecha de inicio, fecha de fin, presupuesto y estado sean obligatorios y consistentes. En ofertas, se valida que la oferta esté asociada a una campaña existente y activa. En perfiles de negocio, se revisan datos como correo, teléfono, RUC, dirección, horario de atención y enlaces web.
+
+Tabla 20
+Static Code Analysis Results — Resultado de verificación estática
+| Producto revisado        | Herramienta o método de revisión                          | Resultado obtenido                                           | Evidencia |
+| ------------------------ | --------------------------------------------------------- | ------------------------------------------------------------ | --------- |
+| Landing Page             | Revisión manual de HTML, CSS y TypeScript                 | Estructura semántica, responsive y navegación revisadas      | Figura X  |
+| Frontend Web Application | Revisión de Angular, TypeScript y formularios reactivos   | Componentes, servicios y validaciones revisados              | Figura X  |
+| Backend RESTful API      | Revisión de Java, Spring Boot y organización por paquetes | Controladores, servicios, repositorios y entidades revisados | Figura X  |
+| API Documentation        | Revisión de Swagger UI                                    | Endpoints visibles y agrupados por recurso                   | Figura X  |
+| Seguridad                | Revisión de JWT, CORS, hashing y variables de entorno     | Controles de acceso y protección de credenciales revisados   | Figura X  |
+| Repositorio GitHub       | Revisión de ramas, commits y pull requests                | Trazabilidad de cambios verificada                           | Figura X  |
+
+Nota. Elaboración propia.
+
+Figura X. Code Quality Verification — Frontend Web Application
+Nota. Elaboración propia.
+
+Figura X. Code Quality Verification — Backend RESTful API
+Nota. Elaboración propia.
+
+Figura X. Code Security Verification — Repository and Environment Variables
+Nota. Elaboración propia.
 
 #### 6.2.2. Reviews
 
