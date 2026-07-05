@@ -4193,6 +4193,51 @@ Nota. Elaboración propia.
 
 #### 6.2.2. Reviews
 
+Las revisiones del proyecto GeoPS se realizan como parte del proceso de aseguramiento de calidad previo a la integración de cambios en el repositorio. Estas revisiones permiten detectar errores de implementación, incumplimiento de estándares, problemas de seguridad, inconsistencias en la documentación y posibles riesgos de mantenimiento antes de que el código sea desplegado.
+
+El equipo aplica revisiones sobre los principales artefactos del proyecto: código fuente del frontend, código fuente del backend, documentación Swagger/OpenAPI, estructura de ramas, commits, pull requests y configuraciones de despliegue. Estas revisiones se alinean con el flujo GitFlow, ya que las funcionalidades se desarrollan en ramas feature y luego pasan por revisión antes de integrarse a develop o main.
+
+Durante la revisión, se considera que cada cambio cumpla con los estándares definidos en la sección anterior. En el frontend, se valida que los componentes Angular sean claros, que los formularios mantengan sus controles requeridos y que la interfaz sea consistente. En el backend, se verifica que los endpoints respondan a responsabilidades concretas, que los servicios contengan la lógica de negocio y que los repositorios se limiten a la persistencia. En seguridad, se revisa que no existan credenciales expuestas, que los endpoints sensibles estén protegidos y que las entradas sean validadas.
+
+Tabla 21
+Reviews — Criterios de revisión del proyecto GeoPS
+| Criterio de revisión      | Descripción                                                                                                | Resultado esperado                                               |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Revisión de funcionalidad | Se verifica que el cambio implementado corresponda a una User Story, Technical Story o corrección definida | El cambio tiene trazabilidad con el backlog                      |
+| Revisión de estándares    | Se valida el uso de nombres, indentación, estructura y convenciones del proyecto                           | El código es consistente y legible                               |
+| Revisión de arquitectura  | Se confirma que el cambio respete los bounded contexts y responsabilidades definidas                       | No se mezclan responsabilidades entre módulos                    |
+| Revisión de seguridad     | Se revisan JWT, validaciones, CORS, hashing y variables de entorno                                         | No se exponen datos sensibles ni endpoints inseguros             |
+| Revisión de documentación | Se valida que los endpoints y cambios relevantes estén documentados                                        | La API y el informe se mantienen actualizados                    |
+| Revisión de pruebas       | Se verifica que el cambio no afecte pruebas unitarias, de integración o BDD                                | El código puede integrarse sin romper funcionalidades existentes |
+| Revisión de repositorio   | Se revisa la rama, el commit y el Pull Request asociado                                                    | El historial del proyecto mantiene trazabilidad                  |
+
+Nota. Elaboración propia.
+
+Tabla 22
+Code Review Log — Registro de revisiones realizadas
+
+| ID    | Artefacto revisado       | Responsable de revisión | Hallazgo principal                                                                                 | Acción realizada                                                              | Estado  |
+| ----- | ------------------------ | ----------------------- | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------- |
+| RV-01 | Frontend Web Application | Equipo de desarrollo    | Revisión de componentes, rutas y formularios de autenticación                                      | Se validó consistencia de nombres, estructura y controles requeridos          | Cerrado |
+| RV-02 | Campaign Form            | Equipo de desarrollo    | Revisión de campos name, description, startDate, endDate, estimatedBudget y status                 | Se verificó que el formulario mantenga los controles necesarios para campañas | Cerrado |
+| RV-03 | Backend RESTful API      | Equipo de desarrollo    | Revisión de controladores, servicios y repositorios por contexto                                   | Se confirmó separación entre Identity, Campaign, Offers y Shared Kernel       | Cerrado |
+| RV-04 | Swagger/OpenAPI          | Equipo de desarrollo    | Revisión de endpoints disponibles para autenticación, usuarios, ofertas, campañas y notificaciones | Se verificó que los endpoints puedan visualizarse y probarse desde Swagger UI | Cerrado |
+| RV-05 | Seguridad                | Equipo de desarrollo    | Revisión de JWT, CORS, hashing, validaciones y variables de entorno                                | Se verificó que las credenciales no estén expuestas en el código fuente       | Cerrado |
+| RV-06 | GitHub Repository        | Equipo de desarrollo    | Revisión de ramas, commits y trazabilidad de cambios                                               | Se validó el uso de GitFlow y Conventional Commits                            | Cerrado |
+
+Nota. Elaboración propia.
+
+Como resultado de las revisiones, el equipo confirma que el proyecto GeoPS mantiene una estructura de código coherente con su arquitectura y con los estándares definidos para el desarrollo. Las revisiones permitieron reforzar la calidad técnica del frontend, backend y documentación de servicios, así como reducir riesgos asociados a seguridad, mantenimiento y despliegue. Además, el uso de GitHub, GitFlow, Conventional Commits y Pull Requests contribuye a mantener un proceso colaborativo controlado, verificable y alineado con las buenas prácticas de ingeniería de software.
+
+Figura X. Pull Request Review Evidence — GitHub
+Nota. Elaboración propia.
+
+Figura X. Repository Commit History — Conventional Commits
+Nota. Elaboración propia.
+
+Figura X. Static Review Evidence — Backend and Frontend
+Nota. Elaboración propia.
+
 ## 6.3. Validation Interviews. 
 ### 6.3.1. Diseño de Entrevistas. 
 
