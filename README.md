@@ -4190,13 +4190,31 @@ Static Code Analysis Results — Resultado de verificación estática
 
 Nota. Elaboración propia.
 
-Figura X. Code Quality Verification — Frontend Web Application
+Code Quality Verification — Frontend Web Application
+
+  <div align="center">
+    <img src="resources/imgs/chapter-vi/Code Quality Verification-Frontend.png" width="700">
+  </div>
+
 Nota. Elaboración propia.
 
-Figura X. Code Quality Verification — Backend RESTful API
+Code Quality Verification — Backend RESTful API
+
+  <div align="center">
+    <img src="resources/imgs/chapter-vi/Code Quality Verification-Backend1.png" width="700">
+  </div>
+
+  <div align="center">
+    <img src="resources/imgs/chapter-vi/Code Quality Verification-Backend2.png" width="700">
+  </div>
 Nota. Elaboración propia.
 
-Figura X. Code Security Verification — Repository and Environment Variables
+Code Security Verification — Repository and Environment Variables
+
+<div align="center">
+    <img src="resources/imgs/chapter-vi/Code Security Verification-Environment1.png" width="700">
+  </div>
+
 Nota. Elaboración propia.
 
 #### 6.2.2. Reviews
