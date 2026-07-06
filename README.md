@@ -276,6 +276,7 @@ La colaboración se distribuyó de manera equitativa entre los 7 integrantes:
   - [Anexo: Videos de Exposiciones](#anexo-videos-de-exposiciones)
 
 
+
 ---
 
 ## Student Outcome
@@ -1240,14 +1241,14 @@ EP03: Gestión de Campañas Hiperlocalizadas
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Title</b></td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px;">Configuración de Idioma en la Plataforma Web</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px;">Configuración de Idioma (Español/Ingles) en la Plataforma Web</td>
   </tr>
   <tr>
     <td colspan="4" style="border: 1px solid black; padding: 8px; text-align: center; background-color: #f2f2f2;"><b>Description</b></td>
   </tr>
   <tr>
     <td colspan="4" style="border: 1px solid black; padding: 15px;">
-      Como usuario, quiero seleccionar el idioma de la plataforma para visualizar contenido en mi preferencia.
+      Como usuario, quiero seleccionar el idioma de español o ingles en la plataforma para visualizar contenido en mi preferencia.
     </td>
   </tr>
   <tr>
@@ -1329,9 +1330,8 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 | 9       | US9          | Eliminación de Campaña Publicitaria en la Plataforma Web     | Como dueño de negocio, quiero eliminar campañas publicitarias para retirar promociones que ya no deseo mantener.                                    | 3            |
 | 10      | US10          | Visualización de Campañas Activas en la Plataforma Web       | Como dueño de negocio, quiero visualizar todas mis campañas activas para dar seguimiento.                                                           | 3            |
 | 11      | US11          | Configuración de Presupuesto de Campaña en la Plataforma Web | Como dueño de negocio, quiero configurar presupuesto de campañas para controlar gastos y optimizar inversión.                                       | 3            |
-| 12      | US12          | Programar Fecha de Inicio de Campaña en la Plataforma Web    | Como dueño de negocio, quiero programar fecha de inicio para campañas.                                                                              | 3            |
-| 13      | US13          | Programar Fecha de Fin de Campaña en la Plataforma Web       | Como dueño de negocio, quiero programar fecha de fin para campañas.                                                                                 | 3            |
-| 14      | US14          | Configuración de Idioma en la Plataforma Web                 | Como usuario, quiero seleccionar idioma de la plataforma para visualizar contenido en mi preferencia.                                               | 2            |
+| 12      | US12          | Programar Fecha de Inicio y Fin de Campaña en la Plataforma Web    | Como dueño de negocio, quiero programar fecha de inicio y fin para campañas.                                                                              | 3            |
+| 13      | US13          | Configuración de Idioma(Español/Ingles) solo en elementos fijos de la  Plataforma Web                 | Como usuario, quiero seleccionar idioma español o ingles en la plataforma para visualizar contenido fijo segun mi preferencia.                                               | 2            |
 
 
 *Nota.* Elaboración propia.
@@ -3703,7 +3703,7 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
     And todos los elementos deberían ser legibles y accesibles
   ```
 
-  #### 5.1.4. Software Deployment Configuration
+#### 5.1.4. Software Deployment Configuration
   En esta sección presentamos los pasos que seguimos para desplegar los proyectos incluidos en este trabajo:
 
   - **Landing Page:**  
@@ -4977,6 +4977,303 @@ El objetivo de **Continuous Deployment (CD)** es que los cambios aprobados pasen
 2. **Despliegue en Hosting:** Implementación automática en los servidores de Firebase tras pasar las pruebas unitarias.
 3. **Invalidación de Caché:** Limpieza automática de caché para que los usuarios de **GeoPS** reciban la versión más reciente al instante.
 
+
+
+# Capítulo 8: Experiment-Driven Development
+
+## 8.1. Experiment Planning
+
+### 8.1.1. As-Is Summary
+
+La plataforma web actual, GeoPS, se enfoca en ofrecer una solución responsiva para conectar comercios de productos orientales y asiáticos (gastronomía, cosmética K-Beauty y minimarkets de importación) con consumidores en Lima Moderna (San Borja, Lince y el Barrio Chino) mediante mapas interactivos y geolocalización. Actualmente, se ha completado el flujo base: el registro de usuarios, la publicación de campañas publicitarias por parte de las PyMEs y la visualización geográfica de ofertas.
+
+No obstante, al tratarse de una arquitectura 100% web que se ejecuta desde el navegador móvil (sin una aplicación nativa instalable), la retención del usuario en el ecosistema digital y la conversión real hacia el tráfico peatonal en las tiendas físicas presentan debilidades críticas que ponen en riesgo la sostenibilidad del modelo de negocio.
+
+**Problemas identificados:**
+
+* **Baja retención operativa:** Al no ser una aplicación instalada en el sistema operativo, los consumidores dependen de recordar la URL o mantener una pestaña activa en su navegador, reduciendo las visitas recurrentes.
+* **Ausencia de métricas de conversión física (ROI):** Los comerciantes visualizan interacciones en la web (impresiones o clics), pero carecen de una herramienta automatizada que demuestre cuántas visitas web se tradujeron en transacciones dentro de la tienda física.
+* **Sobrecarga visual en la interfaz:** El mapa web muestra todos los comercios simultáneamente, lo que genera fatiga cognitiva en pantallas móviles reducidas y dificulta la exploración especializada.
+* **Falta de optimización para uso nocturno:** Gran parte de las búsquedas de locales gastronómicos (como restaurantes de ramen o buffets) ocurre en las tardes y noches en la vía pública, donde el brillo de la interfaz clara genera fatiga visual en exteriores de baja iluminación.
+* **Ausencia de mecanismos de viralidad orgánica:** La plataforma no cuenta con canales simplificados para que la comunidad de entusiastas comparta cupones específicos, limitando la adquisición de nuevos usuarios a la publicidad tradicional.
+
+**Objetivos de mejora:**
+
+* **Estimular la interacción proactiva:** Implementar notificaciones web de proximidad que alerten al usuario mediante un *Service Worker*, incluso con el navegador cerrado.
+* **Cerrar el ciclo de conversión Online-to-Offline (O2O):** Desarrollar un validador de códigos QR basado en la web para los establecimientos comerciales.
+* **Optimizar la experiencia de descubrimiento:** Organizar circuitos y rutas temáticas culturales en el mapa responsivo.
+* **Adaptar la interfaz al contexto del usuario:** Incorporar un selector de interfaz nocturna (modo oscuro) enfocado en el comportamiento de consumo nocturno.
+* **Apalancar el crecimiento orgánico:** Crear un sistema de cupones favoritos compartibles mediante enlaces web cortos y optimizados para redes sociales.
+
+### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
+
+**Assumptions (Suposiciones):**
+
+* **Aceptación de Permisos Web:** Se asume que los consumidores otorgarán permisos de ubicación y notificaciones a GeoPS dentro de sus navegadores móviles (Chrome/Safari) si se les comunica un beneficio inmediato en forma de descuentos.
+* **Viabilidad Tecnológica WebRTC:** Se asume que los navegadores móviles de los comerciantes proveerán un acceso fluido a la cámara mediante estándares HTML5 para escanear códigos QR sin ralentizar sus operaciones diarias.
+* **Valor de las Rutas de Nicho:** Se asume que los usuarios pertenecientes a la comunidad entusiasta de la cultura asiática prefieren la exploración guiada (ej. "Ruta del Ramen") sobre la búsqueda genérica.
+* **Impacto de la Interfaz Nocturna:** Se asume que habilitar un tema oscuro incrementará el tiempo de retención en la plataforma web durante los horarios de mayor consumo gastronómico (18:00 a 23:00 horas).
+* **Disposición a Compartir:** Se asume que los consumidores compartirán enlaces de ofertas con amigos a través de aplicaciones de mensajería instantánea si el proceso requiere un solo clic.
+
+**Knowledge Gaps (Brechas de conocimiento):**
+
+* Se desconoce el porcentaje exacto de usuarios que bloqueará la solicitud nativa de geolocalización en segundo plano del navegador móvil.
+* Carecemos de datos sobre la compatibilidad y velocidad de respuesta de la API WebRTC en dispositivos móviles de gama baja utilizados por algunos microempresarios.
+
+**Ideas:**
+
+* **Geofencing vía Web Push:** Enviar alertas hiperlocales automáticas utilizando la API de Geolocalización y un *Service Worker* cuando el usuario transite a menos de 500 metros de una campaña activa.
+* **Módulo de Canje QR Web:** Crear un generador de fichas dinámicas para el cliente y un lector de cámara web integrado en el panel del comerciante.
+* **Filtros de Circuitos Culturales:** Implementar capas temáticas conmutables en el mapa interactivo para agrupar comercios afines.
+* **Modo Oscuro Contextual:** Desarrollar un selector de hojas de estilo (CSS) para alternar temas visuales según la preferencia del usuario o el horario del sistema.
+* **Enlaces de Recomendación Viral:** Programar un codificador de enlaces cortos que asocie el ID de una oferta a un formato compartible en redes sociales.
+
+**Claims (Afirmaciones):**
+
+* Un mecanismo transparente de validación por código QR web mitigará la desconfianza de las PyMEs sobre la efectividad publicitaria de GeoPS.
+* Las alertas proactivas por proximidad en el navegador incrementarán las visitas presenciales a las tiendas en al menos un 15%, contrarrestando la falta de una aplicación nativa.
+
+### 8.1.3. Experiment-Ready Questions
+
+| Question | Confidence | Risk | Impact | Interest | Total Score |
+| --- | --- | --- | --- | --- | --- |
+| ¿Aumentará la afluencia física a las tiendas si implementamos **Web Push Notifications** hiperlocalizadas (radio 500m)? | 7 | 6 | 9 | 8 | **30** |
+| ¿Mejorará la medición del ROI publicitario para las PyMEs integrando un sistema de **canje QR vía WebRTC** en el navegador? | 8 | 4 | 8 | 8 | **28** |
+| ¿Aumentará la retención web de los consumidores si agregamos filtros de **Rutas Temáticas (Mapas de Nicho)**? | 6 | 2 | 6 | 7 | **21** |
+| ¿Se incrementará la duración de la sesión nocturna en exteriores si añadimos un **selector de Modo Oscuro**? | 8 | 2 | 5 | 6 | **21** |
+| ¿Disminuirá el costo de adquisición de usuarios si permitimos generar **Enlaces de Ofertas Favoritas Compartibles**? | 6 | 3 | 7 | 5 | **21** |
+
+### 8.1.4. Question Backlog
+
+| Prioridad (1,2,3,5,8) | Pregunta |
+| --- | --- |
+| 1 | ¿Aumentará la afluencia física a las tiendas si implementamos Web Push Notifications hiperlocalizadas (radio 500m)? |
+| 2 | ¿Mejorará la medición del ROI publicitario para las PyMEs integrando un sistema de canje QR vía WebRTC en el navegador? |
+| 3 | ¿Aumentará la retención web de los consumidores si agregamos filtros de Rutas Temáticas (Mapas de Nicho)? |
+| 5 | ¿Se incrementará la duración de la sesión nocturna en exteriores si añadimos un selector de Modo Oscuro? |
+| 8 | ¿Disminuirá el costo de adquisición de usuarios si permitimos generar Enlaces de Ofertas Favoritas Compartibles? |
+
+### 8.1.5. Experiment Cards
+
+| Question | ¿Aumentará la afluencia física a las tiendas si implementamos Web Push Notifications hiperlocalizadas? |
+| --- | --- |
+| **Why** | Al depender exclusivamente del ingreso manual del usuario a la URL, se pierden las ventanas de compra impulsiva en la calle. Las alertas basadas en la ubicación física capturan al cliente en el contexto geográfico idóneo. |
+| **What** | Desarrollar un módulo de geofencing en Angular que utilice un *Service Worker* para enviar alertas push a través del navegador móvil cuando se detecte al usuario en un radio de 500 metros de una PyME con promociones vigentes. |
+| **Hypothesis** | Se espera que la habilitación de alertas de proximidad web incremente la tasa de retorno a la plataforma en un 20% y genere un aumento del 15% en las visitas presenciales reportadas por los establecimientos afiliados. |
+
+| Question | ¿Mejorará la medición del ROI publicitario para las PyMEs integrando un sistema de canje QR vía WebRTC en el navegador? |
+| --- | --- |
+| **Why** | Las PyMEs requieren evidencia empírica del valor de la plataforma. Validar las ofertas en el punto de venta físico mediante una solución web ágil consolida la confianza comercial y justifica el modelo de suscripción. |
+| **What** | Implementar un generador de códigos QR temporales en la vista del consumidor y un escáner basado en HTML5 (API WebRTC) dentro del panel web del comerciante conectado al endpoint del backend `/offers/redeem`. |
+| **Hypothesis** | Se espera que el 60% de los comercios afiliados adopte el escaneo de códigos QR desde su navegador móvil durante el primer mes de despliegue, registrando transacciones físicas directamente en su panel de control. |
+
+| Question | ¿Aumentará la retención web de los consumidores si agregamos filtros de Rutas Temáticas (Mapas de Nicho)? |
+| --- | --- |
+| **Why** | La visualización masiva de puntos en el mapa satura al usuario. Agrupar los comercios asiáticos bajo circuitos culturales estructurados facilita la navegación y estimula la exploración de múltiples locales en una sola salida. |
+| **What** | Desarrollar un controlador de filtros en el mapa interactivo de Angular que segregue los comercios en circuitos exclusivos (ej. "Circuito K-Beauty", "Ruta Gastronómica Ramen") mediante consultas optimizadas a la base de datos. |
+| **Hypothesis** | Se espera que la introducción de circuitos culturales aumente la interacción con el mapa web en un 25% y prolongue el tiempo de sesión promedio de los usuarios en un 15%. |
+
+| Question | ¿Se incrementará la duración de la sesión nocturna en exteriores si añadimos un selector de Modo Oscuro? |
+| --- | --- |
+| **Why** | Los usuarios que buscan locales asiáticos en la vía pública durante la tarde o noche sufren fatiga visual debido al contraste excesivo de las pantallas claras en entornos oscuros, lo que provoca el abandono prematuro de la web. |
+| **What** | Implementar un selector de temas en el frontend utilizando variables globales de CSS coordinadas con un servicio de Angular, permitiendo alternar entre el tema claro tradicional y una interfaz nocturna de alto contraste. |
+| **Hypothesis** | Se espera que la disponibilidad de la interfaz nocturna aumente en un 25% la duración promedio de las sesiones web móviles ejecutadas en el rango horario de 18:00 a 23:00 horas. |
+
+| Question | ¿Disminuirá el costo de adquisición de usuarios si permitimos generar Enlaces de Ofertas Favoritas Compartibles? |
+| --- | --- |
+| **Why** | El crecimiento orgánico dentro de comunidades de nicho cultural es altamente efectivo. Proveer un mecanismo directo para compartir ofertas selectas potencia la viralidad de la plataforma web sin incurrir en costos de pauta adicionales. |
+| **What** | Añadir un botón de "Compartir" en la vista detallada de ofertas que invoque la API nativa de intercambio del navegador (`navigator.share`) o genere un enlace web corto con parámetros de recomendación integrados. |
+| **Hypothesis** | Se postula que al menos el 15% de los nuevos registros semanales en la plataforma se originarán orgánicamente a través de los enlaces compartidos por los usuarios actuales. |
+
+---
+
+## 8.2. Experiment Design
+
+### 8.2.1. Hypotheses
+
+| Atributo | Detalle de la Hipótesis: Experimento 1 (Alertas de Proximidad) |
+| --- | --- |
+| **Question** | ¿Aumentará la afluencia física a las tiendas si implementamos Web Push Notifications hiperlocalizadas (radio 500m)? |
+| **Belief** | Creemos que interceptar proactivamente al consumidor con un cupón relevante en el momento exacto en que transita cerca del local comercial mitigará el olvido de la plataforma y motivará la visita física. |
+| **Hypothesis** | La habilitación de notificaciones web push basadas en geofencing incrementará la Tasa de Clics (CTR) en un 15% en comparación con la visualización orgánica pasiva dentro de la aplicación web. |
+| **Null Hypothesis** | Las alertas web push de proximidad no generarán un cambio estadísticamente significativo en la Tasa de Clics o serán bloqueadas por los usuarios, manteniendo el CTR idéntico a la navegación base. |
+
+| Atributo | Detalle de la Hipótesis: Experimento 2 (Canje QR) |
+| --- | --- |
+| **Question** | ¿Mejorará la medición del ROI publicitario para las PyMEs integrando un sistema de canje QR vía WebRTC en el navegador? |
+| **Belief** | Brindar una funcionalidad directa en el navegador móvil del comerciante para escanear y validar transacciones físicas demostrará empíricamente el volumen de ventas impulsado por GeoPS. |
+| **Hypothesis** | El sistema de validación por código QR registrará una Tasa de Canje Físico de al menos el 25% sobre el volumen total de ofertas previamente guardadas por los consumidores. |
+| **Null Hypothesis** | La fricción asociada a conceder permisos de cámara al navegador o la falta de adopción operativa por parte del comerciante resultará en una Tasa de Canje Físico inferior al 5%. |
+
+| Atributo | Detalle de la Hipótesis: Experimento 3 (Rutas Temáticas) |
+| --- | --- |
+| **Question** | ¿Aumentará la retención web de los consumidores si agregamos filtros de Rutas Temáticas (Mapas de Nicho)? |
+| **Belief** | Agrupar los comercios bajo circuitos especializados reducirá la sobrecarga cognitiva en pantallas móviles y aumentará el interés por descubrir locales adyacentes del mismo rubro. |
+| **Hypothesis** | La implementación de circuitos temáticos en el mapa incrementará el Tiempo Promedio de Sesión en un 15% general en dispositivos móviles. |
+| **Null Hypothesis** | Los filtros por rutas no alterarán los patrones de exploración de los usuarios, manteniendo el Tiempo Promedio de Sesión sin variaciones significativas frente al diseño genérico anterior. |
+
+| Atributo | Detalle de la Hipótesis: Experimento 4 (Modo Oscuro) |
+| --- | --- |
+| **Question** | ¿Se incrementará la duración de la sesión nocturna en exteriores si añadimos un selector de Modo Oscuro? |
+| **Belief** | Reducir la fatiga visual mediante una paleta de colores optimizada para baja luminosidad incrementará el confort del usuario mientras camina por los distritos comerciales de noche. |
+| **Hypothesis** | El uso del modo oscuro aumentará la duración promedio de las sesiones nocturnas (18:00 a 23:00) en exteriores en un 25% en comparación con la interfaz de fondo claro. |
+| **Null Hypothesis** | El cambio en la paleta de colores de la interfaz no afectará la permanencia del usuario, registrando la misma duración de sesión nocturna que la versión base. |
+
+| Atributo | Detalle de la Hipótesis: Experimento 5 (Enlaces Compartibles) |
+| --- | --- |
+| **Question** | ¿Disminuirá el costo de adquisición de usuarios si permitimos generar Enlaces de Ofertas Favoritas Compartibles? |
+| **Belief** | Facilitar la difusión directa de las ofertas exclusivas mediante enlaces web ligeros y optimizados para aplicaciones de mensajería detonará el crecimiento orgánico dentro de las comunidades de nicho. |
+| **Hypothesis** | El sistema de enlaces compartibles alcanzará una Tasa de Conversión por Recomendación superior al 15% sobre el total de nuevos usuarios registrados semanalmente. |
+| **Null Hypothesis** | Los enlaces compartidos no generarán tráfico efectivo o los nuevos visitantes no completarán el registro, manteniendo la tasa de adquisición orgánica por debajo del umbral de significancia. |
+
+### 8.2.2. Domain Business Metrics
+
+Para mitigar el riesgo de fundamentar decisiones estratégicas en métricas irrelevantes o de vanidad, las hipótesis de experimentación de GeoPS se vinculan directamente a los objetivos comerciales a través de las siguientes métricas de dominio. Las métricas aquí definidas constituyen los únicos indicadores autorizados para evaluar las condiciones operacionales de las *Experiment Cards*.
+
+| Nombre de la Métrica | Descripción y Justificación | Fórmula de Cálculo | Técnica de Recolección | Meta Deseada |
+| --- | --- | --- | --- | --- |
+| **Tasa de Clics (CTR) en Web Push** | Mide la efectividad de las alertas de proximidad web para atraer la atención del usuario e incentivarlo a explorar una promoción en tiempo real cuando transita cerca del comercio. | `(Número de clics efectuados en las notificaciones web / Total de notificaciones web entregadas con éxito) * 100` | Registro de eventos personalizados mediante Google Analytics 4 embebidos dentro del flujo del *Service Worker* en Angular. | **> 10.0%** |
+| **Tasa de Aceptación de Permisos (Opt-in Rate)** | Evalúa la viabilidad técnica y el nivel de fricción en la experiencia de usuario al solicitar acceso a la ubicación y notificaciones en entornos 100% web. | `(Usuarios que aprueban los permisos solicitados en el navegador / Total de usuarios expuestos al cuadro de diálogo de solicitud) * 100` | Monitoreo del estado de la API del navegador (`navigator.permissions`) reportado de forma automatizada hacia Google Analytics 4. | **> 50.0%** |
+| **Tasa de Canje Físico (Redemption Rate)** | Representa el retorno de inversión real (ROI) fuera de línea (offline) y el tráfico peatonal efectivo que la plataforma web logra derivar hacia los locales comerciales de las PyMEs. | `(Fichas o códigos QR validados y escaneados con éxito por los establecimientos / Cantidad total de códigos QR generados por los usuarios) * 100` | Conteo transaccional en la base de datos backend al procesar solicitudes HTTP POST exitosas dirigidas al controlador `/offers/redeem`. | **> 25.0%** |
+| **Tiempo Promedio de Sesión (Session Duration)** | Mide la retención del usuario dentro de la interfaz responsiva impulsada por los filtros temáticos y la optimización ergonómica del modo oscuro. | `Suma total de la duración de todas las sesiones de navegación / Número total de sesiones registradas en el período` | Extracción automatizada de los indicadores de permanencia provistos por Vercel Analytics y Google Analytics 4. | **> 3.0 min** |
+| **Tasa de Conversión por Recomendación (Viral Rate)** | Evalúa la eficiencia del crecimiento orgánico de la comunidad oriental mediante el uso de enlaces de recomendación de cupones favoritos. | `(Nuevos registros completados a través de un enlace de recomendación / Total de visitas únicas procedentes de dichos enlaces compartidos) * 100` | Captura y parseo de parámetros UTM y variables de consulta de URL de recomendación durante el flujo de registro en la base de datos. | **> 15.0%** |
+
+### 8.2.3. Measures
+
+Las variables e indicadores cuantitativos que se emplearán para contrastar las hipótesis nulas y alternativas corresponden a los datos puros recolectados de las interacciones en el navegador:
+
+* **Volumen de clics en Web Push e Impresiones totales:** Datos base para determinar cuantitativamente el CTR de proximidad.
+* **Contador de estados de permiso aprobados frente a denegados:** Datos utilizados para evaluar el comportamiento del indicador de aceptación (*Opt-in*).
+* **Registros de marcas de tiempo en el backend (`/offers/redeem`):** Datos duros de transacciones que configuran de manera inequívoca la Tasa de Canje Físico.
+* **Duración de la sesión indexada por franja horaria y tema CSS:** Datos de tiempo de permanencia filtrados para aislar el impacto de la interfaz nocturna.
+* **Conteo de tokens de invitación validados en el proceso de registro:** Datos utilizados para el cálculo de la Tasa de Conversión por Recomendación.
+
+### 8.2.4. Conditions
+
+* **Condición Experimental (Grupo Expuesto):** Segmento de usuarios web móviles a los que se les activa el algoritmo de geofencing en segundo plano, el selector de modo oscuro, los circuitos temáticos en el mapa, los enlaces compartibles y la ventana de validación QR.
+* **Condición de Control (Grupo Base):** Segmento de usuarios que navega bajo la versión tradicional estática de GeoPS, donde la búsqueda de locales es puramente manual, la interfaz es invariablemente clara, no hay agrupaciones por rutas, carece de sistema de canje QR (solo visualización de texto) y no posee enlaces cortos de recomendación.
+
+### 8.2.5. Scale Calculations and Decisions
+
+Para garantizar la validez científica de los resultados de la investigación y minimizar los errores atribuibles al azar durante la evaluación de la escala, se establecen formalmente los siguientes parámetros estadísticos que rigen la precisión y certeza del diseño:
+
+* **Nivel de Significación ($\alpha$):** Establecido en un **5%** para prevenir errores de Tipo I (falsos positivos), asegurando que el éxito detectado no sea producto del azar.
+* **Potencia Estadística ($1-\beta$):** Definida en un **80%** para mitigar el riesgo de cometer errores de Tipo II (falsos negativos), garantizando que la plataforma detecte los impactos reales si estos existen.
+* **Efecto Mínimo Detectable (MDE):** Se determina que la magnitud mínima de cambio estructural que justifica la inversión técnica, operativa e infraestructura para escalar una funcionalidad experimental de forma definitiva a producción es un incremento absoluto del **5%** sobre los promedios base.
+
+A continuación, se detalla la matriz operacional de decisiones de escala para evaluar el éxito de los 5 experimentos planificados:
+
+| Factor | Scale Calculation y Decision (Métricas e Hipótesis) | 1. Desfavorable (Sin cambios) | 2. Aceptable (Progreso mínimo) | 3. Ideal (Meta del experimento) | 4. Excelente (Decisión: Escalar) |
+| --- | --- | --- | --- | --- | --- |
+| **Experimento 1: Alertas de Proximidad** | Creemos que enviar notificaciones web push basadas en la ubicación del navegador capturará la intención de compra impulsiva. Sabremos que esto es cierto cuando observemos una Tasa de Clics (CTR) del 10% en las alertas móviles enviadas. | CTR menor al 5%. | CTR entre 5% y 9%. | **CTR del 10%.** | CTR mayor al 15%. (X) |
+| **Experimento 2: Canjes por Código QR** | Creemos que integrar un validador de códigos QR basado en la web para los comercios demostrará empíricamente el tráfico real impulsado por GeoPS. Sabremos que esto es cierto cuando logremos una Tasa de Canje Físico del 25% sobre los cupones guardados. | Canje menor al 10%. | Canje entre 10% y 24%. | **Canje del 25%.** | Canje mayor al 35%. (X) |
+| **Experimento 3: Circuitos Temáticos** | Creemos que clasificar las PyMEs en rutas de nicho cultural reducirá la sobrecarga cognitiva en el mapa web. Sabremos que esto es cierto cuando el Tiempo Promedio de Sesión móvil aumente a 3 minutos. | Tiempo menor a 1.5 minutos. | Tiempo entre 1.5 y 2.9 minutos. | **Tiempo de 3 minutos.** | Tiempo mayor a 4 minutos. (X) |
+| **Experimento 4: Selector de Interfaz** | Creemos que proveer una interfaz nocturna de alto contraste mitigará la fatiga visual en exteriores durante la noche. Sabremos que esto es cierto cuando las sesiones nocturnas se prolonguen un 25% frente a la interfaz clara. | Incremento de tiempo menor al 10%. | Incremento de tiempo entre 10% y 24%. | **Incremento de tiempo del 25%.** | Incremento de tiempo mayor al 35%. (X) |
+| **Experimento 5: Enlaces Compartibles** | Creemos que facultar la recomendación directa de ofertas favoritas mediante enlaces cortos potenciará el registro orgánico. Sabremos que esto es cierto cuando la Tasa de Conversión por Recomendación sea del 15%. | Conversión menor al 5%. | Conversión entre 5% y 14%. | **Conversión del 15%.** | Conversión mayor al 20%. (X) |
+
+### 8.2.6. Methods Selection
+
+| Herramienta | Precio | Capacidad de Análisis | Sencillez | Ventajas para GeoPS |
+| --- | --- | --- | --- | --- |
+| **Google Analytics 4** | Acceso Gratuito. | Rastreo pormenorizado de eventos a medida e interacciones específicas de las APIs web. | Nivel de aprendizaje moderado. | Soporta de forma nativa el ecosistema de Angular. Permite trazar de manera unificada el flujo desde la recepción del push hasta la generación y canje del código QR. |
+| **Google Lighthouse** | Acceso Gratuito. | Auditorías automatizadas de velocidad de renderizado, accesibilidad y cumplimiento de criterios PWA. | Ejecución sumamente sencilla. | Garantiza de manera empírica que el peso de las librerías del escáner de cámara web y la API de mapas no penalicen el rendimiento en redes móviles móviles. |
+| **Vercel Analytics** | Incluido en la capa de despliegue. | Monitoreo en tiempo real de indicadores clave de rendimiento web (*Web Vitals*). | Configuración inmediata sin código adicional. | Al estar el frontend de GeoPS alojado en los servidores de Vercel, provee métricas reales de latencia experimentadas por los usuarios de Lima Moderna. |
+
+### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection
+
+Dada la naturaleza de GeoPS como plataforma responsiva de uso en exteriores, la velocidad de carga de los experimentos en navegadores móviles representa el indicador fundamental de viabilidad técnica. Se ejecutaron auditorías predictivas con Google Lighthouse emulando redes móviles de velocidad estándar:
+
+* **Ruta bajo evaluación:** `https://geops-frontend.vercel.app/home` (Perfil Móvil)
+* **Performance (Rendimiento):** 90/100 – Nivel óptimo que asegura que la inicialización del video para el escaneo de códigos QR mediante WebRTC no congele el navegador web comercial.
+* **PWA (Progressive Web App):** 100/100 – Cumplimiento absoluto de los manifiestos y *Service Workers* necesarios para habilitar el envío de notificaciones push en segundo plano e incentivar la opción "Agregar a la pantalla de inicio".
+* **Best Practices (Buenas Prácticas):** 100/100 – Ejecución estricta bajo cifrado HTTPS, requisito de seguridad obligatorio e ineludible en la ingeniería moderna para que los navegadores móviles autoricen el uso de las APIs de Geolocalización y Cámara.
+
+### 8.2.8. Web and Mobile Tracking Plan
+
+El plan de monitoreo analítico del comportamiento de los experimentos web en dispositivos móviles se estructurará en fases progresivas:
+
+* **Fase 1: Auditoría de Permisos e Interfaz (Semanas 1-2):** Se instrumentará el frontend en Angular para registrar de manera automática los eventos de aceptación o rechazo en la ventana de geolocalización. Asimismo, se medirá la frecuencia de conmutación hacia la interfaz nocturna para validar la tasa de uso del modo oscuro correlacionada con la hora local de la sesión.
+* **Fase 2: Monitoreo del Flujo Transaccional O2O (Semanas 3-4):** Se auditará el tiempo de respuesta del lector QR basado en WebRTC y se cuantificará el ratio de éxito de validaciones exitosas enviadas al endpoint del backend, permitiendo mapear la correlación entre las alertas proactivas recibidas en la calle y las compras tangibles concretadas en las PyMEs.
+
+---
+
+## 8.3. Experimentation
+
+### 8.3.1. To-Be User Stories
+
+Estas Historias de Usuario corresponden formalmente a las cinco funcionalidades experimentales planificadas para el entorno web de GeoPS, redactadas bajo el formato formal y de aceptación *Given-When-Then*:
+
+| Story ID | Título | Descripción | Criterios de Aceptación | Relacionado (Epic) |
+| --- | --- | --- | --- | --- |
+| **GEOP-UA11** | **Recepción de Alertas Push por Proximidad Geográfica** | Como consumidor en movilidad, quiero recibir notificaciones push de proximidad en mi navegador móvil, para enterarme de descuentos de comercios asiáticos cercanos sin necesidad de navegar manualmente. | **Escenario 1: Alerta web push enviada de forma exitosa.**<br>
+
+<br>*Given* que el usuario concedió permisos de geolocalización a GeoPS.<br>
+
+<br>*When* transita a una distancia menor a 500 metros de una PyME con campaña publicitaria vigente.<br>
+
+<br>*Then* el navegador móvil desplegará una notificación push hiperlocal a través del Service Worker.<br>
+
+<br>
+
+<br>**Escenario 2: Restricción de saturación publicitaria.**<br>
+
+<br>*Given* que el usuario ya recibió una alerta push del establecimiento comercial X.<br>
+
+<br>*When* permanece dentro del radio geográfico de 500 metros por un tiempo prolongado.<br>
+
+<br>*Then* el sistema suspenderá el envío de alertas duplicadas de ese local específico durante el día calendario. | E02 (Descubrimiento Hiperlocal) |
+| **GEOP-UA12** | **Generación Dinámica de Fichas QR para Canje** | Como consumidor, quiero generar un código QR único desde la vista de una promoción web, para presentarlo físicamente en el local comercial y hacer válido el descuento. | **Escenario 1: Renderizado del código QR de la promoción.**<br>
+
+<br>*Given* que me encuentro visualizando los detalles de una oferta específica en la plataforma web.<br>
+
+<br>*When* presiono el botón "Usar Promoción Física".<br>
+
+<br>*Then* el frontend procesará la sesión y renderizará dinámicamente un código QR único asociado a mi cuenta y a la campaña. | E02 (Descubrimiento Hiperlocal) |
+| **GEOP-UA13** | **Validación de Transacciones QR vía WebRTC** | Como dueño de un comercio afiliado, quiero escanear la pantalla del consumidor usando la cámara de mi celular dentro del panel web de GeoPS, para validar la promoción de forma instantánea. | **Escenario 1: Confirmación de venta y registro de ROI comercial.**<br>
+
+<br>*Given* que el comerciante ingresó a su panel de gestión desde su navegador móvil.<br>
+
+<br>*When* activa la funcionalidad de escaneo y apunta la cámara (API WebRTC) hacia el código QR válido del cliente.<br>
+
+<br>*Then* la web procesará la solicitud vía el endpoint `/offers/redeem`, mostrará un aviso de éxito en pantalla y registrará un incremento en la métrica de Conversión Real del comercio. | E03 (Gestión de Campañas PyME) |
+| **GEOP-UA14** | **Exploración por Circuitos Temáticos de Nicho** | Como entusiasta de la cultura oriental, quiero filtrar el mapa por circuitos culturales temáticos, para descubrir rápidamente establecimientos del mismo rubro específico en Lima Moderna. | **Escenario 1: Filtrado reactivo en el mapa web.**<br>
+
+<br>*Given* que el usuario se encuentra visualizando el mapa principal de la plataforma web.<br>
+
+<br>*When* selecciona una ruta predefinida (ej. "Ruta K-Beauty" o "Ruta del Ramen").<br>
+
+<br>*Then* la interfaz ocultará todos los comercios ajenos y resaltará de manera exclusiva los locales pertenecientes a la temática seleccionada. | E02 (Descubrimiento Hiperlocal) |
+| **GEOP-UA15** | **Conmutación de Interfaz Nocturna (Modo Oscuro)** | Como usuario de GeoPS en la vía pública, quiero activar una interfaz de modo oscuro en la plataforma web, para evitar el agotamiento visual al interactuar de noche. | **Escenario 1: Transición fluida de paleta cromática.**<br>
+
+<br>*Given* que me encuentro navegando en cualquier sección de la Web App responsiva.<br>
+
+<br>*When* presiono el selector de "Modo Oscuro" o la hora local supera las 18:00 horas.<br>
+
+<br>*Then* la plataforma alternará las variables CSS globales hacia tonalidades oscuras de alto contraste sin alterar los estados de la sesión. | E01 (Experiencia de Usuario Base) |
+| **GEOP-UA16** | **Distribución de Ofertas Favoritas Compartibles** | Como consumidor de nicho asiático, quiero generar enlaces cortos de mis promociones preferidas, para difundirlas rápidamente con amigos en mis canales digitales. | **Escenario 1: Envío de enlace codificado de recomendación.**<br>
+
+<br>*Given* que guardé una promoción en mi sección de favoritos.<br>
+
+<br>*When* presiono el botón "Compartir con Amigos".<br>
+
+<br>*Then* el sistema invocará la API Web de compartición nativa o copiará en el portapapeles un enlace URL optimizado con el token identificador del comercio. | E02 (Descubrimiento Hiperlocal) |
+
+### 8.3.2. To-Be Product Backlog
+
+Se detalla la incorporación orgánica de los tickets asociados a las funcionalidades de experimentación dentro del catálogo estructurado del producto, evaluados formalmente en puntos de historia (*Story Points*) utilizando la secuencia de Fibonacci:
+
+| # Orden | User Story ID | Título del Requerimiento Experimental | Descripción Técnica Implementada | Story Points (1/2/3/5/8) |
+| --- | --- | --- | --- | --- |
+| **14** | **GEOP-UA11** | Alertas Web Push e Infraestructura de Geofencing | Configuración de `@angular/service-worker`, gestión de tokens de notificación en el navegador y cálculo matricial de la fórmula Haversine en el backend. | **8** |
+| **15** | **GEOP-UA12** | Renderizado Dinámico de Códigos QR | Integración del componente de conversión y cifrado visual (ej. `angularx-qrcode`) en las vistas de cupones móviles del cliente. | **3** |
+| **16** | **GEOP-UA13** | Escáner QR WebRTC para Panel de Proveedores | Desarrollo del lector HTML5 adaptado a navegadores responsivos y enlace transaccional seguro con el controlador del backend `PUT /offers/redeem`. | **5** |
+| **17** | **GEOP-UA14** | Módulo de Capas y Circuitos Temáticos en Mapa | Implementación de filtros dinámicos basados en tipologías de negocio y optimización de consultas indexadas en la base de datos geográfica. | **3** |
+| **18** | **GEOP-UA15** | Servicio Frontend de Interfaz Nocturna Global | Creación del servicio de escucha de estados CSS en Angular y parametrización de la paleta de colores oscuros estandarizados. | **2** |
+| **19** | **GEOP-UA16** | Generador de Enlaces Cortos de Recomendación | Acoplamiento de la API nativa de compartición del navegador móvil (`Web Share API`) y estructuración de parámetros de rastreo orgánico. | **2** |
+
+
+
+
 ## 7.4. Continuous Monitoring 
 
 ### 7.4.1. Tools and Practices 
@@ -5416,5 +5713,5 @@ World Bank. (2019). *World Development Report 2019: The Changing Nature of Work*
 
 - Enlace Diseño Figma: https://www.figma.com/design/mHHx8WStPBr63tLYj42pBX/GeoPs?node-id=336-2468&t=1Nm0EVmUTgy7sfDx-1
 
-**Videos Entrevistas**
+
 
