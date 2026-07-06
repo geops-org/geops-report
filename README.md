@@ -5926,6 +5926,9 @@ World Bank. (2019). *World Development Report 2019: The Changing Nature of Work*
 
 - Enlace Repositorio Project Report: https://github.com/geops-org/geops-report
 
+**Video About The Tema**
+- Enlace Video About The Product - GeoPs: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202321941_upc_edu_pe/IQCmK1t5-cokQ4wCX1OlTZo3AZtf599c7htQwh--P-6cT0A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=ILzbEq
+
 
 **Video About The Product**
 
