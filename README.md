@@ -111,6 +111,7 @@ La colaboración se distribuyó de manera equitativa entre los 7 integrantes:
 - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
 - [Project Report Collaboration Insights](#project-report-collaboration-insights)
 - [Student Outcome](#student-outcome)
+- [Part I: As-Is Software Project](#part-i-as-is-software-project)
 - [Capítulo I: Introducción](#capítulo-i-introducción)
   - [1.1. Startup Profile](#11-startup-profile)
     - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
@@ -291,6 +292,10 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 |:---|:---|:---|
 | **4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software** | **Choy Robles, Vanessa May Lang**<br>**TB1:** Lideró la especificación de requerimientos técnicos, asegurando que las User Stories priorizaran la seguridad de datos en el registro.<br>**TP1:** Implementó validaciones de registro y decidió retirar la sección de reviews para proteger la integridad de los comercios afiliados.<br>**TB2:** Estructuró el Question Backlog priorizando las preguntas de mayor riesgo ético antes de diseñar los experimentos.<br>**TF1:** Diseñó y registró las Validation Interviews resguardando los datos personales de los participantes y aplicando consentimiento informado.<br><br>**Barba Estrada, Bryan Eduardo**<br>**TB1:** Realizó el análisis del Startup Business Model enfocado en PyMEs.<br>**TP1:** Evaluó el impacto económico del modelo de publicidad hiperlocal para asegurar un beneficio justo al comerciante.<br>**TB2:** Definió las Domain Business Metrics garantizando que el modelo de monetización preserve un beneficio económico justo para el comercio afiliado.<br>**TF1:** Interpretó los resultados del experimento de ROI publicitario emitiendo conclusiones honestas sobre el beneficio real al comerciante.<br><br>**Salazar Caballero, Alvaro Fabrizzio**<br>**TB1:** Diseñó los User Personas basados en la cultura asiática.<br>**TP1:** Validó que el diseño responsive del Frontend respete la privacidad de ubicación del usuario final.<br>**TB2:** Estableció las Conditions y Measures del experimento cuidando el manejo responsable de la geolocalización.<br>**TF1:** Condujo las To-Be Validation Interviews aplicando un trato ético y consentimiento a los participantes.<br><br>**Cárdenas Concha, Santiago Iván**<br>**TB1:** Elaboró el Impact Mapping y el Architecture Overview Diagram.<br>**TP1:** Aseguró que el diseño de clases y la arquitectura del sistema minimicen el uso innecesario de recursos del servidor.<br>**TB2:** Aplicó Methods Selection bajo el principio del "Simplest Useful Thing" para reducir costo y consumo de recursos.<br>**TF1:** Implementó el Continuous Monitoring configurando un uso responsable de recursos en producción.<br><br>**Vera Nuñez, Nicolas Alejandro**<br>**TB1:** Desarrolló el análisis competitivo frente a grandes plataformas.<br>**TP1:** Verificó que las estrategias de marketing de GeoPS no incurran en prácticas de publicidad invasiva.<br>**TB2:** Diseñó las Experiment Cards evitando exponer a un mismo usuario a experimentos simultáneos que pudieran causarle perjuicio.<br>**TF1:** Coordinó y ejecutó la Auditoría de Experiencias de Usuario cruzada con objetividad profesional.<br><br>**Valverde Portuguez, Natalia Ximena**<br>**TB1:** Dirigió la fase inicial de alineación estratégica, definiendo la misión y visión centrada en la digitalización ética de comercios locales.<br>**TP1:** Supervisó que el Lean UX Canvas mantuviera el enfoque en soluciones de bajo costo para las PyMEs.<br>**TB2:** Elaboró el As-Is Summary y sustentó las decisiones de escala equilibrando rigor experimental y costo accesible.<br>**TF1:** Lideró la sesión de Shareback (Continuous Learning) documentando los aprendizajes con honestidad y transparencia.<br><br>**Diestra Zambrano, Adriana Maria**<br>**TB1:** Sustentó el análisis "How Much" con datos de importación globales.<br>**TP1:** Validó que la documentación de la API refleje con transparencia las capacidades del sistema.<br>**TB2:** Definió el plan de Data Analytics aplicando el principio de mínima recolección de datos necesaria.<br>**TF1:** Ejecutó el Static Code Analysis asegurando código seguro y libre de vulnerabilidades en el manejo de datos sensibles. | El equipo demostró un juicio profesional sólido al equilibrar la innovación tecnológica con la responsabilidad social. Al asignar responsables específicos para la seguridad de datos y el análisis de impacto económico, se garantizó que **GeoPS Labs** no solo sea una herramienta funcional, sino un motor de crecimiento ético para las PyMEs orientales en Lima Moderna. Esta estructura permitió que cada decisión técnica, desde el manejo de la base de datos hasta la interfaz de usuario, estuviera alineada con los estándares de privacidad y transparencia.<br><br>Se consolidó un entorno de desarrollo responsable mediante la ejecución de los Sprints de TB1 y TP1, integrando arquitectura de software y diseño de bases de datos bajo principios profesionales. El cumplimiento de los objetivos se evidencia en la entrega de un producto que protege la reputación de los negocios locales y ofrece una experiencia segura al consumidor, transformando la problemática detectada en una solución de ingeniería consciente de su impacto global y económico.<br><br>Durante TB2 y TF1, esta responsabilidad se extendió al ciclo experimental: el equipo diseñó y ejecutó experimentos aplicando salvaguardas éticas (consentimiento informado, no exposición simultánea de usuarios, mínima recolección de datos) y verificó la calidad y seguridad del código mediante análisis estático y auditorías de experiencia de usuario. Con ello se confirma que las decisiones de ingeniería del proyecto se tomaron reconociendo, de forma consistente, las responsabilidades éticas y profesionales propias de la disciplina. |
 | **4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales** | **Barba Estrada, Bryan Eduardo**<br>**TB1:** Sustentó la viabilidad económica del Startup Business Model orientado a PyMEs de un mercado de nicho.<br>**TP1:** Emitió juicios sobre el impacto económico del modelo de publicidad hiperlocal frente a alternativas tradicionales.<br>**TB2:** Formuló las Hypotheses y Domain Business Metrics para medir cuantitativamente el retorno económico (ROI) del comerciante.<br>**TF1:** Interpretó los resultados del experimento de ROI, emitiendo un juicio informado sobre el beneficio económico real para las PyMEs.<br><br>**Diestra Zambrano, Adriana Maria**<br>**TB1:** Fundamentó con datos globales de importación (WITS) el contexto de mercado de la solución.<br>**TP1:** Evaluó el impacto de la transparencia de la documentación técnica sobre los usuarios desarrolladores.<br>**TB2:** Seleccionó KPIs y métricas evitando "vanity metrics", priorizando indicadores relevantes para el negocio.<br>**TF1:** A partir del análisis estático, emitió juicios sobre la seguridad y sostenibilidad técnica del código en producción.<br><br>**Vera Nuñez, Nicolas Alejandro**<br>**TB1:** Analizó el impacto competitivo global de GeoPS frente a plataformas dominantes.<br>**TP1:** Juzgó las implicancias sociales de las estrategias de marketing, descartando prácticas invasivas.<br>**TB2:** Consideró el impacto sobre el usuario al definir las condiciones de los experimentos.<br>**TF1:** Emitió juicios sobre accesibilidad e inclusión a partir de los hallazgos de la auditoría UX cruzada.<br><br>**Salazar Caballero, Alvaro Fabrizzio**<br>**TB1:** Consideró la diversidad cultural del público objetivo al diseñar los User Personas.<br>**TP1:** Evaluó el impacto social de la privacidad de ubicación en el diseño de la experiencia.<br>**TB2:** Juzgó las implicancias de privacidad al definir las Measures y Conditions basadas en geolocalización.<br>**TF1:** Recogió y valoró el impacto percibido por usuarios reales en las To-Be Validation Interviews.<br><br>**Cárdenas Concha, Santiago Iván**<br>**TB1:** Evaluó el impacto de las decisiones arquitectónicas sobre la escalabilidad de la solución.<br>**TP1:** Juzgó el impacto ambiental y económico del consumo de recursos del servidor, optimizándolo.<br>**TB2:** Seleccionó métodos experimentales minimizando el costo computacional y el desperdicio de recursos.<br>**TF1:** Emitió juicios sobre la sostenibilidad operativa de la plataforma a partir del Continuous Monitoring.<br><br>**Valverde Portuguez, Natalia Ximena**<br>**TB1:** Definió una visión centrada en el impacto social de digitalizar comercios locales.<br>**TP1:** Juzgó el impacto económico de mantener una solución de bajo costo para las PyMEs.<br>**TB2:** Ponderó el balance entre rigor y costo al sustentar las Scale Calculations and Decisions.<br>**TF1:** Consolidó, en el Shareback, un juicio grupal sobre el impacto social y económico logrado por la solución.<br><br>**Choy Robles, Vanessa May Lang**<br>**TB1:** Consideró el impacto de la seguridad de datos sobre la confianza de los usuarios.<br>**TP1:** Juzgó el impacto de la integridad de los comercios al retirar la sección de reviews.<br>**TB2:** Priorizó en el Question Backlog las preguntas de mayor riesgo e impacto para el negocio.<br>**TF1:** Evaluó, mediante heurísticas de usabilidad e inclusión, el impacto de la experiencia sobre segmentos diversos. | El equipo emitió juicios informados sustentando cada decisión con evidencia del contexto en el que opera GeoPS. En el plano **económico**, se dimensionó el impacto de la publicidad hiperlocal sobre la rentabilidad de las PyMEs orientales, apoyándose en datos de mercado e importación y en métricas de ROI verificables. En el plano **global**, se analizó la posición de la solución frente a plataformas dominantes y las tendencias de consumo digital en el Perú.<br><br>En el plano **social**, el equipo priorizó la privacidad de ubicación, la no invasividad publicitaria y la inclusión, valorando el impacto de la experiencia sobre segmentos culturalmente diversos. En el plano **ambiental y de sostenibilidad técnica**, las decisiones de arquitectura, selección de métodos y monitoreo continuo se orientaron a minimizar el consumo innecesario de recursos. Con la ejecución del ciclo experimental (TB2 y TF1) y su posterior análisis e interpretación de resultados, el equipo consolidó su capacidad de emitir juicios informados que consideran, de manera integral, el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales. |
+
+---
+
+## Part I: As-Is Software Project
 
 ## Capítulo 1: Introducción
 
@@ -848,6 +853,33 @@ Este segmento comprende a propietarios y administradores de negocios especializa
 
   *Nota.* Elaboración propia (realizado en Uxpressia).
 
+#### 2.3.5. As-Is Scenario Mapping (Consumidor y Propietario)
+
+En esta sección el equipo representa la experiencia **actual** de cada User Persona —es decir, cómo vive el proceso hoy, sin la existencia de GeoPS—. El proceso de elaboración pasó por la preparación, la lluvia de ideas individual de cada miembro, la revisión conjunta, la identificación y nombrado de las fases como columnas, y el etiquetado de las áreas positivas y negativas para el usuario, junto con las *blank areas* (zonas sobre las que el equipo necesita aprender más). Cada mapa incluye las filas Phases, Doing, Thinking y Feeling.
+
+### As-Is Scenario Map — User Persona: Consumidor
+
+⟨insertar captura del As-Is Scenario Map del Consumidor (LucidChart / Miro)⟩
+
+| | **Fase 1: Necesidad** | **Fase 2: Búsqueda** | **Fase 3: Traslado** | **Fase 4: Compra** | **Fase 5: Post-compra** |
+|---|---|---|---|---|---|
+| **Doing** | Quiere aprovechar su presupuesto y busca promociones en negocios cercanos. | Revisa redes sociales, Google y pregunta a conocidos por descuentos vigentes. | Se traslada al local basándose en información dispersa o desactualizada. | Al llegar, a veces la promoción ya no existe o las condiciones cambiaron. | No tiene forma sencilla de recomendar la oferta a sus amigos. |
+| **Thinking** | "¿Habrá alguna oferta cerca de mí ahora mismo?" | "No encuentro información confiable ni centralizada." | "Espero que la promoción siga vigente cuando llegue." | "Perdí el tiempo, la oferta ya no aplica." | "Me gustó, pero es complicado compartirlo." |
+| **Feeling** | 🟡 Expectativa / incertidumbre | 🔴 Frustración | 🟡 Duda | 🔴 Decepción / desconfianza | 🟡 Indiferencia |
+
+*Blank area:* se requiere aprender más sobre qué tanto el consumidor confía en la información de descuentos que encuentra en redes sociales.
+
+### As-Is Scenario Map — User Persona: Propietario de negocio
+
+⟨insertar captura del As-Is Scenario Map del Propietario (LucidChart / Miro)⟩
+
+| | **Fase 1: Planificación** | **Fase 2: Difusión** | **Fase 3: Espera** | **Fase 4: Medición** | **Fase 5: Decisión** |
+|---|---|---|---|---|---|
+| **Doing** | Define una promoción para atraer clientes a su local. | Imprime volantes y publica en redes sociales sin segmentar por cercanía. | Espera la llegada de clientes sin saber si la publicidad tuvo efecto. | Intenta estimar resultados contando ventas de forma manual. | Decide su próxima inversión publicitaria sin datos objetivos. |
+| **Thinking** | "¿Cómo hago para que la gente cercana se entere?" | "Gasto en publicidad pero no sé a quién llega." | "¿Vino alguien por la promoción o por casualidad?" | "No tengo cómo saber mi retorno real." | "Voy a invertir de nuevo, pero a ciegas." |
+| **Feeling** | 🟡 Optimismo | 🟡 Esfuerzo | 🔴 Ansiedad | 🔴 Frustración | 🔴 Incertidumbre |
+
+*Blank area:* se requiere aprender más sobre cuánto presupuesto destinan las PyMEs a publicidad no medible.
 
 ### 2.4. Ubiquitous Language   
 
@@ -868,6 +900,33 @@ Este segmento comprende a propietarios y administradores de negocios especializa
 ---
 
 ## Capitulo 3: Requirements Specification 
+
+### 3.1. To-Be Scenario Mapping
+
+En esta sección el equipo representa la experiencia **futura** de cada User Persona una vez que utiliza GeoPS. Tras la preparación, la lluvia de ideas individual y la revisión conjunta, se identificaron y nombraron las fases, y se comparó cada mapa con su versión As-Is para identificar los cambios que ofrece la solución. Cada mapa incluye las filas Phases, Doing, Thinking y Feeling.
+
+### To-Be Scenario Map — User Persona: Consumidor
+
+⟨insertar captura del To-Be Scenario Map del Consumidor (LucidChart / Miro)⟩
+
+| | **Fase 1: Descubrimiento** | **Fase 2: Exploración** | **Fase 3: Decisión** | **Fase 4: Canje** | **Fase 5: Fidelización** |
+|---|---|---|---|---|---|
+| **Doing** | Recibe una alerta de proximidad cuando transita cerca de una campaña activa. | Explora las ofertas en un mapa interactivo por distrito o ruta temática. | Filtra, compara y guarda su oferta favorita. | Presenta el código QR en el local y valida la promoción en el momento. | Comparte la oferta con sus amigos mediante un enlace. |
+| **Thinking** | "Hay una promoción relevante a pocos metros de mí." | "Puedo ver todo lo disponible cerca en un solo lugar." | "Esta oferta sí me conviene y está vigente." | "El canje fue rápido y la promoción era real." | "Es fácil recomendar lo que me gustó." |
+| **Feeling** | 🟢 Interés | 🟢 Confianza | 🟢 Satisfacción | 🟢 Seguridad | 🟢 Pertenencia |
+
+**Cambios respecto al As-Is:** la búsqueda dispersa y poco confiable se reemplaza por el descubrimiento proactivo y la exploración centralizada en el mapa; la decepción por promociones inexistentes se elimina con la validación por QR; y compartir deja de ser una barrera.
+
+### To-Be Scenario Map — User Persona: Propietario de negocio
+
+⟨insertar captura del To-Be Scenario Map del Propietario (LucidChart / Miro)⟩
+
+| | **Fase 1: Registro** | **Fase 2: Creación de campaña** | **Fase 3: Difusión hiperlocal** | **Fase 4: Medición** | **Fase 5: Optimización** |
+|---|---|---|---|---|---|
+| **Doing** | Crea su cuenta de proveedor y configura el perfil de su negocio. | Define una campaña con sus ofertas y la activa. | GeoPS notifica automáticamente a los consumidores cercanos a su local. | Consulta el panel con métricas de alcance y canje de sus campañas. | Ajusta o pausa las campañas según su rendimiento real. |
+| **Thinking** | "Puedo empezar sin complicaciones, incluso con el modo demo." | "Publico mi promoción segmentada por cercanía." | "Mi oferta llega a clientes reales del vecindario." | "Ahora sí veo cuántos vieron y canjearon mi oferta." | "Invierto donde veo resultados." |
+| **Feeling** | 🟢 Facilidad | 🟢 Control | 🟢 Confianza | 🟢 Claridad | 🟢 Tranquilidad |
+
 ### 3.1. User Stories
 
 Las User Stories representan las necesidades y expectativas de los usuarios finales expresadas en un lenguaje sencillo y centrado en su valor.  
@@ -5409,9 +5468,6 @@ Se detalla la incorporación orgánica de los tickets asociados a las funcionali
 | **18** | **GEOP-UA15** | Servicio Frontend de Interfaz Nocturna Global | Creación del servicio de escucha de estados CSS en Angular y parametrización de la paleta de colores oscuros estandarizados. | **2** |
 | **19** | **GEOP-UA16** | Generador de Enlaces Cortos de Recomendación | Acoplamiento de la API nativa de compartición del navegador móvil (`Web Share API`) y estructuración de parámetros de rastreo orgánico. | **2** |
 
-
-
-
 ## 7.4. Continuous Monitoring 
 
 ### 7.4.1. Tools and Practices 
@@ -5671,7 +5727,78 @@ El plan de monitoreo analítico del comportamiento de los experimentos web en di
 * **Fase 1: Auditoría de Permisos e Interfaz (Semanas 1-2):** Se instrumentará el frontend en Angular para registrar de manera automática los eventos de aceptación o rechazo en la ventana de geolocalización. Asimismo, se medirá la frecuencia de conmutación hacia la interfaz nocturna para validar la tasa de uso del modo oscuro correlacionada con la hora local de la sesión.
 * **Fase 2: Monitoreo del Flujo Transaccional O2O (Semanas 3-4):** Se auditará el tiempo de respuesta del lector QR basado en WebRTC y se cuantificará el ratio de éxito de validaciones exitosas enviadas al endpoint del backend, permitiendo mapear la correlación entre las alertas proactivas recibidas en la calle y las compras tangibles concretadas en las PyMEs.
 ## 8.3. Experimentation 
+
 ### 8.3.1. To-Be User Stories. 
+
+Las siguientes historias corresponden a las funcionalidades incorporadas durante el ciclo experimental (ver 8.3.2. To-Be Product Backlog) y se encuentran implementadas en la plataforma web (Frontend Angular + RESTful API Spring Boot). Cada historia incluye sus criterios de aceptación en estructura Gherkin (Given–When–Then).
+
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| GEOP-UA11 | Consumidor | Alta | Descubrimiento de ofertas |
+
+**Title:** Exploración de ofertas por distrito en el mapa
+**Description:** Como consumidor, deseo explorar las ofertas disponibles sobre un mapa interactivo filtrado por distrito, para descubrir promociones cercanas a mi ubicación.
+**Acceptance Criteria:**
+- Dado que el consumidor se encuentra en la vista de mapa, cuando selecciona un distrito, entonces el sistema muestra únicamente las ofertas activas asociadas a ese distrito.
+- Dado que existen ofertas activas en el distrito seleccionado, cuando el mapa termina de cargar, entonces cada oferta se representa con un marcador ubicado en las coordenadas del comercio.
+- Dado que el consumidor selecciona un marcador, cuando este se activa, entonces el sistema presenta el resumen de la oferta correspondiente.
+
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| GEOP-UA12 | Consumidor | Alta | Descubrimiento de ofertas |
+
+**Title:** Búsqueda y ordenamiento avanzado de ofertas
+**Description:** Como consumidor, deseo buscar y ordenar las ofertas según distintos criterios, para encontrar rápidamente las promociones que más me interesan.
+**Acceptance Criteria:**
+- Dado que el consumidor ingresa un término de búsqueda, cuando confirma la búsqueda, entonces el sistema retorna las ofertas cuyo título o categoría coinciden con el término.
+- Dado que el consumidor selecciona un criterio de ordenamiento, cuando aplica el orden, entonces el sistema reorganiza los resultados según el criterio elegido.
+- Dado que no existen ofertas que coincidan con el término, cuando la búsqueda finaliza, entonces el sistema informa que no se encontraron resultados.
+
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| GEOP-UA13 | Propietario | Alta | Gestión de campañas |
+
+**Title:** Consulta del rendimiento de las campañas
+**Description:** Como propietario de negocio, deseo consultar el rendimiento de mis campañas publicitarias, para tomar decisiones informadas sobre mi inversión.
+**Acceptance Criteria:**
+- Dado que el propietario tiene campañas registradas, cuando accede al panel de rendimiento, entonces el sistema muestra las métricas asociadas a cada campaña.
+- Dado que una campaña no registra actividad, cuando el propietario la consulta, entonces el sistema muestra sus métricas en cero sin generar error.
+- Dado que el propietario solicita el detalle de una campaña, cuando la selecciona, entonces el sistema presenta el rendimiento correspondiente a esa campaña.
+
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| GEOP-UA14 | Propietario | Media | Gestión de campañas |
+
+**Title:** Control del estado de las campañas
+**Description:** Como propietario de negocio, deseo cambiar el estado de mis campañas, para controlar cuándo se publican o se pausan.
+**Acceptance Criteria:**
+- Dado que una campaña se encuentra en estado borrador, cuando el propietario la activa, entonces el sistema cambia su estado a activa y sus ofertas se vuelven visibles.
+- Dado que una campaña se encuentra activa, cuando el propietario la pausa, entonces el sistema deja de mostrar sus ofertas a los consumidores.
+- Dado que el propietario intenta activar una campaña con fechas inválidas, cuando confirma la acción, entonces el sistema rechaza el cambio de estado e informa la restricción.
+
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| GEOP-UA15 | Usuario | Media | Gestión de perfil |
+
+**Title:** Actualización de los datos del perfil
+**Description:** Como usuario, deseo actualizar los datos de mi perfil, para mantener mi información personal y de negocio al día.
+**Acceptance Criteria:**
+- Dado que el usuario modifica los datos de su perfil, cuando guarda los cambios, entonces el sistema persiste la información actualizada.
+- Dado que el usuario ingresa datos con formato inválido, cuando intenta guardar, entonces el sistema rechaza la actualización e indica el campo con error.
+- Dado que el usuario guarda correctamente sus cambios, cuando vuelve a consultar su perfil, entonces el sistema muestra la información actualizada.
+
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| GEOP-UA16 | Propietario | Media | Gestión de ofertas |
+
+**Title:** Administración de las ofertas de una campaña
+**Description:** Como propietario de negocio, deseo crear, editar y eliminar las ofertas de una campaña, para gestionar las promociones que ofrezco.
+**Acceptance Criteria:**
+- Dado que el propietario define una nueva oferta sobre una campaña existente, cuando la registra, entonces el sistema la asocia a dicha campaña.
+- Dado que el propietario edita una oferta existente, cuando guarda los cambios, entonces el sistema actualiza la oferta correspondiente.
+- Dado que el propietario elimina una oferta, cuando confirma la acción, entonces el sistema retira la oferta y deja de mostrarla a los consumidores.
+- Dado que el propietario intenta asociar una oferta a una campaña inexistente o inactiva, cuando confirma el registro, entonces el sistema rechaza la operación.
+
 ### 8.3.2. To-Be Product Backlog
 
 Como resultado de la evolución del producto, se incorporaron funcionalidades que no fueron registradas como historias independientes en el Product Backlog inicial. El siguiente backlog las organiza por prioridad y las estima en puntos de historia utilizando la secuencia de Fibonacci:
@@ -5820,50 +5947,58 @@ El siguiente *To-Be Sprint Backlog* organiza las funcionalidades incorporadas du
 
 
 ### 8.3.4. To-Be Validation Interviews 
+
 #### 8.3.4.1. Diseño de Entrevistas. 
 
-### 6.3.1. Diseño de Entrevistas. 
+Esta sección establece el diseño de las entrevistas de validación del incremento To-Be, en las que usuarios de los segmentos objetivo interactúan con el Landing Page y con la aplicación web para evaluar las nuevas funcionalidades derivadas del ciclo experimental. El objetivo es contrastar las hipótesis de trabajo (8.2.1) con la percepción real de los usuarios en términos de utilidad, facilidad de uso y aporte a la experiencia.
 
-##### Segmento #1: Usuario Proveedor / Tienda (GeoPS Business)
+### Segmentos y elementos a validar
 
-#### Fase 1: Identificación y Perfilamiento del Negocio
-* Establecimiento, Cargo, Giro de negocio y Origen de productos orientales.
-* Pregunta de control experimental: Recordando la experiencia previa (As-Is), ¿qué tan crítico consideraba el riesgo de publicar un anuncio incompleto o con errores de formato?
+Se consideran los dos segmentos objetivo del proyecto:
+- **Consumidor de ofertas** (segmento demanda).
+- **Propietario de negocio local** (segmento oferta).
 
-#### Fase 2: Interacción Guiada con el Incremento de Software
-* Tarea 1: Ingrese al nuevo formulario de registro de empresa e intente digitar un número de RUC con letras o con menos de 11 dígitos para probar las restricciones automáticas.
-* Tarea 2: Inicie el flujo asistido por pasos (Wizard Step-by-Step) para crear una "Oferta Relámpago" e intente forzar la publicación del anuncio dejando vacío el campo de carga de imágenes.
+Elementos incluidos en la sesión de validación: Landing Page (propuesta de valor y acceso al modo demo) y la aplicación web (flujos core del negocio).
 
-#### Fase 3: Validación de Soluciones a Puntos de Dolor e Interfaz
-* ¿Considera que el nuevo sistema por pasos facilita la creación de anuncios sin generar fatiga en comparación con el formulario único anterior?
-* ¿El bloqueo reactivo del botón "Publicar" ante la falta de una imagen le ayudó a prevenir de forma efectiva un error de visualización en la plataforma?
+### User flows a validar
 
-#### Fase 4: Validación de la Solución Avanzada e Intención de Uso
-* Evaluando las nuevas validaciones en tiempo real y las restricciones de medios, ¿qué tan confiable le resulta esta versión web optimizada del 1 al 5 para gestionar las ofertas de su local?
-* ¿Cómo califica el nivel de seguridad y control que le provee el sistema al validar obligatoriamente sus credenciales e información comercial (RUC)?
+**Consumidor:**
+1. Exploración de ofertas por distrito en el mapa interactivo (GEOP-UA11).
+2. Búsqueda y ordenamiento de ofertas (GEOP-UA12).
+3. Recepción de una alerta de proximidad / oferta en tiempo real.
 
-#### Fase 5: Cierre y Sugerencias
-* ¿Qué otra regla de validación o automatización técnica consideraría útil agregar al panel de GeoPS Business para agilizar su labor diaria?
+**Propietario de negocio:**
+1. Consulta del rendimiento de una campaña (GEOP-UA13).
+2. Control del estado de una campaña: activar / pausar (GEOP-UA14).
+3. Administración de las ofertas de una campaña: crear / editar / eliminar (GEOP-UA16).
 
-##### Segmento #2: Usuario Consumidor (GeoPS)
+### Preguntas de la entrevista
 
-#### Fase 1: Identificación y Perfilamiento del Consumidor
-* Nombre, Edad, Ocupación, Distrito de Lima Moderna y Frecuencia de consumo de artículos asiáticos.
+**Segmento Consumidor**
 
-#### Fase 2: Interacción Guiada con el Incremento de Software
-* Tarea 1: Abra la plataforma web responsive de GeoPS desde su smartphone, diríjase al mapa interactivo en una zona densamente poblada de comercios (ej. límites de Jesús María o Lince) y navegue utilizando los nuevos agrupadores numéricos.
-* Tarea 2: Realice un acercamiento (zoom-in) sobre un grupo o clúster específico para verificar cómo se desagregan los pines individuales de las tiendas asiáticas y acceda a los detalles de una de ellas.
+*Preguntas principales:*
+1. ¿La visualización de ofertas por distrito en el mapa le resultó clara para encontrar promociones cercanas?
+2. ¿Confía en la precisión de los datos de geolocalización que muestra la plataforma?
+3. ¿Considera que las alertas de ofertas en tiempo real modificarían sus hábitos de compra?
+4. ¿La búsqueda y el ordenamiento le permitieron encontrar rápidamente lo que buscaba?
 
-#### Fase 3: Validación de Soluciones a Puntos de Dolor e Interfaz
-* Al interactuar con el mapa de alta densidad de comercios, ¿considera que la agrupación por clústeres eliminó con éxito la superposición caótica y la saturación visual previa?
-* ¿El rendimiento dinámico del mapa y el despliegue fluido de los pines facilitaron la discriminación y selección de los locales de su interés?
+*Preguntas complementarias:*
+- ¿Qué dificultad, si alguna, encontró al completar la tarea?
+- ¿Otorgaría permisos de ubicación a la plataforma? ¿Qué le daría confianza para hacerlo?
+- ¿Recomendaría esta experiencia a un amigo? ¿Por qué?
 
-#### Fase 4: Validación de la Solución Web Integrada e Impacto
-* Dado que toda la experiencia de geolocalización y alertas funciona de forma fluida directamente desde el navegador de su smartphone, ¿qué tan satisfactoria le resulta esta solución web responsive del 1 al 5, prescindiendo de la necesidad de descargar una app nativa?
-* ¿Considera que el mapa interactivo actual le brinda la claridad visual necesaria para planificar su ruta de compra de snacks orientales de forma eficiente?
+**Segmento Propietario de negocio**
 
-#### Fase 5: Cierre y Sugerencias
-* Con las mejoras de clusterización e interfaces responsive implementadas, ¿existe algún elemento visual adicional que sugeriría modificar para optimizar su experiencia de navegación?
+*Preguntas principales:*
+1. ¿Las métricas y gráficos del panel de rendimiento le resultaron comprensibles?
+2. ¿La información mostrada le ayudaría a justificar la inversión publicitaria en GeoPS?
+3. ¿El control de estado de las campañas (activar/pausar) respondió a lo que esperaba?
+4. ¿La administración de ofertas de una campaña le pareció sencilla de operar?
+
+*Preguntas complementarias:*
+- ¿El modo demo, sin necesidad de configurar una tienda real, aumentó su intención de usar la plataforma?
+- ¿Qué métrica adicional le gustaría ver en el panel?
+- ¿Qué le generó dudas o fricción durante la tarea?
 
 #### 8.3.4.2. Registro de Entrevistas. 
 
@@ -5974,10 +6109,58 @@ Asimismo, los paneles con indicadores simplificados, el sistema de recomendacion
 | **1** | Q6 | ¿Un modo demo sin necesidad de configurar tiendas físicas reales incrementa la intención de uso de la plataforma? |
 
 ## 8.5. Continuous Learning 
-### 8.5.1. Shareback Session Artifacts: Learning Workflow 
+
+## 8.5.1. Shareback Session Artifacts: Learning Workflow
+
+La Shareback Session es la instancia en la que el equipo consolida y comparte el aprendizaje generado por el ciclo experimental, transformando la evidencia recolectada en decisiones de producto. El flujo de aprendizaje aplicado por GeoPS Labs siguió cuatro etapas: **Recolectar → Interpretar → Decidir → Compartir**.
+
+### Flujo de aprendizaje (Learning Workflow)
+
+1. **Recolectar.** Se ejecutaron las entrevistas de validación con los dos segmentos objetivo (2 propietarios de negocio y 3 consumidores), midiendo la aceptación de las funcionalidades To-Be frente a las hipótesis de trabajo (8.2.1).
+2. **Interpretar.** Cada respuesta se contrastó con la hipótesis y su hipótesis nula, clasificando la evidencia como *a favor*, *en contra* o *insuficiente*.
+3. **Decidir.** Para cada pregunta se tomó una decisión de tipo **Perseverar** (la evidencia respalda la creencia), **Pivotar** (la evidencia la contradice) o **Profundizar** (se requiere más evidencia).
+4. **Compartir.** Los aprendizajes se registraron en el Question Backlog re-priorizado (8.4.2) y se comunicaron al equipo para alimentar el siguiente ciclo.
+
+### Tablero de aprendizajes (Shareback Board)
+
+| Experimento / Pregunta | Evidencia clave | Decisión | Aprendizaje |
+|---|---|---|---|
+| Web Push de proximidad (afluencia física) | Los consumidores valoran las alertas en tiempo real, pero manifiestan reservas ante los permisos de ubicación en segundo plano. | Profundizar | El valor percibido es alto; el reto es la comunicación del beneficio antes de solicitar el permiso. |
+| Canje QR (ROI para PyMEs) | Los propietarios reconocen la utilidad de medir canjes físicos para justificar su inversión publicitaria. | Perseverar | La transparencia en la medición es un factor de confianza decisivo para las PyMEs. |
+| Rutas temáticas (retención) | Los consumidores jóvenes muestran interés por la exploración guiada por circuitos. | Perseverar | La exploración temática reduce la sobrecarga cognitiva frente a la búsqueda genérica. |
+| Modo demo sin configuración real | La totalidad de los participantes valoró poder probar la plataforma sin configurar tiendas reales. | Perseverar | El modo demo reduce la fricción de adopción inicial y aumenta la intención de uso. |
+| Claridad de métricas del panel | Los propietarios comprendieron los gráficos y métricas de alcance mostrados. | Perseverar | La visualización clara del rendimiento sostiene la propuesta de valor para el segmento propietario. |
+
+### Próximos pasos derivados del aprendizaje
+
+- Rediseñar el flujo de solicitud de permisos de geolocalización comunicando el beneficio inmediato antes del prompt del navegador.
+- Priorizar la consolidación del canje QR como diferenciador de confianza para las PyMEs.
+- Mantener y ampliar el modo demo como puerta de entrada de nuevos usuarios.
+
 ## 8.6. To-Be Software Platform Pre-launch 
 ### 8.6.1. About-the-Product Intro Video 
+
 ### Matriz de Evaluación Etica y de Impacto 
+
+Esta matriz sustenta el **ABET – EAC – Student Outcome 4**, evidenciando las responsabilidades éticas y profesionales asumidas por el equipo y los juicios informados emitidos sobre el impacto de GeoPS en contextos globales, económicos, ambientales y sociales. Se toma como marco de referencia el Código de Ética de Ingeniería de Software ACM/IEEE y del Colegio de Ingenieros del Perú (CIP).
+
+| Dimensión | Impacto identificado | Decisión / acción del equipo | Evidencia en el proyecto |
+|---|---|---|---|
+| **Responsabilidad ética y profesional** (ACM/IEEE, CIP) | El manejo de datos de ubicación y de comercios exige transparencia y protección de la privacidad. | Publicación de Términos y Condiciones y del Acuerdo de Servicio (SaaS) accesibles desde el footer; solicitud explícita de permisos de geolocalización; almacenamiento de credenciales con hashing BCrypt y autenticación JWT. | Sección 5.2.4 (SaaS Agreement); contexto Identity (JWT + BCrypt) en el backend. |
+| **Impacto global** | La plataforma debe ser usable por audiencias diversas y en más de un idioma. | Adopción de internacionalización (i18n, en_US / es_419) en Landing y Frontend, y consideraciones de accesibilidad (a11y) con atributos ARIA en la experiencia web. | Frontend con `@ngx-translate`; atributos ARIA en componentes; secciones 4.2 y de accesibilidad. |
+| **Impacto económico** | Las PyMEs y comercios especializados destinan presupuesto limitado a publicidad y necesitan medir su retorno. | Modelo de publicidad hiperlocal de bajo costo y funcionalidades de medición del rendimiento de campañas y canje físico (QR) que permiten al comerciante justificar su inversión. | Contexto Campaign (métricas de campañas); experimentos de ROI (8.2.1). |
+| **Impacto ambiental** | El descubrimiento presencial ineficiente y la publicidad física (carteles, volantes) generan desplazamientos y residuos. | Solución 100% web que evita la distribución de material impreso y orienta al consumidor hacia comercios cercanos, reduciendo desplazamientos innecesarios. | Propuesta de valor hiperlocal; alcance web (sin app nativa) que reduce huella de distribución. |
+| **Impacto social** | La comunidad de comercios especializados y sus clientes requieren visibilidad equitativa frente a grandes cadenas. | Digitalización accesible de pequeños negocios, dando visibilidad a comercios de nicho y fortaleciendo el comercio local y la comunidad en torno a él. | Segmentos objetivo (1.3); User Personas y Journey Maps del Cap. II. |
+
+### Riesgos éticos y mitigaciones
+
+| Riesgo | Mitigación aplicada |
+|---|---|
+| Uso indebido o exposición de datos de geolocalización | Consentimiento explícito, mínima recolección de datos y comunicación del propósito de uso. |
+| Publicidad engañosa por parte de comercios | Validación de campañas activas y fechas; posibilidad de retirar ofertas y controlar su estado. |
+| Exclusión de usuarios con capacidades diferentes | Aplicación de principios de diseño inclusivo (a11y) y soporte multilingüe (i18n). |
+| Sobre-exposición del usuario a notificaciones | Ejecución de un solo experimento por usuario sobre un mismo tema y respeto a la no causación de daño. |
+
 
 ## Conclusiones
 
