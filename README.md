@@ -295,9 +295,9 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 ---
 
-## Part I: As-Is Software Project
+# Part I: As-Is Software Project
 
-## Capítulo 1: Introducción
+# Capítulo I: Introducción
 
 ### 1.1. Startup Profile
 
@@ -568,7 +568,7 @@ El mercado de productos orientales en el Perú se sustenta en un crecimiento rob
 
 ---
 
-## Capitulo 2: Requirements Elicitation & Analysis
+# Capitulo II: Requirements Elicitation & Analysis
 ### 2.1. Competidores
 #### 2.1.1. Analisis competitivo
 
@@ -899,7 +899,7 @@ En esta sección el equipo representa la experiencia **actual** de cada User Per
 
 ---
 
-## Capitulo 3: Requirements Specification 
+# Capitulo III: Requirements Specification 
 
 ### 3.1. To-Be Scenario Mapping
 
@@ -927,7 +927,7 @@ En esta sección el equipo representa la experiencia **futura** de cada User Per
 | **Thinking** | "Puedo empezar sin complicaciones, incluso con el modo demo." | "Publico mi promoción segmentada por cercanía." | "Mi oferta llega a clientes reales del vecindario." | "Ahora sí veo cuántos vieron y canjearon mi oferta." | "Invierto donde veo resultados." |
 | **Feeling** | 🟢 Facilidad | 🟢 Control | 🟢 Confianza | 🟢 Claridad | 🟢 Tranquilidad |
 
-### 3.1. User Stories
+### 3.2. User Stories
 
 Las User Stories representan las necesidades y expectativas de los usuarios finales expresadas en un lenguaje sencillo y centrado en su valor.  
 A través de ellas se traduce lo que los usuarios quieren lograr al usar el producto, asegurando que las funcionalidades desarrolladas estén alineadas con sus objetivos reales.
@@ -946,7 +946,7 @@ A través de ellas se traduce lo que los usuarios quieren lograr al usar el prod
 **Tabla 7**   
 *User Stories — Especificación de requerimientos funcionales de GeoPS*
 
-### 3.1.2. User Stories
+### 3.2.2. User Stories
 
 EP01: Gestión de Cuentas y Accesos
 
@@ -1342,7 +1342,7 @@ Están orientadas al equipo de desarrollo y especifican aspectos relacionados co
 
 *Nota.* Elaboración propia.
 
-### 3.2. Impact Mapping
+### 3.3. Impact Mapping
 
 El Impact Mapping es una técnica de planificación estratégica que conecta los objetivos del negocio con los entregables del producto. Ayuda a visualizar cómo las funcionalidades contribuyen a alcanzar los resultados esperados, identificando actores, impactos deseados y soluciones clave.
 
@@ -1355,7 +1355,7 @@ El Impact Mapping es una técnica de planificación estratégica que conecta los
 
 *Nota.* Elaboración propia (realizado en Uxpressia).
 
-### 3.3. Product Backlog
+### 3.4. Product Backlog
 
 El **Product Backlog** es una lista priorizada de funcionalidades, mejoras y requisitos técnicos que guiarán la evolución del producto.  
 Su propósito es organizar el trabajo en función del valor que aporta al usuario y al negocio, sirviendo como una hoja de ruta flexible y adaptable durante el desarrollo.
@@ -1397,7 +1397,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 
 ---
 
-## Capítulo 4: Product Design
+# Capítulo IV: Product Design
 
 ### 4.1. Style Guidelines
 
@@ -3398,7 +3398,7 @@ La persistencia se centra en las entidades principales del sistema y en las rela
 
 El diseño prioriza la simplicidad, la integridad de datos y la alineación con el backend actualmente implementado. Funcionalidades como pagos, carritos, cupones, favoritos, reseñas, notificaciones avanzadas, cache distribuido o geolocalización avanzada pueden considerarse como extensiones futuras del sistema.
 
-## Capítulo 5: Product Implementation
+# Capítulo V: Product Implementation
 
 A continuación, se presentará un repositorio central y organizado que servirá como guía para el desarrollo enfocado y consistente de nuestra solución GeoPS.
 
@@ -4096,7 +4096,7 @@ La implementación de código fuente se rigió bajo el modelo GitFlow y Conventi
 **Enlace Video About The Product - GeoPs:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318049_upc_edu_pe/IQClpsJt1lv0SJVXaTq_7_RwAZulho-4j7SJR3cHofT9Bpo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pc3X8P
 
 
-# Capítulo 6: Product Verification & Validation
+# Capítulo VI: Product Verification & Validation
 
 ## 6.1. Testing Suites & Validation
 
@@ -4761,7 +4761,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 | **Heurística / Principio violado** | Ética y responsabilidad profesional — Seguridad |
 | **Problema** | El backend expone la clave secreta usada para firmar los JSON Web Tokens directamente en un archivo versionado del repositorio público. Cualquiera con acceso al repositorio puede forjar tokens válidos y suplantar usuarios, comprometiendo toda la autenticación de la plataforma. |
 | **Evidencia (código)** | Backend › `src/main/resources/application.properties` (líneas 32–33): `jwt.secret=SEMSSecretKeyForJWTTokenGenerationAndValidation2025` (Incluir captura). |
-| **Recomendación** | Externalizar el secreto mediante variable de entorno (`${JWT_SECRET}`); rotar la clave comprometida; eliminarla del historial de Git. El equipo ya usa `.env` en `.gitignore`: basta mover el secreto ahí. |
+| **Recomendación** | Externalizar el secreto mediante variable de entorno (`JWT_SECRET`); rotar la clave comprometida; eliminarla del historial de Git. El equipo ya usa `.env` en `.gitignore`: basta mover el secreto ahí. |
 
 | PROBLEMA N.° 5 | WebSocket con CORS abierto a cualquier origen (Backend) |
 |---|---|
@@ -5099,7 +5099,7 @@ Se revisó la documentación correspondiente al análisis de resultados y al pro
 #### 6.4.3.4. Resumen de modificaciones para subsanar hallazgos. 
 
 
-# Capítulo 7: DevOps Practices
+# Capítulo VII: DevOps Practices
 
 ## 7.1. Continuous Integration
 
@@ -5176,7 +5176,52 @@ El objetivo de **Continuous Deployment (CD)** es que los cambios aprobados pasen
 2. **Despliegue en Hosting:** Implementación automática en los servidores de Firebase tras pasar las pruebas unitarias.
 3. **Invalidación de Caché:** Limpieza automática de caché para que los usuarios de **GeoPS** reciban la versión más reciente al instante.
 
-# Capítulo 8: Experiment-Driven Development
+## 7.4. Continuous Monitoring 
+
+### 7.4.1. Tools and Practices 
+En **GeoPS Labs**, el monitoreo continuo se enfoca en garantizar la alta disponibilidad de la API, la estabilidad de la interfaz web y la detección temprana de excepciones de negocio. Dado que el backend implementa patrones complejos como **DDD y CQRS**, la observabilidad es clave para rastrear el flujo correcto de los *Commands* y *Queries* a través de las capas del sistema.
+
+| Herramienta | Tipo | Descripción | Propósito |
+| :--- | :--- | :--- | :--- |
+| **Spring Boot Actuator** | Telemetría (Backend) | Módulo nativo de Spring Boot incluido en el `pom.xml` de `geops-api`. | Exponer los endpoints de salud (`/actuator/health`) y métricas de consumo de hilos, base de datos y memoria JVM. |
+| **Sentry SDK (Java/Angular)** | Monitoreo de Errores (APM) | Integración multiplataforma en ambos repositorios. | Capturar excepciones no controladas en Angular (errores de UI o fallos de conexión) y excepciones críticas en los servicios de aplicación del backend. |
+| **Logback / Slf4j** | Registro (Logging) | Framework de logging estándar integrado en Spring Boot. | Generar trazas estructuradas durante la ejecución de los casos de uso (`Identity`, `Campaign`, `Offers`). |
+| **UptimeRobot** | Disponibilidad | Servicio externo de monitoreo sintético. | Validar la disponibilidad 24/7 de los controladores REST mediante sondeos HTTP cada 5 minutos. |
+
+#### Best Practices Implemented
+* **Structured Exception Logging:** Toda excepción lanzada por los validadores o fallos en el dominio (como errores de autenticación JWT o fallos al crear campañas) se registra de forma estructurada con su respectivo nivel de severidad (`WARN` o `ERROR`).
+* **Health Check Probing:** Uso del endpoint público de Actuator para que los orquestadores de contenedores (Docker) verifiquen si la instancia de la API está sana o requiere un reinicio automático.
+* **Front-End Error Catching:** Captura global de errores en Angular mediante un `ErrorHandler` personalizado que envía los *stack traces* directamente a Sentry, incluyendo el contexto del navegador del usuario.
+
+### 7.4.2. Monitoring Pipeline Components 
+Este pipeline se encarga de la recolección activa y pasiva de los datos de comportamiento e infraestructura de **GeoPS**:
+
+1. **Ingesta de Métricas de la JVM:** Spring Boot Actuator recopila el estado de la máquina virtual de Java, el uso de CPU y el estado del pool de conexiones JPA/Hibernate hacia MySQL.
+2. **Colector de Eventos de la UI:** El frontend de Angular intercepta fallos de red (códigos HTTP 4xx o 5xx) a través de sus *Interceptors* y reporta las anomalías en tiempo real.
+3. **Persistencia de Trazas (Logs):** Los logs generados por el contenedor Docker de la API se centralizan en la plataforma de despliegue para permitir auditorías rápidas sobre operaciones sensibles (como el registro de usuarios o edición de campañas).
+
+<div align="center">
+    <img src="resources/imgs/chapter-vii/diagrama-pipeline-components.png" 
+    alt="Pipeline Architecture Diagram" width="700">
+</div>
+
+### 7.4.3. Alerting Pipeline Components 
+Este componente procesa los datos monitoreados y decide de manera inteligente si el comportamiento del sistema requiere la intervención inmediata del equipo de desarrollo de GeoPS Labs:
+
+1. **Filtro de Excepciones DDD/CQRS:** Sentry clasifica las anomalías recolectadas de forma automática. Las excepciones por validación de negocio (por ejemplo, datos inválidos o mal formateados en un `CreateCampaignCommand`) se clasifican como advertencias (`Warning`). Por el contrario, los fallos de infraestructura, como la pérdida de conexión a la base de datos o fallos de tokens expirados en el backend, se elevan instantáneamente a estado `Critical`.
+2. **Evaluación de Umbrales de Infraestructura:** Se establece un disparador automático en el orquestador si el contenedor Docker de la API (`geops-api`) sobrepasa el **85%** de uso de memoria RAM asignada de forma sostenida por un lapso mayor a 3 minutos.
+3. **Mecanismo Anti-Falso Positivo:** UptimeRobot requiere que cualquier fallo de respuesta HTTP (códigos 5xx o timeout) en el endpoint público de la API sea confirmado de forma simultánea desde tres nodos geográficos distintos antes de activar formalmente una alerta general.
+
+### 7.4.4. Notification Pipeline Components. 
+Una vez que el pipeline de alertas valida y confirma una anomalía real, este flujo distribuye la información de manera eficiente para mitigar los tiempos de respuesta y resolución:
+
+1. **Enriquecimiento del Evento:** Sentry y los recolectores de logs empaquetan la alerta añadiendo metadatos contextuales clave de forma automática: entorno afectado (`develop` o `main`), el endpoint específico del fallo (ej. `/api/v1/auth/signin`), el stack trace del error y el ID del último commit de GitHub asociado.
+2. **Despacho vía Webhooks (Slack/Discord):** Envío inmediato de la alerta en formato enriquecido e interactivo a los canales de comunicación internos dedicados al equipo de ingeniería y DevOps de GeoPS Labs.
+3. **Protocolo de Escalabilidad por Correo (SMTP):** Si una alerta catalogada con severidad `Critical` o `Fatal` (como la caída total del servicio de la API) no recibe una confirmación de recepción manual ("Acknowledge") por parte de un desarrollador en un lapso de 15 minutos, el pipeline escala de forma automatizada enviando correos electrónicos de alta prioridad con alertas persistentes a los líderes técnicos del proyecto.
+
+# Part III: Experiment-Driven Lifecycle 
+
+# Capítulo VIII: Experiment-Driven Development 
 
 ## 8.1. Experiment Planning
 
@@ -5354,8 +5399,8 @@ Las variables e indicadores cuantitativos que se emplearán para contrastar las 
 
 Para garantizar la validez científica de los resultados de la investigación y minimizar los errores atribuibles al azar durante la evaluación de la escala, se establecen formalmente los siguientes parámetros estadísticos que rigen la precisión y certeza del diseño:
 
-* **Nivel de Significación ($\alpha$):** Establecido en un **5%** para prevenir errores de Tipo I (falsos positivos), asegurando que el éxito detectado no sea producto del azar.
-* **Potencia Estadística ($1-\beta$):** Definida en un **80%** para mitigar el riesgo de cometer errores de Tipo II (falsos negativos), garantizando que la plataforma detecte los impactos reales si estos existen.
+* **Nivel de Significación :** Establecido en un **5%** para prevenir errores de Tipo I (falsos positivos), asegurando que el éxito detectado no sea producto del azar.
+* **Potencia Estadística :** Definida en un **80%** para mitigar el riesgo de cometer errores de Tipo II (falsos negativos), garantizando que la plataforma detecte los impactos reales si estos existen.
 * **Efecto Mínimo Detectable (MDE):** Se determina que la magnitud mínima de cambio estructural que justifica la inversión técnica, operativa e infraestructura para escalar una funcionalidad experimental de forma definitiva a producción es un incremento absoluto del **5%** sobre los promedios base.
 
 A continuación, se detalla la matriz operacional de decisiones de escala para evaluar el éxito de los 5 experimentos planificados:
@@ -5385,7 +5430,7 @@ Dada la naturaleza de GeoPS como plataforma responsiva de uso en exteriores, la 
 * **PWA (Progressive Web App):** 100/100 – Cumplimiento absoluto de los manifiestos y *Service Workers* necesarios para habilitar el envío de notificaciones push en segundo plano e incentivar la opción "Agregar a la pantalla de inicio".
 * **Best Practices (Buenas Prácticas):** 100/100 – Ejecución estricta bajo cifrado HTTPS, requisito de seguridad obligatorio e ineludible en la ingeniería moderna para que los navegadores móviles autoricen el uso de las APIs de Geolocalización y Cámara.
 
-### 8.2.8. Web and Mobile Tracking Plan
+### 8.2.8. Web Tracking Plan
 
 El plan de monitoreo analítico del comportamiento de los experimentos web en dispositivos móviles se estructurará en fases progresivas:
 
@@ -5468,349 +5513,6 @@ Se detalla la incorporación orgánica de los tickets asociados a las funcionali
 | **18** | **GEOP-UA15** | Servicio Frontend de Interfaz Nocturna Global | Creación del servicio de escucha de estados CSS en Angular y parametrización de la paleta de colores oscuros estandarizados. | **2** |
 | **19** | **GEOP-UA16** | Generador de Enlaces Cortos de Recomendación | Acoplamiento de la API nativa de compartición del navegador móvil (`Web Share API`) y estructuración de parámetros de rastreo orgánico. | **2** |
 
-## 7.4. Continuous Monitoring 
-
-### 7.4.1. Tools and Practices 
-En **GeoPS Labs**, el monitoreo continuo se enfoca en garantizar la alta disponibilidad de la API, la estabilidad de la interfaz web y la detección temprana de excepciones de negocio. Dado que el backend implementa patrones complejos como **DDD y CQRS**, la observabilidad es clave para rastrear el flujo correcto de los *Commands* y *Queries* a través de las capas del sistema.
-
-| Herramienta | Tipo | Descripción | Propósito |
-| :--- | :--- | :--- | :--- |
-| **Spring Boot Actuator** | Telemetría (Backend) | Módulo nativo de Spring Boot incluido en el `pom.xml` de `geops-api`. | Exponer los endpoints de salud (`/actuator/health`) y métricas de consumo de hilos, base de datos y memoria JVM. |
-| **Sentry SDK (Java/Angular)** | Monitoreo de Errores (APM) | Integración multiplataforma en ambos repositorios. | Capturar excepciones no controladas en Angular (errores de UI o fallos de conexión) y excepciones críticas en los servicios de aplicación del backend. |
-| **Logback / Slf4j** | Registro (Logging) | Framework de logging estándar integrado en Spring Boot. | Generar trazas estructuradas durante la ejecución de los casos de uso (`Identity`, `Campaign`, `Offers`). |
-| **UptimeRobot** | Disponibilidad | Servicio externo de monitoreo sintético. | Validar la disponibilidad 24/7 de los controladores REST mediante sondeos HTTP cada 5 minutos. |
-
-#### Best Practices Implemented
-* **Structured Exception Logging:** Toda excepción lanzada por los validadores o fallos en el dominio (como errores de autenticación JWT o fallos al crear campañas) se registra de forma estructurada con su respectivo nivel de severidad (`WARN` o `ERROR`).
-* **Health Check Probing:** Uso del endpoint público de Actuator para que los orquestadores de contenedores (Docker) verifiquen si la instancia de la API está sana o requiere un reinicio automático.
-* **Front-End Error Catching:** Captura global de errores en Angular mediante un `ErrorHandler` personalizado que envía los *stack traces* directamente a Sentry, incluyendo el contexto del navegador del usuario.
-
-### 7.4.2. Monitoring Pipeline Components 
-Este pipeline se encarga de la recolección activa y pasiva de los datos de comportamiento e infraestructura de **GeoPS**:
-
-1. **Ingesta de Métricas de la JVM:** Spring Boot Actuator recopila el estado de la máquina virtual de Java, el uso de CPU y el estado del pool de conexiones JPA/Hibernate hacia MySQL.
-2. **Colector de Eventos de la UI:** El frontend de Angular intercepta fallos de red (códigos HTTP 4xx o 5xx) a través de sus *Interceptors* y reporta las anomalías en tiempo real.
-3. **Persistencia de Trazas (Logs):** Los logs generados por el contenedor Docker de la API se centralizan en la plataforma de despliegue para permitir auditorías rápidas sobre operaciones sensibles (como el registro de usuarios o edición de campañas).
-
-<div align="center">
-    <img src="resources/imgs/chapter-vii/diagrama-pipeline-components.png" 
-    alt="Pipeline Architecture Diagram" width="700">
-</div>
-
-### 7.4.3. Alerting Pipeline Components 
-Este componente procesa los datos monitoreados y decide de manera inteligente si el comportamiento del sistema requiere la intervención inmediata del equipo de desarrollo de GeoPS Labs:
-
-1. **Filtro de Excepciones DDD/CQRS:** Sentry clasifica las anomalías recolectadas de forma automática. Las excepciones por validación de negocio (por ejemplo, datos inválidos o mal formateados en un `CreateCampaignCommand`) se clasifican como advertencias (`Warning`). Por el contrario, los fallos de infraestructura, como la pérdida de conexión a la base de datos o fallos de tokens expirados en el backend, se elevan instantáneamente a estado `Critical`.
-2. **Evaluación de Umbrales de Infraestructura:** Se establece un disparador automático en el orquestador si el contenedor Docker de la API (`geops-api`) sobrepasa el **85%** de uso de memoria RAM asignada de forma sostenida por un lapso mayor a 3 minutos.
-3. **Mecanismo Anti-Falso Positivo:** UptimeRobot requiere que cualquier fallo de respuesta HTTP (códigos 5xx o timeout) en el endpoint público de la API sea confirmado de forma simultánea desde tres nodos geográficos distintos antes de activar formalmente una alerta general.
-
-### 7.4.4. Notification Pipeline Components. 
-Una vez que el pipeline de alertas valida y confirma una anomalía real, este flujo distribuye la información de manera eficiente para mitigar los tiempos de respuesta y resolución:
-
-1. **Enriquecimiento del Evento:** Sentry y los recolectores de logs empaquetan la alerta añadiendo metadatos contextuales clave de forma automática: entorno afectado (`develop` o `main`), el endpoint específico del fallo (ej. `/api/v1/auth/signin`), el stack trace del error y el ID del último commit de GitHub asociado.
-2. **Despacho vía Webhooks (Slack/Discord):** Envío inmediato de la alerta en formato enriquecido e interactivo a los canales de comunicación internos dedicados al equipo de ingeniería y DevOps de GeoPS Labs.
-3. **Protocolo de Escalabilidad por Correo (SMTP):** Si una alerta catalogada con severidad `Critical` o `Fatal` (como la caída total del servicio de la API) no recibe una confirmación de recepción manual ("Acknowledge") por parte de un desarrollador en un lapso de 15 minutos, el pipeline escala de forma automatizada enviando correos electrónicos de alta prioridad con alertas persistentes a los líderes técnicos del proyecto.
-
-# Part III: Experiment-Driven Lifecycle 
-# Capítulo VIII: Experiment-Driven Development 
-## 8.1. Experiment Planning
-
-### 8.1.1. As-Is Summary
-
-La plataforma web actual, GeoPS, se enfoca en ofrecer una solución responsiva para conectar comercios de productos orientales y asiáticos (gastronomía, cosmética K-Beauty y minimarkets de importación) con consumidores en Lima Moderna (San Borja, Lince y el Barrio Chino) mediante mapas interactivos y geolocalización. Actualmente, se ha completado el flujo base: el registro de usuarios, la publicación de campañas publicitarias por parte de las PyMEs y la visualización geográfica de ofertas.
-
-No obstante, al tratarse de una arquitectura 100% web que se ejecuta desde el navegador móvil (sin una aplicación nativa instalable), la retención del usuario en el ecosistema digital y la conversión real hacia el tráfico peatonal en las tiendas físicas presentan debilidades críticas que ponen en riesgo la sostenibilidad del modelo de negocio.
-
-**Problemas identificados:**
-
-* **Baja retención operativa:** Al no ser una aplicación instalada en el sistema operativo, los consumidores dependen de recordar la URL o mantener una pestaña activa en su navegador, reduciendo las visitas recurrentes.
-* **Ausencia de métricas de conversión física (ROI):** Los comerciantes visualizan interacciones en la web (impresiones o clics), pero carecen de una herramienta automatizada que demuestre cuántas visitas web se tradujeron en transacciones dentro de la tienda física.
-* **Sobrecarga visual en la interfaz:** El mapa web muestra todos los comercios simultáneamente, lo que genera fatiga cognitiva en pantallas móviles reducidas y dificulta la exploración especializada.
-* **Falta de optimización para uso nocturno:** Gran parte de las búsquedas de locales gastronómicos (como restaurantes de ramen o buffets) ocurre en las tardes y noches en la vía pública, donde el brillo de la interfaz clara genera fatiga visual en exteriores de baja iluminación.
-* **Ausencia de mecanismos de viralidad orgánica:** La plataforma no cuenta con canales simplificados para que la comunidad de entusiastas comparta cupones específicos, limitando la adquisición de nuevos usuarios a la publicidad tradicional.
-
-**Objetivos de mejora:**
-
-* **Estimular la interacción proactiva:** Implementar notificaciones web de proximidad que alerten al usuario mediante un *Service Worker*, incluso con el navegador cerrado.
-* **Cerrar el ciclo de conversión Online-to-Offline (O2O):** Desarrollar un validador de códigos QR basado en la web para los establecimientos comerciales.
-* **Optimizar la experiencia de descubrimiento:** Organizar circuitos y rutas temáticas culturales en el mapa responsivo.
-* **Adaptar la interfaz al contexto del usuario:** Incorporar un selector de interfaz nocturna (modo oscuro) enfocado en el comportamiento de consumo nocturno.
-* **Apalancar el crecimiento orgánico:** Crear un sistema de cupones favoritos compartibles mediante enlaces web cortos y optimizados para redes sociales.
-
-### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
-
-**Assumptions (Suposiciones):**
-
-* **Aceptación de Permisos Web:** Se asume que los consumidores otorgarán permisos de ubicación y notificaciones a GeoPS dentro de sus navegadores móviles (Chrome/Safari) si se les comunica un beneficio inmediato en forma de descuentos.
-* **Viabilidad Tecnológica WebRTC:** Se asume que los navegadores móviles de los comerciantes proveerán un acceso fluido a la cámara mediante estándares HTML5 para escanear códigos QR sin ralentizar sus operaciones diarias.
-* **Valor de las Rutas de Nicho:** Se asume que los usuarios pertenecientes a la comunidad entusiasta de la cultura asiática prefieren la exploración guiada (ej. "Ruta del Ramen") sobre la búsqueda genérica.
-* **Impacto de la Interfaz Nocturna:** Se asume que habilitar un tema oscuro incrementará el tiempo de retención en la plataforma web durante los horarios de mayor consumo gastronómico (18:00 a 23:00 horas).
-* **Disposición a Compartir:** Se asume que los consumidores compartirán enlaces de ofertas con amigos a través de aplicaciones de mensajería instantánea si el proceso requiere un solo clic.
-
-**Knowledge Gaps (Brechas de conocimiento):**
-
-* Se desconoce el porcentaje exacto de usuarios que bloqueará la solicitud nativa de geolocalización en segundo plano del navegador móvil.
-* Carecemos de datos sobre la compatibilidad y velocidad de respuesta de la API WebRTC en dispositivos móviles de gama baja utilizados por algunos microempresarios.
-
-**Ideas:**
-
-* **Geofencing vía Web Push:** Enviar alertas hiperlocales automáticas utilizando la API de Geolocalización y un *Service Worker* cuando el usuario transite a menos de 500 metros de una campaña activa.
-* **Módulo de Canje QR Web:** Crear un generador de fichas dinámicas para el cliente y un lector de cámara web integrado en el panel del comerciante.
-* **Filtros de Circuitos Culturales:** Implementar capas temáticas conmutables en el mapa interactivo para agrupar comercios afines.
-* **Modo Oscuro Contextual:** Desarrollar un selector de hojas de estilo (CSS) para alternar temas visuales según la preferencia del usuario o el horario del sistema.
-* **Enlaces de Recomendación Viral:** Programar un codificador de enlaces cortos que asocie el ID de una oferta a un formato compartible en redes sociales.
-
-**Claims (Afirmaciones):**
-
-* Un mecanismo transparente de validación por código QR web mitigará la desconfianza de las PyMEs sobre la efectividad publicitaria de GeoPS.
-* Las alertas proactivas por proximidad en el navegador incrementarán las visitas presenciales a las tiendas en al menos un 15%, contrarrestando la falta de una aplicación nativa.
-
-### 8.1.3. Experiment-Ready Questions
-
-| Question | Confidence | Risk | Impact | Interest | Total Score |
-| --- | --- | --- | --- | --- | --- |
-| ¿Aumentará la afluencia física a las tiendas si implementamos **Web Push Notifications** hiperlocalizadas (radio 500m)? | 7 | 6 | 9 | 8 | **30** |
-| ¿Mejorará la medición del ROI publicitario para las PyMEs integrando un sistema de **canje QR vía WebRTC** en el navegador? | 8 | 4 | 8 | 8 | **28** |
-| ¿Aumentará la retención web de los consumidores si agregamos filtros de **Rutas Temáticas (Mapas de Nicho)**? | 6 | 2 | 6 | 7 | **21** |
-| ¿Se incrementará la duración de la sesión nocturna en exteriores si añadimos un **selector de Modo Oscuro**? | 8 | 2 | 5 | 6 | **21** |
-| ¿Disminuirá el costo de adquisición de usuarios si permitimos generar **Enlaces de Ofertas Favoritas Compartibles**? | 6 | 3 | 7 | 5 | **21** |
-
-### 8.1.4. Question Backlog
-
-| Prioridad (1,2,3,5,8) | Pregunta |
-| --- | --- |
-| 1 | ¿Aumentará la afluencia física a las tiendas si implementamos Web Push Notifications hiperlocalizadas (radio 500m)? |
-| 2 | ¿Mejorará la medición del ROI publicitario para las PyMEs integrando un sistema de canje QR vía WebRTC en el navegador? |
-| 3 | ¿Aumentará la retención web de los consumidores si agregamos filtros de Rutas Temáticas (Mapas de Nicho)? |
-| 5 | ¿Se incrementará la duración de la sesión nocturna en exteriores si añadimos un selector de Modo Oscuro? |
-| 8 | ¿Disminuirá el costo de adquisición de usuarios si permitimos generar Enlaces de Ofertas Favoritas Compartibles? |
-
-### 8.1.5. Experiment Cards
-
-| Question | ¿Aumentará la afluencia física a las tiendas si implementamos Web Push Notifications hiperlocalizadas? |
-| --- | --- |
-| **Why** | Al depender exclusivamente del ingreso manual del usuario a la URL, se pierden las ventanas de compra impulsiva en la calle. Las alertas basadas en la ubicación física capturan al cliente en el contexto geográfico idóneo. |
-| **What** | Desarrollar un módulo de geofencing en Angular que utilice un *Service Worker* para enviar alertas push a través del navegador móvil cuando se detecte al usuario en un radio de 500 metros de una PyME con promociones vigentes. |
-| **Hypothesis** | Se espera que la habilitación de alertas de proximidad web incremente la tasa de retorno a la plataforma en un 20% y genere un aumento del 15% en las visitas presenciales reportadas por los establecimientos afiliados. |
-
-| Question | ¿Mejorará la medición del ROI publicitario para las PyMEs integrando un sistema de canje QR vía WebRTC en el navegador? |
-| --- | --- |
-| **Why** | Las PyMEs requieren evidencia empírica del valor de la plataforma. Validar las ofertas en el punto de venta físico mediante una solución web ágil consolida la confianza comercial y justifica el modelo de suscripción. |
-| **What** | Implementar un generador de códigos QR temporales en la vista del consumidor y un escáner basado en HTML5 (API WebRTC) dentro del panel web del comerciante conectado al endpoint del backend `/offers/redeem`. |
-| **Hypothesis** | Se espera que el 60% de los comercios afiliados adopte el escaneo de códigos QR desde su navegador móvil durante el primer mes de despliegue, registrando transacciones físicas directamente en su panel de control. |
-
-| Question | ¿Aumentará la retención web de los consumidores si agregamos filtros de Rutas Temáticas (Mapas de Nicho)? |
-| --- | --- |
-| **Why** | La visualización masiva de puntos en el mapa satura al usuario. Agrupar los comercios asiáticos bajo circuitos culturales estructurados facilita la navegación y estimula la exploración de múltiples locales en una sola salida. |
-| **What** | Desarrollar un controlador de filtros en el mapa interactivo de Angular que segregue los comercios en circuitos exclusivos (ej. "Circuito K-Beauty", "Ruta Gastronómica Ramen") mediante consultas optimizadas a la base de datos. |
-| **Hypothesis** | Se espera que la introducción de circuitos culturales aumente la interacción con el mapa web en un 25% y prolongue el tiempo de sesión promedio de los usuarios en un 15%. |
-
-| Question | ¿Se incrementará la duración de la sesión nocturna en exteriores si añadimos un selector de Modo Oscuro? |
-| --- | --- |
-| **Why** | Los usuarios que buscan locales asiáticos en la vía pública durante la tarde o noche sufren fatiga visual debido al contraste excesivo de las pantallas claras en entornos oscuros, lo que provoca el abandono prematuro de la web. |
-| **What** | Implementar un selector de temas en el frontend utilizando variables globales de CSS coordinadas con un servicio de Angular, permitiendo alternar entre el tema claro tradicional y una interfaz nocturna de alto contraste. |
-| **Hypothesis** | Se espera que la disponibilidad de la interfaz nocturna aumente en un 25% la duración promedio de las sesiones web móviles ejecutadas en el rango horario de 18:00 a 23:00 horas. |
-
-| Question | ¿Disminuirá el costo de adquisición de usuarios si permitimos generar Enlaces de Ofertas Favoritas Compartibles? |
-| --- | --- |
-| **Why** | El crecimiento orgánico dentro de comunidades de nicho cultural es altamente efectivo. Proveer un mecanismo directo para compartir ofertas selectas potencia la viralidad de la plataforma web sin incurrir en costos de pauta adicionales. |
-| **What** | Añadir un botón de "Compartir" en la vista detallada de ofertas que invoque la API nativa de intercambio del navegador (`navigator.share`) o genere un enlace web corto con parámetros de recomendación integrados. |
-| **Hypothesis** | Se postula que al menos el 15% de los nuevos registros semanales en la plataforma se originarán orgánicamente a través de los enlaces compartidos por los usuarios actuales. |
-
----
-
-## 8.2. Experiment Design
-
-### 8.2.1. Hypotheses
-
-| Atributo | Detalle de la Hipótesis: Experimento 1 (Alertas de Proximidad) |
-| --- | --- |
-| **Question** | ¿Aumentará la afluencia física a las tiendas si implementamos Web Push Notifications hiperlocalizadas (radio 500m)? |
-| **Belief** | Creemos que interceptar proactivamente al consumidor con un cupón relevante en el momento exacto en que transita cerca del local comercial mitigará el olvido de la plataforma y motivará la visita física. |
-| **Hypothesis** | La habilitación de notificaciones web push basadas en geofencing incrementará la Tasa de Clics (CTR) en un 15% en comparación con la visualización orgánica pasiva dentro de la aplicación web. |
-| **Null Hypothesis** | Las alertas web push de proximidad no generarán un cambio estadísticamente significativo en la Tasa de Clics o serán bloqueadas por los usuarios, manteniendo el CTR idéntico a la navegación base. |
-
-| Atributo | Detalle de la Hipótesis: Experimento 2 (Canje QR) |
-| --- | --- |
-| **Question** | ¿Mejorará la medición del ROI publicitario para las PyMEs integrando un sistema de canje QR vía WebRTC en el navegador? |
-| **Belief** | Brindar una funcionalidad directa en el navegador móvil del comerciante para escanear y validar transacciones físicas demostrará empíricamente el volumen de ventas impulsado por GeoPS. |
-| **Hypothesis** | El sistema de validación por código QR registrará una Tasa de Canje Físico de al menos el 25% sobre el volumen total de ofertas previamente guardadas por los consumidores. |
-| **Null Hypothesis** | La fricción asociada a conceder permisos de cámara al navegador o la falta de adopción operativa por parte del comerciante resultará en una Tasa de Canje Físico inferior al 5%. |
-
-| Atributo | Detalle de la Hipótesis: Experimento 3 (Rutas Temáticas) |
-| --- | --- |
-| **Question** | ¿Aumentará la retención web de los consumidores si agregamos filtros de Rutas Temáticas (Mapas de Nicho)? |
-| **Belief** | Agrupar los comercios bajo circuitos especializados reducirá la sobrecarga cognitiva en pantallas móviles y aumentará el interés por descubrir locales adyacentes del mismo rubro. |
-| **Hypothesis** | La implementación de circuitos temáticos en el mapa incrementará el Tiempo Promedio de Sesión en un 15% general en dispositivos móviles. |
-| **Null Hypothesis** | Los filtros por rutas no alterarán los patrones de exploración de los usuarios, manteniendo el Tiempo Promedio de Sesión sin variaciones significativas frente al diseño genérico anterior. |
-
-| Atributo | Detalle de la Hipótesis: Experimento 4 (Modo Oscuro) |
-| --- | --- |
-| **Question** | ¿Se incrementará la duración de la sesión nocturna en exteriores si añadimos un selector de Modo Oscuro? |
-| **Belief** | Reducir la fatiga visual mediante una paleta de colores optimizada para baja luminosidad incrementará el confort del usuario mientras camina por los distritos comerciales de noche. |
-| **Hypothesis** | El uso del modo oscuro aumentará la duración promedio de las sesiones nocturnas (18:00 a 23:00) en exteriores en un 25% en comparación con la interfaz de fondo claro. |
-| **Null Hypothesis** | El cambio en la paleta de colores de la interfaz no afectará la permanencia del usuario, registrando la misma duración de sesión nocturna que la versión base. |
-
-| Atributo | Detalle de la Hipótesis: Experimento 5 (Enlaces Compartibles) |
-| --- | --- |
-| **Question** | ¿Disminuirá el costo de adquisición de usuarios si permitimos generar Enlaces de Ofertas Favoritas Compartibles? |
-| **Belief** | Facilitar la difusión directa de las ofertas exclusivas mediante enlaces web ligeros y optimizados para aplicaciones de mensajería detonará el crecimiento orgánico dentro de las comunidades de nicho. |
-| **Hypothesis** | El sistema de enlaces compartibles alcanzará una Tasa de Conversión por Recomendación superior al 15% sobre el total de nuevos usuarios registrados semanalmente. |
-| **Null Hypothesis** | Los enlaces compartidos no generarán tráfico efectivo o los nuevos visitantes no completarán el registro, manteniendo la tasa de adquisición orgánica por debajo del umbral de significancia. |
-
-### 8.2.2. Domain Business Metrics
-
-Para mitigar el riesgo de fundamentar decisiones estratégicas en métricas irrelevantes o de vanidad, las hipótesis de experimentación de GeoPS se vinculan directamente a los objetivos comerciales a través de las siguientes métricas de dominio. Las métricas aquí definidas constituyen los únicos indicadores autorizados para evaluar las condiciones operacionales de las *Experiment Cards*.
-
-| Nombre de la Métrica | Descripción y Justificación | Fórmula de Cálculo | Técnica de Recolección | Meta Deseada |
-| --- | --- | --- | --- | --- |
-| **Tasa de Clics (CTR) en Web Push** | Mide la efectividad de las alertas de proximidad web para atraer la atención del usuario e incentivarlo a explorar una promoción en tiempo real cuando transita cerca del comercio. | `(Número de clics efectuados en las notificaciones web / Total de notificaciones web entregadas con éxito) * 100` | Registro de eventos personalizados mediante Google Analytics 4 embebidos dentro del flujo del *Service Worker* en Angular. | **> 10.0%** |
-| **Tasa de Aceptación de Permisos (Opt-in Rate)** | Evalúa la viabilidad técnica y el nivel de fricción en la experiencia de usuario al solicitar acceso a la ubicación y notificaciones en entornos 100% web. | `(Usuarios que aprueban los permisos solicitados en el navegador / Total de usuarios expuestos al cuadro de diálogo de solicitud) * 100` | Monitoreo del estado de la API del navegador (`navigator.permissions`) reportado de forma automatizada hacia Google Analytics 4. | **> 50.0%** |
-| **Tasa de Canje Físico (Redemption Rate)** | Representa el retorno de inversión real (ROI) fuera de línea (offline) y el tráfico peatonal efectivo que la plataforma web logra derivar hacia los locales comerciales de las PyMEs. | `(Fichas o códigos QR validados y escaneados con éxito por los establecimientos / Cantidad total de códigos QR generados por los usuarios) * 100` | Conteo transaccional en la base de datos backend al procesar solicitudes HTTP POST exitosas dirigidas al controlador `/offers/redeem`. | **> 25.0%** |
-| **Tiempo Promedio de Sesión (Session Duration)** | Mide la retención del usuario dentro de la interfaz responsiva impulsada por los filtros temáticos y la optimización ergonómica del modo oscuro. | `Suma total de la duración de todas las sesiones de navegación / Número total de sesiones registradas en el período` | Extracción automatizada de los indicadores de permanencia provistos por Vercel Analytics y Google Analytics 4. | **> 3.0 min** |
-| **Tasa de Conversión por Recomendación (Viral Rate)** | Evalúa la eficiencia del crecimiento orgánico de la comunidad oriental mediante el uso de enlaces de recomendación de cupones favoritos. | `(Nuevos registros completados a través de un enlace de recomendación / Total de visitas únicas procedentes de dichos enlaces compartidos) * 100` | Captura y parseo de parámetros UTM y variables de consulta de URL de recomendación durante el flujo de registro en la base de datos. | **> 15.0%** |
-
-### 8.2.3. Measures
-
-Las variables e indicadores cuantitativos que se emplearán para contrastar las hipótesis nulas y alternativas corresponden a los datos puros recolectados de las interacciones en el navegador:
-
-* **Volumen de clics en Web Push e Impresiones totales:** Datos base para determinar cuantitativamente el CTR de proximidad.
-* **Contador de estados de permiso aprobados frente a denegados:** Datos utilizados para evaluar el comportamiento del indicador de aceptación (*Opt-in*).
-* **Registros de marcas de tiempo en el backend (`/offers/redeem`):** Datos duros de transacciones que configuran de manera inequívoca la Tasa de Canje Físico.
-* **Duración de la sesión indexada por franja horaria y tema CSS:** Datos de tiempo de permanencia filtrados para aislar el impacto de la interfaz nocturna.
-* **Conteo de tokens de invitación validados en el proceso de registro:** Datos utilizados para el cálculo de la Tasa de Conversión por Recomendación.
-
-### 8.2.4. Conditions
-
-* **Condición Experimental (Grupo Expuesto):** Segmento de usuarios web móviles a los que se les activa el algoritmo de geofencing en segundo plano, el selector de modo oscuro, los circuitos temáticos en el mapa, los enlaces compartibles y la ventana de validación QR.
-* **Condición de Control (Grupo Base):** Segmento de usuarios que navega bajo la versión tradicional estática de GeoPS, donde la búsqueda de locales es puramente manual, la interfaz es invariablemente clara, no hay agrupaciones por rutas, carece de sistema de canje QR (solo visualización de texto) y no posee enlaces cortos de recomendación.
-
-### 8.2.5. Scale Calculations and Decisions
-
-Para garantizar la validez científica de los resultados de la investigación y minimizar los errores atribuibles al azar durante la evaluación de la escala, se establecen formalmente los siguientes parámetros estadísticos que rigen la precisión y certeza del diseño:
-
-* **Nivel de Significación ($\alpha$):** Establecido en un **5%** para prevenir errores de Tipo I (falsos positivos), asegurando que el éxito detectado no sea producto del azar.
-* **Potencia Estadística ($1-\beta$):** Definida en un **80%** para mitigar el riesgo de cometer errores de Tipo II (falsos negativos), garantizando que la plataforma detecte los impactos reales si estos existen.
-* **Efecto Mínimo Detectable (MDE):** Se determina que la magnitud mínima de cambio estructural que justifica la inversión técnica, operativa e infraestructura para escalar una funcionalidad experimental de forma definitiva a producción es un incremento absoluto del **5%** sobre los promedios base.
-
-A continuación, se detalla la matriz operacional de decisiones de escala para evaluar el éxito de los 5 experimentos planificados:
-
-| Factor | Scale Calculation y Decision (Métricas e Hipótesis) | 1. Desfavorable (Sin cambios) | 2. Aceptable (Progreso mínimo) | 3. Ideal (Meta del experimento) | 4. Excelente (Decisión: Escalar) |
-| --- | --- | --- | --- | --- | --- |
-| **Experimento 1: Alertas de Proximidad** | Creemos que enviar notificaciones web push basadas en la ubicación del navegador capturará la intención de compra impulsiva. Sabremos que esto es cierto cuando observemos una Tasa de Clics (CTR) del 10% en las alertas móviles enviadas. | CTR menor al 5%. | CTR entre 5% y 9%. | **CTR del 10%.** | CTR mayor al 15%. (X) |
-| **Experimento 2: Canjes por Código QR** | Creemos que integrar un validador de códigos QR basado en la web para los comercios demostrará empíricamente el tráfico real impulsado por GeoPS. Sabremos que esto es cierto cuando logremos una Tasa de Canje Físico del 25% sobre los cupones guardados. | Canje menor al 10%. | Canje entre 10% y 24%. | **Canje del 25%.** | Canje mayor al 35%. (X) |
-| **Experimento 3: Circuitos Temáticos** | Creemos que clasificar las PyMEs en rutas de nicho cultural reducirá la sobrecarga cognitiva en el mapa web. Sabremos que esto es cierto cuando el Tiempo Promedio de Sesión móvil aumente a 3 minutos. | Tiempo menor a 1.5 minutos. | Tiempo entre 1.5 y 2.9 minutos. | **Tiempo de 3 minutos.** | Tiempo mayor a 4 minutos. (X) |
-| **Experimento 4: Selector de Interfaz** | Creemos que proveer una interfaz nocturna de alto contraste mitigará la fatiga visual en exteriores durante la noche. Sabremos que esto es cierto cuando las sesiones nocturnas se prolonguen un 25% frente a la interfaz clara. | Incremento de tiempo menor al 10%. | Incremento de tiempo entre 10% y 24%. | **Incremento de tiempo del 25%.** | Incremento de tiempo mayor al 35%. (X) |
-| **Experimento 5: Enlaces Compartibles** | Creemos que facultar la recomendación directa de ofertas favoritas mediante enlaces cortos potenciará el registro orgánico. Sabremos que esto es cierto cuando la Tasa de Conversión por Recomendación sea del 15%. | Conversión menor al 5%. | Conversión entre 5% y 14%. | **Conversión del 15%.** | Conversión mayor al 20%. (X) |
-
-### 8.2.6. Methods Selection
-
-| Herramienta | Precio | Capacidad de Análisis | Sencillez | Ventajas para GeoPS |
-| --- | --- | --- | --- | --- |
-| **Google Analytics 4** | Acceso Gratuito. | Rastreo pormenorizado de eventos a medida e interacciones específicas de las APIs web. | Nivel de aprendizaje moderado. | Soporta de forma nativa el ecosistema de Angular. Permite trazar de manera unificada el flujo desde la recepción del push hasta la generación y canje del código QR. |
-| **Google Lighthouse** | Acceso Gratuito. | Auditorías automatizadas de velocidad de renderizado, accesibilidad y cumplimiento de criterios PWA. | Ejecución sumamente sencilla. | Garantiza de manera empírica que el peso de las librerías del escáner de cámara web y la API de mapas no penalicen el rendimiento en redes móviles móviles. |
-| **Vercel Analytics** | Incluido en la capa de despliegue. | Monitoreo en tiempo real de indicadores clave de rendimiento web (*Web Vitals*). | Configuración inmediata sin código adicional. | Al estar el frontend de GeoPS alojado en los servidores de Vercel, provee métricas reales de latencia experimentadas por los usuarios de Lima Moderna. |
-
-### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection
-
-Dada la naturaleza de GeoPS como plataforma responsiva de uso en exteriores, la velocidad de carga de los experimentos en navegadores móviles representa el indicador fundamental de viabilidad técnica. Se ejecutaron auditorías predictivas con Google Lighthouse emulando redes móviles de velocidad estándar:
-
-* **Ruta bajo evaluación:** `https://geops-frontend.vercel.app/home` (Perfil Móvil)
-* **Performance (Rendimiento):** 90/100 – Nivel óptimo que asegura que la inicialización del video para el escaneo de códigos QR mediante WebRTC no congele el navegador web comercial.
-* **PWA (Progressive Web App):** 100/100 – Cumplimiento absoluto de los manifiestos y *Service Workers* necesarios para habilitar el envío de notificaciones push en segundo plano e incentivar la opción "Agregar a la pantalla de inicio".
-* **Best Practices (Buenas Prácticas):** 100/100 – Ejecución estricta bajo cifrado HTTPS, requisito de seguridad obligatorio e ineludible en la ingeniería moderna para que los navegadores móviles autoricen el uso de las APIs de Geolocalización y Cámara.
-
-### 8.2.8. Web and Mobile Tracking Plan
-
-El plan de monitoreo analítico del comportamiento de los experimentos web en dispositivos móviles se estructurará en fases progresivas:
-
-* **Fase 1: Auditoría de Permisos e Interfaz (Semanas 1-2):** Se instrumentará el frontend en Angular para registrar de manera automática los eventos de aceptación o rechazo en la ventana de geolocalización. Asimismo, se medirá la frecuencia de conmutación hacia la interfaz nocturna para validar la tasa de uso del modo oscuro correlacionada con la hora local de la sesión.
-* **Fase 2: Monitoreo del Flujo Transaccional O2O (Semanas 3-4):** Se auditará el tiempo de respuesta del lector QR basado en WebRTC y se cuantificará el ratio de éxito de validaciones exitosas enviadas al endpoint del backend, permitiendo mapear la correlación entre las alertas proactivas recibidas en la calle y las compras tangibles concretadas en las PyMEs.
-## 8.3. Experimentation 
-
-### 8.3.1. To-Be User Stories. 
-
-Las siguientes historias corresponden a las funcionalidades incorporadas durante el ciclo experimental (ver 8.3.2. To-Be Product Backlog) y se encuentran implementadas en la plataforma web (Frontend Angular + RESTful API Spring Boot). Cada historia incluye sus criterios de aceptación en estructura Gherkin (Given–When–Then).
-
-| Story ID | User | Priority | Epic |
-|---|---|---|---|
-| GEOP-UA11 | Consumidor | Alta | Descubrimiento de ofertas |
-
-**Title:** Exploración de ofertas por distrito en el mapa
-**Description:** Como consumidor, deseo explorar las ofertas disponibles sobre un mapa interactivo filtrado por distrito, para descubrir promociones cercanas a mi ubicación.
-**Acceptance Criteria:**
-- Dado que el consumidor se encuentra en la vista de mapa, cuando selecciona un distrito, entonces el sistema muestra únicamente las ofertas activas asociadas a ese distrito.
-- Dado que existen ofertas activas en el distrito seleccionado, cuando el mapa termina de cargar, entonces cada oferta se representa con un marcador ubicado en las coordenadas del comercio.
-- Dado que el consumidor selecciona un marcador, cuando este se activa, entonces el sistema presenta el resumen de la oferta correspondiente.
-
-| Story ID | User | Priority | Epic |
-|---|---|---|---|
-| GEOP-UA12 | Consumidor | Alta | Descubrimiento de ofertas |
-
-**Title:** Búsqueda y ordenamiento avanzado de ofertas
-**Description:** Como consumidor, deseo buscar y ordenar las ofertas según distintos criterios, para encontrar rápidamente las promociones que más me interesan.
-**Acceptance Criteria:**
-- Dado que el consumidor ingresa un término de búsqueda, cuando confirma la búsqueda, entonces el sistema retorna las ofertas cuyo título o categoría coinciden con el término.
-- Dado que el consumidor selecciona un criterio de ordenamiento, cuando aplica el orden, entonces el sistema reorganiza los resultados según el criterio elegido.
-- Dado que no existen ofertas que coincidan con el término, cuando la búsqueda finaliza, entonces el sistema informa que no se encontraron resultados.
-
-| Story ID | User | Priority | Epic |
-|---|---|---|---|
-| GEOP-UA13 | Propietario | Alta | Gestión de campañas |
-
-**Title:** Consulta del rendimiento de las campañas
-**Description:** Como propietario de negocio, deseo consultar el rendimiento de mis campañas publicitarias, para tomar decisiones informadas sobre mi inversión.
-**Acceptance Criteria:**
-- Dado que el propietario tiene campañas registradas, cuando accede al panel de rendimiento, entonces el sistema muestra las métricas asociadas a cada campaña.
-- Dado que una campaña no registra actividad, cuando el propietario la consulta, entonces el sistema muestra sus métricas en cero sin generar error.
-- Dado que el propietario solicita el detalle de una campaña, cuando la selecciona, entonces el sistema presenta el rendimiento correspondiente a esa campaña.
-
-| Story ID | User | Priority | Epic |
-|---|---|---|---|
-| GEOP-UA14 | Propietario | Media | Gestión de campañas |
-
-**Title:** Control del estado de las campañas
-**Description:** Como propietario de negocio, deseo cambiar el estado de mis campañas, para controlar cuándo se publican o se pausan.
-**Acceptance Criteria:**
-- Dado que una campaña se encuentra en estado borrador, cuando el propietario la activa, entonces el sistema cambia su estado a activa y sus ofertas se vuelven visibles.
-- Dado que una campaña se encuentra activa, cuando el propietario la pausa, entonces el sistema deja de mostrar sus ofertas a los consumidores.
-- Dado que el propietario intenta activar una campaña con fechas inválidas, cuando confirma la acción, entonces el sistema rechaza el cambio de estado e informa la restricción.
-
-| Story ID | User | Priority | Epic |
-|---|---|---|---|
-| GEOP-UA15 | Usuario | Media | Gestión de perfil |
-
-**Title:** Actualización de los datos del perfil
-**Description:** Como usuario, deseo actualizar los datos de mi perfil, para mantener mi información personal y de negocio al día.
-**Acceptance Criteria:**
-- Dado que el usuario modifica los datos de su perfil, cuando guarda los cambios, entonces el sistema persiste la información actualizada.
-- Dado que el usuario ingresa datos con formato inválido, cuando intenta guardar, entonces el sistema rechaza la actualización e indica el campo con error.
-- Dado que el usuario guarda correctamente sus cambios, cuando vuelve a consultar su perfil, entonces el sistema muestra la información actualizada.
-
-| Story ID | User | Priority | Epic |
-|---|---|---|---|
-| GEOP-UA16 | Propietario | Media | Gestión de ofertas |
-
-**Title:** Administración de las ofertas de una campaña
-**Description:** Como propietario de negocio, deseo crear, editar y eliminar las ofertas de una campaña, para gestionar las promociones que ofrezco.
-**Acceptance Criteria:**
-- Dado que el propietario define una nueva oferta sobre una campaña existente, cuando la registra, entonces el sistema la asocia a dicha campaña.
-- Dado que el propietario edita una oferta existente, cuando guarda los cambios, entonces el sistema actualiza la oferta correspondiente.
-- Dado que el propietario elimina una oferta, cuando confirma la acción, entonces el sistema retira la oferta y deja de mostrarla a los consumidores.
-- Dado que el propietario intenta asociar una oferta a una campaña inexistente o inactiva, cuando confirma el registro, entonces el sistema rechaza la operación.
-
-### 8.3.2. To-Be Product Backlog
-
-Como resultado de la evolución del producto, se incorporaron funcionalidades que no fueron registradas como historias independientes en el Product Backlog inicial. El siguiente backlog las organiza por prioridad y las estima en puntos de historia utilizando la secuencia de Fibonacci:
-
-| # Orden | User Story ID | Título | Story Points (1/2/3/5/8) |
-| --- | --- | --- | --- |
-| **1** | **GEOP-UA11** | Exploración de ofertas por distrito en el mapa | **5** |
-| **2** | **GEOP-UA12** | Búsqueda y ordenamiento avanzado de ofertas | **3** |
-| **3** | **GEOP-UA13** | Consulta del rendimiento de las campañas | **5** |
-| **4** | **GEOP-UA14** | Control del estado de las campañas | **3** |
-| **5** | **GEOP-UA15** | Actualización de los datos del perfil | **5** |
-| **6** | **GEOP-UA16** | Administración de las ofertas de una campaña | **5** |
 
 #### 8.3.3.1. To-Be Sprint Backlog
 
@@ -5938,6 +5640,8 @@ El siguiente *To-Be Sprint Backlog* organiza las funcionalidades incorporadas du
 </table>
 
 *Nota.* Elaboración propia. La estimación total del Sprint 5 es de **26 Story Points**.
+
+### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
 
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence 
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence 
@@ -6138,9 +5842,13 @@ La Shareback Session es la instancia en la que el equipo consolida y comparte el
 - Mantener y ampliar el modo demo como puerta de entrada de nuevos usuarios.
 
 ## 8.6. To-Be Software Platform Pre-launch 
+
 ### 8.6.1. About-the-Product Intro Video 
 
-### Matriz de Evaluación Etica y de Impacto 
+- Enlace Video About The Product - GeoPs: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318049_upc_edu_pe/IQClpsJt1lv0SJVXaTq_7_RwAZulho-4j7SJR3cHofT9Bpo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pc3X8P
+
+
+### Matriz de Evaluación Etica y de Impacto
 
 Esta matriz sustenta el **ABET – EAC – Student Outcome 4**, evidenciando las responsabilidades éticas y profesionales asumidas por el equipo y los juicios informados emitidos sobre el impacto de GeoPS en contextos globales, económicos, ambientales y sociales. Se toma como marco de referencia el Código de Ética de Ingeniería de Software ACM/IEEE y del Colegio de Ingenieros del Perú (CIP).
 
@@ -6193,7 +5901,6 @@ Think with Google. (2019). *How mobile search connects consumers to stores*. Goo
 World Bank. (2019). *World Development Report 2019: The Changing Nature of Work*. World Bank. https://doi.org/10.1596/978-1-4648-1328-3
 
 
-
 ## Anexos
 
 **Enlace Organización - GeoPs:** https://github.com/geops-org
@@ -6223,7 +5930,6 @@ World Bank. (2019). *World Development Report 2019: The Changing Nature of Work*
 **Video About The Product**
 
 - Enlace Video About The Product - GeoPs: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318049_upc_edu_pe/IQClpsJt1lv0SJVXaTq_7_RwAZulho-4j7SJR3cHofT9Bpo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pc3X8P
-
 
 
 **Diseño Figma**
