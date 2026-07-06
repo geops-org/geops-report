@@ -4570,7 +4570,6 @@ Una vez que el pipeline de alertas valida y confirma una anomalía real, este fl
 ### 8.3.1. To-Be User Stories. 
 ### 8.3.2. To-Be Product Backlog 
 ### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle 
-#### 8.3.3.1. To-Be Sprint Backlogs 
 #### 8.3.3.1. To-Be Sprint Backlog
 
 El siguiente *To-Be Sprint Backlog* organiza las historias experimentales definidas en el *To-Be Product Backlog* para su desarrollo durante el **Sprint 5**. Cada historia se descompone en tareas técnicas cuya estimación total coincide con los *Story Points* asignados en el backlog del producto. Las actividades se distribuyen entre los siete integrantes de GeoPS Labs y, al tratarse de trabajo planificado, mantienen el estado **To-do**.
@@ -4667,6 +4666,7 @@ El siguiente *To-Be Sprint Backlog* organiza las historias experimentales defini
       <td><strong>TK09</strong></td>
       <td>Crear servicio global de temas</td>
       <td>Implementar el servicio Angular que gestione el tema claro u oscuro y conserve la preferencia del usuario.</td>
+      <td>1</td>
       <td rowspan="2">Nicolas Alejandro Vera Nuñez</td>
       <td rowspan="2">To-do</td>
     </tr>
@@ -4694,7 +4694,6 @@ El siguiente *To-Be Sprint Backlog* organiza las historias experimentales defini
     </tr>
   </tbody>
 </table>
-      <td>1</td>
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence 
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence 
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence 
