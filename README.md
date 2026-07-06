@@ -103,87 +103,47 @@ La colaboración se distribuyó de manera equitativa entre los 7 integrantes:
   <img src="./resources/imgs/evidencias/backend-network.png" alt="Backend Network Graph" width="600">
 </p>
 
+---
 
-- [Universidad Peruana de Ciencias Aplicadas](#universidad-peruana-de-ciencias-aplicadas)
-  - [Informe de TB1](#informe-de-tb1)
-    - [Relación de integrantes](#relación-de-integrantes)
-  - [Registro de Versiones](#registro-de-versiones)
-- [Part I: As-Is Software Project](#Part-I:-As-Is-Software-Project) 
-- [Capítulo 1: Introducción](#capítulo-1-introducción)
+# Contenido
+
+- [Carátula](#carátula)
+- [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
+- [Project Report Collaboration Insights](#project-report-collaboration-insights)
+- [Student Outcome](#student-outcome)
+- [Capítulo I: Introducción](#capítulo-i-introducción)
   - [1.1. Startup Profile](#11-startup-profile)
-    - [1.1.1. Descripcion del Startup](#111-descripcion-del-startup)
-    - [1.1.2. Perfiles de Integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+    - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+    - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
   - [1.2. Solution Profile](#12-solution-profile)
-    - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
-      - [1.2.1.1. What](#1211-what)
-        - [1.2.1.1.1. ¿Cuál es el problema?](#12111-cuál-es-el-problema)
-        - [1.2.1.1.2. ¿Cuál es la relación con la persona en cuestión?](#12112-cuál-es-la-relación-con-la-persona-en-cuestión)
-      - [1.2.1.2. When](#1212-when)
-        - [1.2.1.2.1. ¿Cuándo sucede el problema?](#12121-cuándo-sucede-el-problema)
-        - [1.2.1.2.2. ¿Cuándo utiliza el cliente el producto?](#12122-cuándo-utiliza-el-cliente-el-producto)
-      - [1.2.1.3. Where](#1213-where)
-        - [1.2.1.3.1. ¿Dónde está el cliente cuando usa el producto?](#12131-dónde-está-el-cliente-cuando-usa-el-producto)
-        - [1.2.1.3.2. ¿A dónde se dirige?](#12132-a-dónde-se-dirige)
-        - [1.2.1.3.3. ¿Dónde surge el problema?](#12133-dónde-surge-el-problema)
-      - [1.2.1.4. Who](#1214-who)
-        - [1.2.1.4.1. ¿Quiénes están involucrados?](#12141-quiénes-están-involucrados)
-        - [1.2.1.4.2. ¿A quiénes les sucede el problema?](#12142-a-quiénes-les-sucede-el-problema)
-        - [1.2.1.4.3. ¿Quién lo utilizará?](#12143-quién-lo-utilizará)
-      - [1.2.1.5. Why](#1215-why)
-        - [1.2.1.5.1. ¿Cuál es la causa del problema?](#12151-cuál-es-la-causa-del-problema)
-      - [1.2.1.6. How](#1216-how)
-        - [1.2.1.6.1. ¿En qué condiciones los clientes usan nuestro producto?](#12161-en-qué-condiciones-los-clientes-usan-nuestro-producto)
-        - [1.2.1.6.2. ¿Cómo nos conocieron los compradores?](#12162-cómo-nos-conocieron-los-compradores)
-        - [1.2.1.6.3. ¿Cómo prefieren los usuarios acceder a nuestro contenido?](#12163-cómo-prefieren-los-usuarios-acceder-a-nuestro-contenido)
-        - [1.2.1.6.4. ¿Qué llevó a la persona a llegar a esta situación?](#12164-qué-llevó-a-la-persona-a-llegar-a-esta-situación)
-      - [1.2.1.7. How much](#1217-how-much)
+    - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
     - [1.2.2. Lean UX Process](#122-lean-ux-process)
       - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
       - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
       - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
       - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
-  - [1.3. Segmentos objetivos](#13-segmentos-objetivos)
-- [Capitulo 2: Requirements Elicitation \& Analysis](#capitulo-2-requirements-elicitation--analysis)
+  - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
+- [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
   - [2.1. Competidores](#21-competidores)
-    - [2.1.1. Analisis competitivo](#211-analisis-competitivo)
-    - [¿Por qué llevar a cabo este análisis?](#por-qué-llevar-a-cabo-este-análisis)
+    - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
     - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
-    - [1. Estrategias Ofensivas: Aprovechando Debilidades de la Competencia](#1-estrategias-ofensivas-aprovechando-debilidades-de-la-competencia)
-    - [2. Estrategias Defensivas: Afrontando Fortalezas de la Competencia](#2-estrategias-defensivas-afrontando-fortalezas-de-la-competencia)
-    - [3. Aprovechamiento del Contexto (Oportunidades y Amenazas)](#3-aprovechamiento-del-contexto-oportunidades-y-amenazas)
-    - [🟢 Oportunidades: Impulso del Crecimiento](#-oportunidades-impulso-del-crecimiento)
-    - [🔴 Amenazas: Mitigación de Riesgos](#-amenazas-mitigación-de-riesgos)
   - [2.2. Entrevistas](#22-entrevistas)
     - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
-    - [Fase 1: Identificación y Perfilamiento del Negocio](#fase-1-identificación-y-perfilamiento-del-negocio)
-    - [Fase 2: Comportamiento y Marketing Actual](#fase-2-comportamiento-y-marketing-actual)
-    - [Fase 3: Identificación de Puntos de Dolor (El Problema)](#fase-3-identificación-de-puntos-de-dolor-el-problema)
-    - [Fase 4: Validación de la Solución (GeoPS Business)](#fase-4-validación-de-la-solución-geops-business)
-    - [Fase 5: Cierre y Sugerencias](#fase-5-cierre-y-sugerencias)
-    - [Fase 1: Identificación y Perfilamiento (Filiación)](#fase-1-identificación-y-perfilamiento-filiación)
-    - [Fase 2: Comportamiento y Hábitos de Compra](#fase-2-comportamiento-y-hábitos-de-compra)
-    - [Fase 3: Identificación de Puntos de Dolor (El Problema)](#fase-3-identificación-de-puntos-de-dolor-el-problema-1)
-    - [Fase 4: Validación de la Solución (GeoPS)](#fase-4-validación-de-la-solución-geops)
-    - [Fase 5: Cierre y Sugerencias](#fase-5-cierre-y-sugerencias-1)
     - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
     - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
-  - [1. Segmento: Usuario Consumidor](#1-segmento-usuario-consumidor)
-    - [Características Objetivas (Perfil y Comportamiento)](#características-objetivas-perfil-y-comportamiento)
-    - [Características Subjetivas (Puntos de Dolor y Expectativas)](#características-subjetivas-puntos-de-dolor-y-expectativas)
-  - [2. Segmento: Usuario Proveedor / Dueño de Tienda](#2-segmento-usuario-proveedor--dueño-de-tienda)
-    - [Características Objetivas (Gestión y Marketing)](#características-objetivas-gestión-y-marketing)
-    - [Características Subjetivas (Necesidades y Riesgos)](#características-subjetivas-necesidades-y-riesgos)
   - [2.3. Needfinding](#23-needfinding)
     - [2.3.1. User Personas](#231-user-personas)
-    - [2.3.2  User Task Matrix](#232--user-task-matrix)
+    - [2.3.2. User Task Matrix](#232-user-task-matrix)
     - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
     - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+    - [2.3.5. As-Is Scenario Mapping](#235-as-is-scenario-mapping)
   - [2.4. Ubiquitous Language](#24-ubiquitous-language)
-- [Capitulo 3: Requirements Specification](#capitulo-3-requirements-specification)
-  - [3.1. User Stories](#31-user-stories)
-  - [3.2. Impact Mapping](#32-impact-mapping)
+- [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
+  - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
+  - [3.2. User Stories](#32-user-stories)
   - [3.3. Product Backlog](#33-product-backlog)
-- [Capítulo 4: Product Design](#capítulo-4-product-design)
+  - [3.4. Impact Mapping](#34-impact-mapping)
+- [Capítulo IV: Product Design](#capítulo-iv-product-design)
   - [4.1. Style Guidelines](#41-style-guidelines)
     - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
     - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
@@ -204,112 +164,116 @@ La colaboración se distribuyó de manera equitativa entre los 7 integrantes:
   - [4.5. Web Applications Prototyping](#45-web-applications-prototyping)
   - [4.6. Domain-Driven Software Architecture](#46-domain-driven-software-architecture)
     - [4.6.1. Software Architecture Context Diagram](#461-software-architecture-context-diagram)
-- [4.6.2. Software Architecture Container Diagram](#462-software-architecture-container-diagram)
-- [4.6.3. Software Architecture Components Diagrams](#463-software-architecture-components-diagrams)
-  - [4.6.3.1. Identity Context Components Diagram](#4631-identity-context-components-diagram)
-  - [4.6.3.2. Campaign Context Components Diagram](#4632-campaign-context-components-diagram)
-  - [4.6.3.3. Offers Context Components Diagram](#4633-offers-context-components-diagram)
-  - [4.6.3.4. Shared Kernel Components Diagram](#4634-shared-kernel-components-diagram)
+    - [4.6.2. Software Architecture Container Diagrams](#462-software-architecture-container-diagrams)
+    - [4.6.3. Software Architecture Components Diagrams](#463-software-architecture-components-diagrams)
+      - [4.6.3.1. Identity Context Components Diagram](#4631-identity-context-components-diagram)
+      - [4.6.3.2. Campaign Context Components Diagram](#4632-campaign-context-components-diagram)
+      - [4.6.3.3. Offers Context Components Diagram](#4633-offers-context-components-diagram)
+      - [4.6.3.4. Shared Kernel Components Diagram](#4634-shared-kernel-components-diagram)
   - [4.7. Software Object-Oriented Design](#47-software-object-oriented-design)
     - [4.7.1. Class Diagrams](#471-class-diagrams)
     - [4.7.2. Class Dictionary](#472-class-dictionary)
   - [4.8. Database Design](#48-database-design)
     - [4.8.1. Relational/Non-Relational Database Diagram](#481-relationalnon-relational-database-diagram)
-- [Capítulo 5: Product Implementation](#capítulo-5-product-implementation)
+- [Capítulo V: Product Implementation](#capítulo-v-product-implementation)
   - [5.1. Software Configuration Management](#51-software-configuration-management)
     - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
     - [5.1.2. Source Code Management](#512-source-code-management)
     - [5.1.3. Source Code Style Guide \& Conventions](#513-source-code-style-guide--conventions)
     - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
-  - [5.2. Product Implementation \& Deployment.](#52-product-implementation--deployment)
+  - [5.2. Product Implementation \& Deployment](#52-product-implementation--deployment)
     - [5.2.1. Sprint Backlogs](#521-sprint-backlogs)
     - [5.2.2. Implemented Landing Page Evidence](#522-implemented-landing-page-evidence)
     - [5.2.3. Implemented Frontend-Web Application Evidence](#523-implemented-frontend-web-application-evidence)
-    - [5.2.4. Implemented RESTful API and/or Serverless Backend Evidence](#524-implemented-restful-api-andor-serverless-backend-evidence)
-    - [5.2.5. RESTful API documentation](#525-restful-api-documentation)
-  - [5.3 Video About-the-Product](#53-video-about-the-product)
-- [Part II: Verification, Validation & Pipeline](#Part-II:-Verification,-Validation-&-Pipeline) 
-- [Capítulo VI: Product Verification & Validation](#)
-  - [6.1. Testing Suites & Validation](#)
-    - [6.1.1. Core Entities Unit Tests.](#)
-    - [6.1.2. Core Integration Tests.](#)
-    - [6.1.3. Core Behavior-Driven Development](#) 
-    - [6.1.4. Core System Tests.](#)
+    - [5.2.4. Acuerdo de Servicio - SaaS](#524-acuerdo-de-servicio---saas)
+    - [5.2.5. Implemented RESTful API and/or Serverless Backend Evidence](#525-implemented-restful-api-andor-serverless-backend-evidence)
+    - [5.2.6. RESTful API documentation](#526-restful-api-documentation)
+    - [5.2.7. Team Collaboration Insights](#527-team-collaboration-insights)
+  - [5.3. Video About-the-Product](#53-video-about-the-product)
+- [Part II: Verification, Validation \& Pipeline](#part-ii-verification-validation--pipeline)
+- [Capítulo VI: Product Verification \& Validation](#capítulo-vi-product-verification--validation)
+  - [6.1. Testing Suites \& Validation](#61-testing-suites--validation)
+    - [6.1.1. Core Entities Unit Tests](#611-core-entities-unit-tests)
+    - [6.1.2. Core Integration Tests](#612-core-integration-tests)
+    - [6.1.3. Core Behavior-Driven Development](#613-core-behavior-driven-development)
+    - [6.1.4. Core System Tests](#614-core-system-tests)
   - [6.2. Static Testing \& Verification](#62-static-testing--verification)
     - [6.2.1. Static Code Analysis](#621-static-code-analysis)
       - [6.2.1.1. Coding Standard \& Code Conventions](#6211-coding-standard--code-conventions)
       - [6.2.1.2. Code Quality \& Code Security](#6212-code-quality--code-security)
     - [6.2.2. Reviews](#622-reviews)
-  - [6.3. Validation Interviews](#)
-    - [6.3.1. Diseño de Entrevistas](#)
-    - [6.3.2. Registro de Entrevistas](#)
-    - [6.3.3. Evaluaciones según heurísticas](#)
-  - [6.4. Auditoría de Experiencias de Usuario ](#)
-    - [6.4.1. Auditoría realizada](#)
-      - [6.4.1.1. Información del grupo auditado](#)
-      - [6.4.1.2. Cronograma de auditoría realizada](#)
-      - [6.4.1.3. Contenido de auditoría realizad](#)
-    - [6.4.2. Auditoría recibida](#)
-      - [6.4.2.1. Información del grupo auditor](#)
-      - [6.4.2.2. Cronograma de auditoría recibida](#)
-      - [6.4.2.3. Contenido de auditoría recibida](#)
-      - [6.4.2.4. Resumen de modificaciones para subsanar hallazgo](#)
-- [Capítulo VII: DevOps Practices ](#)
-  - [7.1. Continuous Integration ](#)
-    - [7.1.1. Tools and Practices](#)
-    - [7.1.2. Build & Test Suite Pipeline Components](#)
-  - [7.2. Continuous Delivery](#) 
-    - [7.2.1. Tools and Practices](#)
-    - [7.2.2. Stages Deployment Pipeline Components](#)
-  - [7.3. Continuous deployment ](#)
-    - [7.3.1. Tools and Practices](#)
-    - [7.3.2. Production Deployment Pipeline Components](#)
-  - [7.4. Continuous Monitoring ](#)
-    - [7.4.1. Tools and Practices ](#)
-    - [7.4.2. Monitoring Pipeline Components ](#)
-    - [7.4.3. Alerting Pipeline Components ](#)
-    - [7.4.4. Notification Pipeline Components](#)
-- [Part III: Experiment-Driven Lifecycle ](#)
-- [Capítulo VIII: Experiment-Driven Development ](#)
-  - [8.1. Experiment Planning ](#)
-    - [8.1.1. As-Is Summary](#)
-    - [8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims](#)
-    - [8.1.3. Experiment-Ready Questions](#)
-    - [8.1.4. Question Backlog](#)
-    - [8.1.5. Experiment Cards](#) 
-  - [8.2. Experiment Design ](#)
-    - [8.2.1. Hypotheses](#)
-    - [8.2.2. Domain Business Metrics](#)
-    - [8.2.3. Measures](#)
-    - [8.2.4. Conditions](#)
-    - [8.2.5. Scale Calculations and Decisions](#)
-    - [8.2.6. Methods Selection](#)
-    - [8.2.7. Data Analytics: Goals, KPIs and Metrics Selection](#)
-    - [8.2.8. Web and Mobile Tracking Plan](#)
-  - [8.3. Experimentation](#)
-    - [8.3.1. To-Be User Stories](#)
-    - [8.3.2. To-Be Product Backlog](#)
-    - [8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle](#)
-      - [8.3.3.1. To-Be Sprint Backlogs](#)
-      - [8.3.3.2. Implemented To-Be Landing Page Evidence](#)
-      - [8.3.3.3. Implemented To-Be Frontend-Web Application Evidence](#)
-      - [8.3.3.4. Implemented To-Be Native-Mobile Application Evidence](#)
-      - [8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence](#)
-      - [8.3.3.6. Team Collaboration Insights](#)
-    - [8.3.4. To-Be Validation Interviews](#)
-      - [8.3.4.1. Diseño de Entrevistas](#)
-      - [8.3.4.2. Registro de Entrevistas](#)
-  - [8.4. Experiment Aftermath & Analysis](#)
-    - [8.4.1. Analysis and Interpretation of Results](#)
-    - [8.4.2. Re-scored and Re-prioritized Question Backlog](#)
-  - [8.5. Continuous Learning](#)
-    - [8.5.1. Shareback Session Artifacts: Learning Workflow](#)
-  - [8.6. To-Be Software Platform Pre-launch](#)
-    - [8.6.1. About-the-Product Intro Video](#)
-- [Matriz de Evaluación Etica y de Impacto](#)
+  - [6.3. Validation Interviews](#63-validation-interviews)
+    - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
+    - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
+    - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
+  - [6.4. Auditoría de Experiencias de Usuario](#64-auditoría-de-experiencias-de-usuario)
+    - [6.4.1. Auditoría realizada](#641-auditoría-realizada)
+      - [6.4.1.1. Información del grupo auditado](#6411-información-del-grupo-auditado)
+      - [6.4.1.2. Cronograma de auditoría realizada](#6412-cronograma-de-auditoría-realizada)
+      - [6.4.1.3. Contenido de auditoría realizada](#6413-contenido-de-auditoría-realizada)
+    - [6.4.2. Auditoría recibida](#642-auditoría-recibida)
+      - [6.4.2.1. Información del grupo auditor](#6421-información-del-grupo-auditor)
+      - [6.4.2.2. Cronograma de auditoría recibida](#6422-cronograma-de-auditoría-recibida)
+      - [6.4.2.3. Contenido de auditoría recibida](#6423-contenido-de-auditoría-recibida)
+      - [6.4.2.4. Resumen de modificaciones para subsanar hallazgos](#6424-resumen-de-modificaciones-para-subsanar-hallazgos)
+- [Capítulo VII: DevOps Practices](#capítulo-vii-devops-practices)
+  - [7.1. Continuous Integration](#71-continuous-integration)
+    - [7.1.1. Tools and Practices](#711-tools-and-practices)
+    - [7.1.2. Build \& Test Suite Pipeline Components](#712-build--test-suite-pipeline-components)
+  - [7.2. Continuous Delivery](#72-continuous-delivery)
+    - [7.2.1. Tools and Practices](#721-tools-and-practices)
+    - [7.2.2. Stages Deployment Pipeline Components](#722-stages-deployment-pipeline-components)
+  - [7.3. Continuous Deployment](#73-continuous-deployment)
+    - [7.3.1. Tools and Practices](#731-tools-and-practices)
+    - [7.3.2. Production Deployment Pipeline Components](#732-production-deployment-pipeline-components)
+  - [7.4. Continuous Monitoring](#74-continuous-monitoring)
+    - [7.4.1. Tools and Practices](#741-tools-and-practices)
+    - [7.4.2. Monitoring Pipeline Components](#742-monitoring-pipeline-components)
+    - [7.4.3. Alerting Pipeline Components](#743-alerting-pipeline-components)
+    - [7.4.4. Notification Pipeline Components](#744-notification-pipeline-components)
+- [Part III: Experiment-Driven Lifecycle](#part-iii-experiment-driven-lifecycle)
+- [Capítulo VIII: Experiment-Driven Development](#capítulo-viii-experiment-driven-development)
+  - [8.1. Experiment Planning](#81-experiment-planning)
+    - [8.1.1. As-Is Summary](#811-as-is-summary)
+    - [8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims](#812-raw-material-assumptions-knowledge-gaps-ideas-claims)
+    - [8.1.3. Experiment-Ready Questions](#813-experiment-ready-questions)
+    - [8.1.4. Question Backlog](#814-question-backlog)
+    - [8.1.5. Experiment Cards](#815-experiment-cards)
+  - [8.2. Experiment Design](#82-experiment-design)
+    - [8.2.1. Hypotheses](#821-hypotheses)
+    - [8.2.2. Domain Business Metrics](#822-domain-business-metrics)
+    - [8.2.3. Measures](#823-measures)
+    - [8.2.4. Conditions](#824-conditions)
+    - [8.2.5. Scale Calculations and Decisions](#825-scale-calculations-and-decisions)
+    - [8.2.6. Methods Selection](#826-methods-selection)
+    - [8.2.7. Data Analytics: Goals, KPIs and Metrics Selection](#827-data-analytics-goals-kpis-and-metrics-selection)
+    - [8.2.8. Web Tracking Plan](#828-web-tracking-plan)
+  - [8.3. Experimentation](#83-experimentation)
+    - [8.3.1. To-Be User Stories](#831-to-be-user-stories)
+    - [8.3.2. To-Be Product Backlog](#832-to-be-product-backlog)
+    - [8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle](#833-pipeline-supported-experiment-driven-to-be-software-platform-lifecycle)
+      - [8.3.3.1. To-Be Sprint Backlogs](#8331-to-be-sprint-backlogs)
+      - [8.3.3.2. Implemented To-Be Landing Page Evidence](#8332-implemented-to-be-landing-page-evidence)
+      - [8.3.3.3. Implemented To-Be Frontend-Web Application Evidence](#8333-implemented-to-be-frontend-web-application-evidence)
+      - [8.3.3.4. Implemented To-Be RESTful API and/or Serverless Backend Evidence](#8334-implemented-to-be-restful-api-andor-serverless-backend-evidence)
+      - [8.3.3.5. Team Collaboration Insights](#8335-team-collaboration-insights)
+    - [8.3.4. To-Be Validation Interviews](#834-to-be-validation-interviews)
+      - [8.3.4.1. Diseño de Entrevistas](#8341-diseño-de-entrevistas)
+      - [8.3.4.2. Registro de Entrevistas](#8342-registro-de-entrevistas)
+  - [8.4. Experiment Aftermath \& Analysis](#84-experiment-aftermath--analysis)
+    - [8.4.1. Analysis and Interpretation of Results](#841-analysis-and-interpretation-of-results)
+    - [8.4.2. Re-scored and Re-prioritized Question Backlog](#842-re-scored-and-re-prioritized-question-backlog)
+  - [8.5. Continuous Learning](#85-continuous-learning)
+    - [8.5.1. Shareback Session Artifacts: Learning Workflow](#851-shareback-session-artifacts-learning-workflow)
+  - [8.6. To-Be Software Platform Pre-launch](#86-to-be-software-platform-pre-launch)
+    - [8.6.1. About-the-Product Intro Video](#861-about-the-product-intro-video)
+- [Matriz de Evaluación Ética y de Impacto](#matriz-de-evaluación-ética-y-de-impacto)
 - [Conclusiones](#conclusiones)
+  - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+  - [Video About-the-Team](#video-about-the-team)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
+  - [Anexo: Videos de Exposiciones](#anexo-videos-de-exposiciones)
 
 
 ---
@@ -4462,23 +4426,478 @@ Diseñar y anexar de forma inmediata en el Capítulo II el diagrama de As-Is Sce
 
 
 ## 6.4. Auditoría de Experiencias de Usuario 
-### 6.4.1. Auditoría realizada. 
-#### 6.4.1.1. Información del grupo auditado. 
 
-#### 6.4.1.2. Cronograma de auditoría realizada. 
+### 6.4.1. Auditoría realizada 1.
 
-#### 6.4.1.3. Contenido de auditoría realizada. 
+**Proyecto auditado 1:** Energix — Smart Energix Manager (EMS)
 
-### 6.4.2. Auditoría recibida. 
-#### 6.4.2.1. Información del grupo auditor.
+#### 6.4.1.1. Información del grupo auditado 1. 
 
-#### 6.4.2.2. Cronograma de auditoría recibida. 
+| CAMPO | VALOR | CAMPO | VALOR |
+|---|---|---|---|
+| **CARRERA** | Ingeniería de Software | **CURSO** | Diseño de Experimentos de Ing. de Software |
+| **NRC** | 12305 | **PROFESOR** | Noriega Melendez, Julio Manuel |
+| **AUDITOR** | GeoPsLabs — GeoPs | **FECHA** | 03/07/2026 |
+| **CLIENTE(S)** | Equipo Energix (participantes de la sesión) | **VERSIÓN** | 2.0 |
 
-#### 6.4.2.3. Contenido de auditoría recibida. 
+#### 6.4.1.2. Cronograma de auditoría realizada 1.
 
-#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos. 
+## Cronograma de actividades - Energix
+
+| Fase | Actividad | Descripción | Duración |
+| :---: | :--- | :--- | :---: |
+| 1 | Planificación | Definir alcance, ubicar repositorios públicos y entornos productivos de Energix. | Día 1 |
+| 2 | Revisión documental | Lectura de Capítulos I–VIII; verificación de trazabilidad y terminología. | Días 1–2 |
+| 3 | Auditoría de código | Clonar Landing-Page, Frontend y Backend; revisar a11y, i18n, calidad y secretos. | Días 2–3 |
+| 4 | Sesión de evaluación UX | Recorrido de tareas críticas sobre los entornos productivos; registro de problemas. | Días 3–4 |
+| 5 | Análisis y severidad | Consolidar hallazgos y asignar severidad (1–4) en la Tabla Resumen. | Día 4 |
+| 6 | Informe y entrega | Redactar descripciones y recomendaciones; presentar a Energix y registrar la sección 6.4. | Día 5 |
+
+#### 6.4.1.3. Contenido de auditoría realizada 1. 
+
+## SITE o APP A EVALUAR
+Smart Energix Manager (EMS) — Landing Page (energixlp.netlify.app) + Web App Angular 20 (frontend-sems.vercel.app) + Web Services Spring Boot (backend-latest-rplh.onrender.com).
+
+## TAREAS A EVALUAR
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Registro / inicio de sesión de un usuario
+2. Visualización del dashboard de consumo energético
+3. Gestión de dispositivos (agregar / configurar un dispositivo)
+4. Consulta de reportes de consumo
+5. Configuración de la cuenta y alertas
+6. Suscripción / pago de un plan (Landing)
+7. Cambio de idioma de la interfaz (ES / EN)
+
+## OBSERVACIONES — ASPECTOS POSITIVOS
+* **Frontend (Angular 20):** i18n real con `@ngx-translate/core` y archivos de traducción (`en.json` / `es.json`); 30 archivos de pruebas (`.spec`); sin comentarios TODO/FIXME pendientes; environments separados (dev/prod).
+* **Backend (Spring Boot):** 20 archivos de test; validación de entrada con `@Valid` en 16 clases; API documentada con Swagger/OpenAPI; el archivo `.env` está correctamente incluido en `.gitignore`; conexión a BD externalizada por variable de entorno.
+* **Landing Page:** las 23 imágenes incluyen atributo `alt`; implementa un conmutador de idioma funcional (ES/EN).
+* **UX visible (capturas):** el dashboard SEMS comunica el estado con claridad (banner 'demo / DATOS DE PRUEBA'); jerarquía visual limpia y ordenada (métricas, gráfico, alertas, recomendaciones); los indicadores de variación combinan color + flecha + signo y el gráfico incluye leyenda rotulada (no dependen solo del color); existe una sección de Preguntas Frecuentes (FAQ) en la Landing.
+
+## ESCALA DE SEVERIDAD
+
+| Nivel | Descripción |
+|---|---|
+| **1** | **Problema superficial:** puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado, a no ser que exista disponibilidad de tiempo. |
+| **2** | **Problema menor:** puede ocurrir un poco más frecuentemente o es un poco más difícil de superar. Se le debería asignar una prioridad baja de cara al siguiente release. |
+| **3** | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
+| **4** | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+## A. Checklist de Usabilidad — 10 Heurísticas de Nielsen
+
+| N° | Usabilidad — Principio / Heurística | Qué verificar | Cumple | Severidad y notas |
+|---|---|---|---|---|
+| 1 | Visibilidad del estado del sistema | Feedback de carga, guardado y confirmaciones. | Sí | El dashboard señala el modo demo ('DATOS DE PRUEBA') y muestra métricas y estados con claridad. |
+| 2 | Relación sistema–mundo real | Lenguaje e íconos del usuario. | Por verificar | Evaluar en sesión. |
+| 3 | Control y libertad del usuario | Salidas: deshacer, cancelar, volver. | No | Sev 3 — Menú móvil de la Landing como `<div>`, no operable por teclado. |
+| 4 | Consistencia y estándares | Uso uniforme de componentes. | No | Sev 2 — Cuatro estilos de botón distintos para acciones equivalentes (Comprar píldora blanca, Suscribirse azul sólido, Enviar rectángulo negro, Probar ahora con subrayado). |
+| 5 | Prevención de errores | Validaciones y confirmaciones. | Por verificar | Backend valida con `@Valid`; evaluar formularios en la App. |
+| 6 | Reconocer antes que recordar | Opciones visibles. | No | Sev 2 — Botones 'Comprar' sin contexto accesible de producto. |
+| 7 | Flexibilidad y eficiencia | Atajos para expertos. | Por verificar | Evaluar en sesión. |
+| 8 | Diseño estético y minimalista | Sin ruido visual. | Sí | Dashboard y Landing limpios, con buena jerarquía visual y sin saturación. |
+| 9 | Recuperación de errores | Mensajes claros con solución. | Parcial | Sev 2 — Backend sin `@ControllerAdvice`; 5 printStackTrace: riesgo de errores inconsistentes/técnicos. |
+| 10 | Ayuda y documentación | Ayuda accesible y buscable. | Parcial | Existe sección FAQ con preguntas frecuentes; evaluar si cubre las dudas dentro de la Web App. |
+
+## B. Checklist de Arquitectura de Información
+
+| N° | Arq. Información — Principio / Heurística | Qué verificar | Cumple | Severidad y notas |
+|---|---|---|---|---|
+| 1 | Findable (encontrable) | Navegación y buscador efectivos. | Por verificar | Evaluar en sesión. |
+| 2 | Usable (usable) | Tareas sin caminos sin salida. | Sí | Flujos y jerarquía claros en la Web App (métricas → gráfico → alertas → recomendaciones). |
+| 3 | Useful (útil) | Responde a necesidades reales. | Sí | Dominio de ahorro energético bien delimitado. |
+| 4 | Accessible (accesible) | Usable con distintas capacidades. | No | Sev 3 — Landing sin landmarks `<main>`/`<header>` y sin ARIA; Angular con solo 4 aria-. |
+| 5 | Credible (creíble) | Confianza, sin enlaces rotos. | Parcial | Contenido completo y profesional; revisar destinos reales de los enlaces del footer. |
+| 6 | Valuable (valioso) | Aporta valor; jerarquía clara. | Sí | El dashboard aporta valor: consumo, predicción, factura proyectada, ahorro y recomendaciones. |
+| 7 | Sistema de organización | Agrupaciones lógicas. | Sí | Agrupación lógica por métricas, gráfico, alertas y recomendaciones; consumo por electrodoméstico ordenado. |
+| 8 | Sistema de rotulado | Etiquetas claras y consistentes. | Sí | Rótulos claros en métricas y secciones (Consumo esta semana, Predicción, Mayor consumidor…). |
+| 9 | Sistema de navegación | Menús y jerarquía coherentes. | Parcial | Sev 2 — Falta landmark `<main>` en la Landing; orientación por lector de pantalla débil. |
+| 10 | Búsqueda + SEO/meta tags | Meta tags presentes y correctos. | Por verificar | Verificar `<meta>` description/OG en `index.html`. |
+
+## C. Checklist de Diseño Inclusivo, Accesibilidad e i18n
+
+| N° | Inclusive Design — Principio / Heurística | Qué verificar | Cumple | Severidad y notas |
+|---|---|---|---|---|
+| 1 | Proporciona experiencias comparables | Todos logran la tarea. | No | Sev 3 — Sin ARIA en la Landing; muy escasa en Angular (4 ocurrencias). |
+| 2 | Considera la situación | Funciona en distintos contextos. | Por verificar | Evaluar responsive / conexión. |
+| 3 | Sé consistente | Patrones familiares y coherentes. | Parcial | Sev 2 — Revisar consistencia de botones y componentes. |
+| 4 | Da control | El usuario controla la interacción. | Parcial | Sev 3 — Menú hamburguesa no controlable por teclado. |
+| 5 | Ofrece opciones | Varias formas de completar la tarea. | Por verificar | Evaluar en sesión. |
+| 6 | Prioriza el contenido | Lo esencial primero. | Sí | El dashboard presenta primero las métricas clave y el gráfico; lo secundario debajo. |
+| 7 | Aporta valor | Considera preferencias/capacidades. | Parcial | Ofrece idioma EN/ES y buena jerarquía; pendiente reforzar accesibilidad (ARIA/contraste). |
+| 8 | Texto alternativo (alt) | Imágenes de contenido con alt descriptivo. | Parcial | Sev 2 — alt presente pero vacío en logo, productos y redes de la Landing. |
+| 9 | Contraste y color | Contraste WCAG AA; color no único medio. | Parcial | Sev 2 — Enlaces del footer en gris claro sobre blanco (probable fallo AA) y subtítulos tenues; a favor: los indicadores no dependen solo del color (flecha + signo). |
+| 10 | Teclado y foco / ARIA | Navegable por teclado; roles ARIA. | No | Sev 3 — Cero ARIA/role en la Landing; solo 4 `aria-` en toda la App Angular. |
+| 11 | Internacionalización (i18n) | Soporte en_US / es_419; cadenas externalizadas. | Parcial | Sev 2 — Landing: `<html lang>` no cambia y usa 'es'/'en'. Frontend: usa 'en'/'es', no 'en_US'/'es_419'. |
+
+## TABLA RESUMEN DE HALLAZGOS
+
+| N° | Problema | Severidad (1–4) | Heurística / Principio violado(a) |
+|---|---|---|---|
+| 1 | Backend: secreto JWT hardcodeado y versionado en application.properties (jwt.secret = …2025), en lugar de externalizarlo por variable de entorno. | 4 | Ética y responsabilidad profesional / Seguridad |
+| 2 | Landing: `<html lang="en">` pero todo el contenido está en español; el toggle de idioma no actualiza document.documentElement.lang. | 3 | Inclusive Design: Experiencias comparables / a11y |
+| 3 | Landing: ausencia total de atributos ARIA y role, pese al requisito de configurar ARIA attributes. | 3 | Inclusive Design / a11y (requisito del curso) |
+| 4 | Landing: menú móvil como `<div class="hamburger">` en vez de `<button>`; no enfocable ni operable por teclado. | 3 | Usability: Control y libertad del usuario |
+| 5 | Backend: el endpoint WebSocket abre CORS a cualquier origen: `setAllowedOriginPatterns("*")` en WebSocketConfig. | 3 | Responsabilidad profesional / Seguridad |
+| 6 | Landing: sin landmarks semánticos `<header>`/`<main>` (solo `<footer>`); orientación por lector de pantalla deficiente. | 2 | Information Architecture: ¿Es accesible? |
+| 7 | Landing: logo, imágenes de producto e íconos de redes con `alt=""` (contenido tratado como decorativo). | 2 | Inclusive Design: Experiencias comparables |
+| 8 | Landing: siete botones 'Comprar' idénticos, sin diferenciación accesible por producto. | 2 | Usability: Reconocer antes que recordar |
+| 9 | Frontend: 327 sentencias console.log/error/warn presentes en el código de producción (src). | 2 | Responsabilidad profesional / calidad de código |
+| 10 | Frontend: cobertura de accesibilidad muy baja — solo 4 atributos aria- en todos los templates de la App. | 2 | Inclusive Design / a11y |
+| 11 | Backend: no existe manejo global de excepciones (`@ControllerAdvice`); respuestas de error inconsistentes y posible fuga de detalles técnicos. | 2 | Responsabilidad profesional / calidad |
+| 12 | Backend: 28 System.out.print y 5 printStackTrace en lugar de un logger; salida de depuración/errores no controlada. | 2 | Responsabilidad profesional / calidad |
+| 13 | Landing (UI): enlaces del footer en gris claro sobre blanco; contraste probablemente por debajo de WCAG AA. Medir valores exactos. | 2 | Inclusive Design: Contraste y color |
+| 14 | Landing (UI): inconsistencia de estilos de botón — cuatro estilos distintos (Comprar, Suscribirse, Enviar, Probar ahora) para acciones equivalentes. | 2 | Usability: Consistencia y estándares |
+| 15 | Frontend: 69 usos del tipo 'any' en TypeScript, lo que debilita el tipado estático y la robustez del código. | 1 | Responsabilidad profesional / calidad |
+| 16 | Landing (UI): texto secundario tenue (subtítulos y etiquetas '/mes') con contraste flojo sobre fondos claros. | 1 | Inclusive Design: Contraste y color |
+| 17 | i18n (web y móvil): se usan códigos 'en'/'es' en lugar de en_US / es_419 exigidos por el curso. | 1 | Internacionalización (i18n) |
+
+*Nota: 17 hallazgos consolidados de la revisión de código (Landing, Frontend y Backend) y de la evaluación visual de la interfaz (capturas de la Web App SEMS y la Landing). Los ítems dependientes de contraste exacto deben medirse con una herramienta (p. ej. axe / WAVE).*
+
+## DESCRIPCIÓN DE PROBLEMAS
+
+| PROBLEMA N.° 1 | Secreto JWT hardcodeado y versionado (Backend) |
+|---|---|
+| **Severidad** | 4 (muy grave) |
+| **Heurística / Principio violado** | Ética y responsabilidad profesional — Seguridad |
+| **Problema** | El backend expone la clave secreta usada para firmar los JSON Web Tokens directamente en un archivo versionado del repositorio público. Cualquiera con acceso al repositorio puede forjar tokens válidos y suplantar usuarios, comprometiendo toda la autenticación de la plataforma. |
+| **Evidencia (código)** | Backend › `src/main/resources/application.properties` (líneas 32–33): `jwt.secret=SEMSSecretKeyForJWTTokenGenerationAndValidation2025` (Incluir captura). |
+| **Recomendación** | Externalizar el secreto mediante variable de entorno (`${JWT_SECRET}`); rotar la clave comprometida; eliminarla del historial de Git. El equipo ya usa `.env` en `.gitignore`: basta mover el secreto ahí. |
+
+| PROBLEMA N.° 5 | WebSocket con CORS abierto a cualquier origen (Backend) |
+|---|---|
+| **Severidad** | 3 (mayor) |
+| **Heurística / Principio violado** | Responsabilidad profesional — Seguridad |
+| **Problema** | El endpoint WebSocket permite conexiones desde cualquier origen mediante `setAllowedOriginPatterns("*")`. Esto habilita que sitios de terceros establezcan conexiones en nombre del usuario (riesgo tipo Cross-Site WebSocket Hijacking), a diferencia de la configuración HTTP, que sí restringe orígenes por lista. |
+| **Evidencia (código)** | Backend › `.../infrastructure/config/WebSocketConfig.java` (línea 21): `registry.addEndpoint("/ws").setAllowedOriginPatterns("*").withSockJS();` (Incluir captura). |
+| **Recomendación** | Restringir los orígenes permitidos a los dominios propios (misma lista que usa WebSecurityConfiguration), preferiblemente por variable de entorno. |
+
+| PROBLEMA N.° 2 | Idioma declarado incorrecto en la Landing |
+|---|---|
+| **Severidad** | 3 (mayor) |
+| **Heurística / Principio violado** | Inclusive Design: Experiencias comparables / a11y |
+| **Problema** | El documento declara inglés como idioma (`lang="en"`) pero todo el contenido visible está en español, y el conmutador de idioma no actualiza el atributo lang del documento. Los lectores de pantalla aplicarán reglas fonéticas del idioma equivocado. |
+| **Evidencia (código)** | Landing › `index.html` (línea 2): `<html lang="en">`; `i18n.js` (línea 1): `let idioma = 'es';` sin actualización de documentElement.lang. (Incluir captura). |
+| **Recomendación** | Declarar el idioma real (es-419) y actualizar `document.documentElement.lang` al alternar idioma; alinear los códigos con en_US / es_419. |
+
+| PROBLEMA N.° 4 | Menú móvil no accesible por teclado (Landing) |
+|---|---|
+| **Severidad** | 3 (mayor) |
+| **Heurística / Principio violado** | Usability: Control y libertad del usuario / a11y |
+| **Problema** | El control que despliega el menú en móvil es un `<div>`, por lo que no recibe foco de teclado ni es accionable con Enter/Espacio, y no comunica su estado a las tecnologías de asistencia. Los usuarios que navegan por teclado quedan sin acceso a la navegación. |
+| **Evidencia (código)** | Landing › `index.html` (línea 32): `<div class="hamburger">` … (Incluir captura). |
+| **Recomendación** | Usar un `<button>` con `aria-expanded` y `aria-controls`; asegurar foco visible y operación por teclado. |
+
+| PROBLEMA N.° 13 | Contraste insuficiente en los enlaces del footer (UI) |
+|---|---|
+| **Severidad** | 2 (menor) |
+| **Heurística / Principio violado** | Inclusive Design: Contraste y color / WCAG 1.4.3 |
+| **Problema** | Los enlaces de las columnas del pie de página se muestran en un gris claro sobre fondo blanco. A simple vista el contraste parece quedar por debajo del mínimo AA (4.5:1 para texto normal), lo que dificulta la lectura a personas con baja visión. Debe medirse el valor exacto con una herramienta. |
+| **Evidencia (código)** | Evaluación visual sobre las capturas del footer de la Landing (secciones 'Opciones sobre el ahorro de energía', 'Beneficios de ahorrar energía', etc.). Medir con axe / WAVE / contrast checker. |
+| **Recomendación** | Oscurecer el color del texto de los enlaces hasta alcanzar al menos 4.5:1; aplicar el mismo criterio a subtítulos y etiquetas tenues. |
+
+| PROBLEMA N.° 14 | Inconsistencia de estilos de botón (UI) |
+|---|---|
+| **Severidad** | 2 (menor) |
+| **Heurística / Principio violado** | Usability: Consistencia y estándares |
+| **Problema** | Acciones equivalentes usan estilos de botón distintos a lo largo del producto: 'Comprar' es una píldora blanca con texto negro, 'Suscribirse' es un botón azul sólido, 'Enviar' es un rectángulo negro y 'Probar ahora'/'Iniciar Sesión' son píldoras con texto subrayado. Esta falta de un sistema de botones consistente dificulta el reconocimiento de las acciones primarias. |
+| **Evidencia (código)** | Evaluación visual sobre las capturas (Hero, Productos, Suscripciones y Footer de la Landing). |
+| **Recomendación** | Definir un Design System de botones (primario / secundario / terciario) y aplicarlo de forma uniforme en Landing y Web App. |
+
+*(Replique la ficha para los demás hallazgos de la Tabla Resumen: 3, 6, 7, 8, 9, 10, 11, 12, 15, 16 y 17.)*
+### 6.4.2. Auditoría realizada 2.
+
+**Proyecto auditado:** ThinkUp — SkillShare
+
+#### 6.4.2.1. Información del grupo auditado 2. 
+
+| CAMPO | VALOR | CAMPO | VALOR |
+|---|---|---|---|
+| **CARRERA** | Ingeniería de Software | **CURSO** | Diseño de Experimentos de Ing. de Software |
+| **NRC** | 12305 | **PROFESOR** | Noriega Melendez, Julio Manuel |
+| **AUDITOR** | GeoPsLabs — GeoPs | **FECHA** | 03/07/2026 |
+| **CLIENTE(S)** | Equipo ThinkUp (participantes de la sesión) | **VERSIÓN** | 2.0 |
+
+#### 6.4.2.2. Cronograma de auditoría realizada 2.
+
+| Fase | Actividad | Descripción | Duración |
+| :---: | :--- | :--- | :---: |
+| 1 | Planificación | Definir alcance, ubicar la organización ThinkUp-SkillShare y sus repositorios/entornos. | Día 1 |
+| 2 | Revisión documental | Lectura del Mid-term Report; verificación de trazabilidad y terminología. | Días 1–2 |
+| 3 | Auditoría de código | Clonar Landing, app Flutter y demás repos; revisar a11y, zoom, i18n, calidad y secretos. | Días 2–3 |
+| 4 | Sesión de evaluación UX | Recorrido de tareas críticas sobre la Landing y la app móvil; registro de problemas. | Días 3–4 |
+| 5 | Análisis y severidad | Consolidar hallazgos y asignar severidad (1–4) en la Tabla Resumen. | Día 4 |
+| 6 | Informe y entrega | Redactar descripciones y recomendaciones; presentar a ThinkUp y registrar la sección 6.4. | Día 5 |
+
+#### 6.4.1.3. Contenido de auditoría realizada 2. 
+
+## SITE o APP A EVALUAR
+SkillShare — Landing Page (React/Vite) + App móvil Flutter (Dart) + Backend C# (ASP.NET Core).
+
+## TAREAS A EVALUAR
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Registro / inicio de sesión de un usuario
+2. Crear un grupo de estudio
+3. Buscar y unirse a un grupo de estudio
+4. Compartir materiales / recursos en un grupo
+5. Chat grupal / organizar una reunión
+6. Editar el perfil / cambiar el idioma de la interfaz
+7. Explorar planes y suscripción (Landing — Pricing)
+
+## OBSERVACIONES — ASPECTOS POSITIVOS
+* **Landing (React/Vite):** declara `<html lang="es">` correctamente; las 13 imágenes incluyen `alt`; 18 atributos ARIA; landmarks completos (`<header>`, `<main>`, `<nav>`, `<footer>`); i18n en 3 idiomas (en/es/pt) que SÍ actualiza `document.documentElement.lang`; sin `console.*` ni secretos hardcodeados.
+* **Backend (C#/ASP.NET Core):** NO versiona secretos — `appsettings.json` está en `.gitignore` y la clave JWT se lee de configuración (no está en el código); validación de entrada con `[ApiController]` en 23 clases; 13 archivos de test.
+* **App Flutter:** i18n con archivos `.arb` (`app_en` / `app_es`) y `flutter_localizations`; arquitectura organizada por features.
+* **UX visible (capturas de la app móvil):** buenos estados vacíos con orientación ('No se encontraron archivos', 'No perteneces a ningún grupo — Únete a grupos para empezar a colaborar'); el formulario 'Create New Group' usa labels explícitas y texto de ayuda; diseño limpio con jerarquía clara; navegación inferior con icono + etiqueta; tarjetas de estado con icono + color + rótulo (no dependen solo del color).
+
+## ESCALA DE SEVERIDAD
+
+| Nivel | Descripción |
+|---|---|
+| **1** | **Problema superficial:** puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado, a no ser que exista disponibilidad de tiempo. |
+| **2** | **Problema menor:** puede ocurrir un poco más frecuentemente o es un poco más difícil de superar. Se le debería asignar una prioridad baja de cara al siguiente release. |
+| **3** | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
+| **4** | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+## A. Checklist de Usabilidad — 10 Heurísticas de Nielsen
+
+| N° | Usabilidad — Principio / Heurística | Qué verificar | Cumple | Severidad y notas |
+|---|---|---|---|---|
+| 1 | Visibilidad del estado del sistema | Feedback de carga, guardado y confirmaciones. | Parcial | Buenos estados vacíos con orientación (Archivos, Perfil); evaluar feedback de carga/guardado en sesión. |
+| 2 | Relación sistema–mundo real | Lenguaje e íconos del usuario. | No | Sev 3 — La interfaz mezcla inglés y español en las mismas pantallas (encabezados y navegación en inglés; Archivos/Perfil en español). |
+| 3 | Control y libertad del usuario | El usuario controla la interacción; salidas. | Parcial | Sev 1 — El 'scrim' del drawer (Landing) no es operable por teclado; en móvil hay botón de cierre (X) en el formulario. |
+| 4 | Consistencia y estándares | Uso uniforme de componentes. | No | Sev 3 — Idioma inconsistente (EN/ES mezclados) en toda la app móvil; rompe la uniformidad. |
+| 5 | Prevención de errores | Validaciones y confirmaciones. | Sí | El formulario 'Create New Group' usa labels claras, campo opcional marcado y texto de ayuda; backend valida con `[ApiController]`. |
+| 6 | Reconocer antes que recordar | Opciones visibles. | Sí | Navegación inferior con icono + etiqueta; secciones y acciones siempre visibles. |
+| 7 | Flexibilidad y eficiencia | Atajos para expertos. | Por verificar | Evaluar en sesión (p. ej. función 'AI Pick'). |
+| 8 | Diseño estético y minimalista | Sin ruido visual. | Sí | Interfaz limpia, moderna y con buena jerarquía visual. |
+| 9 | Recuperación de errores | Mensajes claros con solución. | Parcial | Sev 2 — Backend sin middleware global de excepciones; evaluar mensajes de error en la app. |
+| 10 | Ayuda y documentación | Ayuda accesible y buscable. | Parcial | Textos de ayuda contextuales en formularios; evaluar si existe ayuda general. |
+
+## B. Checklist de Arquitectura de Información
+
+| N° | Arq. Información — Principio / Heurística | Qué verificar | Cumple | Severidad y notas |
+|---|---|---|---|---|
+| 1 | Findable (encontrable) | Navegación y buscador efectivos. | Por verificar | Evaluar buscador de grupos en la app. |
+| 2 | Usable (usable) | Tareas sin caminos sin salida. | Parcial | Sev 2 — 7 enlaces `href="#"` en la Landing (React) son caminos sin salida. |
+| 3 | Useful (útil) | Responde a necesidades reales. | Sí | Dominio educativo/grupos de estudio bien delimitado. |
+| 4 | Accessible (accesible) | Usable con distintas capacidades. | Parcial | Sev 3 — La app Flutter no usa Semantics; la web (React) sí es accesible. |
+| 5 | Credible (creíble) | Confianza, sin enlaces rotos. | Parcial | Sev 2 — Enlaces `href="#"` restan credibilidad; verificar destinos. |
+| 6 | Valuable (valioso) | Aporta valor; jerarquía clara. | Sí | Grupos, archivos y perfil aportan valor; la Home prioriza grupos recomendados y destacados. |
+| 7 | Sistema de organización | Agrupaciones lógicas. | Sí | Home organizada en secciones claras (Recomendados, Destacados, Materias populares). |
+| 8 | Sistema de rotulado | Etiquetas claras y consistentes. | Parcial | Sev 3 — Rótulos legibles pero en idiomas mezclados (EN/ES), lo que rompe la consistencia. |
+| 9 | Sistema de navegación | Menús y jerarquía coherentes. | Sí | Landing con landmarks `<header>`/`<main>`/`<nav>`/`<footer>` y navegación por secciones. |
+| 10 | Búsqueda + SEO/meta tags | Meta tags presentes y correctos. | Sí | Landing con `<title>`, `<meta>` y `lang="es"` correctos. |
+
+## C. Checklist de Diseño Inclusivo, Accesibilidad e i18n
+
+| N° | Inclusive Design — Principio / Heurística | Qué verificar | Cumple | Severidad y notas |
+|---|---|---|---|---|
+| 1 | Proporciona experiencias comparables | Todos logran la tarea. | Parcial | Sev 3 — App Flutter sin Semantics (invisible a TalkBack); la web sí usa ARIA. |
+| 2 | Considera la situación | Funciona en distintos contextos. | Por verificar | Evaluar responsive / conexión. |
+| 3 | Sé consistente | Patrones familiares y coherentes. | No | Sev 3 — Idioma inconsistente (EN/ES) entre pantallas; rompe la coherencia de la experiencia. |
+| 4 | Da control | El usuario controla la interacción. | Parcial | Sev 1 — Scrim del drawer no operable por teclado. |
+| 5 | Ofrece opciones | Varias formas de completar la tarea. | Sí | Landing ofrece i18n en 3 idiomas (en/es/pt). |
+| 6 | Prioriza el contenido | Lo esencial primero. | Sí | La Home muestra primero los grupos recomendados y destacados. |
+| 7 | Aporta valor | Considera preferencias/capacidades. | Sí | Ofrece descubrimiento por materias, archivos y colaboración en grupos. |
+| 8 | Texto alternativo (alt) | Imágenes de contenido con alt descriptivo. | Sí | Las 13 imágenes de la Landing incluyen atributo alt. |
+| 9 | Contraste y color | Contraste WCAG AA; color no único medio. | Parcial | Sev 1 — Texto secundario tenue (subtítulos de tarjetas, metadatos del perfil); a favor: las tarjetas combinan icono + color + rótulo. |
+| 10 | Teclado y foco / ARIA | Navegable por teclado; roles ARIA / Semantics. | Parcial | Sev 2 — Landing con 18 `aria-` y landmarks (bien); app Flutter sin Semantics. |
+| 11 | Internacionalización (i18n) | Soporte en_US / es_419; cadenas externalizadas. | No | Sev 3 — Pese a los `.arb`, la app móvil mezcla EN/ES en la misma interfaz (traducción incompleta). La Landing sí lo resuelve bien (3 idiomas y actualiza lang). |
+
+## TABLA RESUMEN DE HALLAZGOS
+
+| N° | Problema | Severidad (1–4) | Heurística / Principio violado(a) |
+|---|---|---|---|
+| 1 | Backend: CORS abierto a cualquier origen — `AllowAnyOrigin().AllowAnyHeader()` en Program.cs. | 3 | Responsabilidad profesional / Seguridad |
+| 2 | App Flutter (UI): mezcla inglés y español en la misma interfaz — encabezados y navegación en inglés ('Recommended for You', 'Home/Groups/…'), formulario y vista de grupo en inglés, pero Archivos y Perfil en español. | 3 | Usability: Consistencia / Inclusive Design: Sé consistente / i18n |
+| 3 | App Flutter: no usa ningún widget `Semantics()` ni `semanticLabel`; la interfaz es prácticamente invisible para lectores de pantalla (TalkBack). | 3 | Inclusive Design: Experiencias comparables / a11y |
+| 4 | App Flutter: baseUrl hardcodeada a `http://10.0.2.2:5118/api` (loopback del emulador, sin HTTPS) en injection_container.dart; una build de producción no alcanzaría el backend real. | 3 | Responsabilidad profesional / configuración |
+| 5 | Landing: 7 enlaces `href="#"` sin destino real. | 2 | Usability / IA: ¿Es usable? |
+| 6 | App Flutter: 113 sentencias `print()` de depuración en el código de producción (`lib/`). | 2 | Responsabilidad profesional / calidad de código |
+| 7 | App Flutter: el modelo user.dart serializa el campo password en toJson/fromJson (riesgo de exponerlo en logs). | 2 | Responsabilidad profesional / manejo de datos |
+| 8 | Backend: 67 `Console.WriteLine` en lugar de `ILogger`; salida de depuración no controlada. | 2 | Responsabilidad profesional / calidad |
+| 9 | Backend: no hay middleware global de manejo de excepciones (`UseExceptionHandler`); respuestas de error inconsistentes. | 2 | Responsabilidad profesional / calidad |
+| 10 | App Flutter (UI): texto secundario tenue (subtítulos de tarjetas y metadatos del perfil) con contraste flojo sobre fondo claro. | 1 | Inclusive Design: Contraste y color |
+| 11 | Landing: el 'scrim' del drawer móvil es un `<div onClick>` sin foco de teclado (cierre no operable por teclado). | 1 | Inclusive Design / a11y |
+| 12 | i18n (naming): los archivos usan 'en'/'es' en lugar de en_US / es_419 exigidos por el curso. | 1 | Internacionalización (i18n) |
+
+*Notas del auditor: la apiKey de Firebase presente en firebase_options.dart NO se reporta como vulnerabilidad, porque las claves de Firebase son públicas por diseño; se recomienda verificar que las Firebase Security Rules estén restringidas. A diferencia de otros proyectos, este backend NO versiona su secreto JWT (buena práctica). Se añadieron hallazgos visuales de las capturas de la app móvil; los ítems de contraste deben medirse con herramienta (axe / WAVE).*
+
+## DESCRIPCIÓN DE PROBLEMAS
+
+| PROBLEMA N.° 1 | CORS abierto a cualquier origen (Backend) |
+|---|---|
+| **Severidad** | 3 (mayor) |
+| **Heurística / Principio violado** | Responsabilidad profesional — Seguridad |
+| **Problema** | El backend habilita CORS con `AllowAnyOrigin().AllowAnyHeader()`, permitiendo que cualquier sitio web consuma la API. Esto amplía la superficie de ataque (p. ej. abuso desde páginas de terceros) y no restringe el acceso a los dominios propios de la aplicación. |
+| **Evidencia (código)** | Backend › `Program.cs` (líneas 76–77): `policy.AllowAnyOrigin().AllowAnyHeader();` (Incluir captura). |
+| **Recomendación** | Restringir los orígenes a los dominios propios con `WithOrigins(...)`, preferiblemente leídos de configuración; limitar cabeceras y métodos a lo necesario. |
+
+| PROBLEMA N.° 2 | Interfaz con idiomas mezclados EN/ES (App móvil) |
+|---|---|
+| **Severidad** | 3 (mayor) |
+| **Heurística / Principio violado** | Usability: Consistencia y estándares / Inclusive Design: Sé consistente / i18n |
+| **Problema** | La aplicación móvil combina inglés y español dentro de las mismas pantallas: los encabezados de sección y la barra de navegación están en inglés ('Recommended for You', 'Featured Groups', 'Home/Groups/Explorer/Files/Profile'), el formulario de creación de grupo y la vista de grupo están en inglés ('Create New Group', 'Members', 'Join Group', '2mo ago'), mientras que las pantallas de Archivos y Perfil están en español ('Mis Archivos', 'No perteneces a ningún grupo', '25 años'). Esta inconsistencia dificulta la comprensión y transmite una imagen poco pulida. |
+| **Evidencia (código)** | Evaluación visual sobre las capturas de la app móvil (Home, Create New Group, detalle de grupo, Mis Archivos, Perfil). |
+| **Recomendación** | Externalizar TODAS las cadenas a los archivos `.arb` y consumirlas vía AppLocalizations; eliminar textos incrustados; verificar que al cambiar de idioma toda la interfaz se traduzca. |
+
+| PROBLEMA N.° 3 | App móvil sin accesibilidad (Flutter) |
+|---|---|
+| **Severidad** | 3 (mayor) |
+| **Heurística / Principio violado** | Inclusive Design: Experiencias comparables / a11y |
+| **Problema** | La aplicación Flutter no utiliza ningún widget `Semantics()` ni `semanticLabel`, por lo que los elementos personalizados (íconos, botones, tarjetas) no exponen información a los lectores de pantalla como TalkBack. Los usuarios ciegos o con baja visión no pueden operar la app de forma comparable. |
+| **Evidencia (código)** | flutter-mobile-application › `lib/` : 0 ocurrencias de `Semantics(` y de `semanticLabel`. (Incluir captura). |
+| **Recomendación** | Añadir Semantics/semanticLabel a íconos y controles personalizados; probar con TalkBack; preferir widgets Material que ya exponen semántica. |
+
+| PROBLEMA N.° 4 | URL del backend hardcodeada e insegura (Flutter) |
+|---|---|
+| **Severidad** | 3 (mayor) |
+| **Heurística / Principio violado** | Responsabilidad profesional — configuración / seguridad |
+| **Problema** | La URL base del backend está fijada en el código a `http://10.0.2.2:5118/api`, que es el loopback del emulador de Android y usa HTTP sin cifrar. Una build de producción apuntaría a una dirección inexistente para el usuario final, y el tráfico no viajaría cifrado. |
+| **Evidencia (código)** | flutter-mobile-application › `lib/core/injection_container.dart` (línea 15): `baseUrl: 'http://10.0.2.2:5118/api'`. (Incluir captura). |
+| **Recomendación** | Externalizar la URL por entorno (dev/prod) mediante configuración o dart-define; usar HTTPS en el backend desplegado. |
+
+*(Replique la ficha para los demás hallazgos de la Tabla Resumen: 5, 6, 7, 8, 9, 10, 11 y 12.)*
+
+### 6.4.3. Auditoría recibida. 
+
+#### 6.4.3.1. Información del grupo auditor.
+
+El grupo auditado corresponde al Grupo 2, responsable del desarrollo del proyecto GeoPS, una plataforma web orientada a conectar comercios de productos orientales con consumidores mediante promociones geolocalizadas. El equipo está conformado por siete integrantes y, para la coordinación de la auditoría y la entrega de la documentación, se tomó como contacto principal a Bryan Barba Estrada, representante del grupo durante el proceso de revisión.
+
+#### 6.4.3.2. Cronograma de auditoría recibida. 
 
 
+| **Código** | SGC_FR_010 |
+|---|---|
+| **Revisión** | Rev.00 |
+| **Fecha** | 16/10/2025 |
+
+| Campo | Detalle |
+|---|---|
+| **Objetivo** | Verificar el cumplimiento del informe GeoPS respecto a los requisitos establecidos en el Statement del curso. |
+| **Alcance** | Auditar la documentación del informe GeoPS. |
+| **Criterios de auditoría** | Statement del curso. |
+| **Tipo de auditoría** | Interna |
+| **Lugar** | Virtual |
+| **Fecha de auditoría** | 26-Jun |
+
+## Equipo auditor
+
+| Rol | Integrante |
+|---|---|
+| Auditor 1 (Líder) | Orosco Ttamiña, Juan Carlos |
+| Auditor 2 | Montañez Moreno, Luis Angel |
+| Auditor 3 | Rodriguez Zulueta, Andres Fernando |
+| Observador 1 | Díaz Fiestas, Jorge Luis |
+| Observador 2 | Ramírez Tello, Sebastian |
+| Observador 3 | Arevalo Nuñez, Leandro |
+
+## Cronograma de auditoría
+
+| Horario / Fecha | Área / Proceso | Equipo auditor | Responsable | Requisito |
+|---|---|---|---|---|
+| 09:00 – 09:30 | Reunión de apertura y presentación del alcance | Auditor 1 | Líder del equipo | Statement del curso |
+| 09:30 – 10:00 | Presentación y estructura del informe | Auditor 2 | Líder del equipo | Estructura del Informe |
+| 10:00 – 10:30 | Startup & Product Profile | Auditor 2 | Líder del equipo | Capítulo I |
+| 10:30 – 11:15 | Requirements Engineering y UX Research | Auditor 2 | Líder del equipo | Capítulo II |
+| 11:15 – 12:00 | Product Management | Auditor 2 | Líder del equipo | Capítulo III |
+| **12:00 – 13:00** | **Espacio de receso** | — | — | — |
+| 13:00 – 13:45 | UX Design | Auditor 4 | Líder del equipo | Capítulo IV |
+| 13:45 – 14:30 | Software Architecture | Auditor 4 | Líder del equipo | Capítulo IV |
+| 14:30 – 15:00 | Software Implementation | Auditor 2 | Líder del equipo | Capítulo V |
+| 15:00 – 15:45 | Testing, Static Verification y Validation | Auditor 1 | Líder del equipo | Capítulo VI |
+| 15:45 – 16:15 | DevOps Practices | Auditor 1 | Líder del equipo | Capítulo VII |
+| 16:15 – 17:00 | Experiment Planning y Experiment Design | Auditor 1 | Líder del equipo | Capítulo VIII: Secciones 8.1 y 8.2 |
+| 17:00 – 17:45 | Experimentation, Analysis y Continuous Learning | Auditor 1 | Líder del equipo | Capítulo VIII: Secciones 8.3 – 8.6 |
+| 17:45 – 18:00 | Reunión de cierre y consolidación de hallazgos | Auditor 1 | Líder del equipo | Resultados de la auditoría |
+
+
+#### 6.4.3.3. Contenido de auditoría recibida. 
+
+#### A1. Presentación y estructura del informe
+Se verificó que el informe GeoPS incluye carátula, datos del curso, relación de integrantes, registro de versiones, Project Report Collaboration Insights, tabla de contenidos y Student Outcome. Estos elementos corresponden a la estructura general solicitada en el Statement.
+* **Hallazgo:** No se identificaron desviaciones relevantes en la presentación y estructura general del informe.
+* **Recomendación:** Mantener la estructura actual y para futuras versiones revisar que el título del documento se alinee con el nombre solicitado por el Statement, ya que el informe indica “Informe de TP” y el Statement hace referencia a “Informe de Trabajo Final”.
+
+#### A2. Startup y Product Profile
+Se verificó que el informe desarrolla el Startup Profile y el Solution Profile conforme a la estructura definida en el Statement. La documentación incluye la descripción de la startup, misión, visión, antecedentes y problemática, el proceso Lean UX y la definición de los segmentos objetivo, proporcionando el contexto necesario para comprender el proyecto.
+* **Hallazgo:** No se identificaron desviaciones relevantes respecto a los requisitos establecidos para este apartado. La información presentada es consistente con la estructura solicitada en el Statement.
+* **Recomendación:** Mantener el nivel de detalle y la coherencia entre la descripción de la startup, la problemática identificada y la propuesta de valor presentada en el informe.
+
+#### A3. Lean UX y Requirements
+Se verificó que el informe desarrolla el proceso de levantamiento y análisis de requerimientos mediante el análisis competitivo, entrevistas, registro y análisis de entrevistas, User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping y Ubiquitous Language. La documentación mantiene coherencia con el proceso de Needfinding definido en el Statement y evidencia el trabajo realizado para comprender las necesidades de los segmentos objetivo.
+* **Hallazgo:** Se evidencia el desarrollo de la mayoría de los artefactos del proceso de Needfinding; sin embargo, no se identifica la documentación del As-Is Scenario Mapping, artefacto solicitado explícitamente en el Statement como parte de esta etapa.
+* **Recomendación:** Incorporar el As-Is Scenario Mapping, describiendo el flujo actual de interacción de los usuarios antes de la implementación de la solución, con el fin de completar el proceso de análisis de requerimientos y mantener la trazabilidad entre el problema identificado y la propuesta de solución.
+
+#### A4. UX Research
+Se verificó que el informe documenta los principales artefactos de UX Research, incluyendo User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping, los cuales fueron desarrollados a partir del análisis de las entrevistas realizadas a los segmentos objetivo. Los artefactos mantienen coherencia con la problemática identificada y contribuyen a comprender las necesidades y el comportamiento de los usuarios.
+* **Hallazgo:** No se identificaron desviaciones relevantes específicas en los artefactos de UX Research. La observación relacionada con la ausencia del As-Is Scenario Mapping fue registrada en el criterio anterior por formar parte del proceso de Requirements Elicitation & Analysis.
+* **Recomendación:** Mantener la consistencia entre los artefactos de UX Research y asegurar que cualquier actualización en los User Personas o User Journey Maps se refleje también en los demás artefactos relacionados, preservando la trazabilidad del proceso de diseño centrado en el usuario.
+
+#### A5. Product Management
+Se verificó que el informe desarrolla los principales artefactos de Product Management, incluyendo User Stories, Impact Mapping y Product Backlog. Los artefactos presentados mantienen coherencia con los requerimientos identificados y permiten comprender la planificación funcional del producto. Sin embargo, se identificó una observación respecto a la documentación del escenario futuro de la solución.
+* **Hallazgo:** El informe presenta User Stories, Impact Mapping y Product Backlog; sin embargo, no se evidencia el To-Be Scenario Mapping solicitado por el Statement como parte de la especificación de requisitos. La ausencia de este artefacto limita la trazabilidad entre el escenario actual (As-Is) y la solución propuesta (To-Be).
+* **Recomendación:** Incorporar el To-Be Scenario Mapping, mostrando la evolución del proceso actual hacia el proceso propuesto y manteniendo la relación con los User Personas y los requerimientos definidos.
+
+#### A6. UX Design
+Se verificó que el informe documenta el proceso de diseño del producto mediante Style Guidelines, Information Architecture, Landing Page UI Design y los artefactos de UX/UI correspondientes a la aplicación web. La documentación presentada mantiene coherencia con la solución propuesta y evidencia el proceso de diseño de la interfaz. Sin embargo, se identificó una observación respecto al alcance de los artefactos de diseño requeridos por el Statement.
+* **Hallazgo:** El informe desarrolla de forma adecuada los artefactos de diseño para la aplicación web; sin embargo, no se evidencian los artefactos correspondientes al diseño de la aplicación móvil (Style Guidelines, Wireframes, Mockups, User Flow y Prototipos Android/iOS) solicitados por el Statement.
+* **Recomendación:** Incorporar los artefactos de UX/UI para la aplicación móvil o justificar formalmente que el alcance del proyecto contempla únicamente una solución web, de manera que exista consistencia entre el alcance definido y la documentación presentada.
+
+#### A7. Software Architecture
+Se verificó que el informe documenta la arquitectura de software mediante los diagramas de contexto, contenedores, componentes, diagramas de clases, diccionario de clases y el diseño de la base de datos. Los artefactos presentados mantienen consistencia con la solución propuesta y permiten comprender la organización de los diferentes componentes del sistema, así como sus relaciones e interacción.
+* **Hallazgo:** No se identificaron desviaciones relevantes respecto a los requisitos establecidos para la documentación de la arquitectura de software. Los artefactos presentados cumplen con la estructura definida en el Statement.
+* **Recomendación:** Mantener la consistencia entre los diagramas arquitectónicos y la implementación del sistema, asegurando que futuras modificaciones en la arquitectura se reflejen también en la documentación técnica correspondiente.
+
+#### A8. Software Implementation
+Se verificó que el informe documenta la implementación del producto mediante la configuración del entorno de desarrollo, la gestión del código fuente, la configuración del despliegue, los Sprint Backlogs, las evidencias de la Landing Page, la aplicación web, el backend RESTful y la documentación de la API. Asimismo, se evidencia la colaboración del equipo durante el desarrollo del proyecto. No obstante, se identificaron diferencias respecto a algunos artefactos requeridos por el Statement.
+* **Hallazgo:** El informe presenta las evidencias de implementación para la solución web y el backend; sin embargo, no se evidencia un apartado correspondiente al Acuerdo de Servicio (SaaS) ni a la Implemented Native-Mobile Application Evidence, ambos considerados dentro de la estructura solicitada por el Statement.
+* **Recomendación:** Incorporar los apartados correspondientes al Acuerdo de Servicio (SaaS) y a la implementación de la aplicación móvil o justificar formalmente que dichos elementos no forman parte del alcance del proyecto aprobado.
+
+#### A9. Testing y Quality Assurance
+Se verificó que el informe documenta las actividades de verificación y validación mediante pruebas unitarias, pruebas de integración, pruebas basadas en comportamiento (BDD), pruebas de sistema y pruebas de la estructura del formulario de campañas. La documentación presentada evidencia la ejecución de diferentes niveles de prueba para validar el funcionamiento de la solución desarrollada y mantiene consistencia con la estructura establecida en el Statement.
+* **Hallazgo:** No se identificaron desviaciones relevantes respecto a los requisitos establecidos para la documentación de las pruebas del sistema. Los artefactos presentados cumplen con la estructura definida en el Statement.
+* **Recomendación:** Mantener la documentación de las evidencias de prueba actualizada, incorporando los resultados de nuevas funcionalidades conforme evolucione el producto y asegurando la trazabilidad entre los casos de prueba y los requerimientos implementados.
+
+#### A10. Static Verification
+Se revisó la documentación correspondiente a la verificación estática del software, verificando la existencia de artefactos relacionados con el análisis estático del código, estándares de codificación, calidad, seguridad y revisiones técnicas. Durante la revisión se identificó que estos elementos no se encuentran documentados dentro del informe.
+* **Hallazgo:** El informe desarrolla las pruebas funcionales del sistema; sin embargo, no se evidencia la sección de Static Testing & Verification requerida por el Statement, incluyendo el análisis estático del código, la evaluación de calidad y seguridad, así como las revisiones técnicas del software.
+* **Recomendación:** Incorporar la sección de Static Testing & Verification, documentando las herramientas utilizadas para el análisis estático, los estándares de codificación aplicados, las evidencias de calidad y seguridad del código y las revisiones técnicas realizadas durante el desarrollo.
+
+#### A11. Validation y UX Audit
+Se revisó la documentación correspondiente a la validación del producto con usuarios y a la auditoría de experiencia de usuario. Durante la evaluación se verificó que el informe desarrolla las pruebas funcionales del sistema; sin embargo, no se identifican evidencias relacionadas con las entrevistas de validación, las evaluaciones heurísticas ni la auditoría UX definidas en el Statement.
+* **Hallazgo:** El informe documenta las pruebas de verificación del software, pero no evidencia las secciones de Validation Interviews ni Auditoría de Experiencias de Usuario, incluyendo el diseño y registro de entrevistas, las evaluaciones heurísticas y los entregables de auditoría requeridos por el Statement.
+* **Recomendación:** Incorporar la documentación de las entrevistas de validación con usuarios, las evaluaciones heurísticas y la auditoría de experiencia de usuario, incluyendo los artefactos y resultados correspondientes para completar el proceso de validación definido en el Statement.
+
+#### A12. DevOps Practices
+Se verificó que el informe documenta las prácticas de DevOps mediante la implementación de Continuous Integration, Continuous Delivery y Continuous Deployment, incluyendo las herramientas utilizadas y los componentes del pipeline. La información presentada evidencia la automatización del proceso de integración y despliegue; sin embargo, se identificó una observación respecto a la cobertura de todas las prácticas definidas en el Statement.
+* **Hallazgo:** El informe desarrolla las prácticas de Continuous Integration, Continuous Delivery y Continuous Deployment; sin embargo, no se evidencia la sección correspondiente a Continuous Monitoring, incluyendo las herramientas de monitoreo, los componentes del pipeline, las alertas y las notificaciones requeridas por el Statement.
+* **Recomendación:** Incorporar la documentación de Continuous Monitoring, describiendo las herramientas utilizadas, los mecanismos de monitoreo implementados y las estrategias de alertas y notificaciones para completar el ciclo de prácticas DevOps definido en el Statement.
+
+#### A13. Experiment Planning
+Se verificó que el informe desarrolla la fase de planificación de experimentos mediante los apartados As-Is Summary, Raw Material, Experiment-Ready Questions, Question Backlog y Experiment Cards, siguiendo la estructura establecida en el Statement. Los artefactos permiten comprender el proceso de planificación de los experimentos; sin embargo, se identificó una oportunidad de mejora en la trazabilidad entre ellos.
+* **Hallazgo:** Se presentan el Question Backlog y las Experiment Cards; sin embargo, la relación entre las preguntas de investigación y los experimentos propuestos no se evidencia de forma clara, dificultando la trazabilidad del proceso de planificación experimental.
+* **Recomendación:** Fortalecer la relación entre el Question Backlog y las Experiment Cards, indicando explícitamente qué preguntas de investigación son atendidas por cada experimento y cómo estas se derivan de los supuestos identificados.
+
+#### A14. Experiment Design
+Se verificó que el informe desarrolla la fase de diseño de experimentos mediante la definición de hipótesis, métricas de negocio, medidas, condiciones, cálculos de escala, selección de métodos y plan de seguimiento. En términos generales, la estructura del capítulo es consistente con la definida en el Statement; sin embargo, se identificó una observación respecto al desarrollo de las hipótesis experimentales.
+* **Hallazgo:** Se presentan las Experiment Cards y las hipótesis del experimento; sin embargo, solo se identifican dos experimentos/hipótesis principales. Si el Statement o la rúbrica establecen el desarrollo de cinco hipótesis, el entregable resulta incompleto y limita la validación de los diferentes supuestos planteados para la solución.
+* **Recomendación:** Completar las cinco hipótesis/experimentos requeridos, asegurando que cada una mantenga relación con el Question Backlog, las métricas de negocio, las medidas y las condiciones definidas para el experimento.
+
+#### A15. Experimentation
+Se verificó que el informe documenta la fase de experimentación mediante los apartados To-Be User Stories y To-Be Product Backlog, evidenciando la definición de los requerimientos derivados de los experimentos. No obstante, la documentación presentada se centra principalmente en la planificación de la solución y no desarrolla con suficiente detalle la ejecución y los resultados de los experimentos realizados.
+* **Hallazgo:** La fase de Experimentation se limita principalmente a la documentación de las To-Be User Stories y el To-Be Product Backlog, sin evidenciar de forma clara la ejecución de los experimentos ni los resultados obtenidos durante esta etapa.
+* **Recomendación:** Complementar la documentación de la fase de experimentación incorporando evidencias de la ejecución de los experimentos, los resultados obtenidos y la relación entre estos resultados y las hipótesis planteadas en la etapa de diseño experimental.
+
+#### A16. Experiment Analysis y Continuous Learning
+Se revisó la documentación correspondiente al análisis de resultados y al proceso de aprendizaje continuo derivado de la experimentación. Durante la evaluación se verificó que el informe desarrolla las fases de planificación, diseño y experimentación; sin embargo, no se evidencia una sección destinada al análisis de los resultados obtenidos ni a la documentación del aprendizaje generado a partir de los experimentos realizados.
+* **Hallazgo:** El informe concluye la sección de Experiment-Driven Development con la fase de Experimentation, sin evidenciar el análisis de los resultados obtenidos ni las actividades de Continuous Learning definidas en el Statement. Esto limita la demostración de que los experimentos fueron evaluados y utilizados para retroalimentar el desarrollo del producto.
+* **Recomendación:** Incorporar la documentación correspondiente al Experiment Analysis y Continuous Learning, incluyendo el análisis de los resultados de cada experimento, las conclusiones obtenidas, las decisiones tomadas a partir de la evidencia recopilada y la actualización de los artefactos del proyecto cuando corresponda.
+
+#### 6.4.3.4. Resumen de modificaciones para subsanar hallazgos. 
 
 
 # Capítulo 7: DevOps Practices
