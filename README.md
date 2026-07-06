@@ -5227,105 +5227,121 @@ Una vez que el pipeline de alertas valida y confirma una anomalía real, este fl
 
 ### 8.1.1. As-Is Summary
 
-La plataforma web actual, GeoPS, se enfoca en ofrecer una solución responsiva para conectar comercios de productos orientales y asiáticos (gastronomía, cosmética K-Beauty y minimarkets de importación) con consumidores en Lima Moderna (San Borja, Lince y el Barrio Chino) mediante mapas interactivos y geolocalización. Actualmente, se ha completado el flujo base: el registro de usuarios, la publicación de campañas publicitarias por parte de las PyMEs y la visualización geográfica de ofertas.
-
-No obstante, al tratarse de una arquitectura 100% web que se ejecuta desde el navegador móvil (sin una aplicación nativa instalable), la retención del usuario en el ecosistema digital y la conversión real hacia el tráfico peatonal en las tiendas físicas presentan debilidades críticas que ponen en riesgo la sostenibilidad del modelo de negocio.
+La plataforma web GeoPS conecta comercios de productos orientales y asiáticos con consumidores mediante ofertas geolocalizadas. Antes del último Sprint, el flujo permitía explorar ofertas, pero todavía presentaba limitaciones para conservar promociones de interés, recuperar rápidamente las selecciones realizadas, compartir experiencias de consumo y adaptar la interfaz del cliente a condiciones de baja iluminación.
 
 **Problemas identificados:**
 
-* **Baja retención operativa:** Al no ser una aplicación instalada en el sistema operativo, los consumidores dependen de recordar la URL o mantener una pestaña activa en su navegador, reduciendo las visitas recurrentes.
-* **Ausencia de métricas de conversión física (ROI):** Los comerciantes visualizan interacciones en la web (impresiones o clics), pero carecen de una herramienta automatizada que demuestre cuántas visitas web se tradujeron en transacciones dentro de la tienda física.
-* **Sobrecarga visual en la interfaz:** El mapa web muestra todos los comercios simultáneamente, lo que genera fatiga cognitiva en pantallas móviles reducidas y dificulta la exploración especializada.
-* **Falta de optimización para uso nocturno:** Gran parte de las búsquedas de locales gastronómicos (como restaurantes de ramen o buffets) ocurre en las tardes y noches en la vía pública, donde el brillo de la interfaz clara genera fatiga visual en exteriores de baja iluminación.
-* **Ausencia de mecanismos de viralidad orgánica:** La plataforma no cuenta con canales simplificados para que la comunidad de entusiastas comparta cupones específicos, limitando la adquisición de nuevos usuarios a la publicidad tradicional.
+* **Pérdida de ofertas de interés:** El cliente no podía marcar una promoción para recuperarla posteriormente.
+* **Falta de una vista centralizada:** No existía una sección que reuniera exclusivamente las ofertas guardadas por la cuenta activa.
+* **Ausencia de retroalimentación pública:** El detalle de la oferta no permitía registrar una calificación ni un comentario sobre la experiencia.
+* **Baja trazabilidad de las opiniones:** Sin una identificación clara del autor, las reseñas podían perder credibilidad ante otros consumidores.
+* **Confort visual limitado:** La vista del cliente solo ofrecía un tema claro, incluso durante el uso nocturno. La vista Business debía conservar su interfaz clara para mantener consistencia operativa.
 
 **Objetivos de mejora:**
 
-* **Estimular la interacción proactiva:** Implementar notificaciones web de proximidad que alerten al usuario mediante un *Service Worker*, incluso con el navegador cerrado.
-* **Cerrar el ciclo de conversión Online-to-Offline (O2O):** Desarrollar un validador de códigos QR basado en la web para los establecimientos comerciales.
-* **Optimizar la experiencia de descubrimiento:** Organizar circuitos y rutas temáticas culturales en el mapa responsivo.
-* **Adaptar la interfaz al contexto del usuario:** Incorporar un selector de interfaz nocturna (modo oscuro) enfocado en el comportamiento de consumo nocturno.
-* **Apalancar el crecimiento orgánico:** Crear un sistema de cupones favoritos compartibles mediante enlaces web cortos y optimizados para redes sociales.
+* Permitir que el cliente marque y desmarque ofertas favoritas con persistencia en la base de datos.
+* Incorporar la sección **Mis favoritos** para consultar y administrar las ofertas guardadas.
+* Habilitar reseñas compuestas por una calificación de una a cinco estrellas y un comentario.
+* Mostrar el nombre real del autor de cada reseña y emplear un texto neutro cuando la cuenta no esté disponible.
+* Implementar modo oscuro exclusivamente para cuentas `CONSUMER`, conservando la vista Business (`OWNER`) en modo claro.
 
 ### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
 
 **Assumptions (Suposiciones):**
 
-* **Aceptación de Permisos Web:** Se asume que los consumidores otorgarán permisos de ubicación y notificaciones a GeoPS dentro de sus navegadores móviles (Chrome/Safari) si se les comunica un beneficio inmediato en forma de descuentos.
-* **Viabilidad Tecnológica WebRTC:** Se asume que los navegadores móviles de los comerciantes proveerán un acceso fluido a la cámara mediante estándares HTML5 para escanear códigos QR sin ralentizar sus operaciones diarias.
-* **Valor de las Rutas de Nicho:** Se asume que los usuarios pertenecientes a la comunidad entusiasta de la cultura asiática prefieren la exploración guiada (ej. "Ruta del Ramen") sobre la búsqueda genérica.
-* **Impacto de la Interfaz Nocturna:** Se asume que habilitar un tema oscuro incrementará el tiempo de retención en la plataforma web durante los horarios de mayor consumo gastronómico (18:00 a 23:00 horas).
-* **Disposición a Compartir:** Se asume que los consumidores compartirán enlaces de ofertas con amigos a través de aplicaciones de mensajería instantánea si el proceso requiere un solo clic.
+* Los clientes volverán con mayor facilidad a una promoción cuando puedan guardarla como favorita.
+* Una pantalla dedicada reducirá el tiempo necesario para recuperar las ofertas seleccionadas.
+* Las calificaciones y comentarios aportarán confianza y contexto a la decisión de compra.
+* Mostrar el nombre del autor aumentará la credibilidad de una reseña frente a identificadores genéricos.
+* Los clientes valorarán un modo oscuro persistente, mientras que los usuarios Business preferirán conservar la interfaz operativa clara.
 
 **Knowledge Gaps (Brechas de conocimiento):**
 
-* Se desconoce el porcentaje exacto de usuarios que bloqueará la solicitud nativa de geolocalización en segundo plano del navegador móvil.
-* Carecemos de datos sobre la compatibilidad y velocidad de respuesta de la API WebRTC en dispositivos móviles de gama baja utilizados por algunos microempresarios.
+* Se desconoce qué proporción de clientes utilizará favoritos de forma recurrente.
+* No se conoce el efecto de las reseñas sobre la confianza y la intención de consultar una oferta.
+* Se requiere comprobar si identificar al autor mejora la percepción de autenticidad.
+* Se desconoce cuántos clientes conservarán el modo oscuro después de activarlo.
 
 **Ideas:**
 
-* **Geofencing vía Web Push:** Enviar alertas hiperlocales automáticas utilizando la API de Geolocalización y un *Service Worker* cuando el usuario transite a menos de 500 metros de una campaña activa.
-* **Módulo de Canje QR Web:** Crear un generador de fichas dinámicas para el cliente y un lector de cámara web integrado en el panel del comerciante.
-* **Filtros de Circuitos Culturales:** Implementar capas temáticas conmutables en el mapa interactivo para agrupar comercios afines.
-* **Modo Oscuro Contextual:** Desarrollar un selector de hojas de estilo (CSS) para alternar temas visuales según la preferencia del usuario o el horario del sistema.
-* **Enlaces de Recomendación Viral:** Programar un codificador de enlaces cortos que asocie el ID de una oferta a un formato compartible en redes sociales.
+* Incorporar un botón de corazón para guardar o eliminar una oferta de favoritos.
+* Crear la ruta `/favoritos` con las promociones guardadas por la cuenta activa.
+* Añadir un formulario de reseña con estrellas y comentario en el detalle de la oferta.
+* Resolver el nombre del autor desde su identificador y mostrar un fallback neutro cuando corresponda.
+* Añadir un selector claro/oscuro solo en la cabecera del cliente y persistir la preferencia en `localStorage`.
 
 **Claims (Afirmaciones):**
 
-* Un mecanismo transparente de validación por código QR web mitigará la desconfianza de las PyMEs sobre la efectividad publicitaria de GeoPS.
-* Las alertas proactivas por proximidad en el navegador incrementarán las visitas presenciales a las tiendas en al menos un 15%, contrarrestando la falta de una aplicación nativa.
+* Los favoritos reducen la fricción de volver a encontrar promociones relevantes.
+* Las reseñas identificadas aportan prueba social y elevan la confianza en las ofertas.
+* El modo oscuro mejora el confort visual del cliente sin alterar la experiencia Business.
 
 ### 8.1.3. Experiment-Ready Questions
 
 | Question | Confidence | Risk | Impact | Interest | Total Score |
 | --- | --- | --- | --- | --- | --- |
-| ¿Aumentará la afluencia física a las tiendas si implementamos **Web Push Notifications** hiperlocalizadas (radio 500m)? | 7 | 6 | 9 | 8 | **30** |
-| ¿Mejorará la medición del ROI publicitario para las PyMEs integrando un sistema de **canje QR vía WebRTC** en el navegador? | 8 | 4 | 8 | 8 | **28** |
-| ¿Aumentará la retención web de los consumidores si agregamos filtros de **Rutas Temáticas (Mapas de Nicho)**? | 6 | 2 | 6 | 7 | **21** |
-| ¿Se incrementará la duración de la sesión nocturna en exteriores si añadimos un **selector de Modo Oscuro**? | 8 | 2 | 5 | 6 | **21** |
-| ¿Disminuirá el costo de adquisición de usuarios si permitimos generar **Enlaces de Ofertas Favoritas Compartibles**? | 6 | 3 | 7 | 5 | **21** |
+| ¿Aumentará la recuperación de promociones de interés si permitimos **guardar y eliminar ofertas favoritas**? | 8 | 6 | 9 | 7 | **30** |
+| ¿Disminuirá el tiempo para volver a una promoción si incorporamos la sección **Mis favoritos**? | 8 | 5 | 8 | 7 | **28** |
+| ¿Aumentará la confianza en una oferta si permitimos registrar **reseñas y calificaciones**? | 7 | 5 | 8 | 7 | **27** |
+| ¿Mejorará la credibilidad de los comentarios si mostramos la **identidad del autor** de cada reseña? | 7 | 3 | 7 | 6 | **23** |
+| ¿Mejorará el confort visual si ofrecemos **modo oscuro exclusivamente al cliente**? | 8 | 2 | 5 | 6 | **21** |
 
 ### 8.1.4. Question Backlog
 
 | Prioridad (1,2,3,5,8) | Pregunta |
 | --- | --- |
-| 1 | ¿Aumentará la afluencia física a las tiendas si implementamos Web Push Notifications hiperlocalizadas (radio 500m)? |
-| 2 | ¿Mejorará la medición del ROI publicitario para las PyMEs integrando un sistema de canje QR vía WebRTC en el navegador? |
-| 3 | ¿Aumentará la retención web de los consumidores si agregamos filtros de Rutas Temáticas (Mapas de Nicho)? |
-| 5 | ¿Se incrementará la duración de la sesión nocturna en exteriores si añadimos un selector de Modo Oscuro? |
-| 8 | ¿Disminuirá el costo de adquisición de usuarios si permitimos generar Enlaces de Ofertas Favoritas Compartibles? |
+| 1 | ¿Aumentará la recuperación de promociones de interés si permitimos guardar y eliminar ofertas favoritas? |
+| 2 | ¿Disminuirá el tiempo para volver a una promoción si incorporamos la sección Mis favoritos? |
+| 3 | ¿Aumentará la confianza en una oferta si permitimos registrar reseñas y calificaciones? |
+| 5 | ¿Mejorará la credibilidad de los comentarios si mostramos la identidad del autor de cada reseña? |
+| 8 | ¿Mejorará el confort visual si ofrecemos modo oscuro exclusivamente al cliente? |
 
 ### 8.1.5. Experiment Cards
 
-| Question | ¿Aumentará la afluencia física a las tiendas si implementamos Web Push Notifications hiperlocalizadas? |
+| Question | ¿Aumentará la recuperación de promociones de interés si permitimos guardar y eliminar ofertas favoritas? |
 | --- | --- |
-| **Why** | Al depender exclusivamente del ingreso manual del usuario a la URL, se pierden las ventanas de compra impulsiva en la calle. Las alertas basadas en la ubicación física capturan al cliente en el contexto geográfico idóneo. |
-| **What** | Desarrollar un módulo de geofencing en Angular que utilice un *Service Worker* para enviar alertas push a través del navegador móvil cuando se detecte al usuario en un radio de 500 metros de una PyME con promociones vigentes. |
-| **Hypothesis** | Se espera que la habilitación de alertas de proximidad web incremente la tasa de retorno a la plataforma en un 20% y genere un aumento del 15% en las visitas presenciales reportadas por los establecimientos afiliados. |
+| **Why** | Los clientes pierden tiempo buscando nuevamente una oferta que ya consideraron relevante. |
+| **What** | Probar un botón de corazón que permita guardar y eliminar una oferta, refleje visualmente su estado y persista la selección en la base de datos. |
+| **Hypothesis** | Al menos el 80% de los intentos de guardado y eliminación se completará correctamente y conservará un estado coherente al recargar la vista. |
+| **Measures** | Intentos de guardado, operaciones exitosas, eliminaciones exitosas y persistencia después de recargar. |
+| **Conditions** | Cliente autenticado con una oferta disponible; comparación del flujo con y sin la acción de favorito. |
+| **Scale** | Éxito si la tasa de operaciones correctas es igual o superior al 80%. |
 
-| Question | ¿Mejorará la medición del ROI publicitario para las PyMEs integrando un sistema de canje QR vía WebRTC en el navegador? |
+| Question | ¿Disminuirá el tiempo para volver a una promoción si incorporamos la sección Mis favoritos? |
 | --- | --- |
-| **Why** | Las PyMEs requieren evidencia empírica del valor de la plataforma. Validar las ofertas en el punto de venta físico mediante una solución web ágil consolida la confianza comercial y justifica el modelo de suscripción. |
-| **What** | Implementar un generador de códigos QR temporales en la vista del consumidor y un escáner basado en HTML5 (API WebRTC) dentro del panel web del comerciante conectado al endpoint del backend `/offers/redeem`. |
-| **Hypothesis** | Se espera que el 60% de los comercios afiliados adopte el escaneo de códigos QR desde su navegador móvil durante el primer mes de despliegue, registrando transacciones físicas directamente en su panel de control. |
+| **Why** | Guardar una oferta pierde valor si luego no existe un punto único y sencillo para recuperarla. |
+| **What** | Probar la ruta `/favoritos`, mostrando únicamente las ofertas guardadas por la cuenta activa y permitiendo abrirlas o eliminarlas. |
+| **Hypothesis** | Al menos el 80% de los clientes localizará una oferta previamente guardada desde Mis favoritos sin repetir la búsqueda general. |
+| **Measures** | Tareas completadas, tiempo de recuperación, aperturas de oferta y eliminaciones desde la lista. |
+| **Conditions** | Cuenta `CONSUMER` autenticada con al menos una oferta guardada; comparación frente a la búsqueda manual. |
+| **Scale** | Éxito si la tasa de recuperación es igual o superior al 80%. |
 
-| Question | ¿Aumentará la retención web de los consumidores si agregamos filtros de Rutas Temáticas (Mapas de Nicho)? |
+| Question | ¿Aumentará la confianza en una oferta si permitimos registrar reseñas y calificaciones? |
 | --- | --- |
-| **Why** | La visualización masiva de puntos en el mapa satura al usuario. Agrupar los comercios asiáticos bajo circuitos culturales estructurados facilita la navegación y estimula la exploración de múltiples locales en una sola salida. |
-| **What** | Desarrollar un controlador de filtros en el mapa interactivo de Angular que segregue los comercios en circuitos exclusivos (ej. "Circuito K-Beauty", "Ruta Gastronómica Ramen") mediante consultas optimizadas a la base de datos. |
-| **Hypothesis** | Se espera que la introducción de circuitos culturales aumente la interacción con el mapa web en un 25% y prolongue el tiempo de sesión promedio de los usuarios en un 15%. |
+| **Why** | Los clientes necesitan experiencias de otros usuarios para valorar mejor la conveniencia y calidad percibida de una promoción. |
+| **What** | Probar en el detalle de la oferta un formulario con calificación de una a cinco estrellas y comentario, limitando una reseña por usuario y oferta. |
+| **Hypothesis** | Al menos el 75% de los participantes completará correctamente el flujo de calificación y comentario. |
+| **Measures** | Formularios iniciados, reseñas publicadas, puntuaciones válidas y duplicados rechazados. |
+| **Conditions** | Cliente autenticado visualizando una oferta; campos obligatorios y regla de unicidad activados. |
+| **Scale** | Éxito si la tasa de finalización es igual o superior al 75%. |
 
-| Question | ¿Se incrementará la duración de la sesión nocturna en exteriores si añadimos un selector de Modo Oscuro? |
+| Question | ¿Mejorará la credibilidad de los comentarios si mostramos la identidad del autor de cada reseña? |
 | --- | --- |
-| **Why** | Los usuarios que buscan locales asiáticos en la vía pública durante la tarde o noche sufren fatiga visual debido al contraste excesivo de las pantallas claras en entornos oscuros, lo que provoca el abandono prematuro de la web. |
-| **What** | Implementar un selector de temas en el frontend utilizando variables globales de CSS coordinadas con un servicio de Angular, permitiendo alternar entre el tema claro tradicional y una interfaz nocturna de alto contraste. |
-| **Hypothesis** | Se espera que la disponibilidad de la interfaz nocturna aumente en un 25% la duración promedio de las sesiones web móviles ejecutadas en el rango horario de 18:00 a 23:00 horas. |
+| **Why** | Un identificador genérico como “User 2” reduce la autenticidad percibida de una opinión. |
+| **What** | Resolver y mostrar el nombre de la cuenta autora; cuando la cuenta no esté disponible, utilizar un texto neutro sin exponer identificadores internos. |
+| **Hypothesis** | El 100% de las reseñas visibles mostrará un nombre de cuenta o un fallback neutro, sin identificadores técnicos. |
+| **Measures** | Reseñas con nombre resuelto, reseñas con fallback correcto e identificadores internos expuestos. |
+| **Conditions** | Conjunto de reseñas con autores disponibles y no disponibles. |
+| **Scale** | Éxito si no se expone ningún identificador interno y la cobertura de identificación segura alcanza el 100%. |
 
-| Question | ¿Disminuirá el costo de adquisición de usuarios si permitimos generar Enlaces de Ofertas Favoritas Compartibles? |
+| Question | ¿Mejorará el confort visual si ofrecemos modo oscuro exclusivamente al cliente? |
 | --- | --- |
-| **Why** | El crecimiento orgánico dentro de comunidades de nicho cultural es altamente efectivo. Proveer un mecanismo directo para compartir ofertas selectas potencia la viralidad de la plataforma web sin incurrir en costos de pauta adicionales. |
-| **What** | Añadir un botón de "Compartir" en la vista detallada de ofertas que invoque la API nativa de intercambio del navegador (`navigator.share`) o genere un enlace web corto con parámetros de recomendación integrados. |
-| **Hypothesis** | Se postula que al menos el 15% de los nuevos registros semanales en la plataforma se originarán orgánicamente a través de los enlaces compartidos por los usuarios actuales. |
+| **Why** | La interfaz clara puede generar fatiga durante el uso nocturno, pero la vista Business requiere mantener una presentación operativa uniforme. |
+| **What** | Probar un selector claro/oscuro visible solo para cuentas `CONSUMER`, persistiendo la preferencia en `localStorage` y excluyéndolo de cuentas `OWNER`. |
+| **Hypothesis** | Al menos el 80% de los clientes podrá activar y conservar su tema; el 100% de las cuentas Business permanecerá en modo claro y sin selector. |
+| **Measures** | Cambios de tema exitosos, preferencias recuperadas y exposición indebida del selector en cuentas Business. |
+| **Conditions** | Comparación entre sesiones `CONSUMER` y `OWNER`, incluyendo recarga y nuevo ingreso. |
+| **Scale** | Éxito si la persistencia del cliente alcanza el 80% y la exclusión Business el 100%. |
 
 ---
 
@@ -5333,40 +5349,40 @@ No obstante, al tratarse de una arquitectura 100% web que se ejecuta desde el na
 
 ### 8.2.1. Hypotheses
 
-| Atributo | Detalle de la Hipótesis: Experimento 1 (Alertas de Proximidad) |
+| Atributo | Detalle de la Hipótesis: Experimento 1 (Guardar favoritos) |
 | --- | --- |
-| **Question** | ¿Aumentará la afluencia física a las tiendas si implementamos Web Push Notifications hiperlocalizadas (radio 500m)? |
-| **Belief** | Creemos que interceptar proactivamente al consumidor con un cupón relevante en el momento exacto en que transita cerca del local comercial mitigará el olvido de la plataforma y motivará la visita física. |
-| **Hypothesis** | La habilitación de notificaciones web push basadas en geofencing incrementará la Tasa de Clics (CTR) en un 15% en comparación con la visualización orgánica pasiva dentro de la aplicación web. |
-| **Null Hypothesis** | Las alertas web push de proximidad no generarán un cambio estadísticamente significativo en la Tasa de Clics o serán bloqueadas por los usuarios, manteniendo el CTR idéntico a la navegación base. |
+| **Question** | ¿Aumentará la recuperación de promociones de interés si permitimos guardar y eliminar ofertas favoritas? |
+| **Belief** | Creemos que una acción visible y persistente de favorito permitirá conservar promociones relevantes sin repetir la búsqueda. |
+| **Hypothesis** | La tasa de operaciones correctas de guardado y eliminación será igual o superior al 80%, manteniendo el estado después de recargar la aplicación. |
+| **Null Hypothesis** | El botón no reducirá la pérdida de ofertas porque el estado será inconsistente o la mayoría de las operaciones no persistirá correctamente. |
 
-| Atributo | Detalle de la Hipótesis: Experimento 2 (Canje QR) |
+| Atributo | Detalle de la Hipótesis: Experimento 2 (Sección Mis favoritos) |
 | --- | --- |
-| **Question** | ¿Mejorará la medición del ROI publicitario para las PyMEs integrando un sistema de canje QR vía WebRTC en el navegador? |
-| **Belief** | Brindar una funcionalidad directa en el navegador móvil del comerciante para escanear y validar transacciones físicas demostrará empíricamente el volumen de ventas impulsado por GeoPS. |
-| **Hypothesis** | El sistema de validación por código QR registrará una Tasa de Canje Físico de al menos el 25% sobre el volumen total de ofertas previamente guardadas por los consumidores. |
-| **Null Hypothesis** | La fricción asociada a conceder permisos de cámara al navegador o la falta de adopción operativa por parte del comerciante resultará en una Tasa de Canje Físico inferior al 5%. |
+| **Question** | ¿Disminuirá el tiempo para volver a una promoción si incorporamos la sección Mis favoritos? |
+| **Belief** | Creemos que centralizar las selecciones de la cuenta activa facilita el acceso y evita recorrer nuevamente el catálogo. |
+| **Hypothesis** | Al menos el 80% de los clientes recuperará una oferta guardada desde `/favoritos` sin utilizar la búsqueda general. |
+| **Null Hypothesis** | La sección no mejorará el acceso porque los clientes seguirán recurriendo al catálogo general o no encontrarán sus selecciones. |
 
-| Atributo | Detalle de la Hipótesis: Experimento 3 (Rutas Temáticas) |
+| Atributo | Detalle de la Hipótesis: Experimento 3 (Reseñas y calificaciones) |
 | --- | --- |
-| **Question** | ¿Aumentará la retención web de los consumidores si agregamos filtros de Rutas Temáticas (Mapas de Nicho)? |
-| **Belief** | Agrupar los comercios bajo circuitos especializados reducirá la sobrecarga cognitiva en pantallas móviles y aumentará el interés por descubrir locales adyacentes del mismo rubro. |
-| **Hypothesis** | La implementación de circuitos temáticos en el mapa incrementará el Tiempo Promedio de Sesión en un 15% general en dispositivos móviles. |
-| **Null Hypothesis** | Los filtros por rutas no alterarán los patrones de exploración de los usuarios, manteniendo el Tiempo Promedio de Sesión sin variaciones significativas frente al diseño genérico anterior. |
+| **Question** | ¿Aumentará la confianza en una oferta si permitimos registrar reseñas y calificaciones? |
+| **Belief** | Creemos que la experiencia expresada mediante estrellas y comentarios brinda información útil antes de elegir una promoción. |
+| **Hypothesis** | Al menos el 75% de los participantes completará una reseña válida y reconocerá la información como apoyo para evaluar la oferta. |
+| **Null Hypothesis** | El formulario tendrá una tasa de finalización baja o las reseñas no aportarán información percibida como útil. |
 
-| Atributo | Detalle de la Hipótesis: Experimento 4 (Modo Oscuro) |
+| Atributo | Detalle de la Hipótesis: Experimento 4 (Identificación del autor) |
 | --- | --- |
-| **Question** | ¿Se incrementará la duración de la sesión nocturna en exteriores si añadimos un selector de Modo Oscuro? |
-| **Belief** | Reducir la fatiga visual mediante una paleta de colores optimizada para baja luminosidad incrementará el confort del usuario mientras camina por los distritos comerciales de noche. |
-| **Hypothesis** | El uso del modo oscuro aumentará la duración promedio de las sesiones nocturnas (18:00 a 23:00) en exteriores en un 25% en comparación con la interfaz de fondo claro. |
-| **Null Hypothesis** | El cambio en la paleta de colores de la interfaz no afectará la permanencia del usuario, registrando la misma duración de sesión nocturna que la versión base. |
+| **Question** | ¿Mejorará la credibilidad de los comentarios si mostramos la identidad del autor de cada reseña? |
+| **Belief** | Creemos que un nombre de cuenta reconocible transmite mayor autenticidad que un identificador técnico o genérico. |
+| **Hypothesis** | El 100% de las reseñas mostrará un nombre de cuenta o un fallback neutro, sin exponer identificadores internos. |
+| **Null Hypothesis** | Persistirán identificadores técnicos o autores sin representación comprensible, reduciendo la credibilidad de los comentarios. |
 
-| Atributo | Detalle de la Hipótesis: Experimento 5 (Enlaces Compartibles) |
+| Atributo | Detalle de la Hipótesis: Experimento 5 (Modo oscuro del cliente) |
 | --- | --- |
-| **Question** | ¿Disminuirá el costo de adquisición de usuarios si permitimos generar Enlaces de Ofertas Favoritas Compartibles? |
-| **Belief** | Facilitar la difusión directa de las ofertas exclusivas mediante enlaces web ligeros y optimizados para aplicaciones de mensajería detonará el crecimiento orgánico dentro de las comunidades de nicho. |
-| **Hypothesis** | El sistema de enlaces compartibles alcanzará una Tasa de Conversión por Recomendación superior al 15% sobre el total de nuevos usuarios registrados semanalmente. |
-| **Null Hypothesis** | Los enlaces compartidos no generarán tráfico efectivo o los nuevos visitantes no completarán el registro, manteniendo la tasa de adquisición orgánica por debajo del umbral de significancia. |
+| **Question** | ¿Mejorará el confort visual si ofrecemos modo oscuro exclusivamente al cliente? |
+| **Belief** | Creemos que permitir al consumidor elegir el tema mejora su comodidad, mientras que mantener la vista Business en claro evita cambios innecesarios en su operación. |
+| **Hypothesis** | Al menos el 80% de los clientes conservará correctamente su preferencia tras recargar, y el 100% de las cuentas `OWNER` permanecerá en modo claro sin selector. |
+| **Null Hypothesis** | La preferencia no persistirá o el modo oscuro aparecerá indebidamente en la vista Business. |
 
 ### 8.2.2. Domain Business Metrics
 
@@ -5374,26 +5390,26 @@ Para mitigar el riesgo de fundamentar decisiones estratégicas en métricas irre
 
 | Nombre de la Métrica | Descripción y Justificación | Fórmula de Cálculo | Técnica de Recolección | Meta Deseada |
 | --- | --- | --- | --- | --- |
-| **Tasa de Clics (CTR) en Web Push** | Mide la efectividad de las alertas de proximidad web para atraer la atención del usuario e incentivarlo a explorar una promoción en tiempo real cuando transita cerca del comercio. | `(Número de clics efectuados en las notificaciones web / Total de notificaciones web entregadas con éxito) * 100` | Registro de eventos personalizados mediante Google Analytics 4 embebidos dentro del flujo del *Service Worker* en Angular. | **> 10.0%** |
-| **Tasa de Aceptación de Permisos (Opt-in Rate)** | Evalúa la viabilidad técnica y el nivel de fricción en la experiencia de usuario al solicitar acceso a la ubicación y notificaciones en entornos 100% web. | `(Usuarios que aprueban los permisos solicitados en el navegador / Total de usuarios expuestos al cuadro de diálogo de solicitud) * 100` | Monitoreo del estado de la API del navegador (`navigator.permissions`) reportado de forma automatizada hacia Google Analytics 4. | **> 50.0%** |
-| **Tasa de Canje Físico (Redemption Rate)** | Representa el retorno de inversión real (ROI) fuera de línea (offline) y el tráfico peatonal efectivo que la plataforma web logra derivar hacia los locales comerciales de las PyMEs. | `(Fichas o códigos QR validados y escaneados con éxito por los establecimientos / Cantidad total de códigos QR generados por los usuarios) * 100` | Conteo transaccional en la base de datos backend al procesar solicitudes HTTP POST exitosas dirigidas al controlador `/offers/redeem`. | **> 25.0%** |
-| **Tiempo Promedio de Sesión (Session Duration)** | Mide la retención del usuario dentro de la interfaz responsiva impulsada por los filtros temáticos y la optimización ergonómica del modo oscuro. | `Suma total de la duración de todas las sesiones de navegación / Número total de sesiones registradas en el período` | Extracción automatizada de los indicadores de permanencia provistos por Vercel Analytics y Google Analytics 4. | **> 3.0 min** |
-| **Tasa de Conversión por Recomendación (Viral Rate)** | Evalúa la eficiencia del crecimiento orgánico de la comunidad oriental mediante el uso de enlaces de recomendación de cupones favoritos. | `(Nuevos registros completados a través de un enlace de recomendación / Total de visitas únicas procedentes de dichos enlaces compartidos) * 100` | Captura y parseo de parámetros UTM y variables de consulta de URL de recomendación durante el flujo de registro en la base de datos. | **> 15.0%** |
+| **Tasa de Operaciones de Favorito Exitosas** | Verifica que guardar y eliminar ofertas produzca un estado correcto y persistente. | `(Operaciones de favorito correctas / Total de intentos) * 100` | Respuestas de la API y comprobación del estado del botón después de recargar. | **≥ 80%** |
+| **Tasa de Recuperación desde Mis favoritos** | Mide la capacidad de localizar una oferta guardada sin repetir la búsqueda general. | `(Tareas de recuperación completadas / Total de tareas iniciadas) * 100` | Observación del flujo `/favoritos` y registro de aperturas desde la lista. | **≥ 80%** |
+| **Tasa de Finalización de Reseñas** | Mide la proporción de usuarios que completa una calificación y un comentario válidos. | `(Reseñas publicadas correctamente / Formularios de reseña iniciados) * 100` | Respuestas de la API de reseñas y validaciones del formulario web. | **≥ 75%** |
+| **Cobertura de Identificación Segura** | Comprueba que cada reseña muestre un autor comprensible sin exponer identificadores internos. | `(Reseñas con nombre o fallback neutro / Total de reseñas visibles) * 100` | Inspección de la respuesta de usuarios y renderizado del listado de reseñas. | **100%** |
+| **Tasa de Persistencia del Tema del Cliente** | Evalúa si el tema elegido por una cuenta `CONSUMER` se conserva y si permanece aislado de la vista Business. | `(Sesiones que recuperan correctamente el tema / Total de sesiones de prueba CONSUMER) * 100` | Lectura de `localStorage`, recarga de la aplicación y verificación por rol. | **≥ 80%**, con **100%** de cuentas `OWNER` en modo claro |
 
 ### 8.2.3. Measures
 
 Las variables e indicadores cuantitativos que se emplearán para contrastar las hipótesis nulas y alternativas corresponden a los datos puros recolectados de las interacciones en el navegador:
 
-* **Volumen de clics en Web Push e Impresiones totales:** Datos base para determinar cuantitativamente el CTR de proximidad.
-* **Contador de estados de permiso aprobados frente a denegados:** Datos utilizados para evaluar el comportamiento del indicador de aceptación (*Opt-in*).
-* **Registros de marcas de tiempo en el backend (`/offers/redeem`):** Datos duros de transacciones que configuran de manera inequívoca la Tasa de Canje Físico.
-* **Duración de la sesión indexada por franja horaria y tema CSS:** Datos de tiempo de permanencia filtrados para aislar el impacto de la interfaz nocturna.
-* **Conteo de tokens de invitación validados en el proceso de registro:** Datos utilizados para el cálculo de la Tasa de Conversión por Recomendación.
+* **Intentos y respuestas de guardado/eliminación:** Datos para comprobar la persistencia de favoritos.
+* **Tareas completadas desde `/favoritos`:** Datos para medir la recuperación de ofertas guardadas.
+* **Formularios iniciados y reseñas publicadas:** Datos para calcular la finalización del flujo de calificación y comentario.
+* **Nombres resueltos y fallbacks aplicados:** Datos para verificar la identificación segura del autor.
+* **Preferencias de tema recuperadas por rol:** Datos para comprobar persistencia en `CONSUMER` y exclusión en `OWNER`.
 
 ### 8.2.4. Conditions
 
-* **Condición Experimental (Grupo Expuesto):** Segmento de usuarios web móviles a los que se les activa el algoritmo de geofencing en segundo plano, el selector de modo oscuro, los circuitos temáticos en el mapa, los enlaces compartibles y la ventana de validación QR.
-* **Condición de Control (Grupo Base):** Segmento de usuarios que navega bajo la versión tradicional estática de GeoPS, donde la búsqueda de locales es puramente manual, la interfaz es invariablemente clara, no hay agrupaciones por rutas, carece de sistema de canje QR (solo visualización de texto) y no posee enlaces cortos de recomendación.
+* **Condición Experimental (Grupo Expuesto):** Clientes autenticados con acceso al botón de favorito, la ruta `/favoritos`, el formulario de reseñas, la identificación del autor y el selector de tema exclusivo para `CONSUMER`.
+* **Condición de Control (Grupo Base):** Flujo anterior sin favoritos ni reseñas y con interfaz clara. Para comprobar la restricción por rol, las cuentas `OWNER` constituyen el control del experimento de modo oscuro y deben permanecer en tema claro sin selector.
 
 ### 8.2.5. Scale Calculations and Decisions
 
@@ -5407,11 +5423,11 @@ A continuación, se detalla la matriz operacional de decisiones de escala para e
 
 | Factor | Scale Calculation y Decision (Métricas e Hipótesis) | 1. Desfavorable (Sin cambios) | 2. Aceptable (Progreso mínimo) | 3. Ideal (Meta del experimento) | 4. Excelente (Decisión: Escalar) |
 | --- | --- | --- | --- | --- | --- |
-| **Experimento 1: Alertas de Proximidad** | Creemos que enviar notificaciones web push basadas en la ubicación del navegador capturará la intención de compra impulsiva. Sabremos que esto es cierto cuando observemos una Tasa de Clics (CTR) del 10% en las alertas móviles enviadas. | CTR menor al 5%. | CTR entre 5% y 9%. | **CTR del 10%.** | CTR mayor al 15%. (X) |
-| **Experimento 2: Canjes por Código QR** | Creemos que integrar un validador de códigos QR basado en la web para los comercios demostrará empíricamente el tráfico real impulsado por GeoPS. Sabremos que esto es cierto cuando logremos una Tasa de Canje Físico del 25% sobre los cupones guardados. | Canje menor al 10%. | Canje entre 10% y 24%. | **Canje del 25%.** | Canje mayor al 35%. (X) |
-| **Experimento 3: Circuitos Temáticos** | Creemos que clasificar las PyMEs en rutas de nicho cultural reducirá la sobrecarga cognitiva en el mapa web. Sabremos que esto es cierto cuando el Tiempo Promedio de Sesión móvil aumente a 3 minutos. | Tiempo menor a 1.5 minutos. | Tiempo entre 1.5 y 2.9 minutos. | **Tiempo de 3 minutos.** | Tiempo mayor a 4 minutos. (X) |
-| **Experimento 4: Selector de Interfaz** | Creemos que proveer una interfaz nocturna de alto contraste mitigará la fatiga visual en exteriores durante la noche. Sabremos que esto es cierto cuando las sesiones nocturnas se prolonguen un 25% frente a la interfaz clara. | Incremento de tiempo menor al 10%. | Incremento de tiempo entre 10% y 24%. | **Incremento de tiempo del 25%.** | Incremento de tiempo mayor al 35%. (X) |
-| **Experimento 5: Enlaces Compartibles** | Creemos que facultar la recomendación directa de ofertas favoritas mediante enlaces cortos potenciará el registro orgánico. Sabremos que esto es cierto cuando la Tasa de Conversión por Recomendación sea del 15%. | Conversión menor al 5%. | Conversión entre 5% y 14%. | **Conversión del 15%.** | Conversión mayor al 20%. (X) |
+| **Experimento 1: Guardar favoritos** | Creemos que el botón de corazón permitirá conservar ofertas de interés con un estado persistente. | Éxito menor al 50%. | Éxito entre 50% y 79%. | **Éxito entre 80% y 94%.** | Éxito igual o superior al 95%. |
+| **Experimento 2: Mis favoritos** | Creemos que una sección centralizada permitirá recuperar promociones sin repetir la búsqueda. | Recuperación menor al 50%. | Recuperación entre 50% y 79%. | **Recuperación entre 80% y 94%.** | Recuperación igual o superior al 95%. |
+| **Experimento 3: Reseñas y calificaciones** | Creemos que estrellas y comentarios permitirán compartir experiencias útiles sobre una oferta. | Finalización menor al 40%. | Finalización entre 40% y 74%. | **Finalización entre 75% y 89%.** | Finalización igual o superior al 90%. |
+| **Experimento 4: Autor de la reseña** | Creemos que mostrar un nombre o fallback neutro aumentará la autenticidad sin exponer datos técnicos. | Cobertura menor al 80%. | Cobertura entre 80% y 99% con incidencias. | **Cobertura del 100% sin IDs internos.** | Cobertura del 100% y percepción positiva de credibilidad. |
+| **Experimento 5: Modo oscuro del cliente** | Creemos que una preferencia persistente mejorará el confort del consumidor sin modificar la vista Business. | Persistencia menor al 50% o exposición en `OWNER`. | Persistencia entre 50% y 79%, sin exposición en `OWNER`. | **Persistencia ≥ 80% y exclusión `OWNER` del 100%.** | Persistencia ≥ 95% y exclusión `OWNER` del 100%. |
 
 ### 8.2.6. Methods Selection
 
@@ -5443,212 +5459,91 @@ El plan de monitoreo analítico del comportamiento de los experimentos web en di
 
 ### 8.3.1. To-Be User Stories
 
-Estas Historias de Usuario corresponden formalmente a las cinco funcionalidades experimentales planificadas para el entorno web de GeoPS, redactadas bajo el formato formal y de aceptación *Given-When-Then*:
+Estas historias corresponden a las funcionalidades implementadas en el último Sprint y mantienen trazabilidad directa con PB-01–PB-05 del *To-Be Product Backlog*:
 
 | Story ID | Título | Descripción | Criterios de Aceptación | Relacionado (Epic) |
 | --- | --- | --- | --- | --- |
-| **GEOP-UA11** | **Recepción de Alertas Push por Proximidad Geográfica** | Como consumidor en movilidad, quiero recibir notificaciones push de proximidad en mi navegador móvil, para enterarme de descuentos de comercios asiáticos cercanos sin necesidad de navegar manualmente. | **Escenario 1: Alerta web push enviada de forma exitosa.**<br>
-
-<br>*Given* que el usuario concedió permisos de geolocalización a GeoPS.<br>
-
-<br>*When* transita a una distancia menor a 500 metros de una PyME con campaña publicitaria vigente.<br>
-
-<br>*Then* el navegador móvil desplegará una notificación push hiperlocal a través del Service Worker.<br>
-
-<br>
-
-<br>**Escenario 2: Restricción de saturación publicitaria.**<br>
-
-<br>*Given* que el usuario ya recibió una alerta push del establecimiento comercial X.<br>
-
-<br>*When* permanece dentro del radio geográfico de 500 metros por un tiempo prolongado.<br>
-
-<br>*Then* el sistema suspenderá el envío de alertas duplicadas de ese local específico durante el día calendario. | E02 (Descubrimiento Hiperlocal) |
-| **GEOP-UA12** | **Generación Dinámica de Fichas QR para Canje** | Como consumidor, quiero generar un código QR único desde la vista de una promoción web, para presentarlo físicamente en el local comercial y hacer válido el descuento. | **Escenario 1: Renderizado del código QR de la promoción.**<br>
-
-<br>*Given* que me encuentro visualizando los detalles de una oferta específica en la plataforma web.<br>
-
-<br>*When* presiono el botón "Usar Promoción Física".<br>
-
-<br>*Then* el frontend procesará la sesión y renderizará dinámicamente un código QR único asociado a mi cuenta y a la campaña. | E02 (Descubrimiento Hiperlocal) |
-| **GEOP-UA13** | **Validación de Transacciones QR vía WebRTC** | Como dueño de un comercio afiliado, quiero escanear la pantalla del consumidor usando la cámara de mi celular dentro del panel web de GeoPS, para validar la promoción de forma instantánea. | **Escenario 1: Confirmación de venta y registro de ROI comercial.**<br>
-
-<br>*Given* que el comerciante ingresó a su panel de gestión desde su navegador móvil.<br>
-
-<br>*When* activa la funcionalidad de escaneo y apunta la cámara (API WebRTC) hacia el código QR válido del cliente.<br>
-
-<br>*Then* la web procesará la solicitud vía el endpoint `/offers/redeem`, mostrará un aviso de éxito en pantalla y registrará un incremento en la métrica de Conversión Real del comercio. | E03 (Gestión de Campañas PyME) |
-| **GEOP-UA14** | **Exploración por Circuitos Temáticos de Nicho** | Como entusiasta de la cultura oriental, quiero filtrar el mapa por circuitos culturales temáticos, para descubrir rápidamente establecimientos del mismo rubro específico en Lima Moderna. | **Escenario 1: Filtrado reactivo en el mapa web.**<br>
-
-<br>*Given* que el usuario se encuentra visualizando el mapa principal de la plataforma web.<br>
-
-<br>*When* selecciona una ruta predefinida (ej. "Ruta K-Beauty" o "Ruta del Ramen").<br>
-
-<br>*Then* la interfaz ocultará todos los comercios ajenos y resaltará de manera exclusiva los locales pertenecientes a la temática seleccionada. | E02 (Descubrimiento Hiperlocal) |
-| **GEOP-UA15** | **Conmutación de Interfaz Nocturna (Modo Oscuro)** | Como usuario de GeoPS en la vía pública, quiero activar una interfaz de modo oscuro en la plataforma web, para evitar el agotamiento visual al interactuar de noche. | **Escenario 1: Transición fluida de paleta cromática.**<br>
-
-<br>*Given* que me encuentro navegando en cualquier sección de la Web App responsiva.<br>
-
-<br>*When* presiono el selector de "Modo Oscuro" o la hora local supera las 18:00 horas.<br>
-
-<br>*Then* la plataforma alternará las variables CSS globales hacia tonalidades oscuras de alto contraste sin alterar los estados de la sesión. | E01 (Experiencia de Usuario Base) |
-| **GEOP-UA16** | **Distribución de Ofertas Favoritas Compartibles** | Como consumidor de nicho asiático, quiero generar enlaces cortos de mis promociones preferidas, para difundirlas rápidamente con amigos en mis canales digitales. | **Escenario 1: Envío de enlace codificado de recomendación.**<br>
-
-<br>*Given* que guardé una promoción en mi sección de favoritos.<br>
-
-<br>*When* presiono el botón "Compartir con Amigos".<br>
-
-<br>*Then* el sistema invocará la API Web de compartición nativa o copiará en el portapapeles un enlace URL optimizado con el token identificador del comercio. | E02 (Descubrimiento Hiperlocal) |
+| **PB-01** | **Guardar ofertas favoritas** | Como cliente, quiero guardar una oferta como favorita para encontrarla nuevamente sin tener que buscarla. | **Escenario: Guardado y eliminación de favorito.**<br><br>*Given* que el cliente `CONSUMER` visualiza una oferta.<br><br>*When* presiona el botón de corazón.<br><br>*Then* el sistema guarda o elimina la selección, actualiza el estado visual y persiste el cambio en la base de datos. | E02 (Experiencia del consumidor) |
+| **PB-02** | **Sección Mis favoritos** | Como cliente, quiero consultar todas mis ofertas favoritas en una sola pantalla para acceder rápidamente a ellas. | **Escenario: Consulta de favoritos de la cuenta activa.**<br><br>*Given* que el cliente autenticado guardó al menos una oferta.<br><br>*When* ingresa a `/favoritos`.<br><br>*Then* visualiza únicamente sus ofertas guardadas y puede abrirlas o eliminarlas de la lista. | E02 (Experiencia del consumidor) |
+| **PB-03** | **Reseñas y calificaciones** | Como cliente, quiero calificar y comentar una oferta para compartir mi experiencia con otros usuarios. | **Escenario: Publicación de una reseña.**<br><br>*Given* que el cliente visualiza el detalle de una oferta.<br><br>*When* selecciona de una a cinco estrellas, escribe un comentario y publica la reseña.<br><br>*Then* la reseña se almacena y aparece en el listado, respetando una reseña por usuario y oferta. | E02 (Experiencia del consumidor) |
+| **PB-04** | **Identificación del autor de una reseña** | Como cliente, quiero ver el nombre de quien escribió una reseña para reconocer que el comentario pertenece a una cuenta real. | **Escenario: Visualización segura del autor.**<br><br>*Given* que existe una reseña registrada.<br><br>*When* el sistema carga el listado.<br><br>*Then* muestra el nombre de la cuenta autora o un texto neutro si no está disponible, sin exponer identificadores internos. | E02 (Experiencia del consumidor) |
+| **PB-05** | **Modo oscuro exclusivo para clientes** | Como cliente con cuenta `CONSUMER`, quiero alternar entre modo claro y oscuro para utilizar la plataforma con mayor comodidad visual. | **Escenario: Cambio de tema restringido por rol.**<br><br>*Given* que una cuenta `CONSUMER` inició sesión.<br><br>*When* utiliza el selector de luna o sol.<br><br>*Then* la aplicación cambia el tema y conserva la preferencia en `localStorage`.<br><br>Las cuentas Business (`OWNER`) permanecen en modo claro y no muestran el selector. | E01 (Experiencia de usuario base) |
 
 ### 8.3.2. To-Be Product Backlog
 
-Se detalla la incorporación orgánica de los tickets asociados a las funcionalidades de experimentación dentro del catálogo estructurado del producto, evaluados formalmente en puntos de historia (*Story Points*) utilizando la secuencia de Fibonacci:
+El siguiente *To-Be Product Backlog* reúne las funcionalidades incorporadas recientemente a GeoPs y las presenta como historias de usuario:
 
-| # Orden | User Story ID | Título del Requerimiento Experimental | Descripción Técnica Implementada | Story Points (1/2/3/5/8) |
-| --- | --- | --- | --- | --- |
-| **14** | **GEOP-UA11** | Alertas Web Push e Infraestructura de Geofencing | Configuración de `@angular/service-worker`, gestión de tokens de notificación en el navegador y cálculo matricial de la fórmula Haversine en el backend. | **8** |
-| **15** | **GEOP-UA12** | Renderizado Dinámico de Códigos QR | Integración del componente de conversión y cifrado visual (ej. `angularx-qrcode`) en las vistas de cupones móviles del cliente. | **3** |
-| **16** | **GEOP-UA13** | Escáner QR WebRTC para Panel de Proveedores | Desarrollo del lector HTML5 adaptado a navegadores responsivos y enlace transaccional seguro con el controlador del backend `PUT /offers/redeem`. | **5** |
-| **17** | **GEOP-UA14** | Módulo de Capas y Circuitos Temáticos en Mapa | Implementación de filtros dinámicos basados en tipologías de negocio y optimización de consultas indexadas en la base de datos geográfica. | **3** |
-| **18** | **GEOP-UA15** | Servicio Frontend de Interfaz Nocturna Global | Creación del servicio de escucha de estados CSS en Angular y parametrización de la paleta de colores oscuros estandarizados. | **2** |
-| **19** | **GEOP-UA16** | Generador de Enlaces Cortos de Recomendación | Acoplamiento de la API nativa de compartición del navegador móvil (`Web Share API`) y estructuración de parámetros de rastreo orgánico. | **2** |
-
-
-#### 8.3.3.1. To-Be Sprint Backlog
-
-El siguiente *To-Be Sprint Backlog* organiza las funcionalidades incorporadas durante el **Sprint 5**. Cada historia se descompone en tareas técnicas cuya estimación total coincide con los *Story Points* asignados en el backlog del producto. Debido a que estas funcionalidades cuentan con implementación verificable en GeoPS, las actividades mantienen el estado **Done**.
-
-<table>
-  <thead>
-    <tr>
-      <th>Sprint #</th>
-      <th colspan="7">Sprint 5</th>
-    </tr>
-    <tr>
-      <th colspan="2">User Story</th>
-      <th colspan="6">WorkItem/Task</th>
-    </tr>
-    <tr>
-      <th>Id</th>
-      <th>Title</th>
-      <th>Id</th>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Estimation<br>(Story Points)</th>
-      <th>Assigned To</th>
-      <th>Status<br>(To-do/In-Process/To-Review/Done)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="2"><strong>UA11</strong></td>
-      <td rowspan="2">Exploración de ofertas por distrito en el mapa</td>
-      <td><strong>TK01</strong></td>
-      <td>Mostrar las ofertas en el mapa interactivo</td>
-      <td>Representar las ofertas disponibles en el mapa y permitir que el usuario acceda al detalle de cada promoción.</td>
-      <td>3</td>
-      <td rowspan="2">Bryan Eduardo Barba Estrada</td>
-      <td rowspan="2">Done</td>
-    </tr>
-    <tr>
-      <td><strong>TK02</strong></td>
-      <td>Filtrar las ofertas por distrito</td>
-      <td>Actualizar el mapa y el listado al seleccionar San Borja, Lince, Barrio Chino o la opción para mostrar todos.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td rowspan="2"><strong>UA12</strong></td>
-      <td rowspan="2">Búsqueda y ordenamiento avanzado de ofertas</td>
-      <td><strong>TK03</strong></td>
-      <td>Buscar ofertas por texto y ubicación</td>
-      <td>Permitir que el usuario encuentre promociones mediante palabras clave y la ubicación seleccionada.</td>
-      <td>2</td>
-      <td rowspan="2">Vanessa May Lang Choy Robles</td>
-      <td rowspan="2">Done</td>
-    </tr>
-    <tr>
-      <td><strong>TK04</strong></td>
-      <td>Ordenar los resultados de las ofertas</td>
-      <td>Permitir que el usuario ordene las promociones por precio, calificación o relevancia.</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td rowspan="2"><strong>UA13</strong></td>
-      <td rowspan="2">Consulta del rendimiento de las campañas</td>
-      <td><strong>TK05</strong></td>
-      <td>Contabilizar visualizaciones y clics</td>
-      <td>Registrar cuántas veces se muestran las promociones y cuántas veces los consumidores acceden a ellas.</td>
-      <td>3</td>
-      <td rowspan="2">Santiago Iván Cárdenas Concha<br>Alvaro Fabrizzio Salazar Caballero</td>
-      <td rowspan="2">Done</td>
-    </tr>
-    <tr>
-      <td><strong>TK06</strong></td>
-      <td>Mostrar la tasa de interacción</td>
-      <td>Presentar las visualizaciones, clics y tasa de interacción en el resumen y detalle de cada campaña.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td rowspan="2"><strong>UA14</strong></td>
-      <td rowspan="2">Control del estado de las campañas</td>
-      <td><strong>TK07</strong></td>
-      <td>Activar o finalizar una campaña</td>
-      <td>Permitir que el propietario controle la disponibilidad de una campaña mediante sus opciones de activación y finalización.</td>
-      <td>2</td>
-      <td rowspan="2">Natalia Ximena Valverde Portuguez</td>
-      <td rowspan="2">Done</td>
-    </tr>
-    <tr>
-      <td><strong>TK08</strong></td>
-      <td>Confirmar los cambios de estado</td>
-      <td>Solicitar confirmación antes de activar o finalizar una campaña e informar el resultado al propietario.</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td rowspan="2"><strong>UA15</strong></td>
-      <td rowspan="2">Actualización de los datos del perfil</td>
-      <td><strong>TK09</strong></td>
-      <td>Consultar la información del perfil</td>
-      <td>Mostrar los datos de la cuenta y la información correspondiente al tipo de usuario autenticado.</td>
-      <td>3</td>
-      <td rowspan="2">Nicolas Alejandro Vera Nuñez</td>
-      <td rowspan="2">Done</td>
-    </tr>
-    <tr>
-      <td><strong>TK10</strong></td>
-      <td>Editar los datos de contacto</td>
-      <td>Permitir que el usuario modifique su nombre, correo y teléfono, y reciba una confirmación al guardar.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td rowspan="2"><strong>UA16</strong></td>
-      <td rowspan="2">Administración de las ofertas de una campaña</td>
-      <td><strong>TK11</strong></td>
-      <td>Agregar, modificar y retirar ofertas</td>
-      <td>Permitir que el propietario mantenga actualizadas las promociones asociadas a cada campaña.</td>
-      <td>3</td>
-      <td rowspan="2">Adriana Maria Diestra Zambrano</td>
-      <td rowspan="2">Done</td>
-    </tr>
-    <tr>
-      <td><strong>TK12</strong></td>
-      <td>Administrar las ofertas desde la campaña</td>
-      <td>Mostrar las promociones de una campaña y ofrecer acciones para agregar, modificar o retirar cada oferta.</td>
-      <td>2</td>
-    </tr>
-  </tbody>
-</table>
-
-*Nota.* Elaboración propia. La estimación total del Sprint 5 es de **26 Story Points**.
+| ID | Funcionalidad | Historia de usuario | Criterios de aceptación | Prioridad | Estado |
+| --- | --- | --- | --- | --- | --- |
+| PB-01 | Guardar ofertas favoritas | Como cliente, quiero guardar una oferta como favorita para encontrarla nuevamente sin tener que buscarla. | El cliente puede marcar y desmarcar una oferta mediante el botón de corazón. El estado del botón refleja si la oferta está guardada. La selección se registra en la base de datos. | Alta | Done |
+| PB-02 | Sección “Mis favoritos” | Como cliente, quiero consultar todas mis ofertas favoritas en una sola pantalla para acceder rápidamente a ellas. | El menú del cliente contiene la opción **Favoritos**. La ruta `/favoritos` muestra únicamente las ofertas guardadas por la cuenta activa. El cliente puede abrir o eliminar una oferta de la lista. | Alta | Done |
+| PB-03 | Reseñas y calificaciones | Como cliente, quiero calificar y comentar una oferta para compartir mi experiencia con otros usuarios. | El detalle de una oferta permite seleccionar de una a cinco estrellas y escribir un comentario. La reseña se almacena y aparece en el listado. Cada usuario puede registrar una sola reseña por oferta. | Alta | Done |
+| PB-04 | Identificación del autor de una reseña | Como cliente, quiero ver el nombre de quien escribió una reseña para reconocer que el comentario pertenece a una cuenta real. | Cada reseña muestra el nombre de la cuenta obtenido mediante su identificador. Si la cuenta no está disponible, aparece un texto neutro y nunca un identificador como “User 2”. | Media | Done |
+| PB-05 | Modo oscuro exclusivo para clientes | Como cliente con una cuenta `CONSUMER`, quiero alternar entre modo claro y oscuro para utilizar la plataforma con mayor comodidad visual. | Esta funcionalidad está disponible únicamente en la vista del cliente. La cabecera muestra un botón de luna o sol solo para cuentas `CONSUMER` y conserva la preferencia en `localStorage`. La vista Business y las cuentas `OWNER` permanecen siempre en modo claro y no muestran el botón. | Media | Done |
 
 ### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
 
-#### 8.3.3.2. Implemented To-Be Landing Page Evidence 
-#### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence 
+#### 8.3.3.1. To-Be Sprint Backlog
+
+El siguiente *To-Be Sprint Backlog* reúne las funcionalidades completadas del *To-Be Product Backlog*. Las historias se distribuyeron entre distintos integrantes del equipo, se estimaron mediante *Story Points* y se registraron con el estado final **Done**.
+
+| Sprint | User Story ID | Funcionalidad | Historia de usuario | Story Points | Assigned To | Status |
+| --- | --- | --- | --- | --- | --- | --- |
+| Sprint 5 | **PB-01** | Guardar ofertas favoritas | Como cliente, quiero guardar una oferta como favorita para encontrarla nuevamente sin tener que buscarla. | **3** | Santiago Iván Cárdenas Concha | **Done** |
+| Sprint 5 | **PB-02** | Sección “Mis favoritos” | Como cliente, quiero consultar todas mis ofertas favoritas en una sola pantalla para acceder rápidamente a ellas. | **5** | Vanessa May Lang Choy Robles | **Done** |
+| Sprint 5 | **PB-03** | Reseñas y calificaciones | Como cliente, quiero calificar y comentar una oferta para compartir mi experiencia con otros usuarios. | **5** | Adriana Maria Diestra Zambrano | **Done** |
+| Sprint 5 | **PB-04** | Identificación del autor de una reseña | Como cliente, quiero ver el nombre de quien escribió una reseña para reconocer que el comentario pertenece a una cuenta real. | **3** | Bryan Eduardo Barba Estrada | **Done** |
+| Sprint 5 | **PB-05** | Modo oscuro exclusivo para clientes | Como cliente con una cuenta `CONSUMER`, quiero alternar entre modo claro y oscuro para utilizar la plataforma con mayor comodidad visual. La vista Business (`OWNER`) permanece en modo claro y no incluye esta funcionalidad. | **3** | Nicolas Alejandro Vera Nuñez | **Done** |
+
+*Nota.* Elaboración propia. La estimación total del Sprint 5 es de **19 Story Points**, correspondiente a las cinco historias completadas.
+
+#### 8.3.3.2. Implemented To-Be Frontend-Web Application Evidence
+
+La aplicación web implementa las historias de usuario **PB-01**, **PB-02**, **PB-03** y **PB-04** del *To-Be Product Backlog*. Las siguientes evidencias muestran el funcionamiento de la sección de favoritos y del módulo de reseñas y calificaciones.
+
+**PB-01 — Guardar ofertas favoritas / PB-02 — Sección “Mis favoritos”**
+
+Como cliente, quiero guardar una oferta como favorita y consultar todas mis ofertas favoritas en una sola pantalla para encontrarlas y acceder a ellas rápidamente.
+
+<div align="center">
+  <img src="resources/imgs/chapter-viii/favorites.jpg" alt="Evidencia de la sección Mis favoritos de GeoPs" width="900">
+</div>
+
+*Figura 1. Implementación de las historias PB-01 y PB-02 en la sección Mis favoritos. Nota: elaboración propia.*
+
+**PB-03 — Reseñas y calificaciones / PB-04 — Identificación del autor de una reseña**
+
+Como cliente, quiero calificar y comentar una oferta, así como visualizar el nombre de quien escribió cada reseña, para compartir mi experiencia y reconocer que los comentarios pertenecen a cuentas reales.
+
+<div align="center">
+  <img src="resources/imgs/chapter-viii/Reviews.jpg" alt="Evidencia del módulo de reseñas y calificaciones de GeoPs" width="900">
+</div>
+
+*Figura 2. Implementación de las historias PB-03 y PB-04 en el módulo de reseñas. Nota: elaboración propia.*
+
+#### 8.3.3.3. Implemented To-Be Landing Page Evidence
+
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence 
-#### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence 
+
+#### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+El backend RESTful proporciona los endpoints que soportan las historias **PB-01**, **PB-02** y **PB-03**. La documentación Swagger evidencia las operaciones para guardar, consultar y eliminar favoritos, además de consultar y registrar reseñas asociadas a una oferta.
+
+<div align="center">
+  <img src="resources/imgs/chapter-viii/backend.jpg" alt="Evidencia Swagger de los endpoints RESTful de reseñas y favoritos" width="900">
+</div>
+
+*Figura 3. Documentación Swagger de los endpoints RESTful implementados para favoritos y reseñas. Nota: elaboración propia.*
+
 #### 8.3.3.6. Team Collaboration Insights
 
+La colaboración del equipo se evidencia mediante el registro de contribuciones del repositorio. El gráfico muestra la evolución semanal de los *commits* y la participación individual de los integrantes durante la implementación de las funcionalidades del incremento *To-Be*.
+
+<div align="center">
+  <img src="resources/imgs/chapter-viii/Contributors.jpg" alt="Registro de contribuciones del equipo en el repositorio de GeoPs" width="450">
+</div>
+
+*Figura 4. Registro de commits y participación de los contributors del equipo. Nota: elaboración propia a partir de GitHub Insights.*
 
 ### 8.3.4. To-Be Validation Interviews 
 
@@ -5662,46 +5557,46 @@ Se consideran los dos segmentos objetivo del proyecto:
 - **Consumidor de ofertas** (segmento demanda).
 - **Propietario de negocio local** (segmento oferta).
 
-Elementos incluidos en la sesión de validación: Landing Page (propuesta de valor y acceso al modo demo) y la aplicación web (flujos core del negocio).
+Elementos incluidos en la sesión de validación: aplicación web del cliente, persistencia de favoritos, consulta de la sección Mis favoritos, publicación e identificación de reseñas y modo oscuro restringido por rol.
 
 ### User flows a validar
 
 **Consumidor:**
-1. Exploración de ofertas por distrito en el mapa interactivo (GEOP-UA11).
-2. Búsqueda y ordenamiento de ofertas (GEOP-UA12).
-3. Recepción de una alerta de proximidad / oferta en tiempo real.
+1. Guardar y eliminar una oferta favorita (PB-01).
+2. Consultar, abrir y eliminar ofertas desde `/favoritos` (PB-02).
+3. Publicar una calificación y un comentario en una oferta (PB-03).
+4. Reconocer el nombre del autor de una reseña (PB-04).
+5. Activar el modo oscuro y comprobar la persistencia de la preferencia (PB-05).
 
 **Propietario de negocio:**
-1. Consulta del rendimiento de una campaña (GEOP-UA13).
-2. Control del estado de una campaña: activar / pausar (GEOP-UA14).
-3. Administración de las ofertas de una campaña: crear / editar / eliminar (GEOP-UA16).
+1. Verificar que la vista Business permanezca en modo claro y no muestre el selector de tema (PB-05).
+2. Valorar el aporte de las reseñas identificadas a la confianza y reputación de sus ofertas (PB-03 y PB-04).
 
 ### Preguntas de la entrevista
 
 **Segmento Consumidor**
 
 *Preguntas principales:*
-1. ¿La visualización de ofertas por distrito en el mapa le resultó clara para encontrar promociones cercanas?
-2. ¿Confía en la precisión de los datos de geolocalización que muestra la plataforma?
-3. ¿Considera que las alertas de ofertas en tiempo real modificarían sus hábitos de compra?
-4. ¿La búsqueda y el ordenamiento le permitieron encontrar rápidamente lo que buscaba?
+1. ¿El botón de corazón permitió guardar y eliminar una oferta de manera clara?
+2. ¿La sección Mis favoritos facilitó volver a encontrar las promociones seleccionadas?
+3. ¿El formulario de estrellas y comentario resultó sencillo de completar?
+4. ¿Mostrar el nombre del autor hizo que la reseña pareciera más confiable?
+5. ¿El modo oscuro mejoró la comodidad visual y conservó correctamente su preferencia?
 
 *Preguntas complementarias:*
 - ¿Qué dificultad, si alguna, encontró al completar la tarea?
-- ¿Otorgaría permisos de ubicación a la plataforma? ¿Qué le daría confianza para hacerlo?
+- ¿Qué información adicional esperaría encontrar en la sección Mis favoritos?
 - ¿Recomendaría esta experiencia a un amigo? ¿Por qué?
 
 **Segmento Propietario de negocio**
 
 *Preguntas principales:*
-1. ¿Las métricas y gráficos del panel de rendimiento le resultaron comprensibles?
-2. ¿La información mostrada le ayudaría a justificar la inversión publicitaria en GeoPS?
-3. ¿El control de estado de las campañas (activar/pausar) respondió a lo que esperaba?
-4. ¿La administración de ofertas de una campaña le pareció sencilla de operar?
+1. ¿Las calificaciones y comentarios identificados aportan información útil sobre la percepción de sus ofertas?
+2. ¿Mostrar el nombre del autor incrementa la confianza frente a un identificador genérico?
+3. ¿Considera correcto que la vista Business permanezca siempre en modo claro y sin selector de tema?
 
 *Preguntas complementarias:*
-- ¿El modo demo, sin necesidad de configurar una tienda real, aumentó su intención de usar la plataforma?
-- ¿Qué métrica adicional le gustaría ver en el panel?
+- ¿Qué mecanismo de moderación o respuesta a reseñas le gustaría incorporar en el futuro?
 - ¿Qué le generó dudas o fricción durante la tarea?
 
 #### 8.3.4.2. Registro de Entrevistas. 
@@ -5713,8 +5608,8 @@ Segmento #1: Dueños de negocios locales
 
 | Número de registro | Datos del entrevistado | Captura |
 | :--- | :--- | :--- |
-| **1** | **Nombre:** Cristian Salvador<br>**Edad:** 28 años<br>**Establecimiento:** Tienda de productos importados (Referente)<br>**Cargo:** Dueño / Encargado<br>**Duración:** Aprox. 5 minutos<br> **Enlace:** [https://l1nq.com/8gjygzw](https://acortar.link/gTCaPh) <br> **Resumen:** Cristian interactuó con la versión optimizada de GeoPS Business. Validó positivamente el nuevo flujo asistido por pasos (Wizard Step-by-Step), confirmando que el bloqueo reactivo del botón "Publicar" ante la falta de imágenes previene de manera efectiva anuncios incompletos o erróneos. Califica esta versión con un 5, destacando que la interfaz ahora mitiga la frustración y asegura un estándar estético alto para su negocio. |  **Figura 4**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista1_segmento1.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
-| **2** | **Nombre:** Néstor Rojas<br>**Establecimiento:** Terra Inc.<br>**Giro:** Inciensos, plantas y productos orgánicos asiáticos<br>**Duración:** Aprox. 8 minutos<br> **Enlace:** https://acortar.link/aSbB2F <br>**Resumen:** Néstor evaluó el formulario de registro comercial integrado con las nuevas máscaras y reglas de validación en tiempo real para el número de RUC. Comprobó con éxito que el sistema rechaza de forma estricta entradas alfabéticas o longitudes incorrectas, lo que incrementa la confianza y seguridad del manejo de datos comerciales. Valora la solución con un 5, señalando que las correcciones preventivas agilizan la gestión y reducen drásticamente los errores de configuración. |  **Figura 5**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista2_segmento1.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **1** | **Nombre:** Cristian Salvador<br>**Edad:** 28 años<br>**Establecimiento:** Tienda de productos importados (Referente)<br>**Cargo:** Dueño / Encargado<br>**Duración:** Aprox. 5 minutos<br> **Enlace:** [https://l1nq.com/8gjygzw](https://acortar.link/gTCaPh) <br> **Resumen:** El entrevistado maneja una tienda con alta variedad de productos, siendo las sopas instantáneas, snacks y bebidas los más buscados. Actualmente usa Instagram, WhatsApp y carteles físicos, pero nota que la publicidad digital a veces llega a personas muy lejanas que no concretan la compra. Califica la solución de GeoPS con un **5**, destacando su utilidad para liquidar stock próximo a vencer y atraer clientes que transitan por la zona. Le interesa contar con estadísticas de visualizaciones y rutas para medir la efectividad de sus ofertas. Expresó preocupación por el costo y la curva de aprendizaje, sugiriendo una interfaz sencilla. |  **Figura 4**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista1_segmento1.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **2** | **Nombre:** Néstor Rojas<br>**Establecimiento:** Terra Inc.<br>**Giro:** Inciensos, plantas y productos orgánicos asiáticos<br>**Duración:** Aprox. 8 minutos<br> **Enlace:** https://acortar.link/aSbB2F <br>**Resumen:** Néstor opera un negocio con clientes de diversos distritos que llegan principalmente por canales online. Indica que los inciensos tienen alta rotación, mientras que las plantas demoran más en venderse. Valora la propuesta de GeoPS con un **5**, resaltando que facilitaría captar al público que transita cerca y le ahorraría costos en publicidad tradicional como volantes. Le entusiasma la idea de notificaciones automáticas para liquidar saldos de inventario y evitar pérdidas por vencimiento. Como aporte adicional, sugiere que el mapa de la aplicación incluya coordenadas exactas y guías de accesibilidad para evitar que el cliente se desanime al no encontrar el local. |  **Figura 5**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista2_segmento1.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
 
 *Nota.* Elaboración propia.
 
@@ -5725,92 +5620,43 @@ Segmento #2: Consumidores de ofertas de diferentes ámbitos
 
 | Número de registro | Datos del entrevistado | Captura |
 | :--- | :--- | :--- |
-| **1** | **Nombre:** Ariana Puscan <br> **Edad:** 28 años <br> **Distrito:** Magdalena <br> **Ocupación:** Abogada <br> **Duración de la entrevista:** 5 minutos y 49 segundos <br> **Enlace:** https://l1nq.com/8gjygzw <br> **Resumen:** Ariana testeó la plataforma web responsive en un escenario de alta densidad comercial dentro de Lima Moderna. Confirmó que la implementación del Marker Clustering (agrupación numérica de pines) eliminó por completo la superposición caótica anterior, permitiendo una exploración visual fluida y ordenada del mapa al hacer zoom. Otorga una calificación de 5, validando la utilidad inmediata para localizar sus snacks favoritos sin saturación de interfaz. | **Figura 6**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista1_segmento2.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
-| **2** | **Nombre:** Olga Consuelo Arce Quesada <br> **Edad:** 25 años <br> **Distrito:** Magdalena <br> **Ocupación:** Comunicadora Corporativa <br> **Duración de la entrevista:** 7 minutos y 16 segundos <br> **Enlace:** https://l1nq.com/ck0dyrh <br> **Resumen:** Olga interactuó con los nuevos filtros de búsqueda avanzada por categorías integrados directamente sobre el mapa dinámico. Encontró con facilidad los establecimientos dedicados exclusivamente a cosmética y belleza coreana, resolviendo su dolor previo de depender de la suerte en redes sociales. Valora la solución con un 5, destacando la alta efectividad de la visualización centralizada de catálogos y precios. | **Figura 7**<br> *Entrevista 2 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista2_segmento2.png" alt="Entrevista 2 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
-| **3** | **Nombre:** Lupe de la Cruz <br> **Edad:** 22 años <br> **Distrito:** Jesús María <br> **Ocupación:** Estudiante <br> **Duración de la entrevista:** Aprox. 5 minutos <br> **Enlace:** https://acortar.link/BfP5q1 <br> **Resumen:** Lupe interactuó con el flujo de solicitud de geolocalización y el sistema de alertas web push responsive desde su celular. Verificó que los botones y ventanas de diálogo de consentimiento ahora cuentan con un contraste accesible y textos transparentes sobre el uso de su ubicación, mitigando la desconfianza previa. Califica la experiencia global con un 5, concluyendo que la navegación es sumamente limpia y segura. | **Figura 8**<br> *Entrevista 3 — Segmento 1* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista3_segmento2.png" alt="Entrevista 3 — Segmento 1" width="4000"> </div> *Nota.* Elaboración propia. |
+| **1** | **Nombre:** Ariana Puscan <br> **Edad:** 28 años <br> **Distrito:** Magdalena <br> **Ocupación:** Abogada <br> **Duración de la entrevista:** 5 minutos y 49 segundos <br> **Enlace:** https://l1nq.com/8gjygzw <br> **Resumen:** En este video, se entrevista a Ariana Puscan, una joven de 28 años del distrito de Magdalena. Es una consumidora recurrente de snacks asiáticos, adquiriéndolos mensualmente. Su descubrimiento de productos se basa principalmente en recomendaciones y ofertas vistas en Instagram y TikTok. Sus compras son mayoritariamente impulsivas o casuales cuando encuentra artículos en supermercados, sin apoyarse en aplicaciones específicas. Recientemente, visitó un establecimiento tras verlo en redes sociales, teniendo una experiencia satisfactoria. Finalmente, considera que nuestra aplicación sería de gran valor. La percibe como una herramienta clave para localizar puntos de venta exactos y facilitar el acceso a una mayor variedad de productos asiáticos. | **Figura 6**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista1_segmento2.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **2** | **Nombre:** Olga Consuelo Arce Quesada <br> **Edad:** 25 años <br> **Distrito:** Magdalena <br> **Ocupación:** Comunicadora Corporativa <br> **Duración de la entrevista:** 7 minutos y 16 segundos <br> **Enlace:** https://l1nq.com/ck0dyrh <br> **Resumen:** En este video, Olga Consuelo Arce Quesada, de 25 años, de Magdalena. Es una consumidora frecuente de snacks, bebidas y productos de belleza. Si bien descubre tiendas asiáticas mediante redes sociales o de forma presencial, señala una brecha en la información: las ofertas no están digitalizadas y solo las descubre al visitar el punto de venta. Su experiencia revela una dificultad específica al buscar productos de belleza, ya que no suelen estar disponibles en cadenas comerciales como Miniso. Actualmente, su búsqueda depende exclusivamente de la suerte al encontrar recomendaciones en TikTok, lo que dificulta la compra efectiva. Olga valida positivamente la propuesta de nuestra aplicación. Destaca la importancia de una plataforma integral que geolocalice tiendas cercanas, ofrezca visibilidad de ofertas en tiempo real y permita filtrar los establecimientos por categorías para optimizar su experiencia de compra. | **Figura 7**<br> *Entrevista 2 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista2_segmento2.png" alt="Entrevista 2 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **3** | **Nombre:** Lupe de la Cruz <br> **Edad:** 22 años <br> **Distrito:** Jesús María <br> **Ocupación:** Estudiante <br> **Duración de la entrevista:** Aprox. 5 minutos <br> **Enlace:** https://acortar.link/BfP5q1 <br> **Resumen:** En esta entrevista se conversó con Lupe de la Cruz, una joven estudiante de Jesús María. Es una consumidora quincenal de productos orientales, enfocada principalmente en snacks, dulces y bebidas. Su descubrimiento de locales se basa en redes sociales y exploración física ocasional. Relató una mala experiencia reciente al encontrar un local cerrado por falta de información actualizada, lo que validó la utilidad de la aplicación. Califica la utilidad del mapa interactivo con un puntaje de 4 a 5 estrellas. Valora positivamente las notificaciones push personalizadas y considera indispensable que la app muestre horarios de atención y listas de precios. Finalmente, propuso como feedback la posibilidad de realizar reservas de productos a través de la plataforma. | **Figura 8**<br> *Entrevista 3 — Segmento 1* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista3_segmento2.png" alt="Entrevista 3 — Segmento 1" width="4000"> </div> *Nota.* Elaboración propia. |
 
 
 ## 8.4. Experiment Aftermath & Analysis 
 ### 8.4.1. Analysis and Interpretation of Results
-Las entrevistas de validación tuvieron como objetivo evaluar la aceptación y efectividad de las nuevas funcionalidades implementadas en la plataforma a partir de las hipótesis planteadas durante el desarrollo del proyecto. Estas entrevistas se realizaron con los dos segmentos objetivo: dueños de negocios locales y consumidores de ofertas de diferentes ámbitos, quienes interactuaron con las nuevas características del sistema y compartieron su percepción sobre su utilidad, facilidad de uso y aporte a la experiencia de usuario.
+El análisis se realizó contrastando las cinco hipótesis de 8.2.1 con la ejecución funcional del último Sprint, las evidencias de frontend y backend y la retroalimentación cualitativa de los segmentos objetivo. La interpretación se concentró exclusivamente en las funcionalidades incorporadas en PB-01–PB-05.
 
-Las preguntas fueron diseñadas para analizar aspectos relacionados con la accesibilidad de la plataforma, la confianza en los datos geolocalizados, la claridad de las métricas visuales, el impacto de las alertas en tiempo real y la utilidad del modo demo. Los resultados obtenidos permitieron identificar el nivel de aceptación de cada funcionalidad y verificar si estas responden adecuadamente a las necesidades de los usuarios, proporcionando información valiosa para la mejora continua de la plataforma.
+| Experimento | Evidencia observada | Interpretación | Decisión |
+| --- | --- | --- | --- |
+| **PB-01: Guardar ofertas favoritas** | El cliente puede marcar y desmarcar una oferta mediante el corazón; el frontend refleja el estado y el backend persiste la relación usuario-oferta. | La función resuelve la pérdida de promociones de interés y establece la base para recuperarlas posteriormente. | **Perseverar** |
+| **PB-02: Sección Mis favoritos** | La ruta `/favoritos` reúne las ofertas guardadas por la cuenta activa y permite abrirlas o eliminarlas. | La centralización reduce la necesidad de repetir búsquedas y simplifica el acceso a promociones seleccionadas. | **Perseverar** |
+| **PB-03: Reseñas y calificaciones** | El detalle de una oferta permite seleccionar entre una y cinco estrellas, escribir un comentario y consultar las reseñas registradas. | La información generada por otros clientes aporta contexto para evaluar una oferta. Debe mantenerse la regla de una reseña por usuario y oferta. | **Perseverar** |
+| **PB-04: Identificación del autor** | Cada reseña muestra el nombre de la cuenta cuando está disponible y evita presentar identificadores internos como “User 2”. | La identificación comprensible mejora la autenticidad percibida y protege los detalles técnicos del sistema. | **Perseverar** |
+| **PB-05: Modo oscuro del cliente** | El selector aparece solo en cuentas `CONSUMER`, conserva la preferencia en `localStorage` y no se muestra en la vista Business (`OWNER`). | La separación por rol mejora el confort del cliente sin modificar la interfaz operativa del negocio. | **Perseverar** |
 
-**Preguntas Formuladas**
+**Hallazgos principales**
 
-- ¿La necesidad de configuración geoespacial avanzada para locales reduce la adopción del sistema?
-- ¿Los usuarios finales y comercios confían en los datos de geolocalización generados por la app?
-- ¿Las recomendaciones personalizadas de ofertas generan un aumento real en las ventas y el ahorro?
-- ¿Las alertas de ofertas en tiempo real y hora punta modifican los hábitos de compra de los consumidores?
-- ¿Los comerciantes entienden las métricas de alcance y gráficos mostrados en el panel?
-- ¿Un modo demo sin necesidad de configurar tiendas físicas reales incrementa la intención de uso de la plataforma?
-
-Estas preguntas fueron respondidas por cinco participantes pertenecientes a los segmentos objetivo: dos dueños de negocios locales y tres consumidores de ofertas de diferentes ámbitos. A continuación, se presentan los resultados obtenidos.
-
-**Análisis de Datos Demográficos**
-
-Distribución de participantes: Las entrevistas fueron realizadas a cinco usuarios pertenecientes al público objetivo del proyecto.
-- Dueños de negocios locales: 2 participantes (40%).
-- Consumidores de ofertas de diferentes ámbitos: 3 participantes (60%).
-
-Distribución de edades: Las edades de los participantes oscilaron entre 20 y 52 años.
-- 20-23 años: 60%.
-- 45-52 años: 40%.
-
-Los resultados muestran que la plataforma resulta comprensible tanto para usuarios jóvenes que buscan ofertas de manera ágil como para dueños de negocios con mayor experiencia en la administración y promoción de sus locales.
-
-**Evaluación de Funcionalidades**
-
-- Modo Demo sin configuración real
-La totalidad de los participantes valoró positivamente la posibilidad de acceder al sistema mediante un modo demo interactivo, destacando que elimina la necesidad de configurar tiendas físicas o ingresar datos reales antes de conocer el funcionamiento de la plataforma. Los dueños de negocios consideraron que esta característica incrementa la intención de uso y agiliza la toma de decisiones, mientras que los consumidores resaltaron que pueden probar la visualización de ofertas sin comprometer información desde el inicio.
-Resultado observado: aceptación del 100%.  
-
-- Confianza en datos de geolocalización
-Los participantes indicaron que experimentar previamente con los mapas dinámicos incrementa la confianza en la precisión de la plataforma. Los consumidores validaron que las ofertas se muestran de manera exacta según su ubicación simulada, mientras que los dueños de negocios ganaron seguridad sobre cómo se visualizarán sus locales ante clientes reales, reduciendo la incertidumbre inicial del sistema.
-Resultado observado: acceptance del 100%.  
-
-- Comprensión de métricas e indicadores visuales
-Todos los entrevistados pertenecientes al segmento comercial consideraron que los indicadores de alcance, contadores de vistas y pines informativos del panel de control son fáciles de interpretar. Afirmaron que la distribución visual en las pantallas les permite entender claramente el rendimiento de sus campañas y el flujo proyectado de rutas de clientes hacia sus locales sin requerir asistencia técnica o conocimientos avanzados de analítica digital.
-Resultado observado: aceptación del 100%.
-
-- Recomendaciones personalizadas de ofertas
-Los cinco participantes afirmaron que el sistema de recomendaciones inteligentes aporta un valor claro. Los dueños de negocios destacaron su potencial para generar un aumento real en las ventas de productos de baja rotación y liquidar stock próximo a vencer, mientras que los consumidores señalaron que la personalización según sus ámbitos de interés facilita el descubrimiento oportuno de ofertas y el ahorro económico directo.
-Resultado observado: aceptación del 100%.
-
-- Alertas de ofertas en tiempo real y hora punta
-Todos los entrevistados indicaron que recibir alertas geoespaciales y notificaciones en tiempo real en momentos de alta afluencia comercial constituye un incentivo efectivo para modificar sus hábitos. Los consumidores mencionaron que cambiarían sus rutas de compra cotidianas para aprovechar cupones flash cercanos, mientras que los comercios validaron que estas notificaciones son clave para atraer de forma inmediata al público que transita por la zona.
-Resultado observado: aceptación del 100%.
-
-- Facilidad de configuración para locales
-La totalidad de los dueños de negocios entrevistados aclaró que el flujo guiado de la interfaz evita que la asignación geográfica de los comercios y la publicación de anuncios se vuelvan complejas. Coincidieron en que las herramientas de marcado en mapa y los formularios validados son intuitivos, asegurando que la plataforma no presenta barreras técnicas que pongan en riesgo la adopción del sistema por parte de comercios locales tradicionales.
-Resultado observado: aceptación del 100%.
-
-**Recomendaciones de los Usuarios**
-
-Durante las entrevistas también se identificaron aspectos que los participantes consideran especialmente valiosos para futuras versiones de la plataforma:
-
-- Mantener disponible el modo demo interactivo sin requisitos de configuración reales obligatorios desde el inicio.
-- Conservar el motor de geolocalización preciso, transparente y con horarios de atención actualizados para mantener alta la confianza en los datos del mapa.
-- Continuar mostrando las métricas de alcance e interacciones de anuncios a través de indicadores visuales limpios y paneles fáciles de interpretar para los comerciantes.
-- Potenciar las alertas configurables en tiempo real durante horas punta comerciales para dinamizar el flujo de usuarios en tránsito hacia las tiendas.
-- Ampliar las guías visuales dentro del panel de control e incluir mapas de calor sencillos u opciones de reserva para optimizar la gestión de las ofertas personalizadas del sistema.
+* Favoritos constituye un flujo compuesto: PB-01 conserva la selección y PB-02 permite recuperarla y administrarla.
+* Las reseñas aportan mayor valor cuando PB-03 y PB-04 funcionan conjuntamente: contenido de experiencia más autor identificable.
+* La restricción del modo oscuro por rol es parte del criterio de aceptación; no se considera una funcionalidad Business.
+* Las evidencias de `favorites.jpg`, `Reviews.jpg` y `backend.jpg` mantienen correspondencia con el Product Backlog y el Sprint Backlog.
 
 **Conclusión**
 
-Los resultados de las entrevistas de validación evidencian una aceptación muy favorable de las nuevas funcionalidades implementadas en la plataforma GeoPS. Tanto los dueños de negocios locales como los consumidores de ofertas de diferentes ámbitos coincidieron en que el modo demo facilita la adopción inicial, mientras que la precisión de los datos de geolocalización y el uso de clústeres numéricos reducen drásticamente la saturación visual en el mapa.
-
-Asimismo, los paneles con indicadores simplificados, el sistema de recomendaciones personalizadas y las alertas en tiempo real en hora punta fueron percibidos como herramientas útiles que mejoran la experiencia del usuario y favorecen el beneficio mutuo de ambos segmentos. En conjunto, los resultados permiten validar las hipótesis planteadas para estas funcionalidades y respaldan su incorporación dentro de la versión final de la plataforma, evidenciando un alto nivel de aceptación por parte de ambos segmentos objetivo.
+Los cinco experimentos se alinean con funcionalidades realmente implementadas y verificables. La evidencia respalda su permanencia en el producto, mientras que las siguientes iteraciones deberán profundizar en métricas de uso longitudinal, moderación de reseñas y accesibilidad visual del tema oscuro.
 
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog 
 
 | Prioridad (1,2,3,5,8) | ID | Pregunta |
 | :---: | :---: | :--- |
-| **8** | Q1 | ¿La necesidad de configuración geoespacial avanzada para locales reduce la adopción del sistema? |
-| **5** | Q2 | ¿Los usuarios finales y comercios confían en los datos de geolocalización generados por la app? |
-| **3** | Q3 | ¿Las recomendaciones personalizadas de ofertas generan un aumento real en las ventas y el ahorro? |
-| **2** | Q4 | ¿Las alertas de ofertas en tiempo real y hora punta modifican los hábitos de compra de los consumidores? |
-| **1** | Q5 | ¿Los comerciantes entienden las métricas de alcance y gráficos mostrados en el panel? |
-| **1** | Q6 | ¿Un modo demo sin necesidad de configurar tiendas físicas reales incrementa la intención de uso de la plataforma? |
+| **1** | Q1 | ¿Qué frecuencia de uso alcanzará la sección Mis favoritos después de varias semanas? |
+| **2** | Q2 | ¿Qué mecanismos de moderación necesitan las reseñas para preservar su utilidad y seguridad? |
+| **3** | Q3 | ¿Permitir respuestas del comercio mejoraría la confianza sin generar conflictos con los clientes? |
+| **5** | Q4 | ¿Qué mejoras de accesibilidad requiere la paleta oscura para distintos niveles de visión? |
+| **8** | Q5 | ¿Qué información adicional debería mostrar una oferta guardada para facilitar la decisión de compra? |
 
 ## 8.5. Continuous Learning 
 
@@ -5820,8 +5666,8 @@ La Shareback Session es la instancia en la que el equipo consolida y comparte el
 
 ### Flujo de aprendizaje (Learning Workflow)
 
-1. **Recolectar.** Se ejecutaron las entrevistas de validación con los dos segmentos objetivo (2 propietarios de negocio y 3 consumidores), midiendo la aceptación de las funcionalidades To-Be frente a las hipótesis de trabajo (8.2.1).
-2. **Interpretar.** Cada respuesta se contrastó con la hipótesis y su hipótesis nula, clasificando la evidencia como *a favor*, *en contra* o *insuficiente*.
+1. **Recolectar.** Se consolidaron las evidencias funcionales del frontend y backend junto con la retroalimentación cualitativa disponible de los dos segmentos objetivo.
+2. **Interpretar.** Cada evidencia se contrastó con la hipótesis y su hipótesis nula, clasificándola como *a favor*, *en contra* o *insuficiente*.
 3. **Decidir.** Para cada pregunta se tomó una decisión de tipo **Perseverar** (la evidencia respalda la creencia), **Pivotar** (la evidencia la contradice) o **Profundizar** (se requiere más evidencia).
 4. **Compartir.** Los aprendizajes se registraron en el Question Backlog re-priorizado (8.4.2) y se comunicaron al equipo para alimentar el siguiente ciclo.
 
@@ -5829,17 +5675,18 @@ La Shareback Session es la instancia en la que el equipo consolida y comparte el
 
 | Experimento / Pregunta | Evidencia clave | Decisión | Aprendizaje |
 |---|---|---|---|
-| Web Push de proximidad (afluencia física) | Los consumidores valoran las alertas en tiempo real, pero manifiestan reservas ante los permisos de ubicación en segundo plano. | Profundizar | El valor percibido es alto; el reto es la comunicación del beneficio antes de solicitar el permiso. |
-| Canje QR (ROI para PyMEs) | Los propietarios reconocen la utilidad de medir canjes físicos para justificar su inversión publicitaria. | Perseverar | La transparencia en la medición es un factor de confianza decisivo para las PyMEs. |
-| Rutas temáticas (retención) | Los consumidores jóvenes muestran interés por la exploración guiada por circuitos. | Perseverar | La exploración temática reduce la sobrecarga cognitiva frente a la búsqueda genérica. |
-| Modo demo sin configuración real | La totalidad de los participantes valoró poder probar la plataforma sin configurar tiendas reales. | Perseverar | El modo demo reduce la fricción de adopción inicial y aumenta la intención de uso. |
-| Claridad de métricas del panel | Los propietarios comprendieron los gráficos y métricas de alcance mostrados. | Perseverar | La visualización clara del rendimiento sostiene la propuesta de valor para el segmento propietario. |
+| Guardar y eliminar favoritos | El corazón refleja el estado y la selección persiste por usuario. | Perseverar | La retroalimentación visual debe mantenerse sincronizada con el backend. |
+| Sección Mis favoritos | La cuenta activa consulta, abre y elimina sus ofertas guardadas desde una sola vista. | Perseverar | Guardar y recuperar deben tratarse como partes del mismo recorrido del cliente. |
+| Reseñas y calificaciones | El cliente puede publicar estrellas y comentario desde el detalle de la oferta. | Perseverar | La utilidad de la reseña depende de validaciones y de evitar duplicados por usuario y oferta. |
+| Identidad del autor | El listado muestra nombres comprensibles y utiliza fallback neutro cuando corresponde. | Perseverar | La credibilidad mejora sin necesidad de exponer identificadores internos. |
+| Modo oscuro exclusivo para clientes | La preferencia se conserva para `CONSUMER`; `OWNER` permanece en claro y sin selector. | Perseverar | Las preferencias visuales deben respetar el rol y no propagarse a la vista Business. |
 
 ### Próximos pasos derivados del aprendizaje
 
-- Rediseñar el flujo de solicitud de permisos de geolocalización comunicando el beneficio inmediato antes del prompt del navegador.
-- Priorizar la consolidación del canje QR como diferenciador de confianza para las PyMEs.
-- Mantener y ampliar el modo demo como puerta de entrada de nuevos usuarios.
+- Medir el uso recurrente de favoritos y el tiempo de recuperación de una oferta guardada.
+- Incorporar reglas de moderación y reporte para preservar la calidad de las reseñas.
+- Evaluar una respuesta del comercio a las reseñas sin comprometer la privacidad del cliente.
+- Ejecutar pruebas de contraste y accesibilidad sobre el modo oscuro del cliente.
 
 ## 8.6. To-Be Software Platform Pre-launch 
 
@@ -5856,7 +5703,7 @@ Esta matriz sustenta el **ABET – EAC – Student Outcome 4**, evidenciando las
 |---|---|---|---|
 | **Responsabilidad ética y profesional** (ACM/IEEE, CIP) | El manejo de datos de ubicación y de comercios exige transparencia y protección de la privacidad. | Publicación de Términos y Condiciones y del Acuerdo de Servicio (SaaS) accesibles desde el footer; solicitud explícita de permisos de geolocalización; almacenamiento de credenciales con hashing BCrypt y autenticación JWT. | Sección 5.2.4 (SaaS Agreement); contexto Identity (JWT + BCrypt) en el backend. |
 | **Impacto global** | La plataforma debe ser usable por audiencias diversas y en más de un idioma. | Adopción de internacionalización (i18n, en_US / es_419) en Landing y Frontend, y consideraciones de accesibilidad (a11y) con atributos ARIA en la experiencia web. | Frontend con `@ngx-translate`; atributos ARIA en componentes; secciones 4.2 y de accesibilidad. |
-| **Impacto económico** | Las PyMEs y comercios especializados destinan presupuesto limitado a publicidad y necesitan medir su retorno. | Modelo de publicidad hiperlocal de bajo costo y funcionalidades de medición del rendimiento de campañas y canje físico (QR) que permiten al comerciante justificar su inversión. | Contexto Campaign (métricas de campañas); experimentos de ROI (8.2.1). |
+| **Impacto económico** | Las PyMEs necesitan fortalecer la confianza del consumidor y aumentar la visibilidad de sus ofertas sin elevar innecesariamente sus costos. | Favoritos facilita el retorno a promociones de interés y las reseñas identificadas aportan prueba social para apoyar la decisión del cliente. | Contextos Favorites y Reviews; experimentos PB-01–PB-04 de 8.2.1. |
 | **Impacto ambiental** | El descubrimiento presencial ineficiente y la publicidad física (carteles, volantes) generan desplazamientos y residuos. | Solución 100% web que evita la distribución de material impreso y orienta al consumidor hacia comercios cercanos, reduciendo desplazamientos innecesarios. | Propuesta de valor hiperlocal; alcance web (sin app nativa) que reduce huella de distribución. |
 | **Impacto social** | La comunidad de comercios especializados y sus clientes requieren visibilidad equitativa frente a grandes cadenas. | Digitalización accesible de pequeños negocios, dando visibilidad a comercios de nicho y fortaleciendo el comercio local y la comunidad en torno a él. | Segmentos objetivo (1.3); User Personas y Journey Maps del Cap. II. |
 
@@ -5867,7 +5714,9 @@ Esta matriz sustenta el **ABET – EAC – Student Outcome 4**, evidenciando las
 | Uso indebido o exposición de datos de geolocalización | Consentimiento explícito, mínima recolección de datos y comunicación del propósito de uso. |
 | Publicidad engañosa por parte de comercios | Validación de campañas activas y fechas; posibilidad de retirar ofertas y controlar su estado. |
 | Exclusión de usuarios con capacidades diferentes | Aplicación de principios de diseño inclusivo (a11y) y soporte multilingüe (i18n). |
-| Sobre-exposición del usuario a notificaciones | Ejecución de un solo experimento por usuario sobre un mismo tema y respeto a la no causación de daño. |
+| Contenido ofensivo, falso o perjudicial en reseñas | Validación de una reseña por usuario y oferta, identificación segura del autor y propuesta de mecanismos de moderación y reporte. |
+| Exposición de identificadores internos del autor | Resolución del nombre de cuenta y uso de un texto neutro cuando la cuenta no esté disponible. |
+| Aplicación incorrecta del modo oscuro a la vista Business | Restricción del selector a cuentas `CONSUMER`; las cuentas `OWNER` permanecen en modo claro. |
 
 
 ## Conclusiones
@@ -5876,11 +5725,11 @@ Esta matriz sustenta el **ABET – EAC – Student Outcome 4**, evidenciando las
 
 El desarrollo del proyecto GeoPS permitió transformar una idea inicial en una solución tecnológica completa y funcional, integrando landing page, frontend interactivo con Angular y backend robusto con Spring Boot desplegado en la nube. A lo largo de los cuatro sprints se evidenció un progreso consistente en la capacidad técnica del equipo, tanto en términos de diseño de interfaces como en arquitectura de software, integración de servicios y despliegue continuo en plataformas de producción.
 
-A lo largo del proyecto se evidenció una mejora progresiva en la organización del trabajo y en la coordinación del equipo. El uso de metodologías ágiles (Scrum), control de versiones mediante GitHub, gestión visual en Trello y comunicación por Discord y Google Meet permitió mantener un flujo de trabajo ordenado y eficiente. Cada sprint aportó valor incremental, fortaleciendo la arquitectura y asegurando la cohesión entre las distintas funcionalidades desarrolladas. El Sprint 4 marcó la culminación del MVP con la implementación del módulo completo de Proveedores, permitiendo a los negocios gestionar campañas publicitarias de manera efectiva.
+A lo largo del proyecto se evidenció una mejora progresiva en la organización del trabajo y en la coordinación del equipo. El uso de metodologías ágiles (Scrum), control de versiones mediante GitHub, gestión visual en Trello y comunicación por Discord y Google Meet permitió mantener un flujo de trabajo ordenado y eficiente. El último Sprint agregó valor verificable mediante favoritos, la sección Mis favoritos, reseñas y calificaciones, identificación del autor y modo oscuro exclusivo para clientes.
 
-Desde el punto de vista técnico, se construyó una plataforma sólida que integra módulos esenciales como autenticación, gestión de usuarios, favoritos, ofertas, reseñas, cupones, carritos, pagos, suscripciones y el nuevo módulo de campañas publicitarias para proveedores. El despliegue del backend en Railway y del frontend en Vercel confirma la capacidad del equipo para trabajar con servicios en la nube, manejando entornos reales de producción. La documentación completa del API con Swagger UI facilita la comprensión de los endpoints y permite la futura expansión del sistema.
+Desde el punto de vista técnico, el incremento integra los contextos de favoritos y reseñas con la aplicación Angular y el backend Spring Boot. La documentación Swagger evidencia las operaciones RESTful para guardar, consultar y eliminar favoritos, además de registrar y consultar reseñas. En el frontend, el tema seleccionado por `CONSUMER` se conserva localmente, mientras que las cuentas Business (`OWNER`) mantienen la vista clara.
 
-Las validaciones realizadas con usuarios finales durante el Sprint 4 confirmaron la usabilidad y valor de la plataforma, recibiendo feedback positivo sobre la facilidad de uso, la funcionalidad de geolocalización y los filtros de búsqueda. Los usuarios destacaron la rapidez de GeoPS en comparación con otras plataformas existentes y sugirieron mejoras como el desarrollo de una aplicación móvil nativa y la incorporación de reseñas de usuarios para aumentar la credibilidad de las ofertas.
+El ciclo experimental permitió vincular las preguntas priorizadas con cinco Experiment Cards, sus hipótesis y las historias PB-01–PB-05. Las evidencias funcionales confirman la implementación del incremento y dejan como próximos pasos la medición longitudinal del uso de favoritos, la moderación de reseñas y las pruebas de accesibilidad del modo oscuro.
 
 En su conjunto, el proyecto GeoPS se consolidó como una base tecnológica robusta y escalable, preparada para continuar creciendo en funcionalidades, pruebas automatizadas, mejoras de rendimiento y validaciones continuas de experiencia de usuario. Los resultados obtenidos reflejan un equipo técnicamente competente, organizado y capaz de ejecutar un ciclo completo de desarrollo de software moderno, desde la concepción hasta el deployment en producción y la validación con usuarios reales.
 
@@ -5926,9 +5775,6 @@ World Bank. (2019). *World Development Report 2019: The Changing Nature of Work*
 
 - Enlace Repositorio Project Report: https://github.com/geops-org/geops-report
 
-**Video About The Tema**
-- Enlace Video About The Product - GeoPs: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202321941_upc_edu_pe/IQCmK1t5-cokQ4wCX1OlTZo3AZtf599c7htQwh--P-6cT0A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=ILzbEq
-
 
 **Video About The Product**
 
@@ -5940,6 +5786,3 @@ World Bank. (2019). *World Development Report 2019: The Changing Nature of Work*
 - Enlace Diseño Figma Prototype: https://www.figma.com/proto/mHHx8WStPBr63tLYj42pBX/GeoPs?node-id=2-511&t=I0J1dH7e40wYL90d-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=426%3A3299
 
 - Enlace Diseño Figma: https://www.figma.com/design/mHHx8WStPBr63tLYj42pBX/GeoPs?node-id=336-2468&t=1Nm0EVmUTgy7sfDx-1
-
-
-
