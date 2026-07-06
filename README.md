@@ -4072,6 +4072,10 @@ Static Code Analysis — Backend RESTful API
 Nota. Elaboración propia.
 
 Static Code Analysis — Swagger/OpenAPI Documentation
+<div align="center">
+    <img src="resources/imgs/chapter-vi/Static Code Analysis — Swagger.png" alt="GeoPS Software Architecture Context Diagram" width="900">
+</div>
+
 Nota. Elaboración propia.
 
 
@@ -4255,13 +4259,32 @@ Nota. Elaboración propia.
 
 Como resultado de las revisiones, el equipo confirma que el proyecto GeoPS mantiene una estructura de código coherente con su arquitectura y con los estándares definidos para el desarrollo. Las revisiones permitieron reforzar la calidad técnica del frontend, backend y documentación de servicios, así como reducir riesgos asociados a seguridad, mantenimiento y despliegue. Además, el uso de GitHub, GitFlow, Conventional Commits y Pull Requests contribuye a mantener un proceso colaborativo controlado, verificable y alineado con las buenas prácticas de ingeniería de software.
 
-Figura X. Pull Request Review Evidence — GitHub
+Pull Request Review Evidence — GitHub
+<div align="center">
+    <img src="resources/imgs/chapter-vi/Pull Request Review Evidence.png" width="700">
+  </div>
+
 Nota. Elaboración propia.
 
-Figura X. Repository Commit History — Conventional Commits
+Repository Commit History — Conventional Commits
 Nota. Elaboración propia.
 
-Figura X. Static Review Evidence — Backend and Frontend
+<div align="center">
+    <img src="resources/imgs/chapter-vi/Repository Commit History.png" width="700">
+  </div>
+
+
+
+Static Review Evidence — Backend and Frontend
+<div align="center">
+    <img src="resources/imgs/chapter-vi/Static Code Analysis.png" alt="GeoPS Software Architecture Context Diagram" width="900">
+</div>
+Nota. Elaboración propia.
+
+<div align="center">
+    <img src="resources/imgs/chapter-vi/Backend RESTful API.png" alt="GeoPS Software Architecture Context Diagram" width="900">
+</div>
+
 Nota. Elaboración propia.
 
 ## 6.3. Validation Interviews. 
