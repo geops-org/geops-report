@@ -3724,10 +3724,150 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
 
   En esta sección se documenta la gestión del tiempo y tareas mediante la metodología Scrum.
 
-  Sprint 1: Enfoque en el Setup del proyecto, diseño de la arquitectura y desarrollo del Landing Page.
+  #### 5.2.1.1 Sprint 1
 
-  Sprint 2 (Actual): Implementación del CRUD de usuarios (Identity), diseño de base de datos MySQL y despliegue inicial de la API en Railway.
-  (Aquí debes insertar una captura de pantalla de tu tablero de Jira o Azure DevOps filtrado por Sprints).
+  ##### 5.2.1.1.1 Sprint Planning 1
+
+  En este primer hito, el equipo definió como objetivo primordial sentar las bases arquitectónicas de la plataforma GeoPS, priorizando los flujos de autenticación y la estructura responsiva inicial.
+
+| Sprint # | Sprint 1 |
+| :--- | :--- |
+| **Date** | 2026-04-01 |
+| **Time** | 09:00 AM |
+| **Location** | Reunión Virtual - Microsoft Teams |
+| **Prepared By** | Jiménez Rosas, Bryan Eduardo |
+| **Attendees** | Jiménez Rosas, Bryan Eduardo / Salazar Caballero, Alvaro Fabrizzio / Cárdenas Concha, Santiago Iván / Vera Nuñez Nicolas Alejandro / Valverde Portuguez, Natalia Ximena / Choy Robles, Vanessa May Lang / Diestra Zambrano Adriana Maria |
+| **Sprint 0 Review Summary** | Configuración inicial de repositorios y definición preliminar de la arquitectura DDD/CQRS para el backend. |
+| **Sprint 0 Retrospective Summary** | Se identificó la necesidad de automatizar la validación de sintaxis antes de las reuniones de sincronización. |
+| **Sprint 1 Goal** | Our focus is on establishing core identity services and a responsive presentation. We believe it delivers a secure environment and clear business scope to potential clients. This will be confirmed when a visitor registers an account and browses the promotional content. |
+| **Sprint 1 Velocity** | 15 Story Points |
+| **Sum of Story Points** | 15 Story Points |
+
+ ##### 5.2.1.1.2 Aspects Leader Collaboration
+Se estableció la matriz LACX para delegar responsabilidades técnicas específicas sobre los componentes iniciales del sistema, asegurando la participación de todo el equipo de ingeniería.
+
+| Team Member (LastName, First Name) | GitHub Username | Identity Module (DDD Core) | Landing Page Responsive Layout |
+| :--- | :--- | :--- | :--- |
+| Jiménez Rosas, Bryan Eduardo | bry4nbe | Leader (L) | Collaborator (C) |
+| Salazar Caballero, Alvaro Fabrizzio | IDymian | Collaborator (C) | Leader (L) |
+| Cárdenas Concha, Santiago Iván | Sack136-GIT | Assistant (A) | Collaborator (C) |
+| Vera Nuñez, Nicolas Alejandro | nicxlxs | Collaborator (C) | Assistant (A) |
+| Valverde Portuguez, Natalia Ximena | NatValverde15 | Assistant (A) | Collaborator (C) |
+| Choy Robles, Vanessa May Lang | VMLCR | Collaborator (C) | Executive (X) |
+| Diestra Zambrano, Adriana Maria | adriiiiii123 | Executive (X) | Collaborator (C) |
+
+##### 5.2.1.1.3 Sprint Backlog 1
+
+| User Story Id | Title | Work-Item / Task Id | Title / Description | Estimation (Hours) | Assigned To | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **US01** | User Registration & Auth | TS1-01 | Configuración inicial de arquitectura DDD/CQRS en Backend (Spring Boot con Docker) | 4 | Jiménez Rosas, Bryan Eduardo | Done |
+| **US01** | User Registration & Auth | TS1-02 | Diseñar e implementar la entidad lógica User en la capa de Infraestructura relacional | 5 | Cárdenas Concha, Santiago Iván | Done |
+| **US01** | User Registration & Auth | TS1-03 | Desarrollar SignUpCommand e Identity Application Service (CQRS Logic) | 6 | Vera Nuñez, Nicolas Alejandro | Done |
+| **US01** | User Registration & Auth | TS1-04 | Configurar interceptores HTTP en Angular para el manejo seguro de tokens Bearer JWT | 4 | Choy Robles, Vanessa May Lang | Done |
+| **US02** | Browse Landing Page | TS1-05 | Maquetación responsiva HTML5/CSS3/JS del Landing Page promocional | 6 | Salazar Caballero, Alvaro Fabrizzio | Done |
+| **US02** | Browse Landing Page | TS1-06 | Pruebas de UI y optimización de diseño fluido multicontenedor en navegadores | 4 | Valverde Portuguez, Natalia Ximena | Done |
+| **US02** | Browse Landing Page | TS1-07 | Automatización del pipeline en GitHub Actions para despliegue en Firebase Hosting | 4 | Diestra Zambrano, Adriana Maria | Done |
+
+  El tablero de control del Sprint 1 se encuentra disponible de manera pública en el siguiente enlace: [https://trello.com/invite/b/6a4b331284b55c52c0a24593/ATTIee9d1f1f4ebb2ae92df4d49618a92759FD62F5DD/geopssprint1](https://trello.com/invite/b/6a4b331284b55c52c0a24593/ATTIee9d1f1f4ebb2ae92df4d49618a92759FD62F5DD/geopssprint1).
+
+    <div align="center">
+    <img src="resources/imgs/trello1.png" width="700">
+  </div>
+
+  ##### 5.2.1.1.4 Development Evidence for Sprint Review
+La implementación de código fuente se rigió bajo el modelo GitFlow y Conventional Commits.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| geops-org/geops-landing | main | d15f71a | feat:add images in carousel | - | 2026-04-26 |
+| geops-org/geops-landing | main | 5a1b3c4 | feat: enhance HTML support for localized strings and update hero headings | - | 2026-04-26 |
+| geops-org/geops-api | main | b76424f | feat: add review existence check and exception handling | - | 2026-04-26 |
+| geops-org/geops-api | main | 2f6cede | feat: feat: enhance API endpoints for user consumption retrieval and improve response handling | - | 2026-04-26 |
+| geops-org/geops-api | main | 1b993d0 | chore: remove unused notifications module | - | 2026-05-05 |
+| geops-org/geops-web | main | d165341 | fix: update platformProviderApiBaseUrl to production endpoint | - | 2026-04-26 |
+
+##### 5.2.1.2.5 Team Collaboration Insights for Sprint Review
+
+ <p align="center">
+    <img src="./resources/imgs/evidencias/teamcollab1.1.png" alt="Report Contributors Insight" width="600">
+  </p>
+  <p align="center">
+    <img src="./resources/imgs/evidencias/teamcollab1.2.png" alt="Report Network Graph" width="600">
+  </p>
+
+  #### 5.2.1.2 Sprint 2
+
+  ##### 5.2.1.2.1 Sprint Planning 2
+
+Este ciclo se centró en la implementación del núcleo del negocio (Core Business Domains), desarrollando los flujos de campañas y ofertas mediante CQRS.
+
+| Sprint # | Sprint 2 |
+| :--- | :--- |
+| **Date** | 2026-04-15 |
+| **Time** | 09:00 AM |
+| **Location** | Reunión Virtual - Microsoft Teams |
+| **Prepared By** | Jiménez Rosas, Bryan Eduardo |
+| **Attendees** | Jiménez Rosas, B. / Salazar Caballero, A. / Cárdenas Concha, S. / Vera Nuñez, N. / Valverde Portuguez, N. / Choy Robles, V. / Diestra Zambrano, A. |
+| **Sprint 1 Review Summary** | Autenticación robusta completada. Despliegue inicial en Firebase exitoso. |
+| **Sprint 1 Retrospective Summary** | Es mandatorio mejorar el tiempo de respuesta del pool de conexiones JPA. |
+| **Sprint 2 Goal** | Our focus is on delivering complex campaign creation handlers and dynamic offer structures. We believe it delivers comprehensive marketing insights to managers. This will be confirmed when a user creates an active campaign and bounds three transactional offers. |
+| **Sprint 2 Velocity** | 42 Story Points |
+| **Sum of Story Points** | 42 Story Points |
+
+ ##### 5.2.1.2.2 Aspects Leader Collaboration
+Distribución estratégica de liderazgo técnico para los módulos avanzados del negocio entre los miembros del equipo.
+
+| Team Member (LastName, First Name) | GitHub Username | Campaign Module (CQRS Commands) | Offers Domain & Relationships |
+| :--- | :--- | :--- | :--- |
+| Jiménez Rosas, Bryan Eduardo | bry4nbe | Collaborator (C) | Leader (L) |
+| Salazar Caballero, Alvaro Fabrizzio | IDymian | Assistant (A) | Collaborator (C) |
+| Cárdenas Concha, Santiago Iván | Sack136-GIT | Leader (L) | Assistant (A) |
+| Vera Nuñez, Nicolas Alejandro | nicxlxs | Collaborator (C) | Collaborator (C) |
+| Valverde Portuguez, Natalia Ximena | NatValverde15 | Executive (X) | Collaborator (C) |
+| Choy Robles, Vanessa May Lang | VMLCR | Collaborator (C) | Executive (X) |
+| Diestra Zambrano, Adriana Maria | adriiiiii123 | Collaborator (C) | Assistant (A) |
+
+##### 5.2.1.2.3 Sprint Backlog 2
+
+
+| User Story Id | Title | Work-Item / Task Id | Title / Description | Estimation (Hours) | Assigned To | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **US03** | Campaign Management | TS2-01 | Desarrollar CreateCampaignCommand y su respectivo Handler en la capa de aplicación | 5 | Cárdenas Concha, Santiago Iván | Done |
+| **US03** | Campaign Management | TS2-02 | Implementar componentes visuales en Angular empleando PrimeVue para formularios de Campaña | 6 | Vera Nuñez, Nicolas Alejandro | Done |
+| **US03** | Campaign Management | TS2-03 | Configurar el control de estado reactivo (Angular Signals) en el core del frontend | 5 | Salazar Caballero, Alvaro Fabrizzio | Done |
+| **US03** | Campaign Management | TS2-04 | Implementar endpoints REST de consulta de campañas (GetCampaignsQuery Handler) | 4 | Jiménez Rosas, Bryan Eduardo | Done |
+| **US04** | Dynamic Offers | TS2-05 | Diseñar e implementar el modelo de persistencia JPA para relaciones Campaign-Offers | 5 | Diestra Zambrano, Adriana Maria | Done |
+| **US04** | Dynamic Offers | TS2-06 | Diseñar flujos lógicos de validación para control de ofertas activas y fechas límite | 5 | Choy Robles, Vanessa May Lang | Done |
+| **US04** | Dynamic Offers | TS2-07 | Construir la suite completa de pruebas unitarias automatizadas con JUnit 5 y Mockito | 5 | Valverde Portuguez, Natalia Ximena | Done |
+
+  El tablero de control del Sprint 2 se encuentra disponible de manera pública en el siguiente enlace: [https://trello.com/invite/b/6a4b40136f12017a070237f5/ATTI7de9a424cc56c2880b7f13cd6947449c7B0D2F55/geopssprint2](https://trello.com/invite/b/6a4b40136f12017a070237f5/ATTI7de9a424cc56c2880b7f13cd6947449c7B0D2F55/geopssprint2)
+
+    <div align="center">
+    <img src="resources/imgs/trello2.png" width="700">
+  </div>
+
+  ##### 5.2.1.2.4 Development Evidence for Sprint Review
+La implementación de código fuente se rigió bajo el modelo GitFlow y Conventional Commits.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| geops-org/geops-api | main | 4143fa3 | feat: Update Offer Command and delete codePrefix field from CreateOfferCommand | - | 2026-05-08 |
+| geops-org/geops-api | main | a49c8df | feat: Implement validation for campaigns | - | 2026-05-10 |
+| geops-org/geops-api | main | 597c879 | feat: Add integration tests for identity sign-up | - | 2026-05-11 |
+| geops-org/geops-api | main | 8ec5c65 | chore: update datasource configuration | - | 2026-05-11 |
+| geops-org/geops-web | main | 83bab44 | feat: update location selection to districts and cleanup consumption logic | - | 2026-05-08 |
+| geops-org/geops-web | main | 637dd11 | refactor(settings): streamline profile settings and improve user state handling | - | 2026-05-09 |
+| geops-org/geops-web | main | 8f3c956 | test(CAMPAIGNS): implement comprehensive unit tests for validators, login and campaign components | - | 2026-05-10 |
+| geops-org/geops-web | main | 95f0507 | feat: add business types for registration form | - | 2026-04-11 |
+
+##### 5.2.1.2.5 Team Collaboration Insights for Sprint Review
+
+ <p align="center">
+    <img src="./resources/imgs/evidencias/teamcollab2.1.png" alt="Report Contributors Insight" width="600">
+  </p>
+  <p align="center">
+    <img src="./resources/imgs/evidencias/teamcollab2.2.png" alt="Report Network Graph" width="600">
+  </p>
   
   #### 5.2.2. Implemented Landing Page Evidence
 
