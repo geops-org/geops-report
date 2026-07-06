@@ -20,7 +20,7 @@
 
 **Profesor:** Noriega Melendez, Julio Manuel
 
-### Informe de TP
+### Informe de TF
 
 **Startup:** GeoPsLabs
 
@@ -52,6 +52,8 @@
 | :------ | :--------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | TB1     | 27/04/2026 | Barba Estrada, Bryan Eduardo <br> Cárdenas Concha, Santiago Iván <br> Diestra Zambrano Adriana Maria <br> Valverde Portuguez, Natalia Ximena <br> Salazar Caballero, Alvaro Fabrizzio <br> Choy Robles, Vanessa May Lang <br> Vera Nuñez, Nicolas Alejandro | En la primera entrega del informe de nuestro proyecto, hemos realizado los primeros 5 capítulos del informe y también entregamos la primera versión del landing page de GeoPS. |
 | TP1     | 11/05/2026 | Barba Estrada, Bryan Eduardo <br> Cárdenas Concha, Santiago Iván <br> Diestra Zambrano Adriana Maria <br> Valverde Portuguez, Natalia Ximena <br> Salazar Caballero, Alvaro Fabrizzio <br> Choy Robles, Vanessa May Lang <br> Vera Nuñez, Nicolas Alejandro | En esta entrega del informe de nuestro proyecto, hemos realizado los capítulos 6 y 7 del informe ademas de la realizacion de las pruebas y despliegue de la aplicacion funcional. |
+| TB2     | 05/06/2026 | Barba Estrada, Bryan Eduardo <br> Cárdenas Concha, Santiago Iván <br> Diestra Zambrano Adriana Maria <br> Valverde Portuguez, Natalia Ximena <br> Salazar Caballero, Alvaro Fabrizzio <br> Choy Robles, Vanessa May Lang <br> Vera Nuñez, Nicolas Alejandro | En esta entrega elaboramos el Capítulo 8 (Experiment-Driven Development), incluyendo el Experiment Planning (As-Is Summary, Raw Material, Experiment-Ready Questions, Question Backlog y Experiment Cards) y el Experiment Design (Hypotheses, Domain Business Metrics, Measures, Conditions, Scale Calculations, Methods Selection, Data Analytics y Tracking Plan), además de las To-Be User Stories y el To-Be Product Backlog. También actualizamos la sección Student Outcome con las acciones de TB2. |
+| TF1     | 05/07/2026 | Barba Estrada, Bryan Eduardo <br> Cárdenas Concha, Santiago Iván <br> Diestra Zambrano Adriana Maria <br> Valverde Portuguez, Natalia Ximena <br> Salazar Caballero, Alvaro Fabrizzio <br> Choy Robles, Vanessa May Lang <br> Vera Nuñez, Nicolas Alejandro | En la entrega final completamos y corregimos el informe con todos los capítulos. Agregamos el As-is Scenario Mapping (2.3.5) y el To-Be Scenario Mapping (3.1); las Team Collaboration Insights por Sprint (Cap. 5); el Static Testing & Verification (6.2), las Validation Interviews (6.3) y la Auditoría de Experiencias de Usuario realizada y recibida (6.4); el Continuous Monitoring (7.4); y en el Capítulo 8 el To-Be Lifecycle soportado por pipeline (8.3.3), las To-Be Validation Interviews (8.3.4), el Experiment Aftermath & Analysis (8.4), el Continuous Learning (8.5) y el To-Be Platform Pre-launch (8.6). Completamos el Student Outcome con el criterio 4.c.2 y las acciones de TF1, e incorporamos el Video About-the-Team. |
 
 ---
 
@@ -101,86 +103,48 @@ La colaboración se distribuyó de manera equitativa entre los 7 integrantes:
   <img src="./resources/imgs/evidencias/backend-network.png" alt="Backend Network Graph" width="600">
 </p>
 
+---
 
-- [Universidad Peruana de Ciencias Aplicadas](#universidad-peruana-de-ciencias-aplicadas)
-  - [Informe de TP](#informe-de-tp)
-    - [Relación de integrantes](#relación-de-integrantes)
-  - [Registro de Versiones](#registro-de-versiones)
-- [Capítulo 1: Introducción](#capítulo-1-introducción)
+# Contenido
+
+- [Carátula](#carátula)
+- [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
+- [Project Report Collaboration Insights](#project-report-collaboration-insights)
+- [Student Outcome](#student-outcome)
+- [Part I: As-Is Software Project](#part-i-as-is-software-project)
+- [Capítulo I: Introducción](#capítulo-i-introducción)
   - [1.1. Startup Profile](#11-startup-profile)
-    - [1.1.1. Descripcion del Startup](#111-descripcion-del-startup)
-    - [1.1.2. Perfiles de Integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+    - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+    - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
   - [1.2. Solution Profile](#12-solution-profile)
-    - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
-      - [1.2.1.1. What](#1211-what)
-        - [1.2.1.1.1. ¿Cuál es el problema?](#12111-cuál-es-el-problema)
-        - [1.2.1.1.2. ¿Cuál es la relación con la persona en cuestión?](#12112-cuál-es-la-relación-con-la-persona-en-cuestión)
-      - [1.2.1.2. When](#1212-when)
-        - [1.2.1.2.1. ¿Cuándo sucede el problema?](#12121-cuándo-sucede-el-problema)
-        - [1.2.1.2.2. ¿Cuándo utiliza el cliente el producto?](#12122-cuándo-utiliza-el-cliente-el-producto)
-      - [1.2.1.3. Where](#1213-where)
-        - [1.2.1.3.1. ¿Dónde está el cliente cuando usa el producto?](#12131-dónde-está-el-cliente-cuando-usa-el-producto)
-        - [1.2.1.3.2. ¿A dónde se dirige?](#12132-a-dónde-se-dirige)
-        - [1.2.1.3.3. ¿Dónde surge el problema?](#12133-dónde-surge-el-problema)
-      - [1.2.1.4. Who](#1214-who)
-        - [1.2.1.4.1. ¿Quiénes están involucrados?](#12141-quiénes-están-involucrados)
-        - [1.2.1.4.2. ¿A quiénes les sucede el problema?](#12142-a-quiénes-les-sucede-el-problema)
-        - [1.2.1.4.3. ¿Quién lo utilizará?](#12143-quién-lo-utilizará)
-      - [1.2.1.5. Why](#1215-why)
-        - [1.2.1.5.1. ¿Cuál es la causa del problema?](#12151-cuál-es-la-causa-del-problema)
-      - [1.2.1.6. How](#1216-how)
-        - [1.2.1.6.1. ¿En qué condiciones los clientes usan nuestro producto?](#12161-en-qué-condiciones-los-clientes-usan-nuestro-producto)
-        - [1.2.1.6.2. ¿Cómo nos conocieron los compradores?](#12162-cómo-nos-conocieron-los-compradores)
-        - [1.2.1.6.3. ¿Cómo prefieren los usuarios acceder a nuestro contenido?](#12163-cómo-prefieren-los-usuarios-acceder-a-nuestro-contenido)
-        - [1.2.1.6.4. ¿Qué llevó a la persona a llegar a esta situación?](#12164-qué-llevó-a-la-persona-a-llegar-a-esta-situación)
-      - [1.2.1.7. How much](#1217-how-much)
+    - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
     - [1.2.2. Lean UX Process](#122-lean-ux-process)
       - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
       - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
       - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
       - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
-  - [1.3. Segmentos objetivos](#13-segmentos-objetivos)
-- [Capitulo 2: Requirements Elicitation \& Analysis](#capitulo-2-requirements-elicitation--analysis)
+  - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
+- [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
   - [2.1. Competidores](#21-competidores)
-    - [2.1.1. Analisis competitivo](#211-analisis-competitivo)
-    - [¿Por qué llevar a cabo este análisis?](#por-qué-llevar-a-cabo-este-análisis)
+    - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
     - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
-    - [1. Estrategias Ofensivas: Aprovechando Debilidades de la Competencia](#1-estrategias-ofensivas-aprovechando-debilidades-de-la-competencia)
-    - [2. Estrategias Defensivas: Afrontando Fortalezas de la Competencia](#2-estrategias-defensivas-afrontando-fortalezas-de-la-competencia)
-    - [3. Aprovechamiento del Contexto (Oportunidades y Amenazas)](#3-aprovechamiento-del-contexto-oportunidades-y-amenazas)
-    - [🟢 Oportunidades: Impulso del Crecimiento](#-oportunidades-impulso-del-crecimiento)
-    - [🔴 Amenazas: Mitigación de Riesgos](#-amenazas-mitigación-de-riesgos)
   - [2.2. Entrevistas](#22-entrevistas)
     - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
-    - [Fase 1: Identificación y Perfilamiento del Negocio](#fase-1-identificación-y-perfilamiento-del-negocio)
-    - [Fase 2: Comportamiento y Marketing Actual](#fase-2-comportamiento-y-marketing-actual)
-    - [Fase 3: Identificación de Puntos de Dolor (El Problema)](#fase-3-identificación-de-puntos-de-dolor-el-problema)
-    - [Fase 4: Validación de la Solución (GeoPS Business)](#fase-4-validación-de-la-solución-geops-business)
-    - [Fase 5: Cierre y Sugerencias](#fase-5-cierre-y-sugerencias)
-    - [Fase 1: Identificación y Perfilamiento (Filiación)](#fase-1-identificación-y-perfilamiento-filiación)
-    - [Fase 2: Comportamiento y Hábitos de Compra](#fase-2-comportamiento-y-hábitos-de-compra)
-    - [Fase 3: Identificación de Puntos de Dolor (El Problema)](#fase-3-identificación-de-puntos-de-dolor-el-problema-1)
-    - [Fase 4: Validación de la Solución (GeoPS)](#fase-4-validación-de-la-solución-geops)
-    - [Fase 5: Cierre y Sugerencias](#fase-5-cierre-y-sugerencias-1)
     - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
     - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
-  - [1. Segmento: Usuario Consumidor](#1-segmento-usuario-consumidor)
-    - [Características Objetivas (Perfil y Comportamiento)](#características-objetivas-perfil-y-comportamiento)
-    - [Características Subjetivas (Puntos de Dolor y Expectativas)](#características-subjetivas-puntos-de-dolor-y-expectativas)
-  - [2. Segmento: Usuario Proveedor / Dueño de Tienda](#2-segmento-usuario-proveedor--dueño-de-tienda)
-    - [Características Objetivas (Gestión y Marketing)](#características-objetivas-gestión-y-marketing)
-    - [Características Subjetivas (Necesidades y Riesgos)](#características-subjetivas-necesidades-y-riesgos)
   - [2.3. Needfinding](#23-needfinding)
     - [2.3.1. User Personas](#231-user-personas)
-    - [2.3.2  User Task Matrix](#232--user-task-matrix)
+    - [2.3.2. User Task Matrix](#232-user-task-matrix)
     - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
     - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+    - [2.3.5. As-Is Scenario Mapping](#235-as-is-scenario-mapping)
   - [2.4. Ubiquitous Language](#24-ubiquitous-language)
-- [Capitulo 3: Requirements Specification](#capitulo-3-requirements-specification)
-  - [3.1. User Stories](#31-user-stories)
-  - [3.2. Impact Mapping](#32-impact-mapping)
+- [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
+  - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
+  - [3.2. User Stories](#32-user-stories)
   - [3.3. Product Backlog](#33-product-backlog)
-- [Capítulo 4: Product Design](#capítulo-4-product-design)
+  - [3.4. Impact Mapping](#34-impact-mapping)
+- [Capítulo IV: Product Design](#capítulo-iv-product-design)
   - [4.1. Style Guidelines](#41-style-guidelines)
     - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
     - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
@@ -201,38 +165,59 @@ La colaboración se distribuyó de manera equitativa entre los 7 integrantes:
   - [4.5. Web Applications Prototyping](#45-web-applications-prototyping)
   - [4.6. Domain-Driven Software Architecture](#46-domain-driven-software-architecture)
     - [4.6.1. Software Architecture Context Diagram](#461-software-architecture-context-diagram)
-- [4.6.2. Software Architecture Container Diagram](#462-software-architecture-container-diagram)
-- [4.6.3. Software Architecture Components Diagrams](#463-software-architecture-components-diagrams)
-  - [4.6.3.1. Identity Context Components Diagram](#4631-identity-context-components-diagram)
-  - [4.6.3.2. Campaign Context Components Diagram](#4632-campaign-context-components-diagram)
-  - [4.6.3.3. Offers Context Components Diagram](#4633-offers-context-components-diagram)
-  - [4.6.3.4. Shared Kernel Components Diagram](#4634-shared-kernel-components-diagram)
+    - [4.6.2. Software Architecture Container Diagrams](#462-software-architecture-container-diagrams)
+    - [4.6.3. Software Architecture Components Diagrams](#463-software-architecture-components-diagrams)
+      - [4.6.3.1. Identity Context Components Diagram](#4631-identity-context-components-diagram)
+      - [4.6.3.2. Campaign Context Components Diagram](#4632-campaign-context-components-diagram)
+      - [4.6.3.3. Offers Context Components Diagram](#4633-offers-context-components-diagram)
+      - [4.6.3.4. Shared Kernel Components Diagram](#4634-shared-kernel-components-diagram)
   - [4.7. Software Object-Oriented Design](#47-software-object-oriented-design)
     - [4.7.1. Class Diagrams](#471-class-diagrams)
     - [4.7.2. Class Dictionary](#472-class-dictionary)
   - [4.8. Database Design](#48-database-design)
     - [4.8.1. Relational/Non-Relational Database Diagram](#481-relationalnon-relational-database-diagram)
-- [Capítulo 5: Product Implementation](#capítulo-5-product-implementation)
+- [Capítulo V: Product Implementation](#capítulo-v-product-implementation)
   - [5.1. Software Configuration Management](#51-software-configuration-management)
     - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
     - [5.1.2. Source Code Management](#512-source-code-management)
     - [5.1.3. Source Code Style Guide \& Conventions](#513-source-code-style-guide--conventions)
     - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
-  - [5.2. Product Implementation \& Deployment.](#52-product-implementation--deployment)
+  - [5.2. Product Implementation \& Deployment](#52-product-implementation--deployment)
     - [5.2.1. Sprint Backlogs](#521-sprint-backlogs)
     - [5.2.2. Implemented Landing Page Evidence](#522-implemented-landing-page-evidence)
     - [5.2.3. Implemented Frontend-Web Application Evidence](#523-implemented-frontend-web-application-evidence)
-    - [5.2.4. Implemented RESTful API and/or Serverless Backend Evidence](#524-implemented-restful-api-andor-serverless-backend-evidence)
-    - [5.2.5. RESTful API documentation](#525-restful-api-documentation)
-  - [5.3 Video About-the-Product](#53-video-about-the-product)
-- [Capítulo 6: Product Verification \& Validation](#capítulo-6-product-verification--validation)
+    - [5.2.4. Acuerdo de Servicio - SaaS](#524-acuerdo-de-servicio---saas)
+    - [5.2.5. Implemented RESTful API and/or Serverless Backend Evidence](#525-implemented-restful-api-andor-serverless-backend-evidence)
+    - [5.2.6. RESTful API documentation](#526-restful-api-documentation)
+    - [5.2.7. Team Collaboration Insights](#527-team-collaboration-insights)
+  - [5.3. Video About-the-Product](#53-video-about-the-product)
+- [Part II: Verification, Validation \& Pipeline](#part-ii-verification-validation--pipeline)
+- [Capítulo VI: Product Verification \& Validation](#capítulo-vi-product-verification--validation)
   - [6.1. Testing Suites \& Validation](#61-testing-suites--validation)
     - [6.1.1. Core Entities Unit Tests](#611-core-entities-unit-tests)
-      - [6.1.2. Core Integration Tests](#612-core-integration-tests)
-      - [6.1.3. Core Behavior-Driven Development (BDD)](#613-core-behavior-driven-development-bdd)
-      - [6.1.4. Core System Tests](#614-core-system-tests)
-      - [6.1.5. Campaign Form Structure Tests](#615-campaign-form-structure-tests)
-- [Capítulo 7: DevOps Practices](#capítulo-7-devops-practices)
+    - [6.1.2. Core Integration Tests](#612-core-integration-tests)
+    - [6.1.3. Core Behavior-Driven Development](#613-core-behavior-driven-development)
+    - [6.1.4. Core System Tests](#614-core-system-tests)
+  - [6.2. Static Testing \& Verification](#62-static-testing--verification)
+    - [6.2.1. Static Code Analysis](#621-static-code-analysis)
+      - [6.2.1.1. Coding Standard \& Code Conventions](#6211-coding-standard--code-conventions)
+      - [6.2.1.2. Code Quality \& Code Security](#6212-code-quality--code-security)
+    - [6.2.2. Reviews](#622-reviews)
+  - [6.3. Validation Interviews](#63-validation-interviews)
+    - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
+    - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
+    - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
+  - [6.4. Auditoría de Experiencias de Usuario](#64-auditoría-de-experiencias-de-usuario)
+    - [6.4.1. Auditoría realizada](#641-auditoría-realizada)
+      - [6.4.1.1. Información del grupo auditado](#6411-información-del-grupo-auditado)
+      - [6.4.1.2. Cronograma de auditoría realizada](#6412-cronograma-de-auditoría-realizada)
+      - [6.4.1.3. Contenido de auditoría realizada](#6413-contenido-de-auditoría-realizada)
+    - [6.4.2. Auditoría recibida](#642-auditoría-recibida)
+      - [6.4.2.1. Información del grupo auditor](#6421-información-del-grupo-auditor)
+      - [6.4.2.2. Cronograma de auditoría recibida](#6422-cronograma-de-auditoría-recibida)
+      - [6.4.2.3. Contenido de auditoría recibida](#6423-contenido-de-auditoría-recibida)
+      - [6.4.2.4. Resumen de modificaciones para subsanar hallazgos](#6424-resumen-de-modificaciones-para-subsanar-hallazgos)
+- [Capítulo VII: DevOps Practices](#capítulo-vii-devops-practices)
   - [7.1. Continuous Integration](#71-continuous-integration)
     - [7.1.1. Tools and Practices](#711-tools-and-practices)
     - [7.1.2. Build \& Test Suite Pipeline Components](#712-build--test-suite-pipeline-components)
@@ -242,7 +227,13 @@ La colaboración se distribuyó de manera equitativa entre los 7 integrantes:
   - [7.3. Continuous Deployment](#73-continuous-deployment)
     - [7.3.1. Tools and Practices](#731-tools-and-practices)
     - [7.3.2. Production Deployment Pipeline Components](#732-production-deployment-pipeline-components)
-- [Capítulo 8: Experiment-Driven Development](#capítulo-8-experiment-driven-development)
+  - [7.4. Continuous Monitoring](#74-continuous-monitoring)
+    - [7.4.1. Tools and Practices](#741-tools-and-practices)
+    - [7.4.2. Monitoring Pipeline Components](#742-monitoring-pipeline-components)
+    - [7.4.3. Alerting Pipeline Components](#743-alerting-pipeline-components)
+    - [7.4.4. Notification Pipeline Components](#744-notification-pipeline-components)
+- [Part III: Experiment-Driven Lifecycle](#part-iii-experiment-driven-lifecycle)
+- [Capítulo VIII: Experiment-Driven Development](#capítulo-viii-experiment-driven-development)
   - [8.1. Experiment Planning](#81-experiment-planning)
     - [8.1.1. As-Is Summary](#811-as-is-summary)
     - [8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims](#812-raw-material-assumptions-knowledge-gaps-ideas-claims)
@@ -257,19 +248,39 @@ La colaboración se distribuyó de manera equitativa entre los 7 integrantes:
     - [8.2.5. Scale Calculations and Decisions](#825-scale-calculations-and-decisions)
     - [8.2.6. Methods Selection](#826-methods-selection)
     - [8.2.7. Data Analytics: Goals, KPIs and Metrics Selection](#827-data-analytics-goals-kpis-and-metrics-selection)
-    - [8.2.8. Web and Mobile Tracking Plan](#828-web-and-mobile-tracking-plan)
+    - [8.2.8. Web Tracking Plan](#828-web-tracking-plan)
   - [8.3. Experimentation](#83-experimentation)
     - [8.3.1. To-Be User Stories](#831-to-be-user-stories)
     - [8.3.2. To-Be Product Backlog](#832-to-be-product-backlog)
-  - [Conclusiones](#conclusiones)
-  - [Bibliografía](#bibliografía)
-  - [Anexos](#anexos)
+    - [8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle](#833-pipeline-supported-experiment-driven-to-be-software-platform-lifecycle)
+      - [8.3.3.1. To-Be Sprint Backlogs](#8331-to-be-sprint-backlogs)
+      - [8.3.3.2. Implemented To-Be Landing Page Evidence](#8332-implemented-to-be-landing-page-evidence)
+      - [8.3.3.3. Implemented To-Be Frontend-Web Application Evidence](#8333-implemented-to-be-frontend-web-application-evidence)
+      - [8.3.3.4. Implemented To-Be RESTful API and/or Serverless Backend Evidence](#8334-implemented-to-be-restful-api-andor-serverless-backend-evidence)
+      - [8.3.3.5. Team Collaboration Insights](#8335-team-collaboration-insights)
+    - [8.3.4. To-Be Validation Interviews](#834-to-be-validation-interviews)
+      - [8.3.4.1. Diseño de Entrevistas](#8341-diseño-de-entrevistas)
+      - [8.3.4.2. Registro de Entrevistas](#8342-registro-de-entrevistas)
+  - [8.4. Experiment Aftermath \& Analysis](#84-experiment-aftermath--analysis)
+    - [8.4.1. Analysis and Interpretation of Results](#841-analysis-and-interpretation-of-results)
+    - [8.4.2. Re-scored and Re-prioritized Question Backlog](#842-re-scored-and-re-prioritized-question-backlog)
+  - [8.5. Continuous Learning](#85-continuous-learning)
+    - [8.5.1. Shareback Session Artifacts: Learning Workflow](#851-shareback-session-artifacts-learning-workflow)
+  - [8.6. To-Be Software Platform Pre-launch](#86-to-be-software-platform-pre-launch)
+    - [8.6.1. About-the-Product Intro Video](#861-about-the-product-intro-video)
+- [Matriz de Evaluación Ética y de Impacto](#matriz-de-evaluación-ética-y-de-impacto)
+- [Conclusiones](#conclusiones)
+  - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+  - [Video About-the-Team](#video-about-the-team)
+- [Bibliografía](#bibliografía)
+- [Anexos](#anexos)
+  - [Anexo: Videos de Exposiciones](#anexo-videos-de-exposiciones)
 
 
 
 ---
 
-## Student Outcome 
+## Student Outcome
 
 **ABET – EAC - Student Outcome 4**
 
@@ -279,9 +290,14 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio específico | Acciones Realizadas | Conclusiones |
 |:---|:---|:---|
-| **Responsabilidad ética y profesional** | **Choy Robles, Vanessa May Lang**<br>**TB1:** Lideró la especificación de requerimientos técnicos, asegurando que las User Stories priorizaran la seguridad de datos en el registro.<br>**TP1:** Implementó validaciones de registro y decidió retirar la sección de reviews para proteger la integridad de los comercios afiliados.<br><br>**Barba Estrada, Bryan Eduardo**<br>**TB1:** Realizó el análisis del Startup Business Model enfocado en PyMEs.<br>**TP1:** Evaluó el impacto económico del modelo de publicidad hiperlocal para asegurar un beneficio justo al comerciante.<br><br>**Salazar Caballero, Alvaro Fabrizzio**<br>**TB1:** Diseñó los User Personas basados en la cultura asiática.<br>**TP1:** Validó que el diseño responsive del Frontend respete la privacidad de ubicación del usuario final.<br><br>**Cárdenas Concha, Santiago Iván**<br>**TB1:** Elaboró el Impact Mapping y el Architecture Overview Diagram.<br>**TP1:** Aseguró que el diseño de clases y la arquitectura del sistema minimicen el uso innecesario de recursos del servidor.<br><br>**Vera Nuñez, Nicolas Alejandro**<br>**TB1:** Desarrolló el análisis competitivo frente a grandes plataformas.<br>**TP1:** Verificó que las estrategias de marketing de GeoPS no incurran en prácticas de publicidad invasiva.<br><br>**Valverde Portuguez, Natalia Ximena**<br>**TB1:** Dirigió la fase inicial de alineación estratégica, definiendo la misión y visión centrada en la digitalización ética de comercios locales.<br>**TP1:** Supervisó que el Lean UX Canvas mantuviera el enfoque en soluciones de bajo costo para las PyMEs.<br><br>**Diestra Zambrano, Adriana Maria**<br>**TB1:** Sustentó el análisis "How Much" con datos de importación globales.<br>**TP1:** Validó que la documentación de la API refleje con transparencia las capacidades del sistema. | El equipo demostró un juicio profesional sólido al equilibrar la innovación tecnológica con la responsabilidad social. Al asignar responsables específicos para la seguridad de datos y el análisis de impacto económico, se garantizó que **GeoPS Labs** no solo sea una herramienta funcional, sino un motor de crecimiento ético para las PyMEs orientales en Lima Moderna. Esta estructura permitió que cada decisión técnica, desde el manejo de la base de datos hasta la interfaz de usuario, estuviera alineada con los estándares de privacidad y transparencia.<br><br>Se consolidó un entorno de desarrollo responsable mediante la ejecución de los Sprints de TB1 y TP1, integrando arquitectura de software y diseño de bases de datos bajo principios profesionales. El cumplimiento de los objetivos se evidencia en la entrega de un producto que protege la reputación de los negocios locales y ofrece una experiencia segura al consumidor, transformando la problemática detectada en una solución de ingeniería consciente de su impacto global y económico. |
+| **4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software** | **Choy Robles, Vanessa May Lang**<br>**TB1:** Lideró la especificación de requerimientos técnicos, asegurando que las User Stories priorizaran la seguridad de datos en el registro.<br>**TP1:** Implementó validaciones de registro y decidió retirar la sección de reviews para proteger la integridad de los comercios afiliados.<br>**TB2:** Estructuró el Question Backlog priorizando las preguntas de mayor riesgo ético antes de diseñar los experimentos.<br>**TF1:** Diseñó y registró las Validation Interviews resguardando los datos personales de los participantes y aplicando consentimiento informado.<br><br>**Barba Estrada, Bryan Eduardo**<br>**TB1:** Realizó el análisis del Startup Business Model enfocado en PyMEs.<br>**TP1:** Evaluó el impacto económico del modelo de publicidad hiperlocal para asegurar un beneficio justo al comerciante.<br>**TB2:** Definió las Domain Business Metrics garantizando que el modelo de monetización preserve un beneficio económico justo para el comercio afiliado.<br>**TF1:** Interpretó los resultados del experimento de ROI publicitario emitiendo conclusiones honestas sobre el beneficio real al comerciante.<br><br>**Salazar Caballero, Alvaro Fabrizzio**<br>**TB1:** Diseñó los User Personas basados en la cultura asiática.<br>**TP1:** Validó que el diseño responsive del Frontend respete la privacidad de ubicación del usuario final.<br>**TB2:** Estableció las Conditions y Measures del experimento cuidando el manejo responsable de la geolocalización.<br>**TF1:** Condujo las To-Be Validation Interviews aplicando un trato ético y consentimiento a los participantes.<br><br>**Cárdenas Concha, Santiago Iván**<br>**TB1:** Elaboró el Impact Mapping y el Architecture Overview Diagram.<br>**TP1:** Aseguró que el diseño de clases y la arquitectura del sistema minimicen el uso innecesario de recursos del servidor.<br>**TB2:** Aplicó Methods Selection bajo el principio del "Simplest Useful Thing" para reducir costo y consumo de recursos.<br>**TF1:** Implementó el Continuous Monitoring configurando un uso responsable de recursos en producción.<br><br>**Vera Nuñez, Nicolas Alejandro**<br>**TB1:** Desarrolló el análisis competitivo frente a grandes plataformas.<br>**TP1:** Verificó que las estrategias de marketing de GeoPS no incurran en prácticas de publicidad invasiva.<br>**TB2:** Diseñó las Experiment Cards evitando exponer a un mismo usuario a experimentos simultáneos que pudieran causarle perjuicio.<br>**TF1:** Coordinó y ejecutó la Auditoría de Experiencias de Usuario cruzada con objetividad profesional.<br><br>**Valverde Portuguez, Natalia Ximena**<br>**TB1:** Dirigió la fase inicial de alineación estratégica, definiendo la misión y visión centrada en la digitalización ética de comercios locales.<br>**TP1:** Supervisó que el Lean UX Canvas mantuviera el enfoque en soluciones de bajo costo para las PyMEs.<br>**TB2:** Elaboró el As-Is Summary y sustentó las decisiones de escala equilibrando rigor experimental y costo accesible.<br>**TF1:** Lideró la sesión de Shareback (Continuous Learning) documentando los aprendizajes con honestidad y transparencia.<br><br>**Diestra Zambrano, Adriana Maria**<br>**TB1:** Sustentó el análisis "How Much" con datos de importación globales.<br>**TP1:** Validó que la documentación de la API refleje con transparencia las capacidades del sistema.<br>**TB2:** Definió el plan de Data Analytics aplicando el principio de mínima recolección de datos necesaria.<br>**TF1:** Ejecutó el Static Code Analysis asegurando código seguro y libre de vulnerabilidades en el manejo de datos sensibles. | El equipo demostró un juicio profesional sólido al equilibrar la innovación tecnológica con la responsabilidad social. Al asignar responsables específicos para la seguridad de datos y el análisis de impacto económico, se garantizó que **GeoPS Labs** no solo sea una herramienta funcional, sino un motor de crecimiento ético para las PyMEs orientales en Lima Moderna. Esta estructura permitió que cada decisión técnica, desde el manejo de la base de datos hasta la interfaz de usuario, estuviera alineada con los estándares de privacidad y transparencia.<br><br>Se consolidó un entorno de desarrollo responsable mediante la ejecución de los Sprints de TB1 y TP1, integrando arquitectura de software y diseño de bases de datos bajo principios profesionales. El cumplimiento de los objetivos se evidencia en la entrega de un producto que protege la reputación de los negocios locales y ofrece una experiencia segura al consumidor, transformando la problemática detectada en una solución de ingeniería consciente de su impacto global y económico.<br><br>Durante TB2 y TF1, esta responsabilidad se extendió al ciclo experimental: el equipo diseñó y ejecutó experimentos aplicando salvaguardas éticas (consentimiento informado, no exposición simultánea de usuarios, mínima recolección de datos) y verificó la calidad y seguridad del código mediante análisis estático y auditorías de experiencia de usuario. Con ello se confirma que las decisiones de ingeniería del proyecto se tomaron reconociendo, de forma consistente, las responsabilidades éticas y profesionales propias de la disciplina. |
+| **4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales** | **Barba Estrada, Bryan Eduardo**<br>**TB1:** Sustentó la viabilidad económica del Startup Business Model orientado a PyMEs de un mercado de nicho.<br>**TP1:** Emitió juicios sobre el impacto económico del modelo de publicidad hiperlocal frente a alternativas tradicionales.<br>**TB2:** Formuló las Hypotheses y Domain Business Metrics para medir cuantitativamente el retorno económico (ROI) del comerciante.<br>**TF1:** Interpretó los resultados del experimento de ROI, emitiendo un juicio informado sobre el beneficio económico real para las PyMEs.<br><br>**Diestra Zambrano, Adriana Maria**<br>**TB1:** Fundamentó con datos globales de importación (WITS) el contexto de mercado de la solución.<br>**TP1:** Evaluó el impacto de la transparencia de la documentación técnica sobre los usuarios desarrolladores.<br>**TB2:** Seleccionó KPIs y métricas evitando "vanity metrics", priorizando indicadores relevantes para el negocio.<br>**TF1:** A partir del análisis estático, emitió juicios sobre la seguridad y sostenibilidad técnica del código en producción.<br><br>**Vera Nuñez, Nicolas Alejandro**<br>**TB1:** Analizó el impacto competitivo global de GeoPS frente a plataformas dominantes.<br>**TP1:** Juzgó las implicancias sociales de las estrategias de marketing, descartando prácticas invasivas.<br>**TB2:** Consideró el impacto sobre el usuario al definir las condiciones de los experimentos.<br>**TF1:** Emitió juicios sobre accesibilidad e inclusión a partir de los hallazgos de la auditoría UX cruzada.<br><br>**Salazar Caballero, Alvaro Fabrizzio**<br>**TB1:** Consideró la diversidad cultural del público objetivo al diseñar los User Personas.<br>**TP1:** Evaluó el impacto social de la privacidad de ubicación en el diseño de la experiencia.<br>**TB2:** Juzgó las implicancias de privacidad al definir las Measures y Conditions basadas en geolocalización.<br>**TF1:** Recogió y valoró el impacto percibido por usuarios reales en las To-Be Validation Interviews.<br><br>**Cárdenas Concha, Santiago Iván**<br>**TB1:** Evaluó el impacto de las decisiones arquitectónicas sobre la escalabilidad de la solución.<br>**TP1:** Juzgó el impacto ambiental y económico del consumo de recursos del servidor, optimizándolo.<br>**TB2:** Seleccionó métodos experimentales minimizando el costo computacional y el desperdicio de recursos.<br>**TF1:** Emitió juicios sobre la sostenibilidad operativa de la plataforma a partir del Continuous Monitoring.<br><br>**Valverde Portuguez, Natalia Ximena**<br>**TB1:** Definió una visión centrada en el impacto social de digitalizar comercios locales.<br>**TP1:** Juzgó el impacto económico de mantener una solución de bajo costo para las PyMEs.<br>**TB2:** Ponderó el balance entre rigor y costo al sustentar las Scale Calculations and Decisions.<br>**TF1:** Consolidó, en el Shareback, un juicio grupal sobre el impacto social y económico logrado por la solución.<br><br>**Choy Robles, Vanessa May Lang**<br>**TB1:** Consideró el impacto de la seguridad de datos sobre la confianza de los usuarios.<br>**TP1:** Juzgó el impacto de la integridad de los comercios al retirar la sección de reviews.<br>**TB2:** Priorizó en el Question Backlog las preguntas de mayor riesgo e impacto para el negocio.<br>**TF1:** Evaluó, mediante heurísticas de usabilidad e inclusión, el impacto de la experiencia sobre segmentos diversos. | El equipo emitió juicios informados sustentando cada decisión con evidencia del contexto en el que opera GeoPS. En el plano **económico**, se dimensionó el impacto de la publicidad hiperlocal sobre la rentabilidad de las PyMEs orientales, apoyándose en datos de mercado e importación y en métricas de ROI verificables. En el plano **global**, se analizó la posición de la solución frente a plataformas dominantes y las tendencias de consumo digital en el Perú.<br><br>En el plano **social**, el equipo priorizó la privacidad de ubicación, la no invasividad publicitaria y la inclusión, valorando el impacto de la experiencia sobre segmentos culturalmente diversos. En el plano **ambiental y de sostenibilidad técnica**, las decisiones de arquitectura, selección de métodos y monitoreo continuo se orientaron a minimizar el consumo innecesario de recursos. Con la ejecución del ciclo experimental (TB2 y TF1) y su posterior análisis e interpretación de resultados, el equipo consolidó su capacidad de emitir juicios informados que consideran, de manera integral, el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales. |
 
-## Capítulo 1: Introducción
+---
+
+# Part I: As-Is Software Project
+
+# Capítulo I: Introducción
 
 ### 1.1. Startup Profile
 
@@ -552,7 +568,7 @@ El mercado de productos orientales en el Perú se sustenta en un crecimiento rob
 
 ---
 
-## Capitulo 2: Requirements Elicitation & Analysis
+# Capitulo II: Requirements Elicitation & Analysis
 ### 2.1. Competidores
 #### 2.1.1. Analisis competitivo
 
@@ -837,6 +853,33 @@ Este segmento comprende a propietarios y administradores de negocios especializa
 
   *Nota.* Elaboración propia (realizado en Uxpressia).
 
+#### 2.3.5. As-Is Scenario Mapping (Consumidor y Propietario)
+
+En esta sección el equipo representa la experiencia **actual** de cada User Persona —es decir, cómo vive el proceso hoy, sin la existencia de GeoPS—. El proceso de elaboración pasó por la preparación, la lluvia de ideas individual de cada miembro, la revisión conjunta, la identificación y nombrado de las fases como columnas, y el etiquetado de las áreas positivas y negativas para el usuario, junto con las *blank areas* (zonas sobre las que el equipo necesita aprender más). Cada mapa incluye las filas Phases, Doing, Thinking y Feeling.
+
+### As-Is Scenario Map — User Persona: Consumidor
+
+⟨insertar captura del As-Is Scenario Map del Consumidor (LucidChart / Miro)⟩
+
+| | **Fase 1: Necesidad** | **Fase 2: Búsqueda** | **Fase 3: Traslado** | **Fase 4: Compra** | **Fase 5: Post-compra** |
+|---|---|---|---|---|---|
+| **Doing** | Quiere aprovechar su presupuesto y busca promociones en negocios cercanos. | Revisa redes sociales, Google y pregunta a conocidos por descuentos vigentes. | Se traslada al local basándose en información dispersa o desactualizada. | Al llegar, a veces la promoción ya no existe o las condiciones cambiaron. | No tiene forma sencilla de recomendar la oferta a sus amigos. |
+| **Thinking** | "¿Habrá alguna oferta cerca de mí ahora mismo?" | "No encuentro información confiable ni centralizada." | "Espero que la promoción siga vigente cuando llegue." | "Perdí el tiempo, la oferta ya no aplica." | "Me gustó, pero es complicado compartirlo." |
+| **Feeling** | 🟡 Expectativa / incertidumbre | 🔴 Frustración | 🟡 Duda | 🔴 Decepción / desconfianza | 🟡 Indiferencia |
+
+*Blank area:* se requiere aprender más sobre qué tanto el consumidor confía en la información de descuentos que encuentra en redes sociales.
+
+### As-Is Scenario Map — User Persona: Propietario de negocio
+
+⟨insertar captura del As-Is Scenario Map del Propietario (LucidChart / Miro)⟩
+
+| | **Fase 1: Planificación** | **Fase 2: Difusión** | **Fase 3: Espera** | **Fase 4: Medición** | **Fase 5: Decisión** |
+|---|---|---|---|---|---|
+| **Doing** | Define una promoción para atraer clientes a su local. | Imprime volantes y publica en redes sociales sin segmentar por cercanía. | Espera la llegada de clientes sin saber si la publicidad tuvo efecto. | Intenta estimar resultados contando ventas de forma manual. | Decide su próxima inversión publicitaria sin datos objetivos. |
+| **Thinking** | "¿Cómo hago para que la gente cercana se entere?" | "Gasto en publicidad pero no sé a quién llega." | "¿Vino alguien por la promoción o por casualidad?" | "No tengo cómo saber mi retorno real." | "Voy a invertir de nuevo, pero a ciegas." |
+| **Feeling** | 🟡 Optimismo | 🟡 Esfuerzo | 🔴 Ansiedad | 🔴 Frustración | 🔴 Incertidumbre |
+
+*Blank area:* se requiere aprender más sobre cuánto presupuesto destinan las PyMEs a publicidad no medible.
 
 ### 2.4. Ubiquitous Language   
 
@@ -856,8 +899,35 @@ Este segmento comprende a propietarios y administradores de negocios especializa
 
 ---
 
-## Capitulo 3: Requirements Specification 
-### 3.1. User Stories
+# Capitulo III: Requirements Specification 
+
+### 3.1. To-Be Scenario Mapping
+
+En esta sección el equipo representa la experiencia **futura** de cada User Persona una vez que utiliza GeoPS. Tras la preparación, la lluvia de ideas individual y la revisión conjunta, se identificaron y nombraron las fases, y se comparó cada mapa con su versión As-Is para identificar los cambios que ofrece la solución. Cada mapa incluye las filas Phases, Doing, Thinking y Feeling.
+
+### To-Be Scenario Map — User Persona: Consumidor
+
+⟨insertar captura del To-Be Scenario Map del Consumidor (LucidChart / Miro)⟩
+
+| | **Fase 1: Descubrimiento** | **Fase 2: Exploración** | **Fase 3: Decisión** | **Fase 4: Canje** | **Fase 5: Fidelización** |
+|---|---|---|---|---|---|
+| **Doing** | Recibe una alerta de proximidad cuando transita cerca de una campaña activa. | Explora las ofertas en un mapa interactivo por distrito o ruta temática. | Filtra, compara y guarda su oferta favorita. | Presenta el código QR en el local y valida la promoción en el momento. | Comparte la oferta con sus amigos mediante un enlace. |
+| **Thinking** | "Hay una promoción relevante a pocos metros de mí." | "Puedo ver todo lo disponible cerca en un solo lugar." | "Esta oferta sí me conviene y está vigente." | "El canje fue rápido y la promoción era real." | "Es fácil recomendar lo que me gustó." |
+| **Feeling** | 🟢 Interés | 🟢 Confianza | 🟢 Satisfacción | 🟢 Seguridad | 🟢 Pertenencia |
+
+**Cambios respecto al As-Is:** la búsqueda dispersa y poco confiable se reemplaza por el descubrimiento proactivo y la exploración centralizada en el mapa; la decepción por promociones inexistentes se elimina con la validación por QR; y compartir deja de ser una barrera.
+
+### To-Be Scenario Map — User Persona: Propietario de negocio
+
+⟨insertar captura del To-Be Scenario Map del Propietario (LucidChart / Miro)⟩
+
+| | **Fase 1: Registro** | **Fase 2: Creación de campaña** | **Fase 3: Difusión hiperlocal** | **Fase 4: Medición** | **Fase 5: Optimización** |
+|---|---|---|---|---|---|
+| **Doing** | Crea su cuenta de proveedor y configura el perfil de su negocio. | Define una campaña con sus ofertas y la activa. | GeoPS notifica automáticamente a los consumidores cercanos a su local. | Consulta el panel con métricas de alcance y canje de sus campañas. | Ajusta o pausa las campañas según su rendimiento real. |
+| **Thinking** | "Puedo empezar sin complicaciones, incluso con el modo demo." | "Publico mi promoción segmentada por cercanía." | "Mi oferta llega a clientes reales del vecindario." | "Ahora sí veo cuántos vieron y canjearon mi oferta." | "Invierto donde veo resultados." |
+| **Feeling** | 🟢 Facilidad | 🟢 Control | 🟢 Confianza | 🟢 Claridad | 🟢 Tranquilidad |
+
+### 3.2. User Stories
 
 Las User Stories representan las necesidades y expectativas de los usuarios finales expresadas en un lenguaje sencillo y centrado en su valor.  
 A través de ellas se traduce lo que los usuarios quieren lograr al usar el producto, asegurando que las funcionalidades desarrolladas estén alineadas con sus objetivos reales.
@@ -876,7 +946,7 @@ A través de ellas se traduce lo que los usuarios quieren lograr al usar el prod
 **Tabla 7**   
 *User Stories — Especificación de requerimientos funcionales de GeoPS*
 
-### 3.1.2. User Stories
+### 3.2.2. User Stories
 
 EP01: Gestión de Cuentas y Accesos
 
@@ -1272,7 +1342,7 @@ Están orientadas al equipo de desarrollo y especifican aspectos relacionados co
 
 *Nota.* Elaboración propia.
 
-### 3.2. Impact Mapping
+### 3.3. Impact Mapping
 
 El Impact Mapping es una técnica de planificación estratégica que conecta los objetivos del negocio con los entregables del producto. Ayuda a visualizar cómo las funcionalidades contribuyen a alcanzar los resultados esperados, identificando actores, impactos deseados y soluciones clave.
 
@@ -1285,7 +1355,7 @@ El Impact Mapping es una técnica de planificación estratégica que conecta los
 
 *Nota.* Elaboración propia (realizado en Uxpressia).
 
-### 3.3. Product Backlog
+### 3.4. Product Backlog
 
 El **Product Backlog** es una lista priorizada de funcionalidades, mejoras y requisitos técnicos que guiarán la evolución del producto.  
 Su propósito es organizar el trabajo en función del valor que aporta al usuario y al negocio, sirviendo como una hoja de ruta flexible y adaptable durante el desarrollo.
@@ -1327,7 +1397,7 @@ Su propósito es organizar el trabajo en función del valor que aporta al usuari
 
 ---
 
-## Capítulo 4: Product Design
+# Capítulo IV: Product Design
 
 ### 4.1. Style Guidelines
 
@@ -3328,7 +3398,7 @@ La persistencia se centra en las entidades principales del sistema y en las rela
 
 El diseño prioriza la simplicidad, la integridad de datos y la alineación con el backend actualmente implementado. Funcionalidades como pagos, carritos, cupones, favoritos, reseñas, notificaciones avanzadas, cache distribuido o geolocalización avanzada pueden considerarse como extensiones futuras del sistema.
 
-## Capítulo 5: Product Implementation
+# Capítulo V: Product Implementation
 
 A continuación, se presentará un repositorio central y organizado que servirá como guía para el desarrollo enfocado y consistente de nuestra solución GeoPS.
 
@@ -3710,6 +3780,153 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
 ### 5.2. Product Implementation & Deployment.
 
   #### 5.2.1. Sprint Backlogs
+
+  En esta sección se documenta la gestión del tiempo y tareas mediante la metodología Scrum.
+
+  #### 5.2.1.1 Sprint 1
+
+  ##### 5.2.1.1.1 Sprint Planning 1
+
+  En este primer hito, el equipo definió como objetivo primordial sentar las bases arquitectónicas de la plataforma GeoPS, priorizando los flujos de autenticación y la estructura responsiva inicial.
+
+| Sprint # | Sprint 1 |
+| :--- | :--- |
+| **Date** | 2026-04-01 |
+| **Time** | 09:00 AM |
+| **Location** | Reunión Virtual - Microsoft Teams |
+| **Prepared By** | Jiménez Rosas, Bryan Eduardo |
+| **Attendees** | Jiménez Rosas, Bryan Eduardo / Salazar Caballero, Alvaro Fabrizzio / Cárdenas Concha, Santiago Iván / Vera Nuñez Nicolas Alejandro / Valverde Portuguez, Natalia Ximena / Choy Robles, Vanessa May Lang / Diestra Zambrano Adriana Maria |
+| **Sprint 0 Review Summary** | Configuración inicial de repositorios y definición preliminar de la arquitectura DDD/CQRS para el backend. |
+| **Sprint 0 Retrospective Summary** | Se identificó la necesidad de automatizar la validación de sintaxis antes de las reuniones de sincronización. |
+| **Sprint 1 Goal** | Our focus is on establishing core identity services and a responsive presentation. We believe it delivers a secure environment and clear business scope to potential clients. This will be confirmed when a visitor registers an account and browses the promotional content. |
+| **Sprint 1 Velocity** | 15 Story Points |
+| **Sum of Story Points** | 15 Story Points |
+
+ ##### 5.2.1.1.2 Aspects Leader Collaboration
+Se estableció la matriz LACX para delegar responsabilidades técnicas específicas sobre los componentes iniciales del sistema, asegurando la participación de todo el equipo de ingeniería.
+
+| Team Member (LastName, First Name) | GitHub Username | Identity Module (DDD Core) | Landing Page Responsive Layout |
+| :--- | :--- | :--- | :--- |
+| Jiménez Rosas, Bryan Eduardo | bry4nbe | Leader (L) | Collaborator (C) |
+| Salazar Caballero, Alvaro Fabrizzio | IDymian | Collaborator (C) | Leader (L) |
+| Cárdenas Concha, Santiago Iván | Sack136-GIT | Assistant (A) | Collaborator (C) |
+| Vera Nuñez, Nicolas Alejandro | nicxlxs | Collaborator (C) | Assistant (A) |
+| Valverde Portuguez, Natalia Ximena | NatValverde15 | Assistant (A) | Collaborator (C) |
+| Choy Robles, Vanessa May Lang | VMLCR | Collaborator (C) | Executive (X) |
+| Diestra Zambrano, Adriana Maria | adriiiiii123 | Executive (X) | Collaborator (C) |
+
+##### 5.2.1.1.3 Sprint Backlog 1
+
+| User Story Id | Title | Work-Item / Task Id | Title / Description | Estimation (Hours) | Assigned To | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **US01** | User Registration & Auth | TS1-01 | Configuración inicial de arquitectura DDD/CQRS en Backend (Spring Boot con Docker) | 4 | Jiménez Rosas, Bryan Eduardo | Done |
+| **US01** | User Registration & Auth | TS1-02 | Diseñar e implementar la entidad lógica User en la capa de Infraestructura relacional | 5 | Cárdenas Concha, Santiago Iván | Done |
+| **US01** | User Registration & Auth | TS1-03 | Desarrollar SignUpCommand e Identity Application Service (CQRS Logic) | 6 | Vera Nuñez, Nicolas Alejandro | Done |
+| **US01** | User Registration & Auth | TS1-04 | Configurar interceptores HTTP en Angular para el manejo seguro de tokens Bearer JWT | 4 | Choy Robles, Vanessa May Lang | Done |
+| **US02** | Browse Landing Page | TS1-05 | Maquetación responsiva HTML5/CSS3/JS del Landing Page promocional | 6 | Salazar Caballero, Alvaro Fabrizzio | Done |
+| **US02** | Browse Landing Page | TS1-06 | Pruebas de UI y optimización de diseño fluido multicontenedor en navegadores | 4 | Valverde Portuguez, Natalia Ximena | Done |
+| **US02** | Browse Landing Page | TS1-07 | Automatización del pipeline en GitHub Actions para despliegue en Firebase Hosting | 4 | Diestra Zambrano, Adriana Maria | Done |
+
+  El tablero de control del Sprint 1 se encuentra disponible de manera pública en el siguiente enlace: [https://trello.com/invite/b/6a4b331284b55c52c0a24593/ATTIee9d1f1f4ebb2ae92df4d49618a92759FD62F5DD/geopssprint1](https://trello.com/invite/b/6a4b331284b55c52c0a24593/ATTIee9d1f1f4ebb2ae92df4d49618a92759FD62F5DD/geopssprint1).
+
+<div align="center">
+    <img src="resources/imgs/trello1.png" width="700">
+  </div>
+
+  ##### 5.2.1.1.4 Development Evidence for Sprint Review
+La implementación de código fuente se rigió bajo el modelo GitFlow y Conventional Commits.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| geops-org/geops-landing | main | d15f71a | feat:add images in carousel | - | 2026-04-26 |
+| geops-org/geops-landing | main | 5a1b3c4 | feat: enhance HTML support for localized strings and update hero headings | - | 2026-04-26 |
+| geops-org/geops-api | main | b76424f | feat: add review existence check and exception handling | - | 2026-04-26 |
+| geops-org/geops-api | main | 2f6cede | feat: feat: enhance API endpoints for user consumption retrieval and improve response handling | - | 2026-04-26 |
+| geops-org/geops-api | main | 1b993d0 | chore: remove unused notifications module | - | 2026-05-05 |
+| geops-org/geops-web | main | d165341 | fix: update platformProviderApiBaseUrl to production endpoint | - | 2026-04-26 |
+
+##### 5.2.1.2.5 Team Collaboration Insights for Sprint Review
+
+ <p align="center">
+    <img src="./resources/imgs/evidencias/teamcollab1.1.png" alt="Report Contributors Insight" width="600">
+  </p>
+  <p align="center">
+    <img src="./resources/imgs/evidencias/teamcollab1.2.png" alt="Report Network Graph" width="600">
+  </p>
+
+  #### 5.2.1.2 Sprint 2
+
+  ##### 5.2.1.2.1 Sprint Planning 2
+
+Este ciclo se centró en la implementación del núcleo del negocio (Core Business Domains), desarrollando los flujos de campañas y ofertas mediante CQRS.
+
+| Sprint # | Sprint 2 |
+| :--- | :--- |
+| **Date** | 2026-04-15 |
+| **Time** | 09:00 AM |
+| **Location** | Reunión Virtual - Microsoft Teams |
+| **Prepared By** | Jiménez Rosas, Bryan Eduardo |
+| **Attendees** | Jiménez Rosas, B. / Salazar Caballero, A. / Cárdenas Concha, S. / Vera Nuñez, N. / Valverde Portuguez, N. / Choy Robles, V. / Diestra Zambrano, A. |
+| **Sprint 1 Review Summary** | Autenticación robusta completada. Despliegue inicial en Firebase exitoso. |
+| **Sprint 1 Retrospective Summary** | Es mandatorio mejorar el tiempo de respuesta del pool de conexiones JPA. |
+| **Sprint 2 Goal** | Our focus is on delivering complex campaign creation handlers and dynamic offer structures. We believe it delivers comprehensive marketing insights to managers. This will be confirmed when a user creates an active campaign and bounds three transactional offers. |
+| **Sprint 2 Velocity** | 42 Story Points |
+| **Sum of Story Points** | 42 Story Points |
+
+ ##### 5.2.1.2.2 Aspects Leader Collaboration
+Distribución estratégica de liderazgo técnico para los módulos avanzados del negocio entre los miembros del equipo.
+
+| Team Member (LastName, First Name) | GitHub Username | Campaign Module (CQRS Commands) | Offers Domain & Relationships |
+| :--- | :--- | :--- | :--- |
+| Jiménez Rosas, Bryan Eduardo | bry4nbe | Collaborator (C) | Leader (L) |
+| Salazar Caballero, Alvaro Fabrizzio | IDymian | Assistant (A) | Collaborator (C) |
+| Cárdenas Concha, Santiago Iván | Sack136-GIT | Leader (L) | Assistant (A) |
+| Vera Nuñez, Nicolas Alejandro | nicxlxs | Collaborator (C) | Collaborator (C) |
+| Valverde Portuguez, Natalia Ximena | NatValverde15 | Executive (X) | Collaborator (C) |
+| Choy Robles, Vanessa May Lang | VMLCR | Collaborator (C) | Executive (X) |
+| Diestra Zambrano, Adriana Maria | adriiiiii123 | Collaborator (C) | Assistant (A) |
+
+##### 5.2.1.2.3 Sprint Backlog 2
+
+
+| User Story Id | Title | Work-Item / Task Id | Title / Description | Estimation (Hours) | Assigned To | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **US03** | Campaign Management | TS2-01 | Desarrollar CreateCampaignCommand y su respectivo Handler en la capa de aplicación | 5 | Cárdenas Concha, Santiago Iván | Done |
+| **US03** | Campaign Management | TS2-02 | Implementar componentes visuales en Angular empleando PrimeVue para formularios de Campaña | 6 | Vera Nuñez, Nicolas Alejandro | Done |
+| **US03** | Campaign Management | TS2-03 | Configurar el control de estado reactivo (Angular Signals) en el core del frontend | 5 | Salazar Caballero, Alvaro Fabrizzio | Done |
+| **US03** | Campaign Management | TS2-04 | Implementar endpoints REST de consulta de campañas (GetCampaignsQuery Handler) | 4 | Jiménez Rosas, Bryan Eduardo | Done |
+| **US04** | Dynamic Offers | TS2-05 | Diseñar e implementar el modelo de persistencia JPA para relaciones Campaign-Offers | 5 | Diestra Zambrano, Adriana Maria | Done |
+| **US04** | Dynamic Offers | TS2-06 | Diseñar flujos lógicos de validación para control de ofertas activas y fechas límite | 5 | Choy Robles, Vanessa May Lang | Done |
+| **US04** | Dynamic Offers | TS2-07 | Construir la suite completa de pruebas unitarias automatizadas con JUnit 5 y Mockito | 5 | Valverde Portuguez, Natalia Ximena | Done |
+
+  El tablero de control del Sprint 2 se encuentra disponible de manera pública en el siguiente enlace: [https://trello.com/invite/b/6a4b40136f12017a070237f5/ATTI7de9a424cc56c2880b7f13cd6947449c7B0D2F55/geopssprint2](https://trello.com/invite/b/6a4b40136f12017a070237f5/ATTI7de9a424cc56c2880b7f13cd6947449c7B0D2F55/geopssprint2)
+
+<div align="center">
+    <img src="resources/imgs/trello2.png" width="700">
+  </div>
+
+  ##### 5.2.1.2.4 Development Evidence for Sprint Review
+La implementación de código fuente se rigió bajo el modelo GitFlow y Conventional Commits.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| geops-org/geops-api | main | 4143fa3 | feat: Update Offer Command and delete codePrefix field from CreateOfferCommand | - | 2026-05-08 |
+| geops-org/geops-api | main | a49c8df | feat: Implement validation for campaigns | - | 2026-05-10 |
+| geops-org/geops-api | main | 597c879 | feat: Add integration tests for identity sign-up | - | 2026-05-11 |
+| geops-org/geops-api | main | 8ec5c65 | chore: update datasource configuration | - | 2026-05-11 |
+| geops-org/geops-web | main | 83bab44 | feat: update location selection to districts and cleanup consumption logic | - | 2026-05-08 |
+| geops-org/geops-web | main | 637dd11 | refactor(settings): streamline profile settings and improve user state handling | - | 2026-05-09 |
+| geops-org/geops-web | main | 8f3c956 | test(CAMPAIGNS): implement comprehensive unit tests for validators, login and campaign components | - | 2026-05-10 |
+| geops-org/geops-web | main | 95f0507 | feat: add business types for registration form | - | 2026-04-11 |
+
+##### 5.2.1.2.5 Team Collaboration Insights for Sprint Review
+
+ <p align="center">
+    <img src="./resources/imgs/evidencias/teamcollab2.1.png" alt="Report Contributors Insight" width="600">
+  </p>
+  <p align="center">
+    <img src="./resources/imgs/evidencias/teamcollab2.2.png" alt="Report Network Graph" width="600">
+  </p>
   
   #### 5.2.2. Implemented Landing Page Evidence
 
@@ -3809,25 +4026,39 @@ En esta sección se incluyen los links de las aplicaciones y productos de softwa
 
   La interfaz de configuración permite editar detalles críticos del negocio como el RUC, tipo de establecimiento (ej. Chifa), dirección física, horarios de atención y enlaces web.
 
-  #### 5.2.4. Acuerdo de servicio SaaS
-  1. Nuestros Términos de Servicio (SaaS Agreement)
-En GeoPS Labs, mantenemos la propiedad intelectual de nuestra plataforma, otorgando a los comercios una licencia de uso mediante suscripción mensual. Este acuerdo garantiza que los negocios accedan a nuestras herramientas de publicidad sin derecho a replicar, modificar o distribuir nuestro código fuente, asegurando que la tecnología siempre trabaje a favor del crecimiento del ecosistema local.
+  #### 5.2.4. Acuerdo de Servicio - SaaS
 
-2. Compromiso de Disponibilidad (SLA)
-Nos comprometemos a que GeoPS esté disponible y operativo al menos el 99% del tiempo. Entendemos que cada minuto cuenta para una PyME, por lo que establecemos un tiempo de respuesta técnica de máximo 24 horas ante incidencias críticas, garantizando que tus promociones nunca dejen de llegar a los clientes que caminan cerca de tu tienda.
+  Este acuerdo establece los términos de uso de la plataforma GeoPS para los comercios de productos asiáticos.
 
-3. Seguridad y Resguardo de Credenciales
-En GeoPS Labs, garantizamos la protección absoluta de las llaves de acceso a nuestra plataforma mediante protocolos de encriptación de alta seguridad. Nos comprometemos a que todas las contraseñas de usuarios y comercios sean almacenadas de forma cifrada, asegurando que solo el titular de la cuenta tenga el control sobre su perfil. Esta política impide cualquier acceso no autorizado a los paneles de gestión de campañas, manteniendo la integridad de las cuentas y la confianza en nuestro ecosistema digital.
+  1. Nuestros Términos de Servicio (SaaS Agreement) En GeoPS Labs, mantenemos la propiedad intelectual de nuestra plataforma, otorgando a los comercios una licencia de uso mediante suscripción mensual. Este acuerdo garantiza que los negocios accedan a nuestras herramientas de publicidad sin derecho a replicar, modificar o distribuir nuestro código fuente, asegurando que la tecnología siempre trabaje a favor del crecimiento del ecosistema local.
 
-4. Resguardo de Confidencialidad (NDA)
-Toda nuestra arquitectura técnica, algoritmos de geovallado y bases de datos estratégicas sobre el mercado asiático en Lima son activos exclusivos de GeoPS Labs. Este acuerdo obliga a todos nuestros colaboradores y socios a mantener bajo estricta reserva cualquier información sensible, asegurando que nuestra ventaja competitiva y la de nuestros clientes esté siempre blindada.
+  2. Compromiso de Disponibilidad (SLA) Nos comprometemos a que GeoPS esté disponible y operativo al menos el 99% del tiempo. Entendemos que cada minuto cuenta para una PyME, por lo que establecemos un tiempo de respuesta técnica de máximo 24 horas ante incidencias críticas, garantizando que tus promociones nunca dejen de llegar a los clientes que caminan cerca de tu tienda.
 
-5. Política de Publicidad Responsable (Uso Aceptable)
-Para garantizar una experiencia de usuario de alta calidad, GeoPS Labs se reserva el derecho de dar de baja a comercios que realicen prácticas de spam o publicidad engañosa. Limitamos la frecuencia de notificaciones para evitar la fatiga publicitaria, asegurando que cada alerta sea una oportunidad real de ahorro y no una molestia para el vecino de Lima Moderna
+  3. Seguridad y Resguardo de Credenciales En GeoPS Labs, garantizamos la protección absoluta de las llaves de acceso a nuestra plataforma mediante protocolos de encriptación de alta seguridad. Nos comprometemos a que todas las contraseñas de usuarios y comercios sean almacenadas de forma cifrada, asegurando que solo el titular de la cuenta tenga el control sobre su perfil. Esta política impide cualquier acceso no autorizado a los paneles de gestión de campañas, manteniendo la integridad de las cuentas y la confianza en nuestro ecosistema digital.
 
-  
-  
-  #### 5.2.5. RESTful API documentation
+  4. Resguardo de Confidencialidad (NDA) Toda nuestra arquitectura técnica, algoritmos de geovallado y bases de datos estratégicas sobre el mercado asiático en Lima son activos exclusivos de GeoPS Labs. Este acuerdo obliga a todos nuestros colaboradores y socios a mantener bajo estricta reserva cualquier información sensible, asegurando que nuestra ventaja competitiva y la de nuestros clientes esté siempre blindada.
+
+  5. Política de Publicidad Responsable (Uso Aceptable) Para garantizar una experiencia de usuario de alta calidad, GeoPS Labs se reserva el derecho de dar de baja a comercios que realicen prácticas de spam o publicidad engañosa. Limitamos la frecuencia de notificaciones para evitar la fatiga publicitaria, asegurando que cada alerta sea una oportunidad real de ahorro y no una molestia para el vecino de Lima Moderna
+    
+
+  #### 5.2.5. Implemented Native-Mobile Application Evidence
+
+  (Si no han desarrollado una app móvil nativa aún, debes colocar lo siguiente para no dejar el punto vacío):
+  "Para la presente entrega (TP1), el equipo se ha centrado en la Progressive Web App (PWA) a través del Frontend-Web, garantizando que la interfaz sea totalmente responsiva y funcional en dispositivos móviles Android e iOS sin necesidad de instalación desde tiendas oficiales."
+  (Si la tienen, inserta capturas del emulador o celular).
+
+  #### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence
+
+  El backend está desarrollado con Spring Boot 3 y desplegado en Railway.
+
+  Persistencia: Se utiliza MySQL como base de datos relacional para gestionar la consistencia de usuarios, campañas y negocios.
+
+  Seguridad: Implementación de Spring Security para la autenticación de usuarios.
+
+  Enlace de API: https://geops-api-production.up.railway.app/
+  (Inserta captura de los logs de Railway o una respuesta JSON desde el navegador/Postman).
+
+  #### 5.2.7. RESTful API documentation
   Aquí se observa el backend del proyecto desplegado y documentado con Swagger UI, lo cual permite visualizar y probar de forma interactiva todos los endpoints de la API. La interfaz facilita la gestión del CRUD y la verificación de la lógica de negocio directamente desde el navegador, asegurando que la comunicación entre el servidor y la base de datos sea correcta.
 
   <div align="center">
@@ -3850,13 +4081,22 @@ Para garantizar una experiencia de usuario de alta calidad, GeoPS Labs se reserv
     <img src="resources/imgs/chapter-v/Backend/BackendPicture5.jpg" width="700">
   </div>
 
+ #### 5.2.8. Team Collaboration Insights 
+
+  *Evidencia de la colaboración de los 7 integrantes en la redacción del informe técnico.*
+  <p align="center">
+    <img src="./resources/imgs/evidencias/report-contributors.png" alt="Report Contributors Insight" width="600">
+  </p>
+  <p align="center">
+    <img src="./resources/imgs/evidencias/report-network.png" alt="Report Network Graph" width="600">
+  </p>
 
 ### 5.3 Video About-the-Product
 
 **Enlace Video About The Product - GeoPs:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318049_upc_edu_pe/IQClpsJt1lv0SJVXaTq_7_RwAZulho-4j7SJR3cHofT9Bpo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pc3X8P
 
 
-# Capítulo 6: Product Verification & Validation
+# Capítulo VI: Product Verification & Validation
 
 ## 6.1. Testing Suites & Validation
 
@@ -3872,7 +4112,7 @@ Se han implementado pruebas unitarias para validar la lógica de negocio de las 
 
 * **Backend (Java + JUnit):** Se implementaron pruebas unitarias utilizando **JUnit 5** para verificar la lógica de los modelos y entidades de dominio (ej. `Promotion`, `Business`, `User`). Se validaron reglas de negocio como la estructura de los identificadores, cálculos de descuentos y restricciones de campos obligatorios, asegurando que los métodos devuelvan los valores esperados sin errores de lógica interna.
 
-#### 6.1.2. Core Integration Tests
+### 6.1.2. Core Integration Tests
 Se realizaron pruebas de integración para asegurar la correcta interoperabilidad entre los módulos del sistema, enfocándose en el flujo de datos entre las capas de la aplicación.
 
 * **Interacción API-Base de Datos:** Se validó que el backend en Java se comunique correctamente con la base de datos **MySQL Workbench**, verificando que las operaciones de persistencia (Guardar negocio, buscar promociones) se ejecuten íntegramente.
@@ -3910,7 +4150,7 @@ Se aplicaron técnicas de BDD para definir el comportamiento del sistema desde l
     * **Then** el sistema debe mostrar una lista de tiendas en un radio de 3km con stock disponible.
 
 
-#### 6.1.4. Core System Tests
+### 6.1.4. Core System Tests
 Se ejecutaron pruebas de sistema de flujo completo para validar que GeoPS funciona correctamente en su totalidad. Estas pruebas cubrieron la navegación integral de la aplicación web responsiva, simulando el comportamiento real de los dos segmentos objetivo:
 
 * **Flujo del Negocio:** Registro de tienda, carga de catálogo de productos asiáticos y publicación de una oferta flash.
@@ -3922,7 +4162,7 @@ Se ejecutaron pruebas de sistema de flujo completo para validar que GeoPS funcio
     alt="Evidencias Registro 1" width="300">
 </div>
 
-#### 6.1.5. Campaign Form Structure Tests
+### 6.1.5. Campaign Form Structure Tests
 
 Frontend (Angular): Utilizando Jasmine y Karma, se valida la estructura del formulario reactivo del componente de edición de campañas en src/app/components. Se asegura que el FormGroup sea construido correctamente con exactamente los 6 campos requeridos — name, description, startDate, endDate, estimatedBudget y status — garantizando que cualquier modificación accidental en la definición del formulario, como la eliminación o el renombrado de un control, sea detectada de inmediato por el test.
 
@@ -3938,7 +4178,928 @@ Pruebas de Integración del Backend (Campaigns): Se desarrollaron pruebas de int
     alt="Evidencias Test Backend Campaign" width="700">
 </div>
 
-# Capítulo 7: DevOps Practices
+
+## 6.2. Static testing & Verification 
+
+La verificación estática del proyecto GeoPS tiene como objetivo revisar la calidad, seguridad y mantenibilidad del código fuente sin ejecutar directamente los flujos funcionales de la aplicación. Esta actividad complementa las pruebas unitarias, de integración, BDD y pruebas de sistema desarrolladas en la sección 6.1, ya que permite identificar errores de estructura, incumplimiento de estándares, posibles vulnerabilidades y malas prácticas antes de integrar cambios al repositorio principal o desplegar una nueva versión.
+
+En GeoPS, la verificación estática se aplica sobre los principales productos de software del proyecto: la Landing Page, la aplicación Frontend Web desarrollada en Angular y TypeScript, el Backend RESTful API desarrollado con Spring Boot, la documentación de endpoints mediante Swagger/OpenAPI y las configuraciones de seguridad vinculadas con autenticación JWT, CORS, validación de datos, hashing de credenciales y variables de entorno.
+
+Esta revisión resulta necesaria porque GeoPS administra información de usuarios, dueños de negocio, campañas publicitarias, ofertas, métricas de impresiones, clics, CTR y datos relacionados con la geolocalización de comercios. Por ello, el código debe mantenerse legible, consistente, seguro y alineado con la arquitectura de monolito modular basada en Domain-Driven Design, organizada en los bounded contexts Identity, Campaign, Offers y Shared Kernel.
+
+
+### 6.2.1. Static Code Analysis 
+
+El análisis estático de código consiste en inspeccionar el código fuente y sus configuraciones sin ejecutar la aplicación, con el propósito de detectar errores potenciales, problemas de formato, duplicación, malas prácticas, vulnerabilidades y dependencias inseguras. En el proyecto GeoPS, este análisis se aplica de forma diferenciada al frontend, backend y documentación técnica, considerando las tecnologías utilizadas en cada componente.
+
+Para el frontend, se revisan los componentes Angular, servicios, rutas, formularios reactivos, interfaces TypeScript, archivos HTML y hojas de estilo CSS. La revisión busca asegurar que los componentes mantengan responsabilidades claras, que los nombres sean descriptivos, que los formularios tengan validaciones consistentes y que la estructura de la interfaz mantenga coherencia con el diseño responsivo definido para la plataforma.
+
+Para el backend, se revisan los controladores REST, servicios de aplicación, entidades de dominio, repositorios, DTOs, configuraciones de seguridad y archivos de documentación OpenAPI. La revisión busca verificar que la lógica de negocio no esté mezclada con la lógica de persistencia o presentación, que los endpoints sigan una estructura clara y que los bounded contexts mantengan sus responsabilidades separadas.
+
+Asimismo, el análisis estático se relaciona con el flujo de trabajo del equipo en GitHub. Antes de integrar cambios a las ramas principales, se revisa que el código cumpla los estándares definidos, que los commits sigan Conventional Commits y que la rama utilizada corresponda al flujo GitFlow establecido para el proyecto.
+
+Tabla 15
+Static Code Analysis — Componentes evaluados en GeoPS
+
+| Componente evaluado      | Tecnología principal             | Elementos revisados                                                                  | Propósito de la revisión                                                                |
+| ------------------------ | -------------------------------- | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| Landing Page             | HTML5, CSS3, TypeScript          | Estructura semántica, estilos, accesibilidad, navegación y diseño responsive         | Asegurar una presentación clara, accesible y coherente con la identidad visual de GeoPS |
+| Frontend Web Application | Angular, TypeScript              | Componentes, servicios, rutas, formularios, interfaces y validaciones                | Verificar que la aplicación web mantenga código modular, legible y validable            |
+| Backend RESTful API      | Java, Spring Boot                | Controladores, servicios, entidades, repositorios, DTOs y configuración de seguridad | Confirmar separación de responsabilidades, reglas de negocio y consistencia con DDD     |
+| Base de Datos            | MySQL                            | Entidades, relaciones, nombres de tablas y campos                                    | Mantener coherencia entre el modelo de dominio y la persistencia                        |
+| API Documentation        | Swagger/OpenAPI                  | Endpoints, métodos HTTP, parámetros, respuestas y códigos de estado                  | Facilitar la verificación y prueba de los servicios REST                                |
+| Seguridad                | JWT, CORS, hashing, validaciones | Protección de endpoints, credenciales, entradas de usuario y secretos                | Reducir riesgos de acceso no autorizado y exposición de datos sensibles                 |
+| Repositorios             | GitHub, GitFlow                  | Ramas, commits, pull requests y revisión de cambios                                  | Mantener trazabilidad y control colaborativo del código fuente                          |
+
+Nota. Elaboración propia.
+
+El proceso de análisis estático se ejecuta siguiendo los pasos descritos a continuación:
+
+Se revisa el código del frontend para verificar estructura de componentes, nombres de archivos, uso de servicios, formularios reactivos y validaciones.
+Se revisa el código del backend para comprobar que los controladores, servicios, entidades y repositorios estén organizados según los bounded contexts definidos.
+Se valida que las rutas REST sean coherentes, estén documentadas y usen métodos HTTP adecuados.
+Se revisa que los datos sensibles no estén escritos directamente en el código fuente.
+Se inspecciona el cumplimiento de convenciones de nombres, indentación, comentarios y organización del proyecto.
+Se revisan posibles riesgos de seguridad, como entradas no validadas, exposición de credenciales, manejo incorrecto de tokens o endpoints sin protección.
+Se registra la evidencia mediante capturas de consola, GitHub Actions, Pull Requests, Swagger UI o herramientas de análisis estático.
+
+Static Code Analysis — Frontend Web Application
+
+<div align="center">
+    <img src="resources/imgs/chapter-vi/Static Code Analysis.png" alt="GeoPS Software Architecture Context Diagram" width="900">
+</div>
+Nota. Elaboración propia.
+
+Static Code Analysis — Backend RESTful API
+<div align="center">
+    <img src="resources/imgs/chapter-vi/Backend RESTful API.png" alt="GeoPS Software Architecture Context Diagram" width="900">
+</div>
+
+Nota. Elaboración propia.
+
+Static Code Analysis — Swagger/OpenAPI Documentation
+<div align="center">
+    <img src="resources/imgs/chapter-vi/Static Code Analysis — Swagger.png" alt="GeoPS Software Architecture Context Diagram" width="900">
+</div>
+
+Nota. Elaboración propia.
+
+
+
+
+#### 6.2.1.1. Coding standard & Code conventions. 
+
+Los estándares de codificación permiten mantener una estructura uniforme en todos los repositorios del proyecto GeoPS. Su aplicación facilita la lectura del código, reduce errores de integración, mejora la colaboración entre integrantes y permite que las funcionalidades futuras puedan agregarse sin afectar la mantenibilidad del sistema.
+
+En el frontend, se utilizan convenciones propias de Angular y TypeScript. Los nombres de variables, métodos y funciones se redactan en inglés y bajo el estilo camelCase. Los componentes, servicios e interfaces deben tener nombres descriptivos relacionados con su responsabilidad. Las clases CSS se escriben en kebab-case y deben representar claramente la sección, componente o elemento visual al que pertenecen.
+
+En el backend, se siguen convenciones de Java y Spring Boot. Las clases se escriben en PascalCase, los métodos y atributos en camelCase, y los paquetes se organizan de acuerdo con el contexto funcional correspondiente. Esta organización permite mantener coherencia con la arquitectura DDD del proyecto, separando responsabilidades entre Identity, Campaign, Offers y Shared Kernel.
+
+Además, el equipo utiliza GitFlow para organizar el trabajo colaborativo en ramas y Conventional Commits para mantener trazabilidad en el historial del repositorio. Esto permite identificar rápidamente si un cambio corresponde a una nueva funcionalidad, corrección de errores, documentación, refactorización o pruebas.
+
+Tabla 16
+Coding Standard & Code Conventions — Estándares aplicados en GeoPS
+
+| Área                 | Estándar aplicado                        | Ejemplo aplicado en GeoPS                                 |
+| -------------------- | ---------------------------------------- | --------------------------------------------------------- |
+| Variables TypeScript | camelCase                                | selectedCategory, currentUser, campaignList               |
+| Métodos TypeScript   | camelCase y verbo descriptivo            | loadOffers(), submitCampaign(), filterByCategory()        |
+| Componentes Angular  | Nombre descriptivo según responsabilidad | LoginComponent, RegisterComponent, CampaignsComponent     |
+| Servicios Angular    | Sufijo Service                           | AuthService, CampaignService, OfferService                |
+| Clases CSS           | kebab-case                               | promotion-card, campaign-form, navbar-section             |
+| Clases Java          | PascalCase                               | CampaignController, UserCommandService, OfferRepository   |
+| Métodos Java         | camelCase                                | createCampaign(), getOfferById(), validateUserExistence() |
+| Paquetes backend     | Minúsculas y agrupados por contexto      | identity, campaign, offers, shared                        |
+| Endpoints REST       | Rutas orientadas a recursos              | /auth/login, /offers/{id}, /campaigns                     |
+| Commits              | Conventional Commits                     | feat, fix, docs, style, refactor, test                    |
+| Ramas                | GitFlow                                  | main, develop, feature/, release/, hotfix/                |
+
+Nota. Elaboración propia.
+
+Para verificar el cumplimiento de estos estándares, se revisan los siguientes criterios:
+
+- Los nombres de variables, funciones, clases y archivos deben ser claros y representar su responsabilidad.
+
+- El código debe mantener una indentación uniforme y evitar mezclas innecesarias de estilos.
+
+- Los componentes del frontend no deben concentrar lógica que corresponde a servicios.
+
+- Los controladores del backend no deben contener reglas de negocio extensas; estas deben estar en servicios de aplicación.
+
+- Las entidades, repositorios y servicios deben estar ubicados en el bounded context correspondiente.
+
+- Los commits deben indicar claramente la naturaleza del cambio realizado.
+
+- Las ramas deben usarse de acuerdo con GitFlow para evitar cambios directos sobre producción.
+
+Tabla 17
+Checklist de Coding Standards
+| Criterio revisado                                                | Cumple | Observación                                                                 |
+| ---------------------------------------------------------------- | ------ | --------------------------------------------------------------------------- |
+| Uso de nombres descriptivos en variables, clases y métodos       | Sí     | Se emplean nombres asociados a autenticación, campañas, ofertas y usuarios  |
+| Uso de camelCase en TypeScript y Java                            | Sí     | Se mantiene consistencia en métodos y atributos                             |
+| Uso de PascalCase en clases Java y componentes Angular           | Sí     | Las clases representan controladores, servicios, repositorios y componentes |
+| Organización por bounded contexts                                | Sí     | El backend se organiza en Identity, Campaign, Offers y Shared Kernel        |
+| Uso de rutas REST orientadas a recursos                          | Sí     | Los endpoints se agrupan por autenticación, usuarios, campañas y ofertas    |
+| Uso de GitFlow                                                   | Sí     | Se consideran ramas main, develop, feature, release y hotfix                |
+| Uso de Conventional Commits                                      | Sí     | Se aplican prefijos como feat, fix, docs, refactor y test                   |
+| Separación entre lógica visual, lógica de negocio y persistencia | Sí     | Se diferencia frontend, servicios backend y repositorios                    |
+
+Nota. Elaboración propia.
+
+#### 6.2.1.2. Code Quality & Code Security. 
+La revisión de calidad y seguridad del código busca asegurar que GeoPS sea una plataforma mantenible, robusta y segura para los usuarios consumidores y los dueños de negocio. La calidad del código se evalúa considerando legibilidad, complejidad, duplicación, separación de responsabilidades, mantenibilidad y documentación técnica. La seguridad se evalúa considerando autenticación, autorización, validación de datos, protección de credenciales, configuración CORS, manejo de JWT y prevención de vulnerabilidades comunes.
+
+En cuanto a calidad, la arquitectura del backend mantiene una separación modular mediante bounded contexts. Identity concentra la autenticación, usuarios, roles, JWT, hashing y perfiles. Campaign gestiona la creación, edición, eliminación, presupuesto, fechas, impresiones, clics y CTR de las campañas. Offers administra las promociones asociadas a campañas. Shared Kernel agrupa configuraciones transversales como auditoría, roles, CORS, OpenAPI, sanitización de texto y recursos comunes. Esta separación evita que el código crezca de manera desordenada y permite que futuras funcionalidades puedan integrarse con menor riesgo.
+
+En cuanto a seguridad, GeoPS debe proteger los endpoints sensibles mediante JWT, evitar el almacenamiento de contraseñas en texto plano, validar los datos recibidos desde formularios y solicitudes HTTP, controlar los orígenes permitidos mediante CORS y evitar la exposición de credenciales en el repositorio. Estas prácticas son importantes porque la plataforma maneja cuentas de usuarios, información de negocios, campañas, ofertas, métricas de rendimiento y datos relacionados con ubicación.
+
+Tabla 18
+Code Quality — Criterios de calidad evaluados
+| Criterio              | Aplicación en GeoPS                                                              | Resultado esperado                                 |
+| --------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------- |
+| Legibilidad           | Uso de nombres claros, estructura por módulos y responsabilidades definidas      | Código comprensible para el equipo                 |
+| Mantenibilidad        | Separación entre componentes, servicios, controladores, repositorios y entidades | Cambios futuros con menor impacto                  |
+| Bajo acoplamiento     | Comunicación entre contextos mediante servicios o puertos específicos            | Menor dependencia directa entre módulos            |
+| Alta cohesión         | Cada contexto concentra responsabilidades relacionadas                           | Código más ordenado y fácil de probar              |
+| Duplicación reducida  | Uso de servicios reutilizables y Shared Kernel                                   | Menor repetición de configuraciones o lógica común |
+| Documentación técnica | Uso de Swagger/OpenAPI para endpoints REST                                       | Mayor facilidad de prueba y comprensión de la API  |
+| Trazabilidad          | Uso de GitHub, ramas y Conventional Commits                                      | Historial claro de cambios del proyecto            |
+
+Nota. Elaboración propia.
+
+Tabla 19
+Code Security — Criterios de seguridad evaluados
+| Riesgo revisado                 | Control aplicado en GeoPS                                              | Resultado esperado                                      |
+| ------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------- |
+| Acceso no autorizado            | Protección de endpoints mediante JWT                                   | Solo usuarios autenticados acceden a funciones privadas |
+| Contraseñas expuestas           | Hashing de credenciales                                                | Las contraseñas no se almacenan en texto plano          |
+| Manipulación de campañas ajenas | Validación del usuario propietario antes de editar o eliminar campañas | Solo el dueño autorizado modifica sus campañas          |
+| Datos inválidos                 | Validaciones en formularios, DTOs y servicios                          | Se rechazan solicitudes incompletas o mal formadas      |
+| Inyección de contenido          | Sanitización de campos de texto                                        | Se reduce el riesgo de contenido malicioso              |
+| Cross-Site Scripting XSS        | Validación y control del contenido mostrado en la interfaz             | Se evita mostrar información peligrosa al usuario       |
+| SQL Injection                   | Uso de Spring Data JPA y consultas parametrizadas                      | Se reduce el riesgo de inyección SQL                    |
+| Exposición de API               | Configuración CORS                                                     | Solo orígenes autorizados consumen el backend           |
+| Secretos en repositorio         | Uso de variables de entorno                                            | Las credenciales no se publican en GitHub               |
+| Dependencias vulnerables        | Revisión de dependencias del frontend y backend                        | Se identifican librerías con riesgos conocidos          |
+
+Nota. Elaboración propia.
+
+Como parte de la verificación de seguridad, se revisan los formularios y endpoints principales del sistema. En el registro y login, se valida el formato del correo, la contraseña y la respuesta ante credenciales incorrectas. En campañas, se revisa que los datos como nombre, descripción, fecha de inicio, fecha de fin, presupuesto y estado sean obligatorios y consistentes. En ofertas, se valida que la oferta esté asociada a una campaña existente y activa. En perfiles de negocio, se revisan datos como correo, teléfono, RUC, dirección, horario de atención y enlaces web.
+
+Tabla 20
+Static Code Analysis Results — Resultado de verificación estática
+| Producto revisado        | Herramienta o método de revisión                          | Resultado obtenido                                           | Evidencia |
+| ------------------------ | --------------------------------------------------------- | ------------------------------------------------------------ | --------- |
+| Landing Page             | Revisión manual de HTML, CSS y TypeScript                 | Estructura semántica, responsive y navegación revisadas      | Figura X  |
+| Frontend Web Application | Revisión de Angular, TypeScript y formularios reactivos   | Componentes, servicios y validaciones revisados              | Figura X  |
+| Backend RESTful API      | Revisión de Java, Spring Boot y organización por paquetes | Controladores, servicios, repositorios y entidades revisados | Figura X  |
+| API Documentation        | Revisión de Swagger UI                                    | Endpoints visibles y agrupados por recurso                   | Figura X  |
+| Seguridad                | Revisión de JWT, CORS, hashing y variables de entorno     | Controles de acceso y protección de credenciales revisados   | Figura X  |
+| Repositorio GitHub       | Revisión de ramas, commits y pull requests                | Trazabilidad de cambios verificada                           | Figura X  |
+
+Nota. Elaboración propia.
+
+Code Quality Verification — Frontend Web Application
+
+  <div align="center">
+    <img src="resources/imgs/chapter-vi/Code Quality Verification-Frontend.png" width="700">
+  </div>
+
+Nota. Elaboración propia.
+
+Code Quality Verification — Backend RESTful API
+
+  <div align="center">
+    <img src="resources/imgs/chapter-vi/Code Quality Verification-Backend1.png" width="700">
+  </div>
+
+  <div align="center">
+    <img src="resources/imgs/chapter-vi/Code Quality Verification-Backend2.png" width="700">
+  </div>
+Nota. Elaboración propia.
+
+Code Security Verification — Repository and Environment Variables
+
+<div align="center">
+    <img src="resources/imgs/chapter-vi/Code Security Verification-Environment1.png" width="700">
+  </div>
+
+Nota. Elaboración propia.
+
+#### 6.2.2. Reviews
+
+Las revisiones del proyecto GeoPS se realizan como parte del proceso de aseguramiento de calidad previo a la integración de cambios en el repositorio. Estas revisiones permiten detectar errores de implementación, incumplimiento de estándares, problemas de seguridad, inconsistencias en la documentación y posibles riesgos de mantenimiento antes de que el código sea desplegado.
+
+El equipo aplica revisiones sobre los principales artefactos del proyecto: código fuente del frontend, código fuente del backend, documentación Swagger/OpenAPI, estructura de ramas, commits, pull requests y configuraciones de despliegue. Estas revisiones se alinean con el flujo GitFlow, ya que las funcionalidades se desarrollan en ramas feature y luego pasan por revisión antes de integrarse a develop o main.
+
+Durante la revisión, se considera que cada cambio cumpla con los estándares definidos en la sección anterior. En el frontend, se valida que los componentes Angular sean claros, que los formularios mantengan sus controles requeridos y que la interfaz sea consistente. En el backend, se verifica que los endpoints respondan a responsabilidades concretas, que los servicios contengan la lógica de negocio y que los repositorios se limiten a la persistencia. En seguridad, se revisa que no existan credenciales expuestas, que los endpoints sensibles estén protegidos y que las entradas sean validadas.
+
+Tabla 21
+Reviews — Criterios de revisión del proyecto GeoPS
+| Criterio de revisión      | Descripción                                                                                                | Resultado esperado                                               |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Revisión de funcionalidad | Se verifica que el cambio implementado corresponda a una User Story, Technical Story o corrección definida | El cambio tiene trazabilidad con el backlog                      |
+| Revisión de estándares    | Se valida el uso de nombres, indentación, estructura y convenciones del proyecto                           | El código es consistente y legible                               |
+| Revisión de arquitectura  | Se confirma que el cambio respete los bounded contexts y responsabilidades definidas                       | No se mezclan responsabilidades entre módulos                    |
+| Revisión de seguridad     | Se revisan JWT, validaciones, CORS, hashing y variables de entorno                                         | No se exponen datos sensibles ni endpoints inseguros             |
+| Revisión de documentación | Se valida que los endpoints y cambios relevantes estén documentados                                        | La API y el informe se mantienen actualizados                    |
+| Revisión de pruebas       | Se verifica que el cambio no afecte pruebas unitarias, de integración o BDD                                | El código puede integrarse sin romper funcionalidades existentes |
+| Revisión de repositorio   | Se revisa la rama, el commit y el Pull Request asociado                                                    | El historial del proyecto mantiene trazabilidad                  |
+
+Nota. Elaboración propia.
+
+Tabla 22
+Code Review Log — Registro de revisiones realizadas
+
+| ID    | Artefacto revisado       | Responsable de revisión | Hallazgo principal                                                                                 | Acción realizada                                                              | Estado  |
+| ----- | ------------------------ | ----------------------- | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------- |
+| RV-01 | Frontend Web Application | Equipo de desarrollo    | Revisión de componentes, rutas y formularios de autenticación                                      | Se validó consistencia de nombres, estructura y controles requeridos          | Cerrado |
+| RV-02 | Campaign Form            | Equipo de desarrollo    | Revisión de campos name, description, startDate, endDate, estimatedBudget y status                 | Se verificó que el formulario mantenga los controles necesarios para campañas | Cerrado |
+| RV-03 | Backend RESTful API      | Equipo de desarrollo    | Revisión de controladores, servicios y repositorios por contexto                                   | Se confirmó separación entre Identity, Campaign, Offers y Shared Kernel       | Cerrado |
+| RV-04 | Swagger/OpenAPI          | Equipo de desarrollo    | Revisión de endpoints disponibles para autenticación, usuarios, ofertas, campañas y notificaciones | Se verificó que los endpoints puedan visualizarse y probarse desde Swagger UI | Cerrado |
+| RV-05 | Seguridad                | Equipo de desarrollo    | Revisión de JWT, CORS, hashing, validaciones y variables de entorno                                | Se verificó que las credenciales no estén expuestas en el código fuente       | Cerrado |
+| RV-06 | GitHub Repository        | Equipo de desarrollo    | Revisión de ramas, commits y trazabilidad de cambios                                               | Se validó el uso de GitFlow y Conventional Commits                            | Cerrado |
+
+Nota. Elaboración propia.
+
+Como resultado de las revisiones, el equipo confirma que el proyecto GeoPS mantiene una estructura de código coherente con su arquitectura y con los estándares definidos para el desarrollo. Las revisiones permitieron reforzar la calidad técnica del frontend, backend y documentación de servicios, así como reducir riesgos asociados a seguridad, mantenimiento y despliegue. Además, el uso de GitHub, GitFlow, Conventional Commits y Pull Requests contribuye a mantener un proceso colaborativo controlado, verificable y alineado con las buenas prácticas de ingeniería de software.
+
+Pull Request Review Evidence — GitHub
+<div align="center">
+    <img src="resources/imgs/chapter-vi/Pull Request Review Evidence.png" width="700">
+  </div>
+
+Nota. Elaboración propia.
+
+Repository Commit History — Conventional Commits
+Nota. Elaboración propia.
+
+<div align="center">
+    <img src="resources/imgs/chapter-vi/Repository Commit History.png" width="700">
+  </div>
+
+
+
+Static Review Evidence — Backend and Frontend
+<div align="center">
+    <img src="resources/imgs/chapter-vi/Static Code Analysis.png" alt="GeoPS Software Architecture Context Diagram" width="900">
+</div>
+Nota. Elaboración propia.
+
+<div align="center">
+    <img src="resources/imgs/chapter-vi/Backend RESTful API.png" alt="GeoPS Software Architecture Context Diagram" width="900">
+</div>
+
+Nota. Elaboración propia.
+
+## 6.3. Validation Interviews. 
+### 6.3.1. Diseño de Entrevistas. 
+
+##### Segmento #1: Usuario Proveedor / Tienda (GeoPS Business)
+
+#### Fase 1: Identificación y Perfilamiento del Consumidor
+* Establecimiento, Cargo, Giro de negocio y Origen de productos orientales.
+* Pregunta de control: ¿Mantiene actualmente problemas de visibilidad hiperlocal o inventario de baja rotación en Lima Moderna?
+
+#### Fase 2: Interacción Guiada con la Plataforma Web
+* Tarea 1: Ingrese al sitio web de GeoPS Business, complete el formulario de registro de su local y configure su ubicación exacta en el mapa.
+* Tarea 2: Intente crear y publicar una "Oferta Relámpago" (ej. 2x1 en Ramens coreanos próximos a vencer) definiendo un radio de geolocalización de 1 km a la redonda.
+
+#### Fase 3: Identificación de Puntos de Dolor en la Interfaz
+* ¿Logró comprender cómo delimitar el radio de alcance de su promoción en el mapa interactivo?
+* ¿Hubo algún paso del formulario de creación de anuncios que le generara confusión o desconfianza?
+
+#### Fase 4: Validación de la Solución e Intención de Uso
+* En comparación con sus métodos actuales (Instagram/WhatsApp), ¿qué tan útil le resulta esta primera versión web del 1 al 5 para atraer al público que transita a pocas cuadras?
+* ¿Qué opina del panel de control? ¿Qué métricas analíticas consideraría indispensables ver primero?
+
+#### Fase 5: Cierre y Sugerencias
+* ¿Qué funcionalidad o elemento gráfico añadiría para que la gestión de sus ofertas sea más rápida?
+
+##### Segmento #2: Usuario Consumidor (GeoPS)
+
+#### Fase 1: Identificación y Perfilamiento del Negocio
+* Nombre, Edad, Ocupación, Distrito de Lima Moderna y Frecuencia de consumo de artículos asiáticos.
+
+#### Fase 2: Interacción Guiada con el Producto Mínimo Viable
+* Tarea 1: Suponga que está buscando snacks o bebidas orientales en su distrito actual. Abra la plataforma web de GeoPS, explore el mapa dinámico y localice el comercio con descuento activo más cercano.
+* Tarea 2: Intente simular la aceptación de una notificación web push de proximidad para abrir los detalles, horarios de atención y stock de una tienda.
+
+#### Fase 3: Identificación de Puntos de Dolor en la Interfaz
+* Al desplazarse por el mapa, ¿los pines de las tiendas se visualizan de manera ordenada o experimentó saturación visual?
+* ¿Le resultó sencillo ubicar los horarios de atención, categorías y la lista de precios dentro del detalle del comercio?
+
+#### Fase 4: Validación de la Solución e Impacto
+* Si esta aplicación web estuviera completamente en producción, ¿qué tan útil le resultaría del 1 al 5 para evitar malas experiencias (como encontrar tiendas cerradas)?
+* ¿Permitiría de forma permanente que el navegador rastree su geolocalización para enviarle alertas push personalizadas?
+
+#### Fase 5: Cierre y Sugerencias
+* ¿Qué feedback o funcionalidad extra propondría para mejorar su experiencia de navegación en el mapa?
+
+### 6.3.2. Registro de Entrevistas. 
+
+Segmento #1: Dueños de negocios locales
+
+**Tabla 14**   
+*Registro de entrevistas — Segmento 1*
+
+| Número de registro | Datos del entrevistado | Captura |
+| :--- | :--- | :--- |
+| **1** | **Nombre:** Cristian Salvador<br>**Edad:** 28 años<br>**Establecimiento:** Tienda de productos importados (Referente)<br>**Cargo:** Dueño / Encargado<br>**Duración:** Aprox. 5 minutos<br> **Enlace:** [https://l1nq.com/8gjygzw](https://acortar.link/gTCaPh) <br> **Resumen:** El entrevistado maneja una tienda con alta variedad de productos, siendo las sopas instantáneas, snacks y bebidas los más buscados. Actualmente usa Instagram, WhatsApp y carteles físicos, pero nota que la publicidad digital a veces llega a personas muy lejanas que no concretan la compra. Califica la solución de GeoPS con un **5**, destacando su utilidad para liquidar stock próximo a vencer y atraer clientes que transitan por la zona. Le interesa contar con estadísticas de visualizaciones y rutas para medir la efectividad de sus ofertas. Expresó preocupación por el costo y la curva de aprendizaje, sugiriendo una interfaz sencilla. |  **Figura 4**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista1_segmento1.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **2** | **Nombre:** Néstor Rojas<br>**Establecimiento:** Terra Inc.<br>**Giro:** Inciensos, plantas y productos orgánicos asiáticos<br>**Duración:** Aprox. 8 minutos<br> **Enlace:** https://acortar.link/aSbB2F <br>**Resumen:** Néstor opera un negocio con clientes de diversos distritos que llegan principalmente por canales online. Indica que los inciensos tienen alta rotación, mientras que las plantas demoran más en venderse. Valora la propuesta de GeoPS con un **5**, resaltando que facilitaría captar al público que transita cerca y le ahorraría costos en publicidad tradicional como volantes. Le entusiasma la idea de notificaciones automáticas para liquidar saldos de inventario y evitar pérdidas por vencimiento. Como aporte adicional, sugiere que el mapa de la aplicación incluya coordenadas exactas y guías de accesibilidad para evitar que el cliente se desanime al no encontrar el local. |  **Figura 5**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista2_segmento1.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+
+*Nota.* Elaboración propia.
+
+Segmento #2: Consumidores de ofertas de diferentes ámbitos
+
+**Tabla 15**   
+*Registro de entrevistas — Segmento 2*  
+
+| Número de registro | Datos del entrevistado | Captura |
+| :--- | :--- | :--- |
+| **1** | **Nombre:** Ariana Puscan <br> **Edad:** 28 años <br> **Distrito:** Magdalena <br> **Ocupación:** Abogada <br> **Duración de la entrevista:** 5 minutos y 49 segundos <br> **Enlace:** https://l1nq.com/8gjygzw <br> **Resumen:** En este video, se entrevista a Ariana Puscan, una joven de 28 años del distrito de Magdalena. Es una consumidora recurrente de snacks asiáticos, adquiriéndolos mensualmente. Su descubrimiento de productos se basa principalmente en recomendaciones y ofertas vistas en Instagram y TikTok. Sus compras son mayoritariamente impulsivas o casuales cuando encuentra artículos en supermercados, sin apoyarse en aplicaciones específicas. Recientemente, visitó un establecimiento tras verlo en redes sociales, teniendo una experiencia satisfactoria. Finalmente, considera que nuestra aplicación sería de gran valor. La percibe como una herramienta clave para localizar puntos de venta exactos y facilitar el acceso a una mayor variedad de productos asiáticos. | **Figura 6**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista1_segmento2.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **2** | **Nombre:** Olga Consuelo Arce Quesada <br> **Edad:** 25 años <br> **Distrito:** Magdalena <br> **Ocupación:** Comunicadora Corporativa <br> **Duración de la entrevista:** 7 minutos y 16 segundos <br> **Enlace:** https://l1nq.com/ck0dyrh <br> **Resumen:** En este video, Olga Consuelo Arce Quesada, de 25 años, de Magdalena. Es una consumidora frecuente de snacks, bebidas y productos de belleza. Si bien descubre tiendas asiáticas mediante redes sociales o de forma presencial, señala una brecha en la información: las ofertas no están digitalizadas y solo las descubre al visitar el punto de venta. Su experiencia revela una dificultad específica al buscar productos de belleza, ya que no suelen estar disponibles en cadenas comerciales como Miniso. Actualmente, su búsqueda depende exclusivamente de la suerte al encontrar recomendaciones en TikTok, lo que dificulta la compra efectiva. Olga valida positivamente la propuesta de nuestra aplicación. Destaca la importancia de una plataforma integral que geolocalice tiendas cercanas, ofrezca visibilidad de ofertas en tiempo real y permita filtrar los establecimientos por categorías para optimizar su experiencia de compra. | **Figura 7**<br> *Entrevista 2 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista2_segmento2.png" alt="Entrevista 2 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **3** | **Nombre:** Lupe de la Cruz <br> **Edad:** 22 años <br> **Distrito:** Jesús María <br> **Ocupación:** Estudiante <br> **Duración de la entrevista:** Aprox. 5 minutos <br> **Enlace:** https://acortar.link/BfP5q1 <br> **Resumen:** En esta entrevista se conversó con Lupe de la Cruz, una joven estudiante de Jesús María. Es una consumidora quincenal de productos orientales, enfocada principalmente en snacks, dulces y bebidas. Su descubrimiento de locales se basa en redes sociales y exploración física ocasional. Relató una mala experiencia reciente al encontrar un local cerrado por falta de información actualizada, lo que validó la utilidad de la aplicación. Califica la utilidad del mapa interactivo con un puntaje de 4 a 5 estrellas. Valora positivamente las notificaciones push personalizadas y considera indispensable que la app muestre horarios de atención y listas de precios. Finalmente, propuso como feedback la posibilidad de realizar reservas de productos a través de la plataforma. | **Figura 8**<br> *Entrevista 3 — Segmento 1* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista3_segmento2.png" alt="Entrevista 3 — Segmento 1" width="4000"> </div> *Nota.* Elaboración propia. |
+
+
+### 6.3.3. Evaluaciones según heurísticas. 
+
+#### SITE o APP A EVALUAR:
+GeoPS
+
+#### TAREAS A EVALUAR: 
+* Registro de comercios locales
+* Publicación de ofertas locales 
+* Exploración de ofertas en mapa responsive
+* Simulación de alertas web push.
+
+#### ESCALA DE SEVERIDAD: 
+| Nivel | Descripción |
+| :--- | :--- |
+| **1** | **Problema superficial:** puede ser fácilmente superador por el usuario ó ocurre con muy poco frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| **2** | **Problema menor:** puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase  |
+| **3** | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta.  |
+| **4** | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento.  |
+
+
+#### TABLA RESUMEN: 
+
+| # | Problema | Escala de severidad  | Heurística/Principio violada |
+| :--- | :--- | :--- | :--- |
+| **1** | **Formulario Publicación** El sistema permite publicar ofertas sin una imagen obligatoria, generando contenedores rotos en el feed del consumidor. | 4 | Usability |
+| **2** | **Mapa Interactivo** Los marcadores de tiendas se superponen caóticamente en zonas densas (falta de clusterización). | 3 | Information Architecture |
+| **3** | **Alcance de Plataforma** Ausencia de flujos y prototipos UX/UI específicos para la aplicación móvil nativa (Android/iOS) requerida en el Statement inicial. | 4 | Information Architecture |
+| **4** | **Registro Comercial** Ausencia de validaciones de formato en tiempo real para el número de RUC de la tienda durante el registro de GeoPS Business. | 2 | Usability |
+| **5** | **Flujo de Usuario** Inexistencia del mapeo del escenario actual (As-Is Scenario Mapping), impidiendo trazar la experiencia previa del usuario. | 3 | Information Architecture |
+
+#### DESCRIPCIÓN DE PROBLEMAS: 
+
+##### PROBLEMA #1: Restricción de Medios en Formulario de Publicación
+
+Severidad: 4 
+Heurística violada: Prevención de Errores (Usability).
+
+Problema: 
+Durante las pruebas de usabilidad del lado del comercio, la interfaz web permitió procesar, guardar y propagar una campaña promocional hiperlocal sin exigir de manera obligatoria la carga de un archivo de imagen. Esto provoca un error visual directo en el feed del usuario consumidor, quien visualiza un contenedor con el icono de imagen rota, afectando severamente la estética y la confiabilidad del negocio.
+
+<div align="center"> <img src="resources/imgs/chapter-vi/problema1.png" alt="Evidencia Problema 1" width="4000"> </div> 
+
+Recomendación: 
+Implementar una regla de validación estricta en el Frontend mediante esquemas de datos (como Zod o Yup) vinculados a los estados del formulario en React/Next.js. El botón de envío debe permanecer deshabilitado e indicar visualmente un estado de error hasta que el archivo de imagen sea cargado y procesado correctamente.
+
+
+##### PROBLEMA #2: Superposición de Marcadores en el Mapa Interactivo
+
+Severidad: 3
+Heurística violada: Organización Visual y Carga Cognitiva (Information Architecture).
+
+Problema: 
+Al simular la navegación en zonas con alta concentración de comercios orientales en Lima Moderna (como las fronteras de Jesús María y Lince), los pines de ubicación geográfica se enciman caóticamente unos sobre otros. Esto impide al consumidor discriminar los locales de manera individual, bloquea la lectura de los nombres de las tiendas y genera frustración al intentar hacer clic en un comercio específico.
+
+<div align="center"> <img src="resources/imgs/chapter-vi/problema2.png" alt="Evidencia Problema 2" width="4000"> </div> 
+
+Recomendación: 
+Integrar una librería de clusterización de marcadores (como @googlemaps/markerclusterer o equivalentes en Leaflet/Mapbox). Esta solución agrupa dinámicamente los pines cercanos en un solo indicador numérico según el nivel de zoom del navegador, expandiéndose fluidamente cuando el usuario se acerca a la zona.
+
+
+##### PROBLEMA #3: Brecha de Diseño en el Alcance Multiplataforma
+
+Severidad: 4
+Heurística violada: Consistencia con el Estándar y Cumplimiento de Requisitos (Information Architecture).
+
+Problema: 
+Tal como se detalló en el informe "Auditoria GeoPS.pdf", el proyecto presenta de forma óptima los flujos del entorno web, pero carece por completo de los artefactos de diseño móvil (Style Guidelines, Wireframes, Mockups, User Flows y Prototipos para Android/iOS) exigidos taxativamente en el Statement del curso. Esta omisión rompe la trazabilidad técnica global del producto.
+
+<div align="center"> <img src="resources/imgs/chapter-vi/problema3.png" alt="Evidencia Problema 3" width="4000"> </div> 
+
+Recomendación: 
+Incorporar un apartado formal de "Definición y Delimitación del Alcance Técnico" dentro del documento. En este bloque se debe justificar que GeoPS se ha estructurado estratégicamente como una Plataforma Web Responsive Integrada. Esto se argumenta bajo criterios de ingeniería: optimización de costos en infraestructura en la nube para PyMEs, uso nativo de APIs de Geolocalización del navegador y Service Workers para notificaciones Web Push, lo cual mitiga la fricción de instalación en el smartphone del consumidor.
+
+##### PROBLEMA #4: Falta de Validación de Formato en Registro Comercial
+
+Severidad: 2
+Heurística violada: Validación de Datos y Ayuda al Usuario (Usability).
+
+Problema: 
+El campo destinado al ingreso del Registro Único de Contribuyentes (RUC) del comercio no cuenta con máscaras de entrada ni validación asíncrona o sintáctica en tiempo real. Un administrador puede tipear una cantidad errónea de dígitos, letras o caracteres especiales, y la interfaz procesa el envío al backend sin alertar al usuario de que los datos de su filiación comercial son inválidos.
+
+<div align="center"> <img src="resources/imgs/chapter-vi/problema4.png" alt="Evidencia Problema 4" width="4000"> </div> 
+
+Recomendación: 
+Aplicar una máscara de texto estructurada en el input que limite la entrada a exactamente 11 caracteres numéricos. Complementariamente, añadir una expresión regular (RegEx) que valide que el número inicie con los prefijos comerciales peruanos válidos (10, 15 o 20) antes de autorizar la llamada a la API de registro.
+
+
+##### PROBLEMA #5: Ausencia del Diagrama de Escenario Actual
+
+Severidad: 3
+Heurística violada: Trazabilidad Metodológica Centrada en el Usuario (Information Architecture).
+
+Problema: 
+De acuerdo con los hallazgos del reporte "Auditoria GeoPS.pdf", se identificó una desconexión metodológica importante al no incluirse el artefacto As-Is Scenario Mapping. Al no documentar formalmente la secuencia de pasos, dolores y canales ineficientes que experimentan hoy en día los usuarios (como guiarse únicamente por tendencias de TikTok o buscar tiendas a ciegas), se debilita el sustento empírico de la solución propuesta.
+
+<div align="center"> <img src="resources/imgs/chapter-vi/problema4.png" alt="Evidencia Problema 4" width="4000"> </div> 
+
+Recomendación: 
+Diseñar y anexar de forma inmediata en el Capítulo II el diagrama de As-Is Scenario Mapping para ambos segmentos objetivos. Se deben plasmar las fases de descubrimiento presencial accidental, la desactualización de datos físicos de las tiendas orientales y la ineficiencia de la publicidad masiva no localizada, mapeando las frustraciones reales extraídas de las entrevistas iniciales de su Needfinding.
+
+
+## 6.4. Auditoría de Experiencias de Usuario 
+
+### 6.4.1. Auditoría realizada 1.
+
+**Proyecto auditado 1:** Energix — Smart Energix Manager (EMS)
+
+#### 6.4.1.1. Información del grupo auditado 1. 
+
+| CAMPO | VALOR | CAMPO | VALOR |
+|---|---|---|---|
+| **CARRERA** | Ingeniería de Software | **CURSO** | Diseño de Experimentos de Ing. de Software |
+| **NRC** | 12305 | **PROFESOR** | Noriega Melendez, Julio Manuel |
+| **AUDITOR** | GeoPsLabs — GeoPs | **FECHA** | 03/07/2026 |
+| **CLIENTE(S)** | Equipo Energix (participantes de la sesión) | **VERSIÓN** | 2.0 |
+
+#### 6.4.1.2. Cronograma de auditoría realizada 1.
+
+## Cronograma de actividades - Energix
+
+| Fase | Actividad | Descripción | Duración |
+| :---: | :--- | :--- | :---: |
+| 1 | Planificación | Definir alcance, ubicar repositorios públicos y entornos productivos de Energix. | Día 1 |
+| 2 | Revisión documental | Lectura de Capítulos I–VIII; verificación de trazabilidad y terminología. | Días 1–2 |
+| 3 | Auditoría de código | Clonar Landing-Page, Frontend y Backend; revisar a11y, i18n, calidad y secretos. | Días 2–3 |
+| 4 | Sesión de evaluación UX | Recorrido de tareas críticas sobre los entornos productivos; registro de problemas. | Días 3–4 |
+| 5 | Análisis y severidad | Consolidar hallazgos y asignar severidad (1–4) en la Tabla Resumen. | Día 4 |
+| 6 | Informe y entrega | Redactar descripciones y recomendaciones; presentar a Energix y registrar la sección 6.4. | Día 5 |
+
+#### 6.4.1.3. Contenido de auditoría realizada 1. 
+
+## SITE o APP A EVALUAR
+Smart Energix Manager (EMS) — Landing Page (energixlp.netlify.app) + Web App Angular 20 (frontend-sems.vercel.app) + Web Services Spring Boot (backend-latest-rplh.onrender.com).
+
+## TAREAS A EVALUAR
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Registro / inicio de sesión de un usuario
+2. Visualización del dashboard de consumo energético
+3. Gestión de dispositivos (agregar / configurar un dispositivo)
+4. Consulta de reportes de consumo
+5. Configuración de la cuenta y alertas
+6. Suscripción / pago de un plan (Landing)
+7. Cambio de idioma de la interfaz (ES / EN)
+
+## OBSERVACIONES — ASPECTOS POSITIVOS
+* **Frontend (Angular 20):** i18n real con `@ngx-translate/core` y archivos de traducción (`en.json` / `es.json`); 30 archivos de pruebas (`.spec`); sin comentarios TODO/FIXME pendientes; environments separados (dev/prod).
+* **Backend (Spring Boot):** 20 archivos de test; validación de entrada con `@Valid` en 16 clases; API documentada con Swagger/OpenAPI; el archivo `.env` está correctamente incluido en `.gitignore`; conexión a BD externalizada por variable de entorno.
+* **Landing Page:** las 23 imágenes incluyen atributo `alt`; implementa un conmutador de idioma funcional (ES/EN).
+* **UX visible (capturas):** el dashboard SEMS comunica el estado con claridad (banner 'demo / DATOS DE PRUEBA'); jerarquía visual limpia y ordenada (métricas, gráfico, alertas, recomendaciones); los indicadores de variación combinan color + flecha + signo y el gráfico incluye leyenda rotulada (no dependen solo del color); existe una sección de Preguntas Frecuentes (FAQ) en la Landing.
+
+## ESCALA DE SEVERIDAD
+
+| Nivel | Descripción |
+|---|---|
+| **1** | **Problema superficial:** puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado, a no ser que exista disponibilidad de tiempo. |
+| **2** | **Problema menor:** puede ocurrir un poco más frecuentemente o es un poco más difícil de superar. Se le debería asignar una prioridad baja de cara al siguiente release. |
+| **3** | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
+| **4** | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+## A. Checklist de Usabilidad — 10 Heurísticas de Nielsen
+
+| N° | Usabilidad — Principio / Heurística | Qué verificar | Cumple | Severidad y notas |
+|---|---|---|---|---|
+| 1 | Visibilidad del estado del sistema | Feedback de carga, guardado y confirmaciones. | Sí | El dashboard señala el modo demo ('DATOS DE PRUEBA') y muestra métricas y estados con claridad. |
+| 2 | Relación sistema–mundo real | Lenguaje e íconos del usuario. | Por verificar | Evaluar en sesión. |
+| 3 | Control y libertad del usuario | Salidas: deshacer, cancelar, volver. | No | Sev 3 — Menú móvil de la Landing como `<div>`, no operable por teclado. |
+| 4 | Consistencia y estándares | Uso uniforme de componentes. | No | Sev 2 — Cuatro estilos de botón distintos para acciones equivalentes (Comprar píldora blanca, Suscribirse azul sólido, Enviar rectángulo negro, Probar ahora con subrayado). |
+| 5 | Prevención de errores | Validaciones y confirmaciones. | Por verificar | Backend valida con `@Valid`; evaluar formularios en la App. |
+| 6 | Reconocer antes que recordar | Opciones visibles. | No | Sev 2 — Botones 'Comprar' sin contexto accesible de producto. |
+| 7 | Flexibilidad y eficiencia | Atajos para expertos. | Por verificar | Evaluar en sesión. |
+| 8 | Diseño estético y minimalista | Sin ruido visual. | Sí | Dashboard y Landing limpios, con buena jerarquía visual y sin saturación. |
+| 9 | Recuperación de errores | Mensajes claros con solución. | Parcial | Sev 2 — Backend sin `@ControllerAdvice`; 5 printStackTrace: riesgo de errores inconsistentes/técnicos. |
+| 10 | Ayuda y documentación | Ayuda accesible y buscable. | Parcial | Existe sección FAQ con preguntas frecuentes; evaluar si cubre las dudas dentro de la Web App. |
+
+## B. Checklist de Arquitectura de Información
+
+| N° | Arq. Información — Principio / Heurística | Qué verificar | Cumple | Severidad y notas |
+|---|---|---|---|---|
+| 1 | Findable (encontrable) | Navegación y buscador efectivos. | Por verificar | Evaluar en sesión. |
+| 2 | Usable (usable) | Tareas sin caminos sin salida. | Sí | Flujos y jerarquía claros en la Web App (métricas → gráfico → alertas → recomendaciones). |
+| 3 | Useful (útil) | Responde a necesidades reales. | Sí | Dominio de ahorro energético bien delimitado. |
+| 4 | Accessible (accesible) | Usable con distintas capacidades. | No | Sev 3 — Landing sin landmarks `<main>`/`<header>` y sin ARIA; Angular con solo 4 aria-. |
+| 5 | Credible (creíble) | Confianza, sin enlaces rotos. | Parcial | Contenido completo y profesional; revisar destinos reales de los enlaces del footer. |
+| 6 | Valuable (valioso) | Aporta valor; jerarquía clara. | Sí | El dashboard aporta valor: consumo, predicción, factura proyectada, ahorro y recomendaciones. |
+| 7 | Sistema de organización | Agrupaciones lógicas. | Sí | Agrupación lógica por métricas, gráfico, alertas y recomendaciones; consumo por electrodoméstico ordenado. |
+| 8 | Sistema de rotulado | Etiquetas claras y consistentes. | Sí | Rótulos claros en métricas y secciones (Consumo esta semana, Predicción, Mayor consumidor…). |
+| 9 | Sistema de navegación | Menús y jerarquía coherentes. | Parcial | Sev 2 — Falta landmark `<main>` en la Landing; orientación por lector de pantalla débil. |
+| 10 | Búsqueda + SEO/meta tags | Meta tags presentes y correctos. | Por verificar | Verificar `<meta>` description/OG en `index.html`. |
+
+## C. Checklist de Diseño Inclusivo, Accesibilidad e i18n
+
+| N° | Inclusive Design — Principio / Heurística | Qué verificar | Cumple | Severidad y notas |
+|---|---|---|---|---|
+| 1 | Proporciona experiencias comparables | Todos logran la tarea. | No | Sev 3 — Sin ARIA en la Landing; muy escasa en Angular (4 ocurrencias). |
+| 2 | Considera la situación | Funciona en distintos contextos. | Por verificar | Evaluar responsive / conexión. |
+| 3 | Sé consistente | Patrones familiares y coherentes. | Parcial | Sev 2 — Revisar consistencia de botones y componentes. |
+| 4 | Da control | El usuario controla la interacción. | Parcial | Sev 3 — Menú hamburguesa no controlable por teclado. |
+| 5 | Ofrece opciones | Varias formas de completar la tarea. | Por verificar | Evaluar en sesión. |
+| 6 | Prioriza el contenido | Lo esencial primero. | Sí | El dashboard presenta primero las métricas clave y el gráfico; lo secundario debajo. |
+| 7 | Aporta valor | Considera preferencias/capacidades. | Parcial | Ofrece idioma EN/ES y buena jerarquía; pendiente reforzar accesibilidad (ARIA/contraste). |
+| 8 | Texto alternativo (alt) | Imágenes de contenido con alt descriptivo. | Parcial | Sev 2 — alt presente pero vacío en logo, productos y redes de la Landing. |
+| 9 | Contraste y color | Contraste WCAG AA; color no único medio. | Parcial | Sev 2 — Enlaces del footer en gris claro sobre blanco (probable fallo AA) y subtítulos tenues; a favor: los indicadores no dependen solo del color (flecha + signo). |
+| 10 | Teclado y foco / ARIA | Navegable por teclado; roles ARIA. | No | Sev 3 — Cero ARIA/role en la Landing; solo 4 `aria-` en toda la App Angular. |
+| 11 | Internacionalización (i18n) | Soporte en_US / es_419; cadenas externalizadas. | Parcial | Sev 2 — Landing: `<html lang>` no cambia y usa 'es'/'en'. Frontend: usa 'en'/'es', no 'en_US'/'es_419'. |
+
+## TABLA RESUMEN DE HALLAZGOS
+
+| N° | Problema | Severidad (1–4) | Heurística / Principio violado(a) |
+|---|---|---|---|
+| 1 | Backend: secreto JWT hardcodeado y versionado en application.properties (jwt.secret = …2025), en lugar de externalizarlo por variable de entorno. | 4 | Ética y responsabilidad profesional / Seguridad |
+| 2 | Landing: `<html lang="en">` pero todo el contenido está en español; el toggle de idioma no actualiza document.documentElement.lang. | 3 | Inclusive Design: Experiencias comparables / a11y |
+| 3 | Landing: ausencia total de atributos ARIA y role, pese al requisito de configurar ARIA attributes. | 3 | Inclusive Design / a11y (requisito del curso) |
+| 4 | Landing: menú móvil como `<div class="hamburger">` en vez de `<button>`; no enfocable ni operable por teclado. | 3 | Usability: Control y libertad del usuario |
+| 5 | Backend: el endpoint WebSocket abre CORS a cualquier origen: `setAllowedOriginPatterns("*")` en WebSocketConfig. | 3 | Responsabilidad profesional / Seguridad |
+| 6 | Landing: sin landmarks semánticos `<header>`/`<main>` (solo `<footer>`); orientación por lector de pantalla deficiente. | 2 | Information Architecture: ¿Es accesible? |
+| 7 | Landing: logo, imágenes de producto e íconos de redes con `alt=""` (contenido tratado como decorativo). | 2 | Inclusive Design: Experiencias comparables |
+| 8 | Landing: siete botones 'Comprar' idénticos, sin diferenciación accesible por producto. | 2 | Usability: Reconocer antes que recordar |
+| 9 | Frontend: 327 sentencias console.log/error/warn presentes en el código de producción (src). | 2 | Responsabilidad profesional / calidad de código |
+| 10 | Frontend: cobertura de accesibilidad muy baja — solo 4 atributos aria- en todos los templates de la App. | 2 | Inclusive Design / a11y |
+| 11 | Backend: no existe manejo global de excepciones (`@ControllerAdvice`); respuestas de error inconsistentes y posible fuga de detalles técnicos. | 2 | Responsabilidad profesional / calidad |
+| 12 | Backend: 28 System.out.print y 5 printStackTrace en lugar de un logger; salida de depuración/errores no controlada. | 2 | Responsabilidad profesional / calidad |
+| 13 | Landing (UI): enlaces del footer en gris claro sobre blanco; contraste probablemente por debajo de WCAG AA. Medir valores exactos. | 2 | Inclusive Design: Contraste y color |
+| 14 | Landing (UI): inconsistencia de estilos de botón — cuatro estilos distintos (Comprar, Suscribirse, Enviar, Probar ahora) para acciones equivalentes. | 2 | Usability: Consistencia y estándares |
+| 15 | Frontend: 69 usos del tipo 'any' en TypeScript, lo que debilita el tipado estático y la robustez del código. | 1 | Responsabilidad profesional / calidad |
+| 16 | Landing (UI): texto secundario tenue (subtítulos y etiquetas '/mes') con contraste flojo sobre fondos claros. | 1 | Inclusive Design: Contraste y color |
+| 17 | i18n (web y móvil): se usan códigos 'en'/'es' en lugar de en_US / es_419 exigidos por el curso. | 1 | Internacionalización (i18n) |
+
+*Nota: 17 hallazgos consolidados de la revisión de código (Landing, Frontend y Backend) y de la evaluación visual de la interfaz (capturas de la Web App SEMS y la Landing). Los ítems dependientes de contraste exacto deben medirse con una herramienta (p. ej. axe / WAVE).*
+
+## DESCRIPCIÓN DE PROBLEMAS
+
+| PROBLEMA N.° 1 | Secreto JWT hardcodeado y versionado (Backend) |
+|---|---|
+| **Severidad** | 4 (muy grave) |
+| **Heurística / Principio violado** | Ética y responsabilidad profesional — Seguridad |
+| **Problema** | El backend expone la clave secreta usada para firmar los JSON Web Tokens directamente en un archivo versionado del repositorio público. Cualquiera con acceso al repositorio puede forjar tokens válidos y suplantar usuarios, comprometiendo toda la autenticación de la plataforma. |
+| **Evidencia (código)** | Backend › `src/main/resources/application.properties` (líneas 32–33): `jwt.secret=SEMSSecretKeyForJWTTokenGenerationAndValidation2025` (Incluir captura). |
+| **Recomendación** | Externalizar el secreto mediante variable de entorno (`JWT_SECRET`); rotar la clave comprometida; eliminarla del historial de Git. El equipo ya usa `.env` en `.gitignore`: basta mover el secreto ahí. |
+
+| PROBLEMA N.° 5 | WebSocket con CORS abierto a cualquier origen (Backend) |
+|---|---|
+| **Severidad** | 3 (mayor) |
+| **Heurística / Principio violado** | Responsabilidad profesional — Seguridad |
+| **Problema** | El endpoint WebSocket permite conexiones desde cualquier origen mediante `setAllowedOriginPatterns("*")`. Esto habilita que sitios de terceros establezcan conexiones en nombre del usuario (riesgo tipo Cross-Site WebSocket Hijacking), a diferencia de la configuración HTTP, que sí restringe orígenes por lista. |
+| **Evidencia (código)** | Backend › `.../infrastructure/config/WebSocketConfig.java` (línea 21): `registry.addEndpoint("/ws").setAllowedOriginPatterns("*").withSockJS();` (Incluir captura). |
+| **Recomendación** | Restringir los orígenes permitidos a los dominios propios (misma lista que usa WebSecurityConfiguration), preferiblemente por variable de entorno. |
+
+| PROBLEMA N.° 2 | Idioma declarado incorrecto en la Landing |
+|---|---|
+| **Severidad** | 3 (mayor) |
+| **Heurística / Principio violado** | Inclusive Design: Experiencias comparables / a11y |
+| **Problema** | El documento declara inglés como idioma (`lang="en"`) pero todo el contenido visible está en español, y el conmutador de idioma no actualiza el atributo lang del documento. Los lectores de pantalla aplicarán reglas fonéticas del idioma equivocado. |
+| **Evidencia (código)** | Landing › `index.html` (línea 2): `<html lang="en">`; `i18n.js` (línea 1): `let idioma = 'es';` sin actualización de documentElement.lang. (Incluir captura). |
+| **Recomendación** | Declarar el idioma real (es-419) y actualizar `document.documentElement.lang` al alternar idioma; alinear los códigos con en_US / es_419. |
+
+| PROBLEMA N.° 4 | Menú móvil no accesible por teclado (Landing) |
+|---|---|
+| **Severidad** | 3 (mayor) |
+| **Heurística / Principio violado** | Usability: Control y libertad del usuario / a11y |
+| **Problema** | El control que despliega el menú en móvil es un `<div>`, por lo que no recibe foco de teclado ni es accionable con Enter/Espacio, y no comunica su estado a las tecnologías de asistencia. Los usuarios que navegan por teclado quedan sin acceso a la navegación. |
+| **Evidencia (código)** | Landing › `index.html` (línea 32): `<div class="hamburger">` … (Incluir captura). |
+| **Recomendación** | Usar un `<button>` con `aria-expanded` y `aria-controls`; asegurar foco visible y operación por teclado. |
+
+| PROBLEMA N.° 13 | Contraste insuficiente en los enlaces del footer (UI) |
+|---|---|
+| **Severidad** | 2 (menor) |
+| **Heurística / Principio violado** | Inclusive Design: Contraste y color / WCAG 1.4.3 |
+| **Problema** | Los enlaces de las columnas del pie de página se muestran en un gris claro sobre fondo blanco. A simple vista el contraste parece quedar por debajo del mínimo AA (4.5:1 para texto normal), lo que dificulta la lectura a personas con baja visión. Debe medirse el valor exacto con una herramienta. |
+| **Evidencia (código)** | Evaluación visual sobre las capturas del footer de la Landing (secciones 'Opciones sobre el ahorro de energía', 'Beneficios de ahorrar energía', etc.). Medir con axe / WAVE / contrast checker. |
+| **Recomendación** | Oscurecer el color del texto de los enlaces hasta alcanzar al menos 4.5:1; aplicar el mismo criterio a subtítulos y etiquetas tenues. |
+
+| PROBLEMA N.° 14 | Inconsistencia de estilos de botón (UI) |
+|---|---|
+| **Severidad** | 2 (menor) |
+| **Heurística / Principio violado** | Usability: Consistencia y estándares |
+| **Problema** | Acciones equivalentes usan estilos de botón distintos a lo largo del producto: 'Comprar' es una píldora blanca con texto negro, 'Suscribirse' es un botón azul sólido, 'Enviar' es un rectángulo negro y 'Probar ahora'/'Iniciar Sesión' son píldoras con texto subrayado. Esta falta de un sistema de botones consistente dificulta el reconocimiento de las acciones primarias. |
+| **Evidencia (código)** | Evaluación visual sobre las capturas (Hero, Productos, Suscripciones y Footer de la Landing). |
+| **Recomendación** | Definir un Design System de botones (primario / secundario / terciario) y aplicarlo de forma uniforme en Landing y Web App. |
+
+*(Replique la ficha para los demás hallazgos de la Tabla Resumen: 3, 6, 7, 8, 9, 10, 11, 12, 15, 16 y 17.)*
+### 6.4.2. Auditoría realizada 2.
+
+**Proyecto auditado:** ThinkUp — SkillShare
+
+#### 6.4.2.1. Información del grupo auditado 2. 
+
+| CAMPO | VALOR | CAMPO | VALOR |
+|---|---|---|---|
+| **CARRERA** | Ingeniería de Software | **CURSO** | Diseño de Experimentos de Ing. de Software |
+| **NRC** | 12305 | **PROFESOR** | Noriega Melendez, Julio Manuel |
+| **AUDITOR** | GeoPsLabs — GeoPs | **FECHA** | 03/07/2026 |
+| **CLIENTE(S)** | Equipo ThinkUp (participantes de la sesión) | **VERSIÓN** | 2.0 |
+
+#### 6.4.2.2. Cronograma de auditoría realizada 2.
+
+| Fase | Actividad | Descripción | Duración |
+| :---: | :--- | :--- | :---: |
+| 1 | Planificación | Definir alcance, ubicar la organización ThinkUp-SkillShare y sus repositorios/entornos. | Día 1 |
+| 2 | Revisión documental | Lectura del Mid-term Report; verificación de trazabilidad y terminología. | Días 1–2 |
+| 3 | Auditoría de código | Clonar Landing, app Flutter y demás repos; revisar a11y, zoom, i18n, calidad y secretos. | Días 2–3 |
+| 4 | Sesión de evaluación UX | Recorrido de tareas críticas sobre la Landing y la app móvil; registro de problemas. | Días 3–4 |
+| 5 | Análisis y severidad | Consolidar hallazgos y asignar severidad (1–4) en la Tabla Resumen. | Día 4 |
+| 6 | Informe y entrega | Redactar descripciones y recomendaciones; presentar a ThinkUp y registrar la sección 6.4. | Día 5 |
+
+#### 6.4.1.3. Contenido de auditoría realizada 2. 
+
+## SITE o APP A EVALUAR
+SkillShare — Landing Page (React/Vite) + App móvil Flutter (Dart) + Backend C# (ASP.NET Core).
+
+## TAREAS A EVALUAR
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Registro / inicio de sesión de un usuario
+2. Crear un grupo de estudio
+3. Buscar y unirse a un grupo de estudio
+4. Compartir materiales / recursos en un grupo
+5. Chat grupal / organizar una reunión
+6. Editar el perfil / cambiar el idioma de la interfaz
+7. Explorar planes y suscripción (Landing — Pricing)
+
+## OBSERVACIONES — ASPECTOS POSITIVOS
+* **Landing (React/Vite):** declara `<html lang="es">` correctamente; las 13 imágenes incluyen `alt`; 18 atributos ARIA; landmarks completos (`<header>`, `<main>`, `<nav>`, `<footer>`); i18n en 3 idiomas (en/es/pt) que SÍ actualiza `document.documentElement.lang`; sin `console.*` ni secretos hardcodeados.
+* **Backend (C#/ASP.NET Core):** NO versiona secretos — `appsettings.json` está en `.gitignore` y la clave JWT se lee de configuración (no está en el código); validación de entrada con `[ApiController]` en 23 clases; 13 archivos de test.
+* **App Flutter:** i18n con archivos `.arb` (`app_en` / `app_es`) y `flutter_localizations`; arquitectura organizada por features.
+* **UX visible (capturas de la app móvil):** buenos estados vacíos con orientación ('No se encontraron archivos', 'No perteneces a ningún grupo — Únete a grupos para empezar a colaborar'); el formulario 'Create New Group' usa labels explícitas y texto de ayuda; diseño limpio con jerarquía clara; navegación inferior con icono + etiqueta; tarjetas de estado con icono + color + rótulo (no dependen solo del color).
+
+## ESCALA DE SEVERIDAD
+
+| Nivel | Descripción |
+|---|---|
+| **1** | **Problema superficial:** puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado, a no ser que exista disponibilidad de tiempo. |
+| **2** | **Problema menor:** puede ocurrir un poco más frecuentemente o es un poco más difícil de superar. Se le debería asignar una prioridad baja de cara al siguiente release. |
+| **3** | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
+| **4** | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+## A. Checklist de Usabilidad — 10 Heurísticas de Nielsen
+
+| N° | Usabilidad — Principio / Heurística | Qué verificar | Cumple | Severidad y notas |
+|---|---|---|---|---|
+| 1 | Visibilidad del estado del sistema | Feedback de carga, guardado y confirmaciones. | Parcial | Buenos estados vacíos con orientación (Archivos, Perfil); evaluar feedback de carga/guardado en sesión. |
+| 2 | Relación sistema–mundo real | Lenguaje e íconos del usuario. | No | Sev 3 — La interfaz mezcla inglés y español en las mismas pantallas (encabezados y navegación en inglés; Archivos/Perfil en español). |
+| 3 | Control y libertad del usuario | El usuario controla la interacción; salidas. | Parcial | Sev 1 — El 'scrim' del drawer (Landing) no es operable por teclado; en móvil hay botón de cierre (X) en el formulario. |
+| 4 | Consistencia y estándares | Uso uniforme de componentes. | No | Sev 3 — Idioma inconsistente (EN/ES mezclados) en toda la app móvil; rompe la uniformidad. |
+| 5 | Prevención de errores | Validaciones y confirmaciones. | Sí | El formulario 'Create New Group' usa labels claras, campo opcional marcado y texto de ayuda; backend valida con `[ApiController]`. |
+| 6 | Reconocer antes que recordar | Opciones visibles. | Sí | Navegación inferior con icono + etiqueta; secciones y acciones siempre visibles. |
+| 7 | Flexibilidad y eficiencia | Atajos para expertos. | Por verificar | Evaluar en sesión (p. ej. función 'AI Pick'). |
+| 8 | Diseño estético y minimalista | Sin ruido visual. | Sí | Interfaz limpia, moderna y con buena jerarquía visual. |
+| 9 | Recuperación de errores | Mensajes claros con solución. | Parcial | Sev 2 — Backend sin middleware global de excepciones; evaluar mensajes de error en la app. |
+| 10 | Ayuda y documentación | Ayuda accesible y buscable. | Parcial | Textos de ayuda contextuales en formularios; evaluar si existe ayuda general. |
+
+## B. Checklist de Arquitectura de Información
+
+| N° | Arq. Información — Principio / Heurística | Qué verificar | Cumple | Severidad y notas |
+|---|---|---|---|---|
+| 1 | Findable (encontrable) | Navegación y buscador efectivos. | Por verificar | Evaluar buscador de grupos en la app. |
+| 2 | Usable (usable) | Tareas sin caminos sin salida. | Parcial | Sev 2 — 7 enlaces `href="#"` en la Landing (React) son caminos sin salida. |
+| 3 | Useful (útil) | Responde a necesidades reales. | Sí | Dominio educativo/grupos de estudio bien delimitado. |
+| 4 | Accessible (accesible) | Usable con distintas capacidades. | Parcial | Sev 3 — La app Flutter no usa Semantics; la web (React) sí es accesible. |
+| 5 | Credible (creíble) | Confianza, sin enlaces rotos. | Parcial | Sev 2 — Enlaces `href="#"` restan credibilidad; verificar destinos. |
+| 6 | Valuable (valioso) | Aporta valor; jerarquía clara. | Sí | Grupos, archivos y perfil aportan valor; la Home prioriza grupos recomendados y destacados. |
+| 7 | Sistema de organización | Agrupaciones lógicas. | Sí | Home organizada en secciones claras (Recomendados, Destacados, Materias populares). |
+| 8 | Sistema de rotulado | Etiquetas claras y consistentes. | Parcial | Sev 3 — Rótulos legibles pero en idiomas mezclados (EN/ES), lo que rompe la consistencia. |
+| 9 | Sistema de navegación | Menús y jerarquía coherentes. | Sí | Landing con landmarks `<header>`/`<main>`/`<nav>`/`<footer>` y navegación por secciones. |
+| 10 | Búsqueda + SEO/meta tags | Meta tags presentes y correctos. | Sí | Landing con `<title>`, `<meta>` y `lang="es"` correctos. |
+
+## C. Checklist de Diseño Inclusivo, Accesibilidad e i18n
+
+| N° | Inclusive Design — Principio / Heurística | Qué verificar | Cumple | Severidad y notas |
+|---|---|---|---|---|
+| 1 | Proporciona experiencias comparables | Todos logran la tarea. | Parcial | Sev 3 — App Flutter sin Semantics (invisible a TalkBack); la web sí usa ARIA. |
+| 2 | Considera la situación | Funciona en distintos contextos. | Por verificar | Evaluar responsive / conexión. |
+| 3 | Sé consistente | Patrones familiares y coherentes. | No | Sev 3 — Idioma inconsistente (EN/ES) entre pantallas; rompe la coherencia de la experiencia. |
+| 4 | Da control | El usuario controla la interacción. | Parcial | Sev 1 — Scrim del drawer no operable por teclado. |
+| 5 | Ofrece opciones | Varias formas de completar la tarea. | Sí | Landing ofrece i18n en 3 idiomas (en/es/pt). |
+| 6 | Prioriza el contenido | Lo esencial primero. | Sí | La Home muestra primero los grupos recomendados y destacados. |
+| 7 | Aporta valor | Considera preferencias/capacidades. | Sí | Ofrece descubrimiento por materias, archivos y colaboración en grupos. |
+| 8 | Texto alternativo (alt) | Imágenes de contenido con alt descriptivo. | Sí | Las 13 imágenes de la Landing incluyen atributo alt. |
+| 9 | Contraste y color | Contraste WCAG AA; color no único medio. | Parcial | Sev 1 — Texto secundario tenue (subtítulos de tarjetas, metadatos del perfil); a favor: las tarjetas combinan icono + color + rótulo. |
+| 10 | Teclado y foco / ARIA | Navegable por teclado; roles ARIA / Semantics. | Parcial | Sev 2 — Landing con 18 `aria-` y landmarks (bien); app Flutter sin Semantics. |
+| 11 | Internacionalización (i18n) | Soporte en_US / es_419; cadenas externalizadas. | No | Sev 3 — Pese a los `.arb`, la app móvil mezcla EN/ES en la misma interfaz (traducción incompleta). La Landing sí lo resuelve bien (3 idiomas y actualiza lang). |
+
+## TABLA RESUMEN DE HALLAZGOS
+
+| N° | Problema | Severidad (1–4) | Heurística / Principio violado(a) |
+|---|---|---|---|
+| 1 | Backend: CORS abierto a cualquier origen — `AllowAnyOrigin().AllowAnyHeader()` en Program.cs. | 3 | Responsabilidad profesional / Seguridad |
+| 2 | App Flutter (UI): mezcla inglés y español en la misma interfaz — encabezados y navegación en inglés ('Recommended for You', 'Home/Groups/…'), formulario y vista de grupo en inglés, pero Archivos y Perfil en español. | 3 | Usability: Consistencia / Inclusive Design: Sé consistente / i18n |
+| 3 | App Flutter: no usa ningún widget `Semantics()` ni `semanticLabel`; la interfaz es prácticamente invisible para lectores de pantalla (TalkBack). | 3 | Inclusive Design: Experiencias comparables / a11y |
+| 4 | App Flutter: baseUrl hardcodeada a `http://10.0.2.2:5118/api` (loopback del emulador, sin HTTPS) en injection_container.dart; una build de producción no alcanzaría el backend real. | 3 | Responsabilidad profesional / configuración |
+| 5 | Landing: 7 enlaces `href="#"` sin destino real. | 2 | Usability / IA: ¿Es usable? |
+| 6 | App Flutter: 113 sentencias `print()` de depuración en el código de producción (`lib/`). | 2 | Responsabilidad profesional / calidad de código |
+| 7 | App Flutter: el modelo user.dart serializa el campo password en toJson/fromJson (riesgo de exponerlo en logs). | 2 | Responsabilidad profesional / manejo de datos |
+| 8 | Backend: 67 `Console.WriteLine` en lugar de `ILogger`; salida de depuración no controlada. | 2 | Responsabilidad profesional / calidad |
+| 9 | Backend: no hay middleware global de manejo de excepciones (`UseExceptionHandler`); respuestas de error inconsistentes. | 2 | Responsabilidad profesional / calidad |
+| 10 | App Flutter (UI): texto secundario tenue (subtítulos de tarjetas y metadatos del perfil) con contraste flojo sobre fondo claro. | 1 | Inclusive Design: Contraste y color |
+| 11 | Landing: el 'scrim' del drawer móvil es un `<div onClick>` sin foco de teclado (cierre no operable por teclado). | 1 | Inclusive Design / a11y |
+| 12 | i18n (naming): los archivos usan 'en'/'es' en lugar de en_US / es_419 exigidos por el curso. | 1 | Internacionalización (i18n) |
+
+*Notas del auditor: la apiKey de Firebase presente en firebase_options.dart NO se reporta como vulnerabilidad, porque las claves de Firebase son públicas por diseño; se recomienda verificar que las Firebase Security Rules estén restringidas. A diferencia de otros proyectos, este backend NO versiona su secreto JWT (buena práctica). Se añadieron hallazgos visuales de las capturas de la app móvil; los ítems de contraste deben medirse con herramienta (axe / WAVE).*
+
+## DESCRIPCIÓN DE PROBLEMAS
+
+| PROBLEMA N.° 1 | CORS abierto a cualquier origen (Backend) |
+|---|---|
+| **Severidad** | 3 (mayor) |
+| **Heurística / Principio violado** | Responsabilidad profesional — Seguridad |
+| **Problema** | El backend habilita CORS con `AllowAnyOrigin().AllowAnyHeader()`, permitiendo que cualquier sitio web consuma la API. Esto amplía la superficie de ataque (p. ej. abuso desde páginas de terceros) y no restringe el acceso a los dominios propios de la aplicación. |
+| **Evidencia (código)** | Backend › `Program.cs` (líneas 76–77): `policy.AllowAnyOrigin().AllowAnyHeader();` (Incluir captura). |
+| **Recomendación** | Restringir los orígenes a los dominios propios con `WithOrigins(...)`, preferiblemente leídos de configuración; limitar cabeceras y métodos a lo necesario. |
+
+| PROBLEMA N.° 2 | Interfaz con idiomas mezclados EN/ES (App móvil) |
+|---|---|
+| **Severidad** | 3 (mayor) |
+| **Heurística / Principio violado** | Usability: Consistencia y estándares / Inclusive Design: Sé consistente / i18n |
+| **Problema** | La aplicación móvil combina inglés y español dentro de las mismas pantallas: los encabezados de sección y la barra de navegación están en inglés ('Recommended for You', 'Featured Groups', 'Home/Groups/Explorer/Files/Profile'), el formulario de creación de grupo y la vista de grupo están en inglés ('Create New Group', 'Members', 'Join Group', '2mo ago'), mientras que las pantallas de Archivos y Perfil están en español ('Mis Archivos', 'No perteneces a ningún grupo', '25 años'). Esta inconsistencia dificulta la comprensión y transmite una imagen poco pulida. |
+| **Evidencia (código)** | Evaluación visual sobre las capturas de la app móvil (Home, Create New Group, detalle de grupo, Mis Archivos, Perfil). |
+| **Recomendación** | Externalizar TODAS las cadenas a los archivos `.arb` y consumirlas vía AppLocalizations; eliminar textos incrustados; verificar que al cambiar de idioma toda la interfaz se traduzca. |
+
+| PROBLEMA N.° 3 | App móvil sin accesibilidad (Flutter) |
+|---|---|
+| **Severidad** | 3 (mayor) |
+| **Heurística / Principio violado** | Inclusive Design: Experiencias comparables / a11y |
+| **Problema** | La aplicación Flutter no utiliza ningún widget `Semantics()` ni `semanticLabel`, por lo que los elementos personalizados (íconos, botones, tarjetas) no exponen información a los lectores de pantalla como TalkBack. Los usuarios ciegos o con baja visión no pueden operar la app de forma comparable. |
+| **Evidencia (código)** | flutter-mobile-application › `lib/` : 0 ocurrencias de `Semantics(` y de `semanticLabel`. (Incluir captura). |
+| **Recomendación** | Añadir Semantics/semanticLabel a íconos y controles personalizados; probar con TalkBack; preferir widgets Material que ya exponen semántica. |
+
+| PROBLEMA N.° 4 | URL del backend hardcodeada e insegura (Flutter) |
+|---|---|
+| **Severidad** | 3 (mayor) |
+| **Heurística / Principio violado** | Responsabilidad profesional — configuración / seguridad |
+| **Problema** | La URL base del backend está fijada en el código a `http://10.0.2.2:5118/api`, que es el loopback del emulador de Android y usa HTTP sin cifrar. Una build de producción apuntaría a una dirección inexistente para el usuario final, y el tráfico no viajaría cifrado. |
+| **Evidencia (código)** | flutter-mobile-application › `lib/core/injection_container.dart` (línea 15): `baseUrl: 'http://10.0.2.2:5118/api'`. (Incluir captura). |
+| **Recomendación** | Externalizar la URL por entorno (dev/prod) mediante configuración o dart-define; usar HTTPS en el backend desplegado. |
+
+*(Replique la ficha para los demás hallazgos de la Tabla Resumen: 5, 6, 7, 8, 9, 10, 11 y 12.)*
+
+### 6.4.3. Auditoría recibida. 
+
+#### 6.4.3.1. Información del grupo auditor.
+
+El grupo auditado corresponde al Grupo 2, responsable del desarrollo del proyecto GeoPS, una plataforma web orientada a conectar comercios de productos orientales con consumidores mediante promociones geolocalizadas. El equipo está conformado por siete integrantes y, para la coordinación de la auditoría y la entrega de la documentación, se tomó como contacto principal a Bryan Barba Estrada, representante del grupo durante el proceso de revisión.
+
+#### 6.4.3.2. Cronograma de auditoría recibida. 
+
+
+| **Código** | SGC_FR_010 |
+|---|---|
+| **Revisión** | Rev.00 |
+| **Fecha** | 16/10/2025 |
+
+| Campo | Detalle |
+|---|---|
+| **Objetivo** | Verificar el cumplimiento del informe GeoPS respecto a los requisitos establecidos en el Statement del curso. |
+| **Alcance** | Auditar la documentación del informe GeoPS. |
+| **Criterios de auditoría** | Statement del curso. |
+| **Tipo de auditoría** | Interna |
+| **Lugar** | Virtual |
+| **Fecha de auditoría** | 26-Jun |
+
+## Equipo auditor
+
+| Rol | Integrante |
+|---|---|
+| Auditor 1 (Líder) | Orosco Ttamiña, Juan Carlos |
+| Auditor 2 | Montañez Moreno, Luis Angel |
+| Auditor 3 | Rodriguez Zulueta, Andres Fernando |
+| Observador 1 | Díaz Fiestas, Jorge Luis |
+| Observador 2 | Ramírez Tello, Sebastian |
+| Observador 3 | Arevalo Nuñez, Leandro |
+
+## Cronograma de auditoría
+
+| Horario / Fecha | Área / Proceso | Equipo auditor | Responsable | Requisito |
+|---|---|---|---|---|
+| 09:00 – 09:30 | Reunión de apertura y presentación del alcance | Auditor 1 | Líder del equipo | Statement del curso |
+| 09:30 – 10:00 | Presentación y estructura del informe | Auditor 2 | Líder del equipo | Estructura del Informe |
+| 10:00 – 10:30 | Startup & Product Profile | Auditor 2 | Líder del equipo | Capítulo I |
+| 10:30 – 11:15 | Requirements Engineering y UX Research | Auditor 2 | Líder del equipo | Capítulo II |
+| 11:15 – 12:00 | Product Management | Auditor 2 | Líder del equipo | Capítulo III |
+| **12:00 – 13:00** | **Espacio de receso** | — | — | — |
+| 13:00 – 13:45 | UX Design | Auditor 4 | Líder del equipo | Capítulo IV |
+| 13:45 – 14:30 | Software Architecture | Auditor 4 | Líder del equipo | Capítulo IV |
+| 14:30 – 15:00 | Software Implementation | Auditor 2 | Líder del equipo | Capítulo V |
+| 15:00 – 15:45 | Testing, Static Verification y Validation | Auditor 1 | Líder del equipo | Capítulo VI |
+| 15:45 – 16:15 | DevOps Practices | Auditor 1 | Líder del equipo | Capítulo VII |
+| 16:15 – 17:00 | Experiment Planning y Experiment Design | Auditor 1 | Líder del equipo | Capítulo VIII: Secciones 8.1 y 8.2 |
+| 17:00 – 17:45 | Experimentation, Analysis y Continuous Learning | Auditor 1 | Líder del equipo | Capítulo VIII: Secciones 8.3 – 8.6 |
+| 17:45 – 18:00 | Reunión de cierre y consolidación de hallazgos | Auditor 1 | Líder del equipo | Resultados de la auditoría |
+
+
+#### 6.4.3.3. Contenido de auditoría recibida. 
+
+#### A1. Presentación y estructura del informe
+Se verificó que el informe GeoPS incluye carátula, datos del curso, relación de integrantes, registro de versiones, Project Report Collaboration Insights, tabla de contenidos y Student Outcome. Estos elementos corresponden a la estructura general solicitada en el Statement.
+* **Hallazgo:** No se identificaron desviaciones relevantes en la presentación y estructura general del informe.
+* **Recomendación:** Mantener la estructura actual y para futuras versiones revisar que el título del documento se alinee con el nombre solicitado por el Statement, ya que el informe indica “Informe de TP” y el Statement hace referencia a “Informe de Trabajo Final”.
+
+#### A2. Startup y Product Profile
+Se verificó que el informe desarrolla el Startup Profile y el Solution Profile conforme a la estructura definida en el Statement. La documentación incluye la descripción de la startup, misión, visión, antecedentes y problemática, el proceso Lean UX y la definición de los segmentos objetivo, proporcionando el contexto necesario para comprender el proyecto.
+* **Hallazgo:** No se identificaron desviaciones relevantes respecto a los requisitos establecidos para este apartado. La información presentada es consistente con la estructura solicitada en el Statement.
+* **Recomendación:** Mantener el nivel de detalle y la coherencia entre la descripción de la startup, la problemática identificada y la propuesta de valor presentada en el informe.
+
+#### A3. Lean UX y Requirements
+Se verificó que el informe desarrolla el proceso de levantamiento y análisis de requerimientos mediante el análisis competitivo, entrevistas, registro y análisis de entrevistas, User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping y Ubiquitous Language. La documentación mantiene coherencia con el proceso de Needfinding definido en el Statement y evidencia el trabajo realizado para comprender las necesidades de los segmentos objetivo.
+* **Hallazgo:** Se evidencia el desarrollo de la mayoría de los artefactos del proceso de Needfinding; sin embargo, no se identifica la documentación del As-Is Scenario Mapping, artefacto solicitado explícitamente en el Statement como parte de esta etapa.
+* **Recomendación:** Incorporar el As-Is Scenario Mapping, describiendo el flujo actual de interacción de los usuarios antes de la implementación de la solución, con el fin de completar el proceso de análisis de requerimientos y mantener la trazabilidad entre el problema identificado y la propuesta de solución.
+
+#### A4. UX Research
+Se verificó que el informe documenta los principales artefactos de UX Research, incluyendo User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping, los cuales fueron desarrollados a partir del análisis de las entrevistas realizadas a los segmentos objetivo. Los artefactos mantienen coherencia con la problemática identificada y contribuyen a comprender las necesidades y el comportamiento de los usuarios.
+* **Hallazgo:** No se identificaron desviaciones relevantes específicas en los artefactos de UX Research. La observación relacionada con la ausencia del As-Is Scenario Mapping fue registrada en el criterio anterior por formar parte del proceso de Requirements Elicitation & Analysis.
+* **Recomendación:** Mantener la consistencia entre los artefactos de UX Research y asegurar que cualquier actualización en los User Personas o User Journey Maps se refleje también en los demás artefactos relacionados, preservando la trazabilidad del proceso de diseño centrado en el usuario.
+
+#### A5. Product Management
+Se verificó que el informe desarrolla los principales artefactos de Product Management, incluyendo User Stories, Impact Mapping y Product Backlog. Los artefactos presentados mantienen coherencia con los requerimientos identificados y permiten comprender la planificación funcional del producto. Sin embargo, se identificó una observación respecto a la documentación del escenario futuro de la solución.
+* **Hallazgo:** El informe presenta User Stories, Impact Mapping y Product Backlog; sin embargo, no se evidencia el To-Be Scenario Mapping solicitado por el Statement como parte de la especificación de requisitos. La ausencia de este artefacto limita la trazabilidad entre el escenario actual (As-Is) y la solución propuesta (To-Be).
+* **Recomendación:** Incorporar el To-Be Scenario Mapping, mostrando la evolución del proceso actual hacia el proceso propuesto y manteniendo la relación con los User Personas y los requerimientos definidos.
+
+#### A6. UX Design
+Se verificó que el informe documenta el proceso de diseño del producto mediante Style Guidelines, Information Architecture, Landing Page UI Design y los artefactos de UX/UI correspondientes a la aplicación web. La documentación presentada mantiene coherencia con la solución propuesta y evidencia el proceso de diseño de la interfaz. Sin embargo, se identificó una observación respecto al alcance de los artefactos de diseño requeridos por el Statement.
+* **Hallazgo:** El informe desarrolla de forma adecuada los artefactos de diseño para la aplicación web; sin embargo, no se evidencian los artefactos correspondientes al diseño de la aplicación móvil (Style Guidelines, Wireframes, Mockups, User Flow y Prototipos Android/iOS) solicitados por el Statement.
+* **Recomendación:** Incorporar los artefactos de UX/UI para la aplicación móvil o justificar formalmente que el alcance del proyecto contempla únicamente una solución web, de manera que exista consistencia entre el alcance definido y la documentación presentada.
+
+#### A7. Software Architecture
+Se verificó que el informe documenta la arquitectura de software mediante los diagramas de contexto, contenedores, componentes, diagramas de clases, diccionario de clases y el diseño de la base de datos. Los artefactos presentados mantienen consistencia con la solución propuesta y permiten comprender la organización de los diferentes componentes del sistema, así como sus relaciones e interacción.
+* **Hallazgo:** No se identificaron desviaciones relevantes respecto a los requisitos establecidos para la documentación de la arquitectura de software. Los artefactos presentados cumplen con la estructura definida en el Statement.
+* **Recomendación:** Mantener la consistencia entre los diagramas arquitectónicos y la implementación del sistema, asegurando que futuras modificaciones en la arquitectura se reflejen también en la documentación técnica correspondiente.
+
+#### A8. Software Implementation
+Se verificó que el informe documenta la implementación del producto mediante la configuración del entorno de desarrollo, la gestión del código fuente, la configuración del despliegue, los Sprint Backlogs, las evidencias de la Landing Page, la aplicación web, el backend RESTful y la documentación de la API. Asimismo, se evidencia la colaboración del equipo durante el desarrollo del proyecto. No obstante, se identificaron diferencias respecto a algunos artefactos requeridos por el Statement.
+* **Hallazgo:** El informe presenta las evidencias de implementación para la solución web y el backend; sin embargo, no se evidencia un apartado correspondiente al Acuerdo de Servicio (SaaS) ni a la Implemented Native-Mobile Application Evidence, ambos considerados dentro de la estructura solicitada por el Statement.
+* **Recomendación:** Incorporar los apartados correspondientes al Acuerdo de Servicio (SaaS) y a la implementación de la aplicación móvil o justificar formalmente que dichos elementos no forman parte del alcance del proyecto aprobado.
+
+#### A9. Testing y Quality Assurance
+Se verificó que el informe documenta las actividades de verificación y validación mediante pruebas unitarias, pruebas de integración, pruebas basadas en comportamiento (BDD), pruebas de sistema y pruebas de la estructura del formulario de campañas. La documentación presentada evidencia la ejecución de diferentes niveles de prueba para validar el funcionamiento de la solución desarrollada y mantiene consistencia con la estructura establecida en el Statement.
+* **Hallazgo:** No se identificaron desviaciones relevantes respecto a los requisitos establecidos para la documentación de las pruebas del sistema. Los artefactos presentados cumplen con la estructura definida en el Statement.
+* **Recomendación:** Mantener la documentación de las evidencias de prueba actualizada, incorporando los resultados de nuevas funcionalidades conforme evolucione el producto y asegurando la trazabilidad entre los casos de prueba y los requerimientos implementados.
+
+#### A10. Static Verification
+Se revisó la documentación correspondiente a la verificación estática del software, verificando la existencia de artefactos relacionados con el análisis estático del código, estándares de codificación, calidad, seguridad y revisiones técnicas. Durante la revisión se identificó que estos elementos no se encuentran documentados dentro del informe.
+* **Hallazgo:** El informe desarrolla las pruebas funcionales del sistema; sin embargo, no se evidencia la sección de Static Testing & Verification requerida por el Statement, incluyendo el análisis estático del código, la evaluación de calidad y seguridad, así como las revisiones técnicas del software.
+* **Recomendación:** Incorporar la sección de Static Testing & Verification, documentando las herramientas utilizadas para el análisis estático, los estándares de codificación aplicados, las evidencias de calidad y seguridad del código y las revisiones técnicas realizadas durante el desarrollo.
+
+#### A11. Validation y UX Audit
+Se revisó la documentación correspondiente a la validación del producto con usuarios y a la auditoría de experiencia de usuario. Durante la evaluación se verificó que el informe desarrolla las pruebas funcionales del sistema; sin embargo, no se identifican evidencias relacionadas con las entrevistas de validación, las evaluaciones heurísticas ni la auditoría UX definidas en el Statement.
+* **Hallazgo:** El informe documenta las pruebas de verificación del software, pero no evidencia las secciones de Validation Interviews ni Auditoría de Experiencias de Usuario, incluyendo el diseño y registro de entrevistas, las evaluaciones heurísticas y los entregables de auditoría requeridos por el Statement.
+* **Recomendación:** Incorporar la documentación de las entrevistas de validación con usuarios, las evaluaciones heurísticas y la auditoría de experiencia de usuario, incluyendo los artefactos y resultados correspondientes para completar el proceso de validación definido en el Statement.
+
+#### A12. DevOps Practices
+Se verificó que el informe documenta las prácticas de DevOps mediante la implementación de Continuous Integration, Continuous Delivery y Continuous Deployment, incluyendo las herramientas utilizadas y los componentes del pipeline. La información presentada evidencia la automatización del proceso de integración y despliegue; sin embargo, se identificó una observación respecto a la cobertura de todas las prácticas definidas en el Statement.
+* **Hallazgo:** El informe desarrolla las prácticas de Continuous Integration, Continuous Delivery y Continuous Deployment; sin embargo, no se evidencia la sección correspondiente a Continuous Monitoring, incluyendo las herramientas de monitoreo, los componentes del pipeline, las alertas y las notificaciones requeridas por el Statement.
+* **Recomendación:** Incorporar la documentación de Continuous Monitoring, describiendo las herramientas utilizadas, los mecanismos de monitoreo implementados y las estrategias de alertas y notificaciones para completar el ciclo de prácticas DevOps definido en el Statement.
+
+#### A13. Experiment Planning
+Se verificó que el informe desarrolla la fase de planificación de experimentos mediante los apartados As-Is Summary, Raw Material, Experiment-Ready Questions, Question Backlog y Experiment Cards, siguiendo la estructura establecida en el Statement. Los artefactos permiten comprender el proceso de planificación de los experimentos; sin embargo, se identificó una oportunidad de mejora en la trazabilidad entre ellos.
+* **Hallazgo:** Se presentan el Question Backlog y las Experiment Cards; sin embargo, la relación entre las preguntas de investigación y los experimentos propuestos no se evidencia de forma clara, dificultando la trazabilidad del proceso de planificación experimental.
+* **Recomendación:** Fortalecer la relación entre el Question Backlog y las Experiment Cards, indicando explícitamente qué preguntas de investigación son atendidas por cada experimento y cómo estas se derivan de los supuestos identificados.
+
+#### A14. Experiment Design
+Se verificó que el informe desarrolla la fase de diseño de experimentos mediante la definición de hipótesis, métricas de negocio, medidas, condiciones, cálculos de escala, selección de métodos y plan de seguimiento. En términos generales, la estructura del capítulo es consistente con la definida en el Statement; sin embargo, se identificó una observación respecto al desarrollo de las hipótesis experimentales.
+* **Hallazgo:** Se presentan las Experiment Cards y las hipótesis del experimento; sin embargo, solo se identifican dos experimentos/hipótesis principales. Si el Statement o la rúbrica establecen el desarrollo de cinco hipótesis, el entregable resulta incompleto y limita la validación de los diferentes supuestos planteados para la solución.
+* **Recomendación:** Completar las cinco hipótesis/experimentos requeridos, asegurando que cada una mantenga relación con el Question Backlog, las métricas de negocio, las medidas y las condiciones definidas para el experimento.
+
+#### A15. Experimentation
+Se verificó que el informe documenta la fase de experimentación mediante los apartados To-Be User Stories y To-Be Product Backlog, evidenciando la definición de los requerimientos derivados de los experimentos. No obstante, la documentación presentada se centra principalmente en la planificación de la solución y no desarrolla con suficiente detalle la ejecución y los resultados de los experimentos realizados.
+* **Hallazgo:** La fase de Experimentation se limita principalmente a la documentación de las To-Be User Stories y el To-Be Product Backlog, sin evidenciar de forma clara la ejecución de los experimentos ni los resultados obtenidos durante esta etapa.
+* **Recomendación:** Complementar la documentación de la fase de experimentación incorporando evidencias de la ejecución de los experimentos, los resultados obtenidos y la relación entre estos resultados y las hipótesis planteadas en la etapa de diseño experimental.
+
+#### A16. Experiment Analysis y Continuous Learning
+Se revisó la documentación correspondiente al análisis de resultados y al proceso de aprendizaje continuo derivado de la experimentación. Durante la evaluación se verificó que el informe desarrolla las fases de planificación, diseño y experimentación; sin embargo, no se evidencia una sección destinada al análisis de los resultados obtenidos ni a la documentación del aprendizaje generado a partir de los experimentos realizados.
+* **Hallazgo:** El informe concluye la sección de Experiment-Driven Development con la fase de Experimentation, sin evidenciar el análisis de los resultados obtenidos ni las actividades de Continuous Learning definidas en el Statement. Esto limita la demostración de que los experimentos fueron evaluados y utilizados para retroalimentar el desarrollo del producto.
+* **Recomendación:** Incorporar la documentación correspondiente al Experiment Analysis y Continuous Learning, incluyendo el análisis de los resultados de cada experimento, las conclusiones obtenidas, las decisiones tomadas a partir de la evidencia recopilada y la actualización de los artefactos del proyecto cuando corresponda.
+
+#### 6.4.3.4. Resumen de modificaciones para subsanar hallazgos. 
+
+
+# Capítulo VII: DevOps Practices
 
 ## 7.1. Continuous Integration
 
@@ -4015,9 +5176,52 @@ El objetivo de **Continuous Deployment (CD)** es que los cambios aprobados pasen
 2. **Despliegue en Hosting:** Implementación automática en los servidores de Firebase tras pasar las pruebas unitarias.
 3. **Invalidación de Caché:** Limpieza automática de caché para que los usuarios de **GeoPS** reciban la versión más reciente al instante.
 
+## 7.4. Continuous Monitoring 
 
+### 7.4.1. Tools and Practices 
+En **GeoPS Labs**, el monitoreo continuo se enfoca en garantizar la alta disponibilidad de la API, la estabilidad de la interfaz web y la detección temprana de excepciones de negocio. Dado que el backend implementa patrones complejos como **DDD y CQRS**, la observabilidad es clave para rastrear el flujo correcto de los *Commands* y *Queries* a través de las capas del sistema.
 
-# Capítulo 8: Experiment-Driven Development
+| Herramienta | Tipo | Descripción | Propósito |
+| :--- | :--- | :--- | :--- |
+| **Spring Boot Actuator** | Telemetría (Backend) | Módulo nativo de Spring Boot incluido en el `pom.xml` de `geops-api`. | Exponer los endpoints de salud (`/actuator/health`) y métricas de consumo de hilos, base de datos y memoria JVM. |
+| **Sentry SDK (Java/Angular)** | Monitoreo de Errores (APM) | Integración multiplataforma en ambos repositorios. | Capturar excepciones no controladas en Angular (errores de UI o fallos de conexión) y excepciones críticas en los servicios de aplicación del backend. |
+| **Logback / Slf4j** | Registro (Logging) | Framework de logging estándar integrado en Spring Boot. | Generar trazas estructuradas durante la ejecución de los casos de uso (`Identity`, `Campaign`, `Offers`). |
+| **UptimeRobot** | Disponibilidad | Servicio externo de monitoreo sintético. | Validar la disponibilidad 24/7 de los controladores REST mediante sondeos HTTP cada 5 minutos. |
+
+#### Best Practices Implemented
+* **Structured Exception Logging:** Toda excepción lanzada por los validadores o fallos en el dominio (como errores de autenticación JWT o fallos al crear campañas) se registra de forma estructurada con su respectivo nivel de severidad (`WARN` o `ERROR`).
+* **Health Check Probing:** Uso del endpoint público de Actuator para que los orquestadores de contenedores (Docker) verifiquen si la instancia de la API está sana o requiere un reinicio automático.
+* **Front-End Error Catching:** Captura global de errores en Angular mediante un `ErrorHandler` personalizado que envía los *stack traces* directamente a Sentry, incluyendo el contexto del navegador del usuario.
+
+### 7.4.2. Monitoring Pipeline Components 
+Este pipeline se encarga de la recolección activa y pasiva de los datos de comportamiento e infraestructura de **GeoPS**:
+
+1. **Ingesta de Métricas de la JVM:** Spring Boot Actuator recopila el estado de la máquina virtual de Java, el uso de CPU y el estado del pool de conexiones JPA/Hibernate hacia MySQL.
+2. **Colector de Eventos de la UI:** El frontend de Angular intercepta fallos de red (códigos HTTP 4xx o 5xx) a través de sus *Interceptors* y reporta las anomalías en tiempo real.
+3. **Persistencia de Trazas (Logs):** Los logs generados por el contenedor Docker de la API se centralizan en la plataforma de despliegue para permitir auditorías rápidas sobre operaciones sensibles (como el registro de usuarios o edición de campañas).
+
+<div align="center">
+    <img src="resources/imgs/chapter-vii/diagrama-pipeline-components.png" 
+    alt="Pipeline Architecture Diagram" width="700">
+</div>
+
+### 7.4.3. Alerting Pipeline Components 
+Este componente procesa los datos monitoreados y decide de manera inteligente si el comportamiento del sistema requiere la intervención inmediata del equipo de desarrollo de GeoPS Labs:
+
+1. **Filtro de Excepciones DDD/CQRS:** Sentry clasifica las anomalías recolectadas de forma automática. Las excepciones por validación de negocio (por ejemplo, datos inválidos o mal formateados en un `CreateCampaignCommand`) se clasifican como advertencias (`Warning`). Por el contrario, los fallos de infraestructura, como la pérdida de conexión a la base de datos o fallos de tokens expirados en el backend, se elevan instantáneamente a estado `Critical`.
+2. **Evaluación de Umbrales de Infraestructura:** Se establece un disparador automático en el orquestador si el contenedor Docker de la API (`geops-api`) sobrepasa el **85%** de uso de memoria RAM asignada de forma sostenida por un lapso mayor a 3 minutos.
+3. **Mecanismo Anti-Falso Positivo:** UptimeRobot requiere que cualquier fallo de respuesta HTTP (códigos 5xx o timeout) en el endpoint público de la API sea confirmado de forma simultánea desde tres nodos geográficos distintos antes de activar formalmente una alerta general.
+
+### 7.4.4. Notification Pipeline Components. 
+Una vez que el pipeline de alertas valida y confirma una anomalía real, este flujo distribuye la información de manera eficiente para mitigar los tiempos de respuesta y resolución:
+
+1. **Enriquecimiento del Evento:** Sentry y los recolectores de logs empaquetan la alerta añadiendo metadatos contextuales clave de forma automática: entorno afectado (`develop` o `main`), el endpoint específico del fallo (ej. `/api/v1/auth/signin`), el stack trace del error y el ID del último commit de GitHub asociado.
+2. **Despacho vía Webhooks (Slack/Discord):** Envío inmediato de la alerta en formato enriquecido e interactivo a los canales de comunicación internos dedicados al equipo de ingeniería y DevOps de GeoPS Labs.
+3. **Protocolo de Escalabilidad por Correo (SMTP):** Si una alerta catalogada con severidad `Critical` o `Fatal` (como la caída total del servicio de la API) no recibe una confirmación de recepción manual ("Acknowledge") por parte de un desarrollador en un lapso de 15 minutos, el pipeline escala de forma automatizada enviando correos electrónicos de alta prioridad con alertas persistentes a los líderes técnicos del proyecto.
+
+# Part III: Experiment-Driven Lifecycle 
+
+# Capítulo VIII: Experiment-Driven Development 
 
 ## 8.1. Experiment Planning
 
@@ -4195,8 +5399,8 @@ Las variables e indicadores cuantitativos que se emplearán para contrastar las 
 
 Para garantizar la validez científica de los resultados de la investigación y minimizar los errores atribuibles al azar durante la evaluación de la escala, se establecen formalmente los siguientes parámetros estadísticos que rigen la precisión y certeza del diseño:
 
-* **Nivel de Significación ($\alpha$):** Establecido en un **5%** para prevenir errores de Tipo I (falsos positivos), asegurando que el éxito detectado no sea producto del azar.
-* **Potencia Estadística ($1-\beta$):** Definida en un **80%** para mitigar el riesgo de cometer errores de Tipo II (falsos negativos), garantizando que la plataforma detecte los impactos reales si estos existen.
+* **Nivel de Significación :** Establecido en un **5%** para prevenir errores de Tipo I (falsos positivos), asegurando que el éxito detectado no sea producto del azar.
+* **Potencia Estadística :** Definida en un **80%** para mitigar el riesgo de cometer errores de Tipo II (falsos negativos), garantizando que la plataforma detecte los impactos reales si estos existen.
 * **Efecto Mínimo Detectable (MDE):** Se determina que la magnitud mínima de cambio estructural que justifica la inversión técnica, operativa e infraestructura para escalar una funcionalidad experimental de forma definitiva a producción es un incremento absoluto del **5%** sobre los promedios base.
 
 A continuación, se detalla la matriz operacional de decisiones de escala para evaluar el éxito de los 5 experimentos planificados:
@@ -4226,7 +5430,7 @@ Dada la naturaleza de GeoPS como plataforma responsiva de uso en exteriores, la 
 * **PWA (Progressive Web App):** 100/100 – Cumplimiento absoluto de los manifiestos y *Service Workers* necesarios para habilitar el envío de notificaciones push en segundo plano e incentivar la opción "Agregar a la pantalla de inicio".
 * **Best Practices (Buenas Prácticas):** 100/100 – Ejecución estricta bajo cifrado HTTPS, requisito de seguridad obligatorio e ineludible en la ingeniería moderna para que los navegadores móviles autoricen el uso de las APIs de Geolocalización y Cámara.
 
-### 8.2.8. Web and Mobile Tracking Plan
+### 8.2.8. Web Tracking Plan
 
 El plan de monitoreo analítico del comportamiento de los experimentos web en dispositivos móviles se estructurará en fases progresivas:
 
@@ -4310,7 +5514,360 @@ Se detalla la incorporación orgánica de los tickets asociados a las funcionali
 | **19** | **GEOP-UA16** | Generador de Enlaces Cortos de Recomendación | Acoplamiento de la API nativa de compartición del navegador móvil (`Web Share API`) y estructuración de parámetros de rastreo orgánico. | **2** |
 
 
+#### 8.3.3.1. To-Be Sprint Backlog
 
+El siguiente *To-Be Sprint Backlog* organiza las funcionalidades incorporadas durante el **Sprint 5**. Cada historia se descompone en tareas técnicas cuya estimación total coincide con los *Story Points* asignados en el backlog del producto. Debido a que estas funcionalidades cuentan con implementación verificable en GeoPS, las actividades mantienen el estado **Done**.
+
+<table>
+  <thead>
+    <tr>
+      <th>Sprint #</th>
+      <th colspan="7">Sprint 5</th>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="6">WorkItem/Task</th>
+    </tr>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Estimation<br>(Story Points)</th>
+      <th>Assigned To</th>
+      <th>Status<br>(To-do/In-Process/To-Review/Done)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><strong>UA11</strong></td>
+      <td rowspan="2">Exploración de ofertas por distrito en el mapa</td>
+      <td><strong>TK01</strong></td>
+      <td>Mostrar las ofertas en el mapa interactivo</td>
+      <td>Representar las ofertas disponibles en el mapa y permitir que el usuario acceda al detalle de cada promoción.</td>
+      <td>3</td>
+      <td rowspan="2">Bryan Eduardo Barba Estrada</td>
+      <td rowspan="2">Done</td>
+    </tr>
+    <tr>
+      <td><strong>TK02</strong></td>
+      <td>Filtrar las ofertas por distrito</td>
+      <td>Actualizar el mapa y el listado al seleccionar San Borja, Lince, Barrio Chino o la opción para mostrar todos.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>UA12</strong></td>
+      <td rowspan="2">Búsqueda y ordenamiento avanzado de ofertas</td>
+      <td><strong>TK03</strong></td>
+      <td>Buscar ofertas por texto y ubicación</td>
+      <td>Permitir que el usuario encuentre promociones mediante palabras clave y la ubicación seleccionada.</td>
+      <td>2</td>
+      <td rowspan="2">Vanessa May Lang Choy Robles</td>
+      <td rowspan="2">Done</td>
+    </tr>
+    <tr>
+      <td><strong>TK04</strong></td>
+      <td>Ordenar los resultados de las ofertas</td>
+      <td>Permitir que el usuario ordene las promociones por precio, calificación o relevancia.</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>UA13</strong></td>
+      <td rowspan="2">Consulta del rendimiento de las campañas</td>
+      <td><strong>TK05</strong></td>
+      <td>Contabilizar visualizaciones y clics</td>
+      <td>Registrar cuántas veces se muestran las promociones y cuántas veces los consumidores acceden a ellas.</td>
+      <td>3</td>
+      <td rowspan="2">Santiago Iván Cárdenas Concha<br>Alvaro Fabrizzio Salazar Caballero</td>
+      <td rowspan="2">Done</td>
+    </tr>
+    <tr>
+      <td><strong>TK06</strong></td>
+      <td>Mostrar la tasa de interacción</td>
+      <td>Presentar las visualizaciones, clics y tasa de interacción en el resumen y detalle de cada campaña.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>UA14</strong></td>
+      <td rowspan="2">Control del estado de las campañas</td>
+      <td><strong>TK07</strong></td>
+      <td>Activar o finalizar una campaña</td>
+      <td>Permitir que el propietario controle la disponibilidad de una campaña mediante sus opciones de activación y finalización.</td>
+      <td>2</td>
+      <td rowspan="2">Natalia Ximena Valverde Portuguez</td>
+      <td rowspan="2">Done</td>
+    </tr>
+    <tr>
+      <td><strong>TK08</strong></td>
+      <td>Confirmar los cambios de estado</td>
+      <td>Solicitar confirmación antes de activar o finalizar una campaña e informar el resultado al propietario.</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>UA15</strong></td>
+      <td rowspan="2">Actualización de los datos del perfil</td>
+      <td><strong>TK09</strong></td>
+      <td>Consultar la información del perfil</td>
+      <td>Mostrar los datos de la cuenta y la información correspondiente al tipo de usuario autenticado.</td>
+      <td>3</td>
+      <td rowspan="2">Nicolas Alejandro Vera Nuñez</td>
+      <td rowspan="2">Done</td>
+    </tr>
+    <tr>
+      <td><strong>TK10</strong></td>
+      <td>Editar los datos de contacto</td>
+      <td>Permitir que el usuario modifique su nombre, correo y teléfono, y reciba una confirmación al guardar.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>UA16</strong></td>
+      <td rowspan="2">Administración de las ofertas de una campaña</td>
+      <td><strong>TK11</strong></td>
+      <td>Agregar, modificar y retirar ofertas</td>
+      <td>Permitir que el propietario mantenga actualizadas las promociones asociadas a cada campaña.</td>
+      <td>3</td>
+      <td rowspan="2">Adriana Maria Diestra Zambrano</td>
+      <td rowspan="2">Done</td>
+    </tr>
+    <tr>
+      <td><strong>TK12</strong></td>
+      <td>Administrar las ofertas desde la campaña</td>
+      <td>Mostrar las promociones de una campaña y ofrecer acciones para agregar, modificar o retirar cada oferta.</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+*Nota.* Elaboración propia. La estimación total del Sprint 5 es de **26 Story Points**.
+
+### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
+
+#### 8.3.3.2. Implemented To-Be Landing Page Evidence 
+#### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence 
+#### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence 
+#### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence 
+#### 8.3.3.6. Team Collaboration Insights
+
+
+### 8.3.4. To-Be Validation Interviews 
+
+#### 8.3.4.1. Diseño de Entrevistas. 
+
+Esta sección establece el diseño de las entrevistas de validación del incremento To-Be, en las que usuarios de los segmentos objetivo interactúan con el Landing Page y con la aplicación web para evaluar las nuevas funcionalidades derivadas del ciclo experimental. El objetivo es contrastar las hipótesis de trabajo (8.2.1) con la percepción real de los usuarios en términos de utilidad, facilidad de uso y aporte a la experiencia.
+
+### Segmentos y elementos a validar
+
+Se consideran los dos segmentos objetivo del proyecto:
+- **Consumidor de ofertas** (segmento demanda).
+- **Propietario de negocio local** (segmento oferta).
+
+Elementos incluidos en la sesión de validación: Landing Page (propuesta de valor y acceso al modo demo) y la aplicación web (flujos core del negocio).
+
+### User flows a validar
+
+**Consumidor:**
+1. Exploración de ofertas por distrito en el mapa interactivo (GEOP-UA11).
+2. Búsqueda y ordenamiento de ofertas (GEOP-UA12).
+3. Recepción de una alerta de proximidad / oferta en tiempo real.
+
+**Propietario de negocio:**
+1. Consulta del rendimiento de una campaña (GEOP-UA13).
+2. Control del estado de una campaña: activar / pausar (GEOP-UA14).
+3. Administración de las ofertas de una campaña: crear / editar / eliminar (GEOP-UA16).
+
+### Preguntas de la entrevista
+
+**Segmento Consumidor**
+
+*Preguntas principales:*
+1. ¿La visualización de ofertas por distrito en el mapa le resultó clara para encontrar promociones cercanas?
+2. ¿Confía en la precisión de los datos de geolocalización que muestra la plataforma?
+3. ¿Considera que las alertas de ofertas en tiempo real modificarían sus hábitos de compra?
+4. ¿La búsqueda y el ordenamiento le permitieron encontrar rápidamente lo que buscaba?
+
+*Preguntas complementarias:*
+- ¿Qué dificultad, si alguna, encontró al completar la tarea?
+- ¿Otorgaría permisos de ubicación a la plataforma? ¿Qué le daría confianza para hacerlo?
+- ¿Recomendaría esta experiencia a un amigo? ¿Por qué?
+
+**Segmento Propietario de negocio**
+
+*Preguntas principales:*
+1. ¿Las métricas y gráficos del panel de rendimiento le resultaron comprensibles?
+2. ¿La información mostrada le ayudaría a justificar la inversión publicitaria en GeoPS?
+3. ¿El control de estado de las campañas (activar/pausar) respondió a lo que esperaba?
+4. ¿La administración de ofertas de una campaña le pareció sencilla de operar?
+
+*Preguntas complementarias:*
+- ¿El modo demo, sin necesidad de configurar una tienda real, aumentó su intención de usar la plataforma?
+- ¿Qué métrica adicional le gustaría ver en el panel?
+- ¿Qué le generó dudas o fricción durante la tarea?
+
+#### 8.3.4.2. Registro de Entrevistas. 
+
+Segmento #1: Dueños de negocios locales
+
+**Tabla 16**   
+*Registro de entrevistas — Segmento 1*
+
+| Número de registro | Datos del entrevistado | Captura |
+| :--- | :--- | :--- |
+| **1** | **Nombre:** Cristian Salvador<br>**Edad:** 28 años<br>**Establecimiento:** Tienda de productos importados (Referente)<br>**Cargo:** Dueño / Encargado<br>**Duración:** Aprox. 5 minutos<br> **Enlace:** [https://l1nq.com/8gjygzw](https://acortar.link/gTCaPh) <br> **Resumen:** El entrevistado maneja una tienda con alta variedad de productos, siendo las sopas instantáneas, snacks y bebidas los más buscados. Actualmente usa Instagram, WhatsApp y carteles físicos, pero nota que la publicidad digital a veces llega a personas muy lejanas que no concretan la compra. Califica la solución de GeoPS con un **5**, destacando su utilidad para liquidar stock próximo a vencer y atraer clientes que transitan por la zona. Le interesa contar con estadísticas de visualizaciones y rutas para medir la efectividad de sus ofertas. Expresó preocupación por el costo y la curva de aprendizaje, sugiriendo una interfaz sencilla. |  **Figura 4**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista1_segmento1.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **2** | **Nombre:** Néstor Rojas<br>**Establecimiento:** Terra Inc.<br>**Giro:** Inciensos, plantas y productos orgánicos asiáticos<br>**Duración:** Aprox. 8 minutos<br> **Enlace:** https://acortar.link/aSbB2F <br>**Resumen:** Néstor opera un negocio con clientes de diversos distritos que llegan principalmente por canales online. Indica que los inciensos tienen alta rotación, mientras que las plantas demoran más en venderse. Valora la propuesta de GeoPS con un **5**, resaltando que facilitaría captar al público que transita cerca y le ahorraría costos en publicidad tradicional como volantes. Le entusiasma la idea de notificaciones automáticas para liquidar saldos de inventario y evitar pérdidas por vencimiento. Como aporte adicional, sugiere que el mapa de la aplicación incluya coordenadas exactas y guías de accesibilidad para evitar que el cliente se desanime al no encontrar el local. |  **Figura 5**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista2_segmento1.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+
+*Nota.* Elaboración propia.
+
+Segmento #2: Consumidores de ofertas de diferentes ámbitos
+
+**Tabla 17**   
+*Registro de entrevistas — Segmento 2*  
+
+| Número de registro | Datos del entrevistado | Captura |
+| :--- | :--- | :--- |
+| **1** | **Nombre:** Ariana Puscan <br> **Edad:** 28 años <br> **Distrito:** Magdalena <br> **Ocupación:** Abogada <br> **Duración de la entrevista:** 5 minutos y 49 segundos <br> **Enlace:** https://l1nq.com/8gjygzw <br> **Resumen:** En este video, se entrevista a Ariana Puscan, una joven de 28 años del distrito de Magdalena. Es una consumidora recurrente de snacks asiáticos, adquiriéndolos mensualmente. Su descubrimiento de productos se basa principalmente en recomendaciones y ofertas vistas en Instagram y TikTok. Sus compras son mayoritariamente impulsivas o casuales cuando encuentra artículos en supermercados, sin apoyarse en aplicaciones específicas. Recientemente, visitó un establecimiento tras verlo en redes sociales, teniendo una experiencia satisfactoria. Finalmente, considera que nuestra aplicación sería de gran valor. La percibe como una herramienta clave para localizar puntos de venta exactos y facilitar el acceso a una mayor variedad de productos asiáticos. | **Figura 6**<br> *Entrevista 1 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista1_segmento2.png" alt="Entrevista 1 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **2** | **Nombre:** Olga Consuelo Arce Quesada <br> **Edad:** 25 años <br> **Distrito:** Magdalena <br> **Ocupación:** Comunicadora Corporativa <br> **Duración de la entrevista:** 7 minutos y 16 segundos <br> **Enlace:** https://l1nq.com/ck0dyrh <br> **Resumen:** En este video, Olga Consuelo Arce Quesada, de 25 años, de Magdalena. Es una consumidora frecuente de snacks, bebidas y productos de belleza. Si bien descubre tiendas asiáticas mediante redes sociales o de forma presencial, señala una brecha en la información: las ofertas no están digitalizadas y solo las descubre al visitar el punto de venta. Su experiencia revela una dificultad específica al buscar productos de belleza, ya que no suelen estar disponibles en cadenas comerciales como Miniso. Actualmente, su búsqueda depende exclusivamente de la suerte al encontrar recomendaciones en TikTok, lo que dificulta la compra efectiva. Olga valida positivamente la propuesta de nuestra aplicación. Destaca la importancia de una plataforma integral que geolocalice tiendas cercanas, ofrezca visibilidad de ofertas en tiempo real y permita filtrar los establecimientos por categorías para optimizar su experiencia de compra. | **Figura 7**<br> *Entrevista 2 — Segmento 2* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista2_segmento2.png" alt="Entrevista 2 — Segmento 2" width="4000"> </div> *Nota.* Elaboración propia. |
+| **3** | **Nombre:** Lupe de la Cruz <br> **Edad:** 22 años <br> **Distrito:** Jesús María <br> **Ocupación:** Estudiante <br> **Duración de la entrevista:** Aprox. 5 minutos <br> **Enlace:** https://acortar.link/BfP5q1 <br> **Resumen:** En esta entrevista se conversó con Lupe de la Cruz, una joven estudiante de Jesús María. Es una consumidora quincenal de productos orientales, enfocada principalmente en snacks, dulces y bebidas. Su descubrimiento de locales se basa en redes sociales y exploración física ocasional. Relató una mala experiencia reciente al encontrar un local cerrado por falta de información actualizada, lo que validó la utilidad de la aplicación. Califica la utilidad del mapa interactivo con un puntaje de 4 a 5 estrellas. Valora positivamente las notificaciones push personalizadas y considera indispensable que la app muestre horarios de atención y listas de precios. Finalmente, propuso como feedback la posibilidad de realizar reservas de productos a través de la plataforma. | **Figura 8**<br> *Entrevista 3 — Segmento 1* <div align="center"> <img src="resources/imgs/chapter-ii/entrevista3_segmento2.png" alt="Entrevista 3 — Segmento 1" width="4000"> </div> *Nota.* Elaboración propia. |
+
+
+## 8.4. Experiment Aftermath & Analysis 
+### 8.4.1. Analysis and Interpretation of Results
+Las entrevistas de validación tuvieron como objetivo evaluar la aceptación y efectividad de las nuevas funcionalidades implementadas en la plataforma a partir de las hipótesis planteadas durante el desarrollo del proyecto. Estas entrevistas se realizaron con los dos segmentos objetivo: dueños de negocios locales y consumidores de ofertas de diferentes ámbitos, quienes interactuaron con las nuevas características del sistema y compartieron su percepción sobre su utilidad, facilidad de uso y aporte a la experiencia de usuario.
+
+Las preguntas fueron diseñadas para analizar aspectos relacionados con la accesibilidad de la plataforma, la confianza en los datos geolocalizados, la claridad de las métricas visuales, el impacto de las alertas en tiempo real y la utilidad del modo demo. Los resultados obtenidos permitieron identificar el nivel de aceptación de cada funcionalidad y verificar si estas responden adecuadamente a las necesidades de los usuarios, proporcionando información valiosa para la mejora continua de la plataforma.
+
+**Preguntas Formuladas**
+
+- ¿La necesidad de configuración geoespacial avanzada para locales reduce la adopción del sistema?
+- ¿Los usuarios finales y comercios confían en los datos de geolocalización generados por la app?
+- ¿Las recomendaciones personalizadas de ofertas generan un aumento real en las ventas y el ahorro?
+- ¿Las alertas de ofertas en tiempo real y hora punta modifican los hábitos de compra de los consumidores?
+- ¿Los comerciantes entienden las métricas de alcance y gráficos mostrados en el panel?
+- ¿Un modo demo sin necesidad de configurar tiendas físicas reales incrementa la intención de uso de la plataforma?
+
+Estas preguntas fueron respondidas por cinco participantes pertenecientes a los segmentos objetivo: dos dueños de negocios locales y tres consumidores de ofertas de diferentes ámbitos. A continuación, se presentan los resultados obtenidos.
+
+**Análisis de Datos Demográficos**
+
+Distribución de participantes: Las entrevistas fueron realizadas a cinco usuarios pertenecientes al público objetivo del proyecto.
+- Dueños de negocios locales: 2 participantes (40%).
+- Consumidores de ofertas de diferentes ámbitos: 3 participantes (60%).
+
+Distribución de edades: Las edades de los participantes oscilaron entre 20 y 52 años.
+- 20-23 años: 60%.
+- 45-52 años: 40%.
+
+Los resultados muestran que la plataforma resulta comprensible tanto para usuarios jóvenes que buscan ofertas de manera ágil como para dueños de negocios con mayor experiencia en la administración y promoción de sus locales.
+
+**Evaluación de Funcionalidades**
+
+- Modo Demo sin configuración real
+La totalidad de los participantes valoró positivamente la posibilidad de acceder al sistema mediante un modo demo interactivo, destacando que elimina la necesidad de configurar tiendas físicas o ingresar datos reales antes de conocer el funcionamiento de la plataforma. Los dueños de negocios consideraron que esta característica incrementa la intención de uso y agiliza la toma de decisiones, mientras que los consumidores resaltaron que pueden probar la visualización de ofertas sin comprometer información desde el inicio.
+Resultado observado: aceptación del 100%.  
+
+- Confianza en datos de geolocalización
+Los participantes indicaron que experimentar previamente con los mapas dinámicos incrementa la confianza en la precisión de la plataforma. Los consumidores validaron que las ofertas se muestran de manera exacta según su ubicación simulada, mientras que los dueños de negocios ganaron seguridad sobre cómo se visualizarán sus locales ante clientes reales, reduciendo la incertidumbre inicial del sistema.
+Resultado observado: acceptance del 100%.  
+
+- Comprensión de métricas e indicadores visuales
+Todos los entrevistados pertenecientes al segmento comercial consideraron que los indicadores de alcance, contadores de vistas y pines informativos del panel de control son fáciles de interpretar. Afirmaron que la distribución visual en las pantallas les permite entender claramente el rendimiento de sus campañas y el flujo proyectado de rutas de clientes hacia sus locales sin requerir asistencia técnica o conocimientos avanzados de analítica digital.
+Resultado observado: aceptación del 100%.
+
+- Recomendaciones personalizadas de ofertas
+Los cinco participantes afirmaron que el sistema de recomendaciones inteligentes aporta un valor claro. Los dueños de negocios destacaron su potencial para generar un aumento real en las ventas de productos de baja rotación y liquidar stock próximo a vencer, mientras que los consumidores señalaron que la personalización según sus ámbitos de interés facilita el descubrimiento oportuno de ofertas y el ahorro económico directo.
+Resultado observado: aceptación del 100%.
+
+- Alertas de ofertas en tiempo real y hora punta
+Todos los entrevistados indicaron que recibir alertas geoespaciales y notificaciones en tiempo real en momentos de alta afluencia comercial constituye un incentivo efectivo para modificar sus hábitos. Los consumidores mencionaron que cambiarían sus rutas de compra cotidianas para aprovechar cupones flash cercanos, mientras que los comercios validaron que estas notificaciones son clave para atraer de forma inmediata al público que transita por la zona.
+Resultado observado: aceptación del 100%.
+
+- Facilidad de configuración para locales
+La totalidad de los dueños de negocios entrevistados aclaró que el flujo guiado de la interfaz evita que la asignación geográfica de los comercios y la publicación de anuncios se vuelvan complejas. Coincidieron en que las herramientas de marcado en mapa y los formularios validados son intuitivos, asegurando que la plataforma no presenta barreras técnicas que pongan en riesgo la adopción del sistema por parte de comercios locales tradicionales.
+Resultado observado: aceptación del 100%.
+
+**Recomendaciones de los Usuarios**
+
+Durante las entrevistas también se identificaron aspectos que los participantes consideran especialmente valiosos para futuras versiones de la plataforma:
+
+- Mantener disponible el modo demo interactivo sin requisitos de configuración reales obligatorios desde el inicio.
+- Conservar el motor de geolocalización preciso, transparente y con horarios de atención actualizados para mantener alta la confianza en los datos del mapa.
+- Continuar mostrando las métricas de alcance e interacciones de anuncios a través de indicadores visuales limpios y paneles fáciles de interpretar para los comerciantes.
+- Potenciar las alertas configurables en tiempo real durante horas punta comerciales para dinamizar el flujo de usuarios en tránsito hacia las tiendas.
+- Ampliar las guías visuales dentro del panel de control e incluir mapas de calor sencillos u opciones de reserva para optimizar la gestión de las ofertas personalizadas del sistema.
+
+**Conclusión**
+
+Los resultados de las entrevistas de validación evidencian una aceptación muy favorable de las nuevas funcionalidades implementadas en la plataforma GeoPS. Tanto los dueños de negocios locales como los consumidores de ofertas de diferentes ámbitos coincidieron en que el modo demo facilita la adopción inicial, mientras que la precisión de los datos de geolocalización y el uso de clústeres numéricos reducen drásticamente la saturación visual en el mapa.
+
+Asimismo, los paneles con indicadores simplificados, el sistema de recomendaciones personalizadas y las alertas en tiempo real en hora punta fueron percibidos como herramientas útiles que mejoran la experiencia del usuario y favorecen el beneficio mutuo de ambos segmentos. En conjunto, los resultados permiten validar las hipótesis planteadas para estas funcionalidades y respaldan su incorporación dentro de la versión final de la plataforma, evidenciando un alto nivel de aceptación por parte de ambos segmentos objetivo.
+
+### 8.4.2. Re-scored and Re-prioritized Question Backlog 
+
+| Prioridad (1,2,3,5,8) | ID | Pregunta |
+| :---: | :---: | :--- |
+| **8** | Q1 | ¿La necesidad de configuración geoespacial avanzada para locales reduce la adopción del sistema? |
+| **5** | Q2 | ¿Los usuarios finales y comercios confían en los datos de geolocalización generados por la app? |
+| **3** | Q3 | ¿Las recomendaciones personalizadas de ofertas generan un aumento real en las ventas y el ahorro? |
+| **2** | Q4 | ¿Las alertas de ofertas en tiempo real y hora punta modifican los hábitos de compra de los consumidores? |
+| **1** | Q5 | ¿Los comerciantes entienden las métricas de alcance y gráficos mostrados en el panel? |
+| **1** | Q6 | ¿Un modo demo sin necesidad de configurar tiendas físicas reales incrementa la intención de uso de la plataforma? |
+
+## 8.5. Continuous Learning 
+
+## 8.5.1. Shareback Session Artifacts: Learning Workflow
+
+La Shareback Session es la instancia en la que el equipo consolida y comparte el aprendizaje generado por el ciclo experimental, transformando la evidencia recolectada en decisiones de producto. El flujo de aprendizaje aplicado por GeoPS Labs siguió cuatro etapas: **Recolectar → Interpretar → Decidir → Compartir**.
+
+### Flujo de aprendizaje (Learning Workflow)
+
+1. **Recolectar.** Se ejecutaron las entrevistas de validación con los dos segmentos objetivo (2 propietarios de negocio y 3 consumidores), midiendo la aceptación de las funcionalidades To-Be frente a las hipótesis de trabajo (8.2.1).
+2. **Interpretar.** Cada respuesta se contrastó con la hipótesis y su hipótesis nula, clasificando la evidencia como *a favor*, *en contra* o *insuficiente*.
+3. **Decidir.** Para cada pregunta se tomó una decisión de tipo **Perseverar** (la evidencia respalda la creencia), **Pivotar** (la evidencia la contradice) o **Profundizar** (se requiere más evidencia).
+4. **Compartir.** Los aprendizajes se registraron en el Question Backlog re-priorizado (8.4.2) y se comunicaron al equipo para alimentar el siguiente ciclo.
+
+### Tablero de aprendizajes (Shareback Board)
+
+| Experimento / Pregunta | Evidencia clave | Decisión | Aprendizaje |
+|---|---|---|---|
+| Web Push de proximidad (afluencia física) | Los consumidores valoran las alertas en tiempo real, pero manifiestan reservas ante los permisos de ubicación en segundo plano. | Profundizar | El valor percibido es alto; el reto es la comunicación del beneficio antes de solicitar el permiso. |
+| Canje QR (ROI para PyMEs) | Los propietarios reconocen la utilidad de medir canjes físicos para justificar su inversión publicitaria. | Perseverar | La transparencia en la medición es un factor de confianza decisivo para las PyMEs. |
+| Rutas temáticas (retención) | Los consumidores jóvenes muestran interés por la exploración guiada por circuitos. | Perseverar | La exploración temática reduce la sobrecarga cognitiva frente a la búsqueda genérica. |
+| Modo demo sin configuración real | La totalidad de los participantes valoró poder probar la plataforma sin configurar tiendas reales. | Perseverar | El modo demo reduce la fricción de adopción inicial y aumenta la intención de uso. |
+| Claridad de métricas del panel | Los propietarios comprendieron los gráficos y métricas de alcance mostrados. | Perseverar | La visualización clara del rendimiento sostiene la propuesta de valor para el segmento propietario. |
+
+### Próximos pasos derivados del aprendizaje
+
+- Rediseñar el flujo de solicitud de permisos de geolocalización comunicando el beneficio inmediato antes del prompt del navegador.
+- Priorizar la consolidación del canje QR como diferenciador de confianza para las PyMEs.
+- Mantener y ampliar el modo demo como puerta de entrada de nuevos usuarios.
+
+## 8.6. To-Be Software Platform Pre-launch 
+
+### 8.6.1. About-the-Product Intro Video 
+
+- Enlace Video About The Product - GeoPs: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318049_upc_edu_pe/IQClpsJt1lv0SJVXaTq_7_RwAZulho-4j7SJR3cHofT9Bpo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pc3X8P
+
+
+### Matriz de Evaluación Etica y de Impacto
+
+Esta matriz sustenta el **ABET – EAC – Student Outcome 4**, evidenciando las responsabilidades éticas y profesionales asumidas por el equipo y los juicios informados emitidos sobre el impacto de GeoPS en contextos globales, económicos, ambientales y sociales. Se toma como marco de referencia el Código de Ética de Ingeniería de Software ACM/IEEE y del Colegio de Ingenieros del Perú (CIP).
+
+| Dimensión | Impacto identificado | Decisión / acción del equipo | Evidencia en el proyecto |
+|---|---|---|---|
+| **Responsabilidad ética y profesional** (ACM/IEEE, CIP) | El manejo de datos de ubicación y de comercios exige transparencia y protección de la privacidad. | Publicación de Términos y Condiciones y del Acuerdo de Servicio (SaaS) accesibles desde el footer; solicitud explícita de permisos de geolocalización; almacenamiento de credenciales con hashing BCrypt y autenticación JWT. | Sección 5.2.4 (SaaS Agreement); contexto Identity (JWT + BCrypt) en el backend. |
+| **Impacto global** | La plataforma debe ser usable por audiencias diversas y en más de un idioma. | Adopción de internacionalización (i18n, en_US / es_419) en Landing y Frontend, y consideraciones de accesibilidad (a11y) con atributos ARIA en la experiencia web. | Frontend con `@ngx-translate`; atributos ARIA en componentes; secciones 4.2 y de accesibilidad. |
+| **Impacto económico** | Las PyMEs y comercios especializados destinan presupuesto limitado a publicidad y necesitan medir su retorno. | Modelo de publicidad hiperlocal de bajo costo y funcionalidades de medición del rendimiento de campañas y canje físico (QR) que permiten al comerciante justificar su inversión. | Contexto Campaign (métricas de campañas); experimentos de ROI (8.2.1). |
+| **Impacto ambiental** | El descubrimiento presencial ineficiente y la publicidad física (carteles, volantes) generan desplazamientos y residuos. | Solución 100% web que evita la distribución de material impreso y orienta al consumidor hacia comercios cercanos, reduciendo desplazamientos innecesarios. | Propuesta de valor hiperlocal; alcance web (sin app nativa) que reduce huella de distribución. |
+| **Impacto social** | La comunidad de comercios especializados y sus clientes requieren visibilidad equitativa frente a grandes cadenas. | Digitalización accesible de pequeños negocios, dando visibilidad a comercios de nicho y fortaleciendo el comercio local y la comunidad en torno a él. | Segmentos objetivo (1.3); User Personas y Journey Maps del Cap. II. |
+
+### Riesgos éticos y mitigaciones
+
+| Riesgo | Mitigación aplicada |
+|---|---|
+| Uso indebido o exposición de datos de geolocalización | Consentimiento explícito, mínima recolección de datos y comunicación del propósito de uso. |
+| Publicidad engañosa por parte de comercios | Validación de campañas activas y fechas; posibilidad de retirar ofertas y controlar su estado. |
+| Exclusión de usuarios con capacidades diferentes | Aplicación de principios de diseño inclusivo (a11y) y soporte multilingüe (i18n). |
+| Sobre-exposición del usuario a notificaciones | Ejecución de un solo experimento por usuario sobre un mismo tema y respeto a la no causación de daño. |
 
 
 ## Conclusiones
@@ -4344,7 +5901,6 @@ Think with Google. (2019). *How mobile search connects consumers to stores*. Goo
 World Bank. (2019). *World Development Report 2019: The Changing Nature of Work*. World Bank. https://doi.org/10.1596/978-1-4648-1328-3
 
 
-
 ## Anexos
 
 **Enlace Organización - GeoPs:** https://github.com/geops-org
@@ -4374,7 +5930,6 @@ World Bank. (2019). *World Development Report 2019: The Changing Nature of Work*
 **Video About The Product**
 
 - Enlace Video About The Product - GeoPs: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318049_upc_edu_pe/IQClpsJt1lv0SJVXaTq_7_RwAZulho-4j7SJR3cHofT9Bpo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pc3X8P
-
 
 
 **Diseño Figma**
