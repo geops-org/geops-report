@@ -5039,11 +5039,22 @@ Una vez que el pipeline de alertas valida y confirma una anomalía real, este fl
 ### 8.2.8. Web and Mobile Tracking Plan. 
 ## 8.3. Experimentation 
 ### 8.3.1. To-Be User Stories. 
-### 8.3.2. To-Be Product Backlog 
-### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle 
+### 8.3.2. To-Be Product Backlog
+
+Como resultado de la evolución del producto, se incorporaron funcionalidades que no fueron registradas como historias independientes en el Product Backlog inicial. El siguiente backlog las organiza por prioridad y las estima en puntos de historia utilizando la secuencia de Fibonacci:
+
+| # Orden | User Story ID | Título | Story Points (1/2/3/5/8) |
+| --- | --- | --- | --- |
+| **1** | **GEOP-UA11** | Exploración de ofertas por distrito en el mapa | **5** |
+| **2** | **GEOP-UA12** | Búsqueda y ordenamiento avanzado de ofertas | **3** |
+| **3** | **GEOP-UA13** | Consulta del rendimiento de las campañas | **5** |
+| **4** | **GEOP-UA14** | Control del estado de las campañas | **3** |
+| **5** | **GEOP-UA15** | Actualización de los datos del perfil | **5** |
+| **6** | **GEOP-UA16** | Administración de las ofertas de una campaña | **5** |
+
 #### 8.3.3.1. To-Be Sprint Backlog
 
-El siguiente *To-Be Sprint Backlog* organiza las historias experimentales definidas en el *To-Be Product Backlog* para su desarrollo durante el **Sprint 5**. Cada historia se descompone en tareas técnicas cuya estimación total coincide con los *Story Points* asignados en el backlog del producto. Las actividades se distribuyen entre los siete integrantes de GeoPS Labs y, al tratarse de trabajo planificado, mantienen el estado **To-do**.
+El siguiente *To-Be Sprint Backlog* organiza las funcionalidades incorporadas durante el **Sprint 5**. Cada historia se descompone en tareas técnicas cuya estimación total coincide con los *Story Points* asignados en el backlog del producto. Debido a que estas funcionalidades cuentan con implementación verificable en GeoPS, las actividades mantienen el estado **Done**.
 
 <table>
   <thead>
@@ -5069,102 +5080,105 @@ El siguiente *To-Be Sprint Backlog* organiza las historias experimentales defini
   <tbody>
     <tr>
       <td rowspan="2"><strong>UA11</strong></td>
-      <td rowspan="2">Alertas Web Push e Infraestructura de Geofencing</td>
+      <td rowspan="2">Exploración de ofertas por distrito en el mapa</td>
       <td><strong>TK01</strong></td>
-      <td>Configurar Web Push y Service Worker</td>
-      <td>Configurar <code>@angular/service-worker</code>, registrar los tokens de notificación y gestionar los permisos del navegador móvil.</td>
-      <td>5</td>
+      <td>Mostrar las ofertas en el mapa interactivo</td>
+      <td>Representar las ofertas disponibles en el mapa y permitir que el usuario acceda al detalle de cada promoción.</td>
+      <td>3</td>
       <td rowspan="2">Bryan Eduardo Barba Estrada</td>
-      <td rowspan="2">To-do</td>
+      <td rowspan="2">Done</td>
     </tr>
     <tr>
       <td><strong>TK02</strong></td>
-      <td>Implementar geofencing y control de frecuencia</td>
-      <td>Calcular la proximidad mediante la fórmula Haversine y evitar alertas duplicadas del mismo comercio durante el día.</td>
-      <td>3</td>
+      <td>Filtrar las ofertas por distrito</td>
+      <td>Actualizar el mapa y el listado al seleccionar San Borja, Lince, Barrio Chino o la opción para mostrar todos.</td>
+      <td>2</td>
     </tr>
     <tr>
       <td rowspan="2"><strong>UA12</strong></td>
-      <td rowspan="2">Renderizado Dinámico de Códigos QR</td>
+      <td rowspan="2">Búsqueda y ordenamiento avanzado de ofertas</td>
       <td><strong>TK03</strong></td>
-      <td>Generar códigos QR únicos</td>
-      <td>Integrar el componente QR y generar un código asociado al usuario, la oferta y la campaña seleccionada.</td>
+      <td>Buscar ofertas por texto y ubicación</td>
+      <td>Permitir que el usuario encuentre promociones mediante palabras clave y la ubicación seleccionada.</td>
       <td>2</td>
       <td rowspan="2">Vanessa May Lang Choy Robles</td>
-      <td rowspan="2">To-do</td>
+      <td rowspan="2">Done</td>
     </tr>
     <tr>
       <td><strong>TK04</strong></td>
-      <td>Diseñar la vista móvil de canje</td>
-      <td>Incorporar la ficha QR en la vista de la promoción y validar su correcta visualización en dispositivos móviles.</td>
+      <td>Ordenar los resultados de las ofertas</td>
+      <td>Permitir que el usuario ordene las promociones por precio, calificación o relevancia.</td>
       <td>1</td>
     </tr>
     <tr>
       <td rowspan="2"><strong>UA13</strong></td>
-      <td rowspan="2">Escáner QR WebRTC para Panel de Proveedores</td>
+      <td rowspan="2">Consulta del rendimiento de las campañas</td>
       <td><strong>TK05</strong></td>
-      <td>Implementar lector QR con WebRTC</td>
-      <td>Habilitar el acceso a la cámara desde el panel responsivo del proveedor y procesar el contenido del código QR.</td>
+      <td>Contabilizar visualizaciones y clics</td>
+      <td>Registrar cuántas veces se muestran las promociones y cuántas veces los consumidores acceden a ellas.</td>
       <td>3</td>
       <td rowspan="2">Santiago Iván Cárdenas Concha<br>Alvaro Fabrizzio Salazar Caballero</td>
-      <td rowspan="2">To-do</td>
+      <td rowspan="2">Done</td>
     </tr>
     <tr>
       <td><strong>TK06</strong></td>
-      <td>Desarrollar validación de canje</td>
-      <td>Integrar el lector con <code>PUT /offers/redeem</code>, validar la transacción y actualizar la métrica de conversión del comercio.</td>
+      <td>Mostrar la tasa de interacción</td>
+      <td>Presentar las visualizaciones, clics y tasa de interacción en el resumen y detalle de cada campaña.</td>
       <td>2</td>
     </tr>
     <tr>
       <td rowspan="2"><strong>UA14</strong></td>
-      <td rowspan="2">Módulo de Capas y Circuitos Temáticos en Mapa</td>
+      <td rowspan="2">Control del estado de las campañas</td>
       <td><strong>TK07</strong></td>
-      <td>Crear filtros de circuitos temáticos</td>
-      <td>Implementar filtros para rutas como K-Beauty y Ramen, mostrando únicamente los comercios de la categoría elegida.</td>
+      <td>Activar o finalizar una campaña</td>
+      <td>Permitir que el propietario controle la disponibilidad de una campaña mediante sus opciones de activación y finalización.</td>
       <td>2</td>
       <td rowspan="2">Natalia Ximena Valverde Portuguez</td>
-      <td rowspan="2">To-do</td>
+      <td rowspan="2">Done</td>
     </tr>
     <tr>
       <td><strong>TK08</strong></td>
-      <td>Optimizar consultas geográficas</td>
-      <td>Ajustar las consultas e índices utilizados para recuperar comercios por tipología y ubicación.</td>
+      <td>Confirmar los cambios de estado</td>
+      <td>Solicitar confirmación antes de activar o finalizar una campaña e informar el resultado al propietario.</td>
       <td>1</td>
     </tr>
     <tr>
       <td rowspan="2"><strong>UA15</strong></td>
-      <td rowspan="2">Servicio Frontend de Interfaz Nocturna Global</td>
+      <td rowspan="2">Actualización de los datos del perfil</td>
       <td><strong>TK09</strong></td>
-      <td>Crear servicio global de temas</td>
-      <td>Implementar el servicio Angular que gestione el tema claro u oscuro y conserve la preferencia del usuario.</td>
-      <td>1</td>
+      <td>Consultar la información del perfil</td>
+      <td>Mostrar los datos de la cuenta y la información correspondiente al tipo de usuario autenticado.</td>
+      <td>3</td>
       <td rowspan="2">Nicolas Alejandro Vera Nuñez</td>
-      <td rowspan="2">To-do</td>
+      <td rowspan="2">Done</td>
     </tr>
     <tr>
       <td><strong>TK10</strong></td>
-      <td>Diseñar paleta nocturna responsiva</td>
-      <td>Definir variables CSS de alto contraste y activar automáticamente el modo oscuro después de las 18:00 horas.</td>
-      <td>1</td>
+      <td>Editar los datos de contacto</td>
+      <td>Permitir que el usuario modifique su nombre, correo y teléfono, y reciba una confirmación al guardar.</td>
+      <td>2</td>
     </tr>
     <tr>
       <td rowspan="2"><strong>UA16</strong></td>
-      <td rowspan="2">Generador de Enlaces Cortos de Recomendación</td>
+      <td rowspan="2">Administración de las ofertas de una campaña</td>
       <td><strong>TK11</strong></td>
-      <td>Implementar función para compartir ofertas</td>
-      <td>Integrar la <code>Web Share API</code> y proporcionar la copia al portapapeles como mecanismo alternativo.</td>
-      <td>1</td>
+      <td>Agregar, modificar y retirar ofertas</td>
+      <td>Permitir que el propietario mantenga actualizadas las promociones asociadas a cada campaña.</td>
+      <td>3</td>
       <td rowspan="2">Adriana Maria Diestra Zambrano</td>
-      <td rowspan="2">To-do</td>
+      <td rowspan="2">Done</td>
     </tr>
     <tr>
       <td><strong>TK12</strong></td>
-      <td>Incorporar enlaces y rastreo de referidos</td>
-      <td>Generar enlaces con el identificador de la oferta y parámetros de rastreo para medir registros por recomendación.</td>
-      <td>1</td>
+      <td>Administrar las ofertas desde la campaña</td>
+      <td>Mostrar las promociones de una campaña y ofrecer acciones para agregar, modificar o retirar cada oferta.</td>
+      <td>2</td>
     </tr>
   </tbody>
 </table>
+
+*Nota.* Elaboración propia. La estimación total del Sprint 5 es de **26 Story Points**.
+
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence 
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence 
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence 
