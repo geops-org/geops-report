@@ -3770,7 +3770,7 @@ Se estableció la matriz LACX para delegar responsabilidades técnicas específi
 
   El tablero de control del Sprint 1 se encuentra disponible de manera pública en el siguiente enlace: [https://trello.com/invite/b/6a4b331284b55c52c0a24593/ATTIee9d1f1f4ebb2ae92df4d49618a92759FD62F5DD/geopssprint1](https://trello.com/invite/b/6a4b331284b55c52c0a24593/ATTIee9d1f1f4ebb2ae92df4d49618a92759FD62F5DD/geopssprint1).
 
-    <div align="center">
+<div align="center">
     <img src="resources/imgs/trello1.png" width="700">
   </div>
 
@@ -3842,7 +3842,7 @@ Distribución estratégica de liderazgo técnico para los módulos avanzados del
 
   El tablero de control del Sprint 2 se encuentra disponible de manera pública en el siguiente enlace: [https://trello.com/invite/b/6a4b40136f12017a070237f5/ATTI7de9a424cc56c2880b7f13cd6947449c7B0D2F55/geopssprint2](https://trello.com/invite/b/6a4b40136f12017a070237f5/ATTI7de9a424cc56c2880b7f13cd6947449c7B0D2F55/geopssprint2)
 
-    <div align="center">
+<div align="center">
     <img src="resources/imgs/trello2.png" width="700">
   </div>
 
