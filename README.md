@@ -4057,13 +4057,21 @@ Se inspecciona el cumplimiento de convenciones de nombres, indentación, comenta
 Se revisan posibles riesgos de seguridad, como entradas no validadas, exposición de credenciales, manejo incorrecto de tokens o endpoints sin protección.
 Se registra la evidencia mediante capturas de consola, GitHub Actions, Pull Requests, Swagger UI o herramientas de análisis estático.
 
-Figura X. Static Code Analysis — Frontend Web Application
+Static Code Analysis — Frontend Web Application
+
+<div align="center">
+    <img src="resources/imgs/chapter-vi/Static Code Analysis.png" alt="GeoPS Software Architecture Context Diagram" width="900">
+</div>
 Nota. Elaboración propia.
 
-Figura X. Static Code Analysis — Backend RESTful API
+Static Code Analysis — Backend RESTful API
+<div align="center">
+    <img src="resources/imgs/chapter-vi/Backend RESTful API.png" alt="GeoPS Software Architecture Context Diagram" width="900">
+</div>
+
 Nota. Elaboración propia.
 
-Figura X. Static Code Analysis — Swagger/OpenAPI Documentation
+Static Code Analysis — Swagger/OpenAPI Documentation
 Nota. Elaboración propia.
 
 
